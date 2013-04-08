@@ -1,0 +1,48 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+%opening
+\title{ICE Model Continued}
+\author{Anupam Prasad Vedurmudi}
+
+\begin{document}
+
+\maketitle
+
+We denote the membrane displacements on either side by the
+functions $u_{0/L}(r,\phi,t)$ where $0$ and $L$ correspond to the
+ipsi- and contra-lateral membranes respectively. They satisfy
+the boundary condition
+\begin{equation}
+ u_{0/L}(a,\phi,t)=0
+\end{equation}
+where $a$ is the membrane radius. We choose a convention in which
+the displacements into the cavity are positive and outward displacements
+negative. Thus, for a given displacement of the membranes, 
+the cavity volume changes by
+\begin{equation}
+ \Delta V=-\int_S dS (u0+uL)
+\end{equation}
+where $dS=rdrd\phi$ is the area element in 2D polar coordinates and 
+the integral is over the surface of the disk. Assuming the membrane
+displacements are slow enough to consider the air inside the cavity
+to be quasi-static, the corresponding change in pressure (linearized
+in volume-change) is given by
+\begin{equation}
+ \Delta P \approx -\gamma \frac{P0}{V0}\Delta V
+\end{equation}
+$P0$ is the atmospheric pressure and $V_0$. The membrane equations of motion are then given by
+\begin{equation}
+ -\ddot{u}_{0/L}-2\alpha\dot{u}_{0/L}+c_M^2\Delta u_{0/L}=\frac{1}{\rho_M d}\left[p_{0/L}-\Delta P\right]
+\end{equation}
+Where $p_{0/L}$ is the sound pressure on the ipsi- and contra-lateral membranes respectively.	 We define 
+a new set of variables, $u_+=u_L+u_0$ and $u_-=u_L-u_0$ and add and subtract the above equations to
+get a new system in terms of these newly defined variables.
+
+\begin{align}
+ -\ddot{u}_+-2\alpha\dot{u}_++c_M^2\Delta u_+&=\frac{1}{\rho_M d}\left[p_+-2\Delta P\right]\\
+ -\ddot{u}_--2\alpha\dot{u}_-+c_M^2\Delta u_-&=\frac{p_-}{\rho_M d}
+\end{align}
+Where, similar to the above definitions, $p_+=p_L+p_0$ and $p_-=p_L-p_0$. The second equation
+can be solved exactly.
+\end{document}

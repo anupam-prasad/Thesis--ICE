@@ -1,0 +1,175 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%opening
+\title{ICE Model - Analytic Solution For A Cylindrical Cavity }
+\author{Anupam Prasad Vedurmudi}
+\date{}
+\begin{document}
+
+\maketitle
+In the ICE model, the mouth canal is assumed to be a simple cylinder closed at 
+both ends by rigidly clamped circular membranes. 
+We define $(m,n)$ as the modes of the homogeneous cylindrical wave equation such that,
+\begin{equation}\label{CylindricalHarmonic}
+ (m,n)\equiv cos(m\phi)J_m\left(\mu_{mn}r\right)
+\end{equation}
+where $J_m$ is the Bessel function of the first kind of order $m$ and $J_m\left(\mu_{mn}a\right)=0$. 
+Here, $\mu_{mn}a$ is the $n^{th}$ zero of $J_m$. 
+
+\subsection{Internal Cavity}
+The propagation of a pressure disturbance $p$ in the internal cavity is assumed to be defined by the following
+equation
+\begin{equation}\label{CavityCylindrical}
+ \frac{1}{c^2}\frac{\partial^2p(x,r,\phi,t)}{\partial t^2}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)+
+ \frac{1}{r^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial \phi^2}+\frac{\partial^2 p(x,r,\phi,t)}{\partial x^2}
+\end{equation}
+i.e., the wave equation in cylindrical coordinates. $c$ is the speed of sound in air. We can use a separation
+ansatz, $p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}$ to find a particular solution
+to this equation; this solution is given by,
+
+\begin{align}\label{CavityCylSpec}
+p(x,r,\phi,t)=&\left[\left(A^+_{qs}e^{j\zeta_{qs}x} + B^+_{qs}e^{-i\zeta_{qs}x}\right)e^{jq\phi}\right.\nonumber\\
+                    &+\left.\left(A^-_{qs}e^{j\zeta_{qs}x}+B^-_{qs}e^{-i\zeta_{qs}x}\right)e^{-iq\phi}\right] J_p(\nu_{qs}r)e^{j\omega t}
+\end{align}
+Here, $g(r)=J_p(\nu_{qs}r)$ is the order $p$ Bessel function of the first kind wich satisfies the following
+second order linear ODE
+\begin{equation}\label{besseleqn}
+ \frac{\partial^2 g(r)}{\partial r^2}+\frac{1}{r}\frac{\partial g(r)}{\partial r}+\left(\nu^2_{qs}-\frac{q^2}{r^2}\right)g(r)=0
+\end{equation}
+where, 
+\begin{align}
+&k=\omega/c\\
+&\zeta^2_{qs}=k^2-\nu^2_{qs}\label{wavenumbers}
+\end{align}
+The velocity of air (physically, the velocity of the fluid particle) in the x-direction is given by
+\begin{equation}\label{airvelocity}
+ \rho\frac{\partial v_x}{\partial t}=-\nabla_x p
+\end{equation}
+ where $\rho$ is the density of the air inside the cavity. Since \eqref{CavityCylindrical} is 
+a second order PDE in each of its variables, we require two boundary conditions for each of them 
+to completely solve it, i.e. to determine all the coefficients in \eqref{CavityCylSpec}. We require
+the pressure and its derivative to be periodic in $\phi$, 
+\begin{align}
+ p(x,r,\phi,t)&=p(x,r,\phi+2\pi,t)\label{phboundary1}\\
+ \partial_\phi p(x,r,\phi,t)&=\partial_\phi p(x,r,\phi+2\pi,t)\label{phboundary2}
+\end{align}
+As a result, $q$ is required to be an integer and \eqref{CavityCylSpec} reduces to
+\begin{equation}\label{CavityCylSpec2}
+ p(x,r,\phi,t)=\left[A_{qs}e^{j\zeta_{qs}x}+B_{qs}e^{-i\zeta_{qs}x}\right]\cos(q\phi) J_q(\nu_{qs}r)e^{j\omega t}
+\end{equation}
+Finally, we require that the velocity of the fluid particle normal to the cylindrical boundary at
+$r=a$ disappears. This is due to the requirement that the boundary is solid and the fluid does not
+penetrate it. This means that,
+\begin{equation}\label{normalboundary}
+ \left.\frac{\partial J_q(\nu_{qs}r)}{\partial r}\right|_{r=a}=0
+\end{equation}
+As a result $\nu_{qs}=\widetilde{k}_{qs}/a$, i.e. $\nu_{qs}$ corresponds to the $s^{th}$ zero of $J^\prime_q$. The general solution is given by linear combinations of \eqref{CavityCylSpec2}. 
+We also note that there exists a plane wave solution to \eqref{CavityCylindrical} which corresponds to
+$\nu_{00}=0$. This is given by
+\begin{equation}\label{CylinderPlaneWave}
+ p(x,r,\phi;t)=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}
+\end{equation}
+
+\subsection{Vibration of Coupled Unloaded Membranes}
+We first treat the case in which we have two circular coupled by a cylindrical cavity. The forcing
+on both tympani is given by
+
+\begin{align}
+ &p_0=pe^{-jk\frac{L}{2}\sin\theta}\\
+ &p_L=pe^{jk\frac{L}{2}\sin\theta}
+\end{align}
+In this example we attempt to model the case of the animal to a free field stimulus. This means
+that the sound on both tympani has the same amplitude but differ in phase by, $kL\sin\theta$ where,
+$\theta$ is the angle the sound source makes with the central axis of the head. We can assume that
+the instantaneous pressure is constant over the tympanum as its dimensions are much smaller than 
+the wavelength of the sound wave.
+The pressure inside the cavity is given by,
+\begin{equation}\label{CylCavityPressure}
+ p(x,r,\phi,t)=\sum_{q,s}\left[A_{qs}e^{j\zeta_{qs}x}+B_{qs}e^{-j\zeta_{qs}x}\right]\cos(q\phi) J_p(\nu_{qs}r)e^{j\omega t}
+\end{equation}
+The equation of motion of the membranes gives us,
+\begin{align}
+ \sum_{m,n}\left(\omega^2-2j\alpha\omega-\omega^2_{mn}\right)C^0_{mn}\cos(m\phi)&J_m(\mu_{mn}r)\nonumber\\
+ &=\left[p_0-p(0,r,\phi,t)\right]/(\rho_M d)\label{membraneEOM1a}\\
+ \sum_{m,n}\left(\omega^2-2j\alpha\omega-\omega^2_{mn}\right)C^L_{mn}\cos(m\phi)&J_m(\mu_{mn}r)&\nonumber\\
+ &=\left[p_L-p(L,r,\phi,t)\right]/(\rho_M d)\label{membraneEOM1b}
+\end{align}
+where as usual, $0$ and $L$ refer to the ipsi- and contralateral membranes respectively. We then equate the
+the velocity of air given in \eqref{airvelocity} to the velocity of the membrane surface at that point. 
+\begin{align}
+ \rho\omega^2\sum_{m,n}C^0_{mn}\cos(&m\phi)J_m(\mu_{mn}r)=\sum_{q,s}j\zeta_{qs}\left[A_{qs}-B_{qs}\right]\cos(q\phi) J_p(\nu_{qs}r)\label{vboundary1a}\\
+ \rho\omega^2\sum_{m,n}C^L_{mn}\cos(&m\phi)J_m(\mu_{mn}r)\nonumber\\
+ &=-\sum_{q,s}j\zeta_{qs}\left[A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right]\cos(q\phi) J_p(\nu_{qs}r)\label{vboundary1b}
+\end{align}
+This is equivalent \eqref{normalboundary} as we've set the relative velocity of the air normal to the 
+membrane surface to zero. We note that we have also used the direction conventions mentioned in the previous section.
+
+First we use \eqref{vboundary1a} and \eqref{vboundary1b} to express the cavity coefficients in terms
+of the membrane coefficients. This gives us,
+\begin{align}
+ A_{ms}&=\frac{\rho\omega^2}{2\zeta_{ms}\sin(\zeta_{ms}L)}\sum_{l}\left[C^0_{ml}e^{-j\zeta_{ms}L}+C^L_{ml}\right]\lambda_{msl}\\
+ B_{ms}&=\frac{\rho\omega^2}{2\zeta_{ms}\sin(\zeta_{ms}L)}\sum_{l}\left[C^0_{ml}e^{j\zeta_{ms}L}+C^L_{ml}\right]\lambda_{msl}
+\end{align}
+where we've introduced,
+\begin{equation*}
+ \lambda_{msl}=\frac{\int^a_0 rdr J_m(\nu_{ms}r)J(\mu_{ml}r)}{\int^a_0 rdrJ^2_m(\nu_{ms}r)}
+\end{equation*}
+We have also made use of the fact that $\int_0^{2\pi}\cos(m\phi)\cos(k\phi)=0$ for $m\neq k$. This tells
+us that the $J_m$ modes on the membrane only couple to the $J_m$ modes in the cavity for a given $m$ and vice
+versa. Also, in the above summations, $l$ ranges from $1$ to $\infty$ while $n$ can also be $0$.
+We now substitute the above expressions into \eqref{membraneEOM1a} and \eqref{membraneEOM1b} to get,
+\begin{align}
+ \sum_{m,n}\Omega_{mn}C^0_{mn}\cos(m\phi)&J_m(\mu_{mn}r)\nonumber\\
+ &=p_0-\sum_{q,s}\sum_{l}\left[\Lambda_{qs}C^0_{ql}+\Gamma_{qs}C^L_{ql}\right]\lambda_{qsl}f_{qs}(r,\phi)\label{membraneEOM2a}\\
+ \sum_{m,n}\Omega_{mn}C^L_{mn}\cos(m\phi)&J_m(\mu_{mn}r)\nonumber\\
+ &=p_L-\sum_{q,s}\sum_{l}\left[\Gamma_{qs}C^0_{ql}+\Lambda_{qs}C^L_{ql}\right]\lambda_{qsl}f_{qs}(r,\phi)\label{membraneEOM2b}
+\end{align}
+where we have defined
+\begin{align}
+ &\Omega_{mn}=\rho_M d\left(\omega^2-2j\alpha\omega-\omega^2_{mn}\right),\\
+ &\Lambda_{qs}=\rho\omega^2 \frac{\cot(\zeta_{qs}L)}{\zeta_{qs}},\\
+ &\Gamma_{qs}=\frac{\rho\omega^2}{\zeta_{qs}\sin(\zeta_{qs}L)},\\
+ &f_{qs}(r,\phi)=\cos(q\phi)J_q(\nu_{qs}r)
+\end{align}
+We now multiply both sides of \eqref{membraneEOM2a} and \eqref{membraneEOM2b} with the membrane modes and
+integrate over the circle to get,
+\begin{align}
+ \Omega_{mn}C^0_{mn}=p_0K_{mn}-\sum_{s,l}\left[\Lambda_{ms}C^0_{ml}+\Gamma_{ms}C^L_{ml}\right]\lambda_{msl}\widetilde{\lambda}_{msn}\\
+ \Omega_{mn}C^L_{mn}=p_LK_{mn}-\sum_{s,l}\left[\Gamma_{ms}C^0_{ml}+\Lambda_{ms}C^L_{ml}\right]\lambda_{msl}\widetilde{\lambda}_{msn}
+\end{align}
+where, as usual, we have made the following definitions for aesthetic reasons,
+\begin{align}
+ &K_{mn}=\frac{\int^a_0 dS cos(m\phi)J_m(\mu_{mn}r)}{\int^a_0 dS cos^2(m\phi)J^2_m(\mu_{mn}r)}\\
+ &\widetilde{\lambda}_{msn}=\frac{\int^a_0 rdr J_m(\nu_{ms}r)J(\mu_{mn}r)}{\int^a_0 rdrJ^2_m(\mu_{mn}r)}
+\end{align}
+In order to get a more symmetric looking expression, we can redefine $\lambda$ and $\widetilde{\lambda}$
+in the following way,
+\begin{align}
+ &\lambda_{msl}\widetilde{\lambda}_{msn}=\widehat{\lambda}_{msl}\widehat{\lambda}_{msn}\\
+ &\widehat{\lambda}_{msl}=\frac{\int^a_0 rdrJ_m(\nu_{ms}r)J_m(\mu_{ml}r)}{\sqrt{\int^a_0 rdrJ^2_m(\mu_{ml}r)\int^a_0 rdrJ^2_m(\nu_{ms}r)}}
+\end{align}
+
+We see that $I_{mn}$ vanishes for $m\geq1$. This means that we can ignore these modes. We, therefore neglect
+the terms which have $m\neq 0$ to get,
+\begin{align}
+ \Omega_{0n}C^0_{0n}=p_0K_{0n}-\sum_{s,l}\left[\Lambda_{0s}C^0_{0l}+\Gamma_{0s}C^L_{0l}\right]\widehat{\lambda}_{0sl}\widehat{\lambda}_{0sn}\\
+ \Omega_{0n}C^L_{0n}=p_LK_{0n}-\sum_{s,l}\left[\Gamma_{0s}C^0_{0l}+\Lambda_{0s}C^L_{0l}\right]\widehat{\lambda}_{0sl}\widehat{\lambda}_{0sn}
+\end{align}
+We now define a new set of variables, $C_n^+=C_{0n}^L+C_{0n}^0$ and $C_n^-=C_{0n}^L-C_{0n}^0$ and add and subtract the above
+equations to get a system in terms of the newly defined variables,
+\begin{align}
+ \Omega_{0n}C^+_n+\sum_{s,l}\left[\Lambda_{0s}+\Gamma_{0s}\right]C^+_{l}\widehat{\lambda}_{0sl}\widehat{\lambda}_{0sn}=(p_L+p_0)K_{0n}\\
+ \Omega_{0n}C^-_n+\sum_{s,l}\left[\Lambda_{0s}-\Gamma_{0s}\right]C^-_{l}\widehat{\lambda}_{0sl}\widehat{\lambda}_{0sn}=(p_L-p_0)K_{0n}
+\end{align}
+
+\subsection{Comparison}
+We now want to compare our analysis with the previous one where the cavity was said to 
+have an arbitrary shape. Since we reduced both systems to the same form, we can go ahead
+and directly compare the respective coefficients.
+
+\end{document}
+
+

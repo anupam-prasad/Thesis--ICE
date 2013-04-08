@@ -1,0 +1,51 @@
+\documentclass{beamer}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{beamerthemeStockton}
+
+\title{Vibration of Cavity Backed Membranes}
+\author{Anupam Prasad Vedurmudi}
+\begin{document}
+\begin{frame}
+ \titlepage
+\end{frame}
+
+\section{Arbitrary Cavity}
+\subsection{Single Membrane}
+\begin{frame}
+ We first consider a rigidly clamped circular membrane of radius $a$ backed by an air cavity
+ of volume $V_0$.
+\end{frame}
+
+\begin{frame}
+ For a given configuration of the membrane, the change in volume of the container
+ is given by,
+ \begin{equation}\label{volchange1}
+  \Delta V(t)=-\int_Su(r,\phi,t)dS
+ \end{equation}
+\end{frame}
+
+\subsection{Coupled Membranes}
+\begin{frame}
+ Suppose we have a periodic external pressure on both membranes given by,
+ \begin{align}
+  p_0e^{i\omega t}&=pe^{ikL\sin(\theta)/2}e^{i\omega t}\\
+  p_Le^{i\omega t}&=pe^{-ikL\sin(\theta)/2}e^{i\omega t}
+ \end{align}
+ \end{frame}
+ 
+ \begin{frame}
+ We can expand the solution of the membrane equations in terms of the solution
+ of the free equation as,
+ \begin{equation}
+  u_{0/L}(r,\phi,t)=\sum_{m,n}C^{0/L}_{mn}\cos(m\phi)J_m(\mu_{mn}r)e^{j\omega t}
+ \end{equation}
+ 
+ Following \eqref{volchange1}, the change in volume of the container at a given instant of time is given by,
+ \begin{equation}
+  \Delta V(t)=-\int_S(u_0+uL)dS
+ \end{equation}
+
+\end{frame}
+
+\end{document}

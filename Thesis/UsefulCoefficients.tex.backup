@@ -1,0 +1,49 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%opening
+\title{Useful Coefficients}
+\author{Anupam Prasad Vedurmudi}
+\date{}
+\begin{document}
+
+\maketitle
+Final expression for volume displacements of the membranes.
+\begin{align}
+ S_0=G_{ipsi}p_0+G_{contra}p_L\\
+ S_L=G_{ipsi}p_L+G_{contra}p_0
+\end{align}
+
+Defining the other useful objects in terms of the membrane/cylinder properties
+\begin{align}
+ \frac{1}{\Lambda}&=\sum_{m,n}\frac{\left(\int dS f_{mn}(r,\phi)\right)^2}{\Omega_{mn}\int dS f^2_{mn}(r,\phi)}\\
+ \Omega_{mn}&=\rho_m d \left(\omega^2-2j\alpha\omega-\omega^2_{mn}\right)\\
+\end{align}
+As we will see, the above definition of $\Lambda$ makes subsequent calculations simpler.
+
+Easier to calculate the sum and difference of the membrane displacements.
+\begin{align}
+ S^+&=(S^L+S^0)=\frac{p_L+p_0}{\Lambda+\Gamma^+}\\
+ S^-&=(S^L-S^0)=\frac{p_L-p_0}{\Lambda+\Gamma^-}
+\end{align}
+Where,
+\begin{align}
+ \Gamma^+=\frac{\rho c\omega \cot \frac{kL}{2}}{\pi a^2_{cyl}}\\
+ \Gamma^-=\frac{\rho c\omega \tan \frac{kL}{2}}{\pi a^2_{cyl}}
+\end{align}
+We therefore have,
+\begin{align}
+ G_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma^+}+\frac{1}{\Lambda+\Gamma^-}\right)/2\\
+ G_{contra}&=\left(\frac{1}{\Lambda+\Gamma^+}-\frac{1}{\Lambda+\Gamma^-}\right)/2
+\end{align}
+
+
+
+
+
+
+\end{document}
+
+

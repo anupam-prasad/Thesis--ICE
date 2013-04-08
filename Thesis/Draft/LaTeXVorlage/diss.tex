@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%            LMU-Vorlage              %%
+%%                                     %%
+%%         zur Erstellung einer        %%
+%%   Dissertation mit pdflatex/latex   %%
+%%                                     %%
+%%  (2002) Robert Dahlke               %%
+%%         & Sigmund Stintzing         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{book}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Zusaetzliche Pakete  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{a4wide}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+%\usepackage{german}
+\usepackage[bookmarks]{hyperref}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Definition der Kopfzeile %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancyplain}
+\renewcommand{\chaptermark}[1]%
+         {\markboth{\thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]%
+         {\markright{\thesection\ #1}}
+\lhead[\fancyplain{}{\bfseries\thepage}]%
+    {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]%
+    {\fancyplain{}{\bfseries\thepage}}
+\cfoot{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Definition des Deckblattes und der Titelseite  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\LMUTitle}[9]{
+  \thispagestyle{empty}
+  \vspace*{\stretch{1}}
+  {\parindent0cm
+   \rule{\linewidth}{.7ex}}
+  \begin{flushright}
+
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\Huge
+    #1\\
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\large
+    #2
+    \vspace*{\stretch{1}}
+  \end{flushright}
+  \rule{\linewidth}{.7ex}
+  \vspace*{\stretch{5}}
+  \begin{center}
+    \includegraphics[width=2in]{siegel}
+  \end{center}
+  \vspace*{\stretch{1}}
+  \begin{center}\sffamily\LARGE{#5}\end{center}
+  \newpage
+  \thispagestyle{empty}
+
+  \cleardoublepage
+  \thispagestyle{empty}
+
+  \vspace*{\stretch{1}}
+  {\parindent0cm
+  \rule{\linewidth}{.7ex}}
+  \begin{flushright}
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\Huge
+    #1\\
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\large
+    #2
+    \vspace*{\stretch{1}}
+  \end{flushright}
+  \rule{\linewidth}{.7ex}
+
+  \vspace*{\stretch{3}}
+  \begin{center}
+    \Large Dissertation\\
+    \Large an der #4\\
+    \Large der Ludwig--Maximilians--Universit\"{a}t\\
+    \Large M\"unchen\\
+    \vspace*{\stretch{1}}
+    \Large vorgelegt von\\
+    \Large #2\\
+    \Large aus #3\\
+    \vspace*{\stretch{2}}
+    \Large M\"unchen, den #6
+  \end{center}
+
+  \newpage
+  \thispagestyle{empty}
+
+  \vspace*{\stretch{1}}
+
+  \begin{flushleft}
+    \large Erstgutachter:  #7 \\[1mm]
+    \large Zweitgutachter: #8 \\[1mm]
+    \large Tag der m\"{u}ndlichen Pr\"{u}fung: #9\\
+  \end{flushleft}
+
+  \cleardoublepage
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Beginn des Dokuments  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+  \frontmatter
+
+
+  \LMUTitle
+      {Modelling Internally Coupled Ears
+       }               % Titel der Arbeit
+      {Anupam Prasad Vedurmudi}                       % Vor- und Nachname des Autors
+      {Kolkata, Indien}                             % Geburtsort des Autors
+      {Fakult\"{a}t f\"{u}r Physik}                         % Name der Fakultaet
+      {M\"{u}nchen 2013}                          % Ort und Jahr der Erstellung
+      {\today}                            % Tag der Abgabe
+      {Prof. Dr. J. Leo van Hemmen}                          % Name des Erstgutachters
+      {Zweitgutachter}                         % Name des Zweitgutachters
+      {Pr\"ufungsdatum}                         % Datum der muendlichen Pruefung
+
+
+  \tableofcontents
+  \markboth{Table of Contents}{Table of Contents}
+
+
+  \listoffigures
+  \markboth{List of Figures}{List of Figures}
+
+
+  \listoftables
+  \markboth{List of Tables}{List of Tables}
+  \cleardoublepage
+
+
+  \markboth{Abstract}{Abstract}
+  \include{zusammenfassung}
+
+
+  \mainmatter\setcounter{page}{1}
+  \include{CavityPressure}
+  \include{kap_02}
+  %\include{kap_03}
+  %\include{kap_04} usw.
+  \include{anhang}
+
+
+  \backmatter
+  \include{bibliographie}
+  \markboth{}{}
+
+
+  \include{danksagung}
+
+
+%  \include{lebenslauf}
+
+
+\end{document}

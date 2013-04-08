@@ -1,0 +1,140 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%opening
+\title{ICE Model }
+\author{Anupam Prasad Vedurmudi}
+\date{}
+\begin{document}
+
+\maketitle
+In the ICE model, the mouth canal is assumed to be a cavity of volume $V_0$ 
+with an arbitrary shape. Two rigidly clamped circular membranes are placed some distance
+apart. We will later argue that if the cavity is small enough in some sense, 
+the exact positions of the membranes and the shape of the cavity will not be 
+important.
+
+We define $(m,n)$ as the modes of the homogeneous cylindrical wave equation such that,
+\begin{equation}\label{CylindricalHarmonic}
+ (m,n)\equiv cos(m\phi)J_m\left(\mu_{mn}r\right)
+\end{equation}
+Where $J_m$ is the Bessel function of the first kind of order $m$ and $J_m\left(\mu_{mn}a\right)=0$. 
+Here, $\mu_{mn}a$ is the $n^{th}$ zero of $J_m$. 
+
+\subsection{Vibration of a Circular Membrane}
+The free vibrations of a clamped membrane of radius $a$ are governed by the 2D wave equation,
+\begin{equation}\label{membrane1}
+  \frac{1}{c_M^2}\frac{\partial^2u(r,\phi,t)}{\partial t^2}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)+
+ \frac{1}{r^2}\frac{\partial^2 u(r,\phi,t)}{\partial \phi^2}
+\end{equation}
+Subject to the boundary condition, $u(a,\phi,t)=0$. Here, $c_M$ is the propagation velocity
+of waves on the surface of the membrane. It is expressed in terms of the membrane density $\	$, thickness $d$ and tension $T$ as, 
+$c_M=\sqrt{T/\rho_M d}$.
+\begin{equation}
+ u(r,\phi,t)=\sum_{m,n}\left(M^+_{mn}e^{jm\phi}+M^-_{mn}e^{-im\phi}\right)J_m(\mu_{mn}r)e^{j\omega_{mn}t}
+\end{equation}
+Using the fact that the above expression has to satisfy periodic boundary conditions in $\phi$, the
+above equation reduces to, 
+\begin{equation}\label{membranegeneral}
+ u(r,\phi,t)=\sum_{m,n}C_{mn}\cos(m\phi)J_m(\mu_{mn}r)e^{j\omega_{mn}t}
+\end{equation}
+$\mu_{mn}$ corresponds to the $n^{th}$ zero of $J_m$, i.e., $\mu_{mn}=k_{mn}/a$  and $\omega_{mn}=c_M\mu_{mn}$.
+\subsubsection{Forced and Damped Vibration}
+The forced vibrations of a damped circular membrane is governed by the equation,
+\begin{align}\label{ForcedMembrane}
+-\frac{1}{c_M^2}\frac{\partial^2u(r,\phi,t)}{\partial t^2}&+2\alpha\frac{\partial u(r,\phi,t)}{\partial t}\nonumber\\
+&+\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)+\frac{1}{r^2}\frac{\partial^2 u(r,\phi,t)}{\partial \phi^2}=\frac{1}{\rho_Md}pe^{j\omega t}
+\end{align}
+Here, the membrane is forced by a periodic pressure $pe^{j\omega t}$ uniformly over its surface and $\alpha$ is
+the damping coefficient. We look for solutions of the form,
+\begin{equation}\label{forcedmembranegeneral}
+ u_{0/L}(r,\phi,t)=\sum_{m,n}C^{0/L}_{mn}\cos(m\phi)J_m(\mu_{mn}r)e^{j\omega t}
+\end{equation}
+Where $0$ and $L$ refer to the ipsi- and contra-lateral membranes respectively.
+\subsubsection{Conventions}
+
+\subsection{Vibration of Coupled Unloaded Membranes}
+We first treat the case in which we have two circular coupled by a cylindrical cavity. The forcing
+on both tympani is given by,
+\begin{align}
+ &p_0=pe^{-jk\frac{L}{2}\sin\theta}e^{j\omega t}\\
+ &p_L=pe^{jk\frac{L}{2}\sin\theta}e^{j\omega t}
+\end{align}
+This means that the sound pressure on both tympani has the same amplitude but differ in phase by, $kL\sin\theta$ where,
+$\theta$ is the angle the sound source makes with the central axis of the head. We can assume that
+the instantaneous pressure is constant over the tympanum as its dimensions are much smaller than 
+the wavelength of the sound wave.
+
+According to our convention, the positive displacement of both membranes is into the cavity. 
+At a given instant of time, the change in cavity volume is given by,
+\begin{align}
+ \Delta V&=-\int dS \sum_{m,n}\left(C^0_{mn}+C^L_{mn}\right)\cos m\phi J_m(\mu_{mn}r)e^{j\omega t}\nonumber\\
+ &=-\sum_{m,n}\left(C^0_{mn}+C^L_{mn}\right)L_{mn}e^{j\omega t}\nonumber\\
+ &=-\sum_{n}\left(C^0_{0n}+C^L_{0n}\right)L_{0n}e^{j\omega t}\label{CavitydV}
+\end{align}
+Where we have made the definition, $L_{mn}=\int dS\cos m\phi J_m(\mu_{mn}r)$. The final step is
+due to the fact that $L_{mn}=0$ for $m\neq 0$.
+
+In the next step, we assume that the changes in the pressure of the gas are fast enough to be 
+assumed to be adiabatic. This means that, we can assume the change in pressure to be 
+uniform in the cavity. Using the equation of state for a reversible adiabatic process we can
+get the change in pressure corresponding to the above change in volume,
+\begin{align}
+ P_0V_0^\gamma&=(P_0+\Delta P)(V_0+\Delta V)^\gamma\nonumber\\
+ \Rightarrow \Delta P&=-\gamma\frac{P_0}{V_0}\Delta V+\mathcal{O}(\Delta V^2)
+\end{align}
+$P_0$ is the equilibrium atmospheric pressure. In the second step we express the change
+in pressure upto first order in $\Delta V$.
+
+Now, we substitute \eqref{forcedmembranegeneral} on the LHS of \eqref{ForcedMembrane} and the expressions
+for sound pressure and $\Delta p$ on the RHS. This gives us,
+\begin{equation}
+ \rho_Md\sum_{m,n}\left(\omega^2-2j\alpha\omega-\omega^2_{mn}\right)C^{0/L}_{mn}\cos(m\phi)J_m(\mu_{mn}r)e^{j\omega t}=p_{0/L}-\Delta p
+\end{equation}
+We then express $\Delta p$ in terms of the membrane modes and integrate out the $(m,n)$ modes on either
+side of the above equation to get,
+\begin{align}
+ \Omega_{0n}C^{0}_{0n}&=p_{0}K_{0n}-\gamma\frac{P_0}{V_0}K_{0n}\sum_{l}\left(C^0_{0l}+C^L_{0l}\right)L_{0l}\label{ipsimodes}\\
+ \Omega_{0n}C^{L}_{0n}&=p_{L}K_{0n}-\gamma\frac{P_0}{V_0}K_{0n}\sum_{l}\left(C^0_{0l}+C^L_{0l}\right)L_{0l}\label{contramodes}
+\end{align}
+Where we've again made use of the fact that $L_{mn}=0$ for $m\neq 0$ and made the following definitions,
+\begin{align}
+ \Omega_{mn}&=\rho_Md\left(\omega^2-2j\alpha\omega-\omega^2_{mn}\right)\\
+ K_{mn}&=\frac{L_{mn}}{\int dS\cos^2 m\phi J^2_m(\mu_{mn}r)}
+\end{align}
+In order to solve the above system of equations we first add and subtract \eqref{ipsimodes} and \eqref{contramodes}
+to get a new set of equations,
+\begin{align}
+&C^+_n+2\gamma\frac{P_0}{V_0}\mathcal{M}_n\sum_{l}C^+_lL_{0l}=(p_L+p_0)\mathcal{M}_n\label{plusmodes}\\
+&C^-_n=(p_L-p_0)\mathcal{M}_n\label{minusmodes}
+\end{align} 
+Where we have defined, $\mathcal{M}_n=\frac{K_{0n}}{\Omega_{0n}}$ and the new variables,
+\begin{align}
+ C^+_n=C^L_{0n}+C^0_{0n}\\
+ C^-_n=C^L_{0n}-C^0_{0n}
+\end{align}
+We see that for a given $n$, $C^-_n$ is exactly known. Equation \eqref{plusmodes} can be solved approximately by cutting off the infinite summation at some point.
+This gives us a finite system of linear equations for the approximate coefficients $\widetilde{C}^+_n$. Written
+in matrix form this gives us,
+\begin{equation}\label{plusapprox}
+ \left(\mathbf{I}+\mathbf{d\otimes e}\right)\widetilde{\mathbf{C}}^+=\mathbf{p}\\
+\end{equation}
+Here, $\mathbf{C}$ is the column vector representing the approximate coefficients, $\mathbf{I}$ is the
+identity matrix and $\mathbf{p}$ is the column vector representing the R.H.S of \eqref{plusmodes}. $\otimes$ is
+the Kronecker product of the two vectors $\mathbf{d}$ and $\mathbf{e}$. They are given by,
+\begin{align}
+ \mathbf{d}_n&=2\gamma\frac{P_0}{V_0}\mathcal{M}_n\\
+ \mathbf{e}_n&=K_{0n}
+\end{align}
+i.e., $\mathbf{D}$ is a diagonal matrix. Finally, we express the approximate coefficients in the expansion
+of the membrane modes as,
+\begin{align}
+ \widetilde{C}^0_n=(\widetilde{C}^+_n-C^-_n)/2 \label{ipsiapproxfinal}\\
+ \widetilde{C}^L_n=(\widetilde{C}^+_n+C^-_n)/2 \label{contraapproxfinal}
+\end{align}
+
+
+\end{document}
+

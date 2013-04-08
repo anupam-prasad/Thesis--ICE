@@ -1,0 +1,58 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%opening
+\title{Exact Steady State Pressure in a Cylindrical Cavity}
+\author{Anupam Prasad Vedurmudi}
+\date{}
+\begin{document}
+
+\maketitle
+
+\subsection{Internal Cavity}
+Upon solving the wave equation inside the cylindrical,  the steady state pressure disturbance $p$ in the internal 
+cavity is given by the following equation,
+
+\begin{align}\label{CavityCylSpec2}
+ \delta p(x,r,\phi;t)&=\sum_{m,n}\left[A_{mn}e^{j\zeta_{mn}x}+B_{mn}e^{-i\zeta_{mn}x}\right]\cos(m\phi) J_m(\nu_{mn}r)e^{j\omega t}\\
+ &=\delta p(x,r,\phi)e^{j\omega t}
+\end{align}
+Where $m,n=0,1,2,\ldots$. We have obtainde the above result after applying the following boundary conditions,
+\begin{itemize}
+ \item $\mathbf{n}.\nabla\delta p=0$ at $r=a$
+ \item $\delta p(x,r,0;t)=\delta p(x,r,2\pi;t)$
+ \item $\frac{\partial\delta p}{\partial\phi}\rvert_{\phi=0}=\frac{\partial\delta p}{\partial\phi}\rvert_{\phi=2\pi}$
+\end{itemize}
+
+The membrane equations of motion are given by,
+\begin{align}
+ -\ddot{u}_0-2\alpha\dot{u}_0+c^2_M\nabla u_0&=\frac{1}{\rho_Md}\left[p_0e^{j\omega t}-\delta p(0,r,\phi;t)\right]\label{membrane0}\\
+ -\ddot{u}_L-2\alpha\dot{u}_L+c^2_M\nabla u_L&=\frac{1}{\rho_Md}\left[p_Le^{j\omega t}-\delta p(L,r,\phi;t)\right]\label{membraneL}
+\end{align}
+
+We assume the time component of the membrane displacements to be separable in the steady state,
+\begin{equation}
+ u_{0/L}(r,\phi,t)=u_{0/L}(r,\phi)e^{j\omega t}
+\end{equation}
+At the membrane surface inside the cavity, we equate the membrane velocity with the velocity of the air fluid
+particle. This gives us,
+\begin{align}
+ u_{0}(r,\phi)&=\frac{1}{\rho\omega^2}\frac{\partial\delta p}{\partial x}\rvert_{x=0}\label{cavitybc1}\\
+ u_{L}(r,\phi)&=-\frac{1}{\rho\omega^2}\frac{\partial\delta p}{\partial x}\rvert_{x=L}\label{cavitybc2}
+\end{align}
+Where we've used the convention that directions into the cavity are postive and those outward from the
+cavity are negative.
+
+It might be tempting to use the expression for $\delta p$ in \eqref{CavityCylSpec2} and substitute for $u_{0/L}$ in \eqref{membrane0} and \eqref{membraneL}
+to get expressions for the coefficients $A_{mn}$ and $B_{mn}$. The problem here is that, there is no direct way to impose the
+membrane boundary conditions - i.e. $u_{0/L}(a,\phi;t)=0$.
+
+In order to study the pressure inside the membrane, we can consider the following simpler problem - Given a fixed velocity for both the membranes, what
+is the pressure distribution inside the cavity?  This effectively means that we use the boundary conditions \eqref{cavitybc1} and \eqref{cavitybc2} to 
+calculate the pressure coefficients.
+
+\end{document}
+
+

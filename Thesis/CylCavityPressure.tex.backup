@@ -1,0 +1,37 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%opening
+\title{Exact Steady State Pressure in a Cylindrical Cavity}
+\author{Anupam Prasad Vedurmudi}
+\date{}
+\begin{document}
+
+\maketitle
+
+\subsection{Internal Cavity}
+Upon solving the wave equation inside the cylindrical,  the steady state pressure disturbance $p$ in the internal 
+cavity is given by the following equation,
+
+\begin{equation}\label{CavityCylSpec2}
+ \delta p(x,r,\phi,t)=\sum_{m,n}\left[A_{mn}e^{j\zeta_{mn}x}+B_{mn}e^{-i\zeta_{mn}x}\right]\cos(m\phi) J_m(\nu_{mn}r)e^{j\omega t}
+\end{equation}
+Where $m,n=0,1,2,\ldots$. We have obtainde the above result after applying the following boundary conditions,
+\begin{itemize}
+ \item $\mathbf{n}.\nabla\delta p=0$ at $r=a$
+ \item $\delta p(r,0,t)=\delta p(r,2\pi,t)$
+ \item $\frac{\partial\delta p}{\partial\phi}\rvert_{\phi=0}=\frac{\partial\delta p}{\partial\phi}\rvert_{\phi=2\pi}$
+\end{itemize}
+
+The membrane equations of motion are given by,
+\begin{align}
+ -\ddot{u}_0-2\alpha\dot{u}_0+c^2_M\nabla u_0&=\frac{1}{\rho_Md}\left[p_0e^{j\omega t}-\delta p(0,r,\phi,t)\right]\\
+ -\ddot{u}_L-2\alpha\dot{u}_L+c^2_M\nabla u_L&=\frac{1}{\rho_Md}\left[p_Le^{j\omega t}-\delta p(L,r,\phi,t)\right]
+\end{align}
+
+  
+\end{document}
+
+
