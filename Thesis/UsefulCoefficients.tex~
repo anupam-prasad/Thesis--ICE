@@ -30,8 +30,8 @@ Easier to calculate the sum and difference of the membrane displacements.
 \end{align}
 Where,
 \begin{align}
- \Gamma^+=\frac{\rho c\omega \cot \frac{kL}{2}}{\pi a^2_{cyl}}\\
- \Gamma^-=-\frac{\rho c\omega \tan \frac{kL}{2}}{\pi a^2_{cyl}}
+ \Gamma^+=-\frac{\rho c\omega \cot \frac{kL}{2}}{\pi a^2_{cyl}}\\
+ \Gamma^-=\frac{\rho c\omega \tan \frac{kL}{2}}{\pi a^2_{cyl}}
 \end{align}
 We therefore have,
 \begin{align}
@@ -40,9 +40,20 @@ We therefore have,
 \end{align}
 It is also convenient to define,
 \begin{align}
- \frac{G_{contra}}{G_{ipsi}}&=-\frac{\Lambda+\frac{\rho c\omega \cot kL}{\pi a^2_{cyl}}}{\frac{\rho c\omega \csc kL}{\pi a^2_{cyl}}}\\
-			     &=-\frac{\pi a^2_{cyl}\Lambda}{\rho c\omega}\sin kL- \cos kL
+ \frac{G_{contra}}{G_{ipsi}}&=\frac{\frac{\rho c\omega \csc kL}{\pi a^2_{cyl}}}{\Lambda-\frac{\rho c\omega \cot kL}{\pi a^2_{cyl}}}\\
+			     &=\frac{1}{\eta\sin kL- \cos kL}
 \end{align}
+Where we've also defined,
+\begin{equation}
+ \eta=\frac{\pi a^2_{cyl}\Lambda}{\rho c\omega}
+\end{equation}
+
+The pressure coefficients,
+\begin{align}
+ A&=-\frac{1}{\eta \sin kL}\left(S^0e^{-jkL}+S^L\right)\\
+ B&=-\frac{1}{\eta \sin kL}\left(S^0e^{jkL}+S^L\right)
+\end{align}
+
 
 
 

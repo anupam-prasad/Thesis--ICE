@@ -3,15 +3,19 @@ Introduction
  -> Hearing in vertebrates
  -> Localization techniques
  -> Coupled ears - directional sensitivity -- overall sensitivity trade-off.
+			--> Insects, Birds, Frogs, Lizards
  -> Previous work - Vossen, Manley, Dalsgaard, Carr, Köppl
 
 Main Body
  -> Model description/justification
+		   	--> Discuss differences with mammalian ear - extracolumella vs stapes
+			--> Input, diffraction effects
  -> Equations of motion --> Membrane, sectoral membrane, infinite mass extracolumella
+			    ---> Membrane modes	
 			--> Cavity - general cavity/cylindrical cavity
 			--> Pressure distribution, plane-wave approximation
 			--> Volume displacement
-			--> Circuit model??
+			--> Circuit model - explain why it will not work in this case
  -> Comparison of results --> Velocity Amplitude
 			  --> Amplitude difference
 			  --> Directional response for frequency
