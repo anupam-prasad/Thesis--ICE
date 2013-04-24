@@ -50,8 +50,8 @@ Where we've also defined,
 
 The pressure coefficients,
 \begin{align}
- A&=-\frac{1}{\eta \sin kL}\left(S^0e^{-jkL}+S^L\right)\\
- B&=-\frac{1}{\eta \sin kL}\left(S^0e^{jkL}+S^L\right)
+ A&=-\frac{\Lambda}{\eta \sin kL}\left(S^0e^{-jkL}+S^L\right)\\
+ B&=-\frac{\Lambda}{\eta \sin kL}\left(S^0e^{jkL}+S^L\right)
 \end{align}
 
 
