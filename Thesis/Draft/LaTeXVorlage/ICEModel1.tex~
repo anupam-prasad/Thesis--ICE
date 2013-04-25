@@ -1,0 +1,27 @@
+\chapter{The ICE Model}
+
+Our goal is to model the
+middle-ear of the vertebrates in question in the simplest possible way while ensuring an accurately replication of its main properties. 
+The main components of such a 
+system are the mouth-cavity, the two tympani and the two extracollumellar
+footplates (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
+not conducive to an analytical treatment. Moreover, the system corresponds to a pair of second-order PDE's with
+moving boundaries. For this reason we will need to make further approximations for the sake of expediency.
+
+\section{Description}
+In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
+both ends by rigidly clamped (baffled) circular membranes. As shown in \ref{oldICE}, The length of the cylinder was chosen to be equal
+to the interaural distance. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
+distribution inside the cavity is easy to calculate - something that is even more important at higher frequencies
+as the pressure distribution inside the cavity is highly non-uniform. 
+
+The problem with this description is the fact that the volume of the model's cavity 
+is an order of magnitude smaller than that of the mouth-cavity in the corresponding animal with similar
+tympani and a the same interaural distance. In general, a smaller volume results in a stronger coupling - both in terms of an increased iTD and an increased
+iLD. For this reason, the earlier model overestimates the iTDs at low frequencies and the iLDs at
+high frequencies respectively.
+
+\section{Vibration of the Membrane}
+
+\subsection{Circular Membrane}
+\subsection{Sectoral Membrane}
