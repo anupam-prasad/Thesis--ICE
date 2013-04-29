@@ -28,7 +28,6 @@ is therefore given by the $3$D acoustic wave-equation in cylindrical polar coord
  \frac{1}{c^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial t^2}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
  +\frac{1}{r^2}\frac{\partial p(x,r,\phi,t)}{\partial \phi^2}+\frac{\partial p(x,r,\phi,t)}{\partial x^2}
 \end{equation}
-where $c$ is the sound propagation velocity.
 
 \section{Vibration of the Membrane}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
@@ -37,8 +36,7 @@ which corresponds to the tympanum loaded by the extracollumella.
 \subsection{Circular Membrane}
 The equation of motion for a rigidly clamped circular membrane of radius $a$ is given by,
 \begin{equation}\label{membraneequation1}
- -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\left(\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
- +\frac{1}{r^2}\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right)=\frac{1}{\rho_m d}\Psi(r,\phi,t)
+ -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\Delta u(r,\phi,t)=\frac{1}{\rho_m d}\Psi(r,\phi,t)
 \end{equation}
-subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$.
+subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$ and $\Delta$ is the $2$D Laplace operator in polar coordinates.
 \subsection{Sectoral Membrane}

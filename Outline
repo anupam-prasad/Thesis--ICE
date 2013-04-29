@@ -10,6 +10,7 @@ Main Body
  -> Model description/justification
 		   	--> Discuss differences with mammalian ear - extracolumella vs stapes
 			--> Input, diffraction effects -- Spherical Head Model
+			--> Compensate for tongue volume
  -> Equations of motion --> Membrane, sectoral membrane, infinite mass extracolumella
 			    ---> Membrane modes	
 			--> Cavity - general cavity/cylindrical cavity
@@ -20,7 +21,8 @@ Main Body
 			  --> Amplitude difference
 			  --> Directional response for frequency
 			  --> Hearing Range
-			  --> iTD, iLD range
+			  --> iTD, iLD range - low-pass characteristic
+			  --> Overall sensitivity Trade-off
 			
 Conclusion
 
@@ -39,4 +41,8 @@ To Plot - For Tokay and Hemidactylus
 			--> vs direction+freq - Density Plot
                         --> vs direction for particular frequencies
  -> Phase delay
+
+Appendices
+
+Linear Acoustics
  

@@ -113,8 +113,6 @@
 }
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Beginn des Dokuments  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -166,7 +164,7 @@
   \include{anhang}
 
 
-  \backmatter
+  %\backmatter
   \include{bibliographie}
   \markboth{}{}
 

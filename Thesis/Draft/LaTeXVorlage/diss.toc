@@ -2,11 +2,12 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}The ICE Model}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Description}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Vibration of the Membrane}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Circular Membrane}{3}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Sectoral Membrane}{3}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.2}Internal Cavity}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Vibration of the Membrane}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Circular Membrane}{4}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Sectoral Membrane}{4}{subsection.2.3.2}
 \contentsline {chapter}{\numberline {3}Analysis of the ICE--Model}{5}{chapter.3}
 \contentsline {chapter}{\numberline {4}Conclusion}{7}{chapter.4}
-\contentsline {chapter}{\numberline {A}First Appendix Chapter}{9}{appendix.A}
+\contentsline {chapter}{\numberline {A}Acoustic Theory}{9}{appendix.A}
 \contentsline {chapter}{\numberline {B}Second Appendix Chapter}{11}{appendix.B}
-\contentsline {chapter}{Acknowledgements}{13}{appendix.B}
+\contentsline {chapter}{Acknowledgements}{14}{appendix*.5}

@@ -10,7 +10,7 @@ moving boundaries. For this reason we will need to make further approximations f
 
 \section{Description}
 In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
-both ends by rigidly clamped (baffled) circular membranes. As shown in \ref{oldICE}, The length of the cylinder was chosen to be equal
+both ends by rigidly clamped (baffled) circular membranes. As shown in \cite{vossenthesis}, The length of the cylinder was chosen to be equal
 to the interaural distance. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
 distribution inside the cavity is easy to calculate - something that is even more important at higher frequencies
 as the pressure distribution inside the cavity is highly non-uniform. 
@@ -21,7 +21,24 @@ tympani and a the same interaural distance. In general, a smaller volume results
 iLD. For this reason, the earlier model overestimates the iTDs at low frequencies and the iLDs at
 high frequencies respectively.
 
-\section{Vibration of the Membrane}
+\section{Internal Cavity}
+We assume that the air inside the cavity obeys linear acoustics (described briefly in \ref{acousticappendix}). The pressure distribution inside the cavity
+is therefore given by the $3$D acoustic wave-equation in cylindrical polar coordinates,
+\begin{equation}\label{pressurewaveeqn}
+ \frac{1}{c^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial t^2}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
+ +\frac{1}{r^2}\frac{\partial p(x,r,\phi,t)}{\partial \phi^2}+\frac{\partial p(x,r,\phi,t)}{\partial x^2}
+\end{equation}
+where $c$ is the sound propagation velocity.
 
+\section{Vibration of the Membrane}
+As a preliminary exercise, we will first derive expressions for the free and force-driven
+vibrations of a circular membrane. We will then use our results to move on to the sectoral membrane 
+which corresponds to the tympanum loaded by the extracollumella.
 \subsection{Circular Membrane}
+The equation of motion for a rigidly clamped circular membrane of radius $a$ is given by,
+\begin{equation}\label{membraneequation1}
+ -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\left(\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
+ +\frac{1}{r^2}\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right)=\frac{1}{\rho_m d}\Psi(r,\phi,t)
+\end{equation}
+subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$.
 \subsection{Sectoral Membrane}
