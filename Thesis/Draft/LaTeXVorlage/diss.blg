@@ -12,44 +12,44 @@ The style file: jkthesis.bst
 A level-1 auxiliary file: danksagung.aux
 Database file #1: literatur.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 1 entry,
+You've used 2 entries,
             3023 wiz_defined-function locations,
-            901 strings with 7657 characters,
-and the built_in function-call counts, 216 in all, are:
-= -- 19
-> -- 7
+            907 strings with 7775 characters,
+and the built_in function-call counts, 442 in all, are:
+= -- 36
+> -- 14
 < -- 0
-+ -- 3
-- -- 2
-* -- 12
-:= -- 49
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 3
++ -- 6
+- -- 4
+* -- 24
+:= -- 87
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 9
-empty$ -- 17
-format.name$ -- 2
-if$ -- 39
+cite$ -- 2
+duplicate$ -- 21
+empty$ -- 45
+format.name$ -- 4
+if$ -- 89
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 7
-num.names$ -- 2
-pop$ -- 2
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 11
+num.names$ -- 4
+pop$ -- 9
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 6
 quote$ -- 0
-skip$ -- 6
+skip$ -- 13
 stack$ -- 0
-substring$ -- 5
-swap$ -- 2
+substring$ -- 10
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 6
 warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 13
+while$ -- 4
+width$ -- 3
+write$ -- 23

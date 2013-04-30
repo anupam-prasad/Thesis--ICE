@@ -1,9 +1,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Vorlage einer Bibtex Datenbank  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@phdthesis{vossenthesis,
+  author      = { Vo\ss{}en Christine },
+  title       = { Auditory Information Processing in Systems with Internally Coupled Ears                        },
+  school        = { Technische Universit\"{a}t M\"{u}nchen                  },
+  year        = { 2010                                      }
+}
 
 @Article{Autor1:02,
-  author    = { Vo Nachname   },
+  author    = { Vorname Nachname   },
   title     = { Titel des Artikels },
   journal   = { Journalname        },
   year      = { 2002               },
@@ -25,7 +31,6 @@
     address   = { Princeton                  },
     year      = { 1974                       }
 }
-
 
 
 

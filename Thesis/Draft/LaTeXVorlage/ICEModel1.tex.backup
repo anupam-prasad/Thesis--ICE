@@ -23,11 +23,65 @@ high frequencies respectively.
 
 \section{Internal Cavity}
 We assume that the air inside the cavity obeys linear acoustics (described briefly in \ref{acousticappendix}). The pressure distribution inside the cavity
-is therefore given by the $3$D acoustic wave-equation in cylindrical polar coordinates,
+is therefore given by the $3$D acoustic wave-equation in cylindrical polar coordinates,	
 \begin{equation}\label{pressurewaveeqn}
  \frac{1}{c^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial t^2}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
  +\frac{1}{r^2}\frac{\partial p(x,r,\phi,t)}{\partial \phi^2}+\frac{\partial p(x,r,\phi,t)}{\partial x^2}
 \end{equation}
+where $c$ is the sound propagation velocity. The complete solution must take into account the boundary conditions at and within the cavity walls and the
+ones at the air-membrane interface. We also note that the above equation implies that the animal's mouth is closed, which is typical for a waiting
+animal. In order to solve \eqref{pressurewaveeqn} for a particular frequency $f$ (angular frequency $\omega=2\pi f$), we use the following
+separation ansatz
+\begin{equation}\label{pseparationansatz}
+  p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}
+\end{equation}
+which after substitution into the acoustic wave-equation leads to,
+\begin{equation}\label{pseparationansatz2}
+\begin{split}
+ k^2f(x)g(r)h(\phi)+&f(x)h(\phi)\left[\frac{\partial^2 g(r)}{\partial r^2} + \frac{1}{r}\frac{\partial g(r)}{\partial r}\right] \\
+ &+f(x)g(r)\frac{1}{r^2}\frac{\partial h(\phi)}{\partial \phi}+\frac{\partial^2 f(x)}{\partial x^2}=0
+\end{split}
+\end{equation}
+with $k:=\omega/c$. This yields the following set of equations (ODEs):
+\begin{align}
+ \frac{d^2 f(x)}{dx^2}+k^2_xf(x)&=0\\
+ \frac{d^2 h(\phi)}{d\phi^2}+q^2h(\phi	)&=0\\
+ \frac{\partial^2 g(r)}{\partial r^2} + \frac{1}{r}\frac{\partial g(r)}{\partial r}+\left[(\displaystyle\underbrace{k^2-k^2_x}_{=:\nu^2})-\frac{q^2}{r^2}\right]&=0\label{besselequation1}
+\end{align}
+with separation constants $q$ and $k_x$. The last equation is the Bessel differential equation \cite[p.~313]{copsonbessel} and its general solution is given by,
+\begin{equation}
+ g(r)=C_{qs}J_q(\nu r)+D_{qs}Y_q(\nu r)
+\end{equation}
+where $J_q$ and $Y_q$ are the order-$q$ Bessel functions of the first and second kind respectively. The Bessel function of the second kind can be ignored as it diverges at $r=0$.
+The solutions to the separated equations are therefore given by,
+\begin{equation}
+ f(x)=e^{\pm k_x x},\ h(\phi)=e^{\pm j\phi},\text{and}\ g(r)=J_q(\nu r)
+\end{equation}
+with a specific solution to \eqref{pressurewaveeqn},
+\begin{equation}
+ p(x,r,\phi;t)=\left[(A^+e^{jq\phi}+A^-e^{-jq\phi})e^{jk_xx}+(B^+e^{jq\phi}+B^-e^{-jq\phi})e^{-jk_xx}\right]J_q(\nu r)e^{j\omega t}.
+\end{equation}
+The coefficients $A^\pm$, $B^\pm$, $q$, $k_x$ and $\nu$ will be subsequently determined by the boundary conditions.
+\subsubsection{Pressure Boundary Conditions}
+There are three sets of boundary conditions - 
+\begin{itemize}
+ \item Continuity and smoothness in $\phi$ which is equivalent to $h(0)=h(2\pi)$ and $h^\prime(0)=h^\prime(2\pi)$ where, $h^\prime=dh/d\phi$.
+ \item Vanishing of the normal derivative at the cavity walls - $g^\prime(a_{cyl})=0$ ($a_{cyl}$ is the radius of the cylinder).
+ \item Equating the membrane velocity to the air velocity at the membrane boundaries (to be discussed in the next section).
+\end{itemize}
+The first set of requirements is obvious. The second and third are a result of the so called ``no-penetration'' boundary-conditions
+of fluid-mechanics. They arise from the requirement that at the boundary surface, the normal fluid-particle velocity should vanish. The 
+fluid-particle velocity is related to the pressure by, 
+\begin{equation}\label{pressurevelocityrelation}
+ -\rho\frac{partial \mathbf{v}}{\partial t}=\nabla
+\end{equation}
+
+
+The general solution is therefore given by,
+\begin{equation}\label{pressuregeneral1}
+ p(x,r,\phi;t)=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\left(A_{qs}e^{j\zeta_{qs}x}+B_{qs}e^{-j\zeta_{qs}x}\right)\cos(m\phi)J_q(\nu_{qs}r)e^{j\omega t}
+\end{equation}
+
 
 \section{Vibration of the Membrane}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
@@ -36,7 +90,8 @@ which corresponds to the tympanum loaded by the extracollumella.
 \subsection{Circular Membrane}
 The equation of motion for a rigidly clamped circular membrane of radius $a$ is given by,
 \begin{equation}\label{membraneequation1}
- -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\Delta u(r,\phi,t)=\frac{1}{\rho_m d}\Psi(r,\phi,t)
+ -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\left(\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
+ +\frac{1}{r^2}\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right)=\frac{1}{\rho_m d}\Psi(r,\phi,t)
 \end{equation}
-subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$ and $\Delta$ is the $2$D Laplace operator in polar coordinates.
+subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$.
 \subsection{Sectoral Membrane}

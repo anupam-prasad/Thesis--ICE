@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  29 APR 2013 22:16
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  30 APR 2013 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,55 +386,63 @@ Chapter 1.
 
 ]
 Chapter 2.
-[3]) [4]
+[3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
+ [4]) [5]
 \openout2 = `ModelAnalysis.aux'.
 
- (./ModelAnalysis.tex
-Chapter 3.
-) [5
+
+(./ModelAnalysis.tex [6
 
 
 
 ]
+Chapter 3.
+) [7]
 \openout2 = `Conclusion.aux'.
 
- (./Conclusion.tex [6
+ (./Conclusion.tex [8
 
 
 
 ]
 Chapter 4.
-) [7]
+) [9]
 \openout2 = `anhang.aux'.
 
- (./anhang.tex [8
+ (./anhang.tex [10
 
 
 
 ]
 Appendix A.
-[9] [10
+[11] [12
 
 ]
 Appendix B.
-) [11] [12
+) [13] [14
 
 
 ]
 \openout2 = `bibliographie.aux'.
 
- (./bibliographie.tex (./diss.bbl)) [13
+ (./bibliographie.tex (./diss.bbl)) [15
 
 
 ]
 \openout2 = `danksagung.aux'.
 
- (./danksagung.tex [14
+ (./danksagung.tex [16
 
 
 
 ])
-[15]
+[17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./diss.aux (./zusammenfassung.aux) (./Introduction.aux) (./ICEModel1.aux) (./
@@ -443,32 +451,34 @@ ModelAnalysis.aux) (./Conclusion.aux) (./anhang.aux) (./bibliographie.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: 8FB012E434BF9AC28AC6D2306D536027;743.
+(rerunfilecheck)             Checksum: 52C87D75E18D88B539309CA7BAE456A2;743.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 5849 strings out of 493485
- 83843 string characters out of 3143526
- 172589 words of memory out of 3000000
- 8995 multiletter control sequences out of 15000+200000
- 11016 words of font info for 39 fonts, out of 3000000 for 9000
+ 5890 strings out of 493485
+ 84471 string characters out of 3143526
+ 180888 words of memory out of 3000000
+ 9017 multiletter control sequences out of 15000+200000
+ 11637 words of font info for 41 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,11n,43p,248b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,16n,43p,262b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti12.pfb>
-Output written on diss.pdf (27 pages, 166612 bytes).
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+bx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on diss.pdf (29 pages, 206891 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
