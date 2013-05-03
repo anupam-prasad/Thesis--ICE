@@ -44,24 +44,24 @@ which after substitution into the acoustic wave-equation leads to,
 \end{equation}
 with $k:=\omega/c$. This yields the following set of equations (ODEs):
 \begin{align}
- \frac{d^2 f(x)}{dx^2}+k^2_xf(x)&=0\\
+ \frac{d^2 f(x)}{dx^2}+\zeta^2f(x)&=0\\
  \frac{d^2 h(\phi)}{d\phi^2}+q^2h(\phi	)&=0\\
- \frac{\partial^2 g(r)}{\partial r^2} + \frac{1}{r}\frac{\partial g(r)}{\partial r}+\left[(\displaystyle\underbrace{k^2-k^2_x}_{=:\nu^2})-\frac{q^2}{r^2}\right]&=0\label{besselequation1}
+ \frac{\partial^2 g(r)}{\partial r^2} + \frac{1}{r}\frac{\partial g(r)}{\partial r}+\left[(\displaystyle\underbrace{k^2-\zeta^2}_{=:\nu^2})-\frac{q^2}{r^2}\right]&=0\label{besselequation1}
 \end{align}
-with separation constants $q$ and $k_x$. The last equation is the Bessel differential equation \cite[p.~313]{copsonbessel} and its general solution is given by,
+with separation constants $q$ and $\zeta$. The last equation is the Bessel differential equation \cite[p.~313]{copsonbessel} and its general solution is given by,
 \begin{equation}
  g(r)=C_{qs}J_q(\nu r)+D_{qs}Y_q(\nu r)
 \end{equation}
 where $J_q$ and $Y_q$ are the order-$q$ Bessel functions of the first and second kind respectively. The Bessel function of the second kind can be ignored as it diverges at $r=0$.
 The solutions to the separated equations are therefore given by,
 \begin{equation}
- f(x)=e^{\pm k_x x},\ h(\phi)=e^{\pm j\phi},\text{and}\ g(r)=J_q(\nu r)
+ f(x)=e^{\pm \zeta x},\ h(\phi)=e^{\pm j\phi},\text{and}\ g(r)=J_q(\nu r)
 \end{equation}
-with a specific solution to \eqref{pressurewaveeqn},
-\begin{equation}
- p(x,r,\phi;t)=\left[(A^+e^{jq\phi}+A^-e^{-jq\phi})e^{jk_xx}+(B^+e^{jq\phi}+B^-e^{-jq\phi})e^{-jk_xx}\right]J_q(\nu r)e^{j\omega t}.
+with a specific solution to \eqref{pressurewaveeqn} given by,
+\begin{equation}\label{specificpressure1}
+ p(x,r,\phi;t)=\left[(A^+e^{jq\phi}+A^-e^{-jq\phi})e^{j\zeta x}+(B^+e^{jq\phi}+B^-e^{-jq\phi})e^{-j\zeta x}\right]J_q(\nu r)e^{j\omega t}.
 \end{equation}
-The coefficients $A^\pm$, $B^\pm$, $q$, $k_x$ and $\nu$ will be subsequently determined by the boundary conditions.
+The coefficients $A^\pm$, $B^\pm$, $q$, $\zeta$ and $\nu$ will be subsequently determined by the boundary conditions.
 \subsubsection{Pressure Boundary Conditions}
 There are three sets of boundary conditions - 
 \begin{itemize}
@@ -69,15 +69,41 @@ There are three sets of boundary conditions -
  \item Vanishing of the normal derivative at the cavity walls - $g^\prime(a_{cyl})=0$ ($a_{cyl}$ is the radius of the cylinder).
  \item Equating the membrane velocity to the air velocity at the membrane boundaries (to be discussed in the next section).
 \end{itemize}
-The first set of requirements is obvious. The second and third are a result of the so called ``no-penetration'' boundary-conditions
-of fluid-mechanics. They arise from the requirement that at the boundary surface, the normal fluid-particle velocity should vanish. The 
-fluid-particle velocity is related to the pressure by, 
-\begin{equation}\label{pressurevelocityrelation}
- -\rho\frac{partial \mathbf{v}}{\partial t}=\nabla
+The first set of requirements is obvious. This reduces \eqref{specificpressure1} to 
+\begin{equation}\label{specificpressure2}
+ p(x,r,\phi;t)=\left[Ae^{j\zeta x}+Be^{-j\zeta x}\right]\cos q\phi J_q(\nu r)e^{j\omega t}.
 \end{equation}
+With $q$ constrained to be an integer.
 
+The second and third are a result of the so called ``no-penetration'' boundary-condition
+of fluid-mechanics. It arises from the from the fact that the cavity wall is an impermeable boundary. This translates 
+into the requirement that the normal fluid-particle velocity should vanish. 
+The fluid-particle velocity ($\mathbf{v}$) is related to the pressure by, 
+\begin{equation}\label{pressurevelocityrelation}
+ -\rho\frac{\partial \mathbf{v}}{\partial t}=\nabla p
+\end{equation}
+At the cylindrical cavity wall, the normal velocity is in the radial direction.
+Substituting the expression for pressure in \eqref{specificpressure1} in the above equation leads to
+a Neumann boundary condition for the pressure,
+\begin{align}\label{radialnopenetration}
+ v_r=-\left.\frac{1}{j\rho\omega}\frac{\partial p(x,r,\phi;t)}{\partial r}\right\vert_{r=a}&=0\nonumber\\
+    \Rightarrow\left.\frac{\partial J_q (\nu r)}{\partial r}\right\vert_{r=a}&=0
+\end{align}
+This constrains $\nu$ to a discrete set of values which correspond to the local minima and maxima
+of $J_q$. We can therefore index $\nu$ by $q$ and $s=0,1,2,3,\ldots$ with $\nu_{qs}=z_{qs}/a$:
+$z_{qs}$ being the $s^{th}$ extremum of the order-$q$ Bessel function of the first kind.
+This results in a discrete set of modes that satisfy \eqref{pressurewaveeqn} which are given
+by,
+\begin{equation}\label{specificpressure3}
+ p(x,r,\phi;t)=\left[A_{qs}e^{j\zeta_{qs}x}+B_q{s}e^{-j\zeta_{qs}x}\right]\cos q\phi J_q(\nu_{qs} r)e^{j\omega t}.
+\end{equation}
+where we have added the subscripts $q$ and $s$ to $\zeta$. Effectively, the
+modes are 3D waves propagating with wave numbers $\zeta_{qs}$ in the $x$-direction and $\nu_{qs}$ in the radial
+direction. The first of these modes (corresponding to $q=0,s=0$) is of particular importance. Since the first
+maximum of $J_0$ occurs at $r=0$, we have $\nu_{00}=0$. This leads to the first mode being a plane-wave which
+is constant in $r$ and $\phi$ and only varies in $x$.
 
-The general solution is therefore given by,
+We can therefore write the general solution to \eqref{pressurewaveeqn} as a linear combination of the specific solutions given in \eqref{specificpressure3},
 \begin{equation}\label{pressuregeneral1}
  p(x,r,\phi;t)=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\left(A_{qs}e^{j\zeta_{qs}x}+B_{qs}e^{-j\zeta_{qs}x}\right)\cos(m\phi)J_q(\nu_{qs}r)e^{j\omega t}
 \end{equation}
@@ -90,8 +116,8 @@ which corresponds to the tympanum loaded by the extracollumella.
 \subsection{Circular Membrane}
 The equation of motion for a rigidly clamped circular membrane of radius $a$ is given by,
 \begin{equation}\label{membraneequation1}
- -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\left(\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
- +\frac{1}{r^2}\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right)=\frac{1}{\rho_m d}\Psi(r,\phi,t)
+ -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
+ +\frac{1}{r^2}\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]=\frac{1}{\rho_m d}\Psi(r,\phi,t)
 \end{equation}
 subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$.
 \subsection{Sectoral Membrane}
