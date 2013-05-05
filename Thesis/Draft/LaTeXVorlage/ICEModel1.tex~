@@ -24,7 +24,7 @@ high frequencies respectively.
 \section{Sound Input}
 
 \section{Internal Cavity}
-We assume that the air inside the cavity obeys linear acoustics (described briefly in \ref{acousticappendix}). The pressure distribution inside the cavity
+We assume that the air inside the cavity obeys linear acoustics (briefly discussed in \ref{acousticappendix}). The pressure distribution inside the cavity
 is therefore given by the $3$D acoustic wave-equation in cylindrical polar coordinates,	
 \begin{equation}\label{pressurewaveeqn}
  \frac{1}{c^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial t^2}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
@@ -116,12 +116,31 @@ for the membrane vibrations and subsequently make use of some simplifying approx
 \section{Vibration of the Membrane}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
 vibrations of a circular membrane. We will then use our results to move on to the sectoral membrane 
-which corresponds to the tympanum loaded by the extracollumella.
+which corresponds to the tympanum loaded by the extracollumella. Physically, this means we have
+assumed the extracollumella to have infinite mass. 
 \subsection{Circular Membrane}
-The equation of motion for a rigidly clamped circular membrane of radius $a$ is given by,
+The equation of motion for the vibration of a rigidly clamped circular membrane of radius $a$ solves for the membrane displacement $u$ at
+a point $(r,\phi)$ with $r<a$ and $0<\phi<2\pi$. It is given by,
 \begin{equation}\label{membraneequation1}
- -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
+ -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_m\left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
  +\frac{1}{r^2}\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]=\frac{1}{\rho_m d}\Psi(r,\phi,t)
 \end{equation}
-subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$.
+subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$.. We've defined the following membrane material properties,
+\begin{itemize}
+ \item $c_m$ - propagation speed of vibrations.
+ \item $\alpha$ - the damping coefficient.
+ \item $\rho_m$ - density.
+ \item $d$ - thickness.
+\end{itemize}
+$\Psi(r,\phi;t)$ is the pressure on the membrane surface at $(r,\phi)$. In our discussion we are only concerned with periodic and uniform 
+pressure acting on the membrane surface. This is justified by the fact that for typical hearing ranges of these animals, the wavelength
+of sound is much greater than the membrane size and any spatial variation can be neglected.
+\subsubsection*{Free Undamped Vibrations}
+We first determine the eigenmodes of a circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$. To do this 
+we make a separation ansatz just as we did in \eqref{pseparationansatz},
+\begin{equation}\label{mseparationansatz}
+ u(r,\phi,t)=f(r)g(\phi)h(t)
+\end{equation}
+
+\subsubsection*{Forced Vibrations}
 \subsection{Sectoral Membrane}
