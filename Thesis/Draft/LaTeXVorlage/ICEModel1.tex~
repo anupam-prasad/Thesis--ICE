@@ -48,7 +48,7 @@ with $k:=\omega/c$. This yields the following set of equations (ODEs):
 \begin{align}
  \frac{d^2 f(x)}{dx^2}+\zeta^2f(x)&=0\\
  \frac{d^2 h(\phi)}{d\phi^2}+q^2h(\phi	)&=0\\
- \frac{\partial^2 g(r)}{\partial r^2} + \frac{1}{r}\frac{\partial g(r)}{\partial r}+\left[(\displaystyle\underbrace{k^2-\zeta^2}_{=:\nu^2})-\frac{q^2}{r^2}\right]&=0\label{besselequation1}
+ \frac{\partial^2 g(r)}{\partial r^2} + \frac{1}{r}\frac{\partial g(r)}{\partial r}+\left[(\displaystyle\underbrace{k^2-\zeta^2}_{=:\nu^2})-\frac{q^2}{r^2}\right]g(r)&=0\label{besselequation1}
 \end{align}
 with separation constants $q$ and $\zeta$. The last equation is the Bessel differential equation \cite[p.~313]{copsonbessel} and its general solution is given by,
 \begin{equation}
@@ -79,7 +79,7 @@ With $q$ constrained to be an integer.
 
 The second and third are a result of the so called ``no-penetration'' boundary-condition
 of fluid-mechanics. It arises from the from the fact that the cavity wall is an impermeable boundary. This translates 
-into the requirement that the normal fluid-particle velocity should vanish. 
+into the requirement that the normal fluid-particle velocity should vanish (\cite[p.~111]{pozrikidisFluid}).
 The fluid-particle velocity ($\mathbf{v}$) is related to the pressure by, 
 \begin{equation}\label{pressurevelocityrelation}
  -\rho\frac{\partial \mathbf{v}}{\partial t}=\nabla p
@@ -141,6 +141,31 @@ we make a separation ansatz just as we did in \eqref{pseparationansatz},
 \begin{equation}\label{mseparationansatz}
  u(r,\phi,t)=f(r)g(\phi)h(t)
 \end{equation}
-
+This gives us the following set of equations
+\begin{align}
+ \frac{\partial^2 f(r)}{\partial r^2} + \frac{1}{r}\frac{\partial f(r)}{\partial r}+\left[\mu^2-\frac{m^2}{r^2}\right]f(r)&=0\label{besselequation2}\\
+  \frac{d^2 g(\phi)}{d\phi^2}+m^2g(\phi)&=0\\
+ \frac{d^2 h(t)}{dt^2}+c^2_m\mu^2h(t)&=0
+\end{align}
+with separation constants $\mu$ and $m$. The solution of the first of these equations should already be familiar to us from the previous section - $J_m(\mu r)$,
+ the order-$m$ Bessel function of the first kind. The boundary conditions in $\phi$ direction remain the same resulting in,
+\begin{equation}\label{specificmembrane1}
+ u(r,\phi;t)=\left[M^+e^{jm\phi}+M^-e^{-jm\phi}\right] J_m(\mu r)e^{jc_m\mu t}
+\end{equation}
+Unlike in the case of the internal cavity, we require $u$ to vanish at the boundary so we have a Dirichlet boundary condition which
+effectively requires: $J_m(\mu a)=0$. This constrains $\mu$ to a discrete set of values which correspond to the zeros of $J_m$. The eigenmodes of a 
+the circular membrane are therefore given by,
+\begin{equation}\label{membraneeigen}
+ u_{mn}(r,\phi;t)=\left[M^+_{mn}e^{jm\phi}+M^-_{mn}e^{-jm\phi}\right] J_m(\mu_{mn} r)e^{j\omega_{mn} t}
+\end{equation}
+where we've defined $\mu_{mn}=z_{mn}/a$, $z_{mn}$ being the $n^{th}$ zero of $J_m$, and $\omega_{mn}=c_m\mu_{mn}$ is
+the eigenfrequency of the $(m,n)$ eigenmode. At this point $m$ can take any positive real value -- a fact that will
+help us solve the sectoral membrane problem. However, in the case of a full circular membrane -- as in the case
+of the pressure inside a cylindrical cavity -- requirements of continuity and smoothness in $\phi$ reduce \eqref{membraneeigen}
+to,
+\begin{equation}\label{circularmembraneeigen}
+ u_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)e^{j\omega_{mn} t}
+\end{equation}
+with $m=0,1,2,\ldots$.
 \subsubsection*{Forced Vibrations}
 \subsection{Sectoral Membrane}

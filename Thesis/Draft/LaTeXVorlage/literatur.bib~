@@ -8,6 +8,14 @@
   year        = { 2010                                      }
 }
 
+@Book{pozrikidisFluid,
+    author    = { Constantine Pozrikidis },
+    title     = { Fluid Dynamics: Theory, Computation, and Numerical Simulation },
+    publisher = { Springer },
+    year      = { 2009                       },
+    page      = {107 }
+}
+
 @Book{copsonbessel,
     author    = { Edward Thomas Copson },
     title     = { Introduction to the Theory of Functions of a Complex Variable },
