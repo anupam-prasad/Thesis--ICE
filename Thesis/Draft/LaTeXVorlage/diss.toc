@@ -7,7 +7,7 @@
 \contentsline {subsubsection}{Pressure Boundary Conditions}{5}{section*.5}
 \contentsline {section}{\numberline {2.4}Vibration of the Membrane}{6}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Circular Membrane}{6}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Sectoral Membrane}{7}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Sectoral Membrane}{8}{subsection.2.4.2}
 \contentsline {chapter}{\numberline {3}Analysis of the ICE--Model}{9}{chapter.3}
 \contentsline {chapter}{\numberline {4}Conclusion}{11}{chapter.4}
 \contentsline {chapter}{\numberline {A}Acoustic Theory}{13}{appendix.A}

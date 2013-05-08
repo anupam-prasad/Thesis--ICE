@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  6 MAY 2013 21:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  8 MAY 2013 20:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,17 +417,17 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
- [5] [6]) [7]
+ [5] [6] [7])
+[8]
 \openout2 = `ModelAnalysis.aux'.
 
-
-(./ModelAnalysis.tex [8
+ (./ModelAnalysis.tex
+Chapter 3.
+) [9
 
 
 
 ]
-Chapter 3.
-) [9]
 \openout2 = `Conclusion.aux'.
 
  (./Conclusion.tex [10
@@ -479,13 +479,13 @@ Package rerunfilecheck Info: File `diss.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
  ) 
 Here is how much of TeX's memory you used:
- 6198 strings out of 493485
- 87978 string characters out of 3143526
- 181846 words of memory out of 3000000
- 9292 multiletter control sequences out of 15000+200000
+ 6208 strings out of 493485
+ 88138 string characters out of 3143526
+ 182118 words of memory out of 3000000
+ 9297 multiletter control sequences out of 15000+200000
  12872 words of font info for 47 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,16n,43p,262b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,16n,43p,262b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -499,10 +499,10 @@ m/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
 bx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (31 pages, 218433 bytes).
+Output written on diss.pdf (31 pages, 222063 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 281 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 340 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

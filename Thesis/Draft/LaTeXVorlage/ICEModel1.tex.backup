@@ -148,6 +148,24 @@ This gives us the following set of equations
  \frac{d^2 h(t)}{dt^2}+c^2_m\mu^2h(t)&=0
 \end{align}
 with separation constants $\mu$ and $m$. The solution of the first of these equations should already be familiar to us from the previous section - $J_m(\mu r)$,
- the order-$m$ Bessel function of the first kind. The boundary condition 
+ the order-$m$ Bessel function of the first kind. The boundary conditions in $\phi$ direction remain the same resulting in,
+\begin{equation}\label{specificmembrane1}
+ u(r,\phi;t)=\left[M^+e^{jm\phi}+M^-e^{-jm\phi}\right] J_m(\mu r)e^{jc_m\mu t}
+\end{equation}
+Unlike in the case of the internal cavity, we require $u$ to vanish at the boundary so we have a Dirichlet boundary condition which
+effectively requires: $J_m(\mu a)=0$. This constrains $\mu$ to a discrete set of values which correspond to the zeros of $J_m$. The eigenmodes of a 
+the circular membrane are therefore given by,
+\begin{equation}\label{membraneeigen}
+ u_{mn}(r,\phi;t)=\left[M^+_{mn}e^{jm\phi}+M^-_{mn}e^{-jm\phi}\right] J_m(\mu_{mn} r)e^{j\omega_{mn} t}
+\end{equation}
+where we've defined $\mu_{mn}=z_{mn}/a$, $z_{mn}$ being the $n^{th}$ zero of $J_m$, and $\omega_{mn}=c_m\mu_{mn}$ is
+the eigenfrequency of the $(m,n)$ eigenmode. At this point $m$ can take any positive real value -- a fact that will
+help us solve the sectoral membrane problem. However, in the case of a full circular membrane -- as in the case
+of the pressure inside a cylindrical cavity -- requirements of continuity and smoothness in $\phi$ reduce \eqref{membraneeigen}
+to,
+\begin{equation}\label{circularmembraneeigen}
+ u_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)e^{j\omega_{mn} t}
+\end{equation}
+with $m=0,1,2,\ldots$
 \subsubsection*{Forced Vibrations}
 \subsection{Sectoral Membrane}

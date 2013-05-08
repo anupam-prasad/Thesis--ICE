@@ -52,9 +52,9 @@ with $k:=\omega/c$. This yields the following set of equations (ODEs):
 \end{align}
 with separation constants $q$ and $\zeta$. The last equation is the Bessel differential equation \cite[p.~313]{copsonbessel} and its general solution is given by,
 \begin{equation}
- g(r)=C_{qs}J_q(\nu r)+D_{qs}Y_q(\nu r)
+ g(r)=C_{qs}J_q(\nu r)+D_{qs}Y_q(\nu r).
 \end{equation}
-where $J_q$ and $Y_q$ are the order-$q$ Bessel functions of the first and second kind respectively. The Bessel function of the second kind can be ignored as it diverges at $r=0$.
+$J_q$ and $Y_q$ are the order-$q$ Bessel functions of the first and second kind respectively. The Bessel function of the second kind can be ignored as it diverges at $r=0$.
 The solutions to the separated equations are therefore given by,
 \begin{equation}
  f(x)=e^{\pm \zeta x},\ h(\phi)=e^{\pm j\phi},\text{and}\ g(r)=J_q(\nu r)
@@ -97,15 +97,24 @@ $z_{qs}$ being the $s^{th}$ extremum of the order-$q$ Bessel function of the fir
 This results in a discrete set of modes that satisfy \eqref{pressurewaveeqn} which are given
 by,
 \begin{equation}\label{specificpressure3}
- p(x,r,\phi;t)=\left[A_{qs}e^{j\zeta_{qs}x}+B_q{s}e^{-j\zeta_{qs}x}\right]\cos q\phi J_q(\nu_{qs} r)e^{j\omega t}.
+ p_{qs}(x,r,\phi;t)=\left[A_{qs}e^{j\zeta_{qs}x}+B_q{s}e^{-j\zeta_{qs}x}\right]\cos q\phi J_q(\nu_{qs} r)e^{j\omega t}.
 \end{equation}
 where we have added the subscripts $q$ and $s$ to $\zeta$. Effectively, the
 modes are 3D waves propagating with wave numbers $\zeta_{qs}$ in the $x$-direction and $\nu_{qs}$ in the radial
 direction. The first of these modes (corresponding to $q=0,s=0$) is of particular importance. Since the first
 maximum of $J_0$ occurs at $r=0$, we have $\nu_{00}=0$. This leads to the first mode being a plane-wave which
-is constant in $r$ and $\phi$ and only varies in $x$.
+is constant in $r$ and $\phi$ and only varies in $x$. 
 
-We can therefore write the general solution to \eqref{pressurewaveeqn} as a linear combination of the specific solutions given in \eqref{specificpressure3},
+A very useful property of the above modes is their orthgonality, i.e.
+\begin{equation}\label{pressureorthogonality}
+ \int_\Omega dVp_{q_1s_1}p_{q_2s_2}=0,\ if\ q_1\neq q_2\ or\ s_1\neq s_2
+\end{equation}
+the integral is over the volume of the cylinder. This is a consequence of the fact that for a given $q$,
+\begin{equation}\label{besselorthogonality}
+ \int rdrJ_q(\nu_{qs_1}r)J_q(\nu_{qs_2}r)=0,\ if\ s_1\neq s_2
+\end{equation}
+
+We can therefore write the general solution to \eqref{pressurewaveeqn} as a linear combination of the orthogonal modes given in \eqref{specificpressure3},
 \begin{equation}\label{pressuregeneral1}
  p(x,r,\phi;t)=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\left(A_{qs}e^{j\zeta_{qs}x}+B_{qs}e^{-j\zeta_{qs}x}\right)\cos(m\phi)J_q(\nu_{qs}r)e^{j\omega t}
 \end{equation}
@@ -158,7 +167,7 @@ the circular membrane are therefore given by,
 \begin{equation}\label{membraneeigen}
  u_{mn}(r,\phi;t)=\left[M^+_{mn}e^{jm\phi}+M^-_{mn}e^{-jm\phi}\right] J_m(\mu_{mn} r)e^{j\omega_{mn} t}
 \end{equation}
-where we've defined $\mu_{mn}=z_{mn}/a$, $z_{mn}$ being the $n^{th}$ zero of $J_m$, and $\omega_{mn}=c_m\mu_{mn}$ is
+where $\mu_{mn}=z_{mn}/a$, $z_{mn}$ being the $n^{th}$ zero of $J_m$ and, $\omega_{mn}=c_m\mu_{mn}$ is
 the eigenfrequency of the $(m,n)$ eigenmode. At this point $m$ can take any positive real value -- a fact that will
 help us solve the sectoral membrane problem. However, in the case of a full circular membrane -- as in the case
 of the pressure inside a cylindrical cavity -- requirements of continuity and smoothness in $\phi$ reduce \eqref{membraneeigen}
@@ -166,6 +175,22 @@ to,
 \begin{equation}\label{circularmembraneeigen}
  u_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)e^{j\omega_{mn} t}
 \end{equation}
-with $m=0,1,2,\ldots$.
+with $m=0,1,2,\ldots$ with the $(m,n)$ eigenmodes forming an orthogonal set.
 \subsubsection*{Forced Vibrations}
+For a periodically driven membrane, there are two components of the full solution for forced vibrations. The first of these is the steady state solution which
+oscillates with the same frequency as the input and does not depend on the initial conditions - $u_{ss}$. The second of these is the transient solution that depends
+on the initial conditions but not on the driving pressure - $u_t$. 
+
+The steady state solution is expressed as a linear combination of the spatial part
+of the above eigenmodes and is given by,
+\begin{equation}\label{membraness1}
+ u_{ss}(r,\phi ;t)=\displaystyle\sum^\infty_{m=0}\sum^\infty_{n=1} C_{mn}\cos m\phi J_m(\mu_{mn} r)e^{j\omega t}.
+\end{equation}
+Substituting this expression in \eqref{membraneequation1} gives,
+\begin{align}
+ \displaystyle\sum^\infty_{m=0}\sum^\infty_{n=1} \Omega_{mn}C_{mn}\cos m\phi J_m(\mu_{mn} r)e^{j\omega t}&=pe^{j\omega t}\label{membraness2}\\
+ \Omega_{mn}&=\rho_m d (\omega^2-2j\alpha\omega-\omega^2_mn)\label{omegafirstdef}
+\end{align}
+
+
 \subsection{Sectoral Membrane}
