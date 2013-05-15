@@ -153,7 +153,7 @@ $\Psi(r,\phi;t)$ is the pressure on the membrane surface at $(r,\phi)$. In our d
 pressure acting on the membrane surface. This is justified by the fact that for typical hearing ranges of these animals, the wavelength
 of sound is much greater than the membrane size and any spatial variation can be neglected.
 \subsubsection*{Free Vibrations}
-We first determine the eigenmodes of an undamped circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$. To do this 
+\noindent\textbf{Undamped Membrane}: We first determine the eigenmodes of an undamped circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$. To do this 
 we make a separation ansatz just as we did in \eqref{pseparationansatz},
 \begin{equation}\label{mseparationansatz}
  u(r,\phi,t)=f(r)g(\phi)h(t)
@@ -190,7 +190,8 @@ with $m=0,1,2,\ldots$ with the $(m,n)$ eigenmodes forming an orthogonal set. For
 part of the above mode by $u_{mn}(r,\phi)$. We note that unlike in the case of the internal cavity, the free membrane has components
 that are both forward- and backward-moving in time. The presence of a driving force, however, will simplify the expressions.
 
-For a damped membrane, i.e. $\alpha\neq 0$, the spatial part of the above eigenmodes remains the same. The form of the
+\vspace{\baselineskip}
+\noindent\textbf{Damped Membrane}: For a damped membrane, i.e. $\alpha\neq 0$, the spatial part of the above eigenmodes remains the same. The form of the
 time-dependent part is given by the solution of the equation,
 \begin{equation}\label{dampedtimepart}
  \frac{d^2 h_{mn}(t)}{dt^2}+2\alpha \frac{d h_{mn}(t)}{dt}+\omega_{mn}^2h_{mn}(t)=0.
@@ -200,17 +201,19 @@ Assuming $h_{mn}$ takes the form $e^{j\widetilde{\omega}_{mn}}$ leads to a quadr
  \widetilde{\omega}_{mn}&=j\alpha\pm\omega_{mn}^*\\
  \omega_{mn}^*&=\sqrt{\alpha^2+\omega^2_{mn}}
 \end{align}
-Since we require the membrane displacement to remain finite as $t\rightarrow\infty$, we can neglect the $e^{-j\widetilde{\omega}_{mn}}$ terms leading
+We require the membrane displacement to remain finite as $t\rightarrow\infty$. We can therefore neglect the $e^{-j\widetilde{\omega}_{mn}}$ terms leading
 to,
 \begin{equation}\label{circularmembranedampedeigen}
  \widetilde{u}_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn}^* t}+N_{mn}e^{-j\omega_{mn}^* t}\right]e^{-\alpha t}
 \end{equation}
+The general solution is given by a linear combination of the above and the coefficients are determined by initial conditions -- for example,
+membrane displacement and velocity at $t=0$.
 \subsubsection*{Forced Vibrations}
 For a periodically driven membrane, there are two components of the full solution for forced vibrations. The first of these is the steady state solution which
 oscillates with the same frequency as the input and does not depend on the initial conditions - $u_{ss}$. The second of these is the transient solution that depends
 on the initial conditions but not on the driving pressure - $u_t$. 
 
-The steady state solution is expressed as a linear combination of the spatial part
+\noindent\textbf{Steady State Solution}: The steady state solution is expressed as a linear combination of the spatial part
 of the above eigenmodes and is given by,
 \begin{equation}\label{membraness1}
  u_{ss}(r,\phi ;t)=\displaystyle\sum^\infty_{m=0}\sum^\infty_{n=1} C_{mn}\cos m\phi J_m(\mu_{mn} r)e^{j\omega t}.
@@ -226,4 +229,7 @@ Using the orthogonality of the eigenmodes, the coefficients $C_{mn}$ can be calc
 \end{equation}
 with the integral this time being taken over the circular disk of radius $a_M$.
 
+\vspace{\baselineskip}
+\noindent\textbf{Transient Solution}: The transient solution is effectively a solution of the free damped membrane, i.e. a linear 
+combination of the eigenmodes given in \eqref{circularmembranedampedeigen}.
 \subsection{Sectoral Membrane}

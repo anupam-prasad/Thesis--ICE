@@ -63,8 +63,10 @@ with a specific solution to \eqref{pressurewaveeqn} given by,
 \begin{equation}\label{specificpressure1}
  p(x,r,\phi;t)=\left[(A^+e^{jq\phi}+A^-e^{-jq\phi})e^{j\zeta x}+(B^+e^{jq\phi}+B^-e^{-jq\phi})e^{-j\zeta x}\right]J_q(\nu r)e^{j\omega t}.
 \end{equation}
-The coefficients $A^\pm$, $B^\pm$, $q$, $\zeta$ and $\nu$ will be subsequently determined by the boundary conditions. In making the 
-ansatz in \eqref{pseparationansatz}, we 
+The coefficients $A^\pm$, $B^\pm$, $q$, $\zeta$ and $\nu$ will be subsequently determined by the boundary conditions. 
+
+In general, the time component of the pressure also has a \textit{backward-moving} component, i.e. $e^{-j\omega t}$. By making the ansatz in \eqref{pseparationansatz}, 
+we have implicitly made use of the fact that the form of the input constrains the pressure to only have a \textit{forward-moving} component, i.e. $e^{j\omega t}$.  
 \subsubsection{Pressure Boundary Conditions}
 There are three sets of boundary conditions - 
 \begin{itemize}
@@ -135,8 +137,10 @@ assumed the extracollumella to have infinite mass.
 The equation of motion for the vibration of a rigidly clamped circular membrane of radius $a_M$ solves for the membrane displacement $u$ at
 a point $(r,\phi)$ with $r<a$ and $0<\phi<2\pi$. It is given by,
 \begin{equation}\label{membraneequation1}
- -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M\left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
- +\frac{1}{r^2}\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]=\frac{1}{\rho_M d}\Psi(r,\phi,t)
+ \begin{split}
+ -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M \left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)\right. +\frac{1}{r^2}&\left.\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]
+ \\ &=\frac{1}{\rho_M d}\Psi(r,\phi,t)
+ \end{split}
 \end{equation}
 subject to the boundary condition $u(r,\phi,t)|_{r=a_M}=0$.. We've defined the following membrane material properties,
 \begin{itemize}
@@ -163,13 +167,16 @@ This gives us the following set of equations
 with separation constants $\mu$ and $m$. The solution of the first of these equations should already be familiar to us from the previous section - $J_m(\mu r)$,
  the order-$m$ Bessel function of the first kind. The boundary conditions in $\phi$ direction remain the same resulting in,
 \begin{equation}\label{specificmembrane1}
- u(r,\phi;t)=\left[M^+e^{jm\phi}+M^-e^{-jm\phi}\right] J_m(\mu r)e^{jc_M\mu t}
+ u(r,\phi;t)=\left[(M^+e^{jm\phi}+M^-e^{-jm\phi}\right)e^{jc_M\mu t}+(N^+e^{jm\phi}+N^-e^{-jm\phi})e^{-jc_M\mu t}] J_m(\mu r)
 \end{equation}
 Unlike in the case of the internal cavity, we require $u$ to vanish at the boundary so we have a Dirichlet boundary condition which
 effectively requires: $J_m(\mu a_M)=0$. This constrains $\mu$ to a discrete set of values which correspond to the zeros of $J_m$. The eigenmodes of a 
 the circular membrane are therefore given by,
 \begin{equation}\label{membraneeigen}
- u_{mn}(r,\phi;t)=\left[M^+_{mn}e^{jm\phi}+M^-_{mn}e^{-jm\phi}\right] J_m(\mu_{mn} r)e^{j\omega_{mn} t}
+\begin{split}
+ u_{mn}(r,\phi;t)=\left[(M^+_{mn}e^{jm\phi}+M^-_{mn}e^{-jm\phi})\right.& e^{j\omega_{mn} t}+ \\
+ &\left.(N^+_{mn}e^{jm\phi}+N^-_{mn}e^{-jm\phi})e^{-j\omega_{mn} t}\right] J_m(\mu_{mn} r)
+ \end{split}
 \end{equation}
 where $\mu_{mn}=z_{mn}/a_M$, $z_{mn}$ being the $n^{th}$ zero of $J_m$ and, $\omega_{mn}=c_M\mu_{mn}$ is
 the eigenfrequency of the $(m,n)$ eigenmode. At this point $m$ can take any positive real value -- a fact that will
@@ -177,17 +184,27 @@ help us solve the sectoral membrane problem. However, in the case of a full circ
 of the pressure inside a cylindrical cavity -- requirements of continuity and smoothness in $\phi$ reduce \eqref{membraneeigen}
 to,
 \begin{equation}\label{circularmembraneeigen}
- u_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)e^{j\omega_{mn} t}
+ u_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn} t}+N_{mn}e^{-j\omega_{mn} t}\right]
 \end{equation}
 with $m=0,1,2,\ldots$ with the $(m,n)$ eigenmodes forming an orthogonal set. For later convenience we denote the spatial
-part of the above mode by $u_{mn}(r,\phi)$.
+part of the above mode by $u_{mn}(r,\phi)$. We note that unlike in the case of the internal cavity, the free membrane has components
+that are both forward- and backward-moving in time. The presence of a driving force, however, will simplify the expressions.
 
-For a damped membrane, i.e. $\alpha\neq 0$, the spatial part of the above eigenmodes remains the same but the eigenfrequency is
-modified and is given by,
-\begin{equation}
- \widetilde{\omega}_{mn}=j\alpha+\sqrt{\alpha^2+\omega^2_{mn}}
+For a damped membrane, i.e. $\alpha\neq 0$, the spatial part of the above eigenmodes remains the same. The form of the
+time-dependent part is given by the solution of the equation,
+\begin{equation}\label{dampedtimepart}
+ \frac{d^2 h_{mn}(t)}{dt^2}+2\alpha \frac{d h_{mn}(t)}{dt}+\omega_{mn}^2h_{mn}(t)=0.
 \end{equation}
-
+Assuming $h_{mn}$ takes the form $e^{j\widetilde{\omega}_{mn}}$ leads to a quadratic equation with solutions,
+\begin{align}
+ \widetilde{\omega}_{mn}&=j\alpha\pm\omega_{mn}^*\\
+ \omega_{mn}^*&=\sqrt{\alpha^2+\omega^2_{mn}}
+\end{align}
+Since we require the membrane displacement to remain finite as $t\rightarrow\infty$, we can neglect the $e^{-j\widetilde{\omega}_{mn}}$ terms leading
+to,
+\begin{equation}\label{circularmembranedampedeigen}
+ \widetilde{u}_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn}^* t}+N_{mn}e^{-j\omega_{mn}^* t}\right]e^{-\alpha t}
+\end{equation}
 \subsubsection*{Forced Vibrations}
 For a periodically driven membrane, there are two components of the full solution for forced vibrations. The first of these is the steady state solution which
 oscillates with the same frequency as the input and does not depend on the initial conditions - $u_{ss}$. The second of these is the transient solution that depends

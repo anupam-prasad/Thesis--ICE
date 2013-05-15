@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  15 MAY 2013 21:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  15 MAY 2013 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -501,10 +501,10 @@ cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (33 pages, 243173 bytes).
+Output written on diss.pdf (33 pages, 243792 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
+ 366 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
  90 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
