@@ -63,12 +63,15 @@ with a specific solution to \eqref{pressurewaveeqn} given by,
 \begin{equation}\label{specificpressure1}
  p(x,r,\phi;t)=\left[(A^+e^{jq\phi}+A^-e^{-jq\phi})e^{j\zeta x}+(B^+e^{jq\phi}+B^-e^{-jq\phi})e^{-j\zeta x}\right]J_q(\nu r)e^{j\omega t}.
 \end{equation}
-The coefficients $A^\pm$, $B^\pm$, $q$, $\zeta$ and $\nu$ will be subsequently determined by the boundary conditions.
+The coefficients $A^\pm$, $B^\pm$, $q$, $\zeta$ and $\nu$ will be subsequently determined by the boundary conditions. 
+
+In general, the time component of the pressure also has a \textit{backward-moving} component, i.e. $e^{-j\omega t}$. By making the ansatz in \eqref{pseparationansatz}, 
+we have implicitly made use of the fact that the form of the input constrains the pressure to only have a \textit{forward-moving} component, i.e. $e^{j\omega t}$.  
 \subsubsection{Pressure Boundary Conditions}
 There are three sets of boundary conditions - 
 \begin{itemize}
  \item Continuity and smoothness in $\phi$ which is equivalent to $h(0)=h(2\pi)$ and $h^\prime(0)=h^\prime(2\pi)$ where, $h^\prime=dh/d\phi$.
- \item Vanishing of the normal derivative at the cavity walls - $g^\prime(a_{cyl})=0$ ($a_{cyl}$ is the radius of the cylinder).
+ \item Vanishing of the normal derivative at the cavity walls - $g^\prime(a_C)=0$ ($a_C$ is the radius of the cylinder).
  \item Equating the membrane velocity to the air velocity at the membrane boundaries (to be discussed in the next section).
 \end{itemize}
 The first set of requirements is obvious. This reduces \eqref{specificpressure1} to 
@@ -88,18 +91,19 @@ At the cylindrical cavity wall, the normal velocity is in the radial direction.
 Substituting the expression for pressure in \eqref{specificpressure1} in the above equation leads to
 a Neumann boundary condition for the pressure,
 \begin{align}\label{radialnopenetration}
- v_r=-\left.\frac{1}{j\rho\omega}\frac{\partial p(x,r,\phi;t)}{\partial r}\right\vert_{r=a}&=0\nonumber\\
-    \Rightarrow\left.\frac{\partial J_q (\nu r)}{\partial r}\right\vert_{r=a}&=0
+ v_r=-\left.\frac{1}{j\rho\omega}\frac{\partial p(x,r,\phi;t)}{\partial r}\right\vert_{r=a_C}&=0\nonumber\\
+    \Rightarrow\left.\frac{\partial J_q (\nu r)}{\partial r}\right\vert_{r=a_C}&=0
 \end{align}
 This constrains $\nu$ to a discrete set of values which correspond to the local minima and maxima
-of $J_q$. We can therefore index $\nu$ by $q$ and $s=0,1,2,3,\ldots$ with $\nu_{qs}=z_{qs}/a$:
+of $J_q$. We can therefore index $\nu$ by $q$ and $s=0,1,2,3,\ldots$ with $\nu_{qs}=z_{qs}/a_C$:
 $z_{qs}$ being the $s^{th}$ extremum of the order-$q$ Bessel function of the first kind.
 This results in a discrete set of modes that satisfy \eqref{pressurewaveeqn} which are given
 by,
 \begin{equation}\label{specificpressure3}
- p_{qs}(x,r,\phi;t)=\left[A_{qs}e^{j\zeta_{qs}x}+B_q{s}e^{-j\zeta_{qs}x}\right]\cos q\phi J_q(\nu_{qs} r)e^{j\omega t}.
+ p_{qs}(x,r,\phi;t)=\left[A_{qs}e^{j\zeta_{qs}x}+B_q{s}e^{-j\zeta_{qs}x}\right]f_{qs}(r,\phi)e^{j\omega t}
 \end{equation}
-where we have added the subscripts $q$ and $s$ to $\zeta$. Effectively, the
+where we have added the subscripts $q$ and $s$ to $\zeta$ and denoted the $(r,\phi)$ part of \eqref{specificpressure2}
+by $f_{qs}(r,\phi)$. Effectively, the
 modes are 3D waves propagating with wave numbers $\zeta_{qs}$ in the $x$-direction and $\nu_{qs}$ in the radial
 direction. The first of these modes (corresponding to $q=0,s=0$) is of particular importance. Since the first
 maximum of $J_0$ occurs at $r=0$, we have $\nu_{00}=0$. This leads to the first mode being a plane-wave which
@@ -109,14 +113,16 @@ A very useful property of the above modes is their orthgonality, i.e.
 \begin{equation}\label{pressureorthogonality}
  \int_\Omega dVp_{q_1s_1}p_{q_2s_2}=0,\ if\ q_1\neq q_2\ or\ s_1\neq s_2
 \end{equation}
-the integral is over the volume of the cylinder. This is a consequence of the fact that for a given $q$,
+the integral is over the volume of the cylinder. This is a consequence of the fact that for different $q$'s
+the cosine parts of the modes are orthogonal whereas for a given $q$ the Bessel parts are orthogonal for
+different $s$'s or expressed as an equation,
 \begin{equation}\label{besselorthogonality}
- \int rdrJ_q(\nu_{qs_1}r)J_q(\nu_{qs_2}r)=0,\ if\ s_1\neq s_2
+ \int dS f_{q_1s_1}f_{q_2s_2}=0,\ q_1\neq q_2\ or\ s_1\neq s_2
 \end{equation}
-
+where $dS=rdrd\phi$ and the integral being taken over the disk of radius $a_C$.
 We can therefore write the general solution to \eqref{pressurewaveeqn} as a linear combination of the orthogonal modes given in \eqref{specificpressure3},
 \begin{equation}\label{pressuregeneral1}
- p(x,r,\phi;t)=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\left(A_{qs}e^{j\zeta_{qs}x}+B_{qs}e^{-j\zeta_{qs}x}\right)\cos(m\phi)J_q(\nu_{qs}r)e^{j\omega t}
+ p(x,r,\phi;t)=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\left(A_{qs}e^{j\zeta_{qs}x}+B_{qs}e^{-j\zeta_{qs}x}\right)f_{qs}(r,\phi)e^{j\omega t}
 \end{equation}
 The remaining coefficients, $A_{qs}$ and $B_{qs}$, will be determined by equating the fluid-particle velocity to
 the membrane velocity at both ends of the cylinder. To do so, we will first need to find an expression
@@ -128,24 +134,26 @@ vibrations of a circular membrane. We will then use our results to move on to th
 which corresponds to the tympanum loaded by the extracollumella. Physically, this means we have
 assumed the extracollumella to have infinite mass. 
 \subsection{Circular Membrane}
-The equation of motion for the vibration of a rigidly clamped circular membrane of radius $a$ solves for the membrane displacement $u$ at
+The equation of motion for the vibration of a rigidly clamped circular membrane of radius $a_M$ solves for the membrane displacement $u$ at
 a point $(r,\phi)$ with $r<a$ and $0<\phi<2\pi$. It is given by,
 \begin{equation}\label{membraneequation1}
- -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_m\left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)
- +\frac{1}{r^2}\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]=\frac{1}{\rho_m d}\Psi(r,\phi,t)
+ \begin{split}
+ -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M \left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)\right. +\frac{1}{r^2}&\left.\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]
+ \\ &=\frac{1}{\rho_M d}\Psi(r,\phi,t)
+ \end{split}
 \end{equation}
-subject to the boundary condition $u(r,\phi,t)|_{r=a}=0$.. We've defined the following membrane material properties,
+subject to the boundary condition $u(r,\phi,t)|_{r=a_M}=0$.. We've defined the following membrane material properties,
 \begin{itemize}
- \item $c_m$ - propagation speed of vibrations.
- \item $\alpha$ - the damping coefficient.
- \item $\rho_m$ - density.
+ \item $c_M$ - propagation speed of vibrations.
+ \item $\alpha (>0)$ - the damping coefficient.
+ \item $\rho_M$ - density.
  \item $d$ - thickness.
 \end{itemize}
 $\Psi(r,\phi;t)$ is the pressure on the membrane surface at $(r,\phi)$. In our discussion we are only concerned with periodic and uniform 
 pressure acting on the membrane surface. This is justified by the fact that for typical hearing ranges of these animals, the wavelength
 of sound is much greater than the membrane size and any spatial variation can be neglected.
-\subsubsection*{Free Undamped Vibrations}
-We first determine the eigenmodes of a circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$. To do this 
+\subsubsection*{Free Vibrations}
+We first determine the eigenmodes of an undamped circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$. To do this 
 we make a separation ansatz just as we did in \eqref{pseparationansatz},
 \begin{equation}\label{mseparationansatz}
  u(r,\phi,t)=f(r)g(\phi)h(t)
@@ -154,28 +162,49 @@ This gives us the following set of equations
 \begin{align}
  \frac{\partial^2 f(r)}{\partial r^2} + \frac{1}{r}\frac{\partial f(r)}{\partial r}+\left[\mu^2-\frac{m^2}{r^2}\right]f(r)&=0\label{besselequation2}\\
   \frac{d^2 g(\phi)}{d\phi^2}+m^2g(\phi)&=0\\
- \frac{d^2 h(t)}{dt^2}+c^2_m\mu^2h(t)&=0
+ \frac{d^2 h(t)}{dt^2}+c^2_M\mu^2h(t)&=0
 \end{align}
 with separation constants $\mu$ and $m$. The solution of the first of these equations should already be familiar to us from the previous section - $J_m(\mu r)$,
  the order-$m$ Bessel function of the first kind. The boundary conditions in $\phi$ direction remain the same resulting in,
 \begin{equation}\label{specificmembrane1}
- u(r,\phi;t)=\left[M^+e^{jm\phi}+M^-e^{-jm\phi}\right] J_m(\mu r)e^{jc_m\mu t}
+ u(r,\phi;t)=\left[(M^+e^{jm\phi}+M^-e^{-jm\phi}\right)e^{jc_M\mu t}+(N^+e^{jm\phi}+N^-e^{-jm\phi})e^{-jc_M\mu t}] J_m(\mu r)
 \end{equation}
 Unlike in the case of the internal cavity, we require $u$ to vanish at the boundary so we have a Dirichlet boundary condition which
-effectively requires: $J_m(\mu a)=0$. This constrains $\mu$ to a discrete set of values which correspond to the zeros of $J_m$. The eigenmodes of a 
+effectively requires: $J_m(\mu a_M)=0$. This constrains $\mu$ to a discrete set of values which correspond to the zeros of $J_m$. The eigenmodes of a 
 the circular membrane are therefore given by,
 \begin{equation}\label{membraneeigen}
- u_{mn}(r,\phi;t)=\left[M^+_{mn}e^{jm\phi}+M^-_{mn}e^{-jm\phi}\right] J_m(\mu_{mn} r)e^{j\omega_{mn} t}
+\begin{split}
+ u_{mn}(r,\phi;t)=\left[(M^+_{mn}e^{jm\phi}+M^-_{mn}e^{-jm\phi})\right.& e^{j\omega_{mn} t}+ \\
+ &\left.(N^+_{mn}e^{jm\phi}+N^-_{mn}e^{-jm\phi})e^{-j\omega_{mn} t}\right] J_m(\mu_{mn} r)
+ \end{split}
 \end{equation}
-where $\mu_{mn}=z_{mn}/a$, $z_{mn}$ being the $n^{th}$ zero of $J_m$ and, $\omega_{mn}=c_m\mu_{mn}$ is
+where $\mu_{mn}=z_{mn}/a_M$, $z_{mn}$ being the $n^{th}$ zero of $J_m$ and, $\omega_{mn}=c_M\mu_{mn}$ is
 the eigenfrequency of the $(m,n)$ eigenmode. At this point $m$ can take any positive real value -- a fact that will
 help us solve the sectoral membrane problem. However, in the case of a full circular membrane -- as in the case
 of the pressure inside a cylindrical cavity -- requirements of continuity and smoothness in $\phi$ reduce \eqref{membraneeigen}
 to,
 \begin{equation}\label{circularmembraneeigen}
- u_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)e^{j\omega_{mn} t}
+ u_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn} t}+N_{mn}e^{-j\omega_{mn} t}\right]
 \end{equation}
-with $m=0,1,2,\ldots$ with the $(m,n)$ eigenmodes forming an orthogonal set.
+with $m=0,1,2,\ldots$ with the $(m,n)$ eigenmodes forming an orthogonal set. For later convenience we denote the spatial
+part of the above mode by $u_{mn}(r,\phi)$. We note that unlike in the case of the internal cavity, the free membrane has components
+that are both forward- and backward-moving in time. The presence of a driving force, however, will simplify the expressions.
+
+For a damped membrane, i.e. $\alpha\neq 0$, the spatial part of the above eigenmodes remains the same. The form of the
+time-dependent part is given by the solution of the equation,
+\begin{equation}\label{dampedtimepart}
+ \frac{d^2 h_{mn}(t)}{dt^2}+2\alpha \frac{d h_{mn}(t)}{dt}+\omega_{mn}^2h_{mn}(t)=0.
+\end{equation}
+Assuming $h_{mn}$ takes the form $e^{j\widetilde{\omega}_{mn}}$ leads to a quadratic equation with solutions,
+\begin{align}
+ \widetilde{\omega}_{mn}&=j\alpha\pm\omega_{mn}^*\\
+ \omega_{mn}^*&=\sqrt{\alpha^2+\omega^2_{mn}}
+\end{align}
+Since we require the membrane displacement to remain finite as $t\rightarrow\infty$, we can neglect the $e^{-j\widetilde{\omega}_{mn}}$ terms leading
+to,
+\begin{equation}\label{circularmembranedampedeigen}
+ \widetilde{u}_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn}^* t}+N_{mn}e^{-j\omega_{mn}^* t}\right]e^{-\alpha t}
+\end{equation}
 \subsubsection*{Forced Vibrations}
 For a periodically driven membrane, there are two components of the full solution for forced vibrations. The first of these is the steady state solution which
 oscillates with the same frequency as the input and does not depend on the initial conditions - $u_{ss}$. The second of these is the transient solution that depends
@@ -186,11 +215,15 @@ of the above eigenmodes and is given by,
 \begin{equation}\label{membraness1}
  u_{ss}(r,\phi ;t)=\displaystyle\sum^\infty_{m=0}\sum^\infty_{n=1} C_{mn}\cos m\phi J_m(\mu_{mn} r)e^{j\omega t}.
 \end{equation}
-Substituting this expression in \eqref{membraneequation1} gives,
+Substituting this expression in \eqref{membraneequation1} with $\Psi=pe^{j\omega t}$ gives,
 \begin{align}
  &\displaystyle\sum^\infty_{m=0}\sum^\infty_{n=1} \Omega_{mn}C_{mn}\cos m\phi J_m(\mu_{mn} r)e^{j\omega t}=pe^{j\omega t}\label{membraness2}\\
- &\Omega_{mn}=\rho_m d (\omega^2-2j\alpha\omega-\omega^2_mn)\label{omegafirstdef}
+ &\text{where,  }\Omega_{mn}=\rho_M d (\omega^2-2j\alpha\omega-\omega^2_mn)\label{omegafirstdef}.
 \end{align}
-
+Using the orthogonality of the eigenmodes, the coefficients $C_{mn}$ can be calculated,
+\begin{equation}
+ C_{mn}=\frac{p\int dS u_{mn}}{\Omega_{mn}\int dS u^2_{mn}}
+\end{equation}
+with the integral this time being taken over the circular disk of radius $a_M$.
 
 \subsection{Sectoral Membrane}
