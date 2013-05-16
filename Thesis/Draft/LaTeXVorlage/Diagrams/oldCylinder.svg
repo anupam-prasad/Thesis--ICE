@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="oldCylinder.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path5271"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path5274"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3796">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3798" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3800" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3755">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3757" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3759" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3796"
+       id="linearGradient3020"
+       gradientUnits="userSpaceOnUse"
+       x1="153.80682"
+       y1="487.32495"
+       x2="214.24812"
+       y2="402.69434"
+       gradientTransform="matrix(0.69441059,0,0,0.74399688,359.9778,-219.074)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3796"
+       id="linearGradient3025"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.69441059,0,0,-0.74399688,418.74081,506.06246)"
+       x1="153.80682"
+       y1="487.32495"
+       x2="214.24812"
+       y2="402.69434" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3755"
+       id="linearGradient8934"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1423345,0,0,1.0588133,-283.55874,109.5618)"
+       x1="698.51025"
+       y1="438.04044"
+       x2="68.043533"
+       y2="453.92749" />
+    <linearGradient
+       y2="320.22049"
+       x2="-243.33339"
+       y1="320.22049"
+       x1="-512.38092"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient8440"
+       xlink:href="#linearGradient8267-0-9"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8267-0-9">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8269-8-5" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8271-8-4" />
+    </linearGradient>
+    <linearGradient
+       y2="320.22049"
+       x2="-243.33339"
+       y1="320.22049"
+       x1="-512.38092"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient8352"
+       xlink:href="#linearGradient8267-7"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8267-7">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8269-2" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8271-0" />
+    </linearGradient>
+    <linearGradient
+       y2="320.22049"
+       x2="-243.33339"
+       y1="320.22049"
+       x1="-512.38092"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient8977"
+       xlink:href="#linearGradient8267-7"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8267-7"
+       id="linearGradient9010"
+       gradientUnits="userSpaceOnUse"
+       x1="-512.38092"
+       y1="320.22049"
+       x2="-243.33339"
+       y2="320.22049" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8267-0-9"
+       id="linearGradient9012"
+       gradientUnits="userSpaceOnUse"
+       x1="-512.38092"
+       y1="320.22049"
+       x2="-243.33339"
+       y2="320.22049" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8267-7-2"
+       id="linearGradient9010-7"
+       gradientUnits="userSpaceOnUse"
+       x1="-512.38092"
+       y1="320.22049"
+       x2="-243.33339"
+       y2="320.22049" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8267-7-2">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8269-2-4" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8271-0-3" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8267-0-9-2"
+       id="linearGradient9012-3"
+       gradientUnits="userSpaceOnUse"
+       x1="-512.38092"
+       y1="320.22049"
+       x2="-243.33339"
+       y2="320.22049" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8267-0-9-2">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8269-8-5-0" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8271-8-4-2" />
+    </linearGradient>
+    <linearGradient
+       y2="320.22049"
+       x2="-243.33339"
+       y1="320.22049"
+       x1="-512.38092"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9035"
+       xlink:href="#linearGradient8267-0-9-2"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="13.946737"
+     inkscape:cy="590.54705"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-center="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:object-paths="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-nodes="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-global="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.52651511;fill:url(#linearGradient8934);fill-opacity:1;stroke:#000000;stroke-width:2.00087428;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985"
+       width="726.19849"
+       height="304.03067"
+       x="-208.49109"
+       y="431.21951"
+       ry="152.01534"
+       transform="matrix(0.91990916,-0.39213153,0.43023417,0.90271732,0,0)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.6240654px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="107.1863"
+       y="395.47952"
+       id="text5251"
+       sodipodi:linespacing="125%"
+       transform="scale(0.97899785,1.0214527)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5253"
+         x="107.1863"
+         y="395.47952">φ=β</tspan></text>
+    <text
+       transform="scale(0.97899785,1.0214527)"
+       sodipodi:linespacing="125%"
+       id="text5255"
+       y="389.58133"
+       x="253.82483"
+       style="font-size:17.6240654px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         y="389.58133"
+         x="253.82483"
+         id="tspan5257"
+         sodipodi:role="line">φ=2π-β</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 199.17732,547.0626 -78.49454,30.51845"
+       id="path5259"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:23.31567192px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="150.08701"
+       y="545.09662"
+       id="text5711"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92420076,1.082016)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5734"
+         x="150.08701"
+         y="545.09662"
+         dy="0 9.159729"
+         dx="0 -0.83270258">u0</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path5736"
+       d="m 663.196,355.30572 -78.49454,30.51845"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:none;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:23.31567192px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="668.59875"
+       y="359.12442"
+       id="text5711-4"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92420076,1.082016)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5734-8"
+         x="668.59875"
+         y="359.12442"
+         dy="0 11.428572"
+         dx="0">uL</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.22640395;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="m 480.94415,428.1835 -89.74811,35.32665"
+       id="path6309"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:23.31567192px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="473.83588"
+       y="434.38077"
+       id="text5711-1"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92420076,1.082016)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5734-1"
+         x="473.83588"
+         y="434.38077"
+         dy="0 10"
+         dx="0">vx</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="M 688.53371,557.71669 260.66468,743.69855"
+       id="path6884"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:20.75099373px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="470.98282"
+       y="679.44489"
+       id="text7622"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0170167,0.98326807)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7624"
+         x="470.98282"
+         y="679.44489">L</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 198.98717,547.25275 35.29854,40.82372"
+       id="path7626"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.38884354px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="160.55388"
+       y="764.52148"
+       id="text7812"
+       sodipodi:linespacing="125%"
+       transform="scale(1.3467839,0.74250964)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7814"
+         x="160.55388"
+         y="764.52148">r</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.38636364;fill:url(#linearGradient9010);fill-opacity:1;stroke:#000000;stroke-width:1.89999998000000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path8265-2"
+       sodipodi:cx="-377.85715"
+       sodipodi:cy="320.21933"
+       sodipodi:rx="133.57143"
+       sodipodi:ry="133.57143"
+       d="m -290.78511,218.92873 a 133.57143,133.57143 0 1 1 -87.07208,-32.28083 l 4e-5,133.57143 z"
+       sodipodi:start="5.422445"
+       sodipodi:end="10.995574"
+       transform="matrix(1.0904674,-0.36712354,0.37748804,1.060527,491.05354,67.999315)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.38636364;fill:url(#linearGradient9012);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path8265-20-6"
+       sodipodi:cx="-377.85715"
+       sodipodi:cy="320.21933"
+       sodipodi:rx="133.57143"
+       sodipodi:ry="133.57143"
+       d="m -464.50702,218.56735 a 133.57143,133.57143 0 0 1 85.89085,-31.91729 l 0.75902,133.56927 z"
+       sodipodi:start="4.0064934"
+       sodipodi:end="4.7067064"
+       transform="matrix(1.0701492,0.4198831,-0.43173708,1.0407667,742.36445,371.64857)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g9006-4"
+       transform="matrix(1.1619854,0,0,1.135414,945.26775,-259.96904)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         transform="matrix(0.9449811,-0.32712493,0.32712493,0.9449811,-57.683863,141.65018)"
+         sodipodi:end="10.995574"
+         sodipodi:start="5.422445"
+         d="m -290.78511,218.92873 c 55.94126,48.08856 62.30712,132.42139 14.21856,188.36264 -48.08856,55.94125 -132.42138,62.30712 -188.36264,14.21856 -55.94125,-48.08856 -62.30712,-132.42139 -14.21856,-188.36264 25.37501,-29.51865 62.36446,-46.49938 101.29056,-46.49939 l 4e-5,133.57143 z"
+         sodipodi:ry="133.57143"
+         sodipodi:rx="133.57143"
+         sodipodi:cy="320.21933"
+         sodipodi:cx="-377.85715"
+         id="path8265-2-2"
+         style="opacity:0.231;fill:url(#linearGradient9010-7);fill-opacity:1;stroke:#000000;stroke-width:1.89999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.92737375,0.37413626,-0.37413626,0.92737375,160.09804,412.21643)"
+         sodipodi:end="4.7067064"
+         sodipodi:start="4.0064934"
+         d="m -464.50702,218.56735 c 23.97137,-20.4336 54.3928,-31.7383 85.89085,-31.91729 l 0.75902,133.56927 z"
+         sodipodi:ry="133.57143"
+         sodipodi:rx="133.57143"
+         sodipodi:cy="320.21933"
+         sodipodi:cx="-377.85715"
+         id="path8265-20-6-4"
+         style="opacity:0.5;fill:url(#linearGradient9035);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+    </g>
+  </g>
+</svg>
