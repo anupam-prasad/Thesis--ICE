@@ -10,22 +10,55 @@ moving boundaries. For this reason we will need to make further approximations f
 
 \section{Description}
 In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
-both ends by rigidly clamped (baffled) circular membranes. As shown in \cite{vossenthesis}, The length of the cylinder was chosen to be equal
-to the interaural distance. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
+both ends by rigidly clamped (baffled) circular membranes; these model the tympanic membranes. As shown 
+in \cite{vossenthesis} and \cite{vossenjasa}, the length of the cylinder was chosen to be equal to the interaural distance and the radius of the model tympanum is
+determined from the typical area of the realistic tympanum.. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
 distribution inside the cavity is easy to calculate - something that is even more important at higher frequencies
 as the pressure distribution inside the cavity is highly non-uniform. 
 
-The problem with this description is the fact that the volume of the model's cavity 
-is an order of magnitude smaller than that of the mouth-cavity in the corresponding animal with similar
-tympani and a the same interaural distance. In general, a smaller volume results in a stronger coupling - both in terms of an increased iTD and an increased
+The problem with this description is that, due to the small area of the tympani, the volume of the model cavity 
+is an order of magnitude smaller than that of the actual mouth-cavity in the corresponding animal. In general, a smaller volume results in a stronger coupling - both in terms of an increased iTD and an increased
 iLD. For this reason, the earlier model overestimates the iTDs at low frequencies and the iLDs at
 high frequencies respectively.
 
-\begin{figure}
-  \resizebox{\textwidth}{!}{\includegraphics{Diagrams/newCylinder.png}}
-  \caption[New ICE Model Cylinder]{Long Caption to appear
-  with the figure.  \label{ICEnewcylinder} } 
+In order to get around this problem we make some slight modifications to the model. We basically maintain the cylindrical shape of the internal 
+cavity but require it to have a volume which is equal to that of the realistic cavity. We maintain the same tympanum size and interaural distance
+and can therefore calculate the radius of the cylinder as,
+\begin{align}
+ a_{cyl}=\sqrt{\frac{V_{cav}}{\pi L}}
+\end{align}
+\begin{figure}[ht!]
+\begin{center}
+\begin{subfigure}{1.0\textwidth}
+ \centering
+  \includegraphics[width=.75\linewidth]{Diagrams/oldCylinder.png}
+   \caption[Previous ICE Model Cylinder]{The previous realization of the ICE model.}
+  \label{oldICE}
+\end{subfigure}
+
+\begin{subfigure}{1.0\textwidth}
+\centering
+  \includegraphics[width=.75\linewidth]{Diagrams/newCylinder.png}
+  \caption[New ICE Model Cylinder]{The current realization of the model.}
+  \label{newICE}
+  \end{subfigure}
+  \caption[Previous and Current ICE Model Realizations]{}
+\end{center}
 \end{figure}
+where $a_{cyl}$ is the cylinder radius and $L$ is the interaural distance. Simply put, the model consists of a cylindrical shell
+of radius $a_{cyl}$ and length $L$ with circular holes on either side with radius of the tympanic membrane, $a_{tymp}$. These
+holes are in turn closed by rigidly clamped circular membranes which will be subsequently described. The previous and current realizations
+of our model are shown in figures \ref{oldICE} and \ref{newICE}.
+\subsection{Tympanic Membrane}
+The tympanic membrane or the eardrum is a thin membrane that effectively separates the outer ear and the
+middle ear. It is responsible for transmitting sound from the air.
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=.5\linewidth]{Diagrams/extracolumella2.png}
+ \caption[Tympanic Membrane Model]{Model of the loaded tympanice membrane. The lightly shaded region is a linear elastic membrane whereas the darkly shaded region 
+ represents the extracolumella.}
+\end{figure}
+
 \subsection{Sound Input}
 
 \section{Internal Cavity}
@@ -143,11 +176,11 @@ The equation of motion for the vibration of a rigidly clamped circular membrane 
 a point $(r,\phi)$ with $r<a$ and $0<\phi<2\pi$. It is given by,
 \begin{equation}\label{membraneequation1}
  \begin{split}
- -\frac{\partial^2 u(r,\phi,t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi,t)}{\partial t}+c^2_M \left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)\right. +\frac{1}{r^2}&\left.\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]
- \\ &=\frac{1}{\rho_M d}\Psi(r,\phi,t)
+ -\frac{\partial^2 u(r,\phi;t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi;t)}{\partial t}+c^2_M \left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)\right. +\frac{1}{r^2}&\left.\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]
+ \\ &=\frac{1}{\rho_M d}\Psi(r,\phi;t)
  \end{split}
 \end{equation}
-subject to the boundary condition $u(r,\phi,t)|_{r=a_M}=0$.. We've defined the following membrane material properties,
+subject to the boundary condition $u(r,\phi;t)|_{r=a_M}=0$.. We've defined the following membrane material properties,
 \begin{itemize}
  \item $c_M$ - propagation speed of vibrations.
  \item $\alpha (>0)$ - the damping coefficient.
@@ -161,7 +194,7 @@ of sound is much greater than the membrane size and any spatial variation can be
 \noindent\textbf{Undamped Membrane}: We first determine the eigenmodes of an undamped circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$. To do this 
 we make a separation ansatz just as we did in \eqref{pseparationansatz},
 \begin{equation}\label{mseparationansatz}
- u(r,\phi,t)=f(r)g(\phi)h(t)
+ u(r,\phi;t)=f(r)g(\phi)h(t)
 \end{equation}
 This gives us the following set of equations
 \begin{align}
@@ -252,4 +285,7 @@ and $\phi=2\pi-\beta$. This results in the following set of eigenmodes,
 \begin{equation}\label{sectoraleigenmode}
  u_{mn}(r,\phi;t)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn} t}+N_{mn}e^{-j\omega_{mn} t}\right]
 \end{equation}
-where $\kappa(m)=m\pi/(2(\pi-\beta))$.
+where $\kappa[m]=\frac{m\pi}{2(\pi-\beta)}$, $m=1,2,3,\ldots$. We see that the $r$ part of the above modes are given by
+order-$\kappa$ Bessel functions of the first kind; $\mu_{mn}$ being their zeros as before.
+It is apparent from the form of the above modes that, unlike in the case of the circular membrane eigenmodes, these modes
+are no longer circularly symmetric.
