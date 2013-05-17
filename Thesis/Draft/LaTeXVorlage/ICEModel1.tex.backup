@@ -3,7 +3,7 @@
 Our goal is to model the
 middle-ear of the vertebrates in question in the simplest possible way while ensuring an accurately replication of its main properties. 
 The main components of such a 
-system are the mouth-cavity, the two tympani and the two extracollumellar
+system are the mouth-cavity, the two tympani and the two extracolumellar
 footplates (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
 not conducive to an analytical treatment. Moreover, the system corresponds to a pair of second-order PDE's with
 moving boundaries. For this reason we will need to make further approximations for the sake of expediency.
@@ -32,31 +32,36 @@ and can therefore calculate the radius of the cylinder as,
 \begin{subfigure}{1.0\textwidth}
  \centering
   \includegraphics[width=.6\linewidth]{Diagrams/oldCylinder.png}
-   \caption[Previous ICE Model Cylinder]{The previous realization of the ICE model.}
+   \caption[Previous ICE Model Cylinder]{The previous geometric reprentation of the ICE model.}
   \label{oldICE}
 \end{subfigure}
 
 \begin{subfigure}{1.0\textwidth}
 \centering
   \includegraphics[width=.6\linewidth]{Diagrams/newCylinder.png}
-  \caption[New ICE Model Cylinder]{The current realization of the model.}
+  \caption[New ICE Model Cylinder]{The representation of the new model.}
   \label{newICE}
   \end{subfigure}
-  \caption[Previous and Current ICE Model Realizations]{}
+  \caption[Previous and Current ICE Model Representations]{The bold arrows represent the direction conventions. 
+  The darkly shaded region corresponds to the extracolumella.}
 \end{center}
 \end{figure}
 where $a_{cyl}$ is the cylinder radius and $L$ is the interaural distance. Simply put, the model consists of a cylindrical shell
 of radius $a_{cyl}$ and length $L$ with circular holes on either side with radius of the tympanic membrane, $a_{tymp}$. These
-holes are in turn closed by rigidly clamped circular membranes which will be subsequently described. The previous and current realizations
+holes are in turn closed by rigidly clamped circular membranes which will be subsequently described. The previous and current geometric representations
 of our model are shown in figures \ref{oldICE} and \ref{newICE}.
+
+\vspace{\baselineskip}
+\noindent\textbf{Direction Conventions}: We will be working in cylindrical polar coordinates, i.e. in $(r,\phi,x)$. $x$ being the direction
+along the cylindrical axis. Directions outward from the cylinder are taken as positive (in $x$) and those inward are taken as negative.
 \subsection{Tympanic Membrane}
 The tympanic membrane or the eardrum is a thin membrane that effectively separates the outer ear and the
 middle ear. It is responsible for transmitting sound from the air.
 \begin{figure}[ht]
  \centering
  \includegraphics[width=.5\linewidth]{Diagrams/extracolumella2.png}
- \caption[Tympanic Membrane Model]{Model of the loaded tympanice membrane. The lightly shaded region is a linear elastic membrane whereas the darkly shaded region 
- represents the extracolumella.}
+ \caption[Tympanic Membrane Model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
+ ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ is estimated from the anatomical data.}
 \end{figure}
 
 \subsection{Sound Input}
@@ -169,8 +174,8 @@ for the membrane vibrations and subsequently make use of some simplifying approx
 \section{Vibration of the Membrane}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
 vibrations of a circular membrane. We will then use our results to move on to the sectoral membrane 
-which corresponds to the tympanum loaded by the extracollumella. Physically, this means we have
-assumed the extracollumella to have infinite mass. 
+which corresponds to the tympanum loaded by the extracolumella. Thi corresponds to the approximating
+the extracolumella to have infinite mass. 
 \subsection{Circular Membrane}
 The equation of motion for the vibration of a rigidly clamped circular membrane of radius $a_M$ solves for the membrane displacement $u$ at
 a point $(r,\phi)$ with $r<a$ and $0<\phi<2\pi$. It is given by,
@@ -280,7 +285,7 @@ we will be concerned with, $\alpha\sim 4000s^{-1} $ for the larger lizards and $
 safely neglected for their hearing ranges.
 \subsection{Sectoral Membrane}
 The eigenmodes of the sectoral membrane proceeds from \eqref{membraneeigen} onwards. We now have a new set of boundary conditions in $\phi$.
-The extracollumella is modelled as a triangular plate of infinite mass which constrains the membrane displacement to go to zero at $phi=\beta$
+The extracolumella is modelled as a triangular plate of infinite mass which constrains the membrane displacement to go to zero at $phi=\beta$
 and $\phi=2\pi-\beta$. This results in the following set of eigenmodes,
 \begin{equation}\label{sectoraleigenmode}
  u_{mn}(r,\phi;t)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn} t}+N_{mn}e^{-j\omega_{mn} t}\right]
@@ -288,4 +293,4 @@ and $\phi=2\pi-\beta$. This results in the following set of eigenmodes,
 where $\kappa[m]=\frac{m\pi}{2(\pi-\beta)}$, $m=1,2,3,\ldots$. We see that the $r$ part of the above mode is given by the
 order-$\kappa$ Bessel function of the first kind; $\mu_{mn}$ being its $n^{th}$ zero, as before.
 It is apparent from the form of the above modes that, unlike in the case of the circular membrane eigenmodes, these modes
-are no longer circularly symmetric.
+are no longer circularly symmetric. We plot the first few of these modes in increasing order of frequency.

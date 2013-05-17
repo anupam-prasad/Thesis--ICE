@@ -5,8 +5,14 @@ middle-ear of the vertebrates in question in the simplest possible way while ens
 The main components of such a 
 system are the mouth-cavity, the two tympani and the two extracolumellar
 footplates (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
-not conducive to an analytical treatment. Moreover, the system corresponds to a pair of second-order PDE's with
+not conducive to an analytical treatment. Moreover, the system corresponds to a pair of coupled second-order PDE's with
 moving boundaries. For this reason we will need to make further approximations for the sake of expediency.
+
+In order to make the system more analytically tractable we will, as before, study a geometry in which a pair of circular
+membranes are coupled through a cylindrical cavity; albeit with a few modifications. The cylindrical geometry allows us to accurately calculate the 
+pressure distribution inside the cavity at both low and high frequencies. At the end of this chapter, we will
+have the main objects which describe the vibration of the coupled membranes as a function direction and frequency. Furthermore,
+these quantities will be conducive to comparison with observed data.
 
 \section{Description}
 In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
@@ -42,21 +48,29 @@ and can therefore calculate the radius of the cylinder as,
   \caption[New ICE Model Cylinder]{The representation of the new model.}
   \label{newICE}
   \end{subfigure}
-  \caption[Previous and Current ICE Model Representations]{The bold arrows represent the direction conventions. The shaded region $\beta<\phi<2\pi-\beta$ corresponds to the extracolumella.}
+  \caption[Previous and Current ICE Model Representations]{The bold arrows represent the direction conventions
+  along the cylinder's axis. 
+  The darkly shaded region corresponds to the extracolumella.}
 \end{center}
 \end{figure}
 where $a_{cyl}$ is the cylinder radius and $L$ is the interaural distance. Simply put, the model consists of a cylindrical shell
 of radius $a_{cyl}$ and length $L$ with circular holes on either side with radius of the tympanic membrane, $a_{tymp}$. These
 holes are in turn closed by rigidly clamped circular membranes which will be subsequently described. The previous and current geometric representations
 of our model are shown in figures \ref{oldICE} and \ref{newICE}.
+
+\vspace{\baselineskip}
+\noindent\textbf{Direction Conventions}: We will be working with the cylindrical polar coordinates, $(r,\phi,x)$. The direction
+along the cylindrical axis is denoted by $x$ and $(r,\phi)$ are the polar coordinates of the plane perpendular to the $x$-direction. 
+Directions outward from the cylinder are taken as positive (in $x$) and those inward are taken as negative.
 \subsection{Tympanic Membrane}
-The tympanic membrane or the eardrum is a thin membrane that effectively separates the outer ear and the
-middle ear. It is responsible for transmitting sound from the air.
+The tympanic membrane or the eardrum is a thin membrane that separates the outer ear and the
+middle ear. Unlike humans, lizards possess only a single middle ear bone, the \textit{columella},
+that is connected to both eardrums by means of a cartileginous element, the \textit{extracolumella}.
 \begin{figure}[ht]
  \centering
- \includegraphics[width=.5\linewidth]{Diagrams/extracolumella2.png}
- \caption[Tympanic Membrane Model]{Model of the loaded tympanice membrane. The lightly shaded region is a linear elastic membrane whereas the darkly shaded region 
- represents the extracolumella.}
+ \includegraphics[width=.35\linewidth]{Diagrams/extracolumella2.png}
+ \caption[Tympanic Membrane Model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
+ ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ is estimated from the anatomical data.}
 \end{figure}
 
 \subsection{Sound Input}
@@ -82,7 +96,7 @@ which after substitution into the acoustic wave-equation leads to,
  &+f(x)g(r)\frac{1}{r^2}\frac{\partial h(\phi)}{\partial \phi}+\frac{\partial^2 f(x)}{\partial x^2}=0
 \end{split}
 \end{equation}
-with $k:=\omega/c$. This yields the following set of equations (ODEs):
+with $k:=\omega/c$. This results in the following set of separated ODE's,
 \begin{align}
  \frac{d^2 f(x)}{dx^2}+\zeta^2f(x)&=0\\
  \frac{d^2 h(\phi)}{d\phi^2}+q^2h(\phi	)&=0\\
@@ -275,7 +289,8 @@ combination of the eigenmodes given in \eqref{circularmembranedampedeigen}. Ther
 \end{equation}
 The complete solution is given by $u=u_t+u_{ss}$ and the coefficients $M_{mn}$ and $N_{mn}$ are determined by the initial conditions (at $t=0$).
 
-The damping coefficient $\alpha$ is usually given in terms of the membrane fundamental frequency and a quality factor $Q$ as $\alpha=\omega_{01}/2Q$. For the tympani
+\vspace{\baselineskip}
+\textbf{Steady State Approximation}: The damping coefficient $\alpha$ is usually given in terms of the membrane fundamental frequency and a quality factor $Q$ as $\alpha=\omega_{01}/2Q$. For the tympani
 we will be concerned with, $\alpha\sim 4000s^{-1} $ for the larger lizards and $\alpha\sim 8000s^{-1}$ for the smaller ones. Therefore, the transient response can be 
 safely neglected for their hearing ranges.
 \subsection{Sectoral Membrane}
@@ -286,6 +301,7 @@ and $\phi=2\pi-\beta$. This results in the following set of eigenmodes,
  u_{mn}(r,\phi;t)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn} t}+N_{mn}e^{-j\omega_{mn} t}\right]
 \end{equation}
 where $\kappa[m]=\frac{m\pi}{2(\pi-\beta)}$, $m=1,2,3,\ldots$. We see that the $r$ part of the above mode is given by the
-order-$\kappa$ Bessel function of the first kind; $\mu_{mn}$ being its $n^{th}$ zero, as before.
+order-$\kappa$ Bessel function of the first kind; $\mu_{mn}$ being its $n^{th}$ zero, as before. The solution for the damped
+membrane follows in an identical way.
 It is apparent from the form of the above modes that, unlike in the case of the circular membrane eigenmodes, these modes
 are no longer circularly symmetric. We plot the first few of these modes in increasing order of frequency.
