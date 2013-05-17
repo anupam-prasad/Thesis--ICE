@@ -171,8 +171,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.58039653"
-     inkscape:cx="495.48425"
-     inkscape:cy="428.62404"
+     inkscape:cx="181.04405"
+     inkscape:cy="425.17812"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -333,7 +333,10 @@
        y="0"
        width="744.09448"
        height="1052.3622"
-       transform="translate(57.675033,301.43368)" />
+       transform="translate(57.675033,301.43368)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/extracolumella2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <use
        id="use5272"
        xlink:href="#path5250"
@@ -352,7 +355,10 @@
        y="0"
        width="744.09448"
        height="1052.3622"
-       transform="translate(116.2756,301.62599)" />
+       transform="translate(116.2756,301.62599)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/extracolumella2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <use
        id="use5276"
        xlink:href="#path5250"
@@ -492,7 +498,10 @@
        y="0"
        width="744.09448"
        height="1052.3622"
-       transform="translate(0.83905795,290.81048)" />
+       transform="translate(0.83905795,290.81048)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/extracolumella2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <use
        id="use5302"
        xlink:href="#path5250"
@@ -580,14 +589,14 @@
          y="-470.9537">O</tspan></text>
     <path
        sodipodi:type="arc"
-       style="opacity:0.11363639;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.46969697;fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1.48538411000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path3088"
        sodipodi:cx="442.80069"
        sodipodi:cy="408.83664"
        sodipodi:rx="138.69827"
        sodipodi:ry="138.69827"
-       d="M 581.49896,408.83664 A 138.69827,138.69827 0 1 1 524.26272,296.5818 l -81.46203,112.25484 z"
-       sodipodi:start="0"
+       d="M 581.46674,411.82599 A 138.69827,138.69827 0 1 1 524.26272,296.5818 l -81.46203,112.25484 z"
+       sodipodi:start="0.021554557"
        sodipodi:end="5.3401482"
        transform="matrix(-1.6327101,-3.1839561,-3.1839561,1.6327101,2426.1649,1221.1678)"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/extracolumella2.png"

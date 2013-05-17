@@ -27,18 +27,18 @@ and can therefore calculate the radius of the cylinder as,
 \begin{align}
  a_{cyl}=\sqrt{\frac{V_{cav}}{\pi L}}
 \end{align}
-\begin{figure}[ht!]
+\begin{figure}[ht]
 \begin{center}
 \begin{subfigure}{1.0\textwidth}
  \centering
-  \includegraphics[width=.75\linewidth]{Diagrams/oldCylinder.png}
+  \includegraphics[width=.6\linewidth]{Diagrams/oldCylinder.png}
    \caption[Previous ICE Model Cylinder]{The previous realization of the ICE model.}
   \label{oldICE}
 \end{subfigure}
 
 \begin{subfigure}{1.0\textwidth}
 \centering
-  \includegraphics[width=.75\linewidth]{Diagrams/newCylinder.png}
+  \includegraphics[width=.6\linewidth]{Diagrams/newCylinder.png}
   \caption[New ICE Model Cylinder]{The current realization of the model.}
   \label{newICE}
   \end{subfigure}
@@ -285,7 +285,7 @@ and $\phi=2\pi-\beta$. This results in the following set of eigenmodes,
 \begin{equation}\label{sectoraleigenmode}
  u_{mn}(r,\phi;t)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn} t}+N_{mn}e^{-j\omega_{mn} t}\right]
 \end{equation}
-where $\kappa[m]=\frac{m\pi}{2(\pi-\beta)}$, $m=1,2,3,\ldots$. We see that the $r$ part of the above modes are given by
-order-$\kappa$ Bessel functions of the first kind; $\mu_{mn}$ being their zeros as before.
+where $\kappa[m]=\frac{m\pi}{2(\pi-\beta)}$, $m=1,2,3,\ldots$. We see that the $r$ part of the above mode is given by the
+order-$\kappa$ Bessel function of the first kind; $\mu_{mn}$ being its $n^{th}$ zero, as before.
 It is apparent from the form of the above modes that, unlike in the case of the circular membrane eigenmodes, these modes
 are no longer circularly symmetric.

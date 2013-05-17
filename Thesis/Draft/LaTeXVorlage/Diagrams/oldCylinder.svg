@@ -19,6 +19,19 @@
   <defs
      id="defs4">
     <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path3891"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
        inkscape:stockid="Arrow1Lstart"
        orient="auto"
        refY="0.0"
@@ -89,16 +102,6 @@
        x2="214.24812"
        y2="402.69434" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3755"
-       id="linearGradient8934"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.1423345,0,0,1.0588133,-283.55874,109.5618)"
-       x1="698.51025"
-       y1="438.04044"
-       x2="68.043533"
-       y2="453.92749" />
-    <linearGradient
        y2="320.22049"
        x2="-243.33339"
        y1="320.22049"
@@ -151,33 +154,6 @@
        inkscape:collect="always" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient8267-7"
-       id="linearGradient9010"
-       gradientUnits="userSpaceOnUse"
-       x1="-512.38092"
-       y1="320.22049"
-       x2="-243.33339"
-       y2="320.22049" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient8267-0-9"
-       id="linearGradient9012"
-       gradientUnits="userSpaceOnUse"
-       x1="-512.38092"
-       y1="320.22049"
-       x2="-243.33339"
-       y2="320.22049" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient8267-7-2"
-       id="linearGradient9010-7"
-       gradientUnits="userSpaceOnUse"
-       x1="-512.38092"
-       y1="320.22049"
-       x2="-243.33339"
-       y2="320.22049" />
-    <linearGradient
-       inkscape:collect="always"
        id="linearGradient8267-7-2">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
@@ -210,14 +186,51 @@
          id="stop8271-8-4-2" />
     </linearGradient>
     <linearGradient
-       y2="320.22049"
-       x2="-243.33339"
-       y1="320.22049"
-       x1="-512.38092"
+       inkscape:collect="always"
+       xlink:href="#linearGradient3755"
+       id="linearGradient3066"
        gradientUnits="userSpaceOnUse"
-       id="linearGradient9035"
+       gradientTransform="matrix(1.6020182,0,0,1.4848875,-627.53866,-52.952278)"
+       x1="698.51025"
+       y1="438.04044"
+       x2="68.043533"
+       y2="453.92749" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8267-7-2"
+       id="linearGradient3068"
+       gradientUnits="userSpaceOnUse"
+       x1="-512.38092"
+       y1="320.22049"
+       x2="-243.33339"
+       y2="320.22049" />
+    <linearGradient
+       inkscape:collect="always"
        xlink:href="#linearGradient8267-0-9-2"
-       inkscape:collect="always" />
+       id="linearGradient3070"
+       gradientUnits="userSpaceOnUse"
+       x1="-512.38092"
+       y1="320.22049"
+       x2="-243.33339"
+       y2="320.22049" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8267-0-9"
+       id="linearGradient3072"
+       gradientUnits="userSpaceOnUse"
+       x1="-512.38092"
+       y1="320.22049"
+       x2="-243.33339"
+       y2="320.22049" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8267-7"
+       id="linearGradient3074"
+       gradientUnits="userSpaceOnUse"
+       x1="-512.38092"
+       y1="320.22049"
+       x2="-243.33339"
+       y2="320.22049" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -227,23 +240,23 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="13.946737"
-     inkscape:cy="119.976"
+     inkscape:cx="16.80388"
+     inkscape:cy="345.69029"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-center="false"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-smooth-nodes="false"
-     inkscape:object-paths="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:object-paths="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-global="true" />
+     inkscape:object-nodes="false"
+     inkscape:snap-global="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -260,180 +273,192 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:0.52651511;fill:url(#linearGradient3066);fill-opacity:1;stroke:#000000;stroke-width:2.80604076;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985"
+       width="1018.426"
+       height="426.37485"
+       x="-522.26324"
+       y="398.14285"
+       ry="213.18742"
+       transform="matrix(0.91990916,-0.39213154,0.43023416,0.90271733,0,0)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:24.71611786px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-156.47498"
+       y="460.28424"
+       id="text5251"
+       sodipodi:linespacing="125%"
+       transform="scale(0.97899785,1.0214527)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5253"
+         x="-156.47498"
+         y="460.28424">φ=β</tspan></text>
+    <text
+       transform="scale(0.97899785,1.0214527)"
+       sodipodi:linespacing="125%"
+       id="text5255"
+       y="452.01257"
+       x="49.171955"
+       style="font-size:24.71611786px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         y="452.01257"
+         x="49.171955"
+         id="tspan5257"
+         sodipodi:role="line">φ=2π-β</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.40240729;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M -21.022773,670.84166 -131.10409,713.64095"
+       id="path5259"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:32.69806671px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-114.50093"
+       y="675.38879"
+       id="text5711"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92420076,1.082016)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5734"
+         x="-114.50093"
+         y="675.38879"
+         dy="0 12.845671"
+         dx="0 -1.1677881">u0</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path5736"
+       d="M 629.72041,401.92041 519.6391,444.71971"
+       style="fill:none;stroke:#000000;stroke-width:1.40240729;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:32.69806671px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="612.66376"
+       y="414.58002"
+       id="text5711-4"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92420076,1.082016)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5734-8"
+         x="612.66376"
+         y="414.58002"
+         dy="0 16.027512"
+         dx="0">uL</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.71991789;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="M 374.12909,504.12474 248.26568,553.66709"
+       id="path6309"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:32.69806671px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="339.52682"
+       y="520.12006"
+       id="text5711-1"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92420076,1.082016)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5734-1"
+         x="339.52682"
+         y="520.12006"
+         dy="0 14.024073"
+         dx="0">vx</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.40240729;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="M 665.2542,685.78303 65.207549,946.60535"
+       id="path6884"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.10134506px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="365.18469"
+       y="854.85577"
+       id="text7622"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0170167,0.98326804)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7624"
+         x="365.18469"
+         y="854.85577">L</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.65499997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
+       d="M -20.219148,669.72499 122.32524,827.82339"
+       id="path7626"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.38636361;fill:url(#linearGradient3074);fill-opacity:1;stroke:#000000;stroke-width:1.89999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path8265-2"
+       sodipodi:cx="-377.85715"
+       sodipodi:cy="320.21933"
+       sodipodi:rx="133.57143"
+       sodipodi:ry="133.57143"
+       d="m -290.78511,218.92873 a 133.57143,133.57143 0 1 1 -87.07208,-32.28083 l 4e-5,133.57143 z"
+       sodipodi:start="5.422445"
+       sodipodi:end="10.995574"
+       transform="matrix(1.5292794,-0.51485673,0.52939198,1.4872908,388.10846,-1.0765662)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.38636361;fill:url(#linearGradient3072);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path8265-20-6"
+       sodipodi:cx="-377.85715"
+       sodipodi:cy="320.21933"
+       sodipodi:rx="133.57143"
+       sodipodi:ry="133.57143"
+       d="m -464.50702,218.56735 a 133.57143,133.57143 0 0 1 85.89085,-31.91729 l 0.75902,133.56927 z"
+       sodipodi:start="4.0064934"
+       sodipodi:end="4.7067064"
+       transform="matrix(1.5007851,0.58884712,-0.60547123,1.4595788,740.74682,424.83974)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
-       id="g3040"
-       transform="matrix(1.4024073,0,0,1.4024073,-298.92193,-93.505787)"
-       inkscape:export-filename="/home/anupam/Documents/Acads/ICE-Model/Thesis--ICE/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       id="g9006-4"
+       transform="matrix(1.6295768,0,0,1.5923129,1025.2999,-460.94541)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="matrix(0.91990916,-0.39213153,0.43023417,0.90271732,0,0)"
-         ry="152.01534"
-         y="431.21951"
-         x="-208.49109"
-         height="304.03067"
-         width="726.19849"
-         id="rect2985"
-         style="opacity:0.52651511;fill:url(#linearGradient8934);fill-opacity:1;stroke:#000000;stroke-width:2.00087428;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <text
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="scale(0.97899785,1.0214527)"
-         sodipodi:linespacing="125%"
-         id="text5251"
-         y="395.47952"
-         x="107.1863"
-         style="font-size:17.6240654px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="395.47952"
-           x="107.1863"
-           id="tspan5253"
-           sodipodi:role="line">φ=β</tspan></text>
-      <text
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         xml:space="preserve"
-         style="font-size:17.6240654px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         x="253.82483"
-         y="389.58133"
-         id="text5255"
-         sodipodi:linespacing="125%"
-         transform="scale(0.97899785,1.0214527)"><tspan
-           sodipodi:role="line"
-           id="tspan5257"
-           x="253.82483"
-           y="389.58133">φ=2π-β</tspan></text>
       <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         inkscape:connector-curvature="0"
-         id="path5259"
-         d="m 199.17732,547.0626 -78.49454,30.51845"
-         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)" />
-      <text
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="scale(0.92420076,1.082016)"
-         sodipodi:linespacing="125%"
-         id="text5711"
-         y="545.09662"
-         x="150.08701"
-         style="font-size:23.31567192px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           dx="0 -0.83270258"
-           dy="0 9.159729"
-           y="545.09662"
-           x="150.08701"
-           id="tspan5734"
-           sodipodi:role="line">u0</tspan></text>
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:none"
-         d="m 663.196,355.30572 -78.49454,30.51845"
-         id="path5736"
-         inkscape:connector-curvature="0" />
-      <text
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="scale(0.92420076,1.082016)"
-         sodipodi:linespacing="125%"
-         id="text5711-4"
-         y="359.12442"
-         x="668.59875"
-         style="font-size:23.31567192px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           dx="0"
-           dy="0 11.428572"
-           y="359.12442"
-           x="668.59875"
-           id="tspan5734-8"
-           sodipodi:role="line">uL</tspan></text>
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         inkscape:connector-curvature="0"
-         id="path6309"
-         d="m 480.94415,428.1835 -89.74811,35.32665"
-         style="fill:none;stroke:#000000;stroke-width:1.22640395;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend)" />
-      <text
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="scale(0.92420076,1.082016)"
-         sodipodi:linespacing="125%"
-         id="text5711-1"
-         y="434.38077"
-         x="473.83588"
-         style="font-size:23.31567192px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           dx="0"
-           dy="0 10"
-           y="434.38077"
-           x="473.83588"
-           id="tspan5734-1"
-           sodipodi:role="line">vx</tspan></text>
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         inkscape:connector-curvature="0"
-         id="path6884"
-         d="M 688.53371,557.71669 260.66468,743.69855"
-         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)" />
-      <text
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="scale(1.0170167,0.98326807)"
-         sodipodi:linespacing="125%"
-         id="text7622"
-         y="679.44489"
-         x="470.98282"
-         style="font-size:20.75099373px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="679.44489"
-           x="470.98282"
-           id="tspan7624"
-           sodipodi:role="line">L</tspan></text>
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         inkscape:connector-curvature="0"
-         id="path7626"
-         d="m 198.98717,547.25275 35.29854,40.82372"
-         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
-      <text
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="scale(1.3467839,0.74250964)"
-         sodipodi:linespacing="125%"
-         id="text7812"
-         y="764.52148"
-         x="160.55388"
-         style="font-size:26.38884354px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="764.52148"
-           x="160.55388"
-           id="tspan7814"
-           sodipodi:role="line">r</tspan></text>
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="matrix(1.0904674,-0.36712354,0.37748804,1.060527,491.05354,67.999315)"
+         transform="matrix(0.9449811,-0.32712493,0.32712493,0.9449811,-57.683863,141.65018)"
          sodipodi:end="10.995574"
          sodipodi:start="5.422445"
          d="m -290.78511,218.92873 c 55.94126,48.08856 62.30712,132.42139 14.21856,188.36264 -48.08856,55.94125 -132.42138,62.30712 -188.36264,14.21856 -55.94125,-48.08856 -62.30712,-132.42139 -14.21856,-188.36264 25.37501,-29.51865 62.36446,-46.49938 101.29056,-46.49939 l 4e-5,133.57143 z"
@@ -441,14 +466,11 @@
          sodipodi:rx="133.57143"
          sodipodi:cy="320.21933"
          sodipodi:cx="-377.85715"
-         id="path8265-2"
-         style="opacity:0.38636361;fill:url(#linearGradient9010);fill-opacity:1;stroke:#000000;stroke-width:1.89999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path8265-2-2"
+         style="opacity:0.231;fill:url(#linearGradient3068);fill-opacity:1;stroke:#000000;stroke-width:1.89999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:type="arc" />
       <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="matrix(1.0701492,0.4198831,-0.43173708,1.0407667,742.36445,371.64857)"
+         transform="matrix(0.92737375,0.37413626,-0.37413626,0.92737375,160.09804,412.21643)"
          sodipodi:end="4.7067064"
          sodipodi:start="4.0064934"
          d="m -464.50702,218.56735 c 23.97137,-20.4336 54.3928,-31.7383 85.89085,-31.91729 l 0.75902,133.56927 z"
@@ -456,40 +478,39 @@
          sodipodi:rx="133.57143"
          sodipodi:cy="320.21933"
          sodipodi:cx="-377.85715"
-         id="path8265-20-6"
-         style="opacity:0.38636361;fill:url(#linearGradient9012);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path8265-20-6-4"
+         style="opacity:0.5;fill:url(#linearGradient3070);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:type="arc" />
-      <g
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
-         transform="matrix(1.1619854,0,0,1.135414,945.26775,-259.96904)"
-         id="g9006-4">
-        <path
-           sodipodi:type="arc"
-           style="opacity:0.231;fill:url(#linearGradient9010-7);fill-opacity:1;stroke:#000000;stroke-width:1.89999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="path8265-2-2"
-           sodipodi:cx="-377.85715"
-           sodipodi:cy="320.21933"
-           sodipodi:rx="133.57143"
-           sodipodi:ry="133.57143"
-           d="m -290.78511,218.92873 c 55.94126,48.08856 62.30712,132.42139 14.21856,188.36264 -48.08856,55.94125 -132.42138,62.30712 -188.36264,14.21856 -55.94125,-48.08856 -62.30712,-132.42139 -14.21856,-188.36264 25.37501,-29.51865 62.36446,-46.49938 101.29056,-46.49939 l 4e-5,133.57143 z"
-           sodipodi:start="5.422445"
-           sodipodi:end="10.995574"
-           transform="matrix(0.9449811,-0.32712493,0.32712493,0.9449811,-57.683863,141.65018)" />
-        <path
-           sodipodi:type="arc"
-           style="opacity:0.5;fill:url(#linearGradient9035);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="path8265-20-6-4"
-           sodipodi:cx="-377.85715"
-           sodipodi:cy="320.21933"
-           sodipodi:rx="133.57143"
-           sodipodi:ry="133.57143"
-           d="m -464.50702,218.56735 c 23.97137,-20.4336 54.3928,-31.7383 85.89085,-31.91729 l 0.75902,133.56927 z"
-           sodipodi:start="4.0064934"
-           sodipodi:end="4.7067064"
-           transform="matrix(0.92737375,0.37413626,-0.37413626,0.92737375,160.09804,412.21643)" />
-      </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:33.40239716px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="39.80294"
+       y="755.38727"
+       id="text7812"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0292091,0.97161986)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan7814"
+         x="39.80294"
+         y="755.38727">a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.15468025px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="55.335117"
+       y="812.81537"
+       id="text3076"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0941695,0.91393518)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/oldCylinder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3078"
+         x="55.335117"
+         y="812.81537">tymp</tspan></text>
   </g>
 </svg>
