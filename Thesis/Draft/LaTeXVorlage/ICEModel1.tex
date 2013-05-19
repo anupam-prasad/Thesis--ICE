@@ -1,18 +1,24 @@
 \chapter{The ICE Model}
+Several vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
+that of mammals: their tympanic membranes are coupled through a large mouth cavity resulting in the influence of the vibrations of one tympanic membrane
+on those of the other. The typically small head sizes (compared to sound wavelength) of these animals result in
+small phase differences (ITDs) and negligible amplitude difference (ILDs) between the ears. The coupling serves to enhance the ITDs and create ILDs
+between the tympanal vibrations. These differences show directionality and serve as hearing cues for localization.
 
-Our goal is to model the
-middle-ear of the vertebrates in question in the simplest possible way while ensuring an accurately replication of its main properties. 
+In this chapter we present a model for the
+middle-ear of lizards - specifically the Tokay Gecko and the Common House Gecko. Our goal is to do this in the simplest possible way while ensuring an accurate reproduction of its main properties. 
 The main components of such a 
 system are the mouth-cavity, the two tympani and the two extracolumellar
 footplates (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
 not conducive to an analytical treatment. Moreover, the system corresponds to a pair of coupled second-order PDE's with
 moving boundaries. For this reason we will need to make further approximations for the sake of expediency.
 
-In order to make the system more analytically tractable we will, as before, study a geometry in which a pair of circular
-membranes are coupled through a cylindrical cavity; albeit with a few modifications. The cylindrical geometry allows us to accurately calculate the 
-pressure distribution inside the cavity at both low and high frequencies. At the end of this chapter, we will
-have the main objects which describe the vibration of the coupled membranes as a function direction and frequency. Furthermore,
-these quantities will be conducive to comparison with observed data.
+In order to make the system more analytically tractable we will, as before, study a geometry in which a pair of sectoral
+membranes are coupled through a cylindrical cavity. The cylindrical geometry allows an accurately calculation of the 
+pressure distribution inside the cavity at both low and high frequencies. By accounting for the presence of the asymetrically attached
+extracolumella, we will also explain the complex vibration patterns of the membrane. At the end of this chapter, we will
+have the main objects - the internal time differences (iTDs) and internal level differences (iLDs) - which 
+quantify the response of the system as a function direction and frequency.
 
 \section{Description}
 In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
@@ -62,9 +68,11 @@ of our model are shown in figures \ref{oldICE} and \ref{newICE}.
 \noindent\textbf{Direction Conventions}: We will be working with the cylindrical polar coordinates, $(r,\phi,x)$. The direction
 along the cylindrical axis is denoted by $x$ and $(r,\phi)$ are the polar coordinates of the plane perpendular to the $x$-direction. 
 Directions outward from the cylinder are taken as positive (in $x$) and those inward are taken as negative.
-\subsection{Tympanic Membrane}
+\subsection{Middle Ear}
+The main components of the middle-ear of lizards are the two eardrums, the columella and the two cartileginous extracolumella.  
 The tympanic membrane or the eardrum is a thin membrane that separates the outer ear and the
-middle ear. Unlike humans, lizards possess only a single middle ear bone, the \textit{columella},
+middle ear and vibrates in response to external sound waves.  Unlike humans, lizards 
+possess only a single middle ear bone, the \textit{columella},
 that is connected to both eardrums by means of a cartileginous element, the \textit{extracolumella}.
 \begin{figure}[ht]
  \centering
@@ -72,7 +80,8 @@ that is connected to both eardrums by means of a cartileginous element, the \tex
  \caption[Tympanic Membrane Model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
  ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ is estimated from the anatomical data.}
 \end{figure}
-
+As a result of this, the tympanum cannot vibrate freely. For most frequencies, the extracolumella vibrates as a completely stiff
+bar. Flection occurs at 
 \subsection{Sound Input}
 
 \section{Internal Cavity}
