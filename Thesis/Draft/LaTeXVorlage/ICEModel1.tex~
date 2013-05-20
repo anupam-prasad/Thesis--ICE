@@ -1,9 +1,19 @@
 \chapter{The ICE Model}
 Several vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
-that of mammals: their tympanic membranes are coupled through a large mouth cavity resulting in the influence of the vibrations of one tympanic membrane
-on those of the other. The typically small head sizes (compared to sound wavelength) of these animals result in
+that of mammals: their tympanic membranes are coupled through large eustachian tubes and a large mouth cavity resulting in the influence of the vibrations of one tympanic membrane
+on those of the other. This is illustrated in \ref{geckohead}. The typically small head sizes (compared to sound wavelength) of these animals result in
 small phase differences (ITDs) and negligible amplitude difference (ILDs) between the ears. The coupling serves to enhance the ITDs and create ILDs
 between the tympanal vibrations. These differences show directionality and serve as hearing cues for localization.
+
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=.85\linewidth]{Diagrams/geckohead1.png}
+ \caption[Illustration of a gecko's head]{Left: Picture of a Tokay gecko's head with the snout pointing to the left. The tympanic membrane is illuminated from behind by
+ a light source on the other side of the head. The cartileginous extracolumella can be seen attached to the upper part of the membrane.
+ Right: Cast imprint of the mouth cavity of the gecko with the snout pointing to the top. The figures illustrate the coupling of the tympani through the mouth cavity.
+ Photographs courtesy of Jakob Christensen-Dalsgaard.}
+  \label{geckohead}
+\end{figure}
 
 In this chapter we present a model for the
 middle-ear of lizards - specifically the Tokay Gecko and the Common House Gecko. Our goal is to do this in the simplest possible way while ensuring an accurate reproduction of its main properties. 
@@ -24,14 +34,14 @@ quantify the response of the system as a function direction and frequency.
 In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
 both ends by rigidly clamped (baffled) circular membranes; these model the tympanic membranes. As shown 
 in \cite{vossenthesis} and \cite{vossenjasa}, the length of the cylinder was chosen to be equal to the interaural distance and the radius of the model tympanum is
-determined from the typical area of the realistic tympanum.. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
-distribution inside the cavity is easy to calculate - something that is even more important at higher frequencies
-as the pressure distribution inside the cavity is highly non-uniform. 
+determined from the typical area of the realistic tympanum. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
+distribution inside the cavity is easy to calculate. The pressure distribution inside the cavity becomes highly non-uniform 
+with increasing frequency and a cylindrical cavity simplifies its calculation. 
 
-The problem with this description is that, due to the small area of the tympani, the volume of the model cavity 
-is an order of magnitude smaller than that of the actual mouth-cavity in the corresponding animal. In general, a smaller volume results in a stronger coupling - both in terms of an increased iTD and an increased
-iLD. For this reason, the earlier model overestimates the iTDs at low frequencies and the iLDs at
-high frequencies respectively.
+On the other hand, in this description the small area of the tympani results in a cavity volume which 
+is an order of magnitude smaller than that of the realistic mouth-cavity in the corresponding animal. In general, a smaller volume results in a stronger coupling - both in terms of an increased iTD and an increased
+iLD. For this reason, the earlier model overestimates the iTDs and iLDs at
+low and high frequencies respectively.
 
 In order to get around this problem we make some slight modifications to the model. We basically maintain the cylindrical shape of the internal 
 cavity but require it to have a volume which is equal to that of the realistic cavity. We maintain the same tympanum size and interaural distance
@@ -54,21 +64,22 @@ and can therefore calculate the radius of the cylinder as,
   \caption[New ICE Model Cylinder]{The representation of the new model.}
   \label{newICE}
   \end{subfigure}
-  \caption[Previous and Current ICE Model Representations]{The bold arrows represent the direction conventions
-  along the cylinder's axis. 
-  The darkly shaded region corresponds to the extracolumella.}
+  \caption[Previous and current ICE model representations]{The bold arrows represent the direction conventions
+  along the cylinder's axis. The new model is represented by a cylinder of radius $a_{cyl}$ and length $L$ closed
+  at both ends by sectoral membrane of radius $a_{tymp}$.
+  The darkly shaded region corresponds to the extracolumella (described in \ref{middleear}).}
 \end{center}
 \end{figure}
 where $a_{cyl}$ is the cylinder radius and $L$ is the interaural distance. Simply put, the model consists of a cylindrical shell
-of radius $a_{cyl}$ and length $L$ with circular holes on either side with radius of the tympanic membrane, $a_{tymp}$. These
-holes are in turn closed by rigidly clamped circular membranes which will be subsequently described. The previous and current geometric representations
+of radius $a_{cyl}$ and length $L$ with circular holes on either side with the radius of the tympanic membrane, $a_{tymp}$. These
+holes are in turn closed by rigidly clamped membranes which will be described in the next section. The previous and current geometric representations
 of our model are shown in figures \ref{oldICE} and \ref{newICE}.
 
 \vspace{\baselineskip}
 \noindent\textbf{Direction Conventions}: We will be working with the cylindrical polar coordinates, $(r,\phi,x)$. The direction
 along the cylindrical axis is denoted by $x$ and $(r,\phi)$ are the polar coordinates of the plane perpendular to the $x$-direction. 
 Directions outward from the cylinder are taken as positive (in $x$) and those inward are taken as negative.
-\subsection{Middle Ear}
+\subsection{Middle Ear}\label{middleear}
 The main components of the middle-ear of lizards are the two eardrums, the columella and the two cartileginous extracolumella.  
 The tympanic membrane or the eardrum is a thin membrane that separates the outer ear and the
 middle ear and vibrates in response to external sound waves.  Unlike humans, lizards 
@@ -77,13 +88,19 @@ that is connected to both eardrums by means of a cartileginous element, the \tex
 \begin{figure}[ht]
  \centering
  \includegraphics[width=.3\linewidth]{Diagrams/extracolumella2.png}
- \caption[Tympanic Membrane Model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
+ \caption[Tympanic membrane model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
  ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ is estimated from the anatomical data.}
 \end{figure}
-
+As a result of this, the tympanum cannot vibrate freely. For most frequencies, the extracolumella vibrates as a completely stiff
+bar. Flection occurs at 
 \subsection{Sound Input}
 
-\section{Internal Cavity}
+\section{Derivation of the Model}
+We will now use the previously described physical model to derive the main quantities of interest in the ICE model. We first find an expression
+for the pressure distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. We then apply the 
+appropriate boundary conditions to relate the membrane vibrations to the internal pressure and find the expression for the membrane
+vibrations as a function of direction and frequency.
+\subsection{Internal Cavity}
 We assume that the air inside the cavity obeys linear acoustics (briefly discussed in \ref{acousticappendix}). The pressure distribution inside the cavity
 is therefore given by the $3$D acoustic wave-equation in cylindrical polar coordinates,	
 \begin{equation}\label{pressurewaveeqn}
@@ -188,12 +205,12 @@ The remaining coefficients, $A_{qs}$ and $B_{qs}$, will be determined by equatin
 the membrane velocity at both ends of the cylinder. To do so, we will first need to find an expression
 for the membrane vibrations and subsequently make use of some simplifying approximations.
 
-\section{Vibration of the Membrane}
+\subsection{Vibration of the Membrane}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
 vibrations of a circular membrane. We will then use our results to move on to the sectoral membrane 
 which corresponds to the tympanum loaded by the extracolumella. Thi corresponds to the approximating
 the extracolumella to have infinite mass. 
-\subsection{Circular Membrane}
+\subsubsection{Circular Membrane}
 The equation of motion for the vibration of a rigidly clamped circular membrane of radius $a_M$ solves for the membrane displacement $u$ at
 a point $(r,\phi)$ with $r<a$ and $0<\phi<2\pi$. It is given by,
 \begin{equation}\label{membraneequation1}
@@ -301,7 +318,7 @@ The complete solution is given by $u=u_t+u_{ss}$ and the coefficients $M_{mn}$ a
 \textbf{Steady State Approximation}: The damping coefficient $\alpha$ is usually given in terms of the membrane fundamental frequency and a quality factor $Q$ as $\alpha=\omega_{01}/2Q$. For the tympani
 we will be concerned with, $\alpha\sim 4000s^{-1} $ for the larger lizards and $\alpha\sim 8000s^{-1}$ for the smaller ones. Therefore, the transient response can be 
 safely neglected for their hearing ranges.
-\subsection{Sectoral Membrane}
+\subsubsection{Sectoral Membrane}
 The eigenmodes of the sectoral membrane proceeds from \eqref{membraneeigen} onwards. We now have a new set of boundary conditions in $\phi$.
 The extracolumella is modelled as a triangular plate of infinite mass which constrains the membrane displacement to go to zero at $phi=\beta$
 and $\phi=2\pi-\beta$. This results in the following set of eigenmodes,

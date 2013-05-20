@@ -26,6 +26,15 @@
 }
 
 @Article{vossenjasa,
+  author    = { Hansjochem Autrum  },
+  title     = {  \"{U}ber Laut\"{a}u\ss{}erungen und Schallwahrnehmung bei Anthropoden II. },
+  journal   = { Journal of Comparative Physiology},
+  year      = { 1940               },
+  volume    = { 28                 },
+  pages     = { 909--918  }
+}
+
+@Article{autrumjcomphys,
   author    = { Christine Vo\ss{}en and Jakob Christensen-Dalsgaard and J. Leo van Hemmen   },
   title     = { Analytical Model of Internally Coupled Ears. },
   journal   = { Journal of the Acoustical Society of America },

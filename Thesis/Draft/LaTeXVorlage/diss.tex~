@@ -15,10 +15,10 @@
 %%   Zusaetzliche Pakete  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{a4wide}
+\usepackage{a4wide}	 
 \usepackage{fancyhdr}
 \usepackage{graphicx}
-\usepackage{caption}
+\usepackage[font={small}]{caption}
 \usepackage{subcaption}
 %\usepackage{german}
 \usepackage[bookmarks]{hyperref}
