@@ -5,7 +5,7 @@ on those of the other. This is illustrated in \ref{geckohead}. The typically sma
 small phase differences (ITDs) and negligible amplitude difference (ILDs) between the ears. The coupling serves to enhance the ITDs and create ILDs
 between the tympanal vibrations. These differences show directionality and serve as hearing cues for localization.
 
-\begin{figure}[ht]
+\begin{figure}[ht!]
  \centering
  \includegraphics[width=.85\linewidth]{Diagrams/geckohead1.png}
  \caption[Illustration of a gecko's head]{Left: Picture of a Tokay gecko's head with the snout pointing to the left. The tympanic membrane is illuminated from behind by
@@ -49,7 +49,7 @@ and can therefore calculate the radius of the cylinder as,
 \begin{align}
  a_{cyl}=\sqrt{\frac{V_{cav}}{\pi L}}
 \end{align}
-\begin{figure}[ht]
+\begin{figure}[ht!]
 \begin{center}
 \begin{subfigure}{1.0\textwidth}
  \centering
@@ -94,6 +94,7 @@ that is connected to both eardrums by means of a cartileginous element, the \tex
 As a result of this, the tympanum cannot vibrate freely. For most frequencies, the extracolumella vibrates as a completely stiff
 bar. Flection occurs at 
 \subsection{Sound Input}
+In measuring the sound input, both the head size and shape play an important role.
 
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main quantities of interest in the ICE model. We first find an expression
@@ -330,3 +331,12 @@ order-$\kappa$ Bessel function of the first kind; $\mu_{mn}$ being its $n^{th}$ 
 membrane follows in an identical way.
 It is apparent from the form of the above modes that, unlike in the case of the circular membrane eigenmodes, these modes
 are no longer circularly symmetric. We plot the first few of these modes in increasing order of frequency.
+
+\subsection{Vibration of Coupled Membranes}
+With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes.
+It is convenient to first write down the main equations of the system based on our previously derived expressions.
+The vibrations of the membranes is given by,
+\begin{equation}
+ u_{0/L}(r,\phi;t)=\displaystyle\sum^{\infty}_{m=0}\sum^{\infty}_{n=1}\Omega_{mn}C^{0/L}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{0/L}e^{j\omega t}-p(0/L,r,\phi;t)
+\end{equation}
+where $0$ and $L$ denote the ipsi- and contra-lateral membranes respectively and the cavity pressure distribution, $p(x,r,\phi;t)$,  is given by \eqref{pressuregeneral1}.

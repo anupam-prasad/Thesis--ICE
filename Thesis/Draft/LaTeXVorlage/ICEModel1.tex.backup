@@ -1,9 +1,19 @@
 \chapter{The ICE Model}
 Several vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
 that of mammals: their tympanic membranes are coupled through large eustachian tubes and a large mouth cavity resulting in the influence of the vibrations of one tympanic membrane
-on those of the other. The typically small head sizes (compared to sound wavelength) of these animals result in
+on those of the other. This is illustrated in \ref{geckohead}. The typically small head sizes (compared to sound wavelength) of these animals result in
 small phase differences (ITDs) and negligible amplitude difference (ILDs) between the ears. The coupling serves to enhance the ITDs and create ILDs
 between the tympanal vibrations. These differences show directionality and serve as hearing cues for localization.
+
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=.85\linewidth]{Diagrams/geckohead1.png}
+ \caption[Illustration of a gecko's head]{Left: Picture of a Tokay gecko's head with the snout pointing to the left. The tympanic membrane is illuminated from behind by
+ a light source on the other side of the head. The cartileginous extracolumella can be seen attached to the upper part of the membrane.
+ Right: Cast imprint of the mouth cavity of the gecko with the snout pointing to the top. The figures illustrate the coupling of the tympani through the mouth cavity.
+ Photographs courtesy of Jakob Christensen-Dalsgaard.}
+  \label{geckohead}
+\end{figure}
 
 In this chapter we present a model for the
 middle-ear of lizards - specifically the Tokay Gecko and the Common House Gecko. Our goal is to do this in the simplest possible way while ensuring an accurate reproduction of its main properties. 
@@ -54,7 +64,7 @@ and can therefore calculate the radius of the cylinder as,
   \caption[New ICE Model Cylinder]{The representation of the new model.}
   \label{newICE}
   \end{subfigure}
-  \caption[Previous and Current ICE Model Representations]{The bold arrows represent the direction conventions
+  \caption[Previous and current ICE model representations]{The bold arrows represent the direction conventions
   along the cylinder's axis. The new model is represented by a cylinder of radius $a_{cyl}$ and length $L$ closed
   at both ends by sectoral membrane of radius $a_{tymp}$.
   The darkly shaded region corresponds to the extracolumella (described in \ref{middleear}).}
@@ -64,14 +74,6 @@ where $a_{cyl}$ is the cylinder radius and $L$ is the interaural distance. Simpl
 of radius $a_{cyl}$ and length $L$ with circular holes on either side with the radius of the tympanic membrane, $a_{tymp}$. These
 holes are in turn closed by rigidly clamped membranes which will be described in the next section. The previous and current geometric representations
 of our model are shown in figures \ref{oldICE} and \ref{newICE}.
-\begin{figure}[ht]
- \centering
- \includegraphics[width=.3\linewidth]{Diagrams/geckohead1.png}
- \caption[Illustration of a Gecko Head]{Model of the loaded tympanice membrane. The lightly shaded region is mod-
-elled as a linear elastic membrane whereas the darkly shaded region ($\beta < \phi < 2\beta − \beta$)
-represents the contact surface of the extracolumella and the membrane. $\beta$ is estimated
-from the anatomical data.}
-\end{figure}
 
 \vspace{\baselineskip}
 \noindent\textbf{Direction Conventions}: We will be working with the cylindrical polar coordinates, $(r,\phi,x)$. The direction
@@ -86,12 +88,13 @@ that is connected to both eardrums by means of a cartileginous element, the \tex
 \begin{figure}[ht]
  \centering
  \includegraphics[width=.3\linewidth]{Diagrams/extracolumella2.png}
- \caption[Tympanic Membrane Model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
+ \caption[Tympanic membrane model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
  ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ is estimated from the anatomical data.}
 \end{figure}
 As a result of this, the tympanum cannot vibrate freely. For most frequencies, the extracolumella vibrates as a completely stiff
 bar. Flection occurs at 
 \subsection{Sound Input}
+In measuring the sound input, both the head size and shape play an important role.
 
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main quantities of interest in the ICE model. We first find an expression
