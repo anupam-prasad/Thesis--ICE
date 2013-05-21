@@ -1,22 +1,27 @@
 \begin{thebibliography}{1}
 
+\bibitem{vossenthesis}
+C.~Vo\ss{}en, {\em Auditory Information Processing in Systems with Internally
+  Coupled Ears}.
+\newblock PhD thesis, Technische Universit\"{a}t M\"{u}nchen, 2010.
+
+\bibitem{vossenjasa}
+C.~Vo\ss{}en, J.~Christensen-Dalsgaard, and J.~L. van Hemmen, ``Analytical
+  model of internally coupled ears.,'' {\em Journal of the Acoustical Society
+  of America}, vol.~128, pp.~909--918, 2010.
+
 \bibitem{copsonbessel}
-E.T{.~}Copson: \emph{Introduction to the Theory of Functions of a Complex
+E.~T. Copson, {\em Introduction to the Theory of Functions of a Complex
   Variable}.
-\newblock Clarendon Press, Oxford, 1973.
+\newblock Oxford: Clarendon Press, 1973.
 
 \bibitem{pozrikidisFluid}
-C{.~}Pozrikidis: \emph{Fluid Dynamics: Theory, Computation, and Numerical
+C.~Pozrikidis, {\em Fluid Dynamics: Theory, Computation, and Numerical
   Simulation}.
 \newblock Springer, 2009.
 
-\bibitem{vossenthesis}
-C{.~}Vo\ss{}en: \emph{Auditory Information Processing in Systems with
-  Internally Coupled Ears}.
-\newblock Technische Universit\"{a}t M\"{u}nchen, Dissertation, 2010.
-
-\bibitem{vossenjasa}
-C{.~}Vo\ss{}en, J{.~}Christensen-Dalsgaard und J.L{.~}van Hemmen, \emph{Journal
-  of the Acoustical Society of America} \textbf{128}  (2010), 909.
+\bibitem{manleygecko1}
+G.~A. Manley, ``The middle ear of the tokay gecko,'' {\em Journal of
+  Comparative Physiology}, vol.~81, no.~3, pp.~239--250, 1972.
 
 \end{thebibliography}

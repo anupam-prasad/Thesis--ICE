@@ -8,48 +8,47 @@ A level-1 auxiliary file: ModelAnalysis.aux
 A level-1 auxiliary file: Conclusion.aux
 A level-1 auxiliary file: anhang.aux
 A level-1 auxiliary file: bibliographie.aux
-The style file: jkthesis.bst
+The style file: ieeetr.bst
 A level-1 auxiliary file: danksagung.aux
 Database file #1: literatur.bib
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 4 entries,
-            3023 wiz_defined-function locations,
-            919 strings with 8082 characters,
-and the built_in function-call counts, 963 in all, are:
-= -- 75
-> -- 38
+You've used 5 entries,
+            1876 wiz_defined-function locations,
+            516 strings with 4281 characters,
+and the built_in function-call counts, 1083 in all, are:
+= -- 114
+> -- 27
 < -- 0
-+ -- 16
-- -- 12
-* -- 61
-:= -- 177
-add.period$ -- 7
-call.type$ -- 4
-change.case$ -- 14
++ -- 12
+- -- 7
+* -- 62
+:= -- 160
+add.period$ -- 8
+call.type$ -- 5
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 45
-empty$ -- 92
-format.name$ -- 13
-if$ -- 194
+cite$ -- 5
+duplicate$ -- 59
+empty$ -- 112
+format.name$ -- 7
+if$ -- 268
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 5
-newline$ -- 18
-num.names$ -- 8
-pop$ -- 21
+int.to.str$ -- 5
+missing$ -- 6
+newline$ -- 21
+num.names$ -- 5
+pop$ -- 17
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 0
 quote$ -- 0
-skip$ -- 30
+skip$ -- 32
 stack$ -- 0
-substring$ -- 30
-swap$ -- 10
+substring$ -- 60
+swap$ -- 21
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 0
 warning$ -- 0
-while$ -- 9
-width$ -- 5
-write$ -- 44
+while$ -- 10
+width$ -- 6
+write$ -- 51
