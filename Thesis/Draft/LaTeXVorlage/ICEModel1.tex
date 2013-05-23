@@ -145,7 +145,7 @@ The coefficients $A^\pm$, $B^\pm$, $q$, $\zeta$ and $\nu$ will be subsequently d
 
 In general, the time component of the pressure also has a \textit{backward-moving} component, i.e. $e^{-j\omega t}$. By making the ansatz in \eqref{pseparationansatz}, 
 we have implicitly made use of the fact that the form of the input constrains the pressure to only have a \textit{forward-moving} component, i.e. $e^{j\omega t}$.  
-\subsubsection{Pressure Boundary Conditions}
+\subsubsection{Pressure Boundary Conditions}\label{pressureboundaryconditions}
 There are three sets of boundary conditions - 
 \begin{itemize}
  \item Continuity and smoothness in $\phi$ which is equivalent to $h(0)=h(2\pi)$ and $h^\prime(0)=h^\prime(2\pi)$ where, $h^\prime=dh/d\phi$.
@@ -317,8 +317,9 @@ The complete solution is given by $u=u_t+u_{ss}$ and the coefficients $M_{mn}$ a
 
 \vspace{\baselineskip}
 \textbf{Steady State Approximation}: The damping coefficient $\alpha$ is usually given in terms of the membrane fundamental frequency and a quality factor $Q$ as $\alpha=\omega_{01}/2Q$. For the tympani
-we will be concerned with, $\alpha\sim 4000s^{-1} $ for the larger lizards and $\alpha\sim 8000s^{-1}$ for the smaller ones. Therefore, the transient response can be 
-safely neglected for their hearing ranges.
+we will be concerned with we have $Q\sim 1.2$ which results in damping coefficients that are around $4000s^{-1} $ for the larger lizards and around $8000s^{-1}$ for the smaller ones. 
+Due to this and the exponential decay of the transient vibration amplitude, we can safely assume that within a few time-periods the steady-state vibrations dominate the solution of the
+forced membrane. For this reason, we will subsequently confine our discussion to only the steady state vibrations of the membrane.
 \subsubsection{Sectoral Membrane}
 The eigenmodes of the sectoral membrane proceeds from \eqref{membraneeigen} onwards. We now have a new set of boundary conditions in $\phi$.
 The extracolumella is modelled as a triangular plate of infinite mass which constrains the membrane displacement to go to zero at $phi=\beta$
@@ -330,15 +331,15 @@ where $\kappa[m]=\frac{m\pi}{2(\pi-\beta)}$, $m=1,2,3,\ldots$. We see that the $
 order-$\kappa$ Bessel function of the first kind; $\mu_{mn}$ being its $n^{th}$ zero, as before. The solution for the damped
 membrane follows in an identical way.
 It is apparent from the form of the above modes that, unlike in the case of the circular membrane eigenmodes, these modes
-are no longer circularly symmetric. We plot the first few of these modes in \ref{sectoralmembraneeigenmodes}.
+are no longer circularly symmetric. We plot the first few of these modes in \ref{sectoralmembraneeigenmodes}. 
 
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.6\linewidth]{Diagrams/SectorMembraneModes/membrane_modes_all.png}
- \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane with $\beta=\pi/25$}
+ \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane with $\beta=\pi/25$. The eigenfrequency increases from left to right.}
   \label{sectoralmembraneeigenmodes}
 \end{figure}
-
+The solution for forced membrane vibrations follows in the same way as in the circular membrane case.
 \subsection{Vibration of Coupled Membranes}
 With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes.
 It is convenient to first write down the main equations of the system based on our previously derived expressions.
@@ -347,3 +348,14 @@ The vibrations of the membranes is given by,
  u_{0/L}(r,\phi;t)=\displaystyle\sum^{\infty}_{m=0}\sum^{\infty}_{n=1}\Omega_{mn}C^{0/L}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{0/L}e^{j\omega t}-p(0/L,r,\phi;t)
 \end{equation}
 where $0$ and $L$ denote the ipsi- and contra-lateral membranes respectively and the cavity pressure distribution, $p(x,r,\phi;t)$,  is given by \eqref{pressuregeneral1}.
+
+As discussed in \ref{pressureboundaryconditions}, the internal cavity pressure satisfies the no-penetration condition at solid boundaries.
+This means that at both ends of the cylinder, we equate the fluid particle velocity of air to the velocity of the membrane. We also note that
+ since the membrane diameter is smaller than the cylinder diameter, we have to set the air-particle velocity to zero for $r>a_{tymp}$. Since the membrane displacement is
+only in the $x$-direction, we only need to calculate the same component of the velocity. Using the relation \eqref{pressurevelocityrelation} we get,
+\begin{equation}\label{airvelocity}
+v_x=-\begin{cases}
+	      \frac{1}{\rho\omega}\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}x}-B_{qs}e^{-j\zeta_{qs}x}\right)f_{qs}(r,\phi)e^{j\omega t} &\mbox{, } r<a_{tymp}\\
+	      0 &\mbox{, } a_{tymp}\leq r\leq a_{cyl}
+           \end{cases}
+\end{equation}
