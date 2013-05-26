@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  23 MAY 2013 18:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  26 MAY 2013 22:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,14 +475,14 @@ File: Diagrams/SectorMembraneModes/membrane_modes_all.png Graphic file (type pn
 g)
  <use Diagrams/SectorMembraneModes/membrane_modes_all.png>
 Package pdftex.def Info: Diagrams/SectorMembraneModes/membrane_modes_all.png us
-ed on input line 338.
+ed on input line 337.
 (pdftex.def)             Requested size: 276.43555pt x 413.87495pt.
  [12] [13 <./Diagrams/SectorMembraneModes/membrane_modes_all.png>]) [14]
 \openout2 = `ModelAnalysis.aux'.
 
  (./ModelAnalysis.tex
 Chapter 3.
-<Diagrams/manleygeckoear2.png, id=309, 587.94656pt x 897.3525pt>
+<Diagrams/manleygeckoear2.png, id=317, 587.94656pt x 897.3525pt>
 File: Diagrams/manleygeckoear2.png Graphic file (type png)
 
 <use Diagrams/manleygeckoear2.png>
@@ -541,15 +541,15 @@ ModelAnalysis.aux) (./Conclusion.aux) (./anhang.aux) (./bibliographie.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: 17E989109D0BDD2C82B71A95BB911B02;899.
+(rerunfilecheck)             Checksum: 47483D0DA1000A6433BFB24F02B3E486;899.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
  ) 
 Here is how much of TeX's memory you used:
- 7319 strings out of 493485
- 108542 string characters out of 3143526
- 203687 words of memory out of 3000000
- 10366 multiletter control sequences out of 15000+200000
- 14728 words of font info for 54 fonts, out of 3000000 for 9000
+ 7341 strings out of 493485
+ 108804 string characters out of 3143526
+ 203784 words of memory out of 3000000
+ 10379 multiletter control sequences out of 15000+200000
+ 17354 words of font info for 65 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,17n,43p,309b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
@@ -562,17 +562,18 @@ fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (37 pages, 2200703 bytes).
+cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on diss.pdf (37 pages, 2209431 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 371 compressed objects within 4 object streams
- 109 named destinations out of 1000 (max. 500000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 114 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

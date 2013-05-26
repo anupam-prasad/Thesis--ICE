@@ -30,7 +30,7 @@ extracolumella, we will also explain the complex vibration patterns of the membr
 have the main objects - the internal time differences (iTDs) and internal level differences (iLDs) - which 
 quantify the response of the system as a function direction and frequency.
 
-\section{Description}
+\section{Description}\label{description}
 In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
 both ends by rigidly clamped (baffled) circular membranes; these model the tympanic membranes. As shown 
 in \cite{vossenthesis} and \cite{vossenjasa}, the length of the cylinder was chosen to be equal to the interaural distance and the radius of the model tympanum is
@@ -332,7 +332,6 @@ order-$\kappa$ Bessel function of the first kind; $\mu_{mn}$ being its $n^{th}$ 
 membrane follows in an identical way.
 It is apparent from the form of the above modes that, unlike in the case of the circular membrane eigenmodes, these modes
 are no longer circularly symmetric. We plot the first few of these modes in \ref{sectoralmembraneeigenmodes}. 
-
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.6\linewidth]{Diagrams/SectorMembraneModes/membrane_modes_all.png}
@@ -354,8 +353,24 @@ This means that at both ends of the cylinder, we equate the fluid particle veloc
  since the membrane diameter is smaller than the cylinder diameter, we have to set the air-particle velocity to zero for $r>a_{tymp}$. Since the membrane displacement is
 only in the $x$-direction, we only need to calculate the same component of the velocity. Using the relation \eqref{pressurevelocityrelation} we get,
 \begin{equation}\label{airvelocity}
-v_x=-\begin{cases}
-	      \frac{1}{\rho\omega}\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}x}-B_{qs}e^{-j\zeta_{qs}x}\right)f_{qs}(r,\phi)e^{j\omega t} &\mbox{, } r<a_{tymp}\\
-	      0 &\mbox{, } a_{tymp}\leq r\leq a_{cyl}
-           \end{cases}
+v_x(x,r,\phi;t)=-\frac{1}{\rho\omega}\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}x}-B_{qs}e^{-j\zeta_{qs}x}\right)f_{qs}(r,\phi)e^{j\omega t}
 \end{equation}
+and the exact boundary conditions are given by,
+
+\begin{align}
+ \dot{u}_{0}&=j\omega u_{0}=v_x(0,r,\phi;t)\\
+ \dot{u}_{L}&=j\omega u_{L}=-v_x(L,r,\phi;t)
+\end{align}
+where we've used the direction conventions described in \ref{description}.
+\subsubsection{Plane Wave Approximation}
+As previously stated, the exact boundary condition would entail setting the air velocity to be exactly equal to the membrane displacement velocity. At this point, it is important to
+note that the internal cavity eigenmodes are not orthogonal to the membrane eigenmodes in general\footnote{This would also be true if we had full circular membranes on either end of the
+cylinder. Although, in this case we would have the added simplification that only the circularly symmetric cavity eigenmodes will be activated.}. This means that every membrane eigenmode
+couples with every cavity eigenmode and that each of the coefficients $A_{qs}$ and $B_{qs}$ will be given by an infinite linear combination of the coefficients $C^{0/L}_{mn}$.
+
+\noindent\textbf{Volume Displacement}: For later convenience, we also make the following definition for the volume displacement of the membrane
+\begin{equation}\label{volumedisplacementdef}
+ S_{0/L}(t)=\int dS u_{0/L}(r,\phi;t)
+\end{equation}
+This is the integral over the membrane surface of the local displacement. Given the external parameters and boundary conditions, it only depends on time
+

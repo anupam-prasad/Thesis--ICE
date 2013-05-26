@@ -11,8 +11,9 @@
 \contentsline {subsubsection}{Circular Membrane}{9}{section*.9}
 \contentsline {subsubsection}{Sectoral Membrane}{12}{section*.12}
 \contentsline {subsection}{\numberline {2.2.3}Vibration of Coupled Membranes}{13}{subsection.2.2.3}
+\contentsline {subsubsection}{Plane Wave Approximation}{14}{section*.14}
 \contentsline {chapter}{\numberline {3}Analysis of the ICE--Model}{15}{chapter.3}
 \contentsline {chapter}{\numberline {4}Conclusion}{17}{chapter.4}
 \contentsline {chapter}{\numberline {A}Acoustic Theory}{19}{appendix.A}
 \contentsline {chapter}{\numberline {B}Second Appendix Chapter}{21}{appendix.B}
-\contentsline {chapter}{Acknowledgements}{24}{appendix*.15}
+\contentsline {chapter}{Acknowledgements}{24}{appendix*.16}
