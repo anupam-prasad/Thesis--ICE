@@ -47,7 +47,7 @@
 @article{manleygecko1,
 year={1972},
 issue={0340-7594},
-title={The middle ear of the Tokay Gecko},
+title={The middle ear of the Tokay gecko},
 journal={Journal of Comparative Physiology},
 volume={81},
 number={3},
@@ -58,6 +58,18 @@ author={Manley, Geoffrey A.},
 pages={239-250},
 language={English}
 }
+
+@article{manleygecko2,
+year={1972},
+issue={0340-7594},
+title={Frequency response of the  middle ear geckos},
+journal={Journal of Comparative Physiology},
+volume={81},
+number={3},
+publisher={Springer-Verlag},
+author={Manley, Geoffrey A.},
+pages={251-258},
+language={English}
 
 @ARTICLE{fletcheradiabaticassumption,
    author = {Fletcher, Neville H.},

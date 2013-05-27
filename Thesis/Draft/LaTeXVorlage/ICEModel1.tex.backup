@@ -30,7 +30,7 @@ extracolumella, we will also explain the complex vibration patterns of the membr
 have the main objects - the internal time differences (iTDs) and internal level differences (iLDs) - which 
 quantify the response of the system as a function direction and frequency.
 
-\section{Description}
+\section{Description}\label{description}
 In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
 both ends by rigidly clamped (baffled) circular membranes; these model the tympanic membranes. As shown 
 in \cite{vossenthesis} and \cite{vossenjasa}, the length of the cylinder was chosen to be equal to the interaural distance and the radius of the model tympanum is
@@ -265,8 +265,18 @@ to,
  u_{mn}(r,\phi;t)=\cos m\phi J_m(\mu_{mn} r)\left[M_{mn}e^{j\omega_{mn} t}+N_{mn}e^{-j\omega_{mn} t}\right]
 \end{equation}
 with $m=0,1,2,\ldots$ with the $(m,n)$ eigenmodes forming an orthogonal set. For later convenience we denote the spatial
-part of the above mode by $u_{mn}(r,\phi)$. We note that unlike in the case of the internal cavity, the free membrane has components
-that are both forward- and backward-moving in time. The presence of a driving force, however, will simplify the expressions.
+part of the above mode by $u_{mn}(r,\phi)$. The first few of these modes are plotted in \ref{circularmembraneeigenmodes}.
+
+\begin{figure}[ht!]
+ \centering
+ \includegraphics[width=.6\linewidth]{Diagrams/CircularMembraneModes/circular_modes_all.png}
+ \caption[Sectoral membrane eigenmodes]{Eigenmodes of a full circular membrane. The eigenfrequency increases from left to right.}
+  \label{circularmembraneeigenmodes}
+\end{figure}
+
+We note that unlike in the case of the internal cavity, the free membrane has components
+that are both forward- and backward-moving in time. The presence of a driving force, however, will result in simpler expressions. This
+will be discussed in more detail in the next chapter where we compare our model with experimental data.
 
 \vspace{\baselineskip}
 \noindent\textbf{Damped Membrane}: For a damped membrane, i.e. $\alpha\neq 0$, the spatial part of the above eigenmodes remains the same. The form of the
@@ -338,14 +348,8 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
  \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane with $\beta=\pi/25$. The eigenfrequency increases from left to right.}
   \label{sectoralmembraneeigenmodes}
 \end{figure}
-The solution for forced membrane vibrations follows in the same way as in the circular membrane case.
-
-\noindent\textbf{Volume Displacement}: For later convenience, we define the volume displacement of the membrane as the integral over the membrane
-surface of the local displacement,
-\begin{equation}\label{volumedisplacementdef}
- S(t)=\int dS u(r,\phi;t)
-\end{equation}
-
+The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The sectoral shape of the membrane has important
+physical consequences and captures the complex vibration patterns of a realistic membrane. This will be discussed in the nex chapter.
 \subsection{Vibration of Coupled Membranes}
 With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes.
 It is convenient to first write down the main equations of the system based on our previously derived expressions.
@@ -354,14 +358,37 @@ The vibrations of the membranes is given by,
  u_{0/L}(r,\phi;t)=\displaystyle\sum^{\infty}_{m=0}\sum^{\infty}_{n=1}\Omega_{mn}C^{0/L}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{0/L}e^{j\omega t}-p(0/L,r,\phi;t)
 \end{equation}
 where $0$ and $L$ denote the ipsi- and contra-lateral membranes respectively and the cavity pressure distribution, $p(x,r,\phi;t)$,  is given by \eqref{pressuregeneral1}.
+The above equation is only valid on the membrane surface i.e., for $r<a_{tymp}$ and $\beta<\phi<2\pi-\beta$.
 
 As discussed in \ref{pressureboundaryconditions}, the internal cavity pressure satisfies the no-penetration condition at solid boundaries.
 This means that at both ends of the cylinder, we equate the fluid particle velocity of air to the velocity of the membrane. We also note that
  since the membrane diameter is smaller than the cylinder diameter, we have to set the air-particle velocity to zero for $r>a_{tymp}$. Since the membrane displacement is
 only in the $x$-direction, we only need to calculate the same component of the velocity. Using the relation \eqref{pressurevelocityrelation} we get,
 \begin{equation}\label{airvelocity}
-v_x=-\begin{cases}
-	      \frac{1}{\rho\omega}\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}x}-B_{qs}e^{-j\zeta_{qs}x}\right)f_{qs}(r,\phi)e^{j\omega t} &\mbox{, } r<a_{tymp}\\
-	      0 &\mbox{, } a_{tymp}\leq r\leq a_{cyl}
-           \end{cases}
+v_x(x,r,\phi;t)=-\frac{1}{\rho\omega}\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}x}-B_{qs}e^{-j\zeta_{qs}x}\right)f_{qs}(r,\phi)e^{j\omega t}
 \end{equation}
+and the exact boundary conditions are given by,
+\begin{align}
+ j\omega U_{0}&=v_x(0,r,\phi;t)\\
+ j\omega U_{L}&=-v_x(L,r,\phi;t)
+\end{align}
+where we've used the direction conventions described in \ref{description} and made the following definitions,
+\begin{equation}
+ U_{0/L}=\begin{cases}
+          u_{0/L}\mbox{, } 0<r<a_{tymp}\mbox{ and } \beta<\phi<2\pi-\beta\\
+          0\mbox{, otherwise}
+         \end{cases}
+\end{equation}
+
+\subsubsection{Plane Wave Approximation}
+As previously stated, the exact boundary condition would entail setting the air velocity to be exactly equal to the membrane displacement velocity. At this point, it is important to
+note that the internal cavity eigenmodes are not orthogonal to the membrane eigenmodes in general\footnote{This would also be true if we had full circular membranes on either end of the
+cylinder. Although, in this case we would have the added simplification that only the circularly symmetric cavity eigenmodes will be activated.}. This means that every membrane eigenmode
+couples with every cavity eigenmode and that each of the coefficients $A_{qs}$ and $B_{qs}$ will be given by an infinite linear combination of the coefficients $C^{0/L}_{mn}$.
+
+\noindent\textbf{Volume Displacement}: For later convenience, we also make the following definition for the volume displacement of the membrane
+\begin{equation}\label{volumedisplacementdef}
+ S_{0/L}(t)=\int dS u_{0/L}(r,\phi;t)
+\end{equation}
+This is the integral over the membrane surface of the local displacement. Given the external parameters and boundary conditions, it only depends on time
+
