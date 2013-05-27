@@ -18,8 +18,7 @@ between the tympanal vibrations. These differences show directionality and serve
 In this chapter we present a model for the
 middle-ear of lizards - specifically the Tokay Gecko and the Common House Gecko. Our goal is to do this in the simplest possible way while ensuring an accurate reproduction of its main properties. 
 The main components of such a 
-system are the mouth-cavity, the two tympani and the two extracolumellar
-footplates (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
+system are the mouth-cavity, the two tympani and the two \textit{extracolumella} (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
 not conducive to an analytical treatment. Moreover, the system corresponds to a pair of coupled second-order PDE's with
 moving boundaries. For this reason we will need to make further approximations for the sake of expediency.
 
@@ -86,8 +85,16 @@ middle ear and vibrates in response to external sound waves.  Unlike humans, liz
 possess only a single middle ear bone, the \textit{columella},
 that is connected to both eardrums by means of a cartileginous element, the \textit{extracolumella}.
 
-As a result of this, the tympanum cannot vibrate freely. For most frequencies, the extracolumella vibrates as a completely stiff
-bar. It was shown in \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies. This is illustrated in \ref{extracolumellaflection}.
+The membrane-extracolumella-columella system functions
+as a second-order lever where the membrane - driven by the internal and external pressures - causes a displacement
+of the extension of the extracolumella (known as the inferior process). This motion is in turn transmitted 
+via the columella and columellar footplate to the inner ear. The inner-ear translates this motion into
+electrochemical impulses which will be passed on to the brain via the auditory nerve. The columella-extracolumella system effectively
+transmits the mechanical vibrations from the eardrums to the inner ear.
+
+As a result of this, the tympanum cannot be treated as a freely vibrating membrane. For low frequencies, the extracolumella 
+vibrates as a completely stiff bar. It was shown in \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies. 
+This is illustrated in \ref{extracolumellaflection}.
 
 \begin{figure}[ht]
  \centering

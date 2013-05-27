@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {2.1}Description}{4}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Middle Ear}{6}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Sound Input}{6}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Derivation of the Model}{6}{section.2.2}
+\contentsline {section}{\numberline {2.2}Derivation of the Model}{7}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Internal Cavity}{7}{subsection.2.2.1}
 \contentsline {subsubsection}{Pressure Boundary Conditions}{8}{section*.9}
 \contentsline {subsection}{\numberline {2.2.2}Vibration of the Membrane}{10}{subsection.2.2.2}
