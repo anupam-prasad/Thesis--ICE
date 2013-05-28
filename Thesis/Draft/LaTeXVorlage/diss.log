@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  28 MAY 2013 00:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  28 MAY 2013 19:13
 entering extended mode
  %&-line parsing enabled.
 **diss.tex
@@ -414,32 +414,28 @@ File: Diagrams/manleyextracolumellaflection.png Graphic file (type png)
 File: Diagrams/extracolumella2.png Graphic file (type png)
 
 <use Diagrams/extracolumella2.png> [6 <./Diagrams/manleyextracolumellaflection.
-png (PNG copy)>] [7 <./Diagrams/extracolumella2.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 170.
+png (PNG copy)>] [7 <./Diagrams/extracolumella2.png>] [8]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 179.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 170.
- [8] [9] [10]
-<Diagrams/CircularMembraneModes/circular_modes_all.png, id=270, 578.16pt x 905.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 179.
+ [9] [10] [11]
+<Diagrams/CircularMembraneModes/circular_modes_all.png, id=281, 578.16pt x 905.
 784pt>
 File: Diagrams/CircularMembraneModes/circular_modes_all.png Graphic file (type 
 png)
- <use Diagrams/CircularMembraneModes/circular_modes_all.png> [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12 <./Diagrams/CircularMembraneModes/circular_modes_all.png>] [13]
+ <use Diagrams/CircularMembraneModes/circular_modes_all.png> [12 <./Diagrams/Ci
+rcularMembraneModes/circular_modes_all.png>] [13]
 <Diagrams/SectorMembraneModes/membrane_modes_all.png, id=308, 578.16pt x 865.63
 4pt>
 File: Diagrams/SectorMembraneModes/membrane_modes_all.png Graphic file (type pn
 g)
- <use Diagrams/SectorMembraneModes/membrane_modes_all.png> [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <./Diagrams/SectorMembraneModes/membrane_modes_all.png>]) [16]
+ <use Diagrams/SectorMembraneModes/membrane_modes_all.png> [14] [15 <./Diagrams
+/SectorMembraneModes/membrane_modes_all.png>]) [16]
 \openout2 = `ModelAnalysis.aux'.
 
  (./ModelAnalysis.tex
@@ -496,7 +492,7 @@ Appendix B.
 Here is how much of TeX's memory you used:
  6476 strings out of 495061
  94629 string characters out of 1182622
- 175330 words of memory out of 3000000
+ 177331 words of memory out of 3000000
  9357 multiletter control sequences out of 15000+50000
  17354 words of font info for 65 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -518,7 +514,7 @@ bx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/te
 xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (39 pages, 3179726 bytes).
+Output written on diss.pdf (39 pages, 3180385 bytes).
 PDF statistics:
  479 PDF objects out of 1000 (max. 8388607)
  121 named destinations out of 1000 (max. 500000)

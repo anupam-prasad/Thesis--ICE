@@ -90,9 +90,9 @@ as a second-order lever where the membrane - driven by the internal and external
 of the extension of the extracolumella (known as the inferior process). This motion is in turn transmitted 
 via the columella and columellar footplate to the inner ear. The inner-ear translates this motion into
 electrochemical impulses which will be passed on to the brain via the auditory nerve. The columella-extracolumella system effectively
-transmits the mechanical vibrations from the eardrums to the inner ear.
+transmits the mechanical vibrations from the eardrums to the inner ear. As a result, the tympanum cannot be treated as a freely vibrating membrane. 
 
-As a result of this, the tympanum cannot be treated as a freely vibrating membrane. For low frequencies, the extracolumella 
+For low frequencies, the extracolumella 
 vibrates as a completely stiff bar. It was shown in \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies. 
 This is illustrated in \ref{extracolumellaflection}.
 
@@ -114,6 +114,15 @@ This is illustrated in \ref{extracolumellaflection}.
 
 \subsection{Sound Input}
 In measuring the sound input, both the head size and shape play an important role.
+
+The amplitude of the sound pressure incident on both ears can be taken as uniform in over 
+the surface of the membrane. The spatial variation can be safely neglected because the
+typical eardrum has a diameter which is less than $5$mm whereas the smallest sound wavelength
+in their hearing range is around $50$mm.
+
+The ear closer to the sound source is referred to as the \textit{ipsi-lateral} ear and
+will be denoted by a subscript $0$ on the appropriate variables. The ear further away from the source is referred to
+as the \textit{contra-lateral} ear and will be denoted by a subscript $L$.
 
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main quantities of interest in the ICE model. We first find an expression
