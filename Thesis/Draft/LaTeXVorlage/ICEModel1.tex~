@@ -88,9 +88,14 @@ that is connected to both eardrums by means of a cartileginous element, the \tex
 The membrane-extracolumella-columella system functions
 as a second-order lever where the membrane - driven by the internal and external pressures - causes a displacement
 of the extension of the extracolumella (known as the inferior process). This motion is in turn transmitted 
-via the columella and columellar footplate to the inner ear. The inner-ear translates this motion into
+via the columella and columellar footplate to the inner ear (cochlea). The inner-ear translates this motion into
 electrochemical impulses which will be passed on to the brain via the auditory nerve. The columella-extracolumella system effectively
-transmits the mechanical vibrations from the eardrums to the inner ear. As a result, the tympanum cannot be treated as a freely vibrating membrane. 
+transmits the mechanical vibrations from the eardrums to the inner ear. 
+
+The extracolumella applies a significant mechanical load on the tympanum and as a result, 
+it cannot be treated as a freely vibrating membrane. In the human middle-ear, the same function is
+performed by the ossicles:\textit{malleus, incus} and \textit{stapes}. The contact surface of the malleus
+on the eardrum is more or less symmetric whereas the extracolumella is 
 
 For low frequencies, the extracolumella 
 vibrates as a completely stiff bar. It was shown in \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies. 
@@ -99,7 +104,7 @@ This is illustrated in \ref{extracolumellaflection}.
 \begin{figure}[ht]
  \centering
  \includegraphics[width=.7\linewidth]{Diagrams/manleyextracolumellaflection.png}
- \caption[Extracolumella Flection]{Operation of the middle ear lever in geckos. The inferior process of the extracolumella (A-C) 
+ \caption[Extracolumella Flection]{Operation of the middle ear lever in geckos reproduced from \cite{manleygecko2}. The inferior process of the extracolumella (A-C) 
  hinges at point C at low frequencies. At high frequencies the inferior process flexes.}
  \label{extracolumellaflection}
 \end{figure}
@@ -113,7 +118,11 @@ This is illustrated in \ref{extracolumellaflection}.
 
 
 \subsection{Sound Input}
-In measuring the sound input, both the head size and shape play an important role.
+In measuring the sound input, the important factors to be taken into account are
+\begin{itemize}
+ \item The separation of the ears and,
+ \item The overall head size
+\end{itemize}
 
 The amplitude of the sound pressure incident on both ears can be taken as uniform in over 
 the surface of the membrane. The spatial variation can be safely neglected because the
