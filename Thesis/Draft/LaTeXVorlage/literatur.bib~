@@ -61,15 +61,46 @@ language={English}
 
 @article{manleygecko2,
 year={1972},
-issue={0340-7594},
-title={Frequency response of the  middle ear geckos},
-journal={Journal of Comparative Physiology},
+issn={0340-7594},
+journal={Journal of comparative physiology},
 volume={81},
 number={3},
+doi={10.1007/BF00693630},
+title={Frequency response of the middle ear of geckos},
+url={http://dx.doi.org/10.1007/BF00693630},
 publisher={Springer-Verlag},
-author={Manley, Geoffrey A.},
+author={Manley, GeoffreyA.},
 pages={251-258},
 language={English}
+}
+
+% 15767319 
+@Article{dalsgaardmanley1,
+   Author={Christensen-Dalsgaard, J.  and Manley, G. A.},
+   Title={{D}irectionality of the lizard ear},
+   Journal={J. Exp. Biol.},
+   Year={2005},
+   Volume={208},
+   Number={Pt 6},
+   Pages={1209--1217},
+   Month={Mar}
+}
+
+@article{dalsgaardmanley2,
+year={2008},
+issn={1525-3961},
+journal={Journal of the Association for Research in Otolaryngology},
+volume={9},
+number={4},
+doi={10.1007/s10162-008-0130-2},
+title={Acoustical Coupling of Lizard Eardrums},
+url={http://dx.doi.org/10.1007/s10162-008-0130-2},
+publisher={Springer-Verlag},
+keywords={lizard; tympanum; vibrometry; directional; hearing; reptile},
+author={Christensen-Dalsgaard, Jakob and Manley, GeoffreyA.},
+pages={407-416},
+language={English}
+}
 
 @ARTICLE{fletcheradiabaticassumption,
    author = {Fletcher, Neville H.},

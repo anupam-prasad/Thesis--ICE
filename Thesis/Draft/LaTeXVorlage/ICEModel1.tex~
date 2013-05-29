@@ -1,5 +1,5 @@
 \chapter{The ICE Model}
-Several vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
+Several terrestrial vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
 that of mammals: their tympanic membranes are coupled through large eustachian tubes and a large mouth cavity resulting in the influence of the vibrations of one tympanic membrane
 on those of the other. This is illustrated in \ref{geckohead}. The typically small head sizes (compared to sound wavelength) of these animals result in
 small phase differences (ITDs) and negligible amplitude difference (ILDs) between the ears. The coupling serves to enhance the ITDs and create ILDs
@@ -117,7 +117,7 @@ This is illustrated in \ref{extracolumellaflection}.
 \end{figure}
 
 
-\subsection{Sound Input}
+\subsection{External Sound Input}
 In measuring the sound input, the important factors to be taken into account are
 \begin{itemize}
  \item The separation of the ears and,
@@ -126,8 +126,9 @@ In measuring the sound input, the important factors to be taken into account are
 
 The amplitude of the sound pressure incident on both ears can be taken as uniform in over 
 the surface of the membrane. The spatial variation can be safely neglected because the
-typical eardrum has a diameter which is less than $5$mm whereas the smallest sound wavelength
-in their hearing range is around $50$mm.
+typical eardrum is less than $5$mm in diameter whereas the smallest sound wavelengths
+in the hearing range of the larger lizards (eg. Tokay gecko) is around $70$mm ($4000$ Hz) and is around $50$mm ($7000$ Hz) for
+the smaller lizards (eg. Hemidactylus).
 
 The ear closer to the sound source is referred to as the \textit{ipsi-lateral} ear and
 will be denoted by a subscript $0$ on the appropriate variables. The ear further away from the source is referred to
