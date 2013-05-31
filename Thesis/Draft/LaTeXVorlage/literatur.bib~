@@ -102,6 +102,36 @@ pages={407-416},
 language={English}
 }
 
+% 21325679 
+@Article{dalsgaardtangcarr,
+   Author={Christensen-Dalsgaard, J.  and Tang, Y.  and Carr, C. E. },
+   Title={Binaural processing by the gecko auditory periphery},
+   Journal={J. Neurophysiol.},
+   Year={2011},
+   Volume={105},
+   Number={5},
+   Pages={1992--2004},
+   Month={May}
+}
+
+@article{koepplcarr1,
+year={2008},
+issn={0340-1200},
+journal={Biological Cybernetics},
+volume={98},
+number={6},
+doi={10.1007/s00422-008-0220-6},
+title={Maps of interaural time difference in the chicken’s brainstem nucleus laminaris},
+url={http://dx.doi.org/10.1007/s00422-008-0220-6},
+publisher={Springer-Verlag},
+keywords={Auditory; Hearing; Sound localization; Sensory},
+author={Köppl, Christine and Carr, CatherineE.},
+pages={541-559},
+language={English}
+}
+
+
+
 @ARTICLE{fletcheradiabaticassumption,
    author = {Fletcher, Neville H.},
     title = {Adiabatic Assumption for Wave Propagation},

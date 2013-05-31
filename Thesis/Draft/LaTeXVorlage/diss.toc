@@ -4,17 +4,17 @@
 \contentsline {section}{\numberline {2.1}Description}{4}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Middle Ear}{6}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Head Model and External Sound Input}{7}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Derivation of the Model}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Internal Cavity}{8}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.2}Derivation of the Model}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Internal Cavity}{9}{subsection.2.2.1}
 \contentsline {subsubsection}{Pressure Boundary Conditions}{10}{section*.10}
-\contentsline {subsection}{\numberline {2.2.2}Vibration of the Membrane}{11}{subsection.2.2.2}
-\contentsline {subsubsection}{Circular Membrane}{11}{section*.11}
+\contentsline {subsection}{\numberline {2.2.2}Vibration of the Membrane}{12}{subsection.2.2.2}
+\contentsline {subsubsection}{Circular Membrane}{12}{section*.11}
 \contentsline {subsubsection}{Sectoral Membrane}{15}{section*.15}
-\contentsline {subsection}{\numberline {2.2.3}Vibration of Coupled Membranes}{15}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Vibration of Coupled Membranes}{17}{subsection.2.2.3}
 \contentsline {subsubsection}{Plane Wave Approximation}{17}{section*.17}
 \contentsline {chapter}{\numberline {3}Analysis of the ICE--Model}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}Membrane Vibration Profile}{19}{section.3.1}
 \contentsline {chapter}{\numberline {4}Conclusion}{21}{chapter.4}
-\contentsline {chapter}{\numberline {A}Acoustic Theory}{23}{appendix.A}
+\contentsline {chapter}{\numberline {A}Linear Acoustics}{23}{appendix.A}
 \contentsline {chapter}{\numberline {B}Second Appendix Chapter}{25}{appendix.B}
 \contentsline {chapter}{Acknowledgements}{28}{appendix*.19}

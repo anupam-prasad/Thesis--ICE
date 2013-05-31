@@ -1,34 +1,50 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[Copson, 1973]{copsonbessel}
-Copson, E.~T. (1973).
-\newblock {\em Introduction to the Theory of Functions of a Complex Variable}.
-\newblock Clarendon Press, Oxford.
-
-\bibitem[Manley, 1972a]{manleygecko2}
-Manley, G. (1972a).
-\newblock Frequency response of the middle ear of geckos.
-\newblock {\em Journal of comparative physiology}, 81(3):251--258.
-
-\bibitem[Manley, 1972b]{manleygecko1}
-Manley, G.~A. (1972b).
-\newblock The middle ear of the tokay gecko.
-\newblock {\em Journal of Comparative Physiology}, 81(3):239--250.
-
-\bibitem[Pozrikidis, 2009]{pozrikidisFluid}
-Pozrikidis, C. (2009).
-\newblock {\em Fluid Dynamics: Theory, Computation, and Numerical Simulation}.
-\newblock Springer.
-
-\bibitem[Vo\ss{}en, 2010]{vossenthesis}
-Vo\ss{}en, C. (2010).
-\newblock {\em Auditory Information Processing in Systems with Internally
+\bibitem{vossenthesis}
+C.~Vo\ss{}en, {\em Auditory Information Processing in Systems with Internally
   Coupled Ears}.
-\newblock PhD thesis, Technische Universit\"{a}t M\"{u}nchen.
+\newblock PhD thesis, Technische Universit\"{a}t M\"{u}nchen, 2010.
 
-\bibitem[Vo\ss{}en et~al., 2010]{vossenjasa}
-Vo\ss{}en, C., Christensen-Dalsgaard, J., and van Hemmen, J.~L. (2010).
-\newblock Analytical model of internally coupled ears.
-\newblock {\em Journal of the Acoustical Society of America}, 128:909--918.
+\bibitem{vossenjasa}
+C.~Vo\ss{}en, J.~Christensen-Dalsgaard, and J.~L. van Hemmen, ``Analytical
+  model of internally coupled ears.,'' {\em Journal of the Acoustical Society
+  of America}, vol.~128, pp.~909--918, 2010.
+
+\bibitem{manleygecko2}
+G.~Manley, ``Frequency response of the middle ear of geckos,'' {\em Journal of
+  comparative physiology}, vol.~81, no.~3, pp.~251--258, 1972.
+
+\bibitem{dalsgaardmanley1}
+J.~Christensen-Dalsgaard and G.~A. Manley, ``{D}irectionality of the lizard
+  ear,'' {\em J. Exp. Biol.}, vol.~208, pp.~1209--1217, Mar 2005.
+
+\bibitem{dalsgaardmanley2}
+J.~Christensen-Dalsgaard and G.~Manley, ``Acoustical coupling of lizard
+  eardrums,'' {\em Journal of the Association for Research in Otolaryngology},
+  vol.~9, no.~4, pp.~407--416, 2008.
+
+\bibitem{dalsgaardtangcarr}
+J.~Christensen-Dalsgaard, Y.~Tang, and C.~E. Carr, ``Binaural processing by the
+  gecko auditory periphery,'' {\em J. Neurophysiol.}, vol.~105, pp.~1992--2004,
+  May 2011.
+
+\bibitem{koepplcarr1}
+C.~Köppl and C.~Carr, ``Maps of interaural time difference in the chicken’s
+  brainstem nucleus laminaris,'' {\em Biological Cybernetics}, vol.~98, no.~6,
+  pp.~541--559, 2008.
+
+\bibitem{copsonbessel}
+E.~T. Copson, {\em Introduction to the Theory of Functions of a Complex
+  Variable}.
+\newblock Oxford: Clarendon Press, 1973.
+
+\bibitem{pozrikidisFluid}
+C.~Pozrikidis, {\em Fluid Dynamics: Theory, Computation, and Numerical
+  Simulation}.
+\newblock Springer, 2009.
+
+\bibitem{manleygecko1}
+G.~A. Manley, ``The middle ear of the tokay gecko,'' {\em Journal of
+  Comparative Physiology}, vol.~81, no.~3, pp.~239--250, 1972.
 
 \end{thebibliography}

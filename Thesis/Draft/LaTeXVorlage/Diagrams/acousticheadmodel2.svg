@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="acousticheadmodel.svg">
+   sodipodi:docname="acousticheadmodel2.svg">
   <defs
      id="defs4">
     <marker
@@ -91,13 +91,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="499.2206"
-     inkscape:cy="907.23435"
+     inkscape:cx="472.85851"
+     inkscape:cy="746.18976"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:snap-object-midpoints="true"
-     inkscape:object-paths="false"
+     inkscape:snap-object-midpoints="false"
+     inkscape:object-paths="true"
      inkscape:window-width="1920"
      inkscape:window-height="1024"
      inkscape:window-x="0"
@@ -105,9 +105,16 @@
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:snap-midpoints="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-global="false" />
+     inkscape:snap-midpoints="false"
+     inkscape:object-nodes="false"
+     inkscape:snap-global="false"
+     inkscape:snap-nodes="true"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-intersection-paths="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -125,8 +132,21 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="opacity:0.65;fill:#c8c8c8;fill-opacity:0.78431373999999998;stroke:#919191;stroke-width:1.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 370.57987,-11.675857 c -51.2055,0.72467 -102.2481,11.59906992 -149.3183,31.764596 -37.0085,15.86193 -71.4423,37.63954 -101.7616,64.124609 C 76.557571,121.66035 41.689971,168.41494 18.448751,220.45809 c -6.38332,14.64946 -12.3298501,29.58513 -16.1367301,45.13445 -5.97828,25.87051 -5.2904,52.61062 -5.23387,78.98421 0.25183,29.60802 0.69981,59.23533 -0.6826,88.8245 -0.90935,24.87712 -1.26746,50.13774 4.56077002,74.51027 6.20379998,26.02002 17.85863008,50.33488 30.57482008,73.72962 24.07073,42.83571 55.83023,81.35057 93.330929,113.10306 47.2017,39.54486 103.7548,68.01204 163.8588,81.58948 55.8495,12.64864 114.5421,12.77514 170.3745,-0.0378 58.3492,-13.26258 113.6079,-40.10897 159.8971,-78.05566 39.5794,-32.33771 72.8794,-72.42324 96.9937,-117.50982 14.7414,-27.6845 25.7796,-57.44297 31.6982,-88.2754 4.7302,-26.29969 2.9357,-53.1883 2.1521,-79.77098 -0.6482,-18.42662 -0.6013,-36.87233 0.1419,-55.29538 0.8968,-27.20553 2.5003,-54.58745 -0.9945,-81.68107 -2.185,-17.267 -7.2295,-34.11229 -14.5534,-49.88718 -7.5414,-16.22192 -16.6366,-31.6677 -25.9994,-46.89199 -23.092,-36.77279 -51.1065,-70.68802 -84.4243,-98.653932 -51.5061,-43.476299 -114.4023,-73.4129851 -180.7211,-85.5788851 -23.9577,-4.45197 -48.338,-6.6074299 -72.7058,-6.3714299 z"
+       sodipodi:type="arc"
+       style="opacity:0.65;fill:#c8c8c8;fill-opacity:1;stroke:#919191;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3987"
+       sodipodi:cx="1422.2948"
+       sodipodi:cy="-194.16606"
+       sodipodi:rx="365.67523"
+       sodipodi:ry="351.53308"
+       d="m 1681.3665,-442.25562 a 365.67523,351.53308 0 1 1 -0.5004,-0.48198"
+       sodipodi:start="5.4997238"
+       sodipodi:end="11.780972"
+       sodipodi:open="true"
+       transform="matrix(1.0814715,0,0,1.0814715,-1164.6495,597.0856)" />
+    <path
+       style="opacity:0.65;fill:#c8c8c8;fill-opacity:0.78431373;stroke:#919191;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 1374.6715,208.5374 c -51.2055,0.72467 -102.2481,11.59907 -149.3183,31.76459 -37.0085,15.86193 -71.4423,37.63954 -101.7616,64.12461 -42.9424,37.447 -77.81,84.20159 -101.0512,136.24474 -6.3833,14.64946 -12.3299,29.58513 -16.1368,45.13445 -5.9782,25.87051 -5.2904,52.61062 -5.2338,78.98421 0.2518,29.60802 0.6998,59.23533 -0.6826,88.8245 -0.90937,24.87712 -1.26748,50.13774 4.5607,74.51027 6.2038,26.02002 17.8587,50.33488 30.5749,73.72962 24.0707,42.83571 55.8302,81.35057 93.3309,113.10306 47.2017,39.54486 103.7548,68.01204 163.8588,81.58948 55.8495,12.64867 114.5421,12.77517 170.3745,-0.0378 58.3492,-13.26258 113.6079,-40.10897 159.8971,-78.05566 39.5794,-32.33771 72.8794,-72.42324 96.9937,-117.50982 14.7414,-27.6845 25.7796,-57.44297 31.6982,-88.2754 4.7302,-26.29969 2.9357,-53.1883 2.1521,-79.77098 -0.6482,-18.42662 -0.6013,-36.87233 0.1419,-55.29538 0.8968,-27.20553 2.5003,-54.58745 -0.9945,-81.68107 -2.185,-17.267 -7.2295,-34.11229 -14.5534,-49.88718 -7.5414,-16.22192 -16.6366,-31.6677 -25.9994,-46.89199 -23.092,-36.77279 -51.1065,-70.68802 -84.4243,-98.65393 -51.5061,-43.4763 -114.4023,-73.41298 -180.7211,-85.57888 -23.9577,-4.45197 -48.338,-6.60743 -72.7058,-6.37143 z"
        id="path3917"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/acousticheadmodel.png"
@@ -146,7 +166,7 @@
     <path
        inkscape:connector-curvature="0"
        id="path3927"
-       d="M 638.00806,92.628118 -173.24821,-637.79712"
+       d="M 628.93105,96.821985 -182.32522,-633.60325"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Lstart)"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/acousticheadmodel.png"
        inkscape:export-xdpi="90"
@@ -160,8 +180,8 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.55399966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 635.01196,89.899163 6.86388,6.410818 12.58769,12.630889 9.22287,10.02597 4.25763,4.86423 10.57405,12.77125 8.40425,10.90558 12.38348,17.42424 14.1138,22.18589 11.30958,19.59488 9.03012,17.67443 5.4973,12.84862 5.71154,17.77185 3.22492,15.22212 1.19125,115.42783"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 755.00248,62.893412 7.22881,6.260757 13.25695,12.33524 9.71323,9.79129 4.484,4.75038 11.13625,12.472311 8.85108,10.65031 13.04188,17.01639 14.8642,21.66659 11.91088,19.13622 9.51023,17.26073 5.78958,12.54787 6.01521,17.35586 3.39638,14.86582 1.25459,112.72601"
        id="path3959"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/acousticheadmodel.png"

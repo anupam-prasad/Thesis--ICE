@@ -1,5 +1,5 @@
 \chapter{The ICE Model}
-Several vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
+Several terrestrial vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
 that of mammals: their tympanic membranes are coupled through large eustachian tubes and a large mouth cavity resulting in the influence of the vibrations of one tympanic membrane
 on those of the other. This is illustrated in \ref{geckohead}. The typically small head sizes (compared to sound wavelength) of these animals result in
 small phase differences (ITDs) and negligible amplitude difference (ILDs) between the ears. The coupling serves to enhance the ITDs and create ILDs
@@ -88,25 +88,29 @@ that is connected to both eardrums by means of a cartileginous element, the \tex
 The membrane-extracolumella-columella system functions
 as a second-order lever where the membrane - driven by the internal and external pressures - causes a displacement
 of the extension of the extracolumella (known as the inferior process). This motion is in turn transmitted 
-via the columella and columellar footplate to the inner ear. The inner-ear translates this motion into
+via the columella and columellar footplate to the inner ear (cochlea). The inner-ear translates this motion into
 electrochemical impulses which will be passed on to the brain via the auditory nerve. The columella-extracolumella system effectively
 transmits the mechanical vibrations from the eardrums to the inner ear. 
+In the human middle-ear, the same function is
+performed by the bones \textit{malleus, incus} and \textit{stapes}, which are collectively known
+as the ossicles. 
 
-The extracolumella applies a significant mechanical load on the tympanum and as a result, 
-it cannot be treated as a freely vibrating membrane. In the human middle-ear, the same function is
-performed by the ossicles:\textit{malleus, incus} and \textit{stapes}. 
-
-For low frequencies, the extracolumella 
-vibrates as a completely stiff bar. It was shown in \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies. 
-This is illustrated in \ref{extracolumellaflection}.
+The extracolumella applies a significant 
+mechanical load on the tympanum and thereby precludes its treatment as a freely vibrating membrane. 
+Furthermore, the contact surface of the malleus on the human eardrum is more or less symmetric whereas the 
+extracolumella is attached asymetrically.
 
 \begin{figure}[ht]
  \centering
  \includegraphics[width=.7\linewidth]{Diagrams/manleyextracolumellaflection.png}
- \caption[Extracolumella Flection]{Operation of the middle ear lever in geckos. The inferior process of the extracolumella (A-C) 
+ \caption[Extracolumella Flection]{Operation of the middle ear lever in geckos reproduced from \cite{manleygecko2}. The inferior process of the extracolumella (A-C) 
  hinges at point C at low frequencies. At high frequencies the inferior process flexes.}
  \label{extracolumellaflection}
 \end{figure}
+
+For low frequencies (below $4$kHz), the extracolumella 
+vibrates as a completely stiff bar. It was shown by Manley\cite{manleygecko2} that the extracolumella begins to flex at higher frequencies - 
+this is illustrated in \ref{extracolumellaflection}.
 
 \begin{figure}[ht]
  \centering
@@ -116,17 +120,54 @@ This is illustrated in \ref{extracolumellaflection}.
 \end{figure}
 
 
-\subsection{Sound Input}
-In measuring the sound input, both the head size and shape play an important role.
+\subsection{Head Model and External Sound Input}
+In realistic environments the acoustic fields experienced by animals are often very complex.
+In addition to sound waves radiated directly from one or more sources in general, they also involve
+waves reflected from objects in their immediate neighbourhood. Higher animals such as humans
+possess the neural power to carry out the sophisticated signal processing needed to derive useful
+information from these signals. Simpler animals like geckos respond to simpler cues - usually
+the direct field from the nearest or strongest source.
+
+We can therefore model our incoming wave as the simple case of an incident plane wave of a 
+certain frequency. This input is specified in terms of its intensity, frequency and direction.
+Such a stimulus can be generated in an anechoic chamber from loudspeakers which are placed at
+a distance from the animal that is large compared to the animal's size and the wavelength
+of the sound involved. Such experimental-setups are more thoroughly described by 
+Christensen-Dalsgaard and Manley (\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}) and 
+Christensen-Dalsgaard, Tang and Carr (\cite{dalsgaardtangcarr}).
 
 The amplitude of the sound pressure incident on both ears can be taken as uniform in over 
 the surface of the membrane. The spatial variation can be safely neglected because the
-typical eardrum has a diameter which is less than $5$mm whereas the smallest sound wavelength
-in their hearing range is around $50$mm.
+typical eardrum is less than $5$mm in diameter whereas the smallest sound wavelengths
+in the hearing range of the larger lizards (eg. Tokay gecko) is around $70$mm ($4000$ Hz) 
+and is around $50$mm ($7000$ Hz) for the smaller lizards (eg. Hemidactylus). In other
+experiments, a similar stimulus has also been provided by means of a headphone sealed
+to the ear (\cite{koepplcarr1}).
 
-The ear closer to the sound source is referred to as the \textit{ipsi-lateral} ear and
+% In measuring the sound input, the important factors to be taken into account are
+% \begin{itemize}
+%  \item The separation of the ears and,
+%  \item The overall head size
+% \end{itemize}
+In general a the sound on the other side of the head will differ in phase as well as amplitude. This is a result of the diffraction of 
+sound around the head and body of the animal. Due to the typically small head size of geckos, the amplitude variation 
+(known as shadowing) is neglible. The phase difference, on the other hand, cannot be neglected.
+The ICE model effectively functions as a two input receiver where the inputs have the same amplitude and a small
+phase difference.
+
+In the earlier ICE model, the 
+
+\begin{figure}[ht]
+ %\centering
+ \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodel.png}
+ \caption[Acoustic head model for geckos]{The acoustic head model for geckos. The darkly shaded region 
+ is the internal cavity. The extra distance travelled by the soundwave to reach the contralateral ear is given by 
+ the path ABC.}
+\end{figure}
+
+\noindent\textbf{Terminology}: The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
 will be denoted by a subscript $0$ on the appropriate variables. The ear further away from the source is referred to
-as the \textit{contra-lateral} ear and will be denoted by a subscript $L$.
+as the \textit{contralateral} ear and will be denoted by a subscript $L$.
 
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main quantities of interest in the ICE model. We first find an expression

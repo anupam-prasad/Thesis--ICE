@@ -1,4 +1,4 @@
 %\bibliographystyle{jkthesis}
 
-\bibliographystyle{ieeetr}
+\bibliographystyle{apalike}
 \bibliography{literatur}

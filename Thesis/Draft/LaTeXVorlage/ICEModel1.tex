@@ -109,8 +109,8 @@ extracolumella is attached asymetrically.
 \end{figure}
 
 For low frequencies (below $4$kHz), the extracolumella 
-vibrates as a completely stiff bar. It was shown in \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies - 
-as illustrated in \ref{extracolumellaflection}.
+vibrates as a completely stiff bar. It was shown by Manley\cite{manleygecko2} that the extracolumella begins to flex at higher frequencies - 
+this is illustrated in \ref{extracolumellaflection}.
 
 \begin{figure}[ht]
  \centering
@@ -121,21 +121,41 @@ as illustrated in \ref{extracolumellaflection}.
 
 
 \subsection{Head Model and External Sound Input}
-In measuring the sound input, the important factors to be taken into account are
-\begin{itemize}
- \item The separation of the ears and,
- \item The overall head size
-\end{itemize}
+In realistic environments the acoustic fields experienced by animals are often very complex.
+In addition to sound waves radiated directly from one or more sources in general, they also involve
+waves reflected from objects in their immediate neighbourhood. Higher animals such as humans
+possess the neural power to carry out the sophisticated signal processing needed to derive useful
+information from these signals. Simpler animals like geckos respond to simpler cues - usually
+the direct field from the nearest or strongest source.
+
+We can therefore model our incoming wave as the simple case of an incident plane wave of a 
+certain frequency. This input is specified in terms of its intensity, frequency and direction.
+Such a stimulus can be generated in an anechoic chamber from loudspeakers which are placed at
+a distance from the animal that is large compared to the animal's size and the wavelength
+of the sound involved. Such experimental-setups are more thoroughly described by 
+Christensen-Dalsgaard and Manley (\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}) and 
+Christensen-Dalsgaard, Tang and Carr (\cite{dalsgaardtangcarr}).
 
 The amplitude of the sound pressure incident on both ears can be taken as uniform in over 
 the surface of the membrane. The spatial variation can be safely neglected because the
 typical eardrum is less than $5$mm in diameter whereas the smallest sound wavelengths
-in the hearing range of the larger lizards (eg. Tokay gecko) is around $70$mm ($4000$ Hz) and is around $50$mm ($7000$ Hz) for
-the smaller lizards (eg. Hemidactylus).
+in the hearing range of the larger lizards (eg. Tokay gecko) is around $70$mm ($4000$ Hz) 
+and is around $50$mm ($7000$ Hz) for the smaller lizards (eg. Hemidactylus). In other
+experiments, a similar stimulus has also been provided by means of a headphone sealed
+to the ear (\cite{koepplcarr1}).
 
-The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
-will be denoted by a subscript $0$ on the appropriate variables. The ear further away from the source is referred to
-as the \textit{contralateral} ear and will be denoted by a subscript $L$.
+% In measuring the sound input, the important factors to be taken into account are
+% \begin{itemize}
+%  \item The separation of the ears and,
+%  \item The overall head size
+% \end{itemize}
+In general a the sound on the other side of the head will differ in phase as well as amplitude. This is a result of the diffraction of 
+sound around the head and body of the animal. The exact variation depends on the size of the animal and the frequency of the
+incident wave. Due to the typically small head size of geckos, the amplitude variation 
+(known as shadowing) is neglible. The phase difference, although small compared to those in larger animals, 
+cannot be neglected.
+
+In the earlier ICE model, the 
 
 \begin{figure}[ht]
  %\centering
@@ -144,6 +164,10 @@ as the \textit{contralateral} ear and will be denoted by a subscript $L$.
  is the internal cavity. The extra distance travelled by the soundwave to reach the contralateral ear is given by 
  the path ABC.}
 \end{figure}
+
+\noindent\textbf{Terminology}: The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
+will be denoted by a subscript $0$ on the appropriate variables. The ear further away from the source is referred to
+as the \textit{contralateral} ear and will be denoted by a subscript $L$.
 
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main quantities of interest in the ICE model. We first find an expression
