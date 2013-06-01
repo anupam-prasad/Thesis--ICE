@@ -23,16 +23,24 @@ not conducive to an analytical treatment. Moreover, the system corresponds to a 
 moving boundaries. For this reason we will need to make further approximations for the sake of expediency.
 
 In order to make the system more analytically tractable we will, as before, study a geometry in which a pair of sectoral
-membranes are coupled through a cylindrical cavity. The cylindrical geometry allows an accurately calculation of the 
+membranes are coupled through a cylindrical cavity. The cylindrical geometry allows an accurate calculation of the 
 pressure distribution inside the cavity at both low and high frequencies. By accounting for the presence of the asymetrically attached
 extracolumella, we will also explain the complex vibration patterns of the membrane. At the end of this chapter, we will
-have the main objects - the internal time differences (iTDs) and internal level differences (iLDs) - which 
-quantify the response of the system as a function direction and frequency.
+have the expressions that describe the steady-state vibrations of both eardrums as a function direction and frequency.
 
-\section{Description}\label{description}
+\section{Description of the Model}\label{description}
+In order to describe the ICE model, we first need to list its basic components and justify their properties
+based on a realistic mouth cavity. 
+
+In Sec. \ref{subsecinnercavity}, we will describe the cylindrical model for the mouth cavity and state the reasons
+for our choice of the geometry and the dimensions used. We will then proceed to describe the middle
+ear system and its main components of interest, the \textit{extracolumella} and the \textit{tympani}
+in Sec. \ref{middleear}. Finally, in Sec. \ref{soundinput} we will analyse the dependence of the acoustic input to both
+eardrums on the direction of the sound source, head size and shape. 
+\subsection{Mouth Cavity}\label{subsecinnercavity}
 In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
 both ends by rigidly clamped (baffled) circular membranes; these model the tympanic membranes. As shown 
-in \cite{vossenthesis} and \cite{vossenjasa}, the length of the cylinder was chosen to be equal to the interaural distance and the radius of the model tympanum is
+by Vossen in \cite[p.~21]{vossenthesis} and \cite{vossenjasa}, the length of the cylinder was chosen to be equal to the interaural distance and the radius of the model tympanum is
 determined from the typical area of the realistic tympanum. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
 distribution inside the cavity is easy to calculate. The pressure distribution inside the cavity becomes highly non-uniform 
 with increasing frequency and a cylindrical cavity simplifies its calculation. 
@@ -42,8 +50,8 @@ is an order of magnitude smaller than that of the realistic mouth-cavity in the 
 iLD. For this reason, the earlier model overestimates the iTDs and iLDs at
 low and high frequencies respectively.
 
-In order to get around this problem we make some slight modifications to the model. We basically maintain the cylindrical shape of the internal 
-cavity but require it to have a volume which is equal to that of the realistic cavity. We maintain the same tympanum size and interaural distance
+In order to get around this problem we make some slight modifications to the model. Essentially, we maintain the cylindrical shape of the internal 
+cavity but require it to have a volume which is equal to that of the realistic cavity ($V_{cav}$). We also maintain the same tympanum size and interaural distance
 and can therefore calculate the radius of the cylinder as,
 \begin{align}
  a_{cyl}=\sqrt{\frac{V_{cav}}{\pi L}}
@@ -66,16 +74,16 @@ and can therefore calculate the radius of the cylinder as,
   \caption[Previous and current ICE model representations]{The bold arrows represent the direction conventions
   along the cylinder's axis. The new model is represented by a cylinder of radius $a_{cyl}$ and length $L$ closed
   at both ends by sectoral membrane of radius $a_{tymp}$.
-  The darkly shaded region corresponds to the extracolumella (described in \ref{middleear}).}
+  The darkly shaded region corresponds to the extracolumella (described in Sec. \ref{middleear}).}
 \end{center}
 \end{figure}
 where $a_{cyl}$ is the cylinder radius and $L$ is the interaural distance. Simply put, the model consists of a cylindrical shell
 of radius $a_{cyl}$ and length $L$ with circular holes on either side with the radius of the tympanic membrane, $a_{tymp}$. These
 holes are in turn closed by rigidly clamped membranes which will be described in the next section. The previous and current geometric representations
-of our model are shown in figures \ref{oldICE} and \ref{newICE}.
+of our model are shown in figures \ref{oldICE} and \ref{newICE}. The darkly shaded circular surfaces in fig. \ref{newICE} at ends $0$ and $L$ correspond to the two
+eardrums.
 
-\vspace{\baselineskip}
-\noindent\textbf{Direction Conventions}: We will be working with the cylindrical polar coordinates, $(r,\phi,x)$. The direction
+We will be working with the cylindrical polar coordinates, $(r,\phi,x)$. The direction
 along the cylindrical axis is denoted by $x$ and $(r,\phi)$ are the polar coordinates of the plane perpendular to the $x$-direction. 
 Directions outward from the cylinder are taken as positive (in $x$) and those inward are taken as negative.
 \subsection{Middle Ear}\label{middleear}
@@ -109,8 +117,10 @@ extracolumella is attached asymetrically.
 \end{figure}
 
 For low frequencies (below $4$kHz), the extracolumella 
-vibrates as a completely stiff bar. It was shown by Manley\cite{manleygecko2} that the extracolumella begins to flex at higher frequencies - 
-this is illustrated in \ref{extracolumellaflection}.
+vibrates as a completely stiff bar. It was shown by Manley \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies - 
+this is illustrated in fig. \ref{extracolumellaflection}. This is partly responsible for the poor high-frequency response of gecko middle ears - 
+a feature also observed in other non-mammalian verterbates. The reason for this is that, due to the flection some energy is lost and
+not transferred to the columella.
 
 \begin{figure}[ht]
  \centering
@@ -120,7 +130,7 @@ this is illustrated in \ref{extracolumellaflection}.
 \end{figure}
 
 
-\subsection{Head Model and External Sound Input}
+\subsection{Head Model and External Sound Input}\label{soundinput}
 In realistic environments the acoustic fields experienced by animals are often very complex.
 In addition to sound waves radiated directly from one or more sources in general, they also involve
 waves reflected from objects in their immediate neighbourhood. Higher animals such as humans
@@ -150,12 +160,30 @@ to the ear (\cite{koepplcarr1}).
 %  \item The overall head size
 % \end{itemize}
 In general a the sound on the other side of the head will differ in phase as well as amplitude. This is a result of the diffraction of 
-sound around the head and body of the animal. Due to the typically small head size of geckos, the amplitude variation 
-(known as shadowing) is neglible. The phase difference, on the other hand, cannot be neglected.
-The ICE model effectively functions as a two input receiver where the inputs have the same amplitude and a small
-phase difference.
+sound around the head and body of the animal. The exact variation depends on the size of the animal and the frequency of the
+incident wave. Due to the typically small head size of geckos, the amplitude variation 
+(known as shadowing) is neglible. The phase difference, although small compared to those in larger animals, 
+cannot be neglected. We therefore consider an incoming sound wave of (pressure) amplitude $p$ and frequency $\omega$.
 
-In the earlier ICE model, the 
+In the earlier ICE model, the effect of diffraction on the phase difference was neglected as well. The phase difference
+is found directly from the path difference $\Delta$ as shown in fig. \ref{fig:oldheadmodel}. As a result, the 
+sound pressure inputs at both ears is given by,
+\begin{equation}\label{oldsoundinput}
+p_0=pe^{j\omega t} e^{-k\Delta/2}\; p_L=pe^{j\omega t} e^{k\Delta/2}\; \Delta=L\sin\theta
+\end{equation}
+
+\begin{figure}[ht]
+ %\centering
+ \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodelold.png}
+ \caption[Previous acoustic head model for geckos]{The previous acoustic head model for geckos. The extra distance travelled by the soundwave to reach the contralateral ear 
+ is denoted by $\Delta$.}
+ \label{fig:oldheadmodel}
+\end{figure}
+The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
+is denoted by a subscript $0$. The ear further away from the source is referred to
+as the \textit{contralateral} ear and is denoted by a subscript $L$. In our subsequent analysis,
+the subscripts $0$ and $L$ will correspond to the ipsi- and contralateral ears respectively, unless
+otherwise specified.
 
 \begin{figure}[ht]
  %\centering
@@ -164,11 +192,7 @@ In the earlier ICE model, the
  is the internal cavity. The extra distance travelled by the soundwave to reach the contralateral ear is given by 
  the path ABC.}
 \end{figure}
-
-\noindent\textbf{Terminology}: The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
-will be denoted by a subscript $0$ on the appropriate variables. The ear further away from the source is referred to
-as the \textit{contralateral} ear and will be denoted by a subscript $L$.
-
+ 
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main quantities of interest in the ICE model. We first find an expression
 for the pressure distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. We then apply the 

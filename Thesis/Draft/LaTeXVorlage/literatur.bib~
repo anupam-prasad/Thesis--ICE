@@ -25,6 +25,14 @@
     page      = {313 }
 }
 
+@Book{fletcheracoustic,
+    author    = { Neville H. Fletcher },
+    title     = { Acoustic Systems in Biology },
+    publisher = { Oxford University Press },
+    address   = { Oxford                  },
+    year      = { 1992                      },
+}
+
 @Article{autrumjcomphys,
   author    = { Hansjochem Autrum  },
   title     = {  \"{U}ber Laut\"{a}u\ss{}erungen und Schallwahrnehmung bei Anthropoden II. },
@@ -146,20 +154,18 @@ language={English}
 }
 
 
-@Unpublished{Autor2:01,
-  author      = { Vorname1 Nachname1 and Vorname2 Nachname2 },
-  title       = { Titel des Artikels                        },
-  note        = { erscheint in Journalname                  },
-  year        = { 2001                                      }
+  	
+@article{michelsenlarsen,
+  author={Axel Michelsen and Ole Næsbye Larsen},
+  title={Pressure difference receiving ears},
+  journal={Bioinspiration & Biomimetics},
+  volume={3},
+  number={1},
+  pages={011001},
+  url={http://stacks.iop.org/1748-3190/3/i=1/a=011001},
+  year={2008},
+  abstract={Directional sound receivers are useful for locating sound sources, and they can also partly compensate for the signal degradations caused by noise and reverberations. Ears may become inherently directional if sound can reach both surfaces of the eardrum. Attempts to understand the physics of such pressure difference receiving ears have been hampered by lack of suitable experimental methods. In this review, we review the methods for collecting reliable data on the binaural directional cues at the eardrums, on how the eardrum vibrations depend on the direction of sound incidence, and on how sound waves behave in the air spaces leading to the interior surfaces of eardrums. A linear mathematical model with well-defined inputs is used for exploring how the directionality varies with the binaural directional cues and the amplitude and phase gain of the sound pathway to the inner surface of the eardrum. The mere existence of sound transmission to the inner surface does not ensure a useful directional 
+hearing, since a proper amplitude and phase relationship must exist between the sounds acting on the two surfaces of the eardrum. The gain of the sound pathway must match the amplitude and phase of the sounds at the outer surfaces of the eardrums, which are determined by diffraction and by the arrival time of the sound, that is by the size and shape of the animal and by the frequency of sound. Many users of hearing aids do not obtain a satisfactory improvement of their ability to localize sound sources. We suggest that some of the mechanisms of directional hearing evolved in Nature may serve as inspiration for technical improvements.}
 }
-
-@Book{Autor3:74,
-    author    = { Rainer Unsinn and Axel Schweiss and Vladimir Klitschko},
-    title     = { Ein eleganter Titel        },
-    publisher = { Princeton University Press },
-    address   = { Princeton                  },
-    year      = { 1974                       }
-}
-
 
 

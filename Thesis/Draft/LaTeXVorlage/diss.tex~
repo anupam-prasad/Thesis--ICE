@@ -21,12 +21,12 @@
 \usepackage[font={small}]{caption}
 \usepackage{subcaption}
 %\usepackage{german}
-\usepackage[bookmarks,colorlinks]{hyperref}
+\usepackage[colorlinks=true,bookmarks,hyperindex]{hyperref}
 \hypersetup{%
     pdfborder = {0 0 0},
     citecolor = blue,
     urlcolor = violet,
-    linkcolor = red,
+    linkcolor = black,
 }
 \usepackage{amsmath}
 \usepackage{amssymb}
