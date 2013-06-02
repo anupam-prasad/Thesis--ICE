@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  2 JUN 2013 02:25
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  2 JUN 2013 23:42
 entering extended mode
  %&-line parsing enabled.
 **diss.tex
@@ -329,7 +329,7 @@ LaTeX Info: Redefining \pageref on input line 129.
 \openout3 = `diss.out'.
 
 \AtBeginShipoutBox=\box29
- <siegel.pdf, id=71, 286.06876pt x 286.06876pt>
+ <siegel.pdf, id=79, 286.06876pt x 286.06876pt>
 File: siegel.pdf Graphic file (type pdf)
  <use siegel.pdf>
 [1
@@ -402,35 +402,35 @@ Chapter 1.
 
 ]
 Chapter 2.
-<Diagrams/geckohead1.png, id=177, 479.54156pt x 245.41687pt>
+<Diagrams/geckohead1.png, id=189, 479.54156pt x 245.41687pt>
 File: Diagrams/geckohead1.png Graphic file (type png)
 
 <use Diagrams/geckohead1.png> [3 <./Diagrams/geckohead1.png (PNG copy)>]
-[4] <Diagrams/oldCylinder.png, id=195, 787.743pt x 599.038pt>
+[4] <Diagrams/oldCylinder.png, id=207, 787.743pt x 599.038pt>
 File: Diagrams/oldCylinder.png Graphic file (type png)
 
 <use Diagrams/oldCylinder.png>
-<Diagrams/newCylinder.png, id=197, 1097.701pt x 766.062pt>
+<Diagrams/newCylinder.png, id=209, 1097.701pt x 766.062pt>
 File: Diagrams/newCylinder.png Graphic file (type png)
 
 <use Diagrams/newCylinder.png> [5 <./Diagrams/oldCylinder.png> <./Diagrams/newC
 ylinder.png>]
-<Diagrams/manleyextracolumellaflection.png, id=214, 386.19281pt x 283.81032pt>
+<Diagrams/manleyextracolumellaflection.png, id=226, 386.19281pt x 283.81032pt>
 File: Diagrams/manleyextracolumellaflection.png Graphic file (type png)
 
 <use Diagrams/manleyextracolumellaflection.png>
-<Diagrams/extracolumella2.png, id=219, 801.394pt x 859.21pt>
+<Diagrams/extracolumella2.png, id=231, 801.394pt x 859.21pt>
 File: Diagrams/extracolumella2.png Graphic file (type png)
 
 <use Diagrams/extracolumella2.png> [6]
 Underfull \vbox (badness 1122) has occurred while \output is active []
 
  [7 <./Diagrams/manleyextracolumellaflection.png (PNG copy)>]
-<Diagrams/acousticheadmodelold.png, id=239, 1458.248pt x 1071.202pt>
+<Diagrams/acousticheadmodelold.png, id=251, 1458.248pt x 1071.202pt>
 File: Diagrams/acousticheadmodelold.png Graphic file (type png)
 
 <use Diagrams/acousticheadmodelold.png>
-<Diagrams/acousticheadmodel.png, id=240, 1455.036pt x 1287.209pt>
+<Diagrams/acousticheadmodel.png, id=252, 1455.036pt x 1287.209pt>
 File: Diagrams/acousticheadmodel.png Graphic file (type png)
 
 <use Diagrams/acousticheadmodel.png> [8 <./Diagrams/extracolumella2.png>]
@@ -447,7 +447,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 251.
  [11] [12] [13]
-<Diagrams/CircularMembraneModes/circular_modes_all.png, id=317, 578.16pt x 905.
+<Diagrams/CircularMembraneModes/circular_modes_all.png, id=329, 578.16pt x 905.
 784pt>
 File: Diagrams/CircularMembraneModes/circular_modes_all.png Graphic file (type 
 png)
@@ -455,7 +455,7 @@ png)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <./Diagrams/CircularMembraneModes/circular_modes_all.png>]
-<Diagrams/SectorMembraneModes/membrane_modes_all.png, id=341, 578.16pt x 865.63
+<Diagrams/SectorMembraneModes/membrane_modes_all.png, id=353, 578.16pt x 865.63
 4pt>
 File: Diagrams/SectorMembraneModes/membrane_modes_all.png Graphic file (type pn
 g)
@@ -470,33 +470,39 @@ g)
 
 ]
 Chapter 3.
-<Diagrams/manleygeckoear2.png, id=385, 587.94656pt x 897.3525pt>
+<Diagrams/manleygeckoear2.png, id=397, 587.94656pt x 897.3525pt>
 File: Diagrams/manleygeckoear2.png Graphic file (type png)
 
-<use Diagrams/manleygeckoear2.png>) [21 <./Diagrams/manleygeckoear2.png (PNG co
-py)>]
+<use Diagrams/manleygeckoear2.png>
+<Diagrams/SectorMembraneModes/sector_membrane_all.png, id=400, 1806.75pt x 1927
+.2pt>
+File: Diagrams/SectorMembraneModes/sector_membrane_all.png Graphic file (type p
+ng)
+ <use Diagrams/SectorMembraneModes/sector_membrane_all.png>) [21] [22 <./Diagra
+ms/manleygeckoear2.png (PNG copy)>] [23 <./Diagrams/SectorMembraneModes/sector_
+membrane_all.png>]
 \openout2 = `Conclusion.aux'.
 
- (./Conclusion.tex [22
+ (./Conclusion.tex [24
 
 
 
 ]
 Chapter 4.
-) [23]
+) [25]
 \openout2 = `anhang.aux'.
 
- (./anhang.tex [24
+ (./anhang.tex [26
 
 
 
 ]
 Appendix A.
-[25] [26
+[27] [28
 
 ]
 Appendix B.
-) [27] [28
+) [29] [30
 
 
 ]
@@ -508,25 +514,25 @@ Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-)) [29
+)) [31
 
 
 ]
 \openout2 = `danksagung.aux'.
 
- (./danksagung.tex [30
+ (./danksagung.tex [32
 
 
 
 ])
-[31] (./diss.aux (./zusammenfassung.aux) (./Introduction.aux) (./ICEModel1.aux)
+[33] (./diss.aux (./zusammenfassung.aux) (./Introduction.aux) (./ICEModel1.aux)
 (./ModelAnalysis.aux) (./Conclusion.aux) (./anhang.aux) (./bibliographie.aux)
 (./danksagung.aux)) ) 
 Here is how much of TeX's memory you used:
- 6549 strings out of 495061
- 95913 string characters out of 1182622
- 176777 words of memory out of 3000000
- 9412 multiletter control sequences out of 15000+50000
+ 6562 strings out of 495061
+ 96265 string characters out of 1182622
+ 176847 words of memory out of 3000000
+ 9419 multiletter control sequences out of 15000+50000
  17354 words of font info for 65 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,17n,43p,309b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -547,9 +553,9 @@ bx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/te
 xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (43 pages, 3373379 bytes).
+Output written on diss.pdf (45 pages, 6956942 bytes).
 PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

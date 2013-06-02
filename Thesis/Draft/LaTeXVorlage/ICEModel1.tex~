@@ -449,7 +449,7 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
   \label{sectoralmembraneeigenmodes}
 \end{figure}
 The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The sectoral shape of the membrane has important
-physical consequences and captures the complex vibration patterns of a realistic membrane. This will be discussed in the nex chapter.
+physical consequences and captures the complex vibration patterns of a realistic membrane. This will be discussed in the next chapter.
 \subsection{Vibration of Coupled Membranes}
 With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes.
 It is convenient to first write down the main equations of the system based on our previously derived expressions.

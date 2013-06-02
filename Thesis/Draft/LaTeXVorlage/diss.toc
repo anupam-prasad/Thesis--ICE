@@ -15,7 +15,9 @@
 \contentsline {subsubsection}{Plane Wave Approximation}{18}{section*.18}
 \contentsline {chapter}{\numberline {3}Analysis of the ICE--Model}{21}{chapter.3}
 \contentsline {section}{\numberline {3.1}Membrane Vibration Profile}{21}{section.3.1}
-\contentsline {chapter}{\numberline {4}Conclusion}{23}{chapter.4}
-\contentsline {chapter}{\numberline {A}Linear Acoustics}{25}{appendix.A}
-\contentsline {chapter}{\numberline {B}Second Appendix Chapter}{27}{appendix.B}
-\contentsline {chapter}{Acknowledgements}{30}{appendix*.20}
+\contentsline {section}{\numberline {3.2}Internal Time Difference}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}Internal Level Difference}{21}{section.3.3}
+\contentsline {chapter}{\numberline {4}Conclusion}{25}{chapter.4}
+\contentsline {chapter}{\numberline {A}Linear Acoustics}{27}{appendix.A}
+\contentsline {chapter}{\numberline {B}Second Appendix Chapter}{29}{appendix.B}
+\contentsline {chapter}{Acknowledgements}{32}{appendix*.21}
