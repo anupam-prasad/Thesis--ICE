@@ -200,16 +200,28 @@ Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will corres
  
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main expressions of interest in the ICE model - the membrane
-vibration profiles, the ipsi- and contraleteral filters and the pressure coefficients. The main equations
-of our model are a pair of coupled, inhomogenous $2^{nd}$-order Partial Differential Equations that describe the motion of the two
-tympanic membranes driven by internal and external pressures. Additionally, we also have another $2^{nd}$-order PDE - the $3D$ wave
-equation - that describes the pressure distribution inside the cylindrical cavity.
-
-
-We first find an expression for the pressure distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. We then apply the 
-appropriate boundary conditions to relate the membrane vibrations to the internal pressure and find the expression for the membrane
+vibration profiles, the ipsi- and contraleteral filters and the pressure coefficients. We will thus find an expression for the pressure 
+distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. After applying the 
+appropriate boundary conditions to relate the membrane vibrations to the internal pressure, we will find the expression for the membrane
 vibrations as a function of direction and frequency.
-\subsection{Internal Cavity}
+
+We will start in Sec. \ref{internalcavity} by finding a general solution to a $2^{nd}$-order PDE - the $3$D wave
+equation - that describes the pressure distribution inside the cylindrical cavity. The pressure will be subject
+to a ``no-penetration'' boundary condition - this is a physical requirement that results from the fact that the air
+inside the cavity does not penetrate a solid boundary.
+
+In Sec. \ref{membranevibrations} we will solve for the vibrations of the tympanic membranes. As an example, we
+will find an expression for the free and periodically driven vibrations of a circular membrane. Using the methods
+developed in this section, we will solve for the vibrations of a sectoral membrane - which, as we have already discussed,
+models to the loaded tympanum. The final expression will correspond to the steady-state vibrations of a linear elastic
+membrane. As we neglect the transient response of the membrane, we will also discuss the circumstances under which this
+is justified.
+
+The main equations
+of our model are a pair of coupled, inhomogenous $2^{nd}$-order Partial Differential Equations that describe the motion of the two
+tympanic membranes driven by internal and external pressures. 
+ 
+\subsection{Internal Cavity}\label{internalcavity}
 We assume that the air inside the cavity obeys linear acoustics (briefly discussed in \ref{acousticappendix}). The pressure distribution inside the cavity
 is therefore given by the $3$D acoustic wave-equation in cylindrical polar coordinates,	
 \begin{equation}\label{pressurewaveeqn}
@@ -314,7 +326,7 @@ The remaining coefficients, $A_{qs}$ and $B_{qs}$, will be determined by equatin
 the membrane velocity at both ends of the cylinder. To do so, we will first need to find an expression
 for the membrane vibrations - as we will in the following section.
 
-\subsection{Vibration of the Membrane}
+\subsection{Vibration of the Membrane}\label{membranevibrations}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
 vibrations of a circular membrane. We will then use our results to move on to the sectoral membrane 
 which corresponds to the tympanum loaded by the extracolumella. Thi corresponds to the approximating
@@ -458,7 +470,7 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
 \end{figure}
 The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The sectoral shape of the membrane has important
 physical consequences and captures the complex vibration patterns of a realistic membrane. This will be discussed in the next chapter.
-\subsection{Vibration of Coupled Membranes}
+\subsection{Vibration of Coupled Membranes}\label{coupledmembranes}
 With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes.
 It is convenient to first write down the main equations of the system based on our previously derived expressions.
 The vibrations of the membranes is given by,
