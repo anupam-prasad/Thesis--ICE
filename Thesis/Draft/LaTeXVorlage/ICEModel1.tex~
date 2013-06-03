@@ -193,12 +193,20 @@ Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will corres
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodel.png}
  \caption[Acoustic head model for geckos]{The acoustic head model for geckos. The white region 
  is the internal cavity. As before, the extra distance travelled by the soundwave to reach the contralateral ear is given by 
- $\Delta$.}
+ $\Delta$. In this case, however, we have accounted for the influence of the head shape on the phase difference between the inputs
+ to both ears.}
+ \label{newheadmodel}
 \end{figure}
  
 \section{Derivation of the Model}
-We will now use the previously described physical model to derive the main quantities of interest in the ICE model. We first find an expression
-for the pressure distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. We then apply the 
+We will now use the previously described physical model to derive the main expressions of interest in the ICE model - the membrane
+vibration profiles, the ipsi- and contraleteral filters and the pressure coefficients. The main equations
+of our model are a pair of coupled, inhomogenous $2^{nd}$-order Partial Differential Equations that describe the motion of the two
+tympanic membranes driven by internal and external pressures. Additionally, we also have another $2^{nd}$-order PDE - the $3D$ wave
+equation - that describes the pressure distribution inside the cylindrical cavity.
+
+
+We first find an expression for the pressure distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. We then apply the 
 appropriate boundary conditions to relate the membrane vibrations to the internal pressure and find the expression for the membrane
 vibrations as a function of direction and frequency.
 \subsection{Internal Cavity}
@@ -304,7 +312,7 @@ We can therefore write the general solution to \eqref{pressurewaveeqn} as a line
 \end{equation}
 The remaining coefficients, $A_{qs}$ and $B_{qs}$, will be determined by equating the fluid-particle velocity to
 the membrane velocity at both ends of the cylinder. To do so, we will first need to find an expression
-for the membrane vibrations and subsequently make use of some simplifying approximations.
+for the membrane vibrations - as we will in the following section.
 
 \subsection{Vibration of the Membrane}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
@@ -461,8 +469,9 @@ where $0$ and $L$ denote the ipsi- and contra-lateral membranes respectively and
 The above equation is only valid on the membrane surface i.e., for $r<a_{tymp}$ and $\beta<\phi<2\pi-\beta$.
 
 As discussed in \ref{pressureboundaryconditions}, the internal cavity pressure satisfies the no-penetration condition at solid boundaries.
-This means that at both ends of the cylinder, we equate the fluid particle velocity of air to the velocity of the membrane. We also note that
- since the membrane diameter is smaller than the cylinder diameter, we have to set the air-particle velocity to zero for $r>a_{tymp}$. Since the membrane displacement is
+This means that at both ends of the cylinder, we equate the velocity profile of air to the velocity profile of the circular surface including
+the membrane. This is because the membrane diameter is smaller than the cylinder diameter. As a result, we will have to set the air-particle velocity to zero for $r>a_{tymp}$. 
+Since the membrane displacement is
 only in the $x$-direction, we only need to calculate the same component of the velocity. Using the relation \eqref{pressurevelocityrelation} we get,
 \begin{equation}\label{airvelocity}
 v_x(x,r,\phi;t)=-\frac{1}{\rho\omega}\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}x}-B_{qs}e^{-j\zeta_{qs}x}\right)f_{qs}(r,\phi)e^{j\omega t}
@@ -472,7 +481,7 @@ and the exact boundary conditions are given by,
  j\omega U_{0}&=v_x(0,r,\phi;t)\\
  j\omega U_{L}&=-v_x(L,r,\phi;t)
 \end{align}
-where we've used the direction conventions described in \ref{description} and made the following definitions,
+where we've used the direction conventions described in \ref{description} and made the following definition,
 \begin{equation}
  U_{0/L}=\begin{cases}
           u_{0/L}\mbox{, } 0<r<a_{tymp}\mbox{ and } \beta<\phi<2\pi-\beta\\
@@ -480,15 +489,43 @@ where we've used the direction conventions described in \ref{description} and ma
          \end{cases}
 \end{equation}
 
-\subsubsection{Plane Wave Approximation}
+\subsubsection{Approximate Boundary Condition}
 As previously stated, the exact boundary condition would entail setting the air velocity to be exactly equal to the membrane displacement velocity. At this point, it is important to
-note that the internal cavity eigenmodes are not orthogonal to the membrane eigenmodes in general\footnote{This would also be true if we had full circular membranes on either end of the
-cylinder. Although, in this case we would have the added simplification that only the circularly symmetric cavity eigenmodes will be activated.}. This means that every membrane eigenmode
-couples with every cavity eigenmode and that each of the coefficients $A_{qs}$ and $B_{qs}$ will be given by an infinite linear combination of the coefficients $C^{0/L}_{mn}$.
+note that the internal cavity eigenmodes are \textbf{not} orthogonal to the membrane eigenmodes in general\footnote{This would also be true if we had full circular membranes on either end of the
+cylinder. In this case we would have the added simplification that only the circularly symmetric cavity eigenmodes will be activated.}. This means that every membrane eigenmode
+couples with every cavity eigenmode and that each of the coefficients $A_{qs}$ and $B_{qs}$ will be given by an infinite linear combination of the coefficients $C^{0/L}_{mn}$. 
 
-\noindent\textbf{Volume Displacement}: For later convenience, we also make the following definition for the volume displacement of the membrane
+The approximate boundary conditions are given by,
+\begin{align}
+   \frac{\rho\omega^2}{\pi a^2_{cyl}}S_{0}&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}-B_{qs}\right)f_{qs}(r,\phi) \label{bcfinal1}\\
+   \frac{\rho\omega^2}{\pi a^2_{cyl}}S_{L}&=-\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right)f_{qs}(r,\phi) \label{bcfinal2}
+\end{align}
+where $S_{0/L}$ is the total displacement of the membranes given by,
 \begin{equation}\label{volumedisplacementdef}
- S_{0/L}(t)=\int dS u_{0/L}(r,\phi;t)
+ S_{0/L}(t)=\int dS U_{0/L}(r,\phi;t)
 \end{equation}
-This is the integral over the membrane surface of the local displacement. Given the external parameters and boundary conditions, it only depends on time
+This is the integral over the membrane surface of the local displacement. Given the external parameters and boundary conditions, it only depends on time.
+We have effectively approximated the surfaces at $0$ and $L$ (including the membranes) by pistons moving with the average velocity of the total surface.
+
+Given these boundary conditions, it is straightforward to calculate the coefficients $A_{qs}$ and $B_{qs}$ in terms of $S_{0/L}$. To do this
+we need to make use of the orthogonality relation given in \eqref{besselorthogonality}. We do this by multiplying both sides of \eqref{bcfinal1} and \eqref{bcfinal2}
+by $f_{qs}(r,\phi)$ and integrate over the circular surfaces at either end of the cylinder. This results in a system of two linear equations for each pair of $A_{qs}$ 
+and $B_{qs}$,
+\begin{align}
+ &A_{qs}-B_{qs} = K_{qs}\frac{\rho\omega^2}{\pi a^2_{cyl}}S_{0}\\
+ &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - K_{qs}\frac{\rho\omega^2}{\pi a^2_{cyl}}S_{L}\\
+ \mbox{where,}\ &K_{qs} = \frac{\int dS f_{qs}(r,\phi)}{j\zeta_{qs}\int dS f^2_{qs}(r,\phi)}\nonumber
+\end{align}
+We now make use of the property of the pressure modes that $f_{qs}(r,\phi)$ integrates to $0$unless $q=0$ and $s=0$. 
+For $q=0$ this is a consequence of the Bessel functions integrating to zero while for $q\geq 1$ this is due to 
+the more obvious fact of the cosine function integrating to zero. As a result we have $A_{qs}=B_{qs}=0$ for all
+modes except the $(0,0)$ or the plane-wave mode. We will subsequently omit the subscripts ``$00$'' for these coefficients.
+From the above linear equations, they are given in terms of the total membrane displacement as,
+\begin{equation}\label{finalpressurecoefficients}
+ A=\frac{\rho\omega^2K_{qs}}{2\pi a^2_{cyl}\sin kL}\left(S_0e^{-jkL}+S_L\right),\qquad  B=\frac{\rho\omega^2K_{qs}}{2\pi a^2_{cyl}\sin kL}\left(S_0e^{jkL}+S_L\right)
+\end{equation}
+we have also directly substituted the value of $\zeta_{00}=k$ in the above expressions.
+
+
+
 
