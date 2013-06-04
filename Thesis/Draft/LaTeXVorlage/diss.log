@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  3 JUN 2013 21:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  4 JUN 2013 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,20 +530,24 @@ ed on input line 467.
  [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./Diagrams/SectorMembraneModes/membrane_modes_all.png>] [19]) [20]
+ [18 <./Diagrams/SectorMembraneModes/membrane_modes_all.png>] [19]) [20] [21]
 \openout2 = `ModelAnalysis.aux'.
 
 
-(./ModelAnalysis.tex
+(./ModelAnalysis.tex [22
+
+
+
+]
 Chapter 3.
-<Diagrams/manleygeckoear2.png, id=410, 587.94656pt x 897.3525pt>
+<Diagrams/manleygeckoear2.png, id=426, 587.94656pt x 897.3525pt>
 File: Diagrams/manleygeckoear2.png Graphic file (type png)
 
 <use Diagrams/manleygeckoear2.png>
 Package pdftex.def Info: Diagrams/manleygeckoear2.png used on input line 16.
 (pdftex.def)             Requested size: 230.36061pt x 351.58177pt.
 
-<Diagrams/SectorMembraneModes/sector_membrane_all.png, id=413, 1806.75pt x 1927
+<Diagrams/SectorMembraneModes/sector_membrane_all.png, id=429, 1806.75pt x 1927
 .2pt>
 File: Diagrams/SectorMembraneModes/sector_membrane_all.png Graphic file (type p
 ng)
@@ -551,34 +555,30 @@ ng)
 Package pdftex.def Info: Diagrams/SectorMembraneModes/sector_membrane_all.png u
 sed on input line 24.
 (pdftex.def)             Requested size: 345.54092pt x 368.55376pt.
-) [21
-
-
-
-] [22 <./Diagrams/manleygeckoear2.png>] [23 <./Diagrams/SectorMembraneModes/sec
-tor_membrane_all.png>]
+) [23] [24 <./Diagrams/manleygeckoear2.png>] [25 <./Diagrams/SectorMembraneMode
+s/sector_membrane_all.png>]
 \openout2 = `Conclusion.aux'.
 
- (./Conclusion.tex [24
+ (./Conclusion.tex [26
 
 
 
 ]
 Chapter 4.
-) [25]
+) [27]
 \openout2 = `anhang.aux'.
 
- (./anhang.tex [26
+ (./anhang.tex [28
 
 
 
 ]
 Appendix A.
-[27] [28
+[29] [30
 
 ]
 Appendix B.
-) [29] [30
+) [31] [32
 
 
 ]
@@ -590,18 +590,18 @@ Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-)) [31
+)) [33
 
 
 ]
 \openout2 = `danksagung.aux'.
 
- (./danksagung.tex [32
+ (./danksagung.tex [34
 
 
 
 ])
-[33]
+[35]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
  (./diss.aux (./zusammenfassung.aux) (./Introduction.aux) (./ICEModel1.aux) (./
@@ -614,10 +614,10 @@ Package rerunfilecheck Info: File `diss.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 7461 strings out of 493485
- 111357 string characters out of 3143526
- 203891 words of memory out of 3000000
- 10460 multiletter control sequences out of 15000+200000
+ 7469 strings out of 493485
+ 111441 string characters out of 3143526
+ 206019 words of memory out of 3000000
+ 10462 multiletter control sequences out of 15000+200000
  17354 words of font info for 65 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,17n,43p,309b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -639,10 +639,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (45 pages, 7035439 bytes).
+Output written on diss.pdf (47 pages, 7038257 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 149 named destinations out of 1000 (max. 500000)
  213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

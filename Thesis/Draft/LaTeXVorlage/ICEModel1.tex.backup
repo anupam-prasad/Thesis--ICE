@@ -193,20 +193,35 @@ Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will corres
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodel.png}
  \caption[Acoustic head model for geckos]{The acoustic head model for geckos. The white region 
  is the internal cavity. As before, the extra distance travelled by the soundwave to reach the contralateral ear is given by 
- $\Delta$.}
+ $\Delta$. In this case, however, we have accounted for the influence of the head shape on the phase difference between the inputs
+ to both ears.}
+ \label{newheadmodel}
 \end{figure}
  
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main expressions of interest in the ICE model - the membrane
-vibration profiles, the ipsi- and contraleteral filters and the pressure coefficients. The main equations
-of our model are a pair of coupled, inhomogenous $2^{nd}$-order partial differential equations that describe the motion of the two
-tympanic membranes driven by internal and external pressures.
-
-We first find an expression
-for the pressure distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. We then apply the 
-appropriate boundary conditions to relate the membrane vibrations to the internal pressure and find the expression for the membrane
+vibration profiles, the ipsi- and contraleteral filters and the pressure coefficients. We will thus find an expression for the pressure 
+distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. After applying the 
+appropriate boundary conditions to relate the membrane vibrations to the internal pressure, we will find the expression for the membrane
 vibrations as a function of direction and frequency.
-\subsection{Internal Cavity}
+
+We will start in Sec. \ref{internalcavity} by finding a general solution to a $2^{nd}$-order PDE - the $3$D wave
+equation - that describes the pressure distribution inside the cylindrical cavity. The pressure will be subject
+to a ``no-penetration'' boundary condition - this is a physical requirement that results from the fact that the air
+inside the cavity does not penetrate a solid boundary.
+
+In Sec. \ref{membranevibrations} we will solve for the vibrations of the tympanic membranes. As an example, we
+will find an expression for the free and periodically driven vibrations of a circular membrane. Using the methods
+developed in this section, we will solve for the vibrations of a sectoral membrane - which, as we have already discussed,
+models to the loaded tympanum. The final expression will correspond to the steady-state vibrations of a linear elastic
+membrane. As we neglect the transient response of the membrane, we will also discuss the circumstances under which this
+is justified.
+
+The main equations
+of our model are a pair of coupled, inhomogenous $2^{nd}$-order Partial Differential Equations that describe the motion of the two
+tympanic membranes driven by internal and external pressures. 
+ 
+\subsection{Internal Cavity}\label{internalcavity}
 We assume that the air inside the cavity obeys linear acoustics (briefly discussed in \ref{acousticappendix}). The pressure distribution inside the cavity
 is therefore given by the $3$D acoustic wave-equation in cylindrical polar coordinates,	
 \begin{equation}\label{pressurewaveeqn}
@@ -311,7 +326,7 @@ The remaining coefficients, $A_{qs}$ and $B_{qs}$, will be determined by equatin
 the membrane velocity at both ends of the cylinder. To do so, we will first need to find an expression
 for the membrane vibrations - as we will in the following section.
 
-\subsection{Vibration of the Membrane}
+\subsection{Vibration of the Membrane}\label{membranevibrations}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
 vibrations of a circular membrane. We will then use our results to move on to the sectoral membrane 
 which corresponds to the tympanum loaded by the extracolumella. Thi corresponds to the approximating
@@ -455,11 +470,11 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
 \end{figure}
 The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The sectoral shape of the membrane has important
 physical consequences and captures the complex vibration patterns of a realistic membrane. This will be discussed in the next chapter.
-\subsection{Vibration of Coupled Membranes}
+\subsection{Vibration of Coupled Membranes}\label{coupledmembranes}
 With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes.
 It is convenient to first write down the main equations of the system based on our previously derived expressions.
 The vibrations of the membranes is given by,
-\begin{equation}
+\begin{equation}\label{coupledmembraneseries}
  u_{0/L}(r,\phi;t)=\displaystyle\sum^{\infty}_{m=0}\sum^{\infty}_{n=1}\Omega_{mn}C^{0/L}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{0/L}e^{j\omega t}-p(0/L,r,\phi;t)
 \end{equation}
 where $0$ and $L$ denote the ipsi- and contra-lateral membranes respectively and the cavity pressure distribution, $p(x,r,\phi;t)$,  is given by \eqref{pressuregeneral1}.
@@ -475,8 +490,8 @@ v_x(x,r,\phi;t)=-\frac{1}{\rho\omega}\displaystyle\sum^\infty_{q=0}\displaystyle
 \end{equation}
 and the exact boundary conditions are given by,
 \begin{align}
- j\omega U_{0}&=v_x(0,r,\phi;t)\\
- j\omega U_{L}&=-v_x(L,r,\phi;t)
+ j\omega U_{0}&=v_x(0,r,\phi;t)\label{bc1}\\
+ j\omega U_{L}&=-v_x(L,r,\phi;t)\label{bc2}
 \end{align}
 where we've used the direction conventions described in \ref{description} and made the following definition,
 \begin{equation}
@@ -492,15 +507,18 @@ note that the internal cavity eigenmodes are \textbf{not} orthogonal to the memb
 cylinder. In this case we would have the added simplification that only the circularly symmetric cavity eigenmodes will be activated.}. This means that every membrane eigenmode
 couples with every cavity eigenmode and that each of the coefficients $A_{qs}$ and $B_{qs}$ will be given by an infinite linear combination of the coefficients $C^{0/L}_{mn}$. 
 
+The first step in overcoming this problem is to rewrite the left-hand sides of the boundary conditions given in \eqref{bc1} and \eqref{bc2}.
+We first exppand $U_{0}$ and $U_{L}$ in the orthogonal basis of the functions $f_{qs}$,
+\begin{align}
+ U_{0/L}(r,\phi;t)&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0} S^{0/L}_{qs}f_{qs}(r,\phi)e^{j\omega t}\\
+ \mbox{where, }S^{0/L}_{qs}&=\frac{\int dS U^{0/L}f_{qs}(r,\phi)}{\int dS f^2_{qs}(r,\phi)}\nonumber
+\end{align}
+
 The approximate boundary conditions are given by,
 \begin{align}
-   \frac{\rho\omega^2}{\pi a^2_{cyl}}S_{0}&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}-B_{qs}\right)f_{qs}(r,\phi) \label{bcfinal1}\\
-   \frac{\rho\omega^2}{\pi a^2_{cyl}}S_{L}&=-\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right)f_{qs}(r,\phi) \label{bcfinal2}
+   \rho\omega^2S^{0}&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}-B_{qs}\right)f_{qs}(r,\phi) \label{bcfinal1}\\
+   \rho\omega^2S^{L}&=-\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right)f_{qs}(r,\phi) \label{bcfinal2}
 \end{align}
-where $S_{0/L}$ is the total displacement of the membranes given by,
-\begin{equation}\label{volumedisplacementdef}
- S_{0/L}(t)=\int dS U_{0/L}(r,\phi;t)
-\end{equation}
 This is the integral over the membrane surface of the local displacement. Given the external parameters and boundary conditions, it only depends on time.
 We have effectively approximated the surfaces at $0$ and $L$ (including the membranes) by pistons moving with the average velocity of the total surface.
 
@@ -509,20 +527,26 @@ we need to make use of the orthogonality relation given in \eqref{besselorthogon
 by $f_{qs}(r,\phi)$ and integrate over the circular surfaces at either end of the cylinder. This results in a system of two linear equations for each pair of $A_{qs}$ 
 and $B_{qs}$,
 \begin{align}
- &A_{qs}-B_{qs} = K_{qs}\frac{\rho\omega^2}{\pi a^2_{cyl}}S_{0}\\
- &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - K_{qs}\frac{\rho\omega^2}{\pi a^2_{cyl}}S_{L}\\
+ &A_{qs}-B_{qs} = K_{qs}\rho\omega^2S^{0}\\
+ &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - K_{qs}\rho\omega^2S^{L}\\
  \mbox{where,}\ &K_{qs} = \frac{\int dS f_{qs}(r,\phi)}{j\zeta_{qs}\int dS f^2_{qs}(r,\phi)}\nonumber
 \end{align}
 We now make use of the property of the pressure modes that $f_{qs}(r,\phi)$ integrates to $0$unless $q=0$ and $s=0$. 
 For $q=0$ this is a consequence of the Bessel functions integrating to zero while for $q\geq 1$ this is due to 
 the more obvious fact of the cosine function integrating to zero. As a result we have $A_{qs}=B_{qs}=0$ for all
-modes except the $(0,0)$ or the plane-wave mode. We will subsequently omit the subscripts ``$00$'' for these coefficients.
+modes except the $(0,0)$ mode. In other words, the zeroeth-order boundary condition only supports plane wave
+modes inside the cavity. We will subsequently omit the subscripts ``$00$'' for these coefficients.
 From the above linear equations, they are given in terms of the total membrane displacement as,
 \begin{equation}\label{finalpressurecoefficients}
- A=\frac{\rho\omega^2K_{qs}}{2\pi a^2_{cyl}\sin kL}\left(S_0e^{-jkL}+S_L\right),\qquad  B=\frac{\rho\omega^2K_{qs}}{2\pi a^2_{cyl}\sin kL}\left(S_0e^{jkL}+S_L\right)
+ A=\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{-jkL}+S^L\right),\qquad  B=\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{jkL}+S^L\right)
 \end{equation}
-we have also directly substituted the value of $\zeta_{00}=k$ in the above expressions.
-
+we have also directly substituted $\zeta_{00}=k$ and simplified the expression for $K_{00}$ in the above expressions. These
+coefficients can now be substituted in place of the pressure in the right-hand side of the equation \eqref{coupledmembraneseries}
+giving us,
+\begin{align}
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{0}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{0}e^{j\omega t}-\frac{\rho\omega^2}{k}\left(S^0\cot kL+S^L\csc kL\right)\\
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{L}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{L}e^{j\omega t}-\frac{\rho\omega^2}{k}\left(S^0\csc kL+S^L\cot kL\right)
+\end{align}
 
 
 
