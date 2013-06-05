@@ -29,9 +29,17 @@ J.~Christensen-Dalsgaard, Y.~Tang, and C.~E. Carr, ``Binaural processing by the
   May 2011.
 
 \bibitem{koepplcarr1}
-C.~Köppl and C.~Carr, ``Maps of interaural time difference in the chicken’s
-  brainstem nucleus laminaris,'' {\em Biological Cybernetics}, vol.~98, no.~6,
-  pp.~541--559, 2008.
+C.~K\"{o}ppl and C.~Carr, ``Maps of interaural time difference in the
+  chicken’s brainstem nucleus laminaris,'' {\em Biological Cybernetics},
+  vol.~98, no.~6, pp.~541--559, 2008.
+
+\bibitem{rschevkinsound}
+S.~Rschevkin, O.~Blunn, and P.~Doak, {\em A Course OF Lectures On Sound.}
+\newblock Pergamon, 1963.
+
+\bibitem{temkinelements}
+S.~Temkin, {\em Elements of Acoustics}.
+\newblock Wiley, 1981.
 
 \bibitem{copsonbessel}
 E.~T. Copson, {\em Introduction to the Theory of Functions of a Complex
@@ -42,6 +50,15 @@ E.~T. Copson, {\em Introduction to the Theory of Functions of a Complex
 C.~Pozrikidis, {\em Fluid Dynamics: Theory, Computation, and Numerical
   Simulation}.
 \newblock Springer, 2009.
+
+\bibitem{asmar2005partial}
+N.~Asmar, {\em Partial Differential Equations with Fourier Series and Boundary
+  Value Problems}.
+\newblock Pearson Education, Limited, 2005.
+
+\bibitem{fletcheracoustic}
+N.~H. Fletcher, {\em Acoustic Systems in Biology}.
+\newblock Oxford: Oxford University Press, 1992.
 
 \bibitem{manleygecko1}
 G.~A. Manley, ``The middle ear of the tokay gecko,'' {\em Journal of

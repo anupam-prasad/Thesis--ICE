@@ -15,22 +15,23 @@ between the tympanal vibrations. These differences show directionality and serve
   \label{geckohead}
 \end{figure}
 
-In this chapter we present a model for the
-middle-ear of lizards - specifically the Tokay Gecko and the Common House Gecko. Our goal is to do this in the simplest possible way while ensuring an accurate reproduction of its main properties. 
-The main components of such a 
-system are the mouth-cavity, the two tympani and the two \textit{extracolumella} (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
+Proceeding from the earlier work done by Vossen in \cite{vossenthesis} and \cite{vossenjasa}, in this chapter we present a model for such a system of coupled ears with an emphasis on lizard hearing
+- specifically the Tokay gecko and the common house gecko. Our goal is to demonstrate its main aspect of such a system - the coupling
+of the eardrums through the mouth cavity. 
+The main components of such a system are the mouth-cavity, the two tympani and the two \textit{extracolumella} (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
 not conducive to an analytical treatment. Moreover, the system corresponds to a pair of coupled second-order PDE's with
-moving boundaries. For this reason we will need to make further approximations for the sake of expediency.
+moving boundaries. For this reason we will need to make further approximations in order to facilitate an
+analytic solution.
 
-In order to make the system more analytically tractable we will, as before, study a geometry in which a pair of sectoral
-membranes are coupled through a cylindrical cavity. The cylindrical geometry allows an accurate calculation of the 
+In order to make the system more analytically tractable we will, as before, study a geometry in which a pair of rigidly clamped
+linear elastic membranes are coupled through a cylindrical cavity. The cylindrical geometry allows an accurate calculation of the 
 pressure distribution inside the cavity at both low and high frequencies. By accounting for the presence of the asymetrically attached
 extracolumella, we will also explain the complex vibration patterns of the membrane. At the end of this chapter, we will
-have the expressions that describe the steady-state vibrations of both eardrums as a function direction and frequency.
+have the expressions that describe the steady-state vibrations of both eardrums as a function pressure amplitude, direction and frequency.
 
 \section{Description of the Model}\label{description}
-In order to describe the ICE model, we first need to list its basic components and justify their properties
-based on a realistic mouth cavity. 
+Before heading to a quantitative analysis of the ICE model, we will first need to list its basic components. 
+and justify their properties based on a realistic mouth cavity. 
 
 In Sec. \ref{subsecinnercavity}, we will describe the cylindrical model for the mouth cavity and state the reasons
 for our choice of the geometry and the dimensions used. We will then proceed to describe the middle
@@ -86,7 +87,7 @@ eardrums.
 We will be working with the cylindrical polar coordinates, $(r,\phi,x)$. The direction
 along the cylindrical axis is denoted by $x$ and $(r,\phi)$ are the polar coordinates of the plane perpendular to the $x$-direction. 
 Directions outward from the cylinder are taken as positive (in $x$) and those inward are taken as negative.
-\subsection{Middle Ear}\label{middleear}
+\subsection{Middle Ear System}\label{middleear}
 The main components of the middle-ear of lizards are the two eardrums, the columella and the two cartileginous extracolumella.  
 The tympanic membrane or the eardrum is a thin membrane that separates the outer ear and the
 middle ear and vibrates in response to external sound waves.  Unlike humans, lizards 
@@ -103,32 +104,49 @@ In the human middle-ear, the same function is
 performed by the bones \textit{malleus, incus} and \textit{stapes}, which are collectively known
 as the ossicles. 
 
-The extracolumella applies a significant 
-mechanical load on the tympanum and thereby precludes its treatment as a freely vibrating membrane. 
-Furthermore, the contact surface of the malleus on the human eardrum is more or less symmetric whereas the 
-extracolumella is attached asymetrically.
-
-\begin{figure}[ht]
- \centering
- \includegraphics[width=.7\linewidth]{Diagrams/manleyextracolumellaflection.png}
- \caption[Extracolumella Flection]{Operation of the middle ear lever in geckos reproduced from \cite{manleygecko2}. The inferior process of the extracolumella (A-C) 
- hinges at point C at low frequencies. At high frequencies the inferior process flexes.}
- \label{extracolumellaflection}
-\end{figure}
-
-For low frequencies (below $4$kHz), the extracolumella 
-vibrates as a completely stiff bar. It was shown by Manley \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies - 
+For low frequencies (below $4$kHz), the extracolumella (or more accurately, the inferior process of the extracolumella)
+moves as a completely stiff bar. It was shown by Manley \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies - 
 this is illustrated in fig. \ref{extracolumellaflection}. This is partly responsible for the poor high-frequency response of gecko middle ears - 
 a feature also observed in other non-mammalian verterbates. The reason for this is that, due to the flection some energy is lost and
 not transferred to the columella.
 
 \begin{figure}[ht]
  \centering
- \includegraphics[width=.4\linewidth]{Diagrams/extracolumella2.png}
- \caption[Tympanic membrane model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
- ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ is estimated from the anatomical data.}
+ \includegraphics[width=.7\linewidth]{Diagrams/manleyextracolumellaflection.png}
+ \caption[Extracolumella Flection]{Operation of the middle ear lever in geckos reproduced from \cite{manleygecko2}. The inferior process of the extracolumella (A-C) 
+ hinges at point C at low frequencies. Also shown is the flection of the inferior process of the extracolumella.}
+ \label{extracolumellaflection}
 \end{figure}
 
+\subsubsection{Tympanic Membrane}
+The extracolumella applies a significant 
+mechanical load on the tympanum and thereby precludes its treatment as a freely vibrating membrane. 
+Furthermore, the contact surface of the malleus on the human eardrum is more or less symmetric whereas the 
+extracolumella is attached asymetrically. This has important physical consequences - especially in the 
+observed vibration patterns of the membrane.
+
+In the previous treatment of the ICE model, the tympanum was modelled as a clamped circular membrane with assymetrically
+attached sectoral load between $-\beta<\phi<\beta$ (\cite{vossenjasa}). This manifests itself as an additional
+boundary condition at $\phi=\beta$ and $\phi=-\beta$ which has to satisfied via a numerical approximation. While
+this method has the advantage of being able to accurately reproduce the complex vibration patterns of the eardrum, 
+it does not lend itself well to an analytical treatment of the coupled system.
+
+In our study, we will follow a slightly different path. The tympanic membrane will be modelled as a 
+rigidly clamped sectoral membrane. This means that in addition to the radial boundary at $a_{tymp}$,
+we have a new set of boundaries at $\phi=\beta$ and $\phi=2\pi-\beta$ where the membrane vibration is set to zero. This is illustrated in \ref{tympanummodel}.
+The membrane material will be assumed to be linear-elastic. As before, the equations describing the vibrations of the membrane will 
+consequently be linear $2^{nd}$-order PDE's.
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=.4\linewidth]{Diagrams/extracolumella2.png}
+ \caption[Tympanic membrane model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
+ ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ corresponds to the breadth of the extracolumella and is estimated from anatomical data.}
+ \label{tympanummodel}
+\end{figure}
+
+At this point we should note that we have effectively set the mass of the extracolumella to infinity. Thereby, its motion has been neglected altogether. While this may seem counterintuitive at first, 
+we will later see that this assumption, while simplifying the problem analytically,  has little effect on the physical phenomenon of interest, viz. the coupling between
+the eardrums and the amplification of hearing cues. This will be discussed in-depth in Chapter \ref{modelanalysischapter}.
 
 \subsection{Head Model and External Sound Input}\label{soundinput}
 In realistic environments the acoustic fields experienced by animals are often very complex.
@@ -222,8 +240,9 @@ of our model are a pair of coupled, inhomogenous $2^{nd}$-order Partial Differen
 tympanic membranes driven by internal and external pressures. 
  
 \subsection{Internal Cavity}\label{internalcavity}
-We assume that the air inside the cavity obeys linear acoustics (briefly discussed in \ref{acousticappendix}). The pressure distribution inside the cavity
-is therefore given by the $3$D acoustic wave-equation in cylindrical polar coordinates,	
+We assume that the air inside the cavity obeys linear acoustics (cf. acoustic textbooks such as \cite[p.~313]{rschevkinsound} and \cite[p.~247]{temkinelements} ). 
+This means that the air moves due to pressure $p(x,r,\phi;t)$ whose distribution inside the cavity
+is given by the $3$D acoustic wave-equation in cylindrical polar coordinates,	
 \begin{equation}\label{pressurewaveeqn}
  \frac{1}{c^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial t^2}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
  +\frac{1}{r^2}\frac{\partial p(x,r,\phi,t)}{\partial \phi^2}+\frac{\partial p(x,r,\phi,t)}{\partial x^2}
@@ -351,8 +370,9 @@ $\Psi(r,\phi;t)$ is the pressure on the membrane surface at $(r,\phi)$. In our d
 pressure acting on the membrane surface. This is justified by the fact that for typical hearing ranges of these animals, the wavelength
 of sound is much greater than the membrane size and any spatial variation can be neglected.
 \subsubsection*{Free Vibrations}
-\noindent\textbf{Undamped Membrane}: We first determine the eigenmodes of an undamped circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$. To do this 
-we make a separation ansatz just as we did in \eqref{pseparationansatz},
+\noindent\textbf{Undamped Membrane}: We first determine the eigenmodes of an undamped circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$
+(the resultant equation is better known as the $3$D Helmholtz equation, cf. \cite[p.~187]{asmar2005partial}). Just as we did in \eqref{pseparationansatz},
+we do this by making a separation ansatz ,
 \begin{equation}\label{mseparationansatz}
  u(r,\phi;t)=f(r)g(\phi)h(t)
 \end{equation}
@@ -429,7 +449,7 @@ of the above eigenmodes and is given by,
 Substituting this expression in \eqref{membraneequation1} with $\Psi=pe^{j\omega t}$ gives,
 \begin{align}
  &\displaystyle\sum^\infty_{m=0}\sum^\infty_{n=1} \Omega_{mn}C_{mn}\cos m\phi J_m(\mu_{mn} r)e^{j\omega t}=pe^{j\omega t}\label{membraness2}\\
- &\text{where,  }\Omega_{mn}=\rho_M d (\omega^2-2j\alpha\omega-\omega^2_mn)\label{omegafirstdef}.
+ &\text{where,  }\Omega_{mn}=\rho_M d \left[(\omega^2-\omega^2_mn)-2j\alpha\omega\right]\label{omegafirstdef}.
 \end{align}
 Using the orthogonality of the eigenmodes, the coefficients $C_{mn}$ can be calculated,
 \begin{equation}\label{sscoeffs}
@@ -468,7 +488,8 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
  \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane with $\beta=\pi/25$. The eigenfrequency increases from left to right.}
   \label{sectoralmembraneeigenmodes}
 \end{figure}
-The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The sectoral shape of the membrane has important
+The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The vibrations of a sectoral membrane
+are discussed in more detail in \cite[p.~87]{fletcheracoustic}. As discussed earlier, the sectoral shape of the membrane has important
 physical consequences and captures the complex vibration patterns of a realistic membrane. This will be discussed in the next chapter.
 \subsection{Vibration of Coupled Membranes}\label{coupledmembranes}
 With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes.
@@ -544,9 +565,58 @@ we have also directly substituted $\zeta_{00}=k$ and simplified the expression f
 coefficients can now be substituted in place of the pressure in the right-hand side of the equation \eqref{coupledmembraneseries}
 giving us,
 \begin{align}
- &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{0}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{0}e^{j\omega t}-\frac{\rho\omega^2}{k}\left(S^0\cot kL+S^L\csc kL\right)\\
- &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{L}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{L}e^{j\omega t}-\frac{\rho\omega^2}{k}\left(S^0\csc kL+S^L\cot kL\right)
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{0}_{mn}u_{mn}(r,\phi)=p_{0}-\frac{\rho\omega^2}{k}\left(S^0\cot kL+S^L\csc kL\right)\\
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{L}_{mn}u_{mn}(r,\phi)=p_{L}-\frac{\rho\omega^2}{k}\left(S^0\csc kL+S^L\cot kL\right)
 \end{align}
+where we have cancelled out the time component on both sides of the equations. Note that the right-hand sides of the above two equations
+are independent of the spatial $(r,\phi)$ coordinates.
+
+In order to simplify the above coupled system of equations, the next step will be to take their sum and difference to obtain a new set of 
+variables that are solutions of a pair of decoupled equations. After some algebraic manipulation, we therefore have
+\begin{align}
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{+}_{mn}u_{mn}(r,\phi)=p_{+}-\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\\
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{-}_{mn}u_{mn}(r,\phi)=p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}
+\end{align}
+where, $C_{mn}^+=C_{mn}^L+C_{mn}^0$ and $C_{mn}^-=C_{mn}^L-C_{mn}^0$. The $S^{+/-}$ and $p_{+/-}$ terms are defined similarly.
+Now, analogous to the calculation of the coefficients for the steady state vibration in \eqref{membraness2} and \eqref{sscoeffs}, we can determine
+the coefficients of the sum and difference vibrations in terms of the pressure and total membrane displacements. This gives us,
+\begin{align}
+ C^{+}_{mn}&=\left[p_{+}-\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]K_{mn}\label{pluscoeffdef}\\
+ C^{-}_{mn}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]K_{mn}\label{minuscoeffdef}\\
+ \mbox{where, }K_{mn}&=\frac{\int dS u_{mn}}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
+\end{align}
+The next step will be to multiply both sides of \eqref{pluscoeffdef} and \eqref{minuscoeffdef} with the integral $\int dS u_{mn}$, and
+sum over $m\mbox{ and }n$. It is clear that the left hand sides become equal to $S^{+/-}$; this allows us to give exact expressions
+for the total membrane displacements.
+\begin{equation}
+ S^{+}=\frac{p_L+p_0}{\Lambda+\Gamma_+}\qquad S^{-}=\frac{p_L-p_0}{\Lambda+\Gamma_-}
+\end{equation}
+where we've defined the following quantities,
+\begin{align}
+ \Gamma_+ = \frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\nonumber
+,\qquad\frac{1}{\Lambda}=\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{\left(\int dS u_{mn}\right)^2}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
+\end{align}
+We can finally write the membrane displacement as a function of the pressure inputs in the form
+\begin{align}
+ u_0(r,\phi;t)&=G_{ipsi}(r,\phi)p_0+G_{contra}(r,\phi)p_L\label{ipsimembranefull}\\
+ u_L(r,\phi;t)&=G_{contra}(r,\phi)p_0+G_{ipsi}(r,\phi)p_L\label{contramembranefull}
+\end{align}
+with the ipsilateral filter,
+\begin{equation}
+ G_{ipsi}=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)\displaystyle\sum^\infty_{n=1}\frac{\Lambda K_{mn}}{2}u_{mn}(r,\phi;t)
+\end{equation}
+and the contralateral filter,
+\begin{equation}
+ G_{contra}=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)\displaystyle\sum^\infty_{n=1}\frac{\Lambda K_{mn}}{2}u_{mn}(r,\phi;t)
+\end{equation}
+The total membrane displacement can also be expressed as a function of $p_0$ and $p_L$ simply by integrating both sides of \eqref{ipsimembranefull}
+and \eqref{contramembranefull} giving us a new set of ipsi- and contralateral filters
+\begin{align}
+ G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2\\
+ G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2
+\end{align}
+The ipsilateral filter effectively gives us the response of the ipsilateral membrane when the contralateral membrane
+is blocked. Similarly, the contralateral filter gives us its response when there is no ipsilateral stimulus.
 
 
 

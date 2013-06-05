@@ -1,4 +1,4 @@
-\chapter{Analysis of the ICE--Model}
+\chapter{Analysis of the ICE--Model}\label{modelanalysischapter}
 We now have a complete geomtrical representation of the ICE model as well as
  the analytical expressions $S_0$ and $S_L$ that describe the total membrane displacements
 as a function of direction and frequency. In this chapter we will use these variables
@@ -21,12 +21,13 @@ entirely determined by the inputs to the two ears.
 
 \begin{figure}[ht!]
  \centering
- \includegraphics[width=.5\linewidth]{Diagrams/SectorMembraneModes/sector_membrane_all.png}
+ \includegraphics[width=.75\linewidth]{Diagrams/SectorMembraneModes/sector_membrane_all.png}
  \caption[Sectoral membrane vibration profiles.]{Vibration patterns of a sectoral membrane
  of radius $2.2$mm on sound frequency varying from $.5$kHz to $10$kHz. Compare with fig. \ref{manleygeckotympanum}}
   \label{sectormembraneprofile}
 \end{figure}
 
+\section{Cavity Pressure Distribution}
 \section{Internal Time Difference}
 
 \section{Internal Level Difference}
