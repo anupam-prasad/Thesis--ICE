@@ -193,12 +193,12 @@ We note that in defining the input in this way, we've emphasized the symmetry of
 \begin{figure}[ht]
  %\centering
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodelold.png}
- \caption[Previous acoustic head model for geckos]{The previous acoustic head model for geckos. The extra distance travelled by the soundwave to reach the contralateral ear 
+ \caption[Previous acoustic head model for geckos]{The previous acoustic head model for geckos. The extra distance travelled by the sound wave to reach the contralateral ear 
  is denoted by $\Delta$.}
  \label{fig:oldheadmodel}
 \end{figure}
 We have also chosen a coordinate
-system relative to the \textit{median-sagittal} plane of the animal and $\theta$ gives the angle of incidence of this
+system relative to the \textit{median-sagittal} plane or the head midline of the animal and $\theta$ gives the angle of incidence of this
 sound wave relative to this plane. For more complex auditory systems we would have requirde two angles $(\theta, \phi)$ to describe
 the three-dimensional system but in our analysis this is unnecessary. The main reason for this is 
 
@@ -208,10 +208,10 @@ Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will corres
 
 \begin{figure}[ht]
  %\centering
- \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodel.png}
- \caption[Acoustic head model for geckos]{The acoustic head model for geckos. The white region 
- is the internal cavity. As before, the extra distance travelled by the soundwave to reach the contralateral ear is given by 
- $\Delta$. In this case, however, we have accounted for the influence of the head shape on the phase difference between the inputs
+ \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodel2.png}
+ \caption[New acoustic head model for geckos]{The acoustic head model for geckos. The rectangular outline 
+ is the internal cavity. As before, the extra distance travelled by the sound wave to reach the contralateral ear is given by 
+ $\Delta$. In this case, however, we have accounted for the influence of diffraction around the head on the phase difference between the inputs
  to both ears.}
  \label{newheadmodel}
 \end{figure}
@@ -235,10 +235,43 @@ models to the loaded tympanum. The final expression will correspond to the stead
 membrane. As we neglect the transient response of the membrane, we will also discuss the circumstances under which this
 is justified.
 
-The main equations
-of our model are a pair of coupled, inhomogenous $2^{nd}$-order Partial Differential Equations that describe the motion of the two
-tympanic membranes driven by internal and external pressures. 
- 
+We will conclude in Sec. \ref{coupledmembranes} by using our knowledge to solve for the vibration of the full coupled
+system. In this section we will  proceed by applying the velocity boundary condition at either end of the cylinder
+and .
+We have listed the main parameters and functions used in our analysis (including the geometry parameters
+defined so far) in Table \ref{parametertable}.
+
+\begin{minipage}{\linewidth}
+\renewcommand{\arraystretch}{1.2}
+%\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
+\centering
+\captionof{table}{Parameters and Functions used in the ICE Model} \label{parametertable} 
+\begin{tabular}[t!]{c p{13 cm}}
+\hline
+$\theta$ & Direction of the sound source with respect to the head midline.\\
+$\omega$ & Angular frequency of the incoming sound wave.\\
+$k$ & Wavenumber $k=\omega/c$ with $c=343$m/s being the speed of sound.\\
+$p$ & Pressure amplitude of the incoming sound wave.\\
+$\Delta$ & Phase difference between the sound wave reaching the contra- and ipsilateral ear.\\
+& \\
+$f_{qs}(x,r,\phi)$ & Orthogonal modes for the pressure distribution inside the mouth cavity.\\
+$\zeta_{qs}$ & Wavenumber of the above modes in the $x$-direction.\\
+$p(x,r,\phi;t)$ & Pressure distribution inside the mouth cavity.\\
+$v_x(x,r,\phi;t)$ & Velocity function inside the mouth cavity.\\
+&\\
+$u_{mn}(r,\phi;t)$ & Eigenmodes of the membrane displacement function.\\
+$\omega_{mn}$ & Eigenfrequency of the above eigenmodes.\\
+$\Psi(r,\phi;t)$ & Driving pressure on the membrane.\\
+$u_{0/L}(r,\phi;t)$ & Membrane displacement function. The subscripts denote the ipsilateral ($x=0$) and contralateral ($x=L$) membranes.\\
+$S^{0/L}(t)$ & Total membrane displacement. The integral of the membrane displacement over its surface.\\
+&\\
+$G_{ipsi}(r,\phi)$ & Ipsilateral filter.\\
+$G_{contra}(r,\phi)$ & Contralateral filter.\\
+\hline
+\end {tabular}\par
+\bigskip
+\end{minipage}
+
 \subsection{Internal Cavity}\label{internalcavity}
 We assume that the air inside the cavity obeys linear acoustics (cf. acoustic textbooks such as \cite[p.~313]{rschevkinsound} and \cite[p.~247]{temkinelements} ). 
 This means that the air moves due to pressure $p(x,r,\phi;t)$ whose distribution inside the cavity
@@ -367,11 +400,11 @@ subject to the boundary condition $u(r,\phi;t)|_{r=a_M}=0$.. We've defined the f
  \item $d$ - thickness.
 \end{itemize}
 $\Psi(r,\phi;t)$ is the pressure on the membrane surface at $(r,\phi)$. In our discussion we are only concerned with periodic and uniform 
-pressure acting on the membrane surface. This is justified by the fact that for typical hearing ranges of these animals, the wavelength
-of sound is much greater than the membrane size and any spatial variation can be neglected.
+pressure acting on the membrane surface. As we have already stated in Sec. \ref{soundinput},  the small size of the membrane with respect to the sound wavelength,
+justifies the spatial uniformity of our input.
 \subsubsection*{Free Vibrations}
 \noindent\textbf{Undamped Membrane}: We first determine the eigenmodes of an undamped circular membrane by solving \eqref{membraneequation1} for $\alpha=0,\ \Psi=0$
-(the resultant equation is better known as the $3$D Helmholtz equation, cf. \cite[p.~187]{asmar2005partial}). Just as we did in \eqref{pseparationansatz},
+(the resultant equation is better known as the $2$D Helmholtz equation, cf. \cite[p.~187]{asmar2005partial}). Just as we did in \eqref{pseparationansatz},
 we do this by making a separation ansatz ,
 \begin{equation}\label{mseparationansatz}
  u(r,\phi;t)=f(r)g(\phi)h(t)
