@@ -197,10 +197,10 @@ We note that in defining the input in this way, we've emphasized the symmetry of
  is denoted by $\Delta$.}
  \label{fig:oldheadmodel}
 \end{figure}
-We have chosen a coordinate
+We have also chosen a coordinate
 system relative to the \textit{median-sagittal} plane of the animal and $\theta$ gives the angle of incidence of this
 sound wave relative to this plane. For more complex auditory systems we would have requirde two angles $(\theta, \phi)$ to describe
-the three-dimensional system but in our analysis this is unnecessary.
+the three-dimensional system but in our analysis this is unnecessary. The main reason for this is 
 
 The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
 is denoted by a subscript $0$ and the one further away from the source is referred to as the \textit{contralateral} ear and is denoted by a subscript $L$. 
