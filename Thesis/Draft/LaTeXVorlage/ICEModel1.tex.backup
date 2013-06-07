@@ -180,16 +180,20 @@ to the ear (\cite{koepplcarr1}).
 In general a the sound on the other side of the head will differ in phase as well as amplitude. This is a result of the diffraction of 
 sound around the head and body of the animal. The exact variation depends on the size of the animal and the frequency of the
 incident wave. Due to the typically small head size of geckos, the amplitude variation 
-(known as shadowing) is neglible. The phase difference, although small compared to those in larger animals, 
-cannot be neglected. We therefore consider an incoming sound wave of (pressure) amplitude $p$ and frequency $\omega$. 
+(known as shadowing) is neglible (\cite{michelsenlarsen}). The phase difference, although small compared to those in larger animals, 
+cannot be neglected. We can therefore consider the sound wave with angular frequency $\omega$ to have a constant (pressure) amplitude $p$
+on the head.
 
 In the earlier ICE model, the effect of diffraction on the phase difference was neglected as well. The phase difference
-is found directly from the path difference $\Delta$ as shown in fig. \ref{fig:oldheadmodel}.
+is found directly from the phase difference $\Delta$ as shown in fig. \ref{fig:oldheadmodel}.
 As a result, the sound pressure inputs at both ears is given by,
 \begin{equation}\label{oldsoundinput}
 p_0=pe^{j\omega t} e^{-k\Delta/2},\qquad p_L=pe^{j\omega t} e^{k\Delta/2},\qquad \Delta=L\sin\theta.
 \end{equation}
 We note that in defining the input in this way, we've emphasized the symmetry of the system.
+The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
+is denoted by a subscript $0$ and the one further away from the source is referred to as the \textit{contralateral} ear and is denoted by a subscript $L$. 
+Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will correspond to the ipsi- and contralateral ears respectively.
 \begin{figure}[ht]
  %\centering
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodelold.png}
@@ -199,12 +203,9 @@ We note that in defining the input in this way, we've emphasized the symmetry of
 \end{figure}
 We have also chosen a coordinate
 system relative to the \textit{median-sagittal} plane or the head midline of the animal and $\theta$ gives the angle of incidence of this
-sound wave relative to this plane. For more complex auditory systems we would have requirde two angles $(\theta, \phi)$ to describe
-the three-dimensional system but in our analysis this is unnecessary. The main reason for this is 
-
-The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
-is denoted by a subscript $0$ and the one further away from the source is referred to as the \textit{contralateral} ear and is denoted by a subscript $L$. 
-Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will correspond to the ipsi- and contralateral ears respectively.
+sound wave relative to this plane. For more complex auditory systems we would require two angles $(\theta, \phi)$ to describe
+the three-dimensional system but in our analysis this is unnecessary. For the animals we are concerned with, i.e. geckos, the natural
+predators and prey are usually present on the same plane as the animal and our assumption is therefore reasonable.
 
 \begin{figure}[ht]
  %\centering
@@ -215,7 +216,12 @@ Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will corres
  to both ears.}
  \label{newheadmodel}
 \end{figure}
- 
+In our model we model the head as a sphere with a diameter equal to the interaural separation. As a result the sound has to travel around the 
+head in order to reach the contralateral ear resulting in a longer path. The revised phase difference is given by,
+\begin{equation}
+ \Delta=kL(Tr(\theta)+\sin\theta)
+\end{equation}
+This is illustrated in Fig. \ref{newheadmodel}.
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main expressions of interest in the ICE model - the membrane
 vibration profiles, the ipsi- and contraleteral filters and the pressure coefficients. We will thus find an expression for the pressure 
@@ -231,29 +237,33 @@ inside the cavity does not penetrate a solid boundary.
 In Sec. \ref{membranevibrations} we will solve for the vibrations of the tympanic membranes. As an example, we
 will find an expression for the free and periodically driven vibrations of a circular membrane. Using the methods
 developed in this section, we will solve for the vibrations of a sectoral membrane - which, as we have already discussed,
-models to the loaded tympanum. The final expression will correspond to the steady-state vibrations of a linear elastic
+models the loaded tympanum. The final expression will correspond to the steady-state vibrations of a linear elastic
 membrane. As we neglect the transient response of the membrane, we will also discuss the circumstances under which this
 is justified.
-
-We will conclude in Sec. \ref{coupledmembranes} by using our knowledge to solve for the vibration of the full coupled
-system. In this section we will  proceed by applying the velocity boundary condition at either end of the cylinder
-and .
-We have listed the main parameters and functions used in our analysis (including the geometry parameters
-defined so far) in Table \ref{parametertable}.
 
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.2}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Parameters and Functions used in the ICE Model} \label{parametertable} 
-\begin{tabular}[t!]{c p{13 cm}}
+\begin{tabular}{c p{13 cm}}
 \hline
 $\theta$ & Direction of the sound source with respect to the head midline.\\
 $\omega$ & Angular frequency of the incoming sound wave.\\
 $k$ & Wavenumber $k=\omega/c$ with $c=343$m/s being the speed of sound.\\
 $p$ & Pressure amplitude of the incoming sound wave.\\
 $\Delta$ & Phase difference between the sound wave reaching the contra- and ipsilateral ear.\\
+$p_{0/L}$ & Sound pressure on the ipsi- ($x=0$) and contralateral ($x=L$) ears respectively.\\
 & \\
+$(x,r,\phi)$ & Cylindrical polar coordinates with $x$ being the axial direction.\\
+$L$ & Interaural separation and length of cylinder.\\
+$a_{cyl}$ & Radius of cylinder.\\
+$a_{tymp}$ & Radius of tympanum.\\
+$\beta<\phi<2\pi-\beta$ & Extent of the vibrating part of the membrane. The rest of the circle corresponds to
+the extracolumella.\\
+&\\
+$J_q$ & Order $q$ Bessel function of the first kind.\\
+$\mu_{qs},\nu_{qs}$ & Respectively - $s^{th}$ zero and $s^{th}$ extremum of the above Bessel function.\\
 $f_{qs}(x,r,\phi)$ & Orthogonal modes for the pressure distribution inside the mouth cavity.\\
 $\zeta_{qs}$ & Wavenumber of the above modes in the $x$-direction.\\
 $p(x,r,\phi;t)$ & Pressure distribution inside the mouth cavity.\\
@@ -262,15 +272,20 @@ $v_x(x,r,\phi;t)$ & Velocity function inside the mouth cavity.\\
 $u_{mn}(r,\phi;t)$ & Eigenmodes of the membrane displacement function.\\
 $\omega_{mn}$ & Eigenfrequency of the above eigenmodes.\\
 $\Psi(r,\phi;t)$ & Driving pressure on the membrane.\\
-$u_{0/L}(r,\phi;t)$ & Membrane displacement function. The subscripts denote the ipsilateral ($x=0$) and contralateral ($x=L$) membranes.\\
-$S^{0/L}(t)$ & Total membrane displacement. The integral of the membrane displacement over its surface.\\
-&\\
+$u_{0/L}(r,\phi;t)$ & Membrane displacement function.\\
+$S^{0/L}(t)$ & Total membrane displacement.\\
 $G_{ipsi}(r,\phi)$ & Ipsilateral filter.\\
 $G_{contra}(r,\phi)$ & Contralateral filter.\\
 \hline
 \end {tabular}\par
 \bigskip
 \end{minipage}
+
+In Sec. \ref{coupledmembranes} we will conclude by using our knowledge to solve for the vibration of the fully coupled
+system. In this section we will  proceed by applying the velocity boundary condition at either end of the cylinder. In
+order to help with our analysis, we will present a simplification scheme for this boundary condition. We will end this section
+by defining the ipsi- and contralateral filters. We will thus have the final expressions that give us the vibrations 
+of the tympanic membranes as a function of the input pressure. We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Table \ref{parametertable}.
 
 \subsection{Internal Cavity}\label{internalcavity}
 We assume that the air inside the cavity obeys linear acoustics (cf. acoustic textbooks such as \cite[p.~313]{rschevkinsound} and \cite[p.~247]{temkinelements} ). 
@@ -322,7 +337,7 @@ There are three sets of boundary conditions -
 \begin{itemize}
  \item Continuity and smoothness in $\phi$ which is equivalent to $h(0)=h(2\pi)$ and $h^\prime(0)=h^\prime(2\pi)$ where, $h^\prime=dh/d\phi$.
  \item Vanishing of the normal derivative at the cavity walls - $g^\prime(a_C)=0$ ($a_C$ is the radius of the cylinder).
- \item Equating the membrane velocity to the air velocity at the membrane boundaries (to be discussed in the next section).
+ \item Equating the membrane velocity to the velocity function at the membrane boundaries (to be discussed in the next section).
 \end{itemize}
 The first set of requirements is obvious. This reduces \eqref{specificpressure1} to 
 \begin{equation}\label{specificpressure2}
@@ -332,8 +347,8 @@ With $q$ constrained to be an integer.
 
 The second and third are a result of the so called ``no-penetration'' boundary-condition
 of fluid-mechanics. It arises from the from the fact that the cavity wall is an impermeable boundary. This translates 
-into the requirement that the normal fluid-particle velocity should vanish (\cite[p.~111]{pozrikidisFluid}).
-The fluid-particle velocity ($\mathbf{v}$) is related to the pressure by, 
+into the requirement that the normal velocity function should vanish (\cite[p.~111]{pozrikidisFluid}).
+The velocity function ($\mathbf{v}$) is related to the pressure by, 
 \begin{equation}\label{pressurevelocityrelation}
  -\rho\frac{\partial \mathbf{v}}{\partial t}=\nabla p
 \end{equation}
@@ -374,7 +389,7 @@ We can therefore write the general solution to \eqref{pressurewaveeqn} as a line
 \begin{equation}\label{pressuregeneral1}
  p(x,r,\phi;t)=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}\left(A_{qs}e^{j\zeta_{qs}x}+B_{qs}e^{-j\zeta_{qs}x}\right)f_{qs}(r,\phi)e^{j\omega t}
 \end{equation}
-The remaining coefficients, $A_{qs}$ and $B_{qs}$, will be determined by equating the fluid-particle velocity to
+The remaining coefficients, $A_{qs}$ and $B_{qs}$, will be determined by equating the velocity function to
 the membrane velocity at both ends of the cylinder. To do so, we will first need to find an expression
 for the membrane vibrations - as we will in the following section.
 
@@ -556,7 +571,7 @@ where we've used the direction conventions described in \ref{description} and ma
 \end{equation}
 
 \subsubsection{Approximate Boundary Condition}
-As previously stated, the exact boundary condition would entail setting the air velocity to be exactly equal to the membrane displacement velocity. At this point, it is important to
+As previously stated, the exact boundary condition would entail setting the velocity function to be exactly equal to the membrane displacement velocity. At this point, it is important to
 note that the internal cavity eigenmodes are \textbf{not} orthogonal to the membrane eigenmodes in general\footnote{This would also be true if we had full circular membranes on either end of the
 cylinder. In this case we would have the added simplification that only the circularly symmetric cavity eigenmodes will be activated.}. This means that every membrane eigenmode
 couples with every cavity eigenmode and that each of the coefficients $A_{qs}$ and $B_{qs}$ will be given by an infinite linear combination of the coefficients $C^{0/L}_{mn}$. 

@@ -14,7 +14,7 @@
 \contentsline {subsubsection}{Sectoral Membrane}{19}{section*.17}
 \contentsline {subsection}{\numberline {2.2.3}Vibration of Coupled Membranes}{19}{subsection.2.2.3}
 \contentsline {subsubsection}{Approximate Boundary Condition}{21}{section*.19}
-\contentsline {chapter}{\numberline {3}Analysis of the ICE--Model}{25}{chapter.3}
+\contentsline {chapter}{\numberline {3}Evaluation of the ICE--Model}{25}{chapter.3}
 \contentsline {section}{\numberline {3.1}Membrane Vibration Profile}{25}{section.3.1}
 \contentsline {section}{\numberline {3.2}Cavity Pressure Distribution}{25}{section.3.2}
 \contentsline {section}{\numberline {3.3}Internal Time Difference}{25}{section.3.3}

@@ -187,7 +187,7 @@ language={English}
 @article{michelsenlarsen,
   author={Axel Michelsen and Ole Næsbye Larsen},
   title={Pressure difference receiving ears},
-  journal={Bioinspiration & Biomimetics},
+  journal={Bioinspiration \& Biomimetics},
   volume={3},
   number={1},
   pages={011001},
@@ -195,6 +195,49 @@ language={English}
   year={2008},
   abstract={Directional sound receivers are useful for locating sound sources, and they can also partly compensate for the signal degradations caused by noise and reverberations. Ears may become inherently directional if sound can reach both surfaces of the eardrum. Attempts to understand the physics of such pressure difference receiving ears have been hampered by lack of suitable experimental methods. In this review, we review the methods for collecting reliable data on the binaural directional cues at the eardrums, on how the eardrum vibrations depend on the direction of sound incidence, and on how sound waves behave in the air spaces leading to the interior surfaces of eardrums. A linear mathematical model with well-defined inputs is used for exploring how the directionality varies with the binaural directional cues and the amplitude and phase gain of the sound pathway to the inner surface of the eardrum. The mere existence of sound transmission to the inner surface does not ensure a useful directional 
 hearing, since a proper amplitude and phase relationship must exist between the sounds acting on the two surfaces of the eardrum. The gain of the sound pathway must match the amplitude and phase of the sounds at the outer surfaces of the eardrums, which are determined by diffraction and by the arrival time of the sound, that is by the size and shape of the animal and by the frequency of sound. Many users of hearing aids do not obtain a satisfactory improvement of their ability to localize sound sources. We suggest that some of the mechanisms of directional hearing evolved in Nature may serve as inspiration for technical improvements.}
+}
+
+@article{dudamartens,
+	title	=	{Range Dependence of the Response of a Spherical Head Model},
+	journal	=	{Journal of Acoustical Society of America},
+	author	=	{Richard O Duda AND W.L. Martens },
+	year	=	{1998},
+	pages	=	{3048--3058},
+	volume	=	{104},
+	number	=	{5},
+	eventtime	=	{November 1998},
+	abstract	=	{This paper examines the range dependence of the HRTF for a simple spherical model of the head in both the time-domain and the frequency domain. The variation of low-frequency ILD with range is shown to be significant for ranges smaller than five times the sphere radius. The impulse response explains the source of the ripples in the frequency response, and provides direct evidence that the Interaural Time Delay (ITD) is not a strong function of range. Time-delay measurements confirm the Woodworth/Schlosberg formula. Numerical analysis indicates that the HRTF is minimum phase. Thus, except for time delay, the impulse response can be reconstructed from a simple principle components analysis of the magnitude response.},
+} 
+
+
+@article{rayleigh1,
+     jstor_articletype = {research-article},
+     title = {On the Acoustic Shadow of a Sphere. With an Appendix, Giving the Values of Legendre's Functions from P0 to P20 at Intervals of 5 Degrees},
+     author = {Rayleigh, Lord and Lodge, A.},
+     journal = {Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character},
+     jstor_issuetitle = {},
+     volume = {203},
+     number = {},
+     jstor_formatteddate = {1904},
+     pages = {pp. 87-110},
+     url = {http://www.jstor.org/stable/90858},
+     ISSN = {02643952},
+     abstract = {},
+     language = {English},
+     year = {1904},
+     publisher = {The Royal Society},
+     copyright = {Copyright © 1904 The Royal Society},
+    }
+    
+    
+@book{rayleigh2,
+  title={Theory of Sound: V. 1},
+  author = {Rayleigh, Lord},
+  number={v. 1},
+  isbn={9780486602929},
+  url={http://books.google.de/books?id=hRqJXwAACAAJ},
+  year={1900},
+  publisher={Dover Publications.}
 }
 
 
