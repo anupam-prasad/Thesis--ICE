@@ -572,7 +572,7 @@ and the exact boundary conditions are given by,
 \begin{align}
  j\omega U_{0}&=v_x(0,r,\phi;t)\label{bc1}\\
  j\omega U_{L}&=-v_x(L,r,\phi;t)\label{bc2}
-\end{align}
+ \end{align}
 where we've used the direction conventions described in \ref{description} and made the following definition,
 \begin{equation}
  U_{0/L}=\begin{cases}
@@ -588,18 +588,22 @@ cylinder. In this case we would have the added simplification that only the circ
 couples with every cavity eigenmode and that each of the coefficients $A_{qs}$ and $B_{qs}$ will be given by an infinite linear combination of the coefficients $C^{0/L}_{mn}$. 
 
 The first step in overcoming this problem is to rewrite the left-hand sides of the boundary conditions given in \eqref{bc1} and \eqref{bc2}.
-We first exppand $U_{0}$ and $U_{L}$ in the orthogonal basis of the functions $f_{qs}$,
+We first expand $U_{0}$ and $U_{L}$ in the orthogonal basis of the functions $f_{qs}$,
 \begin{align}
  U_{0/L}(r,\phi;t)&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0} S^{0/L}_{qs}f_{qs}(r,\phi)e^{j\omega t}\\
  \mbox{where, }S^{0/L}_{qs}&=\frac{\int dS U^{0/L}f_{qs}(r,\phi)}{\int dS f^2_{qs}(r,\phi)}\nonumber
 \end{align}
 
-The approximate boundary conditions are given by,
+We now have an expansion that approximates the boundary condition with increasing accuracy. After choosing an appropriate cutoff
+for the expansion we can substitute this expression in place of $U_{0/L}$ in \eqref{bc1} and \eqref{bc2}. In fact, this cutoff in
+the boundary condition expansion results in an identical cutoff in the pressure expansion. This is a result of the orthogonality
+of the pressure modes and can easily be shown. The zeroeth order approximate boundary conditions are given by,
 \begin{align}
    \rho\omega^2S^{0}&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}-B_{qs}\right)f_{qs}(r,\phi) \label{bcfinal1}\\
    \rho\omega^2S^{L}&=-\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right)f_{qs}(r,\phi) \label{bcfinal2}
 \end{align}
-This is the integral over the membrane surface of the local displacement. Given the external parameters and boundary conditions, it only depends on time.
+This is the integral over the membrane surface of the local displacement. Note that we have omitted the $qs$ subscripts
+on the left-hand side. Given the external parameters and boundary conditions, it only depends on time.
 We have effectively approximated the surfaces at $0$ and $L$ (including the membranes) by pistons moving with the average velocity of the total surface.
 
 Given these boundary conditions, it is straightforward to calculate the coefficients $A_{qs}$ and $B_{qs}$ in terms of $S_{0/L}$. To do this
@@ -675,7 +679,8 @@ and \eqref{contramembranefull} giving us a new set of ipsi- and contralateral fi
  G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2
 \end{align}
 The ipsilateral filter effectively gives us the response of the ipsilateral membrane when the contralateral membrane
-is blocked. Similarly, the contralateral filter gives us its response when there is no ipsilateral stimulus.
+is blocked. Similarly, the contralateral filter gives us its response when there is no ipsilateral stimulus. These filters
+will play an important role in the evaluation of the model in the next chapter.
 
-
+\subsection{Circuit Model}
 
