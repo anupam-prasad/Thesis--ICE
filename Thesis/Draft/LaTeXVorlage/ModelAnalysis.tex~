@@ -1,4 +1,4 @@
-\section{Evaluation of the ICE--Model}\label{modelanalysis}
+\chapter{Evaluation of the ICE--Model}\label{modelanalysis}
 We now have a complete geomtrical representation of the ICE model as well as
  the analytical expressions $u_0$ and $u_L$ that describe the membrane displacements
 in spatial detail as a function of direction and frequency. In this chapter we will use these variables
@@ -15,7 +15,7 @@ We will define and study the two main quantities that serve as important localiz
 cues - the Internal Time Differene (iTD) and the Internal Level Difference (iLD). This
 is in contrast to the Interaural Time and Level Differences (ITD and ILD) that are
 entirely determined by the inputs to the two ears.
-\subsection{Membrane Vibration Profile}
+\section{Membrane Vibration Profile}
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.5\linewidth]{Diagrams/manleygeckoear2.png}
@@ -32,7 +32,9 @@ entirely determined by the inputs to the two ears.
   \label{sectormembraneprofile}
 \end{figure}
 
-\subsection{Cavity Pressure Distribution}
+\section{Cavity Pressure Distribution}
+
+\section{Directional Hearing Cues}
 
 \subsection{Internal Time Difference}
 

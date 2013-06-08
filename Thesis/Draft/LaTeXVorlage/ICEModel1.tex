@@ -146,7 +146,7 @@ consequently be linear $2^{nd}$-order PDE's.
 
 At this point we should note that we have effectively set the mass of the extracolumella to infinity. Thereby, its motion has been neglected altogether. While this may seem counterintuitive at first, 
 we will later see that this assumption, while simplifying the problem analytically,  has little effect on the physical phenomenon of interest, viz. the coupling between
-the eardrums and the amplification of hearing cues. This will be discussed in-depth in Chapter \ref{modelanalysischapter}.
+the eardrums and the amplification of hearing cues. This will be discussed in-depth in Chapter \ref{modelanalysis}.
 
 \subsection{Head Model and External Sound Input}\label{soundinput}
 In realistic environments the acoustic fields experienced by animals are often very complex.
@@ -260,13 +260,14 @@ $k$ & Wavenumber $k=\omega/c$ with $c=343$m/s being the speed of sound.\\
 $p$ & Pressure amplitude of the incoming sound wave.\\
 $\Delta$ & Phase difference between the sound wave reaching the contra- and ipsilateral ear.\\
 $p_{0/L}$ & Sound pressure on the ipsi- ($x=0$) and contralateral ($x=L$) ears respectively.\\
-& \\
+%& \\
 $(x,r,\phi)$ & Cylindrical polar coordinates with $x$ being the axial direction.\\
 $L$ & Interaural separation and length of cylinder.\\
 $a_{cyl}$ & Radius of cylinder.\\
 $a_{tymp}$ & Radius of tympanum.\\
 $\beta<\phi<2\pi-\beta$ & Extent of the vibrating part of the membrane. The rest of the circle corresponds to
 the extracolumella.\\
+$V_0$ & Volume of the cavity.\\
 \hline
 \end {tabular}\par
 \bigskip
@@ -578,9 +579,9 @@ where we've used the direction conventions described in \ref{description} and ma
  U_{0/L}=\begin{cases}
           u_{0/L}\mbox{, } 0<r<a_{tymp}\mbox{ and } \beta<\phi<2\pi-\beta\\
           0\mbox{, otherwise}
-         \end{cases}
+         \end{cases}.
 \end{equation}
-
+This in order to ensure that the boundary condition is satisfied over either end of the cylinder and not just over the membrane surface.
 \subsubsection{Approximate Boundary Condition}
 As previously stated, the exact boundary condition would entail setting the velocity function to be exactly equal to the membrane displacement velocity. At this point, it is important to
 note that the internal cavity eigenmodes are \textbf{not} orthogonal to the membrane eigenmodes in general\footnote{This would also be true if we had full circular membranes on either end of the
@@ -591,19 +592,31 @@ The first step in overcoming this problem is to rewrite the left-hand sides of t
 We first expand $U_{0}$ and $U_{L}$ in the orthogonal basis of the functions $f_{qs}$,
 \begin{align}
  U_{0/L}(r,\phi;t)&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0} S^{0/L}_{qs}f_{qs}(r,\phi)e^{j\omega t}\\
- \mbox{where, }S^{0/L}_{qs}&=\frac{\int dS U^{0/L}f_{qs}(r,\phi)}{\int dS f^2_{qs}(r,\phi)}\nonumber
+ \mbox{where, }S^{0/L}_{qs}&=\frac{\int dS U^{0/L}f_{qs}(r,\phi)}{\int dS f^2_{qs}(r,\phi)}\label{approxboundarydef2}
 \end{align}
 
 We now have an expansion that approximates the boundary condition with increasing accuracy. After choosing an appropriate cutoff
 for the expansion we can substitute this expression in place of $U_{0/L}$ in \eqref{bc1} and \eqref{bc2}. In fact, this cutoff in
-the boundary condition expansion results in an identical cutoff in the pressure expansion. This is a result of the orthogonality
-of the pressure modes and can easily be shown. The zeroeth order approximate boundary conditions are given by,
+the boundary condition expansion results in an identical cutoff in the pressure expansion - a direct result of the orthogonality
+of the pressure modes. 
+
+We will now illustrate a solution to the problem by solving the problem with the zeroeth order boundary conditions. 
+In the end, it will turn out that for our purposes the zeroeth order, i.e. the $(0,0)$ mode is sufficient as higher modes only have a significant contribution at frequencies
+well above the hearing range of geckos. For example, the wavenumber of the $(1,1)$ mode is above $33$kHz for the cylindrical cavity corresponding to the house gecko and 
+above $15$kHz for the one corresponding to the Tokay gecko. The parameters used to derive these quantities will be discussed in the next chapter.
+We can therefore write the approximate boundary conditions to zeroeth order as,
 \begin{align}
    \rho\omega^2S^{0}&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}-B_{qs}\right)f_{qs}(r,\phi) \label{bcfinal1}\\
    \rho\omega^2S^{L}&=-\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right)f_{qs}(r,\phi) \label{bcfinal2}
 \end{align}
-This is the integral over the membrane surface of the local displacement. Note that we have omitted the $qs$ subscripts
-on the left-hand side. Given the external parameters and boundary conditions, it only depends on time.
+As shown in Sec. \ref{internalcavity}, the $(0,0)$ mode only varies in the $x$-direciton.
+As a result, the left-hand sides of
+the above equation are nothing but the average displacement of the membrane surface given by,
+\begin{equation}\label{averagemembranedisp}
+ S^{0/L}=\frac{\int dS U^{0/L}(r,\phi)}{\pi a^2_{cyl}}.
+\end{equation}
+We have also omitted the ``$qs$'' subscript from $S^{0/L}$. 
+Given the external parameters and boundary conditions, it only depends on time.
 We have effectively approximated the surfaces at $0$ and $L$ (including the membranes) by pistons moving with the average velocity of the total surface.
 
 Given these boundary conditions, it is straightforward to calculate the coefficients $A_{qs}$ and $B_{qs}$ in terms of $S_{0/L}$. To do this
@@ -615,9 +628,9 @@ and $B_{qs}$,
  &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - K_{qs}\rho\omega^2S^{L}\\
  \mbox{where,}\ &K_{qs} = \frac{\int dS f_{qs}(r,\phi)}{j\zeta_{qs}\int dS f^2_{qs}(r,\phi)}\nonumber
 \end{align}
-We now make use of the property of the pressure modes that $f_{qs}(r,\phi)$ integrates to $0$unless $q=0$ and $s=0$. 
+We now make use of the property of the pressure modes that $f_{qs}(r,\phi)$ integrates to $0$ unless $q=0$ and $s=0$. 
 For $q=0$ this is a consequence of the Bessel functions integrating to zero while for $q\geq 1$ this is due to 
-the more obvious fact of the cosine function integrating to zero. As a result we have $A_{qs}=B_{qs}=0$ for all
+the more obvious fact that the integral of the cosine function from $0\mbox{ to }2\pi$ is zero. As a result we have $A_{qs}=B_{qs}=0$ for all
 modes except the $(0,0)$ mode. In other words, the zeroeth-order boundary condition only supports plane wave
 modes inside the cavity. We will subsequently omit the subscripts ``$00$'' for these coefficients.
 From the above linear equations, they are given in terms of the total membrane displacement as,
@@ -648,8 +661,9 @@ the coefficients of the sum and difference vibrations in terms of the pressure a
  C^{-}_{mn}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]K_{mn}\label{minuscoeffdef}\\
  \mbox{where, }K_{mn}&=\frac{\int dS u_{mn}}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
 \end{align}
-The next step will be to multiply both sides of \eqref{pluscoeffdef} and \eqref{minuscoeffdef} with the integral $\int dS u_{mn}$, and
-sum over $m\mbox{ and }n$. It is clear that the left hand sides become equal to $S^{+/-}$; this allows us to give exact expressions
+The next step will be to multiply both sides of \eqref{pluscoeffdef} and \eqref{minuscoeffdef} with the integral $\int dS u_{mn}$, 
+divide by $\pi a^2_{cyl}$ (the integral of $f^2_{00}$ as it appears in the denominator in \eqref{approxboundarydef2}) and
+sum over $m\mbox{ and }n$ . It is clear that the left hand sides become equal to $S^{+/-}$; this allows us to give exact expressions
 for the total membrane displacements.
 \begin{equation}
  S^{+}=\frac{p_L+p_0}{\Lambda+\Gamma_+}\qquad S^{-}=\frac{p_L-p_0}{\Lambda+\Gamma_-}
@@ -657,7 +671,7 @@ for the total membrane displacements.
 where we've defined the following quantities,
 \begin{align}
  \Gamma_+ = \frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\nonumber
-,\qquad\frac{1}{\Lambda}=\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{\left(\int dS u_{mn}\right)^2}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
+,\qquad\frac{1}{\Lambda}=\frac{1}{\pi a^2_{cyl}}\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{\left(\int dS u_{mn}\right)^2}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
 \end{align}
 We can finally write the membrane displacement as a function of the pressure inputs in the form
 \begin{align}
@@ -683,4 +697,14 @@ is blocked. Similarly, the contralateral filter gives us its response when there
 will play an important role in the evaluation of the model in the next chapter.
 
 \subsection{Circuit Model}
+Before we conclude this chapter, we will discuss the previous methods used to model ears coupled through
+an air cavity. This method was used by Christensen-Dalsgaard and Manley in \cite{dalsgaardmanley1} and \cite{dalsgaardmanley2}
+and was based on methods presented in \cite{fletcheracoustic}. The problem was treated using the analogy of electrical circuits
+and dealt with low-frequency and high-frequency regimes separately.
 
+In these models, the sound inputs are treated as voltage sources and the system is broken down into components, e.g.	 membranes,
+ cavities, apertures which are modelled as impedances. Their values depend on the geometry and material properties and in general
+ can be resistive and reactive. The ``current'' is given by something called the acoustic flow which has the dimensions of
+ volume per unit time.
+ 
+The advantage of our method is twofold.
