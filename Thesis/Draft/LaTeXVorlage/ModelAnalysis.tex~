@@ -15,22 +15,34 @@ We will define and study the two main quantities that serve as important localiz
 cues - the Internal Time Differene (iTD) and the Internal Level Difference (iLD). This
 is in contrast to the Interaural Time and Level Differences (ITD and ILD) that are
 entirely determined by the inputs to the two ears.
-\section{Membrane Vibration Profile}
+\section{Spatial Vibration Pattern of the Membrane}
+We begin our analysis by evaluating the variation of the spatial vibration pattern of the tympanic membrane
+with frequency. The tympanic vibration pattern was first measured experimentally by Manley \cite{manleygecko1}
+for a \textit{Tokay gecko} and was found to have the strongest response at around 1kHz. The measured vibration patterns
+are shown on the left in Fig. \ref{manleygeckotympanum}.
 \begin{figure}[ht!]
  \centering
- \includegraphics[width=.5\linewidth]{Diagrams/manleygeckoear2.png}
+ \includegraphics[width=1.0\linewidth]{Diagrams/manleymodelcomparison.png}
  \caption[Tokay gecko tympanum vibration profiles.]{Experimental membrane vibration patterns of the Tokay gecko dependent
  on sound frequency varying from $.5$kHz to $10$kHz. Data taken from \cite{manleygecko1}.}
   \label{manleygeckotympanum}
 \end{figure}
+Manley measured the 
+% \begin{figure}[ht!]
+%  \centering
+%  \includegraphics[width=.5\linewidth]{Diagrams/manleygeckoear2.png}
+%  \caption[Tokay gecko tympanum vibration profiles.]{Experimental membrane vibration patterns of the Tokay gecko dependent
+%  on sound frequency varying from $.5$kHz to $10$kHz. Data taken from \cite{manleygecko1}.}
+%   \label{manleygeckotympanum}
+% \end{figure}
 
-\begin{figure}[ht!]
- \centering
- \includegraphics[width=.75\linewidth]{Diagrams/SectorMembraneModes/sector_membrane_all.png}
- \caption[Sectoral membrane vibration profiles.]{Vibration patterns of a sectoral membrane
- of radius $2.2$mm on sound frequency varying from $.5$kHz to $10$kHz. Compare with fig. \ref{manleygeckotympanum}}
-  \label{sectormembraneprofile}
-\end{figure}
+% \begin{figure}[ht!]
+%  \centering
+%  \includegraphics[width=.75\linewidth]{Diagrams/SectorMembraneModes/sector_membrane_all.png}
+%  \caption[Sectoral membrane vibration profiles.]{Vibration patterns of a sectoral membrane
+%  of radius $2.2$mm on sound frequency varying from $.5$kHz to $10$kHz. Compare with fig. \ref{manleygeckotympanum}}
+%   \label{sectormembraneprofile}
+% \end{figure}
 
 \section{Cavity Pressure Distribution}
 

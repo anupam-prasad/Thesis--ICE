@@ -15,11 +15,11 @@
 \contentsline {subsection}{\numberline {2.2.3}Vibration of Coupled Membranes}{19}{subsection.2.2.3}
 \contentsline {subsubsection}{Approximate Boundary Condition}{21}{section*.19}
 \contentsline {subsection}{\numberline {2.2.4}Circuit Model}{24}{subsection.2.2.4}
-\contentsline {chapter}{\numberline {3}Evaluation of the ICE--Model}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Membrane Vibration Profile}{25}{section.3.1}
-\contentsline {section}{\numberline {3.2}Cavity Pressure Distribution}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Directional Hearing Cues}{25}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Internal Time Difference}{25}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Internal Level Difference}{25}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {3}Evaluation of the ICE--Model}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Spatial Vibration Pattern of the Membrane}{27}{section.3.1}
+\contentsline {section}{\numberline {3.2}Cavity Pressure Distribution}{28}{section.3.2}
+\contentsline {section}{\numberline {3.3}Directional Hearing Cues}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Internal Time Difference}{28}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Internal Level Difference}{28}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}Conclusion}{29}{chapter.4}
 \contentsline {chapter}{Acknowledgements}{33}{appendix*.22}

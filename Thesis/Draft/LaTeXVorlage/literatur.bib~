@@ -240,4 +240,20 @@ hearing, since a proper amplitude and phase relationship must exist between the 
   publisher={Dover Publications.}
 }
 
+@article{michelsenrohrseitz,
+    author = {Michelsen, Axel and Rohrseitz, Kristin},
+    citeulike-article-id = {8377143},
+    journal = {Journal of Experimental Biology},
+    keywords = {biguttulusgrasshopperhearinglocustschistocerce, chortippus, gregariasound, localization},
+    location = {hardcopy},
+    pages = {1817--1827},
+    posted-at = {2010-12-07 16:39:10},
+    priority = {2},
+    title = {{Directional sound processing and interaural sound transmission in a small and a large grasshopper}},
+    volume = {198},
+    year = {1995}
+}
+
+
+
 
