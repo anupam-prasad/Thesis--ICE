@@ -138,8 +138,11 @@ The membrane material will be assumed to be linear-elastic. As before, the equat
 consequently be linear $2^{nd}$-order PDE's.
 \begin{figure}[ht]
  \centering
- \includegraphics[width=.4\linewidth]{Diagrams/extracolumella2.png}
- \caption[Tympanic membrane model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
+ \includegraphics[width=.9\linewidth]{Diagrams/extracolumella2.png}
+ \caption[Tympanic membrane model]{Left: Sketch of the eardrum of a Tokay gecko as seen from the outside taken from Manley, \cite{manleygecko1}. ``COL'' is
+ the approximate position opposite the extracolumella insertion. The dots indicate the positions for measurements and will be discussed briefly in the
+ next chapter. Dimensions
+ in millimeters. Right: Our model for the loaded tympanic membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
  ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ corresponds to the breadth of the extracolumella and is estimated from anatomical data.}
  \label{tympanummodel}
 \end{figure}
@@ -252,7 +255,7 @@ and \ref{functiontable}.
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model} \label{parametertable} 
-\begin{tabular}{c p{13 cm}}
+\begin{tabular}{c p{12 cm}}
 \hline
 $\theta$ & Direction of the sound source with respect to the head midline.\\
 $\omega$ & Angular frequency of the incoming sound wave.\\
@@ -278,7 +281,7 @@ $V_0$ & Volume of the cavity.\\
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model contd.} \label{functiontable} 
-\begin{tabular}{c p{13 cm}}
+\begin{tabular}{c p{12 cm}}
 \hline
 $J_q$ & Order $q$ Bessel function of the first kind.\\
 $\mu_{qs},\nu_{qs}$ & Respectively - $s^{th}$ zero and $s^{th}$ extremum of the above Bessel function.\\
@@ -391,7 +394,7 @@ A very useful property of the above modes is their orthgonality, i.e.
 \begin{equation}\label{pressureorthogonality}
  \int_\Omega dVp_{q_1s_1}p_{q_2s_2}=0,\ if\ q_1\neq q_2\ or\ s_1\neq s_2
 \end{equation}
-the integral is over the volume of the cylinder. This is a consequence of the fact that for different $q$'s
+the integral is over the volume	 of the cylinder. This is a consequence of the fact that for different $q$'s
 the cosine parts of the modes are orthogonal whereas for a given $q$ the Bessel parts are orthogonal for
 different $s$'s or expressed as an equation,
 \begin{equation}\label{besselorthogonality}
@@ -706,7 +709,7 @@ and deals with low-frequency and high-frequency regimes separately.
 In these models, the sound inputs are treated as voltage sources and the system is broken down into components, e.g.	 membranes,
 cavities, apertures which are modelled as lumped elements. Their impedance values depend on the geometry and material properties and in general
  can be resistive and reactive. The ``current'' is given by something called the ``acoustic flow'' which has the dimensions of
-volume per unit time. In the previous analysis, this is given by $\pi a^2_{cyl}S^{0/L}$. 
+volume per unit time. In the previous analysis, this is given by $j\omega\pi a^2_{cyl}S^{0/L}$. 
 
 The low frequency circuit analog for the ICE model is illustrated in Fig. \ref{lowfreqcircuit}. The impedances are calculated
 using the following formulae,
@@ -719,21 +722,41 @@ given by $Z=R+j\omega L+1/j\omega C$. $\omega_T$ is the first eigenfrequency of 
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.5\linewidth]{Diagrams/lowfreqcircuit.png}
- \caption[Low frequency circuit analogue]{Low frequency circuit analogue for the ICE-Model. The membrane impedences are denoted by $Z_T$ and the impedance of 
+ \caption[Low frequency circuit analog]{Low frequency circuit analog for the ICE-Model. The membrane impedences are denoted by $Z_T$ and the impedance of 
  the internal cavity is denoted by $Z_V$. The acoustic flows are given by $U_1\mbox{ and }U_2$.}
   \label{lowfreqcircuit}
 \end{figure}
 It should immediately be apparent that the cavity impedance only depends on its volume. This is a result of the assumption 
 that the air inside the cavity behaves like an adiabatic gas. The adiabatic equation of state can then be used
 to determine the instantaneous pressure from the instantaneous volume change due to the membrane
-motion which, after linearization, results in a uniform pressure inside the cavity. Upon solving the circuit equations, the acoustic flows are calculated to be,
+motion which, after linearization, results in a uniform pressure inside the cavity. In addition, the membrane impedance $Z_T$ only includes the
+effect of the first eigenmode. Also, $Z_T$ includes the effect of the transducer which, in our case, is the extracolumella. Upon solving the circuit equations, the acoustic flows are calculated to be,
 \begin{equation}
- \pi a^2_{cyl}S^{0}=U_1=\frac{p_0(Z_T+Z_V)-p_LZ_V}{Z_T(Z_T+2Z_V)},\qquad \pi a^2_{cyl}S^{L}=U_2=\frac{p_L(Z_T+Z_V)-p_0Z_V}{Z_T(Z_T+2Z_V)}.
+ U_1=\frac{p_0(Z_T+Z_V)-p_LZ_V}{Z_T(Z_T+2Z_V)},\qquad U_2=\frac{p_L(Z_T+Z_V)-p_0Z_V}{Z_T(Z_T+2Z_V)}.
 \end{equation}
-At high frequencies, i.e. when the wavelength of the input becomes comparable with the dimensions of the system, the description of the
-membrane does not change but the cavity is instead modelled as a two-port network. The advantage of our method is twofold - 
+At first glance the above results look very similar to total membrane displacements shown in \eqref{ipsimembranefull} and \eqref{contramembranefull}.
+In fact, we can find the equivalent impedances from our analysis by comparing $U_0$ and $U_L$ with the above results,
+\begin{equation}
+ Z^{eq}_T=\frac{1}{j\omega\pi a^2_{cyl}}(\Lambda+\Gamma_-),\qquad Z^{eq}_V=\frac{1}{2j\omega\pi a^2_{cyl}}(\Gamma_+-\Gamma_-)
+\end{equation}
+We immediately see that in the equivalent membrane impedance there is a correction, $\Gamma^+$ which is a contribution of the cavity whereas in 
+the circuit model, the membrane impedance is determined independent of the cavity. Moreover, the equivalent standalone membrane impedance, $\Lambda$,
+includes the influence of the higher modes. The equivalent cavity impedance becomes equal to $Z_V$ at zero frequency and goes to infinity at the
+resonance frequencies of the cylinder, i.e at $\omega=n\pi c/L,\ n=0,1,2\ldots$
+% At high frequencies, i.e. when the wavelength of the input becomes comparable with the dimensions of the system, the description of the
+% membrane does not change but the cavity impedance has a frequency dependent addition instead modelled as a two-port network. 
+% 
+% \begin{figure}[ht!]
+%  \centering
+%  \includegraphics[width=.75\linewidth]{Diagrams/highfreqcircuit.png}
+%  \caption[High frequency circuit analog]{High frequency circuit analog for the ICE-Model.}
+%   \label{highfreqcircuit}
+% \end{figure}
+\vspace{\baselineskip}
+
+\noindent We conclude this chapter by briefly stating the advantages of our method in comparison to the lumped element method - 
 \begin{itemize}
- \item In terms of the membrane motion - we are able to account for the contribution of higher modes and are able to describe the membrane motion is spatial detail.
+ \item In terms of the membrane motion - we are able to account for the effect of asymetrically loaded extracolumella and are able to describe the membrane motion is spatial detail.
  \item At low frequencies our model is consistent with the uniform pressure assumption but the nonuniformity steadily increases with frequency.
   We therefore have a single model that can describe both high- and low-frequency behaviour instead of treating the two regimes separately.
 \end{itemize}

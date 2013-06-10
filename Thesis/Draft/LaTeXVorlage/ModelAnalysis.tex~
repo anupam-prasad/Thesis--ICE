@@ -7,7 +7,8 @@ to further study the features of our model and compare them with experimental re
 In our study we are primarily concerned with hearing in geckos. We will be using
 parameters (interaural separation, tympanum area etc.) from \textit{Hemidactylus frenatus}, the common house gecko
 \cite{dalsgaardmanley2}
-and the Tokay gecko \cite{dalsgaardtangcarr}. The house gecko, with an interaural separation of $10$mm and mouth cavity volume of $.32$ml is a rather
+and the Tokay gecko \cite{dalsgaardmanley1}, \cite{dalsgaardtangcarr}. These paramters, first defined in Table \ref{parametertable} are listed for both these
+species in Table \ref{geckogeometricparams}. The house gecko, with an interaural separation of $10$mm and mouth cavity volume of $.32$ml is a rather
 small lizard. The Tokay gecko is the second largest gecko species (interaural separation of $25.6$mm and mouth cavity volume $3.5$ml, \cite{dalsgaardtangcarr}).
 Thus we will demonstrate the applicability of our model to animals hearing with widely varying head widths and mouth cavities. 
 
@@ -15,6 +16,29 @@ We will define and study the two main quantities that serve as important localiz
 cues - the Internal Time Differene (iTD) and the Internal Level Difference (iLD). This
 is in contrast to the Interaural Time and Level Differences (ITD and ILD) that are
 entirely determined by the inputs to the two ears.
+
+\begin{minipage}{\linewidth}
+\renewcommand{\arraystretch}{1.2}
+%\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
+\centering
+\captionof{table}{Geometry Parameters for the common house gecko (Hemidactylus frenatus) obtained from \cite{dalsgaardmanley2}
+and the Tokay gecko from \cite{dalsgaardmanley1} and \cite{dalsgaardtangcarr}.} \label{geckogeometricparams} 
+\begin{tabular}{|p{8 cm} | c | c|}
+\hline
+Parameter name & Hemidactylus & Tokay gecko\\
+\hline
+Length of the cylinder or interaural distance, L & $10$mm & $22$mm\\
+Radius of the tympanic membrane, $a_{tymp}$& $1.2$mm & $2.2$mm\\
+Fundamental frequency (first eigenfrequency) of the tympanic membrane, $\omega_{01}$ & $2800$Hz & $1700$Hz\\
+Quality factor of the tympanum, $Q$ & $1.2$ &  $1.2$\\
+Density of the membrane material, $\rho_m$ & $1$mg/mm$^3$ & $1$mg/mm$^3$\\
+Thickness of the membrane, $d$& $8\mu$m & $10\mu$m\\
+Volume of the cavity, $V_0$ & $.32$ml & $3.5$ml\\ 
+Extracolumella angle, $\beta$ & $\pi/25$ & $\pi/25$\\
+\hline
+\end {tabular}\par
+\bigskip
+\end{minipage}
 \section{Spatial Vibration Pattern of the Membrane}
 We begin our analysis by evaluating the variation of the spatial vibration pattern of the tympanic membrane
 with frequency. The tympanic vibration pattern was first measured experimentally by Manley \cite{manleygecko1}
@@ -47,6 +71,8 @@ Manley measured the
 \section{Cavity Pressure Distribution}
 
 \section{Directional Hearing Cues}
+
+\subsection{Transmission Gain}
 
 \subsection{Internal Time Difference}
 

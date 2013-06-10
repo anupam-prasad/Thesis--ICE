@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  9 JUN 2013 22:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  10 JUN 2013 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -363,7 +363,7 @@ LaTeX Info: Redefining \nameref on input line 129.
 \@outlinefile=\write3
 \openout3 = `diss.out'.
 
- <siegel.pdf, id=84, 286.06876pt x 286.06876pt>
+ <siegel.pdf, id=88, 286.06876pt x 286.06876pt>
 File: siegel.pdf Graphic file (type pdf)
 
 <use siegel.pdf>
@@ -439,28 +439,28 @@ Chapter 1.
 
 ]
 Chapter 2.
-<Diagrams/geckohead1.png, id=200, 479.54156pt x 245.41687pt>
+<Diagrams/geckohead1.png, id=214, 479.54156pt x 245.41687pt>
 File: Diagrams/geckohead1.png Graphic file (type png)
 
 <use Diagrams/geckohead1.png>
 Package pdftex.def Info: Diagrams/geckohead1.png used on input line 10.
 (pdftex.def)             Requested size: 391.61586pt x 200.41928pt.
  [3 <./Diagrams/geckohead1.png>] [4]
-<Diagrams/oldCylinder.png, id=220, 787.743pt x 599.038pt>
+<Diagrams/oldCylinder.png, id=234, 787.743pt x 599.038pt>
 File: Diagrams/oldCylinder.png Graphic file (type png)
 
 <use Diagrams/oldCylinder.png>
 Package pdftex.def Info: Diagrams/oldCylinder.png used on input line 64.
 (pdftex.def)             Requested size: 230.36061pt x 175.16992pt.
 
-<Diagrams/newCylinder.png, id=222, 1097.701pt x 766.062pt>
+<Diagrams/newCylinder.png, id=236, 1097.701pt x 766.062pt>
 File: Diagrams/newCylinder.png Graphic file (type png)
 
 <use Diagrams/newCylinder.png>
 Package pdftex.def Info: Diagrams/newCylinder.png used on input line 71.
 (pdftex.def)             Requested size: 230.36061pt x 160.76086pt.
 
-<Diagrams/manleyextracolumellaflection.png, id=230, 386.19281pt x 283.81032pt>
+<Diagrams/manleyextracolumellaflection.png, id=244, 386.19281pt x 283.81032pt>
 File: Diagrams/manleyextracolumellaflection.png Graphic file (type png)
 
 <use Diagrams/manleyextracolumellaflection.png>
@@ -468,131 +468,149 @@ Package pdftex.def Info: Diagrams/manleyextracolumellaflection.png used on inpu
 t line 115.
 (pdftex.def)             Requested size: 322.50345pt x 237.00458pt.
  [5] [6 <./Diagrams/oldCylinder.png> <./Diagrams/newCylinder.png>]
-<Diagrams/extracolumella2.png, id=252, 801.394pt x 859.21pt>
+<Diagrams/extracolumella2.png, id=266, 2097.436pt x 899.36pt>
 File: Diagrams/extracolumella2.png Graphic file (type png)
 
 <use Diagrams/extracolumella2.png>
 Package pdftex.def Info: Diagrams/extracolumella2.png used on input line 141.
-(pdftex.def)             Requested size: 184.28568pt x 197.57481pt.
+(pdftex.def)             Requested size: 414.6463pt x 177.79662pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7 <./Diagrams/manleyextracolumellaflection.png>] [8 <./Diagrams/extracolumell
 a2.png>]
-<Diagrams/acousticheadmodelold.png, id=275, 1458.248pt x 1071.202pt>
+<Diagrams/acousticheadmodelold.png, id=289, 1458.248pt x 1071.202pt>
 File: Diagrams/acousticheadmodelold.png Graphic file (type png)
 
 <use Diagrams/acousticheadmodelold.png>
-Package pdftex.def Info: Diagrams/acousticheadmodelold.png used on input line 1
-99.
+Package pdftex.def Info: Diagrams/acousticheadmodelold.png used on input line 2
+02.
 (pdftex.def)             Requested size: 345.54092pt x 253.82469pt.
 
-<Diagrams/acousticheadmodel2.png, id=276, 1455.036pt x 1287.209pt>
+<Diagrams/acousticheadmodel2.png, id=290, 1455.036pt x 1287.209pt>
 File: Diagrams/acousticheadmodel2.png Graphic file (type png)
 
 <use Diagrams/acousticheadmodel2.png>
-Package pdftex.def Info: Diagrams/acousticheadmodel2.png used on input line 212
+Package pdftex.def Info: Diagrams/acousticheadmodel2.png used on input line 215
 .
 (pdftex.def)             Requested size: 345.54092pt x 305.67603pt.
  [9 <./Diagrams/acousticheadmodelold.png>] [10 <./Diagrams/acousticheadmodel2.p
 ng>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 254.
+(caption)                particular \caption on input line 257.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (13.96378pt too wide) in paragraph at lines 255--272
- [][] 
- []
-
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 250--275
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 253--278
 []$[]$ 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 280.
+(caption)                particular \caption on input line 283.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 276--303
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 279--306
 []$[]$ 
  []
 
-[11] [12]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 351.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+[13]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 354.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 351.
- [13]
-[14] [15]
-<Diagrams/CircularMembraneModes/circular_modes_all.png, id=367, 578.16pt x 905.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 354.
+ [14] [15]
+[16]
+<Diagrams/CircularMembraneModes/circular_modes_all.png, id=385, 578.16pt x 905.
 784pt>
 File: Diagrams/CircularMembraneModes/circular_modes_all.png Graphic file (type 
 png)
  <use Diagrams/CircularMembraneModes/circular_modes_all.png>
 Package pdftex.def Info: Diagrams/CircularMembraneModes/circular_modes_all.png 
-used on input line 473.
+used on input line 476.
 (pdftex.def)             Requested size: 276.43555pt x 433.07138pt.
- [16]
+ [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./Diagrams/CircularMembraneModes/circular_modes_all.png>] [18]
-<Diagrams/SectorMembraneModes/membrane_modes_all.png, id=406, 578.16pt x 865.63
+ [18 <./Diagrams/CircularMembraneModes/circular_modes_all.png>] [19]
+<Diagrams/SectorMembraneModes/membrane_modes_all.png, id=424, 578.16pt x 865.63
 4pt>
 File: Diagrams/SectorMembraneModes/membrane_modes_all.png Graphic file (type pn
 g)
  <use Diagrams/SectorMembraneModes/membrane_modes_all.png>
 Package pdftex.def Info: Diagrams/SectorMembraneModes/membrane_modes_all.png us
-ed on input line 548.
+ed on input line 551.
 (pdftex.def)             Requested size: 276.43555pt x 413.87495pt.
- [19] [20 <./Diagrams/SectorMembraneModes/membrane_modes_all.png>] [21] [22] [2
-3] [24]
-<Diagrams/lowfreqcircuit.png, id=492, 480.194pt x 335.654pt>
+ [20] [21 <./Diagrams/SectorMembraneModes/membrane_modes_all.png>] [22] [23] [2
+4] [25]
+<Diagrams/lowfreqcircuit.png, id=511, 480.194pt x 335.654pt>
 File: Diagrams/lowfreqcircuit.png Graphic file (type png)
 
 <use Diagrams/lowfreqcircuit.png>
-Package pdftex.def Info: Diagrams/lowfreqcircuit.png used on input line 721.
+Package pdftex.def Info: Diagrams/lowfreqcircuit.png used on input line 724.
 (pdftex.def)             Requested size: 230.36061pt x 161.01988pt.
- [25 <./Diagrams/lowfreqcircuit.png>])
-[26]
+ [26 <./Diagrams/lowfreqcircuit.png>])
+[27]
 \openout2 = `ModelAnalysis.aux'.
 
- (./ModelAnalysis.tex
+ (./ModelAnalysis.tex [28
+
+
+
+]
 Chapter 3.
-<Diagrams/manleymodelcomparison.png, id=511, 2791.228pt x 2130.359pt>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 25.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]\OT1/cmr/m/n/12 Fundamental fre-quency (first eigen-fre-
+ []
+
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 20--42
+[]$[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+<Diagrams/manleymodelcomparison.png, id=549, 2791.228pt x 2130.359pt>
 File: Diagrams/manleymodelcomparison.png Graphic file (type png)
 
 <use Diagrams/manleymodelcomparison.png>
 Package pdftex.def Info: Diagrams/manleymodelcomparison.png used on input line 
-25.
+49.
 (pdftex.def)             Requested size: 460.72124pt x 351.6241pt.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27
-
-
-
-]
-[28 <./Diagrams/manleymodelcomparison.png>]
+) [30] [31 <./Diagrams/manleymodelcomparison.png>]
 \openout2 = `Conclusion.aux'.
 
- (./Conclusion.tex
-Chapter 4.
-) [29
+ (./Conclusion.tex [32
 
 
 
 ]
+Chapter 4.
+) [33]
 \openout2 = `anhang.aux'.
 
- (./anhang.tex) [30
+ (./anhang.tex) [34
 
 
 
@@ -604,14 +622,14 @@ Chapter 4.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [31
+ [35
 
 
-])) [32]
+])) [36]
 \openout2 = `danksagung.aux'.
 
 
-(./danksagung.tex) [33
+(./danksagung.tex) [37
 
 
 
@@ -624,17 +642,17 @@ ModelAnalysis.aux) (./Conclusion.aux) (./anhang.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: 7E48581EA4307015439B3DE666653FBA;1357.
+(rerunfilecheck)             Checksum: 7E4EDB926C7A7F113E855F71CD9527D8;1428.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 7511 strings out of 493485
- 112058 string characters out of 3143526
- 208886 words of memory out of 3000000
- 10481 multiletter control sequences out of 15000+200000
+ 7520 strings out of 493485
+ 112166 string characters out of 3143526
+ 207087 words of memory out of 3000000
+ 10483 multiletter control sequences out of 15000+200000
  17354 words of font info for 65 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,17n,43p,309b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,17n,43p,349b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/
@@ -653,10 +671,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (45 pages, 8191528 bytes).
+Output written on diss.pdf (49 pages, 8287700 bytes).
 PDF statistics:
- 647 PDF objects out of 1000 (max. 8388607)
- 550 compressed objects within 6 object streams
- 172 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 690 PDF objects out of 1000 (max. 8388607)
+ 585 compressed objects within 6 object streams
+ 179 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
