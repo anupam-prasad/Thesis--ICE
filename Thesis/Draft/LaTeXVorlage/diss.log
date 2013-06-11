@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  10 JUN 2013 23:01
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  11 JUN 2013 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,119 +498,99 @@ Package pdftex.def Info: Diagrams/acousticheadmodel2.png used on input line 215
 ng>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 257.
+(caption)                particular \caption on input line 256.
 See the caption package documentation for explanation.
 
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 253--278
-[]$[]$ 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 283.
+(caption)                particular \caption on input line 281.
 See the caption package documentation for explanation.
 
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 279--306
-[]$[]$ 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-[13]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 354.
+[11] [12]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 352.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 354.
- [14] [15]
-[16]
-<Diagrams/CircularMembraneModes/circular_modes_all.png, id=385, 578.16pt x 905.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 352.
+ [13]
+[14] [15]
+<Diagrams/CircularMembraneModes/circular_modes_all.png, id=381, 578.16pt x 905.
 784pt>
 File: Diagrams/CircularMembraneModes/circular_modes_all.png Graphic file (type 
 png)
  <use Diagrams/CircularMembraneModes/circular_modes_all.png>
 Package pdftex.def Info: Diagrams/CircularMembraneModes/circular_modes_all.png 
-used on input line 476.
+used on input line 474.
 (pdftex.def)             Requested size: 276.43555pt x 433.07138pt.
- [17]
+ [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./Diagrams/CircularMembraneModes/circular_modes_all.png>] [19]
-<Diagrams/SectorMembraneModes/membrane_modes_all.png, id=424, 578.16pt x 865.63
+ [17 <./Diagrams/CircularMembraneModes/circular_modes_all.png>] [18]
+<Diagrams/SectorMembraneModes/membrane_modes_all.png, id=419, 578.16pt x 865.63
 4pt>
 File: Diagrams/SectorMembraneModes/membrane_modes_all.png Graphic file (type pn
 g)
  <use Diagrams/SectorMembraneModes/membrane_modes_all.png>
 Package pdftex.def Info: Diagrams/SectorMembraneModes/membrane_modes_all.png us
-ed on input line 551.
+ed on input line 549.
 (pdftex.def)             Requested size: 276.43555pt x 413.87495pt.
- [20] [21 <./Diagrams/SectorMembraneModes/membrane_modes_all.png>] [22] [23] [2
-4] [25]
-<Diagrams/lowfreqcircuit.png, id=511, 480.194pt x 335.654pt>
+ [19] [20 <./Diagrams/SectorMembraneModes/membrane_modes_all.png>] [21] [22] [2
+3] [24]
+<Diagrams/lowfreqcircuit.png, id=506, 480.194pt x 335.654pt>
 File: Diagrams/lowfreqcircuit.png Graphic file (type png)
 
 <use Diagrams/lowfreqcircuit.png>
-Package pdftex.def Info: Diagrams/lowfreqcircuit.png used on input line 724.
+Package pdftex.def Info: Diagrams/lowfreqcircuit.png used on input line 722.
 (pdftex.def)             Requested size: 230.36061pt x 161.01988pt.
- [26 <./Diagrams/lowfreqcircuit.png>])
-[27]
+ [25 <./Diagrams/lowfreqcircuit.png>])
+[26]
 \openout2 = `ModelAnalysis.aux'.
 
- (./ModelAnalysis.tex [28
-
-
-
-]
+ (./ModelAnalysis.tex
 Chapter 3.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 25.
+(caption)                particular \caption on input line 32.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-[]\OT1/cmr/m/n/12 Fundamental fre-quency (first eigen-fre-
- []
-
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 20--42
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 27--49
 []$[]$ 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
-<Diagrams/manleymodelcomparison.png, id=549, 2791.228pt x 2130.359pt>
-File: Diagrams/manleymodelcomparison.png Graphic file (type png)
-
-<use Diagrams/manleymodelcomparison.png>
-Package pdftex.def Info: Diagrams/manleymodelcomparison.png used on input line 
-49.
-(pdftex.def)             Requested size: 460.72124pt x 351.6241pt.
-) [30] [31 <./Diagrams/manleymodelcomparison.png>]
-\openout2 = `Conclusion.aux'.
-
- (./Conclusion.tex [32
+ [27
 
 
 
 ]
+<Diagrams/manleymodelcomparison.png, id=547, 2791.228pt x 2130.359pt>
+File: Diagrams/manleymodelcomparison.png Graphic file (type png)
+
+<use Diagrams/manleymodelcomparison.png>
+Package pdftex.def Info: Diagrams/manleymodelcomparison.png used on input line 
+66.
+(pdftex.def)             Requested size: 460.72124pt x 351.6241pt.
+ [28])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./Diagrams/manleymodelcomparison.png>] [30]
+\openout2 = `Conclusion.aux'.
+
+ (./Conclusion.tex
 Chapter 4.
-) [33]
+) [31
+
+
+
+]
 \openout2 = `anhang.aux'.
 
- (./anhang.tex) [34
+ (./anhang.tex) [32
 
 
 
@@ -622,14 +602,14 @@ Chapter 4.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [35
+ [33
 
 
-])) [36]
+])) [34]
 \openout2 = `danksagung.aux'.
 
 
-(./danksagung.tex) [37
+(./danksagung.tex) [35
 
 
 
@@ -642,17 +622,17 @@ ModelAnalysis.aux) (./Conclusion.aux) (./anhang.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `diss.out' has not changed.
-(rerunfilecheck)             Checksum: 7E4EDB926C7A7F113E855F71CD9527D8;1428.
+(rerunfilecheck)             Checksum: F85A63523FBA1D0A9288FD5A56688215;1428.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 7520 strings out of 493485
- 112166 string characters out of 3143526
- 207087 words of memory out of 3000000
- 10483 multiletter control sequences out of 15000+200000
+ 7522 strings out of 493485
+ 112229 string characters out of 3143526
+ 207277 words of memory out of 3000000
+ 10486 multiletter control sequences out of 15000+200000
  17354 words of font info for 65 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,17n,43p,349b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,17n,43p,359b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/
@@ -671,10 +651,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (49 pages, 8287700 bytes).
+Output written on diss.pdf (47 pages, 8289436 bytes).
 PDF statistics:
  690 PDF objects out of 1000 (max. 8388607)
- 585 compressed objects within 6 object streams
- 179 named destinations out of 1000 (max. 500000)
+ 587 compressed objects within 6 object streams
+ 178 named destinations out of 1000 (max. 500000)
  229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

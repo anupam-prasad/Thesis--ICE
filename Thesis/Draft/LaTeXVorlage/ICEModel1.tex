@@ -249,9 +249,8 @@ by defining the ipsi- and contralateral filters. The final expressions that give
 of the tympanic membranes as a function of the external pressure with the influence of the internal cavity encoded in the ipsi- and contralateral filters. 
 We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Tables \ref{parametertable}
 and \ref{functiontable}.
-
 \begin{minipage}{\linewidth}
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model} \label{parametertable} 
@@ -275,7 +274,6 @@ $V_0$ & Volume of the cavity.\\
 \end {tabular}\par
 \bigskip
 \end{minipage}
-
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.2}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
@@ -628,9 +626,9 @@ we need to make use of the orthogonality relation given in \eqref{besselorthogon
 by $f_{qs}(r,\phi)$ and integrate over the circular surfaces at either end of the cylinder. This results in a system of two linear equations for each pair of $A_{qs}$ 
 and $B_{qs}$,
 \begin{align}
- &A_{qs}-B_{qs} = K_{qs}\rho\omega^2S^{0}\\
- &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - K_{qs}\rho\omega^2S^{L}\\
- \mbox{where,}\ &K_{qs} = \frac{\int dS f_{qs}(r,\phi)}{j\zeta_{qs}\int dS f^2_{qs}(r,\phi)}\nonumber
+ &A_{qs}-B_{qs} = L_{qs}\rho\omega^2S^{0}\\
+ &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - L_{qs}\rho\omega^2S^{L}\\
+ \mbox{where,}\ &L_{qs} = \frac{\int dS f_{qs}(r,\phi)}{j\zeta_{qs}\int dS f^2_{qs}(r,\phi)}\nonumber
 \end{align}
 We now make use of the property of the pressure modes that $f_{qs}(r,\phi)$ integrates to $0$ unless $q=0$ and $s=0$. 
 For $q=0$ this is a consequence of the Bessel functions integrating to zero while for $q\geq 1$ this is due to 

@@ -249,9 +249,8 @@ by defining the ipsi- and contralateral filters. The final expressions that give
 of the tympanic membranes as a function of the external pressure with the influence of the internal cavity encoded in the ipsi- and contralateral filters. 
 We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Tables \ref{parametertable}
 and \ref{functiontable}.
-
 \begin{minipage}{\linewidth}
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model} \label{parametertable} 
@@ -275,7 +274,6 @@ $V_0$ & Volume of the cavity.\\
 \end {tabular}\par
 \bigskip
 \end{minipage}
-
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.2}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
