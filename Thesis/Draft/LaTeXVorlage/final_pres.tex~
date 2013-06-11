@@ -1,0 +1,19 @@
+\documentclass{beamer}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{beamerthemeStockton}
+\usepackage{graphicx}
+\usepackage{epsfig}
+%\input{psfig}
+
+\title{An Analytical Model of Internally Coupled Ears}
+\author{Anupam Prasad Vedurmudi}
+\begin{document}
+
+\begin{frame}
+ \titlepage
+\end{frame}
+
+
+
+\end{document}

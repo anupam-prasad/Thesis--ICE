@@ -222,7 +222,9 @@ predators and prey are usually present on the same plane as the animal and our a
 In our model we model the head as a sphere with a diameter equal to the interaural separation. As a result the sound has to travel around the 
 head in order to reach the contralateral ear resulting in a longer path. The frequency domain solution for the diffraction of sound around a
 sphere was obtained by Lord Rayleigh at the end of the $19^{\mbox{th}}$ century (\cite{rayleigh1},\cite{rayleigh2}). The expressions 
-are greatly simplified at low frequencies and the phase difference is simply increased by by a factor of $1.5$ (i.e. $\Delta_{new}=1.5\Delta$). The new model is illustrated in Fig. \ref{newheadmodel}.
+are greatly simplified at low frequencies and the phase difference is simply increased by by a factor of $1.5$. The new model is illustrated in Fig. \ref{newheadmodel}.
+Therefore, the form of the input remains the same as in \eqref{oldsoundinput} expect for a new phase difference  $\Delta_{new}=1.5\Delta$.
+
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main expressions of interest in the ICE model - the membrane
 vibration profiles, the ipsi- and contraleteral filters and the cavity pressure distribution. We will thus find an expression for the pressure 
@@ -242,13 +244,7 @@ models the loaded tympanum. The final expression will correspond to the steady-s
 membrane. As we neglect the transient response of the membrane, we will also discuss the circumstances under which this
 is justified.
 
-In Sec. \ref{coupledmembranes} we will conclude by using our knowledge to solve for the vibration of the fully coupled
-system. In this section we will  proceed by applying the velocity boundary condition at either end of the cylinder. In
-order to help with our analysis, we will present a simplification scheme for this boundary condition. We will end this section
-by defining the ipsi- and contralateral filters. The final expressions that give us the vibrations 
-of the tympanic membranes as a function of the external pressure with the influence of the internal cavity encoded in the ipsi- and contralateral filters. 
-We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Tables \ref{parametertable}
-and \ref{functiontable}.
+\noindent
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.1}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
@@ -274,12 +270,19 @@ $V_0$ & Volume of the cavity.\\
 \end {tabular}\par
 \bigskip
 \end{minipage}
+In Sec. \ref{coupledmembranes} we will conclude by using our knowledge to solve for the vibration of the fully coupled
+system. In this section we will  proceed by applying the velocity boundary condition at either end of the cylinder. In
+order to help with our analysis, we will present a simplification scheme for this boundary condition. We will end this section
+by defining the ipsi- and contralateral filters. The final expressions that give us the vibrations 
+of the tympanic membranes as a function of the external pressure with the influence of the internal cavity encoded in the ipsi- and contralateral filters. 
+We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Tables \ref{parametertable}
+and \ref{functiontable}.
 \begin{minipage}{\linewidth}
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model contd.} \label{functiontable} 
-\begin{tabular}{c p{12 cm}}
+\begin{tabular}{c p{13 cm}}
 \hline
 $J_q$ & Order $q$ Bessel function of the first kind.\\
 $\mu_{qs},\nu_{qs}$ & Respectively - $s^{th}$ zero and $s^{th}$ extremum of the above Bessel function.\\
@@ -343,9 +346,8 @@ with a specific solution to \eqref{pressurewaveeqn} given by,
  p(x,r,\phi;t)=\left[(A^+e^{jq\phi}+A^-e^{-jq\phi})e^{j\zeta x}+(B^+e^{jq\phi}+B^-e^{-jq\phi})e^{-j\zeta x}\right]J_q(\nu r)e^{j\omega t}.
 \end{equation}
 The coefficients $A^\pm$, $B^\pm$, $q$, $\zeta$ and $\nu$ will be subsequently determined by the boundary conditions. 
-
-In general, the time component of the pressure also has a \textit{backward-moving} component, i.e. $e^{-j\omega t}$. By making the ansatz in \eqref{pseparationansatz}, 
-we have implicitly made use of the fact that the form of the input constrains the pressure to only have a \textit{forward-moving} component, i.e. $e^{j\omega t}$.  
+Before we move on to the boundary conditions we should note that in general, the time component of the pressure also has a \textit{backward-moving} component, i.e. $e^{-j\omega t}$. 
+By making the ansatz in \eqref{pseparationansatz}, we have implicitly made use of the fact that the form of the input as given in \eqref{oldsoundinput} constrains the pressure to only have a \textit{forward-moving} component, i.e. $e^{j\omega t}$.  
 \subsubsection{Pressure Boundary Conditions}\label{pressureboundaryconditions}
 There are three sets of boundary conditions - 
 \begin{itemize}

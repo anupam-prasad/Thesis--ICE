@@ -4,17 +4,6 @@ We now have a complete geomtrical representation of the ICE model as well as
 in spatial detail as a function of direction and frequency. In this chapter we will use these variables
 to further study the features of our model and compare them with experimental results.
 
-We start in Sec \ref{vibrationpatternchapter} by comparing the experimentally determined vibration pattern
-of the Tokay gecko's eardrum with that of our model's eardrum. In Sec. \ref{pressuredistchapter} we will
-briefly discuss the pressure distribution profile and eigenfrequencies of our cavity.
-In Sec \ref{hearingcueschapter} we will define and study the two main quantities that serve as important localization
-cues - the Internal Time Differene (iTD) and the Internal Level Difference (iLD). These values model the
-neural subtraction taking place in the animal's brain which is the final step in localization. This
-is in contrast to the Interaural Time and Level Differences (ITD and ILD) that are
-entirely determined by the inputs to the two ears.
-
-
-\subsubsection{Parameter Estimation}
 Before we begin our analysis, we need to give numerical values to the parameters we first defined
 in \ref{parametertable}. To do this we will simultaneously need to use experimentally determined
 values and estimate physical quantities that haven't been measured based on experimental results. 
@@ -24,12 +13,13 @@ parameters (interaural separation, tympanum area etc.) from \textit{Hemidactylus
 and the Tokay gecko \cite{dalsgaardmanley1}, \cite{dalsgaardtangcarr}. The paramters are listed for both these
 species in Table \ref{geckogeometricparams}.
 
+\vspace{\baselineskip}
+\noindent
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.2}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
-\captionof{table}{Geometry Parameters for the common house gecko (Hemidactylus frenatus) estimated from \cite{dalsgaardmanley2}
-and the Tokay gecko obtained from \cite{dalsgaardmanley1} and \cite{dalsgaardtangcarr}.} \label{geckogeometricparams} 
+\captionof{table}{Geometry Parameters for the common house gecko (Hemidactylus frenatus) and the Tokay gecko.}\label{geckogeometricparams}
 \begin{tabular}{|p{8.5 cm} | c | c|}
 \hline
 Parameter name & Hemidactylus & Tokay gecko\\
@@ -51,6 +41,13 @@ As we can see, the house gecko, with an interaural separation of $10$mm and mout
 small lizard. The Tokay gecko is the second largest gecko species (interaural separation of $25.6$mm and mouth cavity volume $3.5$ml, \cite{dalsgaardtangcarr}).
 Thus we will demonstrate the applicability of our model to animals hearing with widely varying head widths and mouth cavities. The geometric parameters, especially
 the head width and the membrane eigenfrequencies put important limits on the ``hearing range'' of our model as we will see in Sec. \ref{hearingcueschapter}.
+
+We start in Sec \ref{vibrationpatternchapter} by comparing the experimentally determined vibration pattern
+of the Tokay gecko's eardrum with that of our model's eardrum. In Sec. \ref{pressuredistchapter} we will
+briefly discuss the pressure distribution profile and eigenfrequencies of our cavity.
+In Sec \ref{hearingcueschapter} we will define and study the two main quantities that serve as important localization
+cues - the Internal Time Difference (iTD) and the Internal Level Difference (iLD). These values model the
+neural subtraction taking place in the animal's brain which is the final step in localization.
 
 \section{Spatial Vibration Pattern of the Membrane}\label{vibrationpatternchapter}
 We begin our analysis by evaluating the variation of the spatial vibration pattern of the tympanic membrane
@@ -99,6 +96,9 @@ also include its flection at higher frequencies.
 \section{Cavity Pressure Distribution}\label{pressuredistchapter}
 
 \section{Directional Hearing Cues}\label{hearingcueschapter}
+The iTD and iLD can be seen as the output of the ICE system with $p_0$ and $p_L$ as inputs.
+In contrast to the Interaural Time and Level Differences (ITD and ILD) are
+entirely determined by the inputs to the two ears.
 
 \subsection{Transmission Gain}
 

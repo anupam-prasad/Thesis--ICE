@@ -138,8 +138,11 @@ The membrane material will be assumed to be linear-elastic. As before, the equat
 consequently be linear $2^{nd}$-order PDE's.
 \begin{figure}[ht]
  \centering
- \includegraphics[width=.4\linewidth]{Diagrams/extracolumella2.png}
- \caption[Tympanic membrane model]{Model of the loaded tympanice membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
+ \includegraphics[width=.9\linewidth]{Diagrams/extracolumella2.png}
+ \caption[Tympanic membrane model]{Left: Sketch of the eardrum of a Tokay gecko as seen from the outside taken from Manley, \cite{manleygecko1}. ``COL'' is
+ the approximate position opposite the extracolumella insertion. The dots indicate the positions for measurements and will be discussed briefly in the
+ next chapter. Dimensions
+ in millimeters. Right: Our model for the loaded tympanic membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
  ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ corresponds to the breadth of the extracolumella and is estimated from anatomical data.}
  \label{tympanummodel}
 \end{figure}
@@ -219,7 +222,9 @@ predators and prey are usually present on the same plane as the animal and our a
 In our model we model the head as a sphere with a diameter equal to the interaural separation. As a result the sound has to travel around the 
 head in order to reach the contralateral ear resulting in a longer path. The frequency domain solution for the diffraction of sound around a
 sphere was obtained by Lord Rayleigh at the end of the $19^{\mbox{th}}$ century (\cite{rayleigh1},\cite{rayleigh2}). The expressions 
-are greatly simplified at low frequencies and the phase difference is simply increased by by a factor of $1.5$ (i.e. $\Delta_{new}=1.5\Delta$). The new model is illustrated in Fig. \ref{newheadmodel}.
+are greatly simplified at low frequencies and the phase difference is simply increased by by a factor of $1.5$. The new model is illustrated in Fig. \ref{newheadmodel}.
+Therefore, the form of the input remains the same as in \eqref{oldsoundinput} expect for a new phase difference  $\Delta_{new}=1.5\Delta$.
+
 \section{Derivation of the Model}
 We will now use the previously described physical model to derive the main expressions of interest in the ICE model - the membrane
 vibration profiles, the ipsi- and contraleteral filters and the cavity pressure distribution. We will thus find an expression for the pressure 
@@ -246,13 +251,12 @@ by defining the ipsi- and contralateral filters. The final expressions that give
 of the tympanic membranes as a function of the external pressure with the influence of the internal cavity encoded in the ipsi- and contralateral filters. 
 We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Tables \ref{parametertable}
 and \ref{functiontable}.
-
 \begin{minipage}{\linewidth}
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model} \label{parametertable} 
-\begin{tabular}{c p{12 cm}}
+\begin{tabular}{c p{13 cm}}
 \hline
 $\theta$ & Direction of the sound source with respect to the head midline.\\
 $\omega$ & Angular frequency of the incoming sound wave.\\
@@ -272,13 +276,12 @@ $V_0$ & Volume of the cavity.\\
 \end {tabular}\par
 \bigskip
 \end{minipage}
-
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.2}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model contd.} \label{functiontable} 
-\begin{tabular}{c p{12 cm}}
+\begin{tabular}{c p{13 cm}}
 \hline
 $J_q$ & Order $q$ Bessel function of the first kind.\\
 $\mu_{qs},\nu_{qs}$ & Respectively - $s^{th}$ zero and $s^{th}$ extremum of the above Bessel function.\\
@@ -342,9 +345,8 @@ with a specific solution to \eqref{pressurewaveeqn} given by,
  p(x,r,\phi;t)=\left[(A^+e^{jq\phi}+A^-e^{-jq\phi})e^{j\zeta x}+(B^+e^{jq\phi}+B^-e^{-jq\phi})e^{-j\zeta x}\right]J_q(\nu r)e^{j\omega t}.
 \end{equation}
 The coefficients $A^\pm$, $B^\pm$, $q$, $\zeta$ and $\nu$ will be subsequently determined by the boundary conditions. 
-
-In general, the time component of the pressure also has a \textit{backward-moving} component, i.e. $e^{-j\omega t}$. By making the ansatz in \eqref{pseparationansatz}, 
-we have implicitly made use of the fact that the form of the input constrains the pressure to only have a \textit{forward-moving} component, i.e. $e^{j\omega t}$.  
+Before we move on to the boundary conditions we should note that in general, the time component of the pressure also has a \textit{backward-moving} component, i.e. $e^{-j\omega t}$. 
+By making the ansatz in \eqref{pseparationansatz}, we have implicitly made use of the fact that the form of the input as given in \eqref{oldsoundinput} constrains the pressure to only have a \textit{forward-moving} component, i.e. $e^{j\omega t}$.  
 \subsubsection{Pressure Boundary Conditions}\label{pressureboundaryconditions}
 There are three sets of boundary conditions - 
 \begin{itemize}
@@ -391,7 +393,7 @@ A very useful property of the above modes is their orthgonality, i.e.
 \begin{equation}\label{pressureorthogonality}
  \int_\Omega dVp_{q_1s_1}p_{q_2s_2}=0,\ if\ q_1\neq q_2\ or\ s_1\neq s_2
 \end{equation}
-the integral is over the volume of the cylinder. This is a consequence of the fact that for different $q$'s
+the integral is over the volume	 of the cylinder. This is a consequence of the fact that for different $q$'s
 the cosine parts of the modes are orthogonal whereas for a given $q$ the Bessel parts are orthogonal for
 different $s$'s or expressed as an equation,
 \begin{equation}\label{besselorthogonality}
@@ -625,9 +627,9 @@ we need to make use of the orthogonality relation given in \eqref{besselorthogon
 by $f_{qs}(r,\phi)$ and integrate over the circular surfaces at either end of the cylinder. This results in a system of two linear equations for each pair of $A_{qs}$ 
 and $B_{qs}$,
 \begin{align}
- &A_{qs}-B_{qs} = K_{qs}\rho\omega^2S^{0}\\
- &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - K_{qs}\rho\omega^2S^{L}\\
- \mbox{where,}\ &K_{qs} = \frac{\int dS f_{qs}(r,\phi)}{j\zeta_{qs}\int dS f^2_{qs}(r,\phi)}\nonumber
+ &A_{qs}-B_{qs} = L_{qs}\rho\omega^2S^{0}\\
+ &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - L_{qs}\rho\omega^2S^{L}\\
+ \mbox{where,}\ &L_{qs} = \frac{\int dS f_{qs}(r,\phi)}{j\zeta_{qs}\int dS f^2_{qs}(r,\phi)}\nonumber
 \end{align}
 We now make use of the property of the pressure modes that $f_{qs}(r,\phi)$ integrates to $0$ unless $q=0$ and $s=0$. 
 For $q=0$ this is a consequence of the Bessel functions integrating to zero while for $q\geq 1$ this is due to 

@@ -1,0 +1,184 @@
+\documentclass{beamer}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{beamerthemeStockton}
+\usepackage{graphicx}
+\usepackage{epsfig}
+%\input{psfig}
+
+\title{Vibration of Cavity Backed Membranes}
+\author{Anupam Prasad Vedurmudi}
+\begin{document}
+
+\begin{frame}
+ \titlepage
+\end{frame}
+
+\section{Arbitrary Cavity}
+\subsection{Single Membrane}
+\begin{frame}
+ We first consider a rigidly clamped circular membrane of radius $a$ backed by an air cavity
+ of volume $V_0$.
+
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Equation of Motion}
+  \begin{equation}\label{membraneeom1}
+   -\ddot{u}-2j\alpha\dot{u}+c^2_M\Delta u=\left[p_{force}-p_{cav}\right]/(\rho_m d)
+  \end{equation}
+\begin{itemize}
+ \item $p_{cav}$ is the reaction pressure of the cavity
+ \item $p_{force}$ - external pressure acting on the membrane
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+ For a given configuration of the membrane, the change in volume of the container
+ is given by,
+ \begin{equation}\label{volchange1}
+  \Delta V(t)=-\int_Su(r,\phi,t)dS
+ \end{equation}
+ \begin{itemize}
+  \item This quantity is small compared to the volume of the cavity.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+ If the changes in pressure inside the cavity are fast enough, we can assume an
+ adiabatic equation of state,
+ \begin{align}
+  P_0V^\gamma_0&=(P_0+\Delta P)(V_0+\Delta V)^\gamma\\
+  \Rightarrow \Delta P&\approx-\gamma\frac{P_0}{V_0}\Delta V
+ \end{align}
+ \begin{itemize}
+  \item Linearization in $\Delta V$
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+ Suppose we have periodic pressure, $p_{force}=pe^{j\omega t}$ on the membrane outside the cavity.
+ As a possible solution to \eqref{membraneeom1} we try the steady-state ansatz,
+\begin{equation}\label{membranegeneral1}
+ u(r,\phi,t)=\sum_{m,n}C_{mn}\cos(m\phi)J_m(\mu_{mn}r)e^{j\omega t}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+This gives us,
+\begin{equation}
+ \int u(r,\phi,t)dS=\sum_n 2\pi e^{j\omega t} C_{0n}\int rJ_0(\mu_{0n}r)dr
+\end{equation}
+
+ \begin{itemize}
+  \item Cavity pressure has no effect on the non-axisymmetric modes, i.e $J_m$ for $m\geq 1$
+  \item We can ignore the higher modes
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+ Substitution into \eqref{membraneeom1} gives us,
+ \begin{align}
+  \sum_{n}(\omega^2-2j\alpha\omega-\omega^2_{n})C_{n}&J_0(\mu_{n}r)\nonumber\\
+  &=\left[p-\gamma\frac{P_0}{V_0}\sum_{n}C_{n} I_{n}\right]/(\rho_md)\\
+  C_n+\gamma\frac{P_0}{V_0}\frac{I_n}{\Omega_n\rho_md}\sum_kC_kI_k&=pI_n/(\Omega_n\rho_md)
+ \end{align}
+ \begin{itemize}
+  \item System of infinite linear equations
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+ We find an approximate solution by cutting off the summation at some point.
+ \begin{align}
+  \widetilde{C}_n+\gamma\frac{P_0}{V_0}\frac{I_n}{\Omega_n\rho_md}\sum^K_k\widetilde{C}_kI_k&=pI_n/(\Omega_n\rho_md)\\
+  \left[\mathbb{I}+\mathbf{D}\right]\widetilde{\underbar{C}}&=\underbar{P}
+ \end{align}
+ where,
+ \begin{align*}
+  \mathbf{D}_{mn}&=\gamma\frac{P_0}{V_0}I_mI_n/(\Omega_m\rho_md)
+ \end{align*}
+
+
+\end{frame}
+
+
+\subsection{Coupled Membranes}
+
+\begin{frame}
+ \frametitle{Coupled Membranes}
+ \begin{itemize}
+  \item Arbitrary cavity with two membranes placed some distance apart.
+  \item Solution reduces to the same form as for the single membrane case
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+ Suppose we have a periodic external pressure on both membranes differing by an
+ angle dependent phase. These are given by,
+ \begin{align}
+  p_0e^{i\omega t}&=pe^{i\beta\sin(\theta)/2}e^{i\omega t}\\
+  p_Le^{i\omega t}&=pe^{-i\beta\sin(\theta)/2}e^{i\omega t}
+ \end{align}
+ \end{frame}
+ 
+ \begin{frame}
+ We can expand the solution of the membrane equations as,
+ \begin{equation}
+  u_{0/L}(r,\phi,t)=\sum_{m,n}C^{0/L}_{mn}\cos(m\phi)J_m(\mu_{mn}r)e^{j\omega t}
+ \end{equation}
+ 
+ Following \eqref{volchange1}, the change in volume of the container at a given instant of time is given by,
+ \begin{equation}
+  \Delta V(t)=-\int_S(u_0+u_L)dS
+ \end{equation}
+
+\end{frame}
+
+\begin{frame}
+ Substiting into \eqref{membraneeom1} gives,
+ \begin{align}
+  \sum_{n}(\omega^2-2j\alpha\omega-\omega^2_{n})&C^0_n\cos(m\phi)J_m(\mu_{n}r)\nonumber\\
+  &=\left[p_0-\gamma\frac{P_0}{V_0}\sum_{n}\left(C^0_{n}+C^L_{n}\right) I_{n}\right]/(\rho_md)\\
+  \sum_{n}(\omega^2-2j\alpha\omega-\omega^2_{n})&C^L_{n}\cos(m\phi)J_m(\mu_{n}r)\nonumber\\
+  &=\left[p_L-\gamma\frac{P_0}{V_0}\sum_{n}\left(C^0_{n}+C^L_{n}\right) I_{n}\right]/(\rho_md)
+ \end{align}
+\end{frame}
+
+\begin{frame}
+ We define $C^+=C^L+C^0$ and $C^-=C^L-C^0$. This results in,
+ \begin{align}
+  \widetilde{C}^+_n+2\gamma\frac{P_0}{V_0}\frac{I_n}{\Omega_n\rho_md}\sum^K_k\widetilde{C}^+_kI_k&=(p_L+p_0)I_n/(\Omega_n\rho_md)\\
+  \left[\mathbb{I}+2\mathbf{D}\right]\widetilde{\underbar{C}}^+&=\underbar{P}_L+\underbar{P}_0\\
+ \end{align}
+ $C^-$ can be determined exactly,
+ \begin{equation}
+    C^-_n=(p_L-p_0)/(\Omega_n\rho_md)
+ \end{equation}
+ \end{frame}
+\begin{frame}
+ The approximate coefficients for the membrane modes are given by,
+ \begin{align}
+  \widetilde{C}^0_n=(\widetilde{C}^+_n-C^-_n)/2\\
+  \widetilde{C}^L_n=(\widetilde{C}^+_n+C^-_n)/2
+ \end{align}
+\end{frame}
+
+\section{Cylindrical Cavity}
+\begin{frame}
+ \frametitle{Cylindrical Cavity}
+ \begin{itemize}
+  \item In this section we consider the vibrations of two rigidly clamped circular membranes on either end
+  of a cylindrical tube of length $L$.
+  \item Our goal is to show that this is equivalent to the earlier formulation for a certain parameter range.
+ \end{itemize}
+\end{frame}
+
+
+
+
+\end{document}
