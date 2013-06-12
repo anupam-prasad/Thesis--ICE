@@ -14,6 +14,10 @@ C.~Vo\ss{}en, J.~Christensen-Dalsgaard, and J.~L. van Hemmen, ``Analytical
 G.~Manley, ``Frequency response of the middle ear of geckos,'' {\em Journal of
   comparative physiology}, vol.~81, no.~3, pp.~251--258, 1972.
 
+\bibitem{manleygecko1}
+G.~A. Manley, ``The middle ear of the tokay gecko,'' {\em Journal of
+  Comparative Physiology}, vol.~81, no.~3, pp.~239--250, 1972.
+
 \bibitem{dalsgaardmanley1}
 J.~Christensen-Dalsgaard and G.~A. Manley, ``{D}irectionality of the lizard
   ear,'' {\em J. Exp. Biol.}, vol.~208, pp.~1209--1217, Mar 2005.
@@ -75,8 +79,9 @@ N.~Asmar, {\em Partial Differential Equations with Fourier Series and Boundary
 N.~H. Fletcher, {\em Acoustic Systems in Biology}.
 \newblock Oxford: Oxford University Press, 1992.
 
-\bibitem{manleygecko1}
-G.~A. Manley, ``The middle ear of the tokay gecko,'' {\em Journal of
-  Comparative Physiology}, vol.~81, no.~3, pp.~239--250, 1972.
+\bibitem{michelsenrohrseitz}
+A.~Michelsen and K.~Rohrseitz, ``{Directional sound processing and interaural
+  sound transmission in a small and a large grasshopper},'' {\em Journal of
+  Experimental Biology}, vol.~198, pp.~1817--1827, 1995.
 
 \end{thebibliography}

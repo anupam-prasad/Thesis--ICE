@@ -233,7 +233,7 @@ hearing, since a proper amplitude and phase relationship must exist between the 
 @book{rayleigh2,
   title={Theory of Sound: V. 1},
   author = {Rayleigh, Lord},
-  number={v. 1},
+  number={},
   isbn={9780486602929},
   url={http://books.google.de/books?id=hRqJXwAACAAJ},
   year={1900},
@@ -252,6 +252,13 @@ hearing, since a proper amplitude and phase relationship must exist between the 
     title = {{Directional sound processing and interaural sound transmission in a small and a large grasshopper}},
     volume = {198},
     year = {1995}
+}
+
+@book{weverreptileear,
+  author = {Wever, Ernest Glen}
+  title={The reptile ear},
+  url={http://books.google.de/books?id=HM5OAQAAIAAJ},
+  year={1978}
 }
 
 
