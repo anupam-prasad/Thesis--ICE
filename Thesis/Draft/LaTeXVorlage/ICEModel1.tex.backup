@@ -54,9 +54,9 @@ low and high frequencies respectively.
 In order to get around this problem we make some slight modifications to the model. Essentially, we maintain the cylindrical shape of the internal 
 cavity but require it to have a volume which is equal to that of the realistic cavity ($V_{cav}$). We also maintain the same tympanum size and interaural distance
 and can therefore calculate the radius of the cylinder as,
-\begin{align}
+\begin{equation}\label{cylinderradiusformula}
  a_{cyl}=\sqrt{\frac{V_{cav}}{\pi L}}
-\end{align}
+\end{equation}
 \begin{figure}[ht!]
 \begin{center}
 \begin{subfigure}{1.0\textwidth}
@@ -191,7 +191,7 @@ In the earlier ICE model, the effect of diffraction on the phase difference was 
 is found directly from the phase difference $\Delta$ as shown in fig. \ref{fig:oldheadmodel}.
 As a result, the sound pressure inputs at both ears is given by,
 \begin{equation}\label{oldsoundinput}
-p_0=pe^{j\omega t} e^{-k\Delta/2},\qquad p_L=pe^{j\omega t} e^{k\Delta/2},\qquad \Delta=L\sin\theta.
+p_0=pe^{j\omega t} e^{-\Delta/2},\qquad p_L=pe^{j\omega t} e^{\Delta/2},\qquad \Delta=kL\sin\theta.
 \end{equation}
 We note that in defining the input in this way, we've emphasized the symmetry of the system.
 The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
@@ -244,19 +244,13 @@ models the loaded tympanum. The final expression will correspond to the steady-s
 membrane. As we neglect the transient response of the membrane, we will also discuss the circumstances under which this
 is justified.
 
-In Sec. \ref{coupledmembranes} we will conclude by using our knowledge to solve for the vibration of the fully coupled
-system. In this section we will  proceed by applying the velocity boundary condition at either end of the cylinder. In
-order to help with our analysis, we will present a simplification scheme for this boundary condition. We will end this section
-by defining the ipsi- and contralateral filters. The final expressions that give us the vibrations 
-of the tympanic membranes as a function of the external pressure with the influence of the internal cavity encoded in the ipsi- and contralateral filters. 
-We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Tables \ref{parametertable}
-and \ref{functiontable}.
+\noindent
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.1}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model} \label{parametertable} 
-\begin{tabular}{c p{13 cm}}
+\begin{tabular}{c p{12 cm}}
 \hline
 $\theta$ & Direction of the sound source with respect to the head midline.\\
 $\omega$ & Angular frequency of the incoming sound wave.\\
@@ -276,8 +270,15 @@ $V_0$ & Volume of the cavity.\\
 \end {tabular}\par
 \bigskip
 \end{minipage}
+In Sec. \ref{coupledmembranes} we will conclude by using our knowledge to solve for the vibration of the fully coupled
+system. In this section we will  proceed by applying the velocity boundary condition at either end of the cylinder. In
+order to help with our analysis, we will present a simplification scheme for this boundary condition. We will end this section
+by defining the ipsi- and contralateral filters. The final expressions that give us the vibrations 
+of the tympanic membranes as a function of the external pressure with the influence of the internal cavity encoded in the ipsi- and contralateral filters. 
+We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Tables \ref{parametertable}
+and \ref{functiontable}.
 \begin{minipage}{\linewidth}
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
 \captionof{table}{Functions and Parameters used in the ICE Model contd.} \label{functiontable} 
@@ -512,7 +513,7 @@ of the above eigenmodes and is given by,
 Substituting this expression in \eqref{membraneequation1} with $\Psi=pe^{j\omega t}$ gives,
 \begin{align}
  &\displaystyle\sum^\infty_{m=0}\sum^\infty_{n=1} \Omega_{mn}C_{mn}\cos m\phi J_m(\mu_{mn} r)e^{j\omega t}=pe^{j\omega t}\label{membraness2}\\
- &\text{where,  }\Omega_{mn}=\rho_M d \left[(\omega^2-\omega^2_mn)-2j\alpha\omega\right]\label{omegafirstdef}.
+ &\text{where,  }\Omega_{mn}=\rho_M d \left[(\omega^2-\omega^2_{mn})-2j\alpha\omega\right]\label{omegafirstdef}.
 \end{align}
 Using the orthogonality of the eigenmodes, the coefficients $C_{mn}$ can be calculated,
 \begin{equation}\label{sscoeffs}
@@ -548,7 +549,7 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.6\linewidth]{Diagrams/SectorMembraneModes/membrane_modes_all.png}
- \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane with $\beta=\pi/25$. The eigenfrequency increases from left to right.}
+ \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane where the omitted region corresponds to the extracolumella with $\beta=\pi/25$. As in Fig. \ref{circularmembraneeigenmodes}, the eigenfrequency increases from left to right.}
   \label{sectoralmembraneeigenmodes}
 \end{figure}
 The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The vibrations of a sectoral membrane
@@ -574,8 +575,8 @@ v_x(x,r,\phi;t)=-\frac{1}{\rho\omega}\displaystyle\sum^\infty_{q=0}\displaystyle
 \end{equation}
 and the exact boundary conditions are given by,
 \begin{align}
- j\omega U_{0}&=v_x(0,r,\phi;t)\label{bc1}\\
- j\omega U_{L}&=-v_x(L,r,\phi;t)\label{bc2}
+ j\omega U_{0}&=-v_x(0,r,\phi;t)\label{bc1}\\
+ j\omega U_{L}&=v_x(L,r,\phi;t)\label{bc2}
  \end{align}
 where we've used the direction conventions described in \ref{description} and made the following definition,
 \begin{equation}
@@ -597,7 +598,6 @@ We first expand $U_{0}$ and $U_{L}$ in the orthogonal basis of the functions $f_
  U_{0/L}(r,\phi;t)&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0} S^{0/L}_{qs}f_{qs}(r,\phi)e^{j\omega t}\\
  \mbox{where, }S^{0/L}_{qs}&=\frac{\int dS U^{0/L}f_{qs}(r,\phi)}{\int dS f^2_{qs}(r,\phi)}\label{approxboundarydef2}
 \end{align}
-
 We now have an expansion that approximates the boundary condition with increasing accuracy. After choosing an appropriate cutoff
 for the expansion we can substitute this expression in place of $U_{0/L}$ in \eqref{bc1} and \eqref{bc2}. In fact, this cutoff in
 the boundary condition expansion results in an identical cutoff in the pressure expansion - a direct result of the orthogonality
@@ -609,8 +609,8 @@ well above the hearing range of geckos. For example, the wavenumber of the $(1,1
 above $15$kHz for the one corresponding to the Tokay gecko. The parameters used to derive these quantities will be discussed in the next chapter.
 We can therefore write the approximate boundary conditions to zeroeth order as,
 \begin{align}
-   \rho\omega^2S^{0}&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}-B_{qs}\right)f_{qs}(r,\phi) \label{bcfinal1}\\
-   \rho\omega^2S^{L}&=-\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right)f_{qs}(r,\phi) \label{bcfinal2}
+   \rho\omega^2S^{0}&=-\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}-B_{qs}\right)f_{qs}(r,\phi) \label{bcfinal1}\\
+   \rho\omega^2S^{L}&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right)f_{qs}(r,\phi) \label{bcfinal2}
 \end{align}
 As shown in Sec. \ref{internalcavity}, the $(0,0)$ mode only varies in the $x$-direciton.
 As a result, the left-hand sides of
@@ -627,8 +627,8 @@ we need to make use of the orthogonality relation given in \eqref{besselorthogon
 by $f_{qs}(r,\phi)$ and integrate over the circular surfaces at either end of the cylinder. This results in a system of two linear equations for each pair of $A_{qs}$ 
 and $B_{qs}$,
 \begin{align}
- &A_{qs}-B_{qs} = L_{qs}\rho\omega^2S^{0}\\
- &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} = - L_{qs}\rho\omega^2S^{L}\\
+ &A_{qs}-B_{qs} = -L_{qs}\rho\omega^2S^{0}\\
+ &A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L} =  L_{qs}\rho\omega^2S^{L}\\
  \mbox{where,}\ &L_{qs} = \frac{\int dS f_{qs}(r,\phi)}{j\zeta_{qs}\int dS f^2_{qs}(r,\phi)}\nonumber
 \end{align}
 We now make use of the property of the pressure modes that $f_{qs}(r,\phi)$ integrates to $0$ unless $q=0$ and $s=0$. 
@@ -638,14 +638,14 @@ modes except the $(0,0)$ mode. In other words, the zeroeth-order boundary condit
 modes inside the cavity. We will subsequently omit the subscripts ``$00$'' for these coefficients.
 From the above linear equations, they are given in terms of the total membrane displacement as,
 \begin{equation}\label{finalpressurecoefficients}
- A=\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{-jkL}+S^L\right),\qquad  B=\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{jkL}+S^L\right)
+ A=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{-jkL}+S^L\right),\qquad  B=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{jkL}+S^L\right)
 \end{equation}
 we have also directly substituted $\zeta_{00}=k$ and simplified the expression for $K_{00}$ in the above expressions. These
 coefficients can now be substituted in place of the pressure in the right-hand side of the equation \eqref{coupledmembraneseries}
 giving us,
 \begin{align}
- &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{0}_{mn}u_{mn}(r,\phi)=p_{0}-\frac{\rho\omega^2}{k}\left(S^0\cot kL+S^L\csc kL\right)\\
- &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{L}_{mn}u_{mn}(r,\phi)=p_{L}-\frac{\rho\omega^2}{k}\left(S^0\csc kL+S^L\cot kL\right)
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{0}_{mn}u_{mn}(r,\phi)=p_{0}+\frac{\rho\omega^2}{k}\left(S^0\cot kL+S^L\csc kL\right)\\
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{L}_{mn}u_{mn}(r,\phi)=p_{L}+\frac{\rho\omega^2}{k}\left(S^0\csc kL+S^L\cot kL\right)
 \end{align}
 where we have cancelled out the time component on both sides of the equations. Note that the right-hand sides of the above two equations
 are independent of the spatial $(r,\phi)$ coordinates.
@@ -653,14 +653,14 @@ are independent of the spatial $(r,\phi)$ coordinates.
 In order to simplify the above coupled system of equations, the next step will be to take their sum and difference to obtain a new set of 
 variables that are solutions of a pair of decoupled equations. After some algebraic manipulation, we therefore have
 \begin{align}
- &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{+}_{mn}u_{mn}(r,\phi)=p_{+}-\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\\
+ &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{+}_{mn}u_{mn}(r,\phi)=p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\\
  &\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\Omega_{mn}C^{-}_{mn}u_{mn}(r,\phi)=p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}
 \end{align}
 where, $C_{mn}^+=C_{mn}^L+C_{mn}^0$ and $C_{mn}^-=C_{mn}^L-C_{mn}^0$. The $S^{+/-}$ and $p_{+/-}$ terms are defined similarly.
 Now, analogous to the calculation of the coefficients for the steady state vibration in \eqref{membraness2} and \eqref{sscoeffs}, we can determine
 the coefficients of the sum and difference vibrations in terms of the pressure and total membrane displacements. This gives us,
 \begin{align}
- C^{+}_{mn}&=\left[p_{+}-\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]K_{mn}\label{pluscoeffdef}\\
+ C^{+}_{mn}&=\left[p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]K_{mn}\label{pluscoeffdef}\\
  C^{-}_{mn}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]K_{mn}\label{minuscoeffdef}\\
  \mbox{where, }K_{mn}&=\frac{\int dS u_{mn}}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
 \end{align}
@@ -673,7 +673,7 @@ for the total membrane displacements.
 \end{equation}
 where we've defined the following quantities,
 \begin{align}
- \Gamma_+ = \frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\nonumber
+ \Gamma_+ = -\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\nonumber
 ,\qquad\frac{1}{\Lambda}=\frac{1}{\pi a^2_{cyl}}\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{\left(\int dS u_{mn}\right)^2}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
 \end{align}
 We can finally write the membrane displacement as a function of the pressure inputs in the form
@@ -692,8 +692,8 @@ and the contralateral filter,
 The total membrane displacement can also be expressed as a function of $p_0$ and $p_L$ simply by integrating both sides of \eqref{ipsimembranefull}
 and \eqref{contramembranefull} giving us a new set of ipsi- and contralateral filters
 \begin{align}
- G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2\\
- G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2
+ G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{ipsimembranetotal}\\
+ G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{contramembranetotal}
 \end{align}
 The ipsilateral filter effectively gives us the response of the ipsilateral membrane when the contralateral membrane
 is blocked. Similarly, the contralateral filter gives us its response when there is no ipsilateral stimulus. These filters
@@ -738,10 +738,10 @@ In fact, we can find the equivalent impedances from our analysis by comparing $U
 \begin{equation}
  Z^{eq}_T=\frac{1}{j\omega\pi a^2_{cyl}}(\Lambda+\Gamma_-),\qquad Z^{eq}_V=\frac{1}{2j\omega\pi a^2_{cyl}}(\Gamma_+-\Gamma_-)
 \end{equation}
-We immediately see that in the equivalent membrane impedance there is a correction, $\Gamma^+$ which is a contribution of the cavity whereas in 
+We immediately see that in the equivalent membrane impedance there is a correction term, $\Gamma_-$, which is a result of the contribution of the cavity whereas in 
 the circuit model, the membrane impedance is determined independent of the cavity. Moreover, the equivalent standalone membrane impedance, $\Lambda$,
 includes the influence of the higher modes. The equivalent cavity impedance becomes equal to $Z_V$ at zero frequency and goes to infinity at the
-resonance frequencies of the cylinder, i.e at $\omega=n\pi c/L,\ n=0,1,2\ldots$
+resonance frequencies of the cylinder, i.e at $\omega=n\pi c/L,\ n=1,2\ldots$.
 % At high frequencies, i.e. when the wavelength of the input becomes comparable with the dimensions of the system, the description of the
 % membrane does not change but the cavity impedance has a frequency dependent addition instead modelled as a two-port network. 
 % 

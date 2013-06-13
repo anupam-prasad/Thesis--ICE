@@ -1,20 +1,20 @@
-\BOOKMARK [0][-]{chapter*.3}{Abstract}{}
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}
-\BOOKMARK [0][-]{chapter.2}{The ICE Model}{}
-\BOOKMARK [1][-]{section.2.1}{Description of the Model}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.1.1}{Mouth Cavity}{section.2.1}
-\BOOKMARK [2][-]{subsection.2.1.2}{Middle Ear System}{section.2.1}
-\BOOKMARK [2][-]{subsection.2.1.3}{Head Model and External Sound Input}{section.2.1}
-\BOOKMARK [1][-]{section.2.2}{Derivation of the Model}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.2.1}{Internal Cavity}{section.2.2}
-\BOOKMARK [2][-]{subsection.2.2.2}{Vibration of the Membrane}{section.2.2}
-\BOOKMARK [2][-]{subsection.2.2.3}{Vibration of Coupled Membranes}{section.2.2}
-\BOOKMARK [2][-]{subsection.2.2.4}{Circuit Model}{section.2.2}
-\BOOKMARK [0][-]{chapter.3}{Evaluation of the ICE\205Model}{}
-\BOOKMARK [1][-]{section.3.1}{Sound Localization Using the ICE Model}{chapter.3}
-\BOOKMARK [1][-]{section.3.2}{Parameter Estimation}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.2.1}{Directional Hearing Cues}{section.3.2}
-\BOOKMARK [1][-]{section.3.3}{Cavity Pressure Distribution}{chapter.3}
-\BOOKMARK [1][-]{section.3.4}{Spatial Vibration Pattern of the Membrane}{chapter.3}
-\BOOKMARK [0][-]{chapter.4}{Conclusion}{}
-\BOOKMARK [0][-]{appendix*.26}{Acknowledgements}{}
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
+\BOOKMARK [0][-]{chapter.2}{The ICE Model}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Description of the Model}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.1.1}{Mouth Cavity}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.2}{Middle Ear System}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.3}{Head Model and External Sound Input}{section.2.1}% 7
+\BOOKMARK [1][-]{section.2.2}{Derivation of the Model}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.1}{Internal Cavity}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.2}{Vibration of the Membrane}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.3}{Vibration of Coupled Membranes}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.4}{Circuit Model}{section.2.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Evaluation of the ICE\205Model}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Sound Localization Using the ICE Model}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.1.1}{Directional Hearing Cues}{section.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.1.2}{Parameter Estimation}{section.3.1}% 16
+\BOOKMARK [1][-]{section.3.2}{Cavity Pressure Distribution}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{Spatial Vibration Pattern of the Membrane}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 19
+\BOOKMARK [0][-]{appendix*.28}{Acknowledgements}{}% 20

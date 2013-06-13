@@ -26,7 +26,8 @@ analytic solution.
 In order to make the system more analytically tractable we will, as before, study a geometry in which a pair of rigidly clamped
 linear elastic membranes are coupled through a cylindrical cavity. The cylindrical geometry allows an accurate calculation of the 
 pressure distribution inside the cavity at both low and high frequencies. By accounting for the presence of the asymetrically attached
-extracolumella, we will also explain the complex vibration patterns of the membrane. At the end of this chapter, we will
+extracolumella, we will also explain the complex vibration patterns of the membrane. We will conclude this chapter
+with a comparison of our model with previous methods that have used a electrical circuit analogy to model the system. At the end of this chapter, we will
 have the expressions that describe the steady-state vibrations of both eardrums as a function pressure amplitude, direction and frequency.
 
 \section{Description of the Model}\label{description}
@@ -513,7 +514,7 @@ of the above eigenmodes and is given by,
 Substituting this expression in \eqref{membraneequation1} with $\Psi=pe^{j\omega t}$ gives,
 \begin{align}
  &\displaystyle\sum^\infty_{m=0}\sum^\infty_{n=1} \Omega_{mn}C_{mn}\cos m\phi J_m(\mu_{mn} r)e^{j\omega t}=pe^{j\omega t}\label{membraness2}\\
- &\text{where,  }\Omega_{mn}=\rho_M d \left[(\omega^2-\omega^2_mn)-2j\alpha\omega\right]\label{omegafirstdef}.
+ &\text{where,  }\Omega_{mn}=\rho_M d \left[(\omega^2-\omega^2_{mn})-2j\alpha\omega\right]\label{omegafirstdef}.
 \end{align}
 Using the orthogonality of the eigenmodes, the coefficients $C_{mn}$ can be calculated,
 \begin{equation}\label{sscoeffs}
@@ -682,7 +683,7 @@ We can finally write the membrane displacement as a function of the pressure inp
  u_L(r,\phi;t)&=G_{contra}(r,\phi)p_0+G_{ipsi}(r,\phi)p_L\label{contramembranefull}
 \end{align}
 with the ipsilateral filter,
-\begin{equation}
+\begin{equation}\label{filterdefs1}
  G_{ipsi}=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)\displaystyle\sum^\infty_{n=1}\frac{\Lambda K_{mn}}{2}u_{mn}(r,\phi;t)
 \end{equation}
 and the contralateral filter,
