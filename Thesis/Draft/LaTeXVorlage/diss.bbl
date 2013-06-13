@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{schnuppcarr}
+J.~W. Schnupp and C.~E. Carr, ``{On hearing with more than one ear: lessons
+  from evolution},'' {\em Nature Neuroscience}, vol.~12, pp.~692--697, June
+  2009.
+
 \bibitem{vossenthesis}
 C.~Vo\ss{}en, {\em Auditory Information Processing in Systems with Internally
   Coupled Ears}.
@@ -78,10 +83,5 @@ N.~Asmar, {\em Partial Differential Equations with Fourier Series and Boundary
 \bibitem{fletcheracoustic}
 N.~H. Fletcher, {\em Acoustic Systems in Biology}.
 \newblock Oxford: Oxford University Press, 1992.
-
-\bibitem{michelsenrohrseitz}
-A.~Michelsen and K.~Rohrseitz, ``{Directional sound processing and interaural
-  sound transmission in a small and a large grasshopper},'' {\em Journal of
-  Experimental Biology}, vol.~198, pp.~1817--1827, 1995.
 
 \end{thebibliography}

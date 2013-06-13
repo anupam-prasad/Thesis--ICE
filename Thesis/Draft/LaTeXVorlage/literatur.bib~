@@ -255,10 +255,31 @@ hearing, since a proper amplitude and phase relationship must exist between the 
 }
 
 @book{weverreptileear,
-  author = {Wever, Ernest Glen}
+  author = {Wever, Ernest Glen},
   title={The reptile ear},
   url={http://books.google.de/books?id=HM5OAQAAIAAJ},
   year={1978}
+}
+
+@article{schnuppcarr,
+    author = {Schnupp, Jan W. and Carr, Catherine E.},
+    citeulike-article-id = {4644451},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1038/nn.2325},
+    citeulike-linkout-1 = {http://dx.doi.org/10.1038/nn.2325},
+    doi = {10.1038/nn.2325},
+    journal = {Nature Neuroscience},
+    keywords = {auditory, coding, evolution, orientation, spatial},
+    month = jun,
+    number = {6},
+    pages = {692--697},
+    pdf = {schnupp\_09\_hearing.pdf},
+    posted-at = {2009-05-27 13:19:51},
+    priority = {2},
+    publisher = {Nature Publishing Group},
+    title = {{On hearing with more than one ear: lessons from evolution}},
+    url = {http://dx.doi.org/10.1038/nn.2325},
+    volume = {12},
+    year = {2009}
 }
 
 
