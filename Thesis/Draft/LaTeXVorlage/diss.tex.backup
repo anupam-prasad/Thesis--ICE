@@ -11,17 +11,23 @@
 \documentclass[12pt]{book}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% %%%%%%%%%%%%
 %%   Zusaetzliche Pakete  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{a4wide}
+\usepackage{a4wide}	 
 \usepackage{fancyhdr}
 \usepackage{graphicx}
-\usepackage{caption}
+\usepackage[font={small}]{caption}
 \usepackage{subcaption}
 %\usepackage{german}
-\usepackage[bookmarks]{hyperref}
+\usepackage[colorlinks=true,bookmarks,hyperindex]{hyperref}
+\hypersetup{%
+    pdfborder = {0 0 0},
+    citecolor = blue,
+    urlcolor = violet,
+    linkcolor = black,
+}
 \usepackage{amsmath}
 \usepackage{amssymb}
 
@@ -77,7 +83,7 @@
   {\parindent0cm
   \rule{\linewidth}{.7ex}}
   \begin{flushright}
-    \vspace*{\stretch{1}}
+    \vspace*{\stretch{1}}	
     \sffamily\bfseries\Huge
     #1\\
     \vspace*{\stretch{1}}
@@ -158,14 +164,15 @@
 
   \mainmatter\setcounter{page}{1}
   \include{Introduction}
+  
   \include{ICEModel1}
   \include{ModelAnalysis}
+
   \include{Conclusion}
 %  \include{kap_02}
   %\include{kap_03}
   %\include{kap_04} usw.
-  \include{anhang}
-
+ \include{anhang}
 
   \backmatter
   \include{bibliographie}

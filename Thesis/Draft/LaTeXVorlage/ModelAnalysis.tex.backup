@@ -15,8 +15,8 @@ cues - the Internal Time Differences (iTDs) and the Internal Level Differences (
 neural subtraction taking place in the animal's brain which is the final step in localization. We will end this section
 by discussing the methods we have used to estimate the parameter values.
 
-In Sec. \ref{pressuredistchapter} we will
-briefly discuss the pressure distribution profile and eigenfrequencies of the mouth cavity.
+A complete evaluation of our model also requires  a discussion of the 
+pressure distribution profile and eigenfrequencies of the mouth cavity which will be done in Sec. \ref{pressuredistchapter}.
 Finally, in Sec \ref{vibrationpatternchapter} we will compare the experimentally determined vibration pattern
 of the Tokay gecko's eardrum with that of our model's eardrum - the aim being to justify our choice for the
 geometry of the membrane.
@@ -83,9 +83,40 @@ and \eqref{oldsoundinput}, the sound pressure inputs have the form
 \end{equation}
 These quantities accurately
 represent the response of the membrane to external stimuli and only depend on direction and frequency. In Fig. \ref{hemidactylusvibampfull},
-we compare the total velocity of the contralateral membrane ($\dot{S}^L$) with membrane velocity measured using laser vibrometry
-in \cite{dalsgaardmanley2}.
+we compare the total velocity of the contralateral membrane ($\dot{S}^L/(\pi a^2_{cyl})$) with membrane velocity measured using laser vibrometry
+in \cite{dalsgaardmanley2}. The plot shows the vibration amplitude as a function of frequency ($y$-axis) and direction ($x$-axis). The amplitudes ar given
+is units of dB re $1$ mm/(s Pa). This means that we have plotted the ratio vibration amplitude with reference to a vibration velocity of $1$ mm/s with an input pressure of $1$ Pa.
+In other words we have set $p=1$Pa in \eqref{newsoundinput}.
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=1.0\linewidth]{Diagrams/Plots/hemidactylusvibampfull.png}
+ \caption[Vibration amplitude for the common house gecko]{Calculated (left) and experimental (rigt) amplitude of contralateral tympanic membrane vibrations for Hemidactylus frenatus
+ in dB re $1$ mm/(s Pa), i.e. the ratio of the vibration amplitude with reference to a vibration velocity of $1$ mm/s with an input pressure of $1$ Pa. On the $x$-axis we have
+ the direction of the sound source in degrees varying from $-180^\circ\mbox{ to }180^\circ$ with negative angles corresponding to ipsilateral directions. The legends on the left and
+ right denote the amplitude in decibels. The calculate values are from the ICE model and the experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley2}.}
+  \label{hemidactylusvibampfull}
+\end{figure}
 
+As we can see, the model qualitatively reproduces the behaviour fairly well. The directional dependence is obvious - the membrane has a distinctly higher
+vibration amplitude when it is on the same side as the object. Although the room was tested to be anechoic to below $200$Hz some reflections, especially from
+the laser setup are unavoidable. This is the cause of the spectral ripple in the experimental measurements. The same comparison is illustrated for the Tokay gecko in Fig. \ref{tokayvibampfull} (data from \cite{dalsgaardmanley1}).
+The reason for the deviation from experimental behaviour at higher frequencies isn't currently known. The mechanics of the extracolumella including its flection and the influence of the realistic shape
+of the mouth cavity could offer possible explanations.
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=1.0\linewidth]{Diagrams/Plots/tokayvibampfull.png}
+ \caption[Vibration amplitude for the Tokay gecko]{Calculated (left) and experimental (rigt) amplitude of contralateral tympanic membrane vibrations for the Tokay gecko
+ in dB re $1$ mm/(s Pa). The experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley1}.}
+  \label{tokayvibampfull}
+\end{figure}
+It is also instructive to look at the dependence of the vibration amplitudes on direction and frequency independently.
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=1.0\linewidth]{Diagrams/Plots/hemidactylusipsivscontrafull.png}
+ \caption[Frequency dependence of ipsi- and contralateral membrane vibration amplitudes]{}
+  \label{hemidactylusipsivscontrafull}
+\end{figure}
+\subsection{Directional Hearing Cues}\label{hearingcuessection}
 We now calculate the displacement ratio of
 the membranes,
 \begin{align}
@@ -94,25 +125,6 @@ the membranes,
 \end{align}
 We have simplified the above expression after using the appropriate formulas for $G^s_{ipsi}$ and $G^s_{contra}$. 
 
-\begin{figure}[ht!]
- \centering
- \includegraphics[width=1.0\linewidth]{Diagrams/Plots/hemidactylusvibampfull.png}
- \caption[Vibration amplitude for the common house gecko]{Calculated (left) and experimental (rigt) amplitude of contralateral tympanic membrane vibrations for Hemidactylus frenatus
- in dB re $1$ mm/(s Pa), i.e. the ratio vibration amplitude with reference to a vibration velocity of $1$ mm/s with an input pressure of $1$ Pa. On the $x$-axis we have
- the direction of the sound source in degrees varying from $-180^\circ\mbox{ to }180^\circ$ with negative angles corresponding to ipsilateral directions. The legends on the left and
- right denote the amplitude in decibels. The calculate values are from the ICE model and the experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley2}.}
-  \label{hemidactylusvibampfull}
-\end{figure}
-
-\begin{figure}[ht!]
- \centering
- \includegraphics[width=1.0\linewidth]{Diagrams/Plots/tokayvibampfull.png}
- \caption[Vibration amplitude for the Tokay gecko]{Calculated (left) and experimental (rigt) amplitude of contralateral tympanic membrane vibrations for the Tokay gecko
- in dB re $1$ mm/(s Pa). The experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley1}.}
-  \label{tokayvibampfull}
-\end{figure}
-
-\subsection{Directional Hearing Cues}\label{hearingcuessection}
 The iTD and iLD can be seen as the output of the ICE system with $p_0$ and $p_L$ as inputs.
 In contrast to the Interaural Time and Level Differences (ITD and ILD) are entirely determined 
 by the inputs to the two ears. The ITD is defined as the time sound takes to travel across
@@ -130,7 +142,9 @@ The level difference corresponds to the
 \subsection{Parameter Estimation}\label{parameterestimation}
 Some of the parameters can be directly taken from their measured values whereas
 the rest will need to be estimated indirectly. 
-For the head width/interaural distance ($L$), cavity volume ($V_0$), the density of the membrane ($\rho_m$) and its thickness ($d$)
+For the head width/interaural distance ($L$), cavity volume ($V_0$), the density of the membrane ($\rho_m$)\footnote{A caveat: The density given in common models for the tympanum
+is around $3$mg/mm$^3$ but this includes the mass of the transducer (the extracolumell). The density of the material of the tympanic membrane is in fact closer to the density of water,
+hence the chosen value of $1$mg/mm$^3$} and its thickness ($d$)
 we can use the directly measured values. The radius of the cylinder ($a_{cyl}$) can be calculated from the first two quantities
 using \eqref{cylinderradiusformula}. 
 As we've already seen in Fig. \ref{tympanummodel}, the realistic tympanic membrane is an ellipsoid rather than a perfect circle therefore the radius of our tympanum will
@@ -139,8 +153,11 @@ instead be estimated from the area of the membrane as $a_{tymp}=\sqrt{A/\pi}$. F
 The parameters that require an indirect estimation are the first membrane eigenfrequency ($\omega_{01}$) and
 its quality factor $Q$. The first of these effictively gives us the propagation speed of membrane vibrations, $c_M=\omega_{01}/\mu_{01}$ 
 and the second gives us the membrane damping, $\alpha=\omega_{01}/2Q$. These quantities are difficult to directly measure and instead
-have to be estimated from experimental results and the frequency response of the system.
+have to be estimated from experimental results and the frequency response of the system. 
 
+A hint for the approximate values of $\omega_{01}$
+and $\alpha$ comes from the frequency at which iLDs are at a maximum and from the frequency dependence of the iTDs. For the house gecko they have been experimentally is around $3$kHz and
+ $\sim 1.4$kHz for the Tokay gecko. Depending on the value
 \section{Cavity Pressure Distribution}\label{pressuredistchapter}
 
 \section{Spatial Vibration Pattern of the Membrane}\label{vibrationpatternchapter}
