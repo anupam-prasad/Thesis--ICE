@@ -531,10 +531,11 @@ combination of the eigenmodes given in \eqref{circularmembranedampedeigen}. Ther
 The complete solution is given by $u=u_t+u_{ss}$ and the coefficients $M_{mn}$ and $N_{mn}$ are determined by the initial conditions (at $t=0$).
 
 \vspace{\baselineskip}
-\textbf{Steady State Approximation}: The damping coefficient $\alpha$ is usually given in terms of the membrane fundamental frequency and a quality factor $Q$ as $\alpha=\omega_{01}/2Q$. For the tympani
-we will be concerned with we have $Q\sim 1.2$ which results in damping coefficients that are around $4000s^{-1} $ for the larger lizards and around $8000s^{-1}$ for the smaller ones. 
-Due to this and the exponential decay of the transient vibration amplitude, we can safely assume that within a few time-periods the steady-state vibrations dominate the solution of the
-forced membrane. For this reason, we will subsequently confine our discussion to only the steady state vibrations of the membrane.
+\textbf{Steady State Approximation}: The damping coefficient $\alpha$ is usually given in terms of the membrane fundamental frequency and a quality factor $Q$ as $\alpha=\omega_{01}/2Q$. 
+The tympani we will be concerned with are generally underdamped to critically damped i.e. $Q\geq .5$ which results in damping coefficients that are around $2400s^{-1} $ for the larger lizards and around $7700s^{-1}$ for the smaller ones
+(the exact parameter values will be discussed in the next chapter). 
+Due to this and the exponential decay of the transient vibration amplitude, we can safely assume that within a few time-periods the transient vibrations
+forced membrane will be negligible. For this reason, we will subsequently confine our discussion to only the steady state vibrations of the membrane.
 \subsubsection{Sectoral Membrane}
 The eigenmodes of the sectoral membrane proceeds from \eqref{membraneeigen} onwards. We now have a new set of boundary conditions in $\phi$.
 The extracolumella is modelled as a triangular plate of infinite mass which constrains the membrane displacement to go to zero at $phi=\beta$
@@ -683,7 +684,7 @@ We can finally write the membrane displacement as a function of the pressure inp
  u_L(r,\phi;t)&=G_{contra}(r,\phi)p_0+G_{ipsi}(r,\phi)p_L\label{contramembranefull}
 \end{align}
 with the ipsilateral filter,
-\begin{equation}
+\begin{equation}\label{filterdefs1}
  G_{ipsi}=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)\displaystyle\sum^\infty_{n=1}\frac{\Lambda K_{mn}}{2}u_{mn}(r,\phi;t)
 \end{equation}
 and the contralateral filter,

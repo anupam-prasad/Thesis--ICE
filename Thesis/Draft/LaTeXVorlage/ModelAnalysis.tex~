@@ -69,23 +69,22 @@ an anechoic room. They were subject to $175$ms frequency sweeps (200-7500 Hz) at
 a $1$m distance. The eardrum vibrations were then measured using laser-Doppler vibrometry with the point
 of measurement at the tip of the extracolumella. The measured values correspond to the displacement velocity of the membrane at this point.  
 In our analysis, the point corresponding to the tip of the extracolumella is stationary and cannot be used to compare the vibrations of the membranes. 
-Instead, we use the total membrane vibrations defined in the previous chapter which are given by,
-\begin{equation}
- S^0=G^s_{ipsi}p_0+G^s_{contra}p_L,\qquad S^L=G^s_{ipsi}p_L+G^s_{contra}p_0
-\end{equation}
-where we've used the ipsi- and contralateral filters defined in \eqref{ipsimembranetotal} and \eqref{contramembranetotal} and the
-inputs have the form
+Instead, we use the total membrane displacements defined in the previous chapter which are given by,
+\begin{align}
+ &S^0=G^s_{ipsi}p_0+G^s_{contra} p_L\\
+ &S^L=G^s_{ipsi}p_L+G^s_{contra}p_0\\
+ &\dot{S}^{0/L}=j\omega S^{0/L}\label{totalvelocity}
+\end{align}
+using the ipsi- and contralateral filters for the total displacement defined in \eqref{ipsimembranetotal} and \eqref{contramembranetotal}.
+The definition of the total membrane velocity given in the second line follows directly from the definition of the membrane displacements. Following Sec. \ref{soundinput}
+and \eqref{oldsoundinput}, the sound pressure inputs have the form
 \begin{equation}\label{newsoundinput}
  p_0=pe^{j\omega t} e^{-\Delta/2},\qquad p_L=pe^{j\omega t} e^{\Delta/2},\qquad \Delta=1.5kL\sin\theta.
 \end{equation}
 These quantities accurately
-represent the response of the membrane to external stimuli and only depend on direction and frequency. We now calculate the displacement ratio of
-the membranes,
-\begin{align}
- \frac{S_L}{S_0}&=\frac{1+\eta e^{1.5jkL\sin\theta}}{\eta+e^{1.5jkL\sin\theta}}\\
- \mbox{where, }\eta&=\frac{G^s_{ipsi}}{G^s_{contra}}=\frac{\Lambda}{\rho c\omega}\sin kL-\cos kL.\nonumber
-\end{align}
-We have simplified the above expression after using the appropriate formulas for $G^s_{ipsi}$ and $G^s_{contra}$.
+represent the response of the membrane to external stimuli and only depend on direction and frequency. In Fig. \ref{hemidactylusvibampfull},
+we compare the total velocity of the contralateral membrane ($\dot{S}^L$) with membrane velocity measured using laser vibrometry
+in \cite{dalsgaardmanley2}.
 
 \begin{figure}[ht!]
  \centering
@@ -96,7 +95,7 @@ We have simplified the above expression after using the appropriate formulas for
  right denote the amplitude in decibels. The calculate values are from the ICE model and the experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley2}.}
   \label{hemidactylusvibampfull}
 \end{figure}
-
+The same comparison is illustrated for the Tokay gecko in Fig. \ref{tokayvibampfull} (data from \cite{dalsgaardmanley1}).
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=1.0\linewidth]{Diagrams/Plots/tokayvibampfull.png}
@@ -104,6 +103,14 @@ We have simplified the above expression after using the appropriate formulas for
  in dB re $1$ mm/(s Pa). The experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley1}.}
   \label{tokayvibampfull}
 \end{figure}
+
+We now calculate the displacement ratio of
+the membranes,
+\begin{align}
+ \frac{S_L}{S_0}&=\frac{1+\eta e^{1.5jkL\sin\theta}}{\eta+e^{1.5jkL\sin\theta}}\\
+ \mbox{where, }\eta&=\frac{G^s_{ipsi}}{G^s_{contra}}=\frac{\Lambda}{\rho c\omega}\sin kL-\cos kL.\nonumber
+\end{align}
+We have simplified the above expression after using the appropriate formulas for $G^s_{ipsi}$ and $G^s_{contra}$. 
 
 \subsection{Directional Hearing Cues}\label{hearingcuessection}
 The iTD and iLD can be seen as the output of the ICE system with $p_0$ and $p_L$ as inputs.
