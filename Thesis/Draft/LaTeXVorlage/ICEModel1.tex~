@@ -195,9 +195,9 @@ As a result, the sound pressure inputs at both ears is given by,
 p_0=pe^{j\omega t} e^{-\Delta/2},\qquad p_L=pe^{j\omega t} e^{\Delta/2},\qquad \Delta=kL\sin\theta.
 \end{equation}
 We note that in defining the input in this way, we've emphasized the symmetry of the system.
-The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
-is denoted by a subscript $0$ and the one further away from the source is referred to as the \textit{contralateral} ear and is denoted by a subscript $L$. 
-Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will correspond to the ipsi- and contralateral ears respectively.
+The ear closer to the sound source is referred to as the \textit{ipsilateral} ear the one further away from the source is referred to as the \textit{contralateral} ear. 
+The terms ipsi- and contralateral also refer to the stimuli meaning ``the response of the ipsilateral ear'' is equivalent to ``the response of the ear
+to ipsilateral stimulus''.
 \begin{figure}[ht]
  %\centering
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodelold.png}
@@ -258,7 +258,7 @@ $\omega$ & Angular frequency of the incoming sound wave.\\
 $k$ & Wavenumber $k=\omega/c$ with $c=343$m/s being the speed of sound.\\
 $p$ & Pressure amplitude of the incoming sound wave.\\
 $\Delta$ & Phase difference between the sound wave reaching the contra- and ipsilateral ear.\\
-$p_{0/L}$ & Sound pressure on the ipsi- ($x=0$) and contralateral ($x=L$) ears respectively.\\
+$p_{0/L}$ & Sound pressure on the ($x=0$) and ($x=L$) tympani respectively.\\
 %& \\
 $(x,r,\phi)$ & Cylindrical polar coordinates with $x$ being the axial direction.\\
 $L$ & Interaural separation and length of cylinder.\\
@@ -564,7 +564,7 @@ The vibrations of the membranes is given by,
 \begin{equation}\label{coupledmembraneseries}
  u_{0/L}(r,\phi;t)=\displaystyle\sum^{\infty}_{m=0}\sum^{\infty}_{n=1}\Omega_{mn}C^{0/L}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{0/L}e^{j\omega t}-p(0/L,r,\phi;t)
 \end{equation}
-where $0$ and $L$ denote the ipsi- and contra-lateral membranes respectively and the cavity pressure distribution, $p(x,r,\phi;t)$,  is given by \eqref{pressuregeneral1}.
+where $0$ and $L$ denote the $x=0$ and $x=L$ membranes respectively and the cavity pressure distribution, $p(x,r,\phi;t)$,  is given by \eqref{pressuregeneral1}.
 The above equation is only valid on the membrane surface i.e., for $r<a_{tymp}$ and $\beta<\phi<2\pi-\beta$.
 
 As discussed in \ref{pressureboundaryconditions}, the internal cavity pressure satisfies the no-penetration condition at solid boundaries.
@@ -697,8 +697,8 @@ and \eqref{contramembranefull} giving us a new set of ipsi- and contralateral fi
  G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{ipsimembranetotal}\\
  G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{contramembranetotal}
 \end{align}
-The ipsilateral filter effectively gives us the response of the ipsilateral membrane when the contralateral membrane
-is blocked. Similarly, the contralateral filter gives us its response when there is no ipsilateral stimulus. These filters
+The ipsilateral filter effectively gives us the response of the membrane to a purely ipsilateral stimulus or equivalently when the contralateral membrane
+is blocked. Similarly, the contralateral filter gives us its response when the ipsilateral membrane is blocked. These filters
 will play an important role in the evaluation of the model in the next chapter.
 
 \subsection{Circuit Model}

@@ -1,5 +1,6 @@
 \contentsline {chapter}{Abstract}{xi}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Mechanical Processing of Auditory Stimuli}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2}The ICE Model}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Description of the Model}{4}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Mouth Cavity}{4}{subsection.2.1.1}
@@ -18,11 +19,11 @@
 \contentsline {chapter}{\numberline {3}Evaluation of the ICE--Model}{27}{chapter.3}
 \contentsline {section}{\numberline {3.1}Sound Localization Using the ICE Model}{28}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Directional Hearing Cues}{29}{subsection.3.1.1}
-\contentsline {subsubsection}{Transmission Gain}{30}{section*.25}
-\contentsline {subsubsection}{Internal Time Difference}{30}{section*.26}
-\contentsline {subsubsection}{Internal Level Difference}{30}{section*.27}
+\contentsline {subsubsection}{Transmission Gain}{30}{section*.26}
+\contentsline {subsubsection}{Internal Time Difference}{30}{section*.27}
+\contentsline {subsubsection}{Internal Level Difference}{30}{section*.28}
 \contentsline {subsection}{\numberline {3.1.2}Parameter Estimation}{30}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Cavity Pressure Distribution}{32}{section.3.2}
 \contentsline {section}{\numberline {3.3}Spatial Vibration Pattern of the Membrane}{32}{section.3.3}
 \contentsline {chapter}{\numberline {4}Conclusion}{35}{chapter.4}
-\contentsline {chapter}{Acknowledgements}{39}{appendix*.29}
+\contentsline {chapter}{Acknowledgements}{39}{appendix*.30}

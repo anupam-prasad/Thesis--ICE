@@ -13,13 +13,19 @@ Before we discuss the various sound localization methods observed in nature, we 
 go through the fundamental steps involved in auditory perception. First, an object generates
 an auditory stimulus which in general can be very complex. This stimulus then propagates
 through a given medium (e.g. air, water) and excites the primary receiver(s) of the animal. In most
-terrestrial vertebrates, these take the form of \textit{tympani} a pair of thin vibrating
+terrestrial vertebrates, these take the form of \textit{tympani} or eardrums - a pair of thin vibrating
 membranes which are a component of the mechanical part of the auditory system.
-Depending on the species, there may be an apparatus that focusses and amplifies the sound waves. In
-humans for example, this function performed by the external ears or pinnae.
+Depending on the species, there may be an apparatus that focuses and amplifies the sound waves. In
+humans for example, this function performed by the external ears or pinnae. 
+The vibrations are then transmitted by means of a set of bony or cartilaginous elements and
+converted into electrochemical signals that will be processed neuronally. This will be discussed
+in a little more detail in Sec. \ref{mechanicalprocessing}
 
-The primary focus of this thesis is sound localization in terrestrial vertebrates - specifically
+The primary focus of this thesis is the mechanical processing that is responsible for the
+sound localization ability of certain terrestrial vertebrates. Specifically, we are interested
+animals that have their eardrums connected through a large mouth cavity.
 
+\section{mechanicalprocessing}
 
 \begin{figure}
  %\centering

@@ -83,8 +83,8 @@ and \eqref{oldsoundinput}, the sound pressure inputs have the form
 \end{equation}
 These quantities accurately
 represent the response of the membrane to external stimuli and only depend on direction and frequency. In Fig. \ref{hemidactylusvibampfull},
-we compare the total velocity of the contralateral membrane ($\dot{S}^L/(\pi a^2_{cyl})$) with membrane velocity measured using laser vibrometry
-in \cite{dalsgaardmanley2}. The plot shows the vibration amplitude as a function of frequency ($y$-axis) and direction ($x$-axis). The amplitudes ar given
+we compare the total velocity of the tympanic membrane ($\dot{S}^{0/L}/(\pi a^2_{cyl})$) with the membrane velocity measured using laser vibrometry
+in \cite{dalsgaardmanley2}. The plot shows the vibration amplitude as a function of frequency ($y$-axis) and direction ($x$-axis). The amplitudes are given
 is units of dB re $1$ mm/(s Pa). This means that we have plotted the ratio vibration amplitude with reference to a vibration velocity of $1$ mm/s with an input pressure of $1$ Pa.
 In other words we have set $p=1$Pa in \eqref{newsoundinput}.
 \begin{figure}[ht]
@@ -92,7 +92,7 @@ In other words we have set $p=1$Pa in \eqref{newsoundinput}.
  \includegraphics[width=1.0\linewidth]{Diagrams/Plots/hemidactylusvibampfull.png}
  \caption[Vibration amplitude for the common house gecko]{Calculated (left) and experimental (rigt) amplitude of contralateral tympanic membrane vibrations for Hemidactylus frenatus
  in dB re $1$ mm/(s Pa), i.e. the ratio of the vibration amplitude with reference to a vibration velocity of $1$ mm/s with an input pressure of $1$ Pa. On the $x$-axis we have
- the direction of the sound source in degrees varying from $-180^\circ\mbox{ to }180^\circ$ with negative angles corresponding to ipsilateral directions. The legends on the left and
+ the direction of the sound source in degrees varying from $-180^\circ\mbox{ to }180^\circ$ with positive angles corresponding to ipsilateral stimuli. The legends on the left and
  right denote the amplitude in decibels. The calculate values are from the ICE model and the experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley2}.}
   \label{hemidactylusvibampfull}
 \end{figure}
@@ -105,19 +105,29 @@ of the mouth cavity could offer possible explanations.
 \begin{figure}[ht]
  \centering
  \includegraphics[width=1.0\linewidth]{Diagrams/Plots/tokayvibampfull.png}
- \caption[Vibration amplitude for the Tokay gecko]{Calculated (left) and experimental (rigt) amplitude of contralateral tympanic membrane vibrations for the Tokay gecko
+ \caption[Vibration amplitude for the Tokay gecko]{Calculated (left) and experimental (right) amplitude of tympanic membrane vibrations for the Tokay gecko
  in dB re $1$ mm/(s Pa). The experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley1}.}
   \label{tokayvibampfull}
 \end{figure}
 
-It is also instructive to look at the dependence of the vibration amplitudes on direction and frequency independently.
+It is also instructive to look at the dependence of the vibration amplitudes on direction and frequency independently. In Figures \ref{hemidactylusipsivscontrafull} (house gecko)
+and \ref{tokayipsivscontrafull} (Tokay gecko) we have plotted the membrane vibration velocity for a pure ipsilateral stimulus (90$^\circ$) and pure contralateral stimulus (-90$^\circ$)
+as a function of frequency.
 \begin{figure}[ht]
  \centering
  \includegraphics[width=1.0\linewidth]{Diagrams/Plots/hemidactylusipsivscontrafull.png}
- \caption[Frequency dependence of ipsi- and contralateral membrane vibration amplitudes]{Calculated (left) and experimental (right) vibration velocity spectra for the common house gecko. The two plots
+ \caption[Frequency dependence of ipsi- and contralateral membrane vibration amplitudes - common house gecko]{Calculated (left) and experimental (right) vibration velocity spectra for the common house gecko. The two plots
  on the left correspond to the response of the tympanic membrane to a purely ipsilateral (90$^\circ$) and purely contralateral (-90$^\circ$) stimulus.  The two colours on the right correspond to
- different individuals of the house gecko species. Data from \cite{dalsgaardmanley2}.}
+ different individuals of the house gecko species. Experimental values taken from Christensen-Dalsgaard \cite{dalsgaardmanley2}.}
   \label{hemidactylusipsivscontrafull}
+\end{figure}
+
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=1.0\linewidth]{Diagrams/Plots/tokayipsivscontrafull.png}
+ \caption[Frequency dependence of ipsi- and contralateral membrane vibration amplitudes - Tokay gecko]{Calculated (left) and experimental (right) vibration velocity spectra for the Tokay gecko. In
+ the plot on the right hand side, the thick line corresponds to an ipsilateral stimulus and the dotted line to a contralateral stimulus.  Data from \cite{dalsgaardmanley1}.}
+  \label{tokayipsivscontrafull}
 \end{figure}
 \subsection{Directional Hearing Cues}\label{hearingcuessection}
 We now calculate the displacement ratio of
@@ -180,9 +190,10 @@ at frequencies well beyond the hearing range of geckos.
   \label{manleygeckotympanum}
 \end{figure}
 
-In order to compare our model with the experimental results, we plot the response of the ipsilateral membrane in our cylindrical ICE model 
-calculated using \eqref{ipsimembranefull}. The input was chosen to be purely ipsilateral, meaning $p_L=0$. 
-This is illustrated in Fig. \ref{manleygeckotympanum} (right) for the same frequency range as in the experimental data. The ipsilateral input was chosen to have unit amplitude and the model parameters used are given
+In order to compare our model with the experimental results, we plot the response of one of the membranes ($x=0$, although $x=L$ could be
+chosen equivalently due to the symmetry of the system) in our cylindrical ICE model 
+calculated using \eqref{ipsimembranefull}. The opposite ear was chosen to be blocked, meaning $p_L=0$. 
+This is illustrated in Fig. \ref{manleygeckotympanum} (right) for the same frequency range as in the experimental data. The sound pressure input was chosen to have unit amplitude and the model parameters used are given
 on the right most column of Table \ref{geckogeometricparams}. The omitted region corresponds to the extracolumella. 
 
 The asymmetric nature of our membrane vibration pattern is a result of our chosen geometry.
