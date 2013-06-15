@@ -30,6 +30,7 @@
 }
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{mathtools}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Definition der Kopfzeile %%

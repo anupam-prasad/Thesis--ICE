@@ -76,7 +76,7 @@ and can therefore calculate the radius of the cylinder as,
   \caption[Previous and current ICE model representations]{The bold arrows represent the direction conventions
   along the cylinder's axis. The new model is represented by a cylinder of radius $a_{cyl}$ and length $L$ closed
   at both ends by sectoral membrane of radius $a_{tymp}$.
-  The darkly shaded region corresponds to the extracolumella (described in Sec. \ref{middleear}).}
+  The darkly shaded region corresponds to the extracolumella; see Sec. \ref{middleear}.}
 \end{center}
 \end{figure}
 where $a_{cyl}$ is the cylinder radius and $L$ is the interaural distance. Simply put, the model consists of a cylindrical shell
@@ -192,7 +192,7 @@ In the earlier ICE model, the effect of diffraction on the phase difference was 
 is found directly from the phase difference $\Delta$ as shown in fig. \ref{fig:oldheadmodel}.
 As a result, the sound pressure inputs at both ears is given by,
 \begin{equation}\label{oldsoundinput}
-p_0=pe^{j\omega t} e^{-\Delta/2},\qquad p_L=pe^{j\omega t} e^{\Delta/2},\qquad \Delta=kL\sin\theta.
+p_0=pe^{j\omega t} e^{j\Delta/2},\qquad p_L=pe^{j\omega t} e^{-j\Delta/2},\qquad \Delta=kL\sin\theta.
 \end{equation}
 We note that in defining the input in this way, we've emphasized the symmetry of the system.
 The ear closer to the sound source is referred to as the \textit{ipsilateral} ear the one further away from the source is referred to as the \textit{contralateral} ear. 
@@ -209,8 +209,8 @@ We have also chosen a coordinate
 system relative to the \textit{median-sagittal} plane or the head midline of the animal and $\theta$ gives the angle of incidence of this
 sound wave relative to this plane. For more complex auditory systems we would require two angles $(\theta, \phi)$ to describe
 the three-dimensional system but in our analysis this is unnecessary. For the animals we are concerned with, i.e. geckos, the natural
-predators and prey are usually present on the same plane as the animal and our assumption is therefore reasonable.
-
+predators and prey are usually present on the same plane as the animal and our assumption is therefore reasonable. According our convention,
+$\theta=0^\circ$ corresponds to objects directly in front of the animal and $\theta=\pm180^\circ$ to objects directly behind.
 \begin{figure}[ht]
  %\centering
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodel2.png}
@@ -297,6 +297,7 @@ $\omega_{mn}$ & Eigenfrequency of the above eigenmodes.\\
 $Q$ & Quality factor of the membrane.\\
 $\Psi(r,\phi;t)$ & Driving pressure on the membrane.\\
 $u_{0/L}(r,\phi;t)$ & Membrane displacement function.\\
+$C^{0/L}_{mn}$ & Membrane vibration expansion coefficients.\\
 $S^{0/L}(t)$ & Total membrane displacement.\\
 &\\
 $G_{ipsi}(r,\phi)$ & Ipsilateral filter.\\
