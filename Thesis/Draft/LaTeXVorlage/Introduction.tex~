@@ -32,9 +32,10 @@ processes that take into account inputs from all available sensory systems.
 
 The primary focus of this thesis is the mechanical processing that is responsible for the
 sound localization ability of certain terrestrial vertebrates. Specifically, we are interested
-animals that have their eardrums connected through a large mouth cavity and the emergence of
- directionality in the response of such systems. The questions posed by the neuronal processing of auditory stimuli in these
- animals although interesting, are beyond the scope of this thesis.
+in the analytical treatment of hearing in animals that have their eardrums connected through a large mouth cavity and the emergence of
+ directionality in the response of such systems. Although our model can be scaled to several different species,
+ for the purposes of a thorough comparison, we will be putting a special emphasis on lizard hearing. The questions posed by the neuronal processing of auditory stimuli in these
+animals although interesting, are beyond the scope of this thesis.
 
 \section{Mechanical Processing of Auditory Stimuli}\label{mechanicalprocessing}
 Ancestors of most modern vertebrates including frogs, turtles, lizards, birds, crocodilians and mammals
@@ -53,9 +54,24 @@ them from the air to the ossicles in the middle ear; cf. Fig. \ref{vertebrateear
 
 \begin{figure}
  \centering
- \includegraphics[width=0.5\linewidth]{Diagrams/lizardheadcrosssection.jpeg}
- \caption[Cross Section of a Lizards Head]{Diagram of the cross-section of a lizard’s head (\textit{sceloporus}). Figure taken from \cite{dalsgaardmanley1}.}
+ \includegraphics[width=0.4\linewidth]{Diagrams/lizardheadcrosssection.jpeg}
+ \caption[Cross Section of a Lizards Head]{Diagram of the cross-section of a lizard’s head (\textit{sceloporus}). The Tympanic Membranes (TM) as well as
+ the air inside the Middle Ear Cavity (MEC) and Eustachian Tubes (ET) are excited by incoming sound waves. Due to the considerable width of the Eustachian Tubes (ET), the air inside the Pharynx (P) is excited as well.
+ The vibration of the tympanum causes a movement of the attached middle ear, Columella (C) whose lever construction transmits the vibrations to the Oval Window (OW), the membrane at the entrance of the fluid filled cochlea.
+ Figure taken from \cite{dalsgaardmanley1}. The vibration of the OW excites the fluid in the Cochlea which gives rise to a frequency-dependent activation of the embedded basilar membrane and underlying
+ auditory nerve fibers. The Round Window (RW) is a membrane at the end of the cochlea that serves to compensate the pressure within the fluid.}
  \label{lizardheadcrosssection}
 \end{figure}
 
 \section{Pressure Difference Receiving Ears}
+
+\subsubsection*{}
+Our study will take place in two main steps. In Chapter \ref{modelchapter} we will
+present our model for the mechanical processing of auditory signals in systems with internally coupled ears - the ICE Model.
+Since our focus is on an analytical model, we would like to have a system that reduces to tractable mathematical expressions
+so that we can clearly see the dependence of the system's behaviour on its parameters. To this end we will model the 
+combination of the eustachian tubes, middle ear cavity and pharynx as a single continuous cylindrically shaped air cavity; see
+Sec. \ref{subsecinnercavity}. The ears will be modelled as linear elastic membranes that are circular with an omitted sector
+of angle (2$\beta$) which corresponds to the extracolumella - the extension of the columella that is in contact with the ear. The
+sound inputs to both the ears will be modelled as pressure waves of a given frequency with a phase difference that depends on the 
+head size.

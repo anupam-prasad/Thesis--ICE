@@ -1,4 +1,4 @@
-\chapter{The ICE Model}
+\chapter{The ICE Model}\label{modelchapter}
 Several terrestrial vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
 that of mammals: their tympanic membranes are coupled through large eustachian tubes and a large mouth cavity resulting in the influence of the vibrations of one tympanic membrane
 on those of the other. This is illustrated in \ref{geckohead}. The typically small head sizes (compared to sound wavelength) of these animals result in
@@ -26,20 +26,21 @@ analytic solution.
 In order to make the system more analytically tractable we will, as before, study a geometry in which a pair of rigidly clamped
 linear elastic membranes are coupled through a cylindrical cavity. The cylindrical geometry allows an accurate calculation of the 
 pressure distribution inside the cavity at both low and high frequencies. By accounting for the presence of the asymetrically attached
-extracolumella, we will also explain the complex vibration patterns of the membrane. At the end of this chapter, we will
+extracolumella, we will also explain the complex vibration patterns of the membrane. We will conclude this chapter
+with a comparison of our model with previous methods that have used a electrical circuit analogy to model the system. At the end of this chapter, we will
 have the expressions that describe the steady-state vibrations of both eardrums as a function pressure amplitude, direction and frequency.
 
 \section{Description of the Model}\label{description}
 Before heading to a quantitative analysis of the ICE model, we will first need to list its basic components. 
-and justify their properties based on a realistic mouth cavity. 
-
+and justify their properties based on realistic anatomical properties of the vertebrates in question. Our emphasis is on an analytical treatment
+of the ICE model.
 In Sec. \ref{subsecinnercavity}, we will describe the cylindrical model for the mouth cavity and state the reasons
 for our choice of the geometry and the dimensions used. We will then proceed to describe the middle
 ear system and its main components of interest, the \textit{extracolumella} and the \textit{tympani}
 in Sec. \ref{middleear}. Finally, in Sec. \ref{soundinput} we will analyse the dependence of the acoustic input to both
 eardrums on the direction of the sound source, head size and shape. 
 \subsection{Mouth Cavity}\label{subsecinnercavity}
-In the earlier treatment of the ICE model, the mouth canal is modelled as a simple cylinder closed at 
+In the earlier treatment of the ICE model, the mouth cavity is modelled as a simple cylinder closed at 
 both ends by rigidly clamped (baffled) circular membranes; these model the tympanic membranes. As shown 
 by Vossen in \cite[p.~21]{vossenthesis} and \cite{vossenjasa}, the length of the cylinder was chosen to be equal to the interaural distance and the radius of the model tympanum is
 determined from the typical area of the realistic tympanum. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
@@ -47,9 +48,8 @@ distribution inside the cavity is easy to calculate. The pressure distribution i
 with increasing frequency and a cylindrical cavity simplifies its calculation. 
 
 On the other hand, in this description the small area of the tympani results in a cavity volume which 
-is an order of magnitude smaller than that of the realistic mouth-cavity in the corresponding animal. In general, a smaller volume results in a stronger coupling - both in terms of an increased iTD and an increased
-iLD. For this reason, the earlier model overestimates the iTDs and iLDs at
-low and high frequencies respectively.
+is an order of magnitude smaller than that of the realistic mouth-cavity in the corresponding animal. In general, a smaller volume results in a stronger coupling between
+the tympani. The exact nature of this coupling will be discussed in the next chapter when we perform a thorough evaluation of the complete system.
 
 In order to get around this problem we make some slight modifications to the model. Essentially, we maintain the cylindrical shape of the internal 
 cavity but require it to have a volume which is equal to that of the realistic cavity ($V_{cav}$). We also maintain the same tympanum size and interaural distance
@@ -75,7 +75,7 @@ and can therefore calculate the radius of the cylinder as,
   \caption[Previous and current ICE model representations]{The bold arrows represent the direction conventions
   along the cylinder's axis. The new model is represented by a cylinder of radius $a_{cyl}$ and length $L$ closed
   at both ends by sectoral membrane of radius $a_{tymp}$.
-  The darkly shaded region corresponds to the extracolumella (described in Sec. \ref{middleear}).}
+  The darkly shaded region corresponds to the extracolumella; see Sec. \ref{middleear}.}
 \end{center}
 \end{figure}
 where $a_{cyl}$ is the cylinder radius and $L$ is the interaural distance. Simply put, the model consists of a cylindrical shell
@@ -98,7 +98,7 @@ The membrane-extracolumella-columella system functions
 as a second-order lever where the membrane - driven by the internal and external pressures - causes a displacement
 of the extension of the extracolumella (known as the inferior process). This motion is in turn transmitted 
 via the columella and columellar footplate to the inner ear (cochlea). The inner-ear translates this motion into
-electrochemical impulses which will be passed on to the brain via the auditory nerve. The columella-extracolumella system effectively
+electrochemical impulses which will be passed on to the brain via the auditory nerve; cf. Fig. \ref{lizardheadcrosssection}. The columella-extracolumella system effectively
 transmits the mechanical vibrations from the eardrums to the inner ear. 
 In the human middle-ear, the same function is
 performed by the bones \textit{malleus, incus} and \textit{stapes}, which are collectively known
@@ -191,32 +191,33 @@ In the earlier ICE model, the effect of diffraction on the phase difference was 
 is found directly from the phase difference $\Delta$ as shown in fig. \ref{fig:oldheadmodel}.
 As a result, the sound pressure inputs at both ears is given by,
 \begin{equation}\label{oldsoundinput}
-p_0=pe^{j\omega t} e^{-\Delta/2},\qquad p_L=pe^{j\omega t} e^{\Delta/2},\qquad \Delta=kL\sin\theta.
+p_0=pe^{j\omega t} e^{j\Delta/2},\qquad p_L=pe^{j\omega t} e^{-j\Delta/2},\qquad \Delta=kL\sin\theta.
 \end{equation}
 We note that in defining the input in this way, we've emphasized the symmetry of the system.
-The ear closer to the sound source is referred to as the \textit{ipsilateral} ear and
-is denoted by a subscript $0$ and the one further away from the source is referred to as the \textit{contralateral} ear and is denoted by a subscript $L$. 
-Subsequently, unless otherwise specified, the subscripts $0$ and $L$ will correspond to the ipsi- and contralateral ears respectively.
-\begin{figure}[ht]
+The ear closer to the sound source is referred to as the \textit{ipsilateral} ear the one further away from the source is referred to as the \textit{contralateral} ear. 
+The terms ipsi- and contralateral also refer to the stimuli meaning ``the response of the ipsilateral ear'' is equivalent to ``the response of the ear
+to ipsilateral stimulus''.
+\begin{figure}[h]
  %\centering
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodelold.png}
- \caption[Previous acoustic head model for geckos]{The previous acoustic head model for geckos. The extra distance travelled by the sound wave to reach the contralateral ear 
- is denoted by $\Delta$.}
+ \caption[Previous acoustic head model for geckos]{The previous acoustic head model for geckos. Depending on the angle of the sound source $\theta$,
+ the distance between the sound source and the contralateral ear is longer than its distance from the ipsilateral ear. The extra distance travelled by the sound wave to reach the contralateral ear 
+ is $L\sin\theta$ which gives rise to a phase difference $\Delta=kL\sin\theta$. However, this model neglects the increased phase difference due to diffraction effects which can be significant.}
  \label{fig:oldheadmodel}
 \end{figure}
 We have also chosen a coordinate
 system relative to the \textit{median-sagittal} plane or the head midline of the animal and $\theta$ gives the angle of incidence of this
 sound wave relative to this plane. For more complex auditory systems we would require two angles $(\theta, \phi)$ to describe
 the three-dimensional system but in our analysis this is unnecessary. For the animals we are concerned with, i.e. geckos, the natural
-predators and prey are usually present on the same plane as the animal and our assumption is therefore reasonable.
-
+predators and prey are usually present on the same plane as the animal and our assumption is therefore reasonable. According our convention,
+$\theta=0^\circ$ corresponds to objects directly in front of the animal and $\theta=\pm180^\circ$ to objects directly behind.
 \begin{figure}[ht]
  %\centering
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodel2.png}
  \caption[New acoustic head model for geckos]{The acoustic head model for geckos. The rectangular outline 
- is the internal cavity. As before, the extra distance travelled by the sound wave to reach the contralateral ear is given by 
- $\Delta$. In this case, however, we have accounted for the influence of diffraction around the head on the phase difference between the inputs
- to both ears.}
+ is the internal cavity. As before, the sound wave has to travel an extra distance to reach the contralateral ear. 
+ In this case we have accounted for the influence of diffraction around the head on the phase difference between the inputs
+ to both ears resulting in an increased phase difference $\Delta_{new}=1.5\Delta$.}
  \label{newheadmodel}
 \end{figure}
 In our model we model the head as a sphere with a diameter equal to the interaural separation. As a result the sound has to travel around the 
@@ -257,7 +258,7 @@ $\omega$ & Angular frequency of the incoming sound wave.\\
 $k$ & Wavenumber $k=\omega/c$ with $c=343$m/s being the speed of sound.\\
 $p$ & Pressure amplitude of the incoming sound wave.\\
 $\Delta$ & Phase difference between the sound wave reaching the contra- and ipsilateral ear.\\
-$p_{0/L}$ & Sound pressure on the ipsi- ($x=0$) and contralateral ($x=L$) ears respectively.\\
+$p_{0/L}$ & Sound pressure on the ($x=0$) and ($x=L$) tympani respectively.\\
 %& \\
 $(x,r,\phi)$ & Cylindrical polar coordinates with $x$ being the axial direction.\\
 $L$ & Interaural separation and length of cylinder.\\
@@ -265,7 +266,7 @@ $a_{cyl}$ & Radius of cylinder.\\
 $a_{tymp}$ & Radius of tympanum.\\
 $\beta<\phi<2\pi-\beta$ & Extent of the vibrating part of the membrane. The rest of the circle corresponds to
 the extracolumellar footplate.\\
-$V_0$ & Volume of the cavity.\\
+$V_{cav}$ & Volume of the cavity.\\
 \hline
 \end {tabular}\par
 \bigskip
@@ -296,6 +297,7 @@ $\omega_{mn}$ & Eigenfrequency of the above eigenmodes.\\
 $Q$ & Quality factor of the membrane.\\
 $\Psi(r,\phi;t)$ & Driving pressure on the membrane.\\
 $u_{0/L}(r,\phi;t)$ & Membrane displacement function.\\
+$C^{0/L}_{mn}$ & Membrane vibration expansion coefficients.\\
 $S^{0/L}(t)$ & Total membrane displacement.\\
 &\\
 $G_{ipsi}(r,\phi)$ & Ipsilateral filter.\\
@@ -530,10 +532,11 @@ combination of the eigenmodes given in \eqref{circularmembranedampedeigen}. Ther
 The complete solution is given by $u=u_t+u_{ss}$ and the coefficients $M_{mn}$ and $N_{mn}$ are determined by the initial conditions (at $t=0$).
 
 \vspace{\baselineskip}
-\textbf{Steady State Approximation}: The damping coefficient $\alpha$ is usually given in terms of the membrane fundamental frequency and a quality factor $Q$ as $\alpha=\omega_{01}/2Q$. For the tympani
-we will be concerned with we have $Q\sim 1.2$ which results in damping coefficients that are around $4000s^{-1} $ for the larger lizards and around $8000s^{-1}$ for the smaller ones. 
-Due to this and the exponential decay of the transient vibration amplitude, we can safely assume that within a few time-periods the steady-state vibrations dominate the solution of the
-forced membrane. For this reason, we will subsequently confine our discussion to only the steady state vibrations of the membrane.
+\textbf{Steady State Approximation}: The damping coefficient $\alpha$ is usually given in terms of the membrane fundamental frequency and a quality factor $Q$ as $\alpha=\omega_{01}/2Q$. 
+The tympani we will be concerned with are generally underdamped to critically damped i.e. $Q\geq .5$ which results in damping coefficients that are around $2400s^{-1} $ for the larger lizards and around $7700s^{-1}$ for the smaller ones
+(the exact parameter values will be discussed in the next chapter). 
+Due to this and the exponential decay of the transient vibration amplitude, we can safely assume that within a few time-periods the transient vibrations
+forced membrane will be negligible. For this reason, we will subsequently confine our discussion to only the steady state vibrations of the membrane.
 \subsubsection{Sectoral Membrane}
 The eigenmodes of the sectoral membrane proceeds from \eqref{membraneeigen} onwards. We now have a new set of boundary conditions in $\phi$.
 The extracolumella is modelled as a triangular plate of infinite mass which constrains the membrane displacement to go to zero at $phi=\beta$
@@ -562,7 +565,7 @@ The vibrations of the membranes is given by,
 \begin{equation}\label{coupledmembraneseries}
  u_{0/L}(r,\phi;t)=\displaystyle\sum^{\infty}_{m=0}\sum^{\infty}_{n=1}\Omega_{mn}C^{0/L}_{mn}u_{mn}(r,\phi)e^{j\omega t}=p_{0/L}e^{j\omega t}-p(0/L,r,\phi;t)
 \end{equation}
-where $0$ and $L$ denote the ipsi- and contra-lateral membranes respectively and the cavity pressure distribution, $p(x,r,\phi;t)$,  is given by \eqref{pressuregeneral1}.
+where $0$ and $L$ denote the $x=0$ and $x=L$ membranes respectively and the cavity pressure distribution, $p(x,r,\phi;t)$,  is given by \eqref{pressuregeneral1}.
 The above equation is only valid on the membrane surface i.e., for $r<a_{tymp}$ and $\beta<\phi<2\pi-\beta$.
 
 As discussed in \ref{pressureboundaryconditions}, the internal cavity pressure satisfies the no-penetration condition at solid boundaries.
@@ -673,8 +676,8 @@ for the total membrane displacements.
 \end{equation}
 where we've defined the following quantities,
 \begin{align}
- \Gamma_+ = -\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\nonumber
-,\qquad\frac{1}{\Lambda}=\frac{1}{\pi a^2_{cyl}}\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{\left(\int dS u_{mn}\right)^2}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
+ \Gamma_+ = &-\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\label{gamfirstdef}\\
+&\frac{1}{\Lambda}=\frac{1}{\pi a^2_{cyl}}\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{\left(\int dS u_{mn}\right)^2}{\Omega_{mn}\int dS u^2_{mn}}\label{lamfirstdef}
 \end{align}
 We can finally write the membrane displacement as a function of the pressure inputs in the form
 \begin{align}
@@ -682,7 +685,7 @@ We can finally write the membrane displacement as a function of the pressure inp
  u_L(r,\phi;t)&=G_{contra}(r,\phi)p_0+G_{ipsi}(r,\phi)p_L\label{contramembranefull}
 \end{align}
 with the ipsilateral filter,
-\begin{equation}
+\begin{equation}\label{filterdefs1}
  G_{ipsi}=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)\displaystyle\sum^\infty_{n=1}\frac{\Lambda K_{mn}}{2}u_{mn}(r,\phi;t)
 \end{equation}
 and the contralateral filter,
@@ -695,9 +698,11 @@ and \eqref{contramembranefull} giving us a new set of ipsi- and contralateral fi
  G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{ipsimembranetotal}\\
  G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{contramembranetotal}
 \end{align}
-The ipsilateral filter effectively gives us the response of the ipsilateral membrane when the contralateral membrane
-is blocked. Similarly, the contralateral filter gives us its response when there is no ipsilateral stimulus. These filters
-will play an important role in the evaluation of the model in the next chapter.
+The ipsilateral filter effectively gives us the response of the membrane to a purely ipsilateral stimulus or equivalently when the contralateral membrane
+is blocked. Similarly, the contralateral filter gives us its response when the ipsilateral membrane is blocked. These filters
+will play an important role in the evaluation of the model in the next chapter. Before we move on it is important to note that since $\Lambda$ is an infinite series,
+in numerical analyses it has to be approximated by choosing an appropriate membrane mode cutoff. The choice of this
+cutoff depends on parameters specific to the animal; cf. Sec. \ref{parameterestimation}.
 
 \subsection{Circuit Model}
 Before we conclude this chapter, we will discuss the previous methods used to model ears coupled through
@@ -714,7 +719,7 @@ The low frequency circuit analog for the ICE model is illustrated in Fig. \ref{l
 using the following formulae,
 \begin{align}
  &R_T=\frac{\omega_TL_T}{Q},\qquad L_T=\frac{\rho_Md}{\pi a_{tymp}^2},\qquad C_T=\frac{1}{\omega^2_TL_T}\\
- &R_V=0,\qquad L_V=0,\qquad C_V=\frac{V_0}{\rho c^2}
+ &R_V=0,\qquad L_V=0,\qquad C_V=\frac{V_{cav}}{\rho c^2}
 \end{align}
 where $R,\ L\mbox{ and }C$ are the resistance, impedance and capacitance of the quantities respectively with the total impedance
 given by $Z=R+j\omega L+1/j\omega C$. $\omega_T$ is the first eigenfrequency of the membrane.
