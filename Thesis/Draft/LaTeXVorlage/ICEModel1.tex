@@ -199,7 +199,7 @@ We note that in defining the input in this way, we've emphasized the symmetry of
 The ear closer to the sound source is referred to as the \textit{ipsilateral} ear the one further away from the source is referred to as the \textit{contralateral} ear. 
 The terms ipsi- and contralateral also refer to the stimuli meaning ``the response of the ipsilateral ear'' is equivalent to ``the response of the ear
 to ipsilateral stimulus''.
-\begin{figure}[h]
+\begin{figure}[ht]
  %\centering
  \includegraphics[width=.75\linewidth]{Diagrams/acousticheadmodelold.png}
  \caption[Previous acoustic head model for geckos]{The previous acoustic head model for geckos. Depending on the angle of the sound source $\theta$,
@@ -704,7 +704,9 @@ The ipsilateral filter effectively gives us the response of the membrane to a pu
 is blocked. Similarly, the contralateral filter gives us its response when the ipsilateral membrane is blocked. These filters
 will play an important role in the evaluation of the model in the next chapter. Before we move on it is important to note that since $\Lambda$ is an infinite series,
 in numerical analyses it has to be approximated by choosing an appropriate membrane mode cutoff. The choice of this
-cutoff depends on parameters specific to the animal; cf. Sec. \ref{parameterestimation}.
+cutoff depends on parameters specific to the animal; cf. Sec. \ref{parameterestimation}. The basic method involves arranging the modes in increasing order of eigenfrequency
+(or equivalently $\mu_{mn}$). As a result, we can express the summation over a single index. In general, for the frequency ranges of the animals
+we are concerned with, we will not need to calcualate the summation beyond the the first $20$ eigenmodes.
 
 \subsection{Circuit Model}
 Before we conclude this chapter, we will discuss the previous methods used to model ears coupled through
