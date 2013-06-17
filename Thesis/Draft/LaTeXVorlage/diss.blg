@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: diss.aux
 A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: Introduction.aux
@@ -11,44 +10,44 @@ A level-1 auxiliary file: bibliographie.aux
 The style file: ieeetr.bst
 A level-1 auxiliary file: danksagung.aux
 Database file #1: literatur.bib
-You've used 19 entries,
+You've used 21 entries,
             1876 wiz_defined-function locations,
-            602 strings with 6291 characters,
-and the built_in function-call counts, 4888 in all, are:
-= -- 524
-> -- 128
+            617 strings with 6610 characters,
+and the built_in function-call counts, 5589 in all, are:
+= -- 600
+> -- 150
 < -- 0
-+ -- 52
-- -- 33
-* -- 296
-:= -- 659
-add.period$ -- 27
-call.type$ -- 19
-change.case$ -- 11
++ -- 60
+- -- 39
+* -- 347
+:= -- 751
+add.period$ -- 29
+call.type$ -- 21
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 268
-empty$ -- 482
-format.name$ -- 33
-if$ -- 1240
+cite$ -- 21
+duplicate$ -- 303
+empty$ -- 542
+format.name$ -- 39
+if$ -- 1415
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 25
-newline$ -- 68
-num.names$ -- 19
-pop$ -- 58
+int.to.str$ -- 21
+missing$ -- 27
+newline$ -- 74
+num.names$ -- 21
+pop$ -- 60
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 191
+skip$ -- 224
 stack$ -- 0
-substring$ -- 339
-swap$ -- 121
+substring$ -- 404
+swap$ -- 141
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 44
-width$ -- 21
-write$ -- 191
+while$ -- 51
+width$ -- 23
+write$ -- 212

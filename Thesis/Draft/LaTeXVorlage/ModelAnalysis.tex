@@ -210,14 +210,30 @@ In order to effectively function as cues for localization the iLDs and iTDs shou
 \begin{itemize}
  \item They should increase with the adjacency of the sound source and should reach their maximum at $\theta=90^\circ$ and
  their minimum at $\theta=-90^\circ$.
- \item They should go to zero at $\theta=0^\circ and \theta=\pm 180^\circ$ meaning they should vanish when the object is directly
- in front of and behind the animal.
  \item The iTD in particular should remain more or less constant for a given frequency range thereby mirroring the behaviour
  of the ITD. This is advantageous from the point of view of neuronal processing.
+  \item They should go to zero at $\theta=0^\circ \mbox{ and } \theta=\pm 180^\circ$ meaning they should vanish when the object is directly
+ in front of and behind the animal.
 \end{itemize}
 The last of these requirements is ensured by the symmetry of our system as $p_0=p_L$ at $\theta=0^\circ \mbox{ and } \pm 180^\circ$ .
-The first and second, on the other hand, aren't always satisfied but we will see with our choice of parameters they will be to
-a great degree.
+The first and second, on the other hand are more subtle aren't necessarily satisfied for all systems but we will subsequently see, with our choice of
+parameters they will be to a great degree. In Fig. \ref{hemidactylusilDboth} (house gecko) and Fig. \ref{tokayilDboth}, we plot the
+variation of the iLD with direction and frequency. The conventions for the $x-$ and $y$-axes remain the same as the ones in Figures \ref{hemidactylusvibampfull}
+and \ref{tokayvibampfull}.
+\begin{figure}[ht!]
+ \centering
+ \includegraphics[width=1.0\linewidth]{Diagrams/Plots/iLD/hemidactylusiLDboth.png}
+ \caption[ILD plots for the common house gecko]{Calculated (left) and experimental (right) Internal Level Difference of tympanic membrane vibrations for the common house gecko
+ in dB. $x$-axis denotes direction in degrees and the $y$-axis frequency in kHz. The experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley2}.}
+  \label{hemidactylusilDboth}
+\end{figure}
+\begin{figure}[ht!]
+ \centering
+ \includegraphics[width=1.0\linewidth]{Diagrams/Plots/iLD/tokayiLDboth.png}
+ \caption[ILD plots for the Tokay gecko]{Calculated (left) and experimental (right) Internal Level Difference of tympanic membrane vibrations for the Tokay gecko
+ in dB. The experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley1}.}
+  \label{tokayilDboth}
+\end{figure}
 % \subsubsection{Transmission Gain}
 % 
 % \subsubsection{Internal Time Difference}
@@ -225,6 +241,7 @@ a great degree.
 % \subsubsection{Internal Level Difference}
 
 \subsection{Parameter Estimation}\label{parameterestimation}
+Upto this point we have calculated the desired quantities in our model by using the values given in Table \ref{parametertable}.
 Some of the parameters can be directly taken from their measured values whereas
 the rest will need to be estimated indirectly. 
 For the head width/interaural distance ($L$), cavity volume ($V_{cav}$), the density of the membrane ($\rho_m$)\footnote{A caveat: The density given in common models for the tympanum

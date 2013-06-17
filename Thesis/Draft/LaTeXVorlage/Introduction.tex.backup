@@ -41,6 +41,11 @@ animals although interesting, are beyond the scope of this thesis.
 Ancestors of most modern vertebrates including frogs, turtles, lizards, birds, crocodilians and mammals
 developed a pair of tympani (thin vibrating membranes) to detect incoming sound waves and transmit
 them from the air to the ossicles in the middle ear; cf. Fig. \ref{vertebrateearevolution}. 
+Despite the large variation in size and shape, two groups with fundamentally distinct constructions can be
+made out. Mammals posses tympani that are effectively separated from and therefore acoustically 
+independent of each other. In contrast, the other group consisting of reptiles (lizards, turtles, crocodiles), birds and frogs
+have \text{Internally Coupled Ears} (for reviews see \cite{carrsoares}, \cite{dalsgaardcarr} and \cite{schnuppcarr}) wherein
+the tympani are connected through large Eustachian tubes as illustrated in \ref{lizardheadcrosssection}.
 \begin{figure}
  %\centering
  \includegraphics[width=1.0\linewidth]{Diagrams/vertebrateearevolution.png}
@@ -71,4 +76,17 @@ present our model for the mechanical processing of auditory signals in systems w
 Since our focus is on an analytical model, we would like to have a system that reduces to tractable mathematical expressions
 so that we can clearly see the dependence of the system's behaviour on its parameters. To this end we will model the 
 combination of the eustachian tubes, middle ear cavity and pharynx as a single continuous cylindrically shaped air cavity; see
-Sec. \ref{subsecinnercavity}. The
+Sec. \ref{subsecinnercavity}. The ears will be modelled as linear elastic membranes that are circular with an omitted sector
+that corresponds to the extracolumella - the extension of the columella that is in contact with the ear. The
+sound inputs to both the ears will be modelled as pressure waves of a given frequency with a phase difference that depends on the 
+head size. The aim of the chapter is to find expressions for the quantities which give us the directional output of the system.
+
+In Chapter \ref{modelanalysis} will evaluate the validity of our model
+by comparing the calculated values of the membrane vibration velocity with experimentally determined quantities; 
+see \ref{vibvelocity}. In addition to testing the directional frequency
+response of the system we will also define quantities that could serve as directional cues. These two quantities are known
+as the iTD (Internal Time Difference) which measures the delay between the membrane vibrations and the iAD (Internal Amplitude
+Difference) which measures the difference in their vibration amplitudes; Sec. \ref{hearingcuessection}. Due to the difficulty of measurement of certain membrane
+properties (e.g. fundamental frequency, damping coefficients), in Sec. \ref{parameterestimation} we will also provide means of estimating these quantities from observations.
+In the final section of this chapter, Sec. \ref{vibrationpatternchapter}, we will compare the vibration profile of our model tympanum with that of a realistic tympanum and thereby
+seek to explain the complex patterns of the observed.

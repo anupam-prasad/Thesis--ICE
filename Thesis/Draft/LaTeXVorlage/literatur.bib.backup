@@ -25,29 +25,303 @@
     page      = {313 }
 }
 
-@Article{Autor1:02,
-  author    = { Vorname Nachname   },
-  title     = { Titel des Artikels },
-  journal   = { Journalname        },
-  year      = { 2002               },
-  volume    = { 74                 },
-  pages     = { 241--248           }
+@Book{fletcheracoustic,
+    author    = { Neville H. Fletcher },
+    title     = { Acoustic Systems in Biology },
+    publisher = { Oxford University Press },
+    address   = { Oxford                  },
+    year      = { 1992                      },
 }
 
-@Unpublished{Autor2:01,
-  author      = { Vorname1 Nachname1 and Vorname2 Nachname2 },
-  title       = { Titel des Artikels                        },
-  note        = { erscheint in Journalname                  },
-  year        = { 2001                                      }
+@book{rschevkinsound,
+  title={A Course OF Lectures On Sound.},
+  author={Rschevkin, S.N. and Blunn, O.M. and Doak, P.E.},
+  url={http://books.google.de/books?id=Wnt5mwEACAAJ},
+  year={1963},
+  publisher={Pergamon}
 }
 
-@Book{Autor3:74,
-    author    = { Rainer Unsinn and Axel Schweiss and Vladimir Klitschko},
-    title     = { Ein eleganter Titel        },
-    publisher = { Princeton University Press },
-    address   = { Princeton                  },
-    year      = { 1974                       }
+@book{temkinelements,
+  title={Elements of Acoustics},
+  author={Temkin, S.},
+  isbn={9780471059905},
+  lccn={80024416},
+  url={http://books.google.de/books?id=2Zm7AAAAIAAJ},
+  year={1981},
+  publisher={Wiley}
 }
 
+@book{asmar2005partial,
+  title={Partial Differential Equations with Fourier Series and Boundary Value Problems},
+  author={Asmar, N.H.},
+  isbn={9780132449007},
+  lccn={2004045369},
+  url={http://books.google.de/books?id=COqERAAACAAJ},
+  year={2005},
+  publisher={Pearson Education, Limited}
+}
+
+
+@Article{autrumjcomphys,
+  author    = { Hansjochem Autrum  },
+  title     = {  \"{U}ber Laut\"{a}u\ss{}erungen und Schallwahrnehmung bei Anthropoden II. },
+  journal   = { Journal of Comparative Physiology},
+  year      = { 1940               },
+  volume    = { 28                 },
+  pages     = { 326--352  }
+}
+
+@Article{vossenjasa,
+  author    = { Christine Vo\ss{}en and Jakob Christensen-Dalsgaard and J. Leo van Hemmen   },
+  title     = { Analytical Model of Internally Coupled Ears. },
+  journal   = { Journal of the Acoustical Society of America },
+  year      = { 2010               },
+  volume    = { 128                 },
+  issue	    = {2	},
+  pages     = { 909--918  }
+}
+
+@article{manleygecko1,
+year={1972},
+issue={0340-7594},
+title={The middle ear of the Tokay gecko},
+journal={Journal of Comparative Physiology},
+volume={81},
+number={3},
+doi={10.1007/BF00693629},
+url={http://dx.doi.org/10.1007/BF00693629},
+publisher={Springer-Verlag},
+author={Manley, Geoffrey A.},
+pages={239-250},
+language={English}
+}
+
+@article{manleygecko2,
+year={1972},
+issn={0340-7594},
+journal={Journal of comparative physiology},
+volume={81},
+number={3},
+doi={10.1007/BF00693630},
+title={Frequency response of the middle ear of geckos},
+url={http://dx.doi.org/10.1007/BF00693630},
+publisher={Springer-Verlag},
+author={Manley, GeoffreyA.},
+pages={251-258},
+language={English}
+}
+
+% 15767319 
+@Article{dalsgaardmanley1,
+   Author={Christensen-Dalsgaard, J.  and Manley, G. A.},
+   Title={{D}irectionality of the lizard ear},
+   Journal={J. Exp. Biol.},
+   Year={2005},
+   Volume={208},
+   Number={Pt 6},
+   Pages={1209--1217},
+   Month={Mar}
+}
+
+@article{dalsgaardmanley2,
+year={2008},
+issn={1525-3961},
+journal={Journal of the Association for Research in Otolaryngology},
+volume={9},
+number={4},
+doi={10.1007/s10162-008-0130-2},
+title={Acoustical Coupling of Lizard Eardrums},
+url={http://dx.doi.org/10.1007/s10162-008-0130-2},
+publisher={Springer-Verlag},
+keywords={lizard; tympanum; vibrometry; directional; hearing; reptile},
+author={Christensen-Dalsgaard, Jakob and Manley, GeoffreyA.},
+pages={407-416},
+language={English}
+}
+
+% 21325679 
+@Article{dalsgaardtangcarr,
+   Author={Christensen-Dalsgaard, J.  and Tang, Y.  and Carr, C. E. },
+   Title={Binaural processing by the gecko auditory periphery},
+   Journal={J. Neurophysiol.},
+   Year={2011},
+   Volume={105},
+   Number={5},
+   Pages={1992--2004},
+   Month={May}
+}
+
+@article{koepplcarr1,
+year={2008},
+issn={0340-1200},
+journal={Biological Cybernetics},
+volume={98},
+number={6},
+doi={10.1007/s00422-008-0220-6},
+title={Maps of interaural time difference in the chicken’s brainstem nucleus laminaris},
+url={http://dx.doi.org/10.1007/s00422-008-0220-6},
+publisher={Springer-Verlag},
+keywords={Auditory; Hearing; Sound localization; Sensory},
+author={K\"{o}ppl, Christine and Carr, CatherineE.},
+pages={541-559},
+language={English}
+}
+
+
+
+@ARTICLE{fletcheradiabaticassumption,
+   author = {Fletcher, Neville H.},
+    title = {Adiabatic Assumption for Wave Propagation},
+  journal = {American Journal of Physics},
+     year = {1974},
+    month = {June},
+   volume = {42},
+    pages = {487-489},
+      doi = {10.1119/1.1987757},
+   adsurl = {http://adsabs.harvard.edu/abs/1974AmJPh..42..487F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+  	
+@article{michelsenlarsen,
+  author={Axel Michelsen and Ole Næsbye Larsen},
+  title={Pressure difference receiving ears},
+  journal={Bioinspiration \& Biomimetics},
+  volume={3},
+  number={1},
+  pages={011001},
+  url={http://stacks.iop.org/1748-3190/3/i=1/a=011001},
+  year={2008},
+  abstract={Directional sound receivers are useful for locating sound sources, and they can also partly compensate for the signal degradations caused by noise and reverberations. Ears may become inherently directional if sound can reach both surfaces of the eardrum. Attempts to understand the physics of such pressure difference receiving ears have been hampered by lack of suitable experimental methods. In this review, we review the methods for collecting reliable data on the binaural directional cues at the eardrums, on how the eardrum vibrations depend on the direction of sound incidence, and on how sound waves behave in the air spaces leading to the interior surfaces of eardrums. A linear mathematical model with well-defined inputs is used for exploring how the directionality varies with the binaural directional cues and the amplitude and phase gain of the sound pathway to the inner surface of the eardrum. The mere existence of sound transmission to the inner surface does not ensure a useful directional 
+hearing, since a proper amplitude and phase relationship must exist between the sounds acting on the two surfaces of the eardrum. The gain of the sound pathway must match the amplitude and phase of the sounds at the outer surfaces of the eardrums, which are determined by diffraction and by the arrival time of the sound, that is by the size and shape of the animal and by the frequency of sound. Many users of hearing aids do not obtain a satisfactory improvement of their ability to localize sound sources. We suggest that some of the mechanisms of directional hearing evolved in Nature may serve as inspiration for technical improvements.}
+}
+
+@article{dudamartens,
+	title	=	{Range Dependence of the Response of a Spherical Head Model},
+	journal	=	{Journal of Acoustical Society of America},
+	author	=	{Richard O Duda AND W.L. Martens },
+	year	=	{1998},
+	pages	=	{3048--3058},
+	volume	=	{104},
+	number	=	{5},
+	eventtime	=	{November 1998},
+	abstract	=	{This paper examines the range dependence of the HRTF for a simple spherical model of the head in both the time-domain and the frequency domain. The variation of low-frequency ILD with range is shown to be significant for ranges smaller than five times the sphere radius. The impulse response explains the source of the ripples in the frequency response, and provides direct evidence that the Interaural Time Delay (ITD) is not a strong function of range. Time-delay measurements confirm the Woodworth/Schlosberg formula. Numerical analysis indicates that the HRTF is minimum phase. Thus, except for time delay, the impulse response can be reconstructed from a simple principle components analysis of the magnitude response.},
+} 
+
+
+@article{rayleigh1,
+     jstor_articletype = {research-article},
+     title = {On the Acoustic Shadow of a Sphere. With an Appendix, Giving the Values of Legendre's Functions from P0 to P20 at Intervals of 5 Degrees},
+     author = {Rayleigh, Lord and Lodge, A.},
+     journal = {Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character},
+     jstor_issuetitle = {},
+     volume = {203},
+     number = {},
+     jstor_formatteddate = {1904},
+     pages = {pp. 87-110},
+     url = {http://www.jstor.org/stable/90858},
+     ISSN = {02643952},
+     abstract = {},
+     language = {English},
+     year = {1904},
+     publisher = {The Royal Society},
+     copyright = {Copyright © 1904 The Royal Society},
+    }
+    
+    
+@book{rayleigh2,
+  title={Theory of Sound: V. 1},
+  author = {Rayleigh, Lord},
+  number={},
+  isbn={9780486602929},
+  url={http://books.google.de/books?id=hRqJXwAACAAJ},
+  year={1900},
+  publisher={Dover Publications.}
+}
+
+@article{michelsenrohrseitz,
+    author = {Michelsen, Axel and Rohrseitz, Kristin},
+    citeulike-article-id = {8377143},
+    journal = {Journal of Experimental Biology},
+    keywords = {biguttulusgrasshopperhearinglocustschistocerce, chortippus, gregariasound, localization},
+    location = {hardcopy},
+    pages = {1817--1827},
+    posted-at = {2010-12-07 16:39:10},
+    priority = {2},
+    title = {{Directional sound processing and interaural sound transmission in a small and a large grasshopper}},
+    volume = {198},
+    year = {1995}
+}
+
+@book{weverreptileear,
+  author = {Wever, Ernest Glen},
+  title={The reptile ear},
+  url={http://books.google.de/books?id=HM5OAQAAIAAJ},
+  year={1978}
+}
+
+@article{schnuppcarr,
+    author = {Schnupp, Jan W. and Carr, Catherine E.},
+    citeulike-article-id = {4644451},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1038/nn.2325},
+    citeulike-linkout-1 = {http://dx.doi.org/10.1038/nn.2325},
+    doi = {10.1038/nn.2325},
+    journal = {Nature Neuroscience},
+    keywords = {auditory, coding, evolution, orientation, spatial},
+    month = jun,
+    number = {6},
+    pages = {692--697},
+    pdf = {schnupp\_09\_hearing.pdf},
+    posted-at = {2009-05-27 13:19:51},
+    priority = {2},
+    publisher = {Nature Publishing Group},
+    title = {{On hearing with more than one ear: lessons from evolution}},
+    url = {http://dx.doi.org/10.1038/nn.2325},
+    volume = {12},
+    year = {2009}
+}
+
+@article{jorgensenschmitz,
+year={1991},
+issn={0340-7594},
+journal={Journal of Comparative Physiology A},
+volume={168},
+number={2},
+doi={10.1007/BF00218414},
+title={Biophysics of directional hearing in the frog Eleutherodactylus coqui},
+url={http://dx.doi.org/10.1007/BF00218414},
+publisher={Springer-Verlag},
+keywords={Eleutherodactylus coqui; Directional hearing; Eardrum vibrations; Auditory periphery; Frequency response},
+author={J\o{}rgensen, MortenBuhl and Schmitz, Barbara and Christensen-Dalsgaard, Jakob},
+pages={223-232},
+language={English}
+}
+% 19553438 
+% 19553438
+@Article{carrsoares,
+   Author={Carr, C. E.  and Soares, D.  and Smolders, J.  and Simon, J. Z. }
+   Title={{{D}etection of interaural time differences in the alligator}}
+   Journal={J. Neurosci.}
+   Year={2009}
+   Volume={29}
+   Number={25}
+   Pages={7978--7990}
+   Month={Jun}
+}
+
+
+@article{christensen-dalsgaard2008evo,
+title={Evolution of a sensory novelty: tympanic ears and the associated neural processing.},
+author={Christensen-Dalsgaard, J. and Carr, C.E.},
+journal={Brain Res Bull},
+volume={75},
+number={2-4},
+pages={365-70},
+year={2008},
+abstract={Tympanic hearing is a true evolutionary novelty that appears to have developed independently in at least five major tetrapod groups-the anurans, turtles, lepidosaurs, archosaurs and mammals. The emergence of a tympanic ear would have increased the frequency range and sensitivity of hearing. Furthermore, tympana were acoustically coupled through the mouth cavity and therefore inherently directional in a certain frequency range, acting as pressure difference receivers. In some lizard species, this acoustical coupling generates a 50-fold directional difference, usually at relatively high frequencies (2-4kHz). In ancestral atympanate tetrapods, we hypothesize that low-frequency sound may have been processed by non-tympanic mechanisms like those in extant amphibians. The subsequent emergence of tympanic hearing would have led to changes in the central auditory processing of both high-frequency sound and directional hearing. These changes should reflect the independent origin of the tympanic ears in the major tetrapod groups. The processing of low-frequency sound, however, may have been more conserved, since the acoustical coupling of the ancestral tympanate ear probably produced little sensitivity and directionality at low frequencies. Therefore, tetrapod auditory processing may originally have been organized into low- and high-frequency streams, where only the high-frequency processing was mediated by tympanic input. The closure of the middle ear cavity in mammals and some birds is a derived condition, and may have profoundly changed the operation of the ear by decoupling the tympana, improving the low-frequency response of the tympanum, and leading to a requirement for additional neural computation of directionality in the central nervous system. We propose that these specializations transformed the low- and high-frequency streams into time and intensity pathways, respectively. }
+}
+ 
+~   
 
 
