@@ -364,4 +364,36 @@ url = {http://link.aip.org/link/?JAS/17/192/1},
 doi = {10.1121/1.1916315}
 }
 
+@article{roberthoy,
+year={1996},
+issn={0340-7594},
+journal={Journal of Comparative Physiology A},
+volume={179},
+number={1},
+doi={10.1007/BF00193432},
+title={Directional hearing by mechanical coupling in the parasitoid fly Ormia ochracea},
+url={http://dx.doi.org/10.1007/BF00193432},
+publisher={Springer-Verlag},
+keywords={Insect bioacoustics; Sound localization; Tympanal ear; Laser vibrometry; Ormia ochracea},
+author={Robert, D. and Miles, R.N. and Hoy, R.R.},
+pages={29-44},
+language={English}
+}
+
+@incollection{michelsenbiophysics,
+year={1998},
+isbn={978-1-4612-6828-4},
+booktitle={Comparative Hearing: Insects},
+volume={10},
+series={Springer Handbook of Auditory Research},
+editor={Hoy, RonaldR. and Popper, ArthurN. and Fay, RichardR.},
+doi={10.1007/978-1-4612-0585-2_2},
+title={Biophysics of Sound Localization in Insects},
+url={http://dx.doi.org/10.1007/978-1-4612-0585-2_2},
+publisher={Springer New York},
+author={Michelsen, Axel},
+pages={18-62},
+language={English}
+}
+
 

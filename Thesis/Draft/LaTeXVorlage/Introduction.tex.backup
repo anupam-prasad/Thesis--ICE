@@ -32,8 +32,8 @@ processes that take into account inputs from all available sensory systems.
 
 The primary focus of this thesis is the mechanical processing that is responsible for the
 sound localization ability of certain terrestrial vertebrates. Specifically, we are interested
-in the analytical treatment of hearing in animals that have their eardrums connected through a large mouth cavity and the emergence of
- directionality in the response of such systems. Although our model can be scaled to several different species,
+in the analytical treatment of hearing in animals that have their eardrums connected through a large mouth cavity and the
+ enhancement of directionality in the response of such systems;see Sec. \ref{iceintrosection}. Although our model can be scaled to several different species,
  for the purposes of a thorough comparison, we will be putting a special emphasis on lizard hearing. The questions posed by the neuronal processing of auditory stimuli in these
 animals although interesting, are beyond the scope of this thesis.
 
@@ -61,7 +61,7 @@ tympanic ears.
 
 \begin{figure}[ht!]
  \centering
- \includegraphics[width=0.4\linewidth]{Diagrams/lizardheadcrosssection.jpeg}
+ \includegraphics[width=0.45\linewidth]{Diagrams/lizardheadcrosssection.jpeg}
  \caption[Cross Section of a Lizards Head]{Diagram of the cross-section of a lizard’s head (\emph{sceloporus}). The Tympanic Membranes (TM) as well as
  the air inside the Middle Ear Cavity (MEC) and Eustachian Tubes (ET) are excited by incoming sound waves. Due to the considerable width of the Eustachian Tubes (ET), the air inside the Pharynx (P) is excited as well.
  The vibration of the tympanum causes a movement of the attached middle ear, Columella (C) whose lever construction transmits the vibrations to the Oval Window (OW), the membrane at the entrance of the fluid filled cochlea.
@@ -70,14 +70,23 @@ tympanic ears.
  \label{lizardheadcrosssection}
 \end{figure}
 
-\section{Pressure Difference Receiving Ears}
+\section{Pressure Difference Receiving Ears}\label{iceintrosection}
 The ability of humans and most other mammals to localize sources of sound depends on two kinds of information: the direction and frequency
 of the source may cause differences between the amplitudes and arrival times of sounds reaching both ears. These pieces of information are
 referred to binaural hearing cues or simply hearing cues. In mammals there is an additional source of directionality due to the shape
 of the pinnae which affects the spectra of sounds reaching the ear. However, most hearing animals are lack monoaural cues and the binaural
 cues are at best too small to affect the neural responses of the ears, \cite{michelsen1}. These animals are in general too small in comparison
-to the wavelength of sound in their typical hearing range to cause an appreciable amplitude differences due to diffraction.
+to the wavelength of sound in their typical hearing range to cause an appreciable amplitude differences due to diffraction. Nevertheless, 
+the eardrum vibration amplitude has been found to vary strongly with direction. In order to reslove this apparent paradox it was
+suggested by Autrum \cite{autrumjcomphys} that the directionality could be a result of the ears vibrating due to the
+differences between the pressure on the inner and outer surfaces (see \cite{michelsenlarsen} for a review).  The properties of such systems were also found to be analogous with the inherently directional 
+nature of pressure gradient receivers studied by Harry Olson (\cite{olsonmichrophones}). Pressure difference reception has
+become the standard explanation for directionality in almost all small animals; the one exception being mechanically coupled
+eardrums in some parasitic flies, (see Robert \emph{et al} \cite{roberthoy}).
 
+The pathway for sound to the inner surface of the eardrum varies. In many animals the air spaces behind the eardrums are
+connected by sizable air-filled passage which results in a coupling between the eardrums. This has been shown for 
+insects ()
 
 \subsubsection*{}
 Our study will take place in two main steps. In Chapter \ref{modelchapter} we will
