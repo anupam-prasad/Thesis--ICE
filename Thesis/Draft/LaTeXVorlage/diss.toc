@@ -1,7 +1,7 @@
 \contentsline {chapter}{Abstract}{xi}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Mechanical Processing of Auditory Stimuli}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Pressure Difference Receiving Ears}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}Pressure Difference Ears - The ICE Model}{2}{section.1.2}
 \contentsline {chapter}{\numberline {2}The ICE Model}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Description of the Model}{6}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Mouth Cavity}{6}{subsection.2.1.1}

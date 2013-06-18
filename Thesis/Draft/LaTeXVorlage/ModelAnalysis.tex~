@@ -1,5 +1,5 @@
 \chapter{Evaluation of the Model}\label{modelanalysis}
-We now have a complete geomtrical representation of the ICE model as well as
+We now have a complete geomtrical representation of the ICE-model as well as
  the analytical expressions $u_0$ and $u_L$ that describe the membrane displacements
 in spatial detail as a function of direction and frequency. In this chapter we will use these variables
 to further study the features and predictions of our model and compare them with experimental results. In
@@ -31,7 +31,6 @@ or the common house gecko and the Tokay gecko. At the end of the chapter we will
 to a pair of independent ears. We will also have an idea about the frequency regimes that correspond to the use
 of iTDs and iLDs in localization.
 
-
 \section{Sound Localization Using the ICE--Model}\label{localizationsection}
 In our study we are primarily concerned with hearing in geckos. We will be using
 parameters (interaural separation, tympanum area etc.) from \emph{Hemidactylus frenatus}, the common house gecko
@@ -43,9 +42,9 @@ defined in \ref{parametertable}. For now we will simply list the values and leav
 \noindent
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.3}
-%\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
+%\caption{Parameters and Functions used in the ICE-Model} \label{parametertable} 
 \centering
-\captionof{table}{ICE Model geometry Parameters for the common house gecko (Hemidactylus frenatus) and the Tokay gecko.}\label{geckogeometricparams}
+\captionof{table}{ICE-Model geometry Parameters for the common house gecko (Hemidactylus frenatus) and the Tokay gecko.}\label{geckogeometricparams}
 \begin{tabular}{|p{8.5 cm} | c | c|}
 \hline
 Parameter name & Hemidactylus & Tokay gecko\\
@@ -106,7 +105,7 @@ In other words we have set $p=1$Pa in \eqref{newsoundinput}.
  \caption[Vibration amplitude for the common house gecko]{Calculated (left) and experimental (right) amplitude of tympanic membrane vibrations for Hemidactylus frenatus
  in dB re $1$ mm/(s Pa), i.e. the ratio of the vibration amplitude with reference to a vibration velocity of $1$ mm/s with an input pressure of $1$ Pa. On the $x$-axis we have
  the direction of the sound source in degrees varying from $-180^\circ\mbox{ to }180^\circ$ with positive angles corresponding to ipsilateral stimuli. The legends on the left and
- right denote the amplitude in decibels. The calculate values are from the ICE model and the experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley2}.}
+ right denote the amplitude in decibels. The calculate values are from the ICE-model and the experimental values are taken from Christensen-Dalsgaard \cite{dalsgaardmanley2}.}
   \label{hemidactylusvibampfull}
 \end{figure}
 
@@ -160,7 +159,7 @@ the sound source moves around the animal i.e. as $\theta$ varies from $-180^\cir
 \begin{figure}[ht!]
 \centering
   \includegraphics[width=.5\linewidth]{Diagrams/Plots/directionplots/directionplots.png}
-  \caption[Direction dependence of membrane vibration amplitudes for different frequencies.]{Direction dependence of membrane vibration amplitudes  in the ICE Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
+  \caption[Direction dependence of membrane vibration amplitudes for different frequencies.]{Direction dependence of membrane vibration amplitudes  in the ICE-Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
   , Tokay gecko (right, at 1kHz, 2kHz and 3kHz).
   The variation of the amplitude as the sound source completes a full circle around the animal is illustrated. The amplitudes for ipsilateral stimuli are shown to be
   higher than those for contraletaral stimuli.}
@@ -202,7 +201,7 @@ In contrast, the Interaural Time and Level Differences (ITD and ILD) are entirel
 by the inputs to the two ears. The ITD is defined as the time sound takes to travel across
 the head width and is given by ITD$=L/c$. It is equivalent to $\Delta$, the phase difference
 between the vibrations of the eardrums without coupling and diffraction effects; see \eqref{oldsoundinput}. Due to the 
-input pressures having the same amplitude and due to the linearity of the system (w.r.t sound input), the ICE model does not have any 
+input pressures having the same amplitude and due to the linearity of the system (w.r.t sound input), the ICE-model does not have any 
 a priori Interaural Level Difference. In larger animals
 like humans the difference between the input amplitudes increases with frequency due to 
 diffraction effects (shadowing) which aids in localization; cf. \cite[p~.154]{fletcheracoustic}. In addition, the gain in ITD due
@@ -248,7 +247,7 @@ ipsilateral and contralateral directions. This suggests that iLDs may work bette
 \begin{figure}[ht!]
 \centering
   \includegraphics[width=.5\linewidth]{Diagrams/Plots/iLD/all.png}
-  \caption[Direction dependence of the Interaural Level Difference for different frequencies.]{Direction dependence of the the Interaural Level Difference (cf. \eqref{iLDfirstdef}) in the ICE Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
+  \caption[Direction dependence of the Interaural Level Difference for different frequencies.]{Direction dependence of the the Interaural Level Difference (cf. \eqref{iLDfirstdef}) in the ICE-Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
   , Tokay gecko (right, at 1kHz, 2kHz and 3kHz). At higher frequencies, the iLD reaches a maximum at $90^\circ$ and a minimum at $-90^\circ$ whereas for lower frequencies, the maxima and minima are 
   reached before and after. This form of the above plots suggests that the iLD work better as directional cues at higher frequencies.}
   \label{iLDdirection}
@@ -311,7 +310,7 @@ at frequencies well beyond the hearing range of geckos.
 \end{figure}
 
 In order to compare our model with the experimental results, we plot the response of one of the membranes ($x=0$, although $x=L$ could be
-chosen equivalently due to the symmetry of the system) in our cylindrical ICE model 
+chosen equivalently due to the symmetry of the system) in our cylindrical ICE-model 
 calculated using \eqref{ipsimembranefull}. The opposite ear was chosen to be blocked, meaning $p_L=0$. 
 This is illustrated in Fig. \ref{manleygeckotympanum} (right) for the same frequency range as in the experimental data. The sound pressure input was chosen to have unit amplitude and the model parameters used are given
 on the right most column of Table \ref{geckogeometricparams}. The omitted region corresponds to the extracolumella. 

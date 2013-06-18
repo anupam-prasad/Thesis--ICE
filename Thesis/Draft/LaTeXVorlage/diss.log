@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  18 JUN 2013 03:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.6)  18 JUN 2013 13:46
 entering extended mode
  %&-line parsing enabled.
 **diss.tex
@@ -524,7 +524,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 48.
+(caption)                particular \caption on input line 47.
 See the caption package documentation for explanation.
 
 
@@ -622,7 +622,7 @@ Missing character: There is no ™ in font cmr12!
 Here is how much of TeX's memory you used:
  7203 strings out of 495061
  107768 string characters out of 1182622
- 191999 words of memory out of 3000000
+ 192005 words of memory out of 3000000
  9945 multiletter control sequences out of 15000+50000
  17700 words of font info for 66 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -645,7 +645,7 @@ fonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 sy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on diss.pdf (59 pages, 16413429 bytes).
+Output written on diss.pdf (59 pages, 16413517 bytes).
 PDF statistics:
  905 PDF objects out of 1000 (max. 8388607)
  226 named destinations out of 1000 (max. 500000)

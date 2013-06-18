@@ -70,7 +70,7 @@ tympanic ears.
  \label{lizardheadcrosssection}
 \end{figure}
 
-\section{Pressure Difference Receiving Ears}\label{iceintrosection}
+\section{Pressure Difference Ears - The ICE-Model}\label{iceintrosection}
 The ability of humans and most other mammals to localize sources of sound depends on two kinds of information: the direction and frequency
 of the source may cause differences between the amplitudes and arrival times of sounds reaching both ears. These pieces of information are
 referred to binaural hearing cues or simply hearing cues. In mammals there is an additional source of directionality due to the shape
@@ -87,7 +87,8 @@ eardrums in some parasitic flies, (see Robert \emph{et al} \cite{roberthoy}).
 The pathway for sound to the inner surface of the eardrum varies. In many animals the air spaces behind the eardrums are
 connected by sizable air-filled passage which results in a coupling between the eardrums. This has been shown for 
 insects (\cite{michelsenbiophysics}), frogs (\cite{jorgensenanurans}) and reptiles (\cite{dalsgaardmanley1}). The sound wave
-may alternatively reach the inner surfac of the eardrum through a different route (like the tracheal tube in crickets).
+may alternatively reach the inner surfac of the eardrum through a different route (like the tracheal tube in crickets). Our focus
+is on the former type of animals, i.e. animals that have their eardrums coupled through an air-filled cavity.
 
 \subsubsection*{}
 Our study will take place in two main steps. In Chapter \ref{modelchapter} we will
