@@ -78,7 +78,9 @@ of the source may cause differences between the amplitudes (ILDs -Interaural Lev
 referred to binaural hearing cues or simply hearing cues. In mammals there is an additional source of directionality due to the shape
 of the pinnae which affects the spectra of sounds reaching the ear (monoaural cues). In effect, the ears are independently activated by sound pressures
 on their external surface. In humans, at frequencies above $1.5$kHz, the amplitude differences between the eardrums are sufficient
-to localize the source whereas at lower frequencies the time cues are mainly used.
+to localize the source whereas at lower frequencies the time cues are mainly used. The amplitude cues are a result of the ear farther
+from the source being in the 'sound shadow' of the head due to diffraction effects. The time cues are a result of the sound having to travel
+different paths to reach either ear and is in general not as strongly affected by diffraction.
 
 However, most hearing animals are lack monoaural cues and the binaural
 cues are at best too small to affect the neural responses of the ears, \cite{michelsen1}. These animals are in general too small in comparison
@@ -93,8 +95,11 @@ eardrums in some parasitic flies, (see Robert \emph{et al} \cite{roberthoy}).
 The pathway for sound to the inner surface of the eardrum varies. In many animals the air spaces behind the eardrums are
 connected by sizable air-filled passage which results in a coupling between the eardrums. This has been shown for 
 insects (\cite{michelsenbiophysics}), frogs (\cite{jorgensenanurans}) and reptiles (\cite{dalsgaardmanley1}). The sound wave
-may alternatively reach the inner surfac of the eardrum through a different route (like the tracheal tube in crickets). Our focus
+may alternatively reach the inner surface of the eardrum through a different route (like the tracheal tube in crickets). Our focus
 is on the construction and mathematical analysis of a model for the former type of animals, i.e. animals that have their eardrums coupled through an air-filled cavity. 
+The ICE-model seeks to explain the emergence of enhanced directional cues in animals that are small relative to wavelengths
+in their entire hearing range. As a result, they are forced to exploit the small time differences between the inputs between
+their ears to localize a sound source.
 
 
 \section{Neuronal Processing of Hearing Cues}\label{iceneuro}
@@ -109,7 +114,7 @@ due to increased inhibition. Thus, the neural firing rate encodes the sound sour
 
 In contrast, the neurons sensitive to time differences are excited by inputs from both ears ('EE' neurons). The strength of the
 excitation depends on the exact relative timing of the inputs. Just as is the case for larger animals, the level
-differences are more pronounced are most effective at higher frequencies and the time differnce cues at lower frequencies. In larger animals, this behaviour is expected
+differences are more pronounced are most effective at higher frequencies and the time differnce cues at lower frequencies. In larger animals, this behaviour is
 due to the diffraction of sound. However, as we will
 subsequently see, the physics behind the production of these differences in the ICE model is very different.
 \subsubsection*{}
@@ -118,7 +123,8 @@ present our model for the mechanical processing of auditory signals in systems w
 Since our focus is on an analytical model, we would like to have a system that reduces to tractable mathematical expressions
 so that we can clearly see the dependence of the system's behaviour on its parameters. To this end we will model the 
 combination of the eustachian tubes, middle ear cavity and pharynx as a single continuous cylindrically shaped air cavity; see
-Sec. \ref{subsecinnercavity}. The ears will be modelled as linear elastic membranes that are circular with an omitted sector
+Sec. \ref{subsecinnercavity}. The ears will be modelled as linear elastic membranes that are circular with an omitted sector replaced
+by a non-moving plate
 that corresponds to the extracolumella - the extension of the columella that is in contact with the ear. The
 sound inputs to both the ears will be modelled as pressure waves of a given frequency with a phase difference that depends on the 
 head size. The aim of the chapter is to find expressions for the quantities which give us the directional output of the system.

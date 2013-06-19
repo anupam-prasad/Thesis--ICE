@@ -15,7 +15,7 @@ between the tympanal vibrations. These differences show directionality and serve
   \label{geckohead}
 \end{figure}
 
-Proceeding from the earlier work done by Vossen in \cite{vossenthesis} and \cite{vossenjasa}, in this chapter we present a model for such a system of coupled ears with an emphasis on lizard hearing
+Proceeding from the earlier work done by Vossen \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}, in this chapter we present a model for such a system of coupled ears with an emphasis on lizard hearing
 - specifically the Tokay gecko and the common house gecko. Our goal is to demonstrate its main aspect of such a system - the coupling
 of the eardrums through the mouth cavity. 
 The main components of such a system are the mouth-cavity, the two tympani and the two \textit{extracolumella} (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
@@ -149,7 +149,8 @@ consequently be linear $2^{nd}$-order PDE's.
  \label{tympanummodel}
 \end{figure}
 
-At this point we should note that we have effectively set the mass of the extracolumella to infinity. Thereby, its motion has been neglected altogether. While this may seem counterintuitive at first, 
+In our model for the tympanic membrane-extracolumella system we have modelled the extracolumella 
+as non-moving by effectively setting its mass of the extracolumella to infinity. While neglecting its motion altogether may seem counterintuitive at first, 
 we will later see that this assumption, while simplifying the problem analytically,  has little effect on the physical phenomenon of interest, viz. the coupling between
 the eardrums and the amplification of hearing cues. This will be discussed in-depth in Chapter \ref{modelanalysis}.
 
@@ -554,7 +555,8 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.6\linewidth]{Diagrams/SectorMembraneModes/membrane_modes_all.png}
- \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane where the omitted region corresponds to the extracolumella with $\beta=\pi/25$. As in Fig. \ref{circularmembraneeigenmodes}, the eigenfrequency increases from left to right.}
+ \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane where the omitted region corresponds to the extracolumella with $\beta=\pi/25$. 
+ As in Fig. \ref{circularmembraneeigenmodes}, the eigenfrequency increases from left to right.}
   \label{sectoralmembraneeigenmodes}
 \end{figure}
 The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The vibrations of a sectoral membrane
@@ -665,9 +667,9 @@ where, $C_{mn}^+=C_{mn}^L+C_{mn}^0$ and $C_{mn}^-=C_{mn}^L-C_{mn}^0$. The $S^{+/
 Now, analogous to the calculation of the coefficients for the steady state vibration in \eqref{membraness2} and \eqref{sscoeffs}, we can determine
 the coefficients of the sum and difference vibrations in terms of the pressure and total membrane displacements. This gives us,
 \begin{align}
- C^{+}_{mn}&=\left[p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]K_{mn}\label{pluscoeffdef}\\
- C^{-}_{mn}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]K_{mn}\label{minuscoeffdef}\\
- \mbox{where, }K_{mn}&=\frac{\int dS u_{mn}}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
+ C^{+}_{mn}&=\left[p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]\frac{K_{mn}}{\Omega_{mn}}\label{pluscoeffdef}\\
+ C^{-}_{mn}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]\frac{K_{mn}}{\Omega_{mn}}\label{minuscoeffdef}\\
+ \mbox{where, }K_{mn}&=\frac{\int dS u_{mn}}{\int dS u^2_{mn}}\label{Kmndef}
 \end{align}
 The next step will be to multiply both sides of \eqref{pluscoeffdef} and \eqref{minuscoeffdef} with the integral $\int dS u_{mn}$, 
 divide by $\pi a^2_{cyl}$ (the integral of $f^2_{00}$ as it appears in the denominator in \eqref{approxboundarydef2}) and
@@ -678,10 +680,11 @@ for the total membrane displacements.
 \end{equation}
 where we've defined the following quantities,
 \begin{align}
- \Gamma_+ = &-\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\label{gamfirstdef}\\
-&\frac{1}{\Lambda}=\frac{1}{\pi a^2_{cyl}}\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{\left(\int dS u_{mn}\right)^2}{\Omega_{mn}\int dS u^2_{mn}}\label{lamfirstdef}
+ \Gamma_+ = -\frac{\rho\omega^2}{k}\cot &\frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\label{gamfirstdef}\\
+&\frac{1}{\Lambda}=\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{K_{mn}}{\pi a^2_{cyl}\Omega_{mn}}\label{lamfirstdef}
 \end{align}
-We can finally write the membrane displacement as a function of the pressure inputs in the form
+The $\Gamma_\pm$ terms contain the effect of the coupling through the air cavity and $1/\Lambda$ is the response of the membrane to a unit pressure
+of angular frequency $\omega$. We can finally write the membrane displacement as a function of the pressure inputs in the form
 \begin{align}
  u_0(r,\phi;t)&=G_{ipsi}(r,\phi)p_0+G_{contra}(r,\phi)p_L\label{ipsimembranefull}\\
  u_L(r,\phi;t)&=G_{contra}(r,\phi)p_0+G_{ipsi}(r,\phi)p_L\label{contramembranefull}
@@ -764,7 +767,7 @@ resonance frequencies of the cylinder, i.e at $\omega=n\pi c/L,\ n=1,2\ldots$.
 
 \noindent We conclude this chapter by briefly stating the advantages of our method in comparison to the lumped element method - 
 \begin{itemize}
- \item In terms of the membrane motion - we are able to account for the effect of asymetrically loaded extracolumella and are able to describe the membrane motion is spatial detail.
+ \item In terms of the membrane motion - we are able to account for the effect of asymetrically loaded extracolumella rendering it possible to describe the membrane motion is spatial detail.
  \item At low frequencies our model is consistent with the uniform pressure assumption but the nonuniformity steadily increases with frequency.
   We therefore have a single model that can describe both high- and low-frequency behaviour instead of treating the two regimes separately.
 \end{itemize}

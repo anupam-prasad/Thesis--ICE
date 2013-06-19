@@ -1,1 +1,14 @@
-\chapter{Conclusios}
+\chapter{Summary and Conclusion}
+We started our study by constructing a basic model that describes the motion of eardrums in animals
+with coupled ears. The mouth cavity of the animal was modelled as an air-filled cylindrical tube
+of radius $a_{cyl}$ with circular openings on either side of radius $a_{tymp}$ that are closed by
+tympanic membranes of the same radius. This is one of the points where we deviate from the previous treatment
+of the problem \cite{vossenjasa} as we have kept the volume of the cavity $V_{cav}$ constant and equal to
+typical values for the species in nature.
+
+In addition, the membrane was modelled
+as a circular sector of angle $2\pi-2\beta$. The remaining sector of angle $2\beta$ represented the 
+the extracolumella - the extension whose function is to serve as a transducer of
+membrane vibrations. We had modelled the extracolumella as being a stationary object and its
+effect on the membranes was given through additional boundary conditions at $\phi=\pm\beta$.
+\section{Open Questions}
