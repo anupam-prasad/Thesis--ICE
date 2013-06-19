@@ -35,7 +35,7 @@ sound localization ability of certain terrestrial vertebrates. Specifically, we 
 in the analytical treatment of hearing in animals that have their eardrums connected through a large mouth cavity and the
  enhancement of directionality in the response of such systems;see Sec. \ref{iceintrosection}. Although our model can be scaled to several different species,
  for the purposes of a thorough comparison, we will be putting a special emphasis on lizard hearing. The questions posed by the neuronal processing of auditory stimuli in these
-animals although interesting, are beyond the scope of this thesis. We will however briefly discuss the neuronal processing of the binaural cues
+animals although interesting, are beyond the scope of this thesis. However, in order to provide a neuronal basis for our analysis, we will briefly discuss the neuronal processing of the binaural cues
 in these animals in Sec. \ref{iceneuro}
 
 \section{Mechanical Processing of Auditory Stimuli}\label{mechanicalprocessing}
@@ -74,9 +74,9 @@ tympanic ears.
 
 \section{Pressure Difference Receiving Ears - The ICE Model}\label{iceintrosection}
 The ability of humans and most other mammals to localize sources of sound depends on two kinds of information: the direction and frequency
-of the source may cause differences between the amplitudes and arrival times of sounds reaching both ears. These pieces of information are
+of the source may cause differences between the amplitudes (ILDs -Interaural Level Differences) and arrival times ((ITD -Interaural Time Differences) of sounds reaching both ears. These pieces of information are
 referred to binaural hearing cues or simply hearing cues. In mammals there is an additional source of directionality due to the shape
-of the pinnae which affects the spectra of sounds reaching the ear (monoaural cues). In effect, for binaural hearing the ears are independently activated by sound pressures
+of the pinnae which affects the spectra of sounds reaching the ear (monoaural cues). In effect, the ears are independently activated by sound pressures
 on their external surface. In humans, at frequencies above $1.5$kHz, the amplitude differences between the eardrums are sufficient
 to localize the source whereas at lower frequencies the time cues are mainly used.
 
@@ -100,8 +100,18 @@ is on the construction and mathematical analysis of a model for the former type 
 \section{Neuronal Processing of Hearing Cues}\label{iceneuro}
 Early stages of auditory pathways in birds and mammals contain synaptic relays designed to preserve the temporal fine structure of 
 acoustic stimuli with great accuracy.  Studies of neural processing in Tokay geckos have also shown similar properties \cite{dalsgaardtangcarr}.
-These animals possess cochlear nucleii (collections of neurons that receive input from the cochlear nerve) that are specialized either for
-the computation of time differences or level differences between the tympani.
+These animals possess cochlear nucleii (the collections of neurons that receive input from the cochlear nerve) that are specialized either for
+the computation of time differences or level differences between the tympani. The neurons sensitive to level difference are excited by the 
+input from one ear and inhibited by the other. These neurons are for obvious reasons known as 'EI' neurons and respond most strongly when the
+sounds come from the excitatory ear. The inhibitory ear, on the other hand sits on the far side of the head resulting in an increased firing
+rate of the neurons due to reduced inhibition. Similarly, as the sound source moves closer to the inhibitory ear, the neural firing rates decline
+due to increased inhibition. Thus, the neural firing rate encodes the sound source position. 
+
+In contrast, the neurons sensitive to time differences are excited by inputs from both ears ('EE' neurons). The strength of the
+excitation depends on the exact relative timing of the inputs. Just as is the case for larger animals, the level
+differences are more pronounced are most effective at higher frequencies and the time differnce cues at lower frequencies. In larger animals, this behaviour is expected
+due to the diffraction of sound. However, as we will
+subsequently see, the physics behind the production of these differences in the ICE model is very different.
 \subsubsection*{}
 Our study will take place in two main steps. In Chapter \ref{modelchapter} we will
 present our model for the mechanical processing of auditory signals in systems with internally coupled ears - the ICE Model.
