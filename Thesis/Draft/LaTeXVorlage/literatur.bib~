@@ -193,8 +193,6 @@ language={English}
   pages={011001},
   url={http://stacks.iop.org/1748-3190/3/i=1/a=011001},
   year={2008},
-  abstract={Directional sound receivers are useful for locating sound sources, and they can also partly compensate for the signal degradations caused by noise and reverberations. Ears may become inherently directional if sound can reach both surfaces of the eardrum. Attempts to understand the physics of such pressure difference receiving ears have been hampered by lack of suitable experimental methods. In this review, we review the methods for collecting reliable data on the binaural directional cues at the eardrums, on how the eardrum vibrations depend on the direction of sound incidence, and on how sound waves behave in the air spaces leading to the interior surfaces of eardrums. A linear mathematical model with well-defined inputs is used for exploring how the directionality varies with the binaural directional cues and the amplitude and phase gain of the sound pathway to the inner surface of the eardrum. The mere existence of sound transmission to the inner surface does not ensure a useful directional 
-hearing, since a proper amplitude and phase relationship must exist between the sounds acting on the two surfaces of the eardrum. The gain of the sound pathway must match the amplitude and phase of the sounds at the outer surfaces of the eardrums, which are determined by diffraction and by the arrival time of the sound, that is by the size and shape of the animal and by the frequency of sound. Many users of hearing aids do not obtain a satisfactory improvement of their ability to localize sound sources. We suggest that some of the mechanisms of directional hearing evolved in Nature may serve as inspiration for technical improvements.}
 }
 
 @article{dudamartens,
@@ -206,7 +204,6 @@ hearing, since a proper amplitude and phase relationship must exist between the 
 	volume	=	{104},
 	number	=	{5},
 	eventtime	=	{November 1998},
-	abstract	=	{This paper examines the range dependence of the HRTF for a simple spherical model of the head in both the time-domain and the frequency domain. The variation of low-frequency ILD with range is shown to be significant for ranges smaller than five times the sphere radius. The impulse response explains the source of the ripples in the frequency response, and provides direct evidence that the Interaural Time Delay (ITD) is not a strong function of range. Time-delay measurements confirm the Woodworth/Schlosberg formula. Numerical analysis indicates that the HRTF is minimum phase. Thus, except for time delay, the impulse response can be reconstructed from a simple principle components analysis of the magnitude response.},
 } 
 
 
@@ -410,6 +407,39 @@ keywords={Hyla versicolor; Hyla chrysoscelis; Hyla gratiosa; Rana temporaria; Di
 author={Jørgensen, MortenBuhl},
 pages={591-598},
 language={English}
+}
+
+@article{jeffressmodel,
+    author = {Jeffress, Lloyd A.},
+    citeulike-article-id = {3909231},
+    citeulike-linkout-0 = {http://psycnet.apa.org/index.cfm?fa=search.displayRecord\&\#38;id=F0BE069D-BF68-BB7F-0A03-D83AB1C01E7C\&\#38;resultID=1\&\#38;page=1\&\#38;dbTab=all},
+    citeulike-linkout-1 = {http://psycnet.apa.org/index.cfm?fa=search.displayRecord\&\#38;id=F0BE069D-BF68-BB7F-0A03-D83AB1C01E7C\&\#38;resultID=1\&\#38;page=1\&\#38;dbTab=all},
+    journal = {Journal of Comparative and Physiological Psychology},
+    keywords = {bib-taslp08, localization, model},
+    month = {feb},
+    number = {1},
+    pages = {35--39},
+    posted-at = {2009-01-19 21:17:41},
+    priority = {2},
+    title = {A place theory of sound localization},
+    url = {http://psycnet.apa.org/index.cfm?fa=search.displayRecord\&\#38;id=F0BE069D-BF68-BB7F-0A03-D83AB1C01E7C\&\#38;resultID=1\&\#38;page=1\&\#38;dbTab=all},
+    volume = {41},
+    year = {1948}
+}
+
+@article {CNE:CNE23013,
+author = {Tang, Yezhong and Christensen-Dalsgaard, Jakob and Carr, Catherine E.},
+title = {Organization of the auditory brainstem in a lizard, Gekko gecko. I. Auditory nerve, cochlear nuclei, and superior olivary nuclei},
+journal = {The Journal of Comparative Neurology},
+volume = {520},
+number = {8},
+publisher = {Wiley Subscription Services, Inc., A Wiley Company},
+issn = {1096-9861},
+url = {http://dx.doi.org/10.1002/cne.23013},
+doi = {10.1002/cne.23013},
+pages = {1784--1799},
+keywords = {auditory nerve, ITD, cochlear nuclei, superior olive, reptile, lizard, tract tracing, Tokay gecko},
+year = {2012},
 }
 
 

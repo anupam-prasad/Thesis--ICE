@@ -118,18 +118,37 @@ sounds come from the excitatory ear. The inhibitory ear, on the other hand sits 
 rate of the neurons due to reduced inhibition. Similarly, as the sound source moves closer to the inhibitory ear, the neural firing rates decline
 due to increased inhibition. Thus, the neural firing rate encodes the sound source position. 
 
-In contrast, the neurons sensitive to time differences are excited by inputs from both ears ('EE' neurons). The strength of the
+In contrast, the neurons sensitive to time differences are excited by inputs from both ears ('EE' neurons, Fig. \ref{EEtypedetector}a). The strength of the
 excitation depends on the exact relative timing of the inputs. Just as is the case for larger animals, the level
-differences are more pronounced are most effective at higher frequencies and the time differnce cues at lower frequencies. The neurons responsible for 
+differences are more pronounced are most effective at higher frequencies and the time differnce cues at lower frequencies. Sound waves are encoded
+by neurons as sinusoidal membrane potentials. The primary sensory neurons, known as afferent neurons, phase lock to the inupt
+stimulus and are most likely to fire near the peak of the sound wave. Their synaptic potentials (formed due to differences
+in ion concentration) sum to produce fluctuating membrane potentials which resemble the stimulus waveform; see Fig. \ref{EEtypedetector}b. 
+
+The neurons responsible for 
 the processing of time difference queues were classically thought to be organized in a 'delay line and coincidence detector' arrangement, commonly
 known as the 'Jeffress model'\cite{jeffressmodel}. According to this model, the firing of individual neurons is response to precisely synchronized excitation
 from both ears, and systematically varied axonal conduction delays along the length of the nucleus serve to offset ITDs. Thus each neuron is tuned to a 
-specific time delay value; see Fig. \ref{jeffressmodel}.
+specific time delay value that cancels the signal delay from the left and right ear; see Fig. \ref{jeffressmodel}.
+\begin{figure}[ht!]
+ \centering
+ \includegraphics[width=0.7\linewidth]{Diagrams/EEtypedetector.jpg}
+ \caption[EE-type coincidence detector and encoding of sound waves as membrane potentials.]{(\textbf{a}) Anatomy of an 'EE-type'
+ coincidence detector neuron. Sound signals from both ears converge through the two prominent dendrites (the hair like extensions
+ on either end). (\textbf{a}) Encoding of sound waves as sinusoidal membrane potentials. Nerve fibers phase lock to the sound stimulus and
+ are therefore most likely to fire near the peaks. Their excitator synaptic potentials sum to produce membrane potentials which resemble the
+ stimulus waveform.Figure taken from \cite{schnuppcarr}.}
+ \label{EEtypedetector}
+\end{figure}
+
 
 \begin{figure}[ht!]
  \centering
- \includegraphics[width=0.7\linewidth]{Diagrams/itdcomputation.jpg}
- \caption[Delay line coincidence detector - Jeffress model]{Figure taken from \ref{schnuppcarr}.}
+ \includegraphics[width=0.6\linewidth]{Diagrams/Jeffress.png}
+ \caption[Delay line coincidence detector - Jeffress model]{A very simplified schematic representation of the Jeffress model. The coincidence detector neurons ('EE-type')
+ simultaneously receive inputs from both ears through different delay lines. The coincidence counters fire when the inputs to the detectors are synchronized. For
+ example when a sound reaches the left ear first, the inputs reaching the rightmost detectors are more synchronized due to the signal from the left ear being
+ delayed.}
  \label{jeffressmodel}
 \end{figure}
 

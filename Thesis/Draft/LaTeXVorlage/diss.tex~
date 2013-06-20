@@ -18,7 +18,7 @@
 \usepackage{a4wide}	 
 \usepackage{fancyhdr}
 \usepackage{graphicx}
-\usepackage[font={small,it}]{caption}
+\usepackage[font={footnotesize,it}]{caption}
 \usepackage{subcaption}	
 %\usepackage{german}
 \usepackage[colorlinks=true,bookmarks,hyperindex]{hyperref}

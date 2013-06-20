@@ -231,7 +231,8 @@ In order to effectively function as cues for localization the iLDs and iTDs shou
  \item For a significant frequency range, they should increase with the adjacency of the sound source and should reach their maximum at $\theta=90^\circ$ and
  their minimum at $\theta=-90^\circ$.
  \item The iTD in particular should remain more or less constant for a given frequency range thereby mirroring the behaviour
- of the ITD. As different sets of neurons are sensitive to different frequencies, a constant delay is advantageous from the point of view of neuronal processing. 
+ of the ITD. As different sets of neurons are sensitive to different frequencies, a constant delay is advantageous from the point of view of neuronal processing
+ (cf. Sec. \ref{iceneuro}). 
  This is equivalent to the requirement that the phase difference is
  directly proportional to the frequency (see \eqref{iTDfirstdef}.
   \item They should go to zero at $\theta=0^\circ \mbox{ and } \theta=\pm 180^\circ$ meaning they should vanish when the object is directly
@@ -286,7 +287,8 @@ $2.6$kHz which is in very good agreement with experimentally observed values (\c
   \includegraphics[width=.6\linewidth]{Diagrams/Plots/iLD/iLDspectrumboth2.png}
   \caption[Spectral behavior of the iLDs.]{Spectral behaviour of the iLDs at $\theta=90^\circ$ for the house gecko (black) and Tokay gecko (red). On the $x$-axis we have frequency in kHz and on the $y$-axis the iLD in decibels.
   The bandpass nature of the iLDs is clearly shown with a peaks at around $3$kHz for the house gecko and around $1$kHz for the Tokay gecko and is consistent with observations;\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}. The
-  filled regions correspond to the directional bandwidth of both animals.}
+  filled regions correspond to the directional bandwidth (frequencies at which iLD>3dB) of both animals. This values is around $4p9$kHz for the house gecko and $2.6$kHz
+  for the Tokay gecko.}
   \label{iLDspectrum}
 \end{figure}
 
@@ -304,7 +306,8 @@ gain of around $3.6$ (iTD of around $346\mu$s). These values stay more or less c
 abruptly drop. As the frequency increases beyond this point, the iTD converges to the ITD. In Fig. \ref{itddirectionboth}, we plot the variation of the iTDs
 with respect to direction for different frequencies. The frequencies are chosen to reflect the change in behaviour of the iTDs as it transitions from frequencies
 below the first eigenfrequencies to those above. At frequencies below the first eigenfrequency (Tokay: $.5$kHz, $1$kHz, Hemidactylus: $1$kHz, $2$kHz) the iTDs
-is significantly higher than it is at higher frequencies.
+is significantly higher than it is at higher frequencies. At this point we should note that phase difference ceases to be useful as a directional cue when it is
+greater than $2\pi$ or in other words when the iTD becomes greater than the time period at the given sound frequency ($1/f$). Thankfully, for the frequency ranges we are concerned with this will not be a problem.
 
 \begin{figure}[ht!]
 \centering
