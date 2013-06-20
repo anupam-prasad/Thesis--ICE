@@ -1,0 +1,73 @@
+Speciesname="Tokay";"or Hemidactylus";
+L:=22;"Cylinder Length in mm. 10/22";
+atymp:=2.6;"Radius of Tympanic Membrane in mm. 1.5/2.6";
+ρm=1;"1.25*.3125;" "Density of Membrane in mg/mm^3";
+d=.01; "Membrane Thickness in mm. .008/.01";
+β:=Pi/25; "Extracollumella angle";
+μ=Pi/(Pi-β);
+(*cM=25000;*)
+(*ρ=1.162*10^-3;"Density of Air mg/mm^3";*)
+V0=3500; "320/3500, mm^3";
+acyl=Sqrt[V0/(Pi*L)];
+"Volume of the Cylinder";
+γ=1.4;"Ratio of Specific Heats for Air";
+P0=101.325*10^6;"Atmospheric Pressure";
+(*c:=Sqrt[γ*P0/ρ];"Velocity of Sound mm/s";*)
+c=343000;
+ρ=γ*P0/c^2;"Density of Air mg/mm^3";
+f0=1050;"2800/1050";
+α=.9*2*Pi*f0/2.4; "Damping Coefficient of Membrane in Hz";
+".75/.9" ;
+fmin=500;"Min hearing frequency - 1000 Hz for house gecko";
+fmax=3500;"Max Hearing Frequency - 7000Hz for house gecko";
+Out[529]= Maximum Hearing Frequency - 7000Hz for house gecko
+"Sound inputs to both ears";
+Φ=Pi*TriangleWave[θ/360]/2;
+ω=2*Pi*f;
+k=ω/c;
+p0=1000*E^(-.75*I*k*L*(Sin[θ Degree]));
+pL=1000*E^(.75*I*k*L*(Sin[θ Degree]));
+In[478]:= "Calculating and sorting the zeros of the membrane modes Bessel Functions";
+allZeros=Sort[Flatten[Table[{(l+.5)*μ,m,BesselJZero[(l+.5)*μ,m]/atymp},{l,0,9},{m,1,6}],1],(#1[[3]]<#2[[3]])&];
+In[480]:= "Membrane Propagation Velocity in terms of the first eigenfrequency mm/s";
+cM=f0*2*Pi/allZeros[[1]][[3]];
+Ncutoff=30; "Cutoff for the membrane modes";
+"Membrane impulse response";
+Λ=(Sum[Integrate[r*Sin[allZeros[[l]][[1]]*(ϕ-β)]*BesselJ[allZeros[[l]][[1]],allZeros[[l]][[3]]*r],{r,0,atymp},{ϕ,β,2*Pi-β}]^2/(ρm*d*(ω^2-2*I*α*ω-cM^2*allZeros[[l]][[3]]^2)*Integrate[r*Sin[allZeros[[l]][[1]]*(ϕ-β)]^2*BesselJ[allZeros[[l]][[1]],allZeros[[l]][[3]]*r]^2,{r,0,atymp},{ϕ,β,2*Pi-β}]),{l,1,Ncutoff}])^-1;
+
+In[484]:= "Calculation of the total membrane displacements";
+Gamplus=-ρ*ω^2*Cot[k*L/2]/(Pi*acyl*acyl*k);
+Gamminus=ρ*ω^2*Tan[k*L/2]/(Pi*acyl*acyl*k);
+Splus=(pL+p0)/(Gamplus+Λ);
+Sminus=(pL-p0)/(Gamminus+Λ);
+SL=(Splus-Sminus)/2;
+S0=(Splus+Sminus)/2;
+In[491]:= "Internal Level Difference";
+iLD=20*Log10[Abs[S0/SL]];
+"Internal Time Difference";
+iTD=Arg[S0/SL]/ω;
+"Plot ticks for direction and frequency";
+dticks=Table[{(l-1)*90-180,ToString[(l-1)*90-180],{0,.01}},{l,1,5}];
+fticks=Table[{l*fmin,ToString[l*fmin],{0,.01}},{l,1,7}];
+"Density Plot of Membrane Vibration Amplitude";
+ShowLegend[DensityPlot[20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)],{θ,-180,180},{f,fmin,fmax},ColorFunction->"BlueGreenYellow",PlotPoints->20,Frame->False,Axes->True,AxesOrigin->{-180,200},AxesLabel->{None,"frequency (Hz)"},Ticks->{dticks,fticks},PlotLabel->Speciesname,FrameLabel->{"direction(degrees)",None}],{ColorData["BlueGreenYellow"][#1]&,8,"-30","10",LegendPosition->{-1.5,-.35},LegendOrientation->Vertical}]
+"Membrane vibration spectrum for different source directions";
+dbticks=Table[{(l-1)*10-40,ToString[(l-1)*10-40],{0,.005}},{l,1,6}];Plot[{20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)]/.θ->90,20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)]/.θ->60,20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)]/.θ->0,20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)]/.θ->-60,20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)]/.θ->-90},{f,fmin,fmax},PlotRange->{-40,10},PlotStyle->{ColorData[1][1],ColorData[1][2],Dotted,Dashed,Dashed},AxesOrigin->{500,-40},PlotLabel->"Tokay",Epilog->{Line[{{5000,-40},{5000,10},{500,10},{5000,10}}]},Ticks->{fticks,dbticks},PlotLegend->{"90°","60°","0°","-60°","-90°"},LegendPosition->{.9,-.4}]
+In[600]:= "Membrane vibration direction dependence";
+ftest=1000; "Test Frequency - refer Chapter 3 for values";
+mrange=Floor[-10+20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)]/.{f->ftest,θ->-90}];
+prange=Ceiling[10+20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)]/.{f->ftest,θ->90}];
+dticks=Table[{(l-1)*90-180,ToString[(l-1)*90-180],{0,.01}},{l,1,5}];
+ndbticks=5;
+dbticks=Table[{(l-1)*(prange-mrange)/(ndbticks-1)+mrange,ToString[N[(l-1)*(prange-mrange)/(ndbticks-1)+mrange]],{0,.005}},{l,1,ndbticks}];
+Plot[20*Log10[ω*Abs[S0]/(Pi*acyl*acyl)]/.f->ftest,{θ,-180,180},PlotRange->{mrange,prange},PlotStyle->Black,AxesOrigin->{-180,mrange},PlotLabel->ToString[ftest]<>"Hz",Ticks->{dticks,dbticks},Epilog->{Line[{{180,mrange},{180,prange},{-180,prange},{180,prange}}]}]
+In[590]:= "iLD with respect to direction and frequency";
+range=15+20*Log10[Abs[S0/SL]]/.{f->f0,θ->90};
+ShowLegend[ContourPlot[20*Log10[Abs[S0/SL]],{θ,-180,180},{f,fmin,fmax},ColorFunction->"BlueGreenYellow",PlotPoints->20,Contours->20,Frame->False,Axes->True,PlotRange->range,AxesOrigin->{-180,200},AxesLabel->{None,"frequency (Hz)"},Ticks->{dticks,fticks},PlotLabel->Speciesname,FrameLabel->{"direction(degrees)",None}],{ColorData["BlueGreenYellow"][#1]&,8,"-30","10",LegendPosition->{-1.5,-.35},LegendOrientation->Vertical}]
+In[608]:= ftest=1000; "Test Frequency - refer Chapter 3 for values";
+mrange=Floor[-10+20*Log10[Abs[S0/SL]]/.{f->ftest,θ->-90}];
+prange=Ceiling[10+20*Log10[Abs[S0/SL]]/.{f->ftest,θ->90}];
+dticks=Table[{(l-1)*90-180,ToString[(l-1)*90-180],{0,.01}},{l,1,5}];
+ndbticks=5;
+dbticks=Table[{(l-1)*(prange-mrange)/(ndbticks-1)+mrange,ToString[N[(l-1)*(prange-mrange)/(ndbticks-1)+mrange]],{0,.005}},{l,1,ndbticks}];
+Plot[20*Log10[Abs[S0/SL]]/.f->ftest,{θ,-180,180},PlotRange->{mrange,prange},PlotStyle->Black,AxesOrigin->{-180,mrange},PlotLabel->ToString[ftest]<>"Hz",Ticks->{dticks,dbticks},Epilog->{Line[{{180,mrange},{180,prange},{-180,prange},{180,prange}}]}]

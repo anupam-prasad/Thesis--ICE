@@ -120,7 +120,7 @@ not transferred to the columella.
  \label{extracolumellaflection}
 \end{figure}
 
-\subsubsection{Tympanic Membrane}
+\subsubsection{Tympanic Membrane}\ref{tympanicmembrane}
 The extracolumella applies a significant 
 mechanical load on the tympanum and thereby precludes its treatment as a freely vibrating membrane. 
 Furthermore, the contact surface of the malleus on the human eardrum is more or less symmetric whereas the 
@@ -563,7 +563,11 @@ The solution for forced membrane vibrations follows in the same way as in the ci
 are discussed in more detail in \cite[p.~87]{fletcheracoustic}. As discussed earlier, the sectoral shape of the membrane has important
 physical consequences and captures the complex vibration patterns of a realistic membrane. This will be discussed in the next chapter.
 \subsection{Vibration of Coupled Membranes}\label{coupledmembranes}
-With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes.
+With our current knowledge, we can move on to the main part of the chapter - the vibration of coupled membranes. 
+The derivation of the in this section is based on the treatment of the vibration of a circular membrane backed by
+a cylindrical air cavity closed at the opposite end by Rajalingham \emph{et al}, \cite{rajalinghambhat}. The quantities of
+interest there were the eigenmodes of the circular membrane but in our analysis we are interested in the steady state vibration
+of the membranes.
 It is convenient to first write down the main equations of the system based on our previously derived expressions.
 The vibrations of the membranes is given by,
 \begin{equation}\label{coupledmembraneseries}
@@ -709,7 +713,7 @@ will play an important role in the evaluation of the model in the next chapter. 
 in numerical analyses it has to be approximated by choosing an appropriate membrane mode cutoff. The choice of this
 cutoff depends on parameters specific to the animal; cf. Sec. \ref{parameterestimation}. The basic method involves arranging the modes in increasing order of eigenfrequency
 (or equivalently $\mu_{mn}$). As a result, we can express the summation over a single index. In general, for the frequency ranges of the animals
-we are concerned with, we will not need to calcualate the summation beyond the the first $20$ eigenmodes.
+we are concerned with, we will not need to calcualate the summation beyond the the first $30$ eigenmodes.
 
 \subsection{Circuit Model}
 Before we conclude this chapter, we will discuss the previous methods used to model ears coupled through

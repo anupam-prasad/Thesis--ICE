@@ -1,9 +1,9 @@
 \chapter{Introduction}\label{introchapter}
-The auditory system is among the most ubiquitious of sensory systems as evidenced by the 
+Among sensory systems, the auditory system is perhaps the most ubiquitious. The 
 development of numerous strategies for the detection and processing of auditory stimuli
-across several species. The processing of sound stimuli is fairly fast and in comparison
+across several species is a testament to this fact; cf. Sec. \ref{auditoryevolution}. The processing of sound stimuli is fairly fast and in comparison
 to light stimuli, sound has two main properties - it is omnidirectional and due to
-its large wavelength, it isn't blocked by small objects. For instance we can hear objects
+its large wavelength it isn't blocked by small objects. For instance we can hear objects
 behind us or behind obstacles whereas the same isn't true for visual stimuli. These properties 
 give the animal the obvious advantage of being able to react to approaching dangers that
 aren't yet visible. In order to fully utilize the sound stimuli, it is therefore essential
@@ -35,11 +35,11 @@ sound localization ability of certain terrestrial vertebrates. Specifically, we 
 in the analytical treatment of hearing in animals that have their eardrums connected through a large mouth cavity and the
  enhancement of directionality in the response of such systems;see Sec. \ref{iceintrosection}. Although our model can be scaled to several different species,
  for the purposes of a thorough comparison, we will be putting a special emphasis on lizard hearing. The questions posed by the neuronal processing of auditory stimuli in these
-animals although interesting, are beyond the scope of this thesis. However, in order to provide a neuronal basis for our analysis, we will briefly discuss the neuronal processing of the binaural cues
-in these animals in Sec. \ref{iceneuro}
+animals although interesting, are beyond the scope of this thesis. However, in order to have a basic understanding of the neuronal basis for our analysis, we will briefly discuss the neuronal processing of the binaural cues
+in these animals in Sec. \ref{iceneuro}.
 
 \section{Mechanical Processing of Auditory Stimuli}\label{mechanicalprocessing}
-\subsection{Evolution of Different Auditory Systems}
+\subsection{Evolution of Different Auditory Systems}\label{auditoryevolution}
 Ancestors of most modern vertebrates including frogs, turtles, lizards, birds, crocodilians and mammals
 developed a pair of tympani (thin vibrating membranes) to detect incoming sound waves and transmit
 them from the air to the ossicles in the middle ear; cf. Fig. \ref{vertebrateearevolution}. 
@@ -61,7 +61,7 @@ tympanic ears.
  \label{vertebrateearevolution}
 \end{figure}
 
-\begin{figure}[ht!]
+\begin{figure}[ht]
  \centering
  \includegraphics[width=0.45\linewidth]{Diagrams/lizardheadcrosssection.jpeg}
  \caption[Cross Section of a Lizards Head]{Diagram of the cross-section of a lizard’s head (\emph{sceloporus}). The Tympanic Membranes (TM) as well as
@@ -72,7 +72,7 @@ tympanic ears.
  \label{lizardheadcrosssection}
 \end{figure}
 
-\section{Pressure Difference Receiving Ears - The ICE Model}\label{iceintrosection}
+\subsection{Pressure Difference Receiving Ears - The ICE Model}\label{iceintrosection}
 The ability of humans and most other mammals to localize sources of sound depends on two kinds of information: the direction and frequency
 of the source may cause differences between the amplitudes (ILDs -Interaural Level Differences) and arrival times ((ITD -Interaural Time Differences) of sounds reaching both ears. These pieces of information are
 referred to binaural hearing cues or simply hearing cues. In mammals there is an additional source of directionality due to the shape
@@ -86,7 +86,7 @@ However, most hearing animals are lack monoaural cues and the binaural
 cues are at best too small to affect the neural responses of the ears, \cite{michelsen1}. These animals are in general too small in comparison
 to the wavelength of sound in their typical hearing range to cause an appreciable amplitude differences due to diffraction. Nevertheless, 
 the eardrum vibration amplitude has been found to vary strongly with direction. In order to reslove this apparent paradox it was
-suggested by Autrum \cite{autrumjcomphys} that the directionality could be a result of the ears vibrating due to the
+suggested by Autrum \cite{autrumjcomphys} that in locusts the directionality could be a result of the ears vibrating due to the
 differences between the pressure on the inner and outer surfaces (see \cite{michelsenlarsen} for a review).  The properties of such systems were also found to be analogous with the inherently directional 
 nature of pressure gradient receivers studied by Harry Olson (\cite{olsonmichrophones}). Pressure difference reception has
 become the standard explanation for directionality in almost all small animals; the one exception being mechanically coupled
@@ -97,9 +97,25 @@ connected by sizable air-filled passage which results in a coupling between the 
 insects (\cite{michelsenbiophysics}), frogs (\cite{jorgensenanurans}) and reptiles (\cite{dalsgaardmanley1}). The sound wave
 may alternatively reach the inner surface of the eardrum through a different route (like the tracheal tube in crickets). Our focus
 is on the construction and mathematical analysis of a model for the former type of animals, i.e. animals that have their eardrums coupled through an air-filled cavity. 
-The ICE-model seeks to explain the emergence of enhanced directional cues in animals that are small relative to wavelengths
+The ICE model seeks to explain the emergence of enhanced directional cues in animals that are small relative to wavelengths
 in their entire hearing range. As a result, they are forced to exploit the small time differences between the inputs between
-their ears to localize a sound source.
+their ears to localize a sound source. Using these small ITDs, the system generates amplified
+ time differences (which we will refer to as iTDs - Internal Time Differences) and direction dependent amplitude differences (which we will
+ refer to as iLDs - Internal Level Differences) between the tympani.
+ 
+Our model is referred to as the ``ICE'' (Internally Coupled Ears) model. Our goal is to analyse the physics behind the production of the
+enhanced differences (iTD/iLD). In particular we are interested in the frequency and direction dependence of the hearing cues. The problem of
+directional hearing in lizards was previously treated by Vossen (see Chapter 2 of \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}).
+Here, an analytical model of internally coupled ears with a cylindrical air cavity was first presented. This thesis aims to be an extension of the previous work
+wherein we seek to provide an anlytical model that reflects the frequency and directional behaviour of such systems in nature. Our work deviates in
+the treatment of the following aspects - 
+\begin{itemize}
+ \item While constructing the mouth cavity we place an emphasis on maintining its volume resulting in different radii for the tympanum and the cylindrical cavity; See Sec. \ref{subsecinnercavity}.
+ \item For the pressure inside the cavity (See Sec. \ref{internalcavity}) we propose a different set of modes that represent it more accurately.
+ \item The treatment of the membrane and its transducer - the extracolumella (See Sec. \ref{tympanicmembrane}). We propose a construction that is easier to treat analytically and reproduces
+ the vibration patterns fairly well.
+ \end{itemize}
+
 
 
 \section{Neuronal Processing of Hearing Cues}\label{iceneuro}
@@ -112,7 +128,7 @@ regions of the basilar membrane. In this manner, the basilar membrane functions 
 Early stages of auditory pathways in birds and mammals contain synaptic relays designed to preserve the temporal fine structure of 
 acoustic stimuli with great accuracy.  Studies of neural processing in Tokay geckos have also shown similar properties \cite{dalsgaardtangcarr}.
 These animals possess cochlear nucleii (the collections of neurons that receive input from the cochlear nerve) that are specialized either for
-the computation of time differences or level differences between the tympani. The neurons sensitive to level difference are excited by the 
+the computation of time differences (iTD/ITD) or level differences (iLD/ILD) between the tympani. The neurons sensitive to level difference are excited by the 
 input from one ear and inhibited by the other. These neurons are for obvious reasons known as 'EI' neurons and respond most strongly when the
 sounds come from the excitatory ear. The inhibitory ear, on the other hand sits on the far side of the head resulting in an increased firing
 rate of the neurons due to reduced inhibition. Similarly, as the sound source moves closer to the inhibitory ear, the neural firing rates decline
@@ -124,12 +140,6 @@ differences are more pronounced are most effective at higher frequencies and the
 by neurons as sinusoidal membrane potentials. The primary sensory neurons, known as afferent neurons, phase lock to the inupt
 stimulus and are most likely to fire near the peak of the sound wave. Their synaptic potentials (formed due to differences
 in ion concentration) sum to produce fluctuating membrane potentials which resemble the stimulus waveform; see Fig. \ref{EEtypedetector}b. 
-
-The neurons responsible for 
-the processing of time difference queues were classically thought to be organized in a 'delay line and coincidence detector' arrangement, commonly
-known as the 'Jeffress model'\cite{jeffressmodel}. According to this model, the firing of individual neurons is response to precisely synchronized excitation
-from both ears, and systematically varied axonal conduction delays along the length of the nucleus serve to offset ITDs. Thus each neuron is tuned to a 
-specific time delay value that cancels the signal delay from the left and right ear; see Fig. \ref{jeffressmodel}.
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=0.7\linewidth]{Diagrams/EEtypedetector.jpg}
@@ -137,11 +147,17 @@ specific time delay value that cancels the signal delay from the left and right 
  coincidence detector neuron. Sound signals from both ears converge through the two prominent dendrites (the hair like extensions
  on either end). (\textbf{a}) Encoding of sound waves as sinusoidal membrane potentials. Nerve fibers phase lock to the sound stimulus and
  are therefore most likely to fire near the peaks. Their excitator synaptic potentials sum to produce membrane potentials which resemble the
- stimulus waveform.Figure taken from \cite{schnuppcarr}.}
+ stimulus waveform. Figure taken from \cite{schnuppcarr}.}
  \label{EEtypedetector}
 \end{figure}
 
-
+The neurons responsible for 
+the processing of time difference queues were classically thought to be organized in a 'delay line and coincidence detector' arrangement, commonly
+known as the 'Jeffress model'\cite{jeffressmodel}. According to this model, the firing of individual neurons is response to precisely synchronized excitation
+from both ears, and systematically varied axonal conduction delays along the length of the nucleus serve to offset ITDs. Thus each neuron is tuned to a 
+specific time delay value that cancels the signal delay from the left and right ear; see Fig. \ref{jeffressmodel}. The appeal of the Jeffress model lies in the elegant way it converts systematic variations in the iTD/ITD into
+a topographic map of the sound source location. Initial experimental evidence from birds (\cite{carrkonishi}, \cite{parksrubel}) provides strong support 
+for the existence of such a delay line arrangement.
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=0.6\linewidth]{Diagrams/Jeffress.png}
@@ -152,10 +168,7 @@ specific time delay value that cancels the signal delay from the left and right 
  \label{jeffressmodel}
 \end{figure}
 
-In larger animals, this behaviour is
-due to the diffraction of sound. However, as we will
-subsequently see, the physics behind the production of these differences in the ICE model is very different.
-\subsubsection*{}
+\section{Overview}
 Our study will take place in two main steps. In Chapter \ref{modelchapter} we will
 present our model for the mechanical processing of auditory signals in systems with internally coupled ears - the ICE Model.
 Since our focus is on an analytical model, we would like to have a system that reduces to tractable mathematical expressions
@@ -164,8 +177,8 @@ combination of the eustachian tubes, middle ear cavity and pharynx as a single c
 Sec. \ref{subsecinnercavity}. The ears will be modelled as linear elastic membranes that are circular with an omitted sector replaced
 by a non-moving plate
 that corresponds to the extracolumella - the extension of the columella that is in contact with the ear. The
-sound inputs to both the ears will be modelled as pressure waves of a given frequency with a phase difference that depends on the 
-head size. The aim of the chapter is to find expressions for the quantities which give us the directional output of the system.
+sound inputs to both the ears will be modelled as pressure waves of a given frequency with a phase difference corresponding to the azimuth of the object that depends on the 
+head size and frequency. The aim of the chapter is to find expressions for the quantities which give us the directional output of the system.
 
 In Chapter \ref{modelanalysis} will evaluate the validity of our model
 by comparing the calculated values of the membrane vibration velocity with experimentally determined quantities; 

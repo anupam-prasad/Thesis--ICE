@@ -63,6 +63,17 @@ J.~Christensen-Dalsgaard, Y.~Tang, and C.~E. Carr, ``Binaural processing by the
 L.~A. Jeffress, ``A place theory of sound localization,'' {\em Journal of
   Comparative and Physiological Psychology}, vol.~41, pp.~35--39, feb 1948.
 
+\bibitem{carrkonishi}
+C.~E. Carr and M.~Konishi, ``Axonal delay lines for time measurement in the
+  owl's brainstem,'' {\em Proc. Natl. Acad. Sci. U.S.A.}, vol.~85,
+  pp.~8311--8315, Nov 1988.
+
+\bibitem{parksrubel}
+T.~N. Parks and E.~W. Rubel, ``{{O}rganization and development of brain stem
+  auditory nuclei of the chicken: organization of projections from n.
+  magnocellularis to n. laminaris},'' {\em J. Comp. Neurol.}, vol.~164,
+  pp.~435--448, Dec 1975.
+
 \bibitem{vossenthesis}
 C.~Vo\ss{}en, {\em Auditory Information Processing in Systems with Internally
   Coupled Ears}.
@@ -133,5 +144,10 @@ N.~H. Fletcher, {\em Acoustic Systems in Biology}.
 M.~J\o{}rgensen, B.~Schmitz, and J.~Christensen-Dalsgaard, ``Biophysics of
   directional hearing in the frog eleutherodactylus coqui,'' {\em Journal of
   Comparative Physiology A}, vol.~168, no.~2, pp.~223--232, 1991.
+
+\bibitem{rajalinghambhat}
+C.~Rajalingham, R.~Bhat, and G.~Xistris, ``Vibration of circular membrane
+  backed by cylindrical cavity,'' {\em International Journal of Mechanical
+  Sciences}, vol.~40, no.~8, pp.~723 -- 734, 1998.
 
 \end{thebibliography}

@@ -1,8 +1,8 @@
-\chapter{The ICE-Model}\label{modelchapter}
+\chapter{The ICE Model}\label{modelchapter}
 Several terrestrial vertebrates, e.g. lizards, frogs, alligators and many birds, possess a hearing mechanism very different to
 that of mammals: their tympanic membranes are coupled through large eustachian tubes and a large mouth cavity resulting in the influence of the vibrations of one tympanic membrane
 on those of the other. This is illustrated in \ref{geckohead}. The typically small head sizes (compared to sound wavelength) of these animals result in
-small phase differences (ITDs) and negligible amplitude difference (ILDs) between the ears. The coupling serves to enhance the ITDs and create ILDs
+small phase differences (ITDs) and negligible amplitude difference (ILDs) between the ears. The coupling serves to enhance the ITDs and create level differences
 between the tympanal vibrations. These differences show directionality and serve as hearing cues for localization.
 
 \begin{figure}[ht!]
@@ -15,7 +15,7 @@ between the tympanal vibrations. These differences show directionality and serve
   \label{geckohead}
 \end{figure}
 
-Proceeding from the earlier work done by Vossen in \cite{vossenthesis} and \cite{vossenjasa}, in this chapter we present a model for such a system of coupled ears with an emphasis on lizard hearing
+Proceeding from the earlier work done by Vossen \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}, in this chapter we present a model for such a system of coupled ears with an emphasis on lizard hearing
 - specifically the Tokay gecko and the common house gecko. Our goal is to demonstrate its main aspect of such a system - the coupling
 of the eardrums through the mouth cavity. 
 The main components of such a system are the mouth-cavity, the two tympani and the two \textit{extracolumella} (one on each tympanum). In general, the shape of the mouth-cavity is highly irregular and therefore
@@ -31,16 +31,16 @@ with a comparison of our model with previous methods that have used a electrical
 have the expressions that describe the steady-state vibrations of both eardrums as a function pressure amplitude, direction and frequency.
 
 \section{Description of the Model}\label{description}
-Before heading to a quantitative analysis of the ICE-model, we will first need to list its basic components. 
+Before heading to a quantitative analysis of the ICE model, we will first need to list its basic components. 
 and justify their properties based on realistic anatomical properties of the vertebrates in question. Our emphasis is on an analytical treatment
-of the ICE-model.
+of the ICE model.
 In Sec. \ref{subsecinnercavity}, we will describe the cylindrical model for the mouth cavity and state the reasons
 for our choice of the geometry and the dimensions used. We will then proceed to describe the middle
 ear system and its main components of interest, the \textit{extracolumella} and the \textit{tympani}
 in Sec. \ref{middleear}. Finally, in Sec. \ref{soundinput} we will analyse the dependence of the acoustic input to both
 eardrums on the direction of the sound source, head size and shape. 
 \subsection{Mouth Cavity}\label{subsecinnercavity}
-In the earlier treatment of the ICE-model, the mouth cavity is modelled as a simple cylinder closed at 
+In the earlier treatment of the ICE model, the mouth cavity is modelled as a simple cylinder closed at 
 both ends by rigidly clamped (baffled) circular membranes; these model the tympanic membranes. As shown 
 by Vossen in \cite[p.~21]{vossenthesis} and \cite{vossenjasa}, the length of the cylinder was chosen to be equal to the interaural distance and the radius of the model tympanum is
 determined from the typical area of the realistic tympanum. The advantage of using a cylindrical cavity model for the mouth cavity is that the pressure
@@ -64,17 +64,17 @@ While maintaining the same tympanum size and interaural distance we can therefor
 \begin{subfigure}{1.0\textwidth}
  \centering
   \includegraphics[width=.5\linewidth]{Diagrams/oldCylinder.png}
-   \caption[Previous ICE-Model Cylinder]{The previous geometric reprentation of the ICE-model.}
+   \caption[Previous ICE Model Cylinder]{The previous geometric reprentation of the ICE model.}
   \label{oldICE}
 \end{subfigure}
 
 \begin{subfigure}{1.0\textwidth}
 \centering
   \includegraphics[width=.5\linewidth]{Diagrams/newCylinder.png}
-  \caption[New ICE-Model Cylinder]{The representation of the new model.}
+  \caption[New ICE Model Cylinder]{The representation of the new model.}
   \label{newICE}
   \end{subfigure}
-  \caption[Previous and current ICE-model representations]{The bold arrows represent the direction conventions
+  \caption[Previous and current ICE model representations]{The bold arrows represent the direction conventions
   along the cylinder's axis. The new model is represented by a cylinder of radius $a_{cyl}$ and length $L$ closed
   at both ends by sectoral membrane of radius $a_{tymp}$.
   The darkly shaded region corresponds to the extracolumella; see Sec. \ref{middleear}.}
@@ -127,7 +127,7 @@ Furthermore, the contact surface of the malleus on the human eardrum is more or 
 extracolumella is attached asymetrically. This has important physical consequences - especially in the 
 observed vibration patterns of the membrane.
 
-In the previous treatment of the ICE-model, the tympanum was modelled as a clamped circular membrane with assymetrically
+In the previous treatment of the ICE model, the tympanum was modelled as a clamped circular membrane with assymetrically
 attached sectoral load between $-\beta<\phi<\beta$ (\cite{vossenjasa}). This manifests itself as an additional
 boundary condition at $\phi=\beta$ and $\phi=-\beta$ which has to satisfied via a numerical approximation. While
 this method has the advantage of being able to accurately reproduce the complex vibration patterns of the eardrum, 
@@ -149,7 +149,8 @@ consequently be linear $2^{nd}$-order PDE's.
  \label{tympanummodel}
 \end{figure}
 
-At this point we should note that we have effectively set the mass of the extracolumella to infinity. Thereby, its motion has been neglected altogether. While this may seem counterintuitive at first, 
+In our model for the tympanic membrane-extracolumella system we have modelled the extracolumella 
+as non-moving by effectively setting its mass of the extracolumella to infinity. While neglecting its motion altogether may seem counterintuitive at first, 
 we will later see that this assumption, while simplifying the problem analytically,  has little effect on the physical phenomenon of interest, viz. the coupling between
 the eardrums and the amplification of hearing cues. This will be discussed in-depth in Chapter \ref{modelanalysis}.
 
@@ -189,7 +190,7 @@ incident wave. Due to the typically small head size of geckos, the amplitude var
 cannot be neglected. We can therefore consider the sound wave with angular frequency $\omega$ to have a constant (pressure) amplitude $p$
 on the head.
 
-In the earlier ICE-model, the effect of diffraction on the phase difference was neglected as well. The phase difference
+In the earlier ICE model, the effect of diffraction on the phase difference was neglected as well. The phase difference
 is found directly from the phase difference $\Delta$ as shown in fig. \ref{fig:oldheadmodel}.
 As a result, the sound pressure inputs at both ears is given by,
 \begin{equation}\label{oldsoundinput}
@@ -229,7 +230,7 @@ are greatly simplified at low frequencies and the phase difference is simply inc
 Therefore, the form of the input remains the same as in \eqref{oldsoundinput} expect for a new phase difference  $\Delta_{new}=1.5\Delta$.
 
 \section{Derivation of the Model}
-We will now use the previously described physical model to derive the main expressions of interest in the ICE-model - the membrane
+We will now use the previously described physical model to derive the main expressions of interest in the ICE model - the membrane
 vibration profiles, the ipsi- and contraleteral filters and the cavity pressure distribution. We will thus find an expression for the pressure 
 distribution in the cylindrical cavity and for the membrane vibrations subject to an external stimulus. After applying the 
 appropriate boundary conditions to relate the membrane vibrations to the internal pressure, we will find the expression for the membrane
@@ -250,9 +251,9 @@ is justified.
 \noindent
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.1}
-%\caption{Parameters and Functions used in the ICE-Model} \label{parametertable} 
+%\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
-\captionof{table}{Functions and Parameters used in the ICE-Model} \label{parametertable} 
+\captionof{table}{Functions and Parameters used in the ICE Model} \label{parametertable} 
 \begin{tabular}{c p{12 cm}}
 \hline
 $\theta$ & Direction of the sound source with respect to the head midline.\\
@@ -282,9 +283,9 @@ We have listed the main parameters and functions used in our analysis (including
 and \ref{functiontable}.
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.1}
-%\caption{Parameters and Functions used in the ICE-Model} \label{parametertable} 
+%\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
 \centering
-\captionof{table}{Functions and Parameters used in the ICE-Model contd.} \label{functiontable} 
+\captionof{table}{Functions and Parameters used in the ICE Model contd.} \label{functiontable} 
 \begin{tabular}{c p{13 cm}}
 \hline
 $J_q$ & Order $q$ Bessel function of the first kind.\\
@@ -554,7 +555,8 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.6\linewidth]{Diagrams/SectorMembraneModes/membrane_modes_all.png}
- \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane where the omitted region corresponds to the extracolumella with $\beta=\pi/25$. As in Fig. \ref{circularmembraneeigenmodes}, the eigenfrequency increases from left to right.}
+ \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane where the omitted region corresponds to the extracolumella with $\beta=\pi/25$. 
+ As in Fig. \ref{circularmembraneeigenmodes}, the eigenfrequency increases from left to right.}
   \label{sectoralmembraneeigenmodes}
 \end{figure}
 The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The vibrations of a sectoral membrane
@@ -665,9 +667,9 @@ where, $C_{mn}^+=C_{mn}^L+C_{mn}^0$ and $C_{mn}^-=C_{mn}^L-C_{mn}^0$. The $S^{+/
 Now, analogous to the calculation of the coefficients for the steady state vibration in \eqref{membraness2} and \eqref{sscoeffs}, we can determine
 the coefficients of the sum and difference vibrations in terms of the pressure and total membrane displacements. This gives us,
 \begin{align}
- C^{+}_{mn}&=\left[p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]K_{mn}\label{pluscoeffdef}\\
- C^{-}_{mn}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]K_{mn}\label{minuscoeffdef}\\
- \mbox{where, }K_{mn}&=\frac{\int dS u_{mn}}{\Omega_{mn}\int dS u^2_{mn}}\nonumber
+ C^{+}_{mn}&=\left[p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]\frac{K_{mn}}{\Omega_{mn}}\label{pluscoeffdef}\\
+ C^{-}_{mn}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]\frac{K_{mn}}{\Omega_{mn}}\label{minuscoeffdef}\\
+ \mbox{where, }K_{mn}&=\frac{\int dS u_{mn}}{\int dS u^2_{mn}}\label{Kmndef}
 \end{align}
 The next step will be to multiply both sides of \eqref{pluscoeffdef} and \eqref{minuscoeffdef} with the integral $\int dS u_{mn}$, 
 divide by $\pi a^2_{cyl}$ (the integral of $f^2_{00}$ as it appears in the denominator in \eqref{approxboundarydef2}) and
@@ -678,10 +680,11 @@ for the total membrane displacements.
 \end{equation}
 where we've defined the following quantities,
 \begin{align}
- \Gamma_+ = &-\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\label{gamfirstdef}\\
-&\frac{1}{\Lambda}=\frac{1}{\pi a^2_{cyl}}\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{\left(\int dS u_{mn}\right)^2}{\Omega_{mn}\int dS u^2_{mn}}\label{lamfirstdef}
+ \Gamma_+ = -\frac{\rho\omega^2}{k}\cot &\frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\label{gamfirstdef}\\
+&\frac{1}{\Lambda}=\displaystyle\sum^\infty_{m=0}\displaystyle\sum^\infty_{n=1}\frac{K_{mn}}{\pi a^2_{cyl}\Omega_{mn}}\label{lamfirstdef}
 \end{align}
-We can finally write the membrane displacement as a function of the pressure inputs in the form
+The $\Gamma_\pm$ terms contain the effect of the coupling through the air cavity and $1/\Lambda$ is the response of the membrane to a unit pressure
+of angular frequency $\omega$. We can finally write the membrane displacement as a function of the pressure inputs in the form
 \begin{align}
  u_0(r,\phi;t)&=G_{ipsi}(r,\phi)p_0+G_{contra}(r,\phi)p_L\label{ipsimembranefull}\\
  u_L(r,\phi;t)&=G_{contra}(r,\phi)p_0+G_{ipsi}(r,\phi)p_L\label{contramembranefull}
@@ -719,7 +722,7 @@ cavities, apertures which are modelled as lumped elements. Their impedance value
  can be resistive and reactive. The ``current'' is given by something called the ``acoustic flow'' which has the dimensions of
 volume per unit time. In the previous analysis, this is given by $j\omega\pi a^2_{cyl}S^{0/L}$. 
 
-The low frequency circuit analog for the ICE-model is illustrated in Fig. \ref{lowfreqcircuit}. The impedances are calculated
+The low frequency circuit analog for the ICE model is illustrated in Fig. \ref{lowfreqcircuit}. The impedances are calculated
 using the following formulae,
 \begin{align}
  &R_T=\frac{\omega_TL_T}{Q},\qquad L_T=\frac{\rho_Md}{\pi a_{tymp}^2},\qquad C_T=\frac{1}{\omega^2_TL_T}\\
@@ -730,7 +733,7 @@ given by $Z=R+j\omega L+1/j\omega C$. $\omega_T$ is the first eigenfrequency of 
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.5\linewidth]{Diagrams/lowfreqcircuit.png}
- \caption[Low frequency circuit analog]{Low frequency circuit analog for the ICE-Model. The membrane impedences are denoted by $Z_T$ and the impedance of 
+ \caption[Low frequency circuit analog]{Low frequency circuit analog for the ICE Model. The membrane impedences are denoted by $Z_T$ and the impedance of 
  the internal cavity is denoted by $Z_V$. The acoustic flows are given by $U_1\mbox{ and }U_2$.}
   \label{lowfreqcircuit}
 \end{figure}
@@ -757,14 +760,14 @@ resonance frequencies of the cylinder, i.e at $\omega=n\pi c/L,\ n=1,2\ldots$.
 % \begin{figure}[ht!]
 %  \centering
 %  \includegraphics[width=.75\linewidth]{Diagrams/highfreqcircuit.png}
-%  \caption[High frequency circuit analog]{High frequency circuit analog for the ICE-Model.}
+%  \caption[High frequency circuit analog]{High frequency circuit analog for the ICE Model.}
 %   \label{highfreqcircuit}
 % \end{figure}
 \vspace{\baselineskip}
 
 \noindent We conclude this chapter by briefly stating the advantages of our method in comparison to the lumped element method - 
 \begin{itemize}
- \item In terms of the membrane motion - we are able to account for the effect of asymetrically loaded extracolumella and are able to describe the membrane motion is spatial detail.
+ \item In terms of the membrane motion - we are able to account for the effect of asymetrically loaded extracolumella rendering it possible to describe the membrane motion is spatial detail.
  \item At low frequencies our model is consistent with the uniform pressure assumption but the nonuniformity steadily increases with frequency.
   We therefore have a single model that can describe both high- and low-frequency behaviour instead of treating the two regimes separately.
 \end{itemize}

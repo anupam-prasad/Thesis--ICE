@@ -12,44 +12,44 @@ A level-1 auxiliary file: bibliographie.aux
 The style file: ieeetr.bst
 A level-1 auxiliary file: danksagung.aux
 Database file #1: literatur.bib
-You've used 28 entries,
+You've used 31 entries,
             1876 wiz_defined-function locations,
-            665 strings with 7686 characters,
-and the built_in function-call counts, 7769 in all, are:
-= -- 824
-> -- 207
+            689 strings with 8230 characters,
+and the built_in function-call counts, 8828 in all, are:
+= -- 943
+> -- 234
 < -- 0
-+ -- 82
-- -- 54
-* -- 506
-:= -- 1045
-add.period$ -- 36
-call.type$ -- 28
-change.case$ -- 20
++ -- 92
+- -- 61
+* -- 581
+:= -- 1180
+add.period$ -- 39
+call.type$ -- 31
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 419
-empty$ -- 759
-format.name$ -- 54
-if$ -- 1966
+cite$ -- 31
+duplicate$ -- 472
+empty$ -- 851
+format.name$ -- 61
+if$ -- 2231
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 34
-newline$ -- 95
-num.names$ -- 32
-pop$ -- 75
+int.to.str$ -- 31
+missing$ -- 37
+newline$ -- 104
+num.names$ -- 35
+pop$ -- 78
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 311
+skip$ -- 363
 stack$ -- 0
-substring$ -- 576
-swap$ -- 197
+substring$ -- 684
+swap$ -- 228
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 76
-width$ -- 30
-write$ -- 286
+while$ -- 87
+width$ -- 33
+write$ -- 317

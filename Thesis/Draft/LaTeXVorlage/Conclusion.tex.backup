@@ -1,4 +1,34 @@
-\chapter{Summary Conclusion}
-We started our study by constructing a basic model that describes the motion of eardrums in animals
-with coupled ears.
+\chapter{Summary and Conclusion}
+We started our study in Chapter \ref{modelchapter} by constructing a basic model that describes the motion of eardrums in animals
+with coupled ears. The mouth cavity of the animal was modelled as an air-filled cylindrical tube
+of radius $a_{cyl}$ with circular openings on either side of radius $a_{tymp}$ that are closed by
+tympanic membranes of the same radius. This is one of the points where we deviate from the previous treatment
+of the problem \cite{vossenjasa} as we have kept the volume of the cavity $V_{cav}$ constant and equal to
+typical values for the species in nature. The sound inputs to both ears took the form of pressure waves
+with a phase shift which depended on the frequency, direction of the source and head width and shape.
+
+The second difference of our model from the previous treatment was the modelling of the membrane
+as a circular sector of angle $2\pi-2\beta$. The remaining sector of angle $2\beta$ represented the 
+the extracolumella - the extension whose function is to serve as a transducer of
+membrane vibrations. We had modelled the extracolumella as being a stationary object and its
+effect on the membranes was given through additional boundary conditions at $\phi=\pm\beta$. The variation of air-pressure
+inside the tube was described by the $3D$ wave equation with no-penentration boundary conditions at the wall. In the previous
+treatment it was assumed that the pressure modes inside the cavity are identical to the circular modes on the membrane. 
+
+We then proceeded to find a solution to the full problem viz., the vibration of the membranes coupled through the cylindrical
+cavity. This required the application of a new set of boundary conditions at the membrane-air interface. These conditions were
+equivalent to the no-penetration boundary condition and required setting the membrane velocity to be equal to the velocity of
+air inside the cavity. The complexity of these boundary conditions required an approximation. We expanded the membrane 
+velocity in terms of the pressure modes and used the zeroeth order of the expansion. Thus we effectively approximated the membrane
+by a piston oscillating with an amplitude equal to the integral of the membrane displacement. The approximation of the boundary
+condition simplified the expression of the pressure by approximating it as a plane wave propagating along the $x$-axis. In the
+frequency ranges of interest to us this turned out to be a reasonable assumption. At the end of the chapter we obtained expressions
+for the membrane displacements in terms of the input pressure inputs to both ears.
+
+In Chapter \ref{modelanalysis} we introduced the main directional cues in terms of the total membrane displacements $S^{0/L}$ (the
+integrals of the membrane displacement).
+
+
 \section{Open Questions}
+The main advantage of the ICE-model is to explain the frequency and direction dependence of the
+hearing cues.

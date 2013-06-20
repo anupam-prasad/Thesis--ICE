@@ -30,8 +30,14 @@
 }
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{graphics, setspace}
 \usepackage{mathtools}
 \setlength{\headheight}{15pt}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Definition der Kopfzeile %%
