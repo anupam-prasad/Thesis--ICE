@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {1.1.1}Evolution of Different Auditory Systems}{2}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Pressure Difference Receiving Ears - The ICE Model}{2}{subsection.1.1.2}
 \contentsline {section}{\numberline {1.2}Neuronal Processing of Hearing Cues}{5}{section.1.2}
-\contentsline {section}{\numberline {1.3}Overview}{6}{section.1.3}
+\contentsline {section}{\numberline {1.3}Overview}{7}{section.1.3}
 \contentsline {chapter}{\numberline {2}The ICE Model}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Description of the Model}{10}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Mouth Cavity}{10}{subsection.2.1.1}
@@ -23,7 +23,7 @@
 \contentsline {chapter}{\numberline {3}Evaluation of the Model}{33}{chapter.3}
 \contentsline {section}{\numberline {3.1}Sound Localization Using the ICE -Model}{34}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Membrane Vibration Velocity}{35}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Directional Hearing Cues}{39}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Directional Hearing Cues}{37}{subsection.3.1.2}
 \contentsline {subsubsection}{Internal Level Differences}{40}{section*.32}
 \contentsline {subsubsection}{Internal Time Differences}{42}{section*.37}
 \contentsline {subsubsection}{}{43}{section*.41}
@@ -31,5 +31,5 @@
 \contentsline {section}{\numberline {3.2}Spatial Vibration Pattern of the Membrane}{47}{section.3.2}
 \contentsline {chapter}{\numberline {4}Summary and Conclusion}{51}{chapter.4}
 \contentsline {section}{\numberline {4.1}Open Questions}{52}{section.4.1}
-\contentsline {chapter}{\numberline {A}Mathematica Code}{53}{appendix.A}
-\contentsline {chapter}{Acknowledgements}{60}{appendix*.44}
+\contentsline {chapter}{\numberline {A}Mathematica Code}{55}{appendix.A}
+\contentsline {chapter}{Acknowledgements}{66}{appendix*.44}

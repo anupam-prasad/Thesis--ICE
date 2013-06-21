@@ -35,18 +35,21 @@ velocities suggested that monoaural computation of membrane velocities would not
 
 We then went on to introduce the main directional cues in terms of the ratio $S^{0}$ and $S^{L}$. Namely, the Internal Level Difference
 (iLD) which was defined as the decibel of the absolute value of this ratio and the Internal Time Difference (iTD) defined as its complex
-argument divided by the angular frequency $\omega$. The simultaneous frequency and direction dependence of the iLD was illustrated by
+argument divided by the angular frequency $\omega$. In order to stress on the universality of the model, the calculated values of these
+ quantities were compared with experimentally measured ones for two gekkonids - the common house gecko.(\emph{Hemidactylus frenatus}) and the Tokay gecko
+ (\emph{Gekko gecko}). The simultaneous frequency and direction dependence of the iLD was illustrated by
 means of contour plots and were found to be consistent with experimental measurements - both in terms of qualitative spectral behaviour and
 quantitative values thus justifying our choice of $S^{0/L}$ as measures of membrane displacement. We then introduced the requirements these cues must fulfil in order to effectively serve as
 directional cues. For the iLDs it was found that these requirements are best satisfied at relatively higher frequencies while
- iTDs seem to be more effective at lower frequencies. 
+ iTDs seem to be more effective at lower frequencies.
  
- The model thus inherently contains frequency regimes for both directional cues. While in the case of mammals the use of ITD/ILD
- is dictated by the size of the head in comparison to the wavelength, the transition in the ICE model is dictated my the membrane
- properties like the fundamental eigenfrequency and damping.
- 
-
-
+The model thus inherently contains frequency regimes for both directional cues. While in the case of mammals the use of ITD/ILD
+is dictated by the size of the head in comparison to the wavelength, the transition in the ICE model is dictated my the membrane
+properties like the fundamental eigenfrequency and damping. Certain parameters of the model were directly based on experimental
+values - membrane density, radius and thickness, cavity volume, head width etc. The other membrane specific parameters such
+as its first eigenfrequency and its damping coefficient are hard to experimentally determine. In Sec. \ref{parameterestimation} we therefore presented
+a possible method to estimate these parameters from observations. We endede the chapter by illustrating the vibrations patterns of one of the ICE-model
+membranes with the opposite one blocked. These patterns were compared and found to be in good agreement with the patterns experimentally measured for the Tokay gecko by Manley \cite{manleygecko1}.
 
 
 \section{Open Questions}
@@ -61,5 +64,10 @@ would be to incorporate the flection of the extracolumella at higher frequencies
 understanding of its constituent cartilaginous material and would necessitate a numerical treatment.
 
 Due the complex shape of a realistic mouth cavity, a full treatment is not conducive to an analytical treatment.
-Numerical software like COMSOL\textregistered can be used to treat reconstructions of mouth casts. Another possibility
-would be to include the effects of the nostrils as either a new set of boundary conditions or a third input source.
+Numerical software like COMSOL can be used to treat reconstructions of mouth casts. Another possibility
+would be to include the effect of the nostrils as either a new set of boundary conditions or a third input source. The eigenfrequencies
+of the mouth cavity were studied by Vossen but the influence of the holes corresponding to the membranes was neglected here. Additionally,
+the neuronal basis of the computation of iTD cues is not fully understood and the applicability of the Jeffress model in their
+case has also been called into question. Lastly, the response of the animal to sound stimuli in realistic enviroments viz. in the presence
+of multiple obstacles could also be a topic for further study. This however necessitates further experimental analyses of sound l in
+vertebrates.

@@ -52,7 +52,7 @@ appearance of independent and coupled ears (Fig. \ref{vertebrateearevolution}) s
 tympanic ears.
 \begin{figure}[ht!]
  %\centering
- \includegraphics[width=1.0\linewidth]{Diagrams/vertebrateearevolution.png}
+ \includegraphics[width=1.0\linewidth]{Diagrams/vertebrateearevolution.jpg}
  \caption[Vertebrate Ear Evolution]{Evolution of vertebrate ears. Tympanic
  middle capable of receiving airborne sound evolved independently among the ancestors of modern frogs, turtles, lizards, birds,
  crocodilians and mammals. Diagrams at the top show cross-sections through different heads of these animals (middle ears - gray fill).
@@ -103,7 +103,16 @@ their ears to localize a sound source. Using these small ITDs, the system genera
  time differences (which we will refer to as iTDs - Internal Time Differences) and direction dependent amplitude differences (which we will
  refer to as iLDs - Internal Level Differences) between the tympani.
  
-Our model is referred to as the ``ICE'' (Internally Coupled Ears) model. Our goal is to analyse the physics behind the production of the
+The primary advantage of pressure difference receiving ears is to compensate for a small body size relative to sound wavelengths. It has
+however also been suggested that there is another reason for this adaptation. The natural habitats of such animals
+is usually close to the ground resulting in a severe degradation of directional cues due to the presence of obstacles. Amplitude cues are especially affected due to multiple reflections and other deviations
+from a free sound field. In contrast, the contribution to the scatter of phase cues due to diffraction are not nearly as dramatic (the degradation
+of these cues for a grasshopper in its natural grassland habitat was studied my Michelsen and Rohrseitz \cite{michelsenrohrseitz97}). Therefore,
+ by only exploiting phase cues, these animals would have a much more accurate localization strategy than by exploiting amplitude cues. Moreover, 
+ the scattering of both amplitude and phase in dense habitats increases with frequency suggesting that animals in these habitats should prefer to
+ use rather low frequencies for communication. 
+
+Following Vossen,  we refer to our model as ``ICE'' (Internally Coupled Ears). Our goal is to analyse the physics behind the production of the
 enhanced differences (iTD/iLD). In particular we are interested in the frequency and direction dependence of the hearing cues. The problem of
 directional hearing in lizards was previously treated by Vossen (see Chapter 2 of \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}).
 Here, an analytical model of internally coupled ears with a cylindrical air cavity was first presented. This thesis aims to be an extension of the previous work
@@ -115,8 +124,6 @@ the treatment of the following aspects -
  \item The treatment of the membrane and its transducer - the extracolumella (See Sec. \ref{tympanicmembrane}). We propose a construction that is easier to treat analytically and reproduces
  the vibration patterns fairly well.
  \end{itemize}
-
-
 
 \section{Neuronal Processing of Hearing Cues}\label{iceneuro}
 The neuronal processing of auditory signals starts after the tympanic vibrations are transmitted by the columella (the middle ear bone that is attached to the tympanum)

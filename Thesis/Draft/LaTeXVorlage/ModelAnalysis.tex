@@ -88,7 +88,7 @@ The rest of this section follows from the above definitions. In Sec. \ref{vibvel
 on the frequency and direction of the sound source. Using the membrane vibration velocity we will define the main directional hearing cues
  - the Internal Time and Level Differences - in Sec. \ref{hearingcuessection}. As mentioned earlier, we will conclude by justifying our selection of parameters. In
 Sec. \ref{parameterestimation} we will analyse the dependence of the expressions defined in previous sections on the system parameters 
-and in this way also provide estimates for realistic material parameters. 
+and in this way also provide estimates for realistic material parameters.  The code used for all the subsequent simulations is given in \ref{codeappendix}
 
 \subsection{Membrane Vibration Velocity}\label{vibvelocity}
 We will first evaluate the variation of the membrane displacements with respect to external 
@@ -288,7 +288,7 @@ agree well with experimental values numerically suggests that the total membrane
   \includegraphics[width=.6\linewidth]{Diagrams/Plots/iLD/iLDspectrumboth2.png}
   \caption[Spectral behavior of the iLDs.]{Spectral behaviour of the iLDs at $\theta=90^\circ$ for the house gecko (black) and Tokay gecko (red). On the $x$-axis we have frequency in kHz and on the $y$-axis the iLD in decibels.
   The bandpass nature of the iLDs is clearly shown with a peaks at around $3$kHz for the house gecko and around $1$kHz for the Tokay gecko and is consistent with observations;\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}. The
-  filled regions correspond to the directional bandwidth (frequencies at which iLD>3dB) of both animals. This values is around $4p9$kHz for the house gecko and $2.6$kHz
+  filled regions correspond to the directional bandwidth (frequencies at which iLD$>$3dB) of both animals. This value is around $4.9$kHz for the house gecko and $2.6$kHz
   for the Tokay gecko.}
   \label{iLDspectrum}
 \end{figure}
@@ -409,10 +409,11 @@ $\widetilde{\Omega}_{01}=(\omega^2-2j\alpha\omega-\omega^2_{01})$ contains the a
 this expression in \eqref{displacementratio} gives us the displacement ratio as a function of the frequency. 
 We now find expressions for the iTD and iLD in terms of the above ratio,
 \begin{align}
- &\mbox{ iLD }= 10\mbox{Log}_{10}\left(\frac{(\mbox{Re}(\eta)+\cos 1.5kL)^2+(\mbox{Im}(\eta)+\sin 1.5kL)^2}{(\mbox{Re}(\eta)+\cos 1.5kL)^2+(\mbox{Im}(\eta)-\sin 1.5kL)^2}\right)\label{iLDnewdef}\\
- &\tan\left(\omega\times\mbox{ iTD }\right)= \frac{(1-|\eta|^2)\sin 1.5kL}{\mbox{Re}(\eta)+(1+|\eta|^2)\cos 1.5kL}\label{iTDnewdef}
+ &\mbox{ iLD }_{90}= 10\mbox{Log}_{10}\left(\frac{(\mbox{Re}(\eta)+\cos 1.5kL)^2+(\mbox{Im}(\eta)+\sin 1.5kL)^2}{(\mbox{Re}(\eta)+\cos 1.5kL)^2+(\mbox{Im}(\eta)-\sin 1.5kL)^2}\right)\label{iLDnewdef}\\
+ &\tan\left(\omega\times\mbox{ iTD }_{90}\right)= \frac{(1-|\eta|^2)\sin 1.5kL}{\mbox{Re}(\eta)+(1+|\eta|^2)\cos 1.5kL}\label{iTDnewdef}
 \end{align}
-using \eqref{iLDfirstdef} and \eqref{iTDfirstdef}. We essentially have 
+using \eqref{iLDfirstdef} and \eqref{iTDfirstdef}. Whe have used subscripts to indicate that the above terms have been calculated
+at $\theta = 90^\circ$. We essentially have 
 a expression for the iLD and iTD specta with two unknown parameters. We now need two equations for a given frequency (or a given
 pair of frequencies) that can be used to determine $Q$ and $f_0$. The first of these equations is obtained by requiring that
 the derivative of the iLD goes to zero at a given frequency - $f_{max}$, i.e. the experimentally determined frequency of 
@@ -426,8 +427,8 @@ The dependenc of the iTD on $Q$ is a little more complicated but perhaps more re
 iTD spectrum for the three typical ranges of $Q$. At ``low'' values of $Q$ the iTD increases upto a certain frequency and drops
  after reaching its maximum value, $1/f_0$. At higher values the iTD decreases steadily with frequency upto a certain value and
  somewhere in the middle, the iTD remains more or less constant upto a certain frequency. This behaviour gives evidence for the existence of an optimal value $Q_0$ 
-for which the iTD  best satisfies requirement \ref{listitem2}. We can approximate this requirement by requiring that the derivative of
-the iTD with respect to frequency vanishes at $f_0$.
+for which the iTD  best satisfies requirement \ref{listitem2}. Due to the relation of the iTD to the complex argument, we can approximate this requirement by requiring that the second derivative of
+the complex argument with respect to frequency vanishes at $f_0$.
 
 \begin{figure}[ht!]
 \centering
@@ -435,6 +436,12 @@ the iTD with respect to frequency vanishes at $f_0$.
   \caption[Dependence of iTD spectrum on Quality Factor]{}
   \label{itdQdependence}
 \end{figure}
+\noindent These conditions can therefore be written as the following set of equations,
+\begin{align}
+ \left.\frac{d (iLD_{90})}{df}\right|_{f=f_{max}}=0\\
+ \left.\frac{d^2 \omega (iTD_{90})}{df^2}\right|_{f=f_{max}}=0
+\end{align}
+These give us a pair of nonlinear equations that can be numerically solved to obtain values for $f_0$ and $Q$.
 
 \section{Spatial Vibration Pattern of the Membrane}\label{vibrationpatternchapter}
 We begin our analysis by evaluating the variation of the spatial vibration pattern of the tympanic membrane

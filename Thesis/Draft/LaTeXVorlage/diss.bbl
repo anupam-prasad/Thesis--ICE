@@ -54,6 +54,21 @@ M.~Jørgensen, ``Comparative studies of the biophysics of directional hearing
   in anurans,'' {\em Journal of Comparative Physiology A}, vol.~169, no.~5,
   pp.~591--598, 1991.
 
+\bibitem{michelsenrohrseitz97}
+A.~Michelsen and K.~Rohrseitz, ``Sound localisation in a habitat: An analytical
+  approach to quantifying the degradation of directional cues,'' {\em
+  Bioacoustics}, vol.~7, no.~4, pp.~291--313, 1997.
+
+\bibitem{vossenthesis}
+C.~Vo\ss{}en, {\em Auditory Information Processing in Systems with Internally
+  Coupled Ears}.
+\newblock PhD thesis, Technische Universit\"{a}t M\"{u}nchen, 2010.
+
+\bibitem{vossenjasa}
+C.~Vo\ss{}en, J.~Christensen-Dalsgaard, and J.~L. van Hemmen, ``Analytical
+  model of internally coupled ears.,'' {\em Journal of the Acoustical Society
+  of America}, vol.~128, pp.~909--918, 2010.
+
 \bibitem{dalsgaardtangcarr}
 J.~Christensen-Dalsgaard, Y.~Tang, and C.~E. Carr, ``Binaural processing by the
   gecko auditory periphery,'' {\em J. Neurophysiol.}, vol.~105, pp.~1992--2004,
@@ -73,16 +88,6 @@ T.~N. Parks and E.~W. Rubel, ``{{O}rganization and development of brain stem
   auditory nuclei of the chicken: organization of projections from n.
   magnocellularis to n. laminaris},'' {\em J. Comp. Neurol.}, vol.~164,
   pp.~435--448, Dec 1975.
-
-\bibitem{vossenthesis}
-C.~Vo\ss{}en, {\em Auditory Information Processing in Systems with Internally
-  Coupled Ears}.
-\newblock PhD thesis, Technische Universit\"{a}t M\"{u}nchen, 2010.
-
-\bibitem{vossenjasa}
-C.~Vo\ss{}en, J.~Christensen-Dalsgaard, and J.~L. van Hemmen, ``Analytical
-  model of internally coupled ears.,'' {\em Journal of the Acoustical Society
-  of America}, vol.~128, pp.~909--918, 2010.
 
 \bibitem{manleygecko2}
 G.~Manley, ``Frequency response of the middle ear of geckos,'' {\em Journal of
@@ -140,14 +145,14 @@ N.~Asmar, {\em Partial Differential Equations with Fourier Series and Boundary
 N.~H. Fletcher, {\em Acoustic Systems in Biology}.
 \newblock Oxford: Oxford University Press, 1992.
 
-\bibitem{jorgensenschmitz}
-M.~J\o{}rgensen, B.~Schmitz, and J.~Christensen-Dalsgaard, ``Biophysics of
-  directional hearing in the frog eleutherodactylus coqui,'' {\em Journal of
-  Comparative Physiology A}, vol.~168, no.~2, pp.~223--232, 1991.
-
 \bibitem{rajalinghambhat}
 C.~Rajalingham, R.~Bhat, and G.~Xistris, ``Vibration of circular membrane
   backed by cylindrical cavity,'' {\em International Journal of Mechanical
   Sciences}, vol.~40, no.~8, pp.~723 -- 734, 1998.
+
+\bibitem{jorgensenschmitz}
+M.~J\o{}rgensen, B.~Schmitz, and J.~Christensen-Dalsgaard, ``Biophysics of
+  directional hearing in the frog eleutherodactylus coqui,'' {\em Journal of
+  Comparative Physiology A}, vol.~168, no.~2, pp.~223--232, 1991.
 
 \end{thebibliography}

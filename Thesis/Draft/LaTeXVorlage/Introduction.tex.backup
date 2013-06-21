@@ -103,12 +103,22 @@ their ears to localize a sound source. Using these small ITDs, the system genera
  time differences (which we will refer to as iTDs - Internal Time Differences) and direction dependent amplitude differences (which we will
  refer to as iLDs - Internal Level Differences) between the tympani.
  
+The primary advantage of pressure difference receiving ears is to compensate for a small body size relative to sound wavelengths. It has
+however also been suggested that there is another reason for this adaptation. In natural habitats there is generally a severe degradation
+of directional cues due to the presence of obstacles. 
+
 Our model is referred to as the ``ICE'' (Internally Coupled Ears) model. Our goal is to analyse the physics behind the production of the
 enhanced differences (iTD/iLD). In particular we are interested in the frequency and direction dependence of the hearing cues. The problem of
 directional hearing in lizards was previously treated by Vossen (see Chapter 2 of \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}).
 Here, an analytical model of internally coupled ears with a cylindrical air cavity was first presented. This thesis aims to be an extension of the previous work
-wherein we seek to provide an anlytical model that reflects the frequency and directional behaviour of such systems in nature.
-
+wherein we seek to provide an anlytical model that reflects the frequency and directional behaviour of such systems in nature. Our work deviates in
+the treatment of the following aspects - 
+\begin{itemize}
+ \item While constructing the mouth cavity we place an emphasis on maintining its volume resulting in different radii for the tympanum and the cylindrical cavity; See Sec. \ref{subsecinnercavity}.
+ \item For the pressure inside the cavity (See Sec. \ref{internalcavity}) we propose a different set of modes that represent it more accurately.
+ \item The treatment of the membrane and its transducer - the extracolumella (See Sec. \ref{tympanicmembrane}). We propose a construction that is easier to treat analytically and reproduces
+ the vibration patterns fairly well.
+ \end{itemize}
 
 \section{Neuronal Processing of Hearing Cues}\label{iceneuro}
 The neuronal processing of auditory signals starts after the tympanic vibrations are transmitted by the columella (the middle ear bone that is attached to the tympanum)
