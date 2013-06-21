@@ -181,7 +181,7 @@ the sound source moves around the animal i.e. as $\theta$ varies from $-180^\cir
   higher than those for contraletaral stimuli.}
   \label{directionplots}
 \end{figure}
-Here we can more clearly see that the amplitudes due to ipsilateral stimuli are higher than those due to contralateral stimuli. The marked asymettry and the steepness across the midline (i.e. at $0^\circ$)
+Here we can more clearly see that the amplitudes due to ipsilateral stimuli are higher than those due to contralateral stimuli. The marked asymmetry and the steepness across the midline (i.e. at $0^\circ$)
 is also consistent with observations (\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}). The choice of our frequencies has to do with the typical hearing ranges of the geckos. The smaller house
 gecko is most sensitive at higher frequencies (~3kHz) and the larger Tokay gecko at lower frequencies (~1kHz).
 
@@ -272,7 +272,8 @@ ipsilateral and contralateral directions. This suggests that iLDs may work bette
 we see this behaviour more clearly. Here we have plotted the iLD for a stimulus at $\theta 90^\circ$ with respect to frequency for both species. The bandpass behaviour
 is clearly shown - the house gecko has a maximum difference of $30$ dB at around 3kHz and the Tokay gecko iLD peaks at $36$dB at around 1kHz. Also indicated in the figure is the directional bandwidth
 for both animals. This is defined as the frequency range in which the iLD for an ipsilateral stimulus differs by more than 3dB. For the house gecko this is around $4.9$kHz and for the Tokay gecko it is around
-$2.6$kHz which is in very good agreement with experimentally observed values (\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}).
+$2.6$kHz which is in very good agreement with experimentally observed values (\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}). The fact that the calculated iLDs
+agree well with experimental values numerically suggests that the total membrane displacements are good measures of the membrane properties.
 \begin{figure}[ht!]
 \centering
   \includegraphics[width=.5\linewidth]{Diagrams/Plots/iLD/all.png}
@@ -414,7 +415,8 @@ We now find expressions for the iTD and iLD in terms of the above ratio,
 using \eqref{iLDfirstdef} and \eqref{iTDfirstdef}. We essentially have 
 a expression for the iLD and iTD specta with two unknown parameters. We now need two equations for a given frequency (or a given
 pair of frequencies) that can be used to determine $Q$ and $f_0$. The first of these equations is obtained by requiring that
-the derivative of the iLD goes to zero at a given frequency - the frequency of maximum iLD.
+the derivative of the iLD goes to zero at a given frequency - $f_{max}$, i.e. the experimentally determined frequency of 
+peak amplitude difference.
 
 
 The second equation requires us to put a constraint on the iTD. To do this we first look at the behaviour of the iTD for our system parameters for
@@ -424,7 +426,8 @@ The dependenc of the iTD on $Q$ is a little more complicated but perhaps more re
 iTD spectrum for the three typical ranges of $Q$. At ``low'' values of $Q$ the iTD increases upto a certain frequency and drops
  after reaching its maximum value, $1/f_0$. At higher values the iTD decreases steadily with frequency upto a certain value and
  somewhere in the middle, the iTD remains more or less constant upto a certain frequency. This behaviour gives evidence for the existence of an optimal value $Q_0$ 
-for which the iTD  best satisfies requirement \ref{listitem2}.
+for which the iTD  best satisfies requirement \ref{listitem2}. We can approximate this requirement by requiring that the derivative of
+the iTD with respect to frequency vanishes at $f_0$.
 
 \begin{figure}[ht!]
 \centering

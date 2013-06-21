@@ -25,10 +25,35 @@ condition simplified the expression of the pressure by approximating it as a pla
 frequency ranges of interest to us this turned out to be a reasonable assumption. At the end of the chapter we obtained expressions
 for the membrane displacements in terms of the input pressure inputs to both ears.
 
-In Chapter \ref{modelanalysis} we introduced the main directional cues in terms of the total membrane displacements $S^{0/L}$ (the
-integrals of the membrane displacement).
+In Chapter \ref{modelanalysis} we evalueated the results of our model - specifically its direction and frequency. We started
+by comparing the total membrane displacements $S^{0/L}$ (the integrals of the membrane displacement) with the experimentally 
+measured values of displacement at the tip of the extracolumella. 
+For the membrane velocities, we found that they vary systematically with
+direction and frequency and were in general higher in ipsilateral directions. The experimentally observed properties such
+as the marked asymmetry, steepness across the midline and general frequency response were also reproduced. The shape of the membrane
+velocities suggested that monoaural computation of membrane velocities would not serve well as directional cues.
+
+We then went on to introduce the main directional cues in terms of the ratio $S^{0}$ and $S^{L}$. Namely, the Internal Level Difference
+(iLD) which was defined as the decibel of the absolute value of this ratio and the Internal Time Difference (iTD) defined as its complex
+argument divided by the angular frequency $\omega$. The simultaneous frequency and direction dependence of the iLD was illustrated by
+means of contour plots and were found to be consistent with experimental measurements- both in terms of qualitative spectral behaviour and
+quantitative values. We then introduced the requirements these cues must fulfil in order to effectively serve as
+directional cues.
+
+
 
 
 \section{Open Questions}
 The main advantage of the ICE-model is to explain the frequency and direction dependence of the
-hearing cues.
+hearing cues. In order to have a complete quantitative description of the ICE-model, we would also need to take
+into account the motion of the extracolumella and the exact shape of realistic mouth cavities. The first of
+these can be treated analytically upto a point. The main modification would be in the membrane boundary
+conditions corresponding to the extracolumella. Instead of setting the displacement to zero, we would need to take into
+account the mass of the extracolumella resulting in a new equation of motion. This equation would describe the motion
+of the extracolumella driven by the membrane tension and the internal and external pressure difference. A further step
+would be to incorporate the flection of the extracolumella at higher frequencies. This would require a further 
+understanding of its constituent cartilaginous material and would necessitate a numerical treatment.
+
+Due the complex shape of a realistic mouth cavity, a full treatment is not conducive to an analytical treatment.
+Numerical software like COMSOL\textregistered can be used to treat reconstructions of mouth casts. Another possibility
+would be to include the effects of the nostrils as either a new set of boundary conditions or a third input source.
