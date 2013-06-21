@@ -37,7 +37,7 @@ of the ICE model.
 In Sec. \ref{subsecinnercavity}, we will describe the cylindrical model for the mouth cavity and state the reasons
 for our choice of the geometry and the dimensions used. We will then proceed to describe the middle
 ear system and its main components of interest, the \textit{extracolumella} and the \textit{tympani}
-in Sec. \ref{middleear}. Finally, in Sec. \ref{soundinput} we will analyze the dependence of the acoustic input to both
+in Sec. \ref{middleear}. Finally, in Sec. \ref{soundinput} we will analyse the dependence of the acoustic input to both
 eardrums on the direction of the sound source, head size and shape. 
 \subsection{Mouth Cavity}\label{subsecinnercavity}
 In the earlier treatment of the ICE model, the mouth cavity is modelled as a simple cylinder closed at 
@@ -64,7 +64,7 @@ While maintaining the same tympanum size and interaural distance we can therefor
 \begin{subfigure}{1.0\textwidth}
  \centering
   \includegraphics[width=.5\linewidth]{Diagrams/oldCylinder.png}
-   \caption[Previous ICE Model Cylinder]{The previous geometric representation of the ICE model.}
+   \caption[Previous ICE Model Cylinder]{The previous geometric reprentation of the ICE model.}
   \label{oldICE}
 \end{subfigure}
 
@@ -94,7 +94,7 @@ The main components of the middle-ear of lizards are the two eardrums, the colum
 The tympanic membrane or the eardrum is a thin membrane that separates the outer ear and the
 middle ear and vibrates in response to external sound waves.  Unlike humans, lizards 
 possess only a single middle ear bone, the \textit{columella},
-that is connected to both eardrums by means of a cartilaginous element, the \textit{extracolumella}.
+that is connected to both eardrums by means of a cartileginous element, the \textit{extracolumella}.
 
 The membrane-extracolumella-columella system functions
 as a second-order lever where the membrane - driven by the internal and external pressures - causes a displacement
@@ -109,7 +109,7 @@ as the ossicles.
 For low frequencies (below $4$kHz), the extracolumella (or more accurately, the inferior process of the extracolumella)
 moves as a completely stiff bar. It was shown by Manley \cite{manleygecko2} that the extracolumella begins to flex at higher frequencies - 
 this is illustrated in fig. \ref{extracolumellaflection}. This is partly responsible for the poor high-frequency response of gecko middle ears - 
-a feature also observed in other non-mammalian vertebrates. The reason for this is that, due to the flection some energy is lost and
+a feature also observed in other non-mammalian verterbates. The reason for this is that, due to the flection some energy is lost and
 not transferred to the columella.
 
 \begin{figure}[ht]
@@ -124,10 +124,10 @@ not transferred to the columella.
 The extracolumella applies a significant 
 mechanical load on the tympanum and thereby precludes its treatment as a freely vibrating membrane. 
 Furthermore, the contact surface of the malleus on the human eardrum is more or less symmetric whereas the 
-extracolumella is attached asymmetrically. This has important physical consequences - especially in the 
+extracolumella is attached asymetrically. This has important physical consequences - especially in the 
 observed vibration patterns of the membrane.
 
-In the previous treatment of the ICE model, the tympanum was modelled as a clamped circular membrane with asymmetrically
+In the previous treatment of the ICE model, the tympanum was modelled as a clamped circular membrane with assymetrically
 attached sectoral load between $-\beta<\phi<\beta$ (\cite{vossenjasa}). This manifests itself as an additional
 boundary condition at $\phi=\beta$ and $\phi=-\beta$ which has to satisfied via a numerical approximation. While
 this method has the advantage of being able to accurately reproduce the complex vibration patterns of the eardrum, 
@@ -186,7 +186,7 @@ to the ear (\cite{koepplcarr1}).
 In general a the sound on the other side of the head will differ in phase as well as amplitude. This is a result of the diffraction of 
 sound around the head and body of the animal. The exact variation depends on the size of the animal and the frequency of the
 incident wave. Due to the typically small head size of geckos, the amplitude variation 
-(known as shadowing) is negligible (\cite{michelsenlarsen}). The phase difference, although small compared to those in larger animals, 
+(known as shadowing) is neglible (\cite{michelsenlarsen}). The phase difference, although small compared to those in larger animals, 
 cannot be neglected. We can therefore consider the sound wave with angular frequency $\omega$ to have a constant (pressure) amplitude $p$
 on the head.
 
@@ -395,7 +395,7 @@ direction. The first of these modes (corresponding to $q=0,s=0$) is of particula
 maximum of $J_0$ occurs at $r=0$, we have $\nu_{00}=0$. This leads to the first mode being a plane-wave which
 is constant in $r$ and $\phi$ and only varies in $x$. 
 
-A very useful property of the above modes is their orthogonality, i.e.
+A very useful property of the above modes is their orthgonality, i.e.
 \begin{equation}\label{pressureorthogonality}
  \int_\Omega dVp_{q_1s_1}p_{q_2s_2}=0,\ if\ q_1\neq q_2\ or\ s_1\neq s_2
 \end{equation}
@@ -417,7 +417,7 @@ for the membrane vibrations - as we will in the following section.
 \subsection{Vibration of the Membrane}\label{membranevibrations}
 As a preliminary exercise, we will first derive expressions for the free and force-driven
 vibrations of a circular membrane. We will then use our results to move on to the sectoral membrane 
-which corresponds to the tympanum loaded by the extracolumella. This corresponds to the approximating
+which corresponds to the tympanum loaded by the extracolumella. Thi corresponds to the approximating
 the extracolumella to have infinite mass. 
 \subsubsection{Circular Membrane}
 The equation of motion for the vibration of a rigidly clamped circular membrane of radius $a_M$ solves for the membrane displacement $u$ at
@@ -623,7 +623,7 @@ We can therefore write the approximate boundary conditions to zeroeth order as,
    \rho\omega^2S^{0}&=-\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}-B_{qs}\right)f_{qs}(r,\phi) \label{bcfinal1}\\
    \rho\omega^2S^{L}&=\displaystyle\sum^\infty_{q=0}\displaystyle\sum^\infty_{s=0}j\zeta_{qs}\left(A_{qs}e^{j\zeta_{qs}L}-B_{qs}e^{-j\zeta_{qs}L}\right)f_{qs}(r,\phi) \label{bcfinal2}
 \end{align}
-As shown in Sec. \ref{internalcavity}, the $(0,0)$ mode only varies in the $x$-direction.
+As shown in Sec. \ref{internalcavity}, the $(0,0)$ mode only varies in the $x$-direciton.
 As a result, the left-hand sides of
 the above equation are nothing but the average displacement of the membrane surface given by,
 \begin{equation}\label{averagemembranedisp}
@@ -710,10 +710,10 @@ and \eqref{contramembranefull} giving us a new set of ipsi- and contralateral fi
 The ipsilateral filter effectively gives us the response of the membrane to a purely ipsilateral stimulus or equivalently when the contralateral membrane
 is blocked. Similarly, the contralateral filter gives us its response when the ipsilateral membrane is blocked. These filters
 will play an important role in the evaluation of the model in the next chapter. Before we move on it is important to note that since $\Lambda$ is an infinite series,
-in numerical analyzes it has to be approximated by choosing an appropriate membrane mode cutoff. The choice of this
+in numerical analyses it has to be approximated by choosing an appropriate membrane mode cutoff. The choice of this
 cutoff depends on parameters specific to the animal; cf. Sec. \ref{parameterestimation}. The basic method involves arranging the modes in increasing order of eigenfrequency
 (or equivalently $\mu_{mn}$). As a result, we can express the summation over a single index. In general, for the frequency ranges of the animals
-we are concerned with, we will not need to calculate the summation beyond the the first $30$ eigenmodes.
+we are concerned with, we will not need to calcualate the summation beyond the the first $30$ eigenmodes.
 
 \subsection{Circuit Model}
 Before we conclude this chapter, we will discuss the previous methods used to model ears coupled through
@@ -737,7 +737,7 @@ given by $Z=R+j\omega L+1/j\omega C$. $\omega_T$ is the first eigenfrequency of 
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.5\linewidth]{Diagrams/lowfreqcircuit.png}
- \caption[Low frequency circuit analog]{Low frequency circuit analog for the ICE Model. The membrane impedances are denoted by $Z_T$ and the impedance of 
+ \caption[Low frequency circuit analog]{Low frequency circuit analog for the ICE Model. The membrane impedences are denoted by $Z_T$ and the impedance of 
  the internal cavity is denoted by $Z_V$. The acoustic flows are given by $U_1\mbox{ and }U_2$.}
   \label{lowfreqcircuit}
 \end{figure}
@@ -771,8 +771,8 @@ resonance frequencies of the cylinder, i.e at $\omega=n\pi c/L,\ n=1,2\ldots$.
 
 \noindent We conclude this chapter by briefly stating the advantages of our method in comparison to the lumped element method - 
 \begin{itemize}
- \item In terms of the membrane motion - we are able to account for the effect of asymmetrically loaded extracolumella rendering it possible to describe the membrane motion is spatial detail.
- \item At low frequencies our model is consistent with the uniform pressure assumption but the non-uniformity steadily increases with frequency.
+ \item In terms of the membrane motion - we are able to account for the effect of asymetrically loaded extracolumella rendering it possible to describe the membrane motion is spatial detail.
+ \item At low frequencies our model is consistent with the uniform pressure assumption but the nonuniformity steadily increases with frequency.
   We therefore have a single model that can describe both high- and low-frequency behaviour instead of treating the two regimes separately.
 \end{itemize}
 

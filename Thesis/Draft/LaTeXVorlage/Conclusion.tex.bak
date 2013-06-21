@@ -12,7 +12,7 @@ as a circular sector of angle $2\pi-2\beta$. The remaining sector of angle $2\be
 the extracolumella - the extension whose function is to serve as a transducer of
 membrane vibrations. We had modelled the extracolumella as being a stationary object and its
 effect on the membranes was given through additional boundary conditions at $\phi=\pm\beta$. The variation of air-pressure
-inside the tube was described by the $3D$ wave equation with no-penetration boundary conditions at the wall. In the previous
+inside the tube was described by the $3D$ wave equation with no-penentration boundary conditions at the wall. In the previous
 treatment it was assumed that the pressure modes inside the cavity are identical to the circular modes on the membrane. 
 
 We then proceeded to find a solution to the full problem viz., the vibration of the membranes coupled through the cylindrical
@@ -25,7 +25,7 @@ condition simplified the expression of the pressure by approximating it as a pla
 frequency ranges of interest to us this turned out to be a reasonable assumption. At the end of the chapter we obtained expressions
 for the membrane displacements in terms of the input pressure inputs to both ears.
 
-In Chapter \ref{modelanalysis} we evaluated the results of our model - specifically its direction and frequency. We started
+In Chapter \ref{modelanalysis} we evalueated the results of our model - specifically its direction and frequency. We started
 by comparing the total membrane displacements $S^{0/L}$ (the integrals of the membrane displacement) with the experimentally 
 measured values of displacement at the tip of the extracolumella. 
 For the membrane velocities, we found that they vary systematically with
@@ -39,7 +39,7 @@ argument divided by the angular frequency $\omega$. In order to stress on the un
  quantities were compared with experimentally measured ones for two gekkonids - the common house gecko.(\emph{Hemidactylus frenatus}) and the Tokay gecko
  (\emph{Gekko gecko}). The simultaneous frequency and direction dependence of the iLD was illustrated by
 means of contour plots and were found to be consistent with experimental measurements - both in terms of qualitative spectral behaviour and
-quantitative values thus justifying our choice of $S^{0/L}$ as measures of membrane displacement. We then introduced the requirements these cues must fulfill in order to effectively serve as
+quantitative values thus justifying our choice of $S^{0/L}$ as measures of membrane displacement. We then introduced the requirements these cues must fulfil in order to effectively serve as
 directional cues. For the iLDs it was found that these requirements are best satisfied at relatively higher frequencies while
  iTDs seem to be more effective at lower frequencies.
  
@@ -48,7 +48,7 @@ is dictated by the size of the head in comparison to the wavelength, the transit
 properties like the fundamental eigenfrequency and damping. Certain parameters of the model were directly based on experimental
 values - membrane density, radius and thickness, cavity volume, head width etc. The other membrane specific parameters such
 as its first eigenfrequency and its damping coefficient are hard to experimentally determine. In Sec. \ref{parameterestimation} we therefore presented
-a possible method to estimate these parameters from observations. We ended the chapter by illustrating the vibrations patterns of one of the ICE-model
+a possible method to estimate these parameters from observations. We endede the chapter by illustrating the vibrations patterns of one of the ICE-model
 membranes with the opposite one blocked. These patterns were compared and found to be in good agreement with the patterns experimentally measured for the Tokay gecko by Manley \cite{manleygecko1}.
 
 
@@ -68,6 +68,6 @@ Numerical software like COMSOL can be used to treat reconstructions of mouth cas
 would be to include the effect of the nostrils as either a new set of boundary conditions or a third input source. The eigenfrequencies
 of the mouth cavity were studied by Vossen but the influence of the holes corresponding to the membranes was neglected here. Additionally,
 the neuronal basis of the computation of iTD cues is not fully understood and the applicability of the Jeffress model in their
-case has also been called into question. Lastly, the response of the animal to sound stimuli in realistic environments viz. in the presence
-of multiple obstacles could also be a topic for further study. This however necessitates further experimental analyzes of sound localization in
+case has also been called into question. Lastly, the response of the animal to sound stimuli in realistic enviroments viz. in the presence
+of multiple obstacles could also be a topic for further study. This however necessitates further experimental analyses of sound localization in
 vertebrates.
