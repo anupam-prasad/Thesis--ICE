@@ -1,5 +1,5 @@
 \chapter{Introduction}\label{introchapter}
-Among sensory systems, the auditory system is perhaps the most ubiquitious. The 
+Among sensory systems, the auditory system is perhaps the most ubiquitous. The 
 development of numerous strategies for the detection and processing of auditory stimuli
 across several species is a testament to this fact; cf. Sec. \ref{auditoryevolution}. The processing of sound stimuli is fairly fast and in comparison
 to light stimuli, sound has two main properties - it is omnidirectional and due to
@@ -21,7 +21,7 @@ The vibrations are then transmitted by means of a set of bony or cartilaginous e
 converted into electrochemical signals that will be processed neuronally; see Sec. \ref{mechanicalprocessing}.
 
 The neuronal processing system consists of building blocks called \emph{neurons} which are
-connected to eachother through \emph{synapses}. The entire system is referred to as a 
+connected to each other through \emph{synapses}. The entire system is referred to as a 
 \emph{neuronal net} which, through a form of computation, gives rise to representations of the stimuli
 known as \emph{neuronal maps}. Each neuron of the map represents a specific property, e.g.
 the position in space or the frequency of the stimulus and neighbouring neurons respond to
@@ -85,7 +85,7 @@ different paths to reach either ear and is in general not as strongly affected b
 However, most hearing animals are lack monoaural cues and the binaural
 cues are at best too small to affect the neural responses of the ears, \cite{michelsen1}. These animals are in general too small in comparison
 to the wavelength of sound in their typical hearing range to cause an appreciable amplitude differences due to diffraction. Nevertheless, 
-the eardrum vibration amplitude has been found to vary strongly with direction. In order to reslove this apparent paradox it was
+the eardrum vibration amplitude has been found to vary strongly with direction. In order to resolve this apparent paradox it was
 suggested by Autrum \cite{autrumjcomphys} that in locusts the directionality could be a result of the ears vibrating due to the
 differences between the pressure on the inner and outer surfaces (see \cite{michelsenlarsen} for a review).  The properties of such systems were also found to be analogous with the inherently directional 
 nature of pressure gradient receivers studied by Harry Olson (\cite{olsonmichrophones}). Pressure difference reception has
@@ -116,10 +116,10 @@ Following Vossen,  we refer to our model as ``ICE'' (Internally Coupled Ears). O
 enhanced differences (iTD/iLD). In particular we are interested in the frequency and direction dependence of the hearing cues. The problem of
 directional hearing in lizards was previously treated by Vossen (see Chapter 2 of \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}).
 Here, an analytical model of internally coupled ears with a cylindrical air cavity was first presented. This thesis aims to be an extension of the previous work
-wherein we seek to provide an anlytical model that reflects the frequency and directional behaviour of such systems in nature. Our work deviates in
+wherein we seek to provide an analytical model that reflects the frequency and directional behaviour of such systems in nature. Our work deviates in
 the treatment of the following aspects - 
 \begin{itemize}
- \item While constructing the mouth cavity we place an emphasis on maintining its volume resulting in different radii for the tympanum and the cylindrical cavity; See Sec. \ref{subsecinnercavity}.
+ \item While constructing the mouth cavity we place an emphasis on maintaining its volume resulting in different radii for the tympanum and the cylindrical cavity; See Sec. \ref{subsecinnercavity}.
  \item For the pressure inside the cavity (See Sec. \ref{internalcavity}) we propose a different set of modes that represent it more accurately.
  \item The treatment of the membrane and its transducer - the extracolumella (See Sec. \ref{tympanicmembrane}). We propose a construction that is easier to treat analytically and reproduces
  the vibration patterns fairly well.
@@ -134,7 +134,7 @@ regions of the basilar membrane. In this manner, the basilar membrane functions 
 
 Early stages of auditory pathways in birds and mammals contain synaptic relays designed to preserve the temporal fine structure of 
 acoustic stimuli with great accuracy.  Studies of neural processing in Tokay geckos have also shown similar properties \cite{dalsgaardtangcarr}.
-These animals possess cochlear nucleii (the collections of neurons that receive input from the cochlear nerve) that are specialized either for
+These animals possess cochlear nuclei (the collections of neurons that receive input from the cochlear nerve) that are specialized either for
 the computation of time differences (iTD/ITD) or level differences (iLD/ILD) between the tympani. The neurons sensitive to level difference are excited by the 
 input from one ear and inhibited by the other. These neurons are for obvious reasons known as 'EI' neurons and respond most strongly when the
 sounds come from the excitatory ear. The inhibitory ear, on the other hand sits on the far side of the head resulting in an increased firing
@@ -143,8 +143,8 @@ due to increased inhibition. Thus, the neural firing rate encodes the sound sour
 
 In contrast, the neurons sensitive to time differences are excited by inputs from both ears ('EE' neurons, Fig. \ref{EEtypedetector}a). The strength of the
 excitation depends on the exact relative timing of the inputs. Just as is the case for larger animals, the level
-differences are more pronounced are most effective at higher frequencies and the time differnce cues at lower frequencies. Sound waves are encoded
-by neurons as sinusoidal membrane potentials. The primary sensory neurons, known as afferent neurons, phase lock to the inupt
+differences are more pronounced are most effective at higher frequencies and the time difference cues at lower frequencies. Sound waves are encoded
+by neurons as sinusoidal membrane potentials. The primary sensory neurons, known as afferent neurons, phase lock to the input
 stimulus and are most likely to fire near the peak of the sound wave. Their synaptic potentials (formed due to differences
 in ion concentration) sum to produce fluctuating membrane potentials which resemble the stimulus waveform; see Fig. \ref{EEtypedetector}b. 
 \begin{figure}[ht!]
@@ -180,7 +180,7 @@ Our study will take place in two main steps. In Chapter \ref{modelchapter} we wi
 present our model for the mechanical processing of auditory signals in systems with internally coupled ears - the ICE Model.
 Since our focus is on an analytical model, we would like to have a system that reduces to tractable mathematical expressions
 so that we can clearly see the dependence of the system's behaviour on its parameters. To this end we will model the 
-combination of the eustachian tubes, middle ear cavity and pharynx as a single continuous cylindrically shaped air cavity; see
+combination of the Eustachian tubes, middle ear cavity and pharynx as a single continuous cylindrically shaped air cavity; see
 Sec. \ref{subsecinnercavity}. The ears will be modelled as linear elastic membranes that are circular with an omitted sector replaced
 by a non-moving plate
 that corresponds to the extracolumella - the extension of the columella that is in contact with the ear. The

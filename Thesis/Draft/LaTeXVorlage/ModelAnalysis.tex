@@ -50,14 +50,14 @@ defined in \ref{parametertable}. For now we will simply list the values and leav
 Parameter name & Hemidactylus & Tokay gecko\\
 \hline
 Length of the cylinder or interaural distance, L & $10$mm & $22$mm\\
-Radius of the tympanic membrane, $a_{tymp}$& $1.6$mm & $2.6$mm\\
+Radius of the tympanic membrane, $a_{\mathrm{tymp}}$& $1.6$mm & $2.6$mm\\
 Fundamental frequency (first eigenfrequency) of the tympanic membrane, $f_0=\omega_{01}/2\pi$ & $2.8$kHz & $1.05$kHz\\
 Quality factor of the tympanum, $Q$ & $1.54$ &  $1.33$\\
 Density of the membrane material, $\rho_m$ & $1$mg/mm$^3$ & $1$mg/mm$^3$\\
 Thickness of the membrane, $d$& $8\mu$m & $10\mu$m\\
-Volume of the cavity, $V_{cav}$ & $.32$ml & $3.5$ml\\ 
+Volume of the cavity, $V_{\mathrm{\mathrm{cav}}}$ & $.32$ml & $3.5$ml\\ 
 Extracolumella angle, $\beta$ & $\pi/25$ & $\pi/25$\\
-Cylinder radius calculated from $V_{cav}$ and $L$ using the formula given in \eqref{cylinderradiusformula}, $a_{cyl}$ & $\sim 3.2$mm  &$\sim 6.6$mm \\
+Cylinder radius calculated from $V_{\mathrm{\mathrm{cav}}}$ and $L$ using the formula given in \eqref{cylinderradiusformula}, $a_{cyl}$ & $\sim 3.2$mm  &$\sim 6.6$mm \\
 \hline
 \end {tabular}\par
 \bigskip
@@ -361,13 +361,13 @@ both iTD and iLD cues can simultaneously be used.
 Up to this point we have calculated the desired quantities in our model by using the values given in Table \ref{parametertable}.
 Some of the parameters can be directly taken from their measured values whereas
 the rest will need to be estimated indirectly. 
-For the head width/interaural distance ($L$), cavity volume ($V_{cav}$), the density of the membrane ($\rho_m$)\footnote{A caveat: The density given in common models for the tympanum
+For the head width/interaural distance ($L$), cavity volume ($V_{\mathrm{\mathrm{cav}}}$), the density of the membrane ($\rho_m$)\footnote{A caveat: The density given in common models for the tympanum
 is around $3$mg/mm$^3$ but this includes the mass of the transducer (the extracolumella). The density of the material of the tympanic membrane is in fact closer to the density of water,
 hence the chosen value of $1$mg/mm$^3$} and its thickness ($d$)
 we can use the directly measured values. The radius of the cylinder ($a_{cyl}$) can be calculated from the first two quantities
 using \eqref{cylinderradiusformula}. 
 As we've already seen in Fig. \ref{tympanummodel}, the realistic tympanic membrane is an ellipsoid rather than a perfect circle therefore the radius of our tympanum will
-instead be estimated from the area of the membrane as $a_{tymp}=\sqrt{A/\pi}$. For the extracolumella angle ($\beta$), we use the value estimated by Vossen \cite{vossenjasa}.
+instead be estimated from the area of the membrane as $a_{\mathrm{tymp}}=\sqrt{A/\pi}$. For the extracolumella angle ($\beta$), we use the value estimated by Vossen \cite{vossenjasa}.
 
 The parameters that require an indirect estimation are the first membrane eigenfrequency ($f_0$) and
 its quality factor $Q$. The first of these effectively gives us the propagation speed of membrane vibrations, $c_M=2\pi f_0/\mu_{01}$ 
@@ -402,7 +402,7 @@ we can therefore calculate $\Lambda$ up to the first eigenmode i.e. the $(1,1)$ 
 This gives us,
 \begin{align}
  &\eta=G\widetilde{\Omega}_{01}\frac{\sin kL}{kL}-\cos kL\\
- &\mbox{where, }G=\frac{V_{cav}\rho_md}{\rho c^2 K_{01}}\nonumber.
+ &\mbox{where, }G=\frac{V_{\mathrm{\mathrm{cav}}}\rho_md}{\rho c^2 K_{01}}\nonumber.
 \end{align}
 The term $G$ contains all the information from the ``fixed'' parameters like cavity volume, membrane density, thickness etc. and
 $\widetilde{\Omega}_{01}=(\omega^2-2j\alpha\omega-\omega^2_{01})$ contains the as yet unknown parameters, $f_0$ and $Q$. Substituting
@@ -416,7 +416,7 @@ using \eqref{iLDfirstdef} and \eqref{iTDfirstdef}. We have used subscripts to in
 at $\theta = 90^\circ$. We essentially have 
 a expression for the iLD and iTD spectra with two unknown parameters. We now need two equations for a given frequency (or a given
 pair of frequencies) that can be used to determine $Q$ and $f_0$. The first of these equations is obtained by requiring that
-the derivative of the iLD goes to zero at a given frequency - $f_{max}$, i.e. the experimentally determined frequency of 
+the derivative of the iLD goes to zero at a given frequency - $f_{\mathrm{max}}$, i.e. the experimentally determined frequency of 
 peak amplitude difference.
 
 
@@ -433,13 +433,16 @@ the complex argument with respect to frequency vanishes at $f_0$.
 \begin{figure}[ht!]
 \centering
   \includegraphics[width=.7\linewidth]{Diagrams/Plots/paramtest/allthree.jpeg}
-  \caption[Dependence of iTD spectrum on Quality Factor]{}
+  \caption[Dependence of iTD spectrum on Quality Factor]{The three curves correspond to the iTD spectrum for different values
+  of Q. In the red curve we have the spectrum for a near ideal value of $Q$ such that the iTD remains more or less constant upto
+  a given frequency. The blue curve corresponds to a low $Q$ for which the iTD increases upto a peak value ($1/f_0$) and drops afterwards.
+  In the yellow curve we see that the iTD decreases steadily with frequency upto a certain point before converging to the ITD value.}
   \label{itdQdependence}
 \end{figure}
 \noindent These conditions can therefore be written as the following set of equations,
 \begin{align}
- \left.\frac{d (iLD_{90})}{df}\right|_{f=f_{max}}=0\\
- \left.\frac{d^2 \omega (iTD_{90})}{df^2}\right|_{f=f_{max}}=0
+ \left.\frac{d (\mbox{iLD}_{90})}{df}\right|_{f=f_{\mathrm{max}}}=0\\
+ \left.\frac{d^2 \omega (\mbox{iTD}_{90})}{df^2}\right|_{f=f_{\mathrm{max}}}=0
 \end{align}
 These give us a pair of nonlinear equations that can be numerically solved to obtain values for $f_0$ and $Q$.
 
