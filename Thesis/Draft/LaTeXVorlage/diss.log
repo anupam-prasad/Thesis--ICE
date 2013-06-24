@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  23 JUN 2013 23:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  24 JUN 2013 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,21 +656,21 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [36]
-<Diagrams/Plots/hemidactylusvibampfull.png, id=752, 3012.053pt x 1374.736pt>
+<Diagrams/Plots/hemidactylusvibampfull.png, id=752, 3240.908pt x 1374.736pt>
 File: Diagrams/Plots/hemidactylusvibampfull.png Graphic file (type png)
 
 <use Diagrams/Plots/hemidactylusvibampfull.png>
 Package pdftex.def Info: Diagrams/Plots/hemidactylusvibampfull.png used on inpu
 t line 104.
-(pdftex.def)             Requested size: 460.72124pt x 210.271pt.
+(pdftex.def)             Requested size: 460.72124pt x 195.41945pt.
 
-<Diagrams/Plots/tokayvibampfull.png, id=757, 3048.188pt x 1343.419pt>
+<Diagrams/Plots/tokayvibampfull.png, id=757, 3326.829pt x 1343.419pt>
 File: Diagrams/Plots/tokayvibampfull.png Graphic file (type png)
 
 <use Diagrams/Plots/tokayvibampfull.png>
 Package pdftex.def Info: Diagrams/Plots/tokayvibampfull.png used on input line 
 119.
-(pdftex.def)             Requested size: 460.72124pt x 203.04156pt.
+(pdftex.def)             Requested size: 460.72124pt x 186.02748pt.
 
 <Diagrams/Plots/hemidactylusipsivscontrafull.png, id=764, 4177.206pt x 1603.591
 pt>
@@ -702,56 +702,56 @@ Overfull \hbox (69.10536pt too wide) in paragraph at lines 167--169
 
 [37] [38 <./Diagrams/Plots/hemidactylusvibampfull.png> <./Diagrams/Plots/tokayv
 ibampfull.png>]
-<Diagrams/Plots/directionplots/directionplots.png, id=789, 3842.355pt x 3396.69
+<Diagrams/Plots/directionplots/directionplots.png, id=789, 3905.792pt x 3396.69
 pt>
 File: Diagrams/Plots/directionplots/directionplots.png Graphic file (type png)
  <use Diagrams/Plots/directionplots/directionplots.png>
 Package pdftex.def Info: Diagrams/Plots/directionplots/directionplots.png used 
 on input line 177.
-(pdftex.def)             Requested size: 345.54092pt x 305.42976pt.
- [39 <./Diagrams/Plots/hemidactylusipsivscontrafull.png>] [40 <./Diagrams/Plots
-/tokayipsivscontrafull.png> <./Diagrams/Plots/freqdepboth.png>] [41 <./Diagrams
+(pdftex.def)             Requested size: 345.54092pt x 300.45416pt.
+ [39 <./Diagrams/Plots/hemidactylusipsivscontrafull.png> <./Diagrams/Plots/toka
+yipsivscontrafull.png>] [40 <./Diagrams/Plots/freqdepboth.png>] [41 <./Diagrams
 /Plots/directionplots/directionplots.png>]
-<Diagrams/Plots/iLD/hemidactylusiLDboth.png, id=823, 2559.964pt x 1276.77pt>
+<Diagrams/Plots/iLD/hemidactylusiLDboth.png, id=823, 2990.372pt x 1276.77pt>
 File: Diagrams/Plots/iLD/hemidactylusiLDboth.png Graphic file (type png)
 
 <use Diagrams/Plots/iLD/hemidactylusiLDboth.png>
 Package pdftex.def Info: Diagrams/Plots/iLD/hemidactylusiLDboth.png used on inp
 ut line 253.
-(pdftex.def)             Requested size: 460.72124pt x 229.76971pt.
+(pdftex.def)             Requested size: 460.72124pt x 196.70891pt.
  [42]
-<Diagrams/Plots/iLD/tokayiLDboth.png, id=838, 2476.452pt x 1217.348pt>
+<Diagrams/Plots/iLD/tokayiLDboth.png, id=838, 2975.115pt x 1217.348pt>
 File: Diagrams/Plots/iLD/tokayiLDboth.png Graphic file (type png)
 
 <use Diagrams/Plots/iLD/tokayiLDboth.png>
 Package pdftex.def Info: Diagrams/Plots/iLD/tokayiLDboth.png used on input line
  262.
-(pdftex.def)             Requested size: 460.72124pt x 226.46896pt.
+(pdftex.def)             Requested size: 460.72124pt x 188.50124pt.
 
-<Diagrams/Plots/iLD/all.png, id=845, 2945.404pt x 2789.622pt>
+<Diagrams/Plots/iLD/all.png, id=845, 2987.16pt x 2789.622pt>
 File: Diagrams/Plots/iLD/all.png Graphic file (type png)
 
 <use Diagrams/Plots/iLD/all.png>
 Package pdftex.def Info: Diagrams/Plots/iLD/all.png used on input line 279.
-(pdftex.def)             Requested size: 345.54092pt x 327.24855pt.
-
-<Diagrams/Plots/iLD/iLDspectrumboth2.png, id=848, 894.542pt x 462.528pt>
+(pdftex.def)             Requested size: 345.54092pt x 322.65141pt.
+ [43 <./Diagrams/Plots/iLD/hemidactylusiLDboth.png> <./Diagrams/Plots/iLD/tokay
+iLDboth.png>]
+<Diagrams/Plots/iLD/iLDspectrumboth2.png, id=854, 894.542pt x 462.528pt>
 File: Diagrams/Plots/iLD/iLDspectrumboth2.png Graphic file (type png)
 
 <use Diagrams/Plots/iLD/iLDspectrumboth2.png>
 Package pdftex.def Info: Diagrams/Plots/iLD/iLDspectrumboth2.png used on input 
 line 288.
 (pdftex.def)             Requested size: 414.6463pt x 214.39575pt.
- [43 <./Diagrams/Plots/iLD/hemidactylusiLDboth.png>] [44 <./Diagrams/Plots/iLD/
-tokayiLDboth.png>]
-<Diagrams/Plots/iTD/both.png, id=868, 3272.225pt x 1073.611pt>
+
+<Diagrams/Plots/iTD/both.png, id=863, 3272.225pt x 1073.611pt>
 File: Diagrams/Plots/iTD/both.png Graphic file (type png)
 
 <use Diagrams/Plots/iTD/both.png>
 Package pdftex.def Info: Diagrams/Plots/iTD/both.png used on input line 315.
 (pdftex.def)             Requested size: 460.72124pt x 151.15637pt.
 
-<Diagrams/Plots/iTD/itddirectionboth2.png, id=873, 2225.113pt x 562.1pt>
+<Diagrams/Plots/iTD/itddirectionboth2.png, id=868, 2225.113pt x 562.1pt>
 File: Diagrams/Plots/iTD/itddirectionboth2.png Graphic file (type png)
 
 <use Diagrams/Plots/iTD/itddirectionboth2.png>
@@ -759,34 +759,40 @@ Package pdftex.def Info: Diagrams/Plots/iTD/itddirectionboth2.png used on input
  line 324.
 (pdftex.def)             Requested size: 460.72124pt x 116.38055pt.
 
-<Diagrams/Plots/iTD/rangeboth.png, id=874, 2614.568pt x 1051.93pt>
+<Diagrams/Plots/iTD/rangeboth.png, id=869, 2614.568pt x 1051.93pt>
 File: Diagrams/Plots/iTD/rangeboth.png Graphic file (type png)
 
 <use Diagrams/Plots/iTD/rangeboth.png>
 Package pdftex.def Info: Diagrams/Plots/iTD/rangeboth.png used on input line 33
 2.
 (pdftex.def)             Requested size: 460.72124pt x 185.35854pt.
- [45 <./Diagrams/Plots/iLD/all.png>]
-[46 <./Diagrams/Plots/iLD/iLDspectrumboth2.png> <./Diagrams/Plots/iTD/both.png>
-] [47 <./Diagrams/Plots/iTD/itddirectionboth2.png> <./Diagrams/Plots/iTD/rangeb
-oth.png>] [48]
-<Diagrams/Plots/paramtest/allthree.jpeg, id=920, 955.57pt x 399.4925pt>
-File: Diagrams/Plots/paramtest/allthree.jpeg Graphic file (type jpg)
 
-<use Diagrams/Plots/paramtest/allthree.jpeg>
-Package pdftex.def Info: Diagrams/Plots/paramtest/allthree.jpeg used on input l
-ine 435.
-(pdftex.def)             Requested size: 322.50345pt x 134.82594pt.
- [49]
-<Diagrams/manleymodelcomparison.png, id=933, 2791.228pt x 2130.359pt>
+Underfull \vbox (badness 4805) has occurred while \output is active []
+
+ [44]
+[45 <./Diagrams/Plots/iLD/all.png>] [46 <./Diagrams/Plots/iLD/iLDspectrumboth2.
+png> <./Diagrams/Plots/iTD/both.png>] [47 <./Diagrams/Plots/iTD/itddirectionbot
+h2.png> <./Diagrams/Plots/iTD/rangeboth.png>]
+Underfull \vbox (badness 2591) has occurred while \output is active []
+
+ [48]
+<Diagrams/Plots/paramtest/allthree2.png, id=924, 781.319pt x 319.594pt>
+File: Diagrams/Plots/paramtest/allthree2.png Graphic file (type png)
+
+<use Diagrams/Plots/paramtest/allthree2.png>
+Package pdftex.def Info: Diagrams/Plots/paramtest/allthree2.png used on input l
+ine 436.
+(pdftex.def)             Requested size: 322.50345pt x 131.91704pt.
+
+<Diagrams/manleymodelcomparison.png, id=930, 2791.228pt x 2130.359pt>
 File: Diagrams/manleymodelcomparison.png Graphic file (type png)
 
 <use Diagrams/manleymodelcomparison.png>
 Package pdftex.def Info: Diagrams/manleymodelcomparison.png used on input line 
-459.
+460.
 (pdftex.def)             Requested size: 460.72124pt x 351.6241pt.
- [50 <./Diagrams/Plots/paramtest/allthree.jpeg>]) [51 <./Diagrams/manleymodelco
-mparison.png>]
+ [49]) [50 <./Diagrams/Plots/paramtest/allthree2.png>] [51 <./Diagrams/manleymo
+delcomparison.png>]
 \openout2 = `Conclusion.aux'.
 
  (./Conclusion.tex
@@ -993,8 +999,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
  8356 strings out of 493485
- 127724 string characters out of 3143526
- 250730 words of memory out of 3000000
+ 127725 string characters out of 3143526
+ 249730 words of memory out of 3000000
  11170 multiletter control sequences out of 15000+200000
  16549 words of font info for 61 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1030,10 +1036,10 @@ e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on diss.pdf (83 pages, 19155869 bytes).
+Output written on diss.pdf (83 pages, 19434439 bytes).
 PDF statistics:
- 1167 PDF objects out of 1200 (max. 8388607)
- 973 compressed objects within 10 object streams
+ 1174 PDF objects out of 1200 (max. 8388607)
+ 976 compressed objects within 10 object streams
  278 named destinations out of 1000 (max. 500000)
  372 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -49,27 +49,27 @@ defined in \ref{parametertable}. For now we will simply list the values and leav
 \hline
 Parameter name & Hemidactylus & Tokay gecko\\
 \hline
-Length of the cylinder or interaural distance, L & $10$mm & $22$mm\\
-Radius of the tympanic membrane, $a_{\mathrm{tymp}}$& $1.6$mm & $2.6$mm\\
-Fundamental frequency (first eigenfrequency) of the tympanic membrane, $f_0=\omega_{01}/2\pi$ & $2.8$kHz & $1.05$kHz\\
+Length of the cylinder or interaural distance, L & $10\,$mm & $22\,$mm\\
+Radius of the tympanic membrane, $a_{\mathrm{tymp}}$& $1.6\,$mm & $2.6\,$mm\\
+Fundamental frequency (first eigenfrequency) of the tympanic membrane, $f_0=\omega_{01}/2\pi$ & $2.8\,$kHz & $1.05\,$kHz\\
 Quality factor of the tympanum, $Q$ & $1.54$ &  $1.33$\\
-Density of the membrane material, $\rho_m$ & $1$mg/mm$^3$ & $1$mg/mm$^3$\\
-Thickness of the membrane, $d$& $8\mu$m & $10\mu$m\\
-Volume of the cavity, $V_{\mathrm{\mathrm{cav}}}$ & $.32$ml & $3.5$ml\\ 
+Density of the membrane material, $\rho_m$ & $1\,$mg/mm$^3$ & $1\,$mg/mm$^3$\\
+Thickness of the membrane, $d$& $8\,\mu$m & $10\,\mu$m\\
+Volume of the cavity, $V_{\mathrm{\mathrm{cav}}}$ & $.32\,$ml & $3.5\,$ml\\ 
 Extracolumella angle, $\beta$ & $\pi/25$ & $\pi/25$\\
-Cylinder radius calculated from $V_{\mathrm{\mathrm{cav}}}$ and $L$ using the formula given in \eqref{cylinderradiusformula}, $a_{cyl}$ & $\sim 3.2$mm  &$\sim 6.6$mm \\
+Cylinder radius calculated from $V_{\mathrm{\mathrm{cav}}}$ and $L$ using the formula given in \eqref{cylinderradiusformula}, $a_{cyl}$ & $\sim 3.2\,$mm  &$\sim 6.6\,$mm \\
 \hline
 \end {tabular}\par
 \bigskip
 \end{minipage}
-From these quantities it should be apparent that the house gecko, with an interaural separation of $10$mm and mouth cavity volume of $.32$ml is a rather
-small lizard. The Tokay gecko is the second largest gecko species (interaural separation of $22$mm and mouth cavity volume $3.5$ml, \cite{dalsgaardmanley2}).
+From these quantities it should be apparent that the house gecko, with an interaural separation of $10\,$mm and mouth cavity volume of $.32\,$ml is a rather
+small lizard. The Tokay gecko is the second largest gecko species (interaural separation of $22\,$mm and mouth cavity volume $3.5\,$ml, \cite{dalsgaardmanley2}).
 Thus we will demonstrate the scalability of our model with regards to hearing in animals with widely varying head widths and mouth cavities. As we will subsequently see, the geometric parameters, especially
 the head width and the membrane eigenfrequencies, put important limits on the ``hearing range'' of our model.
 
 Before we begin our comparison of the data, we should first acquaint ourselves with some experimental details. As already mentioned in Sec. \ref{soundinput}, the geckos were placed in
-an anechoic room. They were subject to $175$ms frequency sweeps (200-7500 Hz) at levels of 80-90 dB with the speakers placed at
-a $1$m distance. The eardrum vibrations were then measured using laser-Doppler vibrometry with the point
+an anechoic room. They were subject to $175\,$ms frequency sweeps (200-7500 Hz) at levels of 80-90 dB with the speakers placed at
+a $1\,$m distance. The eardrum vibrations were then measured using laser-Doppler vibrometry with the point
 of measurement at the tip of the extracolumella. The measured values correspond to the displacement velocity of the membrane at this point.  
 In our analysis, the point corresponding to the tip of the extracolumella is stationary and cannot be used to compare the vibrations of the membranes. 
 Instead, we use the total membrane displacements defined in the previous chapter which are given by,
@@ -98,7 +98,7 @@ frequency and direction is consistent. They also have the added advantage that t
 we compare the normalized velocity of the tympanic membrane ($\dot{S}^{0/L}/(\pi a^2_{cyl})$) with the membrane velocity measured using laser vibrometry
 in \cite{dalsgaardmanley1} and \cite{dalsgaardmanley2}. The plot shows the vibration amplitude as a function of frequency ($y$-axis) and direction ($x$-axis). The amplitudes are given
 is units of dB re $1$ mm/(s Pa). This means that we have plotted the ratio vibration amplitude with reference to a vibration velocity of $1$ mm/s with an input pressure of $1$ Pa.
-In other words we have set $p=1$Pa in \eqref{newsoundinput}.
+In other words we have set $p=1\,$Pa in \eqref{newsoundinput}.
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=1.0\linewidth]{Diagrams/Plots/hemidactylusvibampfull.png}
@@ -112,7 +112,7 @@ In other words we have set $p=1$Pa in \eqref{newsoundinput}.
 As we can see, the total membrane velocities reproduce the frequency and direction dependence of the system fairly well. The directional behaviour is consistent with regard
 to the requirement that the membrane have a higher vibration amplitude when it is on the same side as the object. The reason for the deviation from experimental behaviour at 
 higher frequencies isn't currently known. The mechanics of the extracolumella including its flection and the influence of the realistic shape of the mouth cavity could offer possible explanations.
-Although the room was tested to be anechoic to below $200$Hz some reflections, especially from
+Although the room was tested to be anechoic to below $200\,$Hz some reflections, especially from
 the laser setup are unavoidable. This is the cause of the spectral ripple in the experimental measurements. The same comparison is illustrated for the Tokay gecko in Fig. \ref{tokayvibampfull} (data from \cite{dalsgaardmanley1}).
 \begin{figure}[ht!]
  \centering
@@ -174,16 +174,16 @@ We conclude this section by looking at the directional dependence of the vibrati
 the sound source moves around the animal i.e. as $\theta$ varies from $-180^\circ$ to $180^\circ$.
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=.5\linewidth]{Diagrams/Plots/directionplots/directionplots.png}
-  \caption[Direction dependence of membrane vibration amplitudes for different frequencies.]{Direction dependence of membrane vibration amplitudes  in the ICE Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
-  , Tokay gecko (right, at 1kHz, 2kHz and 3kHz).
+  \includegraphics[width=.75\linewidth]{Diagrams/Plots/directionplots/directionplots.png}
+  \caption[Direction dependence of membrane vibration amplitudes for different frequencies.]{Direction dependence of membrane vibration amplitudes (dB re 1 mm/(s Pa)) in the ICE Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
+  , Tokay gecko (right, at 1 kHz, 2 kHz and 3 kHz).
   The variation of the amplitude as the sound source completes a full circle around the animal is illustrated. The amplitudes for ipsilateral stimuli are shown to be
   higher than those for contraletaral stimuli.}
   \label{directionplots}
 \end{figure}
 Here we can more clearly see that the amplitudes due to ipsilateral stimuli are higher than those due to contralateral stimuli. The marked asymmetry and the steepness across the midline (i.e. at $0^\circ$)
 is also consistent with observations (\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}). The choice of our frequencies has to do with the typical hearing ranges of the geckos. The smaller house
-gecko is most sensitive at higher frequencies (~3kHz) and the larger Tokay gecko at lower frequencies (~1kHz).
+gecko is most sensitive at higher frequencies (~3 kHz) and the larger Tokay gecko at lower frequencies (~1 kHz).
 
 \subsection{Directional Hearing Cues}\label{hearingcuessection}
 The significance of our results up to this point should
@@ -245,13 +245,13 @@ parameters they will be to a great degree.
 \subsubsection{Internal Level Differences}
 In Fig. \ref{hemidactylusilDboth} (house gecko) and Fig. \ref{tokayilDboth}, we plot the
 variation of the iLD with direction and frequency. The conventions for the $x-$ and $y$-axes remain the same as the ones in Figures \ref{hemidactylusvibampfull}
-and \ref{tokayvibampfull}. The iLDs vary systematically with frequencies and peaks at around $3$kHz for the house gecko and around $1$kHz for the Tokay gecko.
+and \ref{tokayvibampfull}. The iLDs vary systematically with frequencies and peaks at around $3\,$kHz for the house gecko and around $1\,$kHz for the Tokay gecko.
 As expected, they are positive for ipsilateral directions and negative for contralateral. The contour plots serve the purpose of giving us the simultaneous frequency and direction dependence of the iLDs well but the 
 satisfaction of requirement \ref{listitem1} given in the above list isn't automatically clear.
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=1.0\linewidth]{Diagrams/Plots/iLD/hemidactylusiLDboth.png}
- \caption[ILD plots for the common house gecko]{Calculated (left) and experimental (right) Internal Level Difference of tympanic membrane vibrations for the common house gecko
+ \caption[ILD plots for the common house gecko]{Calculated (left) and experimental (right) Internal Level Differences (dB) of tympanic membrane vibrations for the common house gecko
  in dB. $x$-axis denotes direction in degrees (negative angles contralateral, 0 frontal and positive angles ipsilateral and the $y$-axis frequency in kHz. 
  Calculated and experimental values \cite{dalsgaardmanley2} show similar qualitative behaviour. See also Fig. \ref{tokayilDboth}.}
   \label{hemidactylusilDboth}
@@ -267,16 +267,16 @@ satisfaction of requirement \ref{listitem1} given in the above list isn't automa
 
 In order to better understand the direction dependence of iLD, we plot the variation
 of iLDs with direction for a given set of frequencies in Fig. \ref{iLDdirection} (left:the house gecko, right:and Tokay gecko). We see that although the 
-iLD has higher values below $3$kHz for the house gecko (below $1$kHz for the Tokay gecko), the form of the iLD for higher frequencies reflects the sinusoidal input better by peaking at fully
+iLD has higher values below $3\,$kHz for the house gecko (below $1\,$kHz for the Tokay gecko), the form of the iLD for higher frequencies reflects the sinusoidal input better by peaking at fully
 ipsilateral and contralateral directions. This suggests that iLDs may work better as directional cues at higher frequencies. In Fig. \ref{iLDspectrum}
 we see this behaviour more clearly. Here we have plotted the iLD for a stimulus at $\theta 90^\circ$ with respect to frequency for both species. The bandpass behaviour
-is clearly shown - the house gecko has a maximum difference of $30$ dB at around 3kHz and the Tokay gecko iLD peaks at $36$dB at around 1kHz. Also indicated in the figure is the directional bandwidth
-for both animals. This is defined as the frequency range in which the iLD for an ipsilateral stimulus differs by more than 3dB. For the house gecko this is around $4.9$kHz and for the Tokay gecko it is around
-$2.6$kHz which is in very good agreement with experimentally observed values (\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}). The fact that the calculated iLDs
+is clearly shown - the house gecko has a maximum difference of $30$ dB at around $3\,$kHz and the Tokay gecko iLD peaks at $36\,$dB at around 1kHz. Also indicated in the figure is the directional bandwidth
+for both animals. This is defined as the frequency range in which the iLD for an ipsilateral stimulus differs by more than 3dB. For the house gecko this is around $4.9\,$kHz and for the Tokay gecko it is around
+$2.6\,$kHz which is in very good agreement with experimentally observed values (\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}). The fact that the calculated iLDs
 agree well with experimental values numerically suggests that the total membrane displacements are good measures of the membrane properties.
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=.5\linewidth]{Diagrams/Plots/iLD/all.png}
+  \includegraphics[width=.75\linewidth]{Diagrams/Plots/iLD/all.png}
   \caption[Direction dependence of the Interaural Level Difference for different frequencies.]{Direction dependence of the the Interaural Level Difference (cf. \eqref{iLDfirstdef}) in the ICE Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
   , Tokay gecko (right, at 1kHz, 2kHz and 3kHz). At higher frequencies, the iLD reaches a maximum at $90^\circ$ and a minimum at $-90^\circ$ whereas for lower frequencies, the maxima and minima are 
   reached before and after. This form of the above plots suggests that the iLDs cannot by themselves be used to localize sources in this regime and work better as directional cues at relatively higher frequencies.}
@@ -285,10 +285,10 @@ agree well with experimental values numerically suggests that the total membrane
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=.6\linewidth]{Diagrams/Plots/iLD/iLDspectrumboth2.png}
+  \includegraphics[width=.9\linewidth]{Diagrams/Plots/iLD/iLDspectrumboth2.png}
   \caption[Spectral behavior of the iLDs.]{Spectral behaviour of the iLDs at $\theta=90^\circ$ for the house gecko (black) and Tokay gecko (red). On the $x$-axis we have frequency in kHz and on the $y$-axis the iLD in decibels.
-  The bandpass nature of the iLDs is clearly shown with a peaks at around $3$kHz for the house gecko and around $1$kHz for the Tokay gecko and is consistent with observations;\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}. The
-  filled regions correspond to the directional bandwidth (frequencies at which iLD$>$3dB) of both animals. This value is around $4.9$kHz for the house gecko and $2.6$kHz
+  The bandpass nature of the iLDs is clearly shown with a peaks at around $3\,$kHz for the house gecko and around $1\,$kHz for the Tokay gecko and is consistent with observations;\cite{dalsgaardmanley1}, \cite{dalsgaardmanley2}. The
+  filled regions correspond to the directional bandwidth (frequencies at which iLD$>$3dB) of both animals. This value is around $4.9\,$kHz for the house gecko and $2.6\,$kHz
   for the Tokay gecko.}
   \label{iLDspectrum}
 \end{figure}
@@ -301,12 +301,12 @@ well for both animals, albeit for different frequency ranges. At first, the lowp
 input phase differences vanish at zero frequency. But as the phase difference between the membranes increases more or less linearly for low frequencies,
 a division by the angular frequency results in a constant value.
 
-For the case of the house gecko, the ITD is around $43.7\mu$s and the resultant iTD between 
-$500$Hz and $2.7$kHz has an iTD gain (the ratio of the iTD  w.r.t to the ITD)  of around three (or an iTD of around $123\mu$s). For the Tokay gecko, the ITD is around $96.2\mu$s which results in an iTD
-gain of around $3.6$ (iTD of around $346\mu$s). These values stay more or less constant up to a certain frequency (around the first eigenfrequency of the membrane) and
+For the case of the house gecko, the ITD is around $43.7\,\mu$s and the resultant iTD between 
+$500\,$Hz and $2.7\,$kHz has an iTD gain (the ratio of the iTD  w.r.t to the ITD)  of around three (or an iTD of around $123\,\mu$s). For the Tokay gecko, the ITD is around $96.2\,\mu$s which results in an iTD
+gain of around $3.6$ (iTD of around $346\,\mu$s). These values stay more or less constant up to a certain frequency (around the first eigenfrequency of the membrane) and
 sharply drop. As the frequency increases beyond this point, the iTD converges to the ITD. In Fig. \ref{itddirectionboth}, we plot the variation of the iTDs
 with respect to direction for different frequencies. The frequencies are chosen to reflect the change in behaviour of the iTDs as it transitions from frequencies
-below the first eigenfrequencies to those above. At frequencies below the first eigenfrequency (Tokay: $.5$kHz, $1$kHz, Hemidactylus: $1$kHz, $2$kHz) the iTDs
+below the first eigenfrequencies to those above. At frequencies below the first eigenfrequency (Tokay: $.5\,$kHz, $1\,$kHz, Hemidactylus: $1\,$kHz, $2\,$kHz) the iTDs
 is significantly higher than it is at higher frequencies. At this point we should note that phase difference ceases to be useful as a directional cue when it is
 greater than $2\pi$ or in other words when the iTD becomes greater than the time period at the given sound frequency ($1/f$). Thankfully, for the frequency ranges we are concerned with this will not be a problem.
 
@@ -320,16 +320,16 @@ greater than $2\pi$ or in other words when the iTD becomes greater than the time
 \end{figure}
 
 \begin{figure}[ht!]
-\centering
-  \includegraphics[width=1.\linewidth]{Diagrams/Plots/iTD/itddirectionboth2.png}
-  \caption[Variation of the iTD with direction for different frequencies.]{Variation of the iTD with direction for different frequencies. We can clearly see that the iTD cues are more pronounced
+%\centering
+  \includegraphics[width=1.0\linewidth]{Diagrams/Plots/iTD/itddirectionboth2.png}
+  \caption[Variation of the iTD with direction for different frequencies.]{Variation of the iTD ($\mu$s) with direction for different frequencies. We can clearly see that the iTD cues are more pronounced
   at frequencies below $f_0$.}
   \label{itddirectionboth}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=.8\linewidth]{Diagrams/Plots/iTD/rangeboth.png}
+  \includegraphics[width=1.\linewidth]{Diagrams/Plots/iTD/rangeboth.png}
   \caption[Possible frequency regimes for usage of iTD and iLD cues.]{ Possible regimes for the use of iTDs and iLDs for the house gecko (left) and Tokay gecko (right). The purple filled region corresponds to the iTD regime 
   and the beige filled region to the iLD regime. There is also a possibility of an overlap region where both cues can be used.  The iTD curves have been scaled to demonstrate the different
   regions more clearly.}
@@ -416,7 +416,7 @@ using \eqref{iLDfirstdef} and \eqref{iTDfirstdef}. We have used subscripts to in
 at $\theta = 90^\circ$. We essentially have 
 a expression for the iLD and iTD spectra with two unknown parameters. We now need two equations for a given frequency (or a given
 pair of frequencies) that can be used to determine $Q$ and $f_0$. The first of these equations is obtained by requiring that
-the derivative of the iLD goes to zero at a given frequency - $f_{max}$, i.e. the experimentally determined frequency of 
+the derivative of the iLD goes to zero at a given frequency - $f_{\mathrm{max}}$, i.e. the experimentally determined frequency of 
 peak amplitude difference.
 
 
@@ -433,13 +433,16 @@ the complex argument with respect to frequency vanishes at $f_0$.
 \begin{figure}[ht!]
 \centering
   \includegraphics[width=.7\linewidth]{Diagrams/Plots/paramtest/allthree.jpeg}
-  \caption[Dependence of iTD spectrum on Quality Factor]{}
+  \caption[Dependence of iTD spectrum on Quality Factor]{The three curves correspond to the iTD spectrum for different values
+  of Q. In the red curve we have the spectrum for a near ideal value of $Q$ such that the iTD remains more or less constant upto
+  a given frequency. The blue curve corresponds to a low $Q$ for which the iTD increases upto a peak value ($1/f_0$) and drops afterwards.
+  In the yellow curve we see that the iTD decreases steadily with frequency upto a certain point before converging to the ITD value.}
   \label{itdQdependence}
 \end{figure}
 \noindent These conditions can therefore be written as the following set of equations,
 \begin{align}
- \left.\frac{d (iLD_{90})}{df}\right|_{f=f_{max}}=0\\
- \left.\frac{d^2 \omega (iTD_{90})}{df^2}\right|_{f=f_{max}}=0
+ \left.\frac{d (\mbox{iLD}_{90})}{df}\right|_{f=f_{\mathrm{max}}}=0\\
+ \left.\frac{d^2 \omega (\mbox{iTD}_{90})}{df^2}\right|_{f=f_{\mathrm{max}}}=0
 \end{align}
 These give us a pair of nonlinear equations that can be numerically solved to obtain values for $f_0$ and $Q$.
 

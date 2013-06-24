@@ -23,7 +23,7 @@
 \contentsline {chapter}{\numberline {3}Evaluation of the Model}{35}{chapter.3}
 \contentsline {section}{\numberline {3.1}Sound Localization Using the ICE -Model}{36}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Membrane Vibration Velocity}{37}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Directional Hearing Cues}{39}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Directional Hearing Cues}{40}{subsection.3.1.2}
 \contentsline {subsubsection}{Internal Level Differences}{42}{section*.33}
 \contentsline {subsubsection}{Internal Time Differences}{44}{section*.38}
 \contentsline {subsubsection}{}{45}{section*.42}
