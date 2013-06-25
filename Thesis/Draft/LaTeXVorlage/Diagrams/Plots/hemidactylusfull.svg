@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -72,7 +72,7 @@
        xml:space="preserve"
        id="flowRoot3050"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="matrix(1.9071391,0,0,2.0835301,2437.6084,-106.60168)"
+       transform="matrix(1.861401,0,0,1.7883016,2348.0387,33.447576)"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Plots/hemidactylusvibampfull.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
@@ -253,5 +253,19 @@
            height="161.62444"
            x="-1527.3506"
            y="1024.0779" /></flowRegion><flowPara
-         id="flowPara3109">amplitude dB re 1 mm/(s Pa)</flowPara></flowRoot>  </g>
+         id="flowPara3109">amplitude dB re 1 mm/(s Pa)</flowPara></flowRoot>    <flowRoot
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Plots/hemidactylusvibampfull.png"
+       transform="matrix(1.861401,0,0,1.7883016,3793.7529,33.447576)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3430"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3432"><rect
+           y="455.21933"
+           x="-1585.7142"
+           height="91.428574"
+           width="442.85715"
+           id="rect3434" /></flowRegion><flowPara
+         id="flowPara3436">direction (degrees)</flowPara></flowRoot>  </g>
 </svg>

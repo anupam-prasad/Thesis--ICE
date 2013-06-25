@@ -10,7 +10,7 @@
 % 
 % Hier kommt der zweite Anhang.
 \chapter{Mathematica Code}\label{codeappendix}
-The Mathematica\texttrademark  code used to calculate the total membrane displacements, iTD and iLD. The original input values are
+The Mathematica code used to calculate the total membrane displacements, iTD and iLD. The original input values are
 for the Tokay gecko. The corresponding parameters for the house gecko are given in the comments.
 
 % \begin{verbatim}

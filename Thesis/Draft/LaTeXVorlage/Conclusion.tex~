@@ -1,9 +1,9 @@
-\chapter{Summary and Conclusion}
+\chapter{Summary and Discussion}
 We started our study in Chapter \ref{modelchapter} by constructing a basic model that describes the motion of eardrums in animals
 with coupled ears. The mouth cavity of the animal was modelled as an air-filled cylindrical tube
-of radius $a_{cyl}$ with circular openings on either side of radius $a_{tymp}$ that are closed by
+of radius $a_{\mathrm{\mathrm{cyl}}}$ with circular openings on either side of radius $a_{\mathrm{tymp}}$ that are closed by
 tympanic membranes of the same radius. This is one of the points where we deviate from the previous treatment
-of the problem \cite{vossenjasa} as we have kept the volume of the cavity $V_{cav}$ constant and equal to
+of the problem \cite{vossenjasa} as we have kept the volume of the cavity $V_{\mathrm{cav}}$ constant and equal to
 typical values for the species in nature. The sound inputs to both ears took the form of pressure waves
 with a phase shift which depended on the frequency, direction of the source and head width and shape.
 
@@ -39,7 +39,7 @@ argument divided by the angular frequency $\omega$. In order to stress on the un
  quantities were compared with experimentally measured ones for two gekkonids - the common house gecko.(\emph{Hemidactylus frenatus}) and the Tokay gecko
  (\emph{Gekko gecko}). The simultaneous frequency and direction dependence of the iLD was illustrated by
 means of contour plots and were found to be consistent with experimental measurements - both in terms of qualitative spectral behaviour and
-quantitative values thus justifying our choice of $S^{0/L}$ as measures of membrane displacement. We then introduced the requirements these cues must fulfill in order to effectively serve as
+quantitative values thus justifying our choice of $S^{0/L}$ as measures of membrane displacement. We then introduced the requirements these cues must fulfil in order to effectively serve as
 directional cues. For the iLDs it was found that these requirements are best satisfied at relatively higher frequencies while
  iTDs seem to be more effective at lower frequencies.
  
@@ -50,24 +50,45 @@ values - membrane density, radius and thickness, cavity volume, head width etc. 
 as its first eigenfrequency and its damping coefficient are hard to experimentally determine. In Sec. \ref{parameterestimation} we therefore presented
 a possible method to estimate these parameters from observations. We ended the chapter by illustrating the vibrations patterns of one of the ICE-model
 membranes with the opposite one blocked. These patterns were compared and found to be in good agreement with the patterns experimentally measured for the Tokay gecko by Manley \cite{manleygecko1}.
+\section{Biological Relevance}
+In this thesis we have presented a general model for ears coupled through a large air cavity. Although we
+have restricted the comparison of our results with membrane vibration data for gekkonids from Dalsgaard and Manley (\cite{dalsgaardmanley1},\cite{dalsgaardmanley2})
+and Dalsgaard \emph{et al} \cite{dalsgaardtangcarr}, our model readily describes the coupling between eardrums across a range of gekkonid species by substituting
+the appropriate parameters for cavity volume ($V_{\mathrm{cav}}$), head width, tympanum area etc. The model can also be adapted to other animals with ICE such as
+birds and the main modification to be made would be to the transducer (the extracolumella in our case). For example, the extracolumella in birds is generally
+centrally attached to the eardrum \cite{millsavianmiddleear} resulting in a different set of membrane eigenmodes. 
 
+The agreement of our calculations with
+experimental results suggests that the exact shape of the cavity does not have an effect as significant as $V_{\mathrm{cav}}$ on the hearing cues.  The previously
+unaccounted for effect of diffraction on the input phase difference was also seen to have a significant effect on both the iTDs and iLDs.
+The ICE model also places natural limits on iTD and iLD based hearing dependent on the fundamental membrane eigenfrequency. As we have seen in Sec. \ref{itdsubsection},
+the transition frequency from iTD based localization to iLD based localization is close to the membrane eigenfrequency. For this reason it isn't unreasonable to expect that animals with typically
+higher hearing ranges will tend to have higher membrane eigenfrequencies and vice versa. In contrast with mammals, in whom this transition is determined by their size, the transition
+between the two regimes is entirely a consequence of the physics of the ICE model.
+
+By using a cylindrical air cavity as opposed to a circuit model for the coupled system (Zhang \emph{et al} \cite{zhanghallam}), we have been able to account for the
+high frequency behaviour of the system which is a result of significant pressure amplitude differences between the ears. This also leads to the additional possibility of using the ICE model to explain hearing in
+animals such as crocodilia. As shown by Vergne \emph{et al} \cite{vergnecrocodilia} and Higgs \emph{et al} \cite{higgscrocodilia} they seem to be able to hear well both above and underwater while
+using the same processing pathways for both enviroments.
+The speed of sound in water is four times that in air and as a result wavelengths for the same frequency are quadrupled as well. There is a possibility of switching to an ICE
+like system to overcome this problem when underwater.
 
 \section{Open Questions}
 The main advantage of the ICE-model is to explain the frequency and direction dependence of the
 hearing cues. In order to have a complete quantitative description of the ICE-model, we would also need to take
 into account the motion of the extracolumella and the exact shape of realistic mouth cavities. The first of
-these can be treated analytically upto a point. The main modification would be in the membrane boundary
+these can be treated analytically up to a point. The main modification would be in the membrane boundary
 conditions corresponding to the extracolumella. Instead of setting the displacement to zero, we would need to take into
 account the mass of the extracolumella resulting in a new equation of motion. This equation would describe the motion
 of the extracolumella driven by the membrane tension and the internal and external pressure difference. A further step
-would be to incorporate the flection of the extracolumella at higher frequencies. This would require a further 
+would be to incorporate the flection of the extracolumella at higher frequencies as described by Manley \cite{manleygecko1}. This would require a further 
 understanding of its constituent cartilaginous material and would necessitate a numerical treatment.
 
 Due the complex shape of a realistic mouth cavity, a full treatment is not conducive to an analytical treatment.
 Numerical software like COMSOL can be used to treat reconstructions of mouth casts. Another possibility
 would be to include the effect of the nostrils as either a new set of boundary conditions or a third input source. The eigenfrequencies
-of the mouth cavity were studied by Vossen but the influence of the holes corresponding to the membranes was neglected here. Additionally,
+of the mouth cavity were studied by Vossen \cite[p.~39]{vossenthesis} but the influence of the holes corresponding to the membranes was neglected here. Additionally,
 the neuronal basis of the computation of iTD cues is not fully understood and the applicability of the Jeffress model in their
 case has also been called into question. Lastly, the response of the animal to sound stimuli in realistic environments viz. in the presence
-of multiple obstacles could also be a topic for further study. This however necessitates further experimental analyzes of sound localization in
+of multiple obstacles could also be a topic for further study. This however necessitates further experimental analyses of sound localization in
 vertebrates.

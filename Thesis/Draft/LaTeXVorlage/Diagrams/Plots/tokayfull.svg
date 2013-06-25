@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -177,9 +177,9 @@
          id="flowPara3245">-30 dB</flowPara><flowPara
          id="flowPara3251" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-size:80.09146118px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-482.36005"
-       y="1273.7772"
+       style="font-size:74.18688965px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-464.89142"
+       y="1269.2911"
        id="text3425"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Plots/tokayvibampfull.png"
@@ -187,8 +187,8 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3427"
-         x="-482.36005"
-         y="1273.7772">direction (degrees)</tspan></text>
+         x="-464.89142"
+         y="1269.2911">direction (degrees)</tspan></text>
     <image
        y="-145.37657"
        x="477.28647"
@@ -282,5 +282,19 @@
            height="161.62444"
            width="581.8479"
            id="rect3137" /></flowRegion><flowPara
-         id="flowPara3139">amplitude dB re 1 mm/(s Pa)</flowPara></flowRoot>  </g>
+         id="flowPara3139">amplitude dB re 1 mm/(s Pa)</flowPara></flowRoot>    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Plots/tokayvibampfull.png"
+       sodipodi:linespacing="125%"
+       id="text3288"
+       y="1269.2911"
+       x="1077.9657"
+       style="font-size:74.18688965px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="1269.2911"
+         x="1077.9657"
+         id="tspan3290"
+         sodipodi:role="line">direction (degrees)</tspan></text>
+  </g>
 </svg>

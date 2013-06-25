@@ -27,7 +27,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
      inkscape:cx="-540.64739"
-     inkscape:cy="842.3666"
+     inkscape:cy="-450.62867"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -106,7 +106,7 @@
        xml:space="preserve"
        id="flowRoot3457"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="matrix(2.7990322,0,0,2.6472795,89.378447,-2689.552)"
+       transform="matrix(2.7990322,0,0,2.6472795,1051.0437,-2689.552)"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Plots/directionplots/directionplots.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
@@ -356,5 +356,19 @@
            height="62.240158"
            x="-1874.2858"
            y="-1616.2092" /></flowRegion><flowPara
-         id="flowPara4740">dB re 1 mm/(s Pa)</flowPara></flowRoot>  </g>
+         id="flowPara4740">dB re 1 mm/(s Pa)</flowPara></flowRoot>    <flowRoot
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Plots/directionplots/directionplots.png"
+       transform="matrix(2.7990322,0,0,2.6472795,-924.81472,-2689.552)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot3692"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3694"><rect
+           y="1643.7908"
+           x="-174.28572"
+           height="134.28572"
+           width="1374.2858"
+           id="rect3696" /></flowRegion><flowPara
+         id="flowPara3698">direction (degrees)</flowPara></flowRoot>  </g>
 </svg>

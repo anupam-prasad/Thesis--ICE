@@ -4,7 +4,7 @@ The top-level auxiliary file: diss.aux
 A level-1 auxiliary file: authorshipdeclaration.aux
 A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: Introduction.aux
-A level-1 auxiliary file: ICEModel1.aux
+A level-1 auxiliary file: ICEModel2.aux
 A level-1 auxiliary file: ModelAnalysis.aux
 A level-1 auxiliary file: Conclusion.aux
 A level-1 auxiliary file: anhang.aux
@@ -12,44 +12,44 @@ A level-1 auxiliary file: bibliographie.aux
 The style file: ieeetr.bst
 A level-1 auxiliary file: danksagung.aux
 Database file #1: literatur.bib
-You've used 32 entries,
+You've used 36 entries,
             1876 wiz_defined-function locations,
-            696 strings with 8418 characters,
-and the built_in function-call counts, 9150 in all, are:
-= -- 978
-> -- 242
+            727 strings with 9377 characters,
+and the built_in function-call counts, 10633 in all, are:
+= -- 1119
+> -- 317
 < -- 0
-+ -- 95
-- -- 63
-* -- 603
-:= -- 1222
-add.period$ -- 40
-call.type$ -- 32
-change.case$ -- 24
++ -- 121
+- -- 85
+* -- 731
+:= -- 1434
+add.period$ -- 44
+call.type$ -- 36
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 489
-empty$ -- 881
-format.name$ -- 63
-if$ -- 2314
+cite$ -- 36
+duplicate$ -- 555
+empty$ -- 1003
+format.name$ -- 85
+if$ -- 2666
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 38
-newline$ -- 107
-num.names$ -- 36
-pop$ -- 79
+int.to.str$ -- 36
+missing$ -- 42
+newline$ -- 119
+num.names$ -- 42
+pop$ -- 86
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 378
+skip$ -- 434
 stack$ -- 0
-substring$ -- 712
-swap$ -- 237
+substring$ -- 828
+swap$ -- 272
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 90
-width$ -- 34
-write$ -- 328
+while$ -- 106
+width$ -- 38
+write$ -- 369

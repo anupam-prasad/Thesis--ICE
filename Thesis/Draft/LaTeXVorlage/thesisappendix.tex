@@ -10,16 +10,16 @@
 \begin{document}
 
 \begin{doublespace}
-\noindent\(\pmb{\text{Speciesname}=\text{{``}Tokay{''}};\text{{``}or Hemidactylus{''}};}\\
-\pmb{L\text{:=}22;\text{{``}Cylinder Length in mm. 10/22{''}};}\\
-\pmb{\text{atymp}\text{:=}2.6;\text{{``}Radius of Tympanic Membrane in mm. 1.5/2.6{''}};}\\
+\noindent\(\pmb{\text{Speciesname}=\text{{``}Hemidactylus{''}};\text{{``}or Tokay{''}};}\\
+\pmb{L\text{:=}10;\text{{``}Cylinder Length in mm. 10/22{''}};}\\
+\pmb{\text{atymp}\text{:=}1.5;\text{{``}Radius of Tympanic Membrane in mm. 1.5/2.6{''}};}\\
 \pmb{\text{$\rho $m}=1;\text{{``}1.25*.3125;{''}} \text{{``}Density of Membrane in mg/mm${}^{\wedge}$3{''}};}\\
-\pmb{d=.01; \text{{``}Membrane Thickness in mm. .008/.01{''}};}\\
+\pmb{d=.008; \text{{``}Membrane Thickness in mm. .008/.01{''}};}\\
 \pmb{\beta \text{:=}\text{Pi}/25; \text{{``}Extracollumella angle{''}};}\\
 \pmb{\mu =\text{Pi}/(\text{Pi}-\beta );}\\
 \pmb{\text{(*}\text{cM}=25000;\text{*)}}\\
 \pmb{\text{(*}\rho =1.162*10{}^{\wedge}-3;\text{{``}Density of Air mg/mm${}^{\wedge}$3{''}};\text{*)}}\\
-\pmb{\text{V0}=3500; \text{{``}320/3500, mm${}^{\wedge}$3{''}};}\\
+\pmb{\text{V0}=320; \text{{``}320/3500, mm${}^{\wedge}$3{''}};}\\
 \pmb{\text{acyl}=\text{Sqrt}[\text{V0}/(\text{Pi}*L)];}\\
 \pmb{\text{{``}Volume of the Cylinder{''}};}\\
 \pmb{\gamma =1.4;\text{{``}Ratio of Specific Heats for Air{''}};}\\
@@ -27,8 +27,8 @@
 \pmb{\text{(*}c\text{:=}\text{Sqrt}[\gamma *\text{P0}/\rho ];\text{{``}Velocity of Sound mm/s{''}};\text{*)}}\\
 \pmb{c=343000;}\\
 \pmb{\rho =\gamma *\text{P0}/c{}^{\wedge}2;\text{{``}Density of Air mg/mm${}^{\wedge}$3{''}};}\\
-\pmb{\text{f0}=1050;\text{{``}2800/1050{''}};}\\
-\pmb{\alpha =.9*2*\text{Pi}*\text{f0}/2.4; \text{{``}Damping Coefficient of Membrane in Hz{''}};}\)
+\pmb{\text{f0}=2800;\text{{``}2800/1050{''}};}\\
+\pmb{\alpha =.75*2*\text{Pi}*\text{f0}/2.4; \text{{``}Damping Coefficient of Membrane in Hz{''}};}\)
 \end{doublespace}
 
 \begin{doublespace}
@@ -103,6 +103,7 @@
 \begin{doublespace}
 \noindent\(\pmb{\text{{``}Membrane vibration spectrum for different source directions{''}};}\\
 \pmb{\text{dbticks}=\text{Table}[\{(l-1)*10-40,\text{ToString}[(l-1)*10-40],\{0,.005\}\},\{l,1,6\}];}\\
+\pmb{\text{fticks}=\text{Table}[\{l*\text{fmin},\text{ToString}[N[l*\text{fmin}/1000]],\{0,.01\}\},\{l,1,7\}];}\\
 \pmb{\text{Plot}[\{20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta \to 90,20*\text{Log10}[\omega
 *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta \to 60,}\\
 \pmb{20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta \to 0,20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta
@@ -110,7 +111,7 @@
 \pmb{20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta \to -90\},\{f,\text{fmin},\text{fmax}\},\text{PlotRange}\to
 \{-40,10\},}\\
 \pmb{\text{PlotStyle}\to \{\text{ColorData}[1][1],\text{ColorData}[1][2],\text{Dotted},\text{Dashed},\text{Dashed}\},\text{AxesOrigin}\to \{500,-40\},}\\
-\pmb{\text{PlotLabel}\to \text{{``}Tokay{''}},\text{Epilog}\to \{\text{Line}[\{\{5000,-40\},\{5000,10\},\{500,10\},\{5000,10\}\}]\},}\\
+\pmb{\text{Style}[\text{Speciesname},16],\text{Epilog}\to \{\text{Line}[\{\{5000,-40\},\{5000,10\},\{500,10\},\{5000,10\}\}]\},}\\
 \pmb{\text{Ticks}\to \{\text{fticks},\text{dbticks}\},\text{PlotLegend}\to \{\text{{``}90${}^{\circ}${''}},\text{{``}60${}^{\circ}${''}},\text{{``}0${}^{\circ}${''}},\text{{``}-60${}^{\circ}${''}},\text{{``}-90${}^{\circ}${''}}\},\text{LegendPosition}\to
 \{.9,-.4\}]}\)
 \end{doublespace}

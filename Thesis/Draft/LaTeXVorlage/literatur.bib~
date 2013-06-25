@@ -404,7 +404,7 @@ title={Comparative studies of the biophysics of directional hearing in anurans},
 url={http://dx.doi.org/10.1007/BF00193548},
 publisher={Springer-Verlag},
 keywords={Hyla versicolor; Hyla chrysoscelis; Hyla gratiosa; Rana temporaria; Directional hearing; Ear-drum vibrations; Frequency response},
-author={Jørgensen, MortenBuhl},
+author={J\o{}rgensen, MortenBuhl},
 pages={591-598},
 language={English}
 }
@@ -482,7 +482,7 @@ keywords = {cylindrical cavity }
 }
 
 @article{michelsenrohrseitz97,
-author = {MICHELSEN, AXEL and ROHRSEITZ, KRISTIN},
+author = {Michelsen, Axel and Rohrseitz, Kristin},
 title = {SOUND LOCALISATION IN A HABITAT: AN ANALYTICAL APPROACH TO QUANTIFYING THE DEGRADATION OF DIRECTIONAL CUES},
 journal = {Bioacoustics},
 volume = {7},
@@ -493,5 +493,48 @@ doi = {10.1080/09524622.1997.9753341},
 URL = {http://www.tandfonline.com/doi/abs/10.1080/09524622.1997.9753341},
 eprint = {http://www.tandfonline.com/doi/pdf/10.1080/09524622.1997.9753341}
 }
+
+% 8158595 
+@Article{millsavianmiddleear,
+   Author={Mills, R. },
+   Title={{{A}pplied comparative anatomy of the avian middle ear}},
+   Journal={J R Soc Med},
+   Year={1994},
+   Volume={87},
+   Number={3},
+   Pages={155--156},
+   Month={Mar}
+}
+
+@Article{higgscrocodilia,
+   Author={Higgs, D. M.  and Brittan-Powell, E. F.  and Soares, D.  and Souza, M. J.  and Carr, C. E.  and Dooling, R. J.  and Popper, A. N. },
+   Title={Amphibious auditory responses of the {A}merican alligator ({A}lligator mississipiensis)},
+   Journal={J. Comp. Physiol. A Neuroethol. Sens. Neural. Behav. Physiol.},
+   Year={2002},
+   Volume={188},
+   Number={3},
+   Pages={217--223},
+   Month={Apr}
+}
+
+@article{vergnecrocodilia,
+    author = {Vergne, A. L. and Pritz, M. B. and Mathevon, N.},
+    citeulike-article-id = {6528111},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1111/j.1469-185x.2009.00079.x},
+    doi = {10.1111/j.1469-185x.2009.00079.x},
+    issn = {14647931},
+    journal = {Biological Reviews},
+    keywords = {bioacoustics, neurobiology, reptilia, review},
+    month = {aug},
+    number = {3},
+    pages = {391--411},
+    posted-at = {2010-01-12 10:42:02},
+    priority = {2},
+    title = {{Acoustic communication in crocodilians: from behaviour to brain}},
+    url = {http://dx.doi.org/10.1111/j.1469-185x.2009.00079.x},
+    volume = {84},
+    year = {2009}
+}
+
 
 

@@ -277,7 +277,7 @@ agree well with experimental values numerically suggests that the total membrane
 \begin{figure}[ht!]
 \centering
   \includegraphics[width=.75\linewidth]{Diagrams/Plots/iLD/all.png}
-  \caption[Direction dependence of the Interaural Level Difference for different frequencies.]{Direction dependence of the the Interaural Level Difference (cf. \eqref{iLDfirstdef}) in the ICE Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
+  \caption[Direction dependence of the Internal Level Difference for different frequencies.]{Direction dependence of the the Interaural Level Difference (cf. \eqref{iLDfirstdef}) in the ICE Model for different frequencies - common house gecko (left, at 3kHz, 4kHz and 5kHz)
   , Tokay gecko (right, at 1kHz, 2kHz and 3kHz). At higher frequencies, the iLD reaches a maximum at $90^\circ$ and a minimum at $-90^\circ$ whereas for lower frequencies, the maxima and minima are 
   reached before and after. This form of the above plots suggests that the iLDs cannot by themselves be used to localize sources in this regime and work better as directional cues at relatively higher frequencies.}
   \label{iLDdirection}
@@ -293,7 +293,7 @@ agree well with experimental values numerically suggests that the total membrane
   \label{iLDspectrum}
 \end{figure}
 
-\subsubsection{Internal Time Differences}
+\subsubsection{Internal Time Differences}\label{itdsubsection}
 As we have just seen, the iLDs can be used as directional cues at relatively higher frequencies. The hearing range of geckos
 on the other hand is found to contain lower frequencies as well. In Fig. \ref{iTDboth} we plot the variation of the iTD ($\mu$s; cf. \eqref{iTDfirstdef}) for 
 a fully contralateral ($-90^\circ$) stimulus for both species with respect to frequency. From the figures we see that requirement \ref{listitem2} is satisfied fairly
@@ -435,7 +435,7 @@ the complex argument with respect to frequency vanishes at $f_0$.
 \centering
   \includegraphics[width=.7\linewidth]{Diagrams/Plots/paramtest/allthree2.png}
   \caption[Dependence of iTD spectrum on Quality Factor]{The three curves correspond to the iTD spectrum (cf. Fig. \ref{iTDboth}) for different values
-  of Q. In the red curve we have the spectrum for a near ideal value of $Q$ such that the iTD remains more or less constant upto
+  of Q. In the red curve we have the spectrum for a near ideal value of $Q$ ($Q_0$) such that the iTD remains more or less constant upto
   a given frequency. The blue curve corresponds to a low $Q$ for which the iTD increases upto a peak value ($1/f_0$) and drops afterwards.
   In the yellow curve we see that the iTD decreases steadily with frequency upto a certain point before converging to the ITD value.}
   \label{itdQdependence}

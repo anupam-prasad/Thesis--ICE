@@ -144,12 +144,12 @@
        }               % Titel der Arbeit
       {Anupam Prasad Vedurmudi}                      % Vor- und Nachname des Autors
       {Kolkata, Indien}                             % Geburtsort des Autors
-      {Fakult\"{a}t f\"{	u}r Physik}                         % Name der Fakultaet
+      {Fakult\"{a}t f\"{u}r Physik}                         % Name der Fakultaet
       {M\"{u}nchen 2013}                          % Ort und Jahr der Erstellung
       {\today}                            % Tag der Abgabe
       {Prof. Dr. J. Leo van Hemmen}                          % Name des Erstgutachters
       {Zweitgutachter}                         % Name des Zweitgutachters
-      {Pr\"ufungsdatum}                         % Datum der muendlichen Pruefung
+      {Pr\"ufungsdatum}                       % Datum der muendlichen Pruefung
 
  
  \markboth{Declaration of Authorship}{Declaration of Authorship}
@@ -175,8 +175,8 @@
   \mainmatter\setcounter{page}{1}
   \include{Introduction}
   
-  \include{ICEModel1}
-  \include{ModelAnalysis}
+  \include{ICEModel2}
+  \include{ModelAnalysis} 
 
   \include{Conclusion}
 %  \include{kap_02}

@@ -98,9 +98,11 @@ that is connected to both eardrums by means of a cartilaginous element, the \tex
 placement of the extracolumella can be made out at the top of the eardrum in Fig. \ref{geckoextracolumella}.
 \begin{figure}[ht]
  \centering
- \includegraphics[width=.7\linewidth]{Diagrams/geckoextracolumella.jpg}
- \caption[Extracolumella position on a gecko' ear.]{Close up shot of a Tokay gecko's tympanum. The position
- of the extracolumella on the  on the left part eardrum can clearly be made out. Photograph courtesy of Yezhong Tang.}
+ \includegraphics[width=.7\linewidth]{Diagrams/geckoextracolumella.png}
+ \caption[Extracolumella position on a gecko' ear.]{Close up shot of a Tokay gecko's tympanum. The position, size
+ and shape of the extracolumella on the left part eardrum can be discerned clearly (inside the red box). Its asymmetrical placement on the tympanum
+ surface can also be made out. In our analysis we approximate the
+ ellipsoid membrane by a circular one of the same area. Photograph courtesy of Yezhong Tang.}
  \label{geckoextracolumella}
 \end{figure}
 
@@ -487,7 +489,8 @@ part of the above mode by $u_{\mathrm{mn}}(r,\phi)$. The first few of these mode
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.6\linewidth]{Diagrams/CircularMembraneModes/circular_modes_all.png}
- \caption[Circular membrane eigenmodes]{Eigenmodes of a full circular membrane. The eigenfrequency increases from left to right.}
+ \caption[Circular membrane eigenmodes]{Eigenmodes of a full circular membrane with the eigennumbers of the modes
+ shown above each figure. Displacements into the surface of the paper are darkly shaded while those out are lightly shaded . The eigenfrequency increases from left to right.}
   \label{circularmembraneeigenmodes}
 \end{figure}
 
@@ -563,8 +566,9 @@ are no longer circularly symmetric. We plot the first few of these modes in \ref
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=.6\linewidth]{Diagrams/SectorMembraneModes/membrane_modes_all.png}
- \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane where the omitted region corresponds to the extracolumella with $\beta=\pi/25$. 
- As in Fig. \ref{circularmembraneeigenmodes}, the eigenfrequency increases from left to right.}
+ \caption[Sectoral membrane eigenmodes]{Eigenmodes of a sectoral membrane where the omitted region corresponds to the extracolumella with $\beta=\pi/25$. The eigennumbers are
+ shown above each figure.
+ As in Fig. \ref{circularmembraneeigenmodes} displacements into the surface of the paper are darkly shaded while those out are lightly shaded. The eigenfrequency increases from left to right.}
   \label{sectoralmembraneeigenmodes}
 \end{figure}
 The solution for forced membrane vibrations follows in the same way as in the circular membrane case. The vibrations of a sectoral membrane
