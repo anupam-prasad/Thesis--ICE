@@ -14,8 +14,24 @@
  \titlepage
 \end{frame}
 
+\section{Introduction}
 \begin{frame}
- 
+ Intro
+\end{frame}
+
+\section{The Model}
+\begin{frame}
+ Intro
+\end{frame}
+
+\section{Evaluation}
+\begin{frame}
+ Evaluation
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}
+ Conclusion
 \end{frame}
 
 \end{document}

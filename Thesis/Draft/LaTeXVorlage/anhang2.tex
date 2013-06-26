@@ -1,0 +1,228 @@
+\begin{appendix}
+
+
+% \chapter{Linear Acoustics}\label{acousticappendix}
+% 
+% Hier steht der erste Anhang.
+% 
+% 
+% \chapter{Second Appendix Chapter}
+% 
+% Hier kommt der zweite Anhang.
+\chapter{Mathematica Code}\label{codeappendix}
+The Mathematica code used to calculate the total membrane displacements, iTD and iLD. The original input values are
+for the Tokay gecko. The corresponding parameters for the house gecko are given in the comments.
+
+\begin{verbatim}
+\noindent\( {\text{Speciesname}=\text{{``}Hemidactylus{''}};\text{{``}or Tokay{''}};}\\
+ {L\text{:=}10;\text{{``}Cylinder Length in mm. 10/22{''}};}\\
+ {\text{atymp}\text{:=}1.5;\text{{``}Radius of Tympanic Membrane in mm. 1.5/2.6{''}};}\\
+ {\text{$\rho $m}=1;\text{{``}1.25*.3125;{''}} \text{{``}Density of Membrane in mg/mm${}^{\wedge}$3{''}};}\\
+ {d=.008; \text{{``}Membrane Thickness in mm. .008/.01{''}};}\\
+ {\beta \text{:=}\text{Pi}/25; \text{{``}Extracollumella angle{''}};}\\
+ {\mu =\text{Pi}/(\text{Pi}-\beta );}\\
+ {\text{(*}\text{cM}=25000;\text{*)}}\\
+ {\text{(*}\rho =1.162*10{}^{\wedge}-3;\text{{``}Density of Air mg/mm${}^{\wedge}$3{''}};\text{*)}}\\
+ {\text{V0}=320; \text{{``}320/3500, mm${}^{\wedge}$3{''}};}\\
+ {\text{acyl}=\text{Sqrt}[\text{V0}/(\text{Pi}*L)];}\\
+ {\text{{``}Volume of the Cylinder{''}};}\\
+ {\gamma =1.4;\text{{``}Ratio of Specific Heats for Air{''}};}\\
+ {\text{P0}=101.325*10{}^{\wedge}6;\text{{``}Atmospheric Pressure{''}};}\\
+ {\text{(*}c\text{:=}\text{Sqrt}[\gamma *\text{P0}/\rho ];\text{{``}Velocity of Sound mm/s{''}};\text{*)}}\\
+ {c=343000;}\\
+ {\rho =\gamma *\text{P0}/c{}^{\wedge}2;\text{{``}Density of Air mg/mm${}^{\wedge}$3{''}};}\\
+ {\text{f0}=2800;\text{{``}2800/1050{''}};}\\
+ {\alpha =.75*2*\text{Pi}*\text{f0}/2.4; \text{{``}Damping Coefficient of Membrane in Hz{''}};}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Sound inputs to both ears{''}};}\\
+ {\Phi =\text{Pi}*\text{TriangleWave}[\theta /360]/2;}\\
+ {\omega =2*\text{Pi}*f;}\\
+ {k=\omega /c;}\\
+ {\text{p0}=1000*E{}^{\wedge}(-.75*I*k*L*(\text{Sin}[\theta  \text{Degree}]));\text{{``}Pressure is 1Pa in units of mg/(mm s${}^{\wedge}$2){''}};}\\
+ {\text{pL}=1000*E{}^{\wedge}(.75*I*k*L*(\text{Sin}[\theta  \text{Degree}]));}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Calculating and sorting the zeros of the membrane modes Bessel Functions{''}};}\\
+ {\text{allZeros}=\text{Sort}[\text{Flatten}[\text{Table}[\{(l+.5)*\mu ,m,\text{BesselJZero}[(l+.5)*\mu ,m]/\text{atymp}\},\{l,0,9\},\{m,1,6\}],1],}\\
+ {(\text{$\#$1}[[3]]<\text{$\#$2}[[3]])\&];}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Membrane Propagation Velocity in terms of the first eigenfrequency mm/s{''}};}\\
+ {\text{cM}=\text{f0}*2*\text{Pi}/\text{allZeros}[[1]][[3]];}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{Ncutoff}=30; \text{{``}Cutoff for the membrane modes{''}};}\\
+ {\text{{``}Membrane impulse response{''}};}\\
+ {\Lambda =}\\
+ {(\text{Sum}[\text{Integrate}[r*\text{Sin}[\text{allZeros}[[l]][[1]]*(\phi -\beta )]*\text{BesselJ}[\text{allZeros}[[l]][[1]],\text{allZeros}[[l]][[3]]*r],}\\
+ {\{r,0,\text{atymp}\},\{\phi ,\beta ,2*\text{Pi}-\beta \}]{}^{\wedge}2/}\\
+ {(\text{$\rho $m}*d*(\omega {}^{\wedge}2-2*I*\alpha *\omega -\text{cM}{}^{\wedge}2*\text{allZeros}[[l]][[3]]{}^{\wedge}2)*}\\
+ {\text{Integrate}[r*\text{Sin}[\text{allZeros}[[l]][[1]]*(\phi -\beta )]{}^{\wedge}2*}\\
+ {\text{BesselJ}[\text{allZeros}[[l]][[1]],\text{allZeros}[[l]][[3]]*r]{}^{\wedge}2,\{r,0,\text{atymp}\},\{\phi ,\beta ,2*\text{Pi}-\beta \}]),}\\
+ {\{l,1,\text{Ncutoff}\}]){}^{\wedge}-1;}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Calculation of the total membrane displacements{''}};}\\
+ {\text{Gamplus}=-\rho *\omega {}^{\wedge}2*\text{Cot}[k*L/2]/(\text{Pi}*\text{acyl}*\text{acyl}*k);}\\
+ {\text{Gamminus}=\rho *\omega {}^{\wedge}2*\text{Tan}[k*L/2]/(\text{Pi}*\text{acyl}*\text{acyl}*k);}\\
+ {\text{Splus}=(\text{pL}+\text{p0})/(\text{Gamplus}+\Lambda );}\\
+ {\text{Sminus}=(\text{pL}-\text{p0})/(\text{Gamminus}+\Lambda );}\\
+ {\text{SL}=(\text{Splus}-\text{Sminus})/2;}\\
+ {\text{S0}=(\text{Splus}+\text{Sminus})/2;}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Internal Level Difference{''}};}\\
+ {\text{iLD}=20*\text{Log10}[\text{Abs}[\text{S0}/\text{SL}]];}\\
+ {\text{{``}Internal Time Difference{''}};}\\
+ {\text{iTD}=\text{Arg}[\text{S0}/\text{SL}]/\omega ;}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{Needs}[\text{{``}PlotLegends$\grave{ }${''}}];}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Plot ticks for direction and frequency{''}};}\\
+ {\text{dticks}=\text{Table}[\{(l-1)*90-180,\text{ToString}[(l-1)*90-180],\{0,.01\}\},\{l,1,5\}];}\\
+ {\text{fticks}=\text{Table}[\{l*\text{fmin},\text{ToString}[l*\text{fmin}],\{0,.01\}\},\{l,1,7\}];}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Density Plot of Membrane Vibration Amplitude{''}};}\\
+ {\text{ShowLegend}[\text{DensityPlot}[20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})],\{\theta ,-180,180\},\{f,\text{fmin},\text{fmax}\},}\\
+ {\text{ColorFunction}\to \text{{``}BlueGreenYellow{''}},\text{PlotPoints}\to 20,\text{Frame}\to \text{False},\text{Axes}\to \text{True},}\\
+ {\text{AxesOrigin}\to \{-180,200\},\text{AxesLabel}\to \{\text{None},\text{{``}frequency (Hz){''}}\},\text{Ticks}\to \{\text{dticks},\text{fticks}\},}\\
+ {\text{PlotLabel}\to \text{Speciesname},\text{FrameLabel}\to \{\text{{``}direction(degrees){''}},\text{None}\}],}\\
+ {\{\text{ColorData}[\text{{``}BlueGreenYellow{''}}][\text{$\#$1}]\&,8,\text{{``}-30{''}},\text{{``}10{''}},\text{LegendPosition}\to \{-1.5,-.35\},}\\
+ {\text{LegendOrientation}\to \text{Vertical}\}]}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Membrane vibration spectrum for different source directions{''}};}\\
+ {\text{dbticks}=\text{Table}[\{(l-1)*10-40,\text{ToString}[(l-1)*10-40],\{0,.005\}\},\{l,1,6\}];}\\
+ {\text{fticks}=\text{Table}[\{l*\text{fmin},\text{ToString}[N[l*\text{fmin}/1000]],\{0,.01\}\},\{l,1,7\}];}\\
+ {\text{Plot}[\{20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta \to 90,20*\text{Log10}[\omega
+*\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta \to 60,}\\
+ {20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta \to 0,20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta
+\to -60,}\\
+ {20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\theta \to -90\},\{f,\text{fmin},\text{fmax}\},\text{PlotRange}\to
+\{-40,10\},}\\
+ {\text{PlotStyle}\to \{\text{ColorData}[1][1],\text{ColorData}[1][2],\text{Dotted},\text{Dashed},\text{Dashed}\},\text{AxesOrigin}\to \{500,-40\},}\\
+ {\text{Style}[\text{Speciesname},16],\text{Epilog}\to \{\text{Line}[\{\{5000,-40\},\{5000,10\},\{500,10\},\{5000,10\}\}]\},}\\
+ {\text{Ticks}\to \{\text{fticks},\text{dbticks}\},\text{PlotLegend}\to \{\text{{``}90${}^{\circ}${''}},\text{{``}60${}^{\circ}${''}},\text{{``}0${}^{\circ}${''}},\text{{``}-60${}^{\circ}${''}},\text{{``}-90${}^{\circ}${''}}\},\text{LegendPosition}\to
+\{.9,-.4\}]}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Membrane vibration direction dependence{''}};}\\
+ {\text{ftest}=1000; \text{{``}Test Frequency - refer Chapter 3 for values{''}};}\\
+ {\text{mrange}=\text{Floor}[-10+20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\{f\to \text{ftest},\theta
+\to -90\}];}\\
+ {\text{prange}=\text{Ceiling}[10+20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}\{f\to \text{ftest},\theta
+\to 90\}];}\\
+ {\text{ndbticks}=5;}\\
+ {\text{dbticks}=}\\
+ {\text{Table}[\{(l-1)*(\text{prange}-\text{mrange})/(\text{ndbticks}-1)+\text{mrange},}\\
+ {\text{ToString}[N[(l-1)*(\text{prange}-\text{mrange})/(\text{ndbticks}-1)+\text{mrange}]],\{0,.005\}\},\{l,1,\text{ndbticks}\}];}\\
+ {\text{Plot}[20*\text{Log10}[\omega *\text{Abs}[\text{S0}]/(\text{Pi}*\text{acyl}*\text{acyl})]\text{/.}f\to \text{ftest},\{\theta ,-180,180\},\text{PlotRange}\to
+\{\text{mrange},\text{prange}\},}\\
+ {\text{PlotStyle}\to \text{Black},\text{AxesOrigin}\to \{-180,\text{mrange}\},\text{PlotLabel}\to \text{ToString}[\text{ftest}]<>\text{{``}Hz{''}},}\\
+ {\text{Ticks}\to \{\text{dticks},\text{dbticks}\},\text{Epilog}\to \{\text{Line}[\{\{180,\text{mrange}\},\{180,\text{prange}\},\{-180,\text{prange}\},\{180,\text{prange}\}\}]\}]}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}iLD with respect to direction and frequency{''}};}\\
+ {\text{range}=15+20*\text{Log10}[\text{Abs}[\text{S0}/\text{SL}]]\text{/.}\{f\to \text{f0},\theta \to 90\};}\\
+ {\text{ShowLegend}[\text{ContourPlot}[20*\text{Log10}[\text{Abs}[\text{S0}/\text{SL}]],\{\theta ,-180,180\},\{f,\text{fmin},\text{fmax}\},}\\
+ {\text{ColorFunction}\to \text{{``}BlueGreenYellow{''}},\text{PlotPoints}\to 20,\text{Contours}\to 20,\text{Frame}\to \text{False},\text{Axes}\to
+\text{True},}\\
+ {\text{PlotRange}\to \text{range},\text{AxesOrigin}\to \{-180,200\},\text{AxesLabel}\to \{\text{None},\text{{``}frequency (Hz){''}}\},}\\
+ {\text{Ticks}\to \{\text{dticks},\text{fticks}\},\text{PlotLabel}\to \text{Speciesname},\text{FrameLabel}\to \{\text{{``}direction(degrees){''}},\text{None}\}],}\\
+ {\{\text{ColorData}[\text{{``}BlueGreenYellow{''}}][\text{$\#$1}]\&,8,\text{{``}-30{''}},\text{{``}10{''}},\text{LegendPosition}\to \{-1.5,-.35\},}\\
+ {\text{LegendOrientation}\to \text{Vertical}\}]}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{}}\\
+ {\text{{``}iLD direction dependence{''}};}\\
+ {\text{ftest}=1000; \text{{``}Test Frequency - refer Chapter 3 for values{''}};}\\
+ {\text{mrange}=\text{Floor}[-10+20*\text{Log10}[\text{Abs}[\text{S0}/\text{SL}]]\text{/.}\{f\to \text{ftest},\theta \to -90\}];}\\
+ {\text{prange}=\text{Ceiling}[10+20*\text{Log10}[\text{Abs}[\text{S0}/\text{SL}]]\text{/.}\{f\to \text{ftest},\theta \to 90\}];}\\
+ {\text{ndbticks}=5;}\\
+ {\text{dbticks}=}\\
+ {\text{Table}[\{(l-1)*(\text{prange}-\text{mrange})/(\text{ndbticks}-1)+\text{mrange},}\\
+ {\text{ToString}[N[(l-1)*(\text{prange}-\text{mrange})/(\text{ndbticks}-1)+\text{mrange}]],\{0,.005\}\},\{l,1,\text{ndbticks}\}];}\\
+ {\text{Plot}[20*\text{Log10}[\text{Abs}[\text{S0}/\text{SL}]]\text{/.}f\to \text{ftest},\{\theta ,-180,180\},\text{PlotRange}\to \{\text{mrange},\text{prange}\},}\\
+ {\text{PlotStyle}\to \text{Black},\text{AxesOrigin}\to \{-180,\text{mrange}\},\text{PlotLabel}\to \text{ToString}[\text{ftest}]<>\text{{``}Hz{''}},}\\
+ {\text{Ticks}\to \{\text{dticks},\text{dbticks}\},\text{Epilog}\to \{\text{Line}[\{\{180,\text{mrange}\},\{180,\text{prange}\},\{-180,\text{prange}\},\{180,\text{prange}\}\}]\}]}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}iLD spectrum with directional bandwidth{''}};}\\
+ {\text{ndbticks}=5;}\\
+ {\text{dbticks}=\text{Table}[\{(l-1)*40/(\text{ndbticks}-1),\text{ToString}[N[(l-1)*40/(\text{ndbticks}-1)]],\{0,.005\}\},}\\
+ {\{l,1,\text{ndbticks}\}];}\\
+ {\text{Plot}[\{20*\text{Log10}[\text{Abs}[\text{S0}/\text{SL}]]\text{/.}\{\theta \to 90\},\text{If}[(20*\text{Log10}[\text{Abs}[\text{S0}/\text{SL}]]\text{/.}\{\theta
+\to 90\})>3,3]\},}\\
+ {\{f,\text{fmin},\text{fmax}\},\text{PlotRange}\to \{0,40\},\text{PlotStyle}\to \{\text{Black},\text{None}\},\text{Ticks}\to \{\text{fticks},\text{dbticks},\text{None},\text{None}\},}\\
+ {\text{AxesOrigin}\to \{\text{fmin},0\},\text{Filling}\to \{1\to \{2\}\},\text{Epilog}\to \{\text{Line}[\{\{\text{fmin},40\},\{\text{fmax},40\},\{\text{fmax},0\},\{\text{fmax},40\}\}]\}]}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}iTD spectrum{''}};}\\
+ {\text{Tmax}=\text{Round}[6*L*10{}^{\wedge}6/c,50];}\\
+ {\text{ntticks}=6;}\\
+ {\text{tticks}=\text{Table}[\{(l-1)*\text{Tmax}/(\text{ntticks}-1),\text{ToString}[N[(l-1)*\text{Tmax}/(\text{ntticks}-1)]],\{0,.005\}\},}\\
+ {\{l,1,\text{ntticks}\}];}\\
+ {\text{Plot}[\{10{}^{\wedge}6*\text{Arg}[\text{S0}/\text{SL}]/\omega \text{/.}\theta \to 90\},\{f,\text{fmin},\text{fmax}\},\text{PlotRange}\to
+\{-40,\text{Tmax}\},\text{AxesOrigin}\to \{\text{fmin},0\},}\\
+ {\text{Ticks}\to \{\text{fticks},\text{tticks}\},\text{PlotRange}\to \text{All},\text{PlotStyle}\to \text{Black}]}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}iTD direction dependence{''}};}\\
+ {\text{ftest1}=1000;}\\
+ {\text{ntticks}=9;}\\
+ {\text{tticks}=\text{Table}[\{-\text{Tmax}+2*(l-1)*\text{Tmax}/(\text{ntticks}-1),\text{ToString}[N[-\text{Tmax}+2*(l-1)*\text{Tmax}/(\text{ntticks}-1)]],}\\
+ {\{0,.005\}\},\{l,1,\text{ntticks}\}];}\\
+ {\text{Plot}[\{10{}^{\wedge}6*\text{Arg}[\text{SL}/\text{S0}]/\omega \text{/.}f\to \text{ftest1},10{}^{\wedge}6*\text{Arg}[\text{SL}/\text{S0}]/\omega
+\text{/.}f\to 2*\text{ftest1},}\\
+ {10{}^{\wedge}6*\text{Arg}[\text{SL}/\text{S0}]/\omega \text{/.}f\to 3*\text{ftest1}\},\{\theta ,-180,180\},\text{PlotRange}\to \text{Tmax},\text{PlotStyle}\to
+\{\text{Black},\text{Red},\text{Green}\},}\\
+ {\text{AxesOrigin}\to \{-180,-\text{Tmax}\},\text{Ticks}\to \{\text{dticks},\text{tticks}\},}\\
+ {\text{Epilog}\to \{\text{Line}[\{\{-180,0\},\{180,0\},\{180,-\text{Tmax}\},\{180,\text{Tmax}\},\{-180,\text{Tmax}\},\{180,\text{Tmax}\}\}]\},}\\
+ {\text{PlotLegend}\to \{\text{Style}[\text{{``}1kHz{''}},\text{Black},18],\text{Style}[\text{{``}2kHz{''}},\text{Black},18],\text{Style}[\text{{``}3kHz{''}},\text{Black},18]\},}\\
+ {\text{LegendPosition}\to \{-2.0,-.25\}]}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{}}\)
+\end{verbatim}
+
+\begin{verbatim}
+\noindent\( {\text{{``}Membrane Vibration Profile{''}};}\\
+ {\text{membamp}=}\\
+ {\text{Sum}[\text{Integrate}[r*\text{Sin}[\text{allZeros}[[l]][[1]]*(\phi -\beta )]*\text{BesselJ}[\text{allZeros}[[l]][[1]],\text{allZeros}[[l]][[3]]*r],}\\
+ {\{r,0,\text{atymp}\},\{\phi ,\beta ,2*\text{Pi}-\beta \}]*\text{Sin}[\text{allZeros}[[l]][[1]]*(\phi -\beta )]*}\\
+ {\text{BesselJ}[\text{allZeros}[[l]][[1]],\text{allZeros}[[l]][[3]]*r]/}\\
+ {(\text{$\rho $m}*d*(\omega {}^{\wedge}2-2*I*\alpha *\omega -\text{cM}{}^{\wedge}2*\text{allZeros}[[l]][[3]]{}^{\wedge}2)*}\\
+ {\text{Integrate}[r*\text{Sin}[\text{allZeros}[[l]][[1]]*(\phi -\beta )]{}^{\wedge}2*}\\
+ {\text{BesselJ}[\text{allZeros}[[l]][[1]],\text{allZeros}[[l]][[3]]*r]{}^{\wedge}2,\{r,0,\text{atymp}\},\{\phi ,\beta ,2*\text{Pi}-\beta \}]),}\\
+ {\{l,1,\text{Ncutoff}\}];}\\
+ {\text{ipsimemb}=\Lambda *\text{membamp}*(1/(\text{Gamplus}+\Lambda )+1/(\text{Gamminus}+\Lambda ));}\\
+ {\text{flist}=\{250,500,750,1000,1500,2000,3000,4000,5000,6000,8000,10000\};}\\
+ {\text{ftest}=\text{flist}[[1]];}\\
+ {\text{membplot}=\text{Re}[\text{ipsimemb}\text{/.}f\to \text{ftest}];}\\
+ {\text{RevolutionPlot3D}[\text{membplot},\{r,0,\text{atymp}\},\{\phi ,\beta ,2*\text{Pi}-\beta \},}\\
+ {\text{ColorFunction}\to \text{Function}[\{x,y,z,t,\theta ,r\},\text{ColorData}[\text{{``}Aquamarine{''}}][z]],}\\
+ {\text{MeshFunctions}\to \{\text{Function}[\{x,y,z,t,\theta ,r\},\text{Evaluate}[z]]\},\text{MeshStyle}\to \text{Thick},\text{Mesh}\to 8,}\\
+ {\text{Boxed}\to \text{False},\text{Axes}\to \text{False},\text{PlotLabel}\to \text{Style}[\text{ToString}[N[\text{ftest}/1000]],24]]}\)
+\end{verbatim}
+\end{appendix}
