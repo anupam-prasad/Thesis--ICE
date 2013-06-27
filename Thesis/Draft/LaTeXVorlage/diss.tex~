@@ -32,6 +32,7 @@
 \usepackage{amssymb}
 \usepackage{graphics, setspace}
 \usepackage{mathtools}
+\usepackage{attrib}
 \setlength{\headheight}{15pt}
 
 \newcommand{\mathsym}[1]{{}}
@@ -103,27 +104,31 @@
 
   \vspace*{\stretch{3}}
   \begin{center}
-    \Large Dissertation\\
-    \Large an der #4\\
-    \Large der Ludwig--Maximilians--Universit\"{a}t\\
-    \Large M\"unchen\\
+      A thesis submitted for the degree of\\
+      Master of Science\\
+      as part of the Elite Master Program\\
+      Theoretical and Mathematical Physics\\
+      at the Ludwig--Maximilians--Universit\"{a}t\\
+      M\"unchen\\
     \vspace*{\stretch{1}}
-    \Large vorgelegt von\\
-    \Large #2\\
-    \Large aus #3\\
+      presented by\\
+      #2\\
+      born April 2, 1987 in #3\\
     \vspace*{\stretch{2}}
-    \Large M\"unchen, den #6
+      Munich, #6
   \end{center}
 
   \newpage
   \thispagestyle{empty}
-
+  \noindent This thesis was written between July 2012 and July 2013 at the Chair of Theoretical Biophysics (T35), TU M\"{u}nchen.\\
   \vspace*{\stretch{1}}
-
+  \begin{figure}[h!]
+  \flushright \includegraphics[width=0.1\textwidth]{Diagrams/physik_logo.png}
+  \end{figure}
   \begin{flushleft}
-    \large Erstgutachter:  #7 \\[1mm]
-    \large Zweitgutachter: #8 \\[1mm]
-    \large Tag der m\"{u}ndlichen Pr\"{u}fung: #9\\
+    \large First Supervisor:  #7 \\[1mm]
+    \large Second Supervisor: #8 \\[1mm]
+    %\large Tag der m\"{u}ndlichen Pr\"{u}fung: #9\\
   \end{flushleft}
 
   \cleardoublepage
@@ -143,19 +148,21 @@
       {Mechanical Processing in the ICE Model
        }               % Titel der Arbeit
       {Anupam Prasad Vedurmudi}                      % Vor- und Nachname des Autors
-      {Kolkata, Indien}                             % Geburtsort des Autors
-      {Fakult\"{a}t f\"{u}r Physik}                         % Name der Fakultaet
-      {M\"{u}nchen 2013}                          % Ort und Jahr der Erstellung
+      {Kolkata, India}                             % Geburtsort des Autors
+      {Faculty of Physics}                         % Name der Fakultaet
+      {Munich 2013}                          % Ort und Jahr der Erstellung
       {\today}                            % Tag der Abgabe
       {Prof. Dr. J. Leo van Hemmen}                          % Name des Erstgutachters
-      {Zweitgutachter}                         % Name des Zweitgutachters
-      {Pr\"ufungsdatum}                       % Datum der muendlichen Pruefung
+      {}                         % Name des Zweitgutachters
+      %{Pr\"ufungsdatum}                       % Datum der muendlichen Pruefung
 
  
  \markboth{Declaration of Authorship}{Declaration of Authorship}
  \include{authorshipdeclaration}
  
- \include{thesisquote}
+ \include{danksagung}
+ 
+ %\include{thesisquote}
  
   \tableofcontents
   \markboth{Table of Contents}{Table of Contents}
@@ -189,7 +196,7 @@
   \include{bibliographie}
   \markboth{}{}
 
-  \include{danksagung}
+%  \include{danksagung}
 %  \include{lebenslauf}
 
 
