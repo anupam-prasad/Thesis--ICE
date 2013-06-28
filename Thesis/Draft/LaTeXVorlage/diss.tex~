@@ -122,7 +122,7 @@
 
   \newpage
   \thispagestyle{empty}
-  \noindent This thesis was written between July 2012 and July 2013 at the Chair of Theoretical Biophysics (T35), TU M\"{u}nchen.\\
+  \noindent This thesis was written between July 2012 and July 2013 at the Chair of Theoretical Biophysics (T35), Fakult\"{a}t f\"{u}r Physik, TU M\"{u}nchen.\\
   \vspace*{\stretch{1}}  
   \begin{figure}[htb!]
         %\centering
@@ -134,7 +134,7 @@
           %(or a blank line to force the subfigure onto a new line)
         \begin{subfigure}[b]{0.5\textwidth}
         \flushright
-                \includegraphics[width=.3\textwidth]{Diagrams/physik_logo.png}
+                \includegraphics[width=.3\textwidth]{Diagrams/physik_logo2.png}
         \end{subfigure}
 \end{figure}
 

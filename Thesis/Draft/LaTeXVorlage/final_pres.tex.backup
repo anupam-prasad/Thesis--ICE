@@ -1,0 +1,76 @@
+\documentclass{beamer}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{beamerthemeSzeged}
+\usepackage{graphicx}
+\usepackage{graphics, setspace}
+\usepackage{subfigure}
+\usepackage{epsfig}
+%\input{psfig}
+
+\title{Mechanical Processing in Internally Coupled Ears}
+\author{Anupam Prasad Vedurmudi}
+\begin{document}
+
+\begin{frame}
+ \titlepage
+\end{frame}
+
+\section{Introduction}
+\subsection{Pressure Difference Receiving Ears}
+\begin{frame}
+ Intro
+\end{frame}
+
+\section{The Model}
+
+\begin{frame}
+\frametitle{Mouth Cavity}
+\begin{figure}[htb!]
+
+\caption{Previous Cylindrical Cavity}
+\includegraphics[width=.37\textwidth]{Diagrams/oldCylinder.png}
+\hfill
+\includegraphics[width=.38\textwidth]{Diagrams/newCylinder.png}
+
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Tympanum}
+%  \begin{figure}[ht!]
+%   \centering
+%   \includegraphics[width=.34\textwidth]{Diagrams/geckoextracolumella2.jpg}
+% \end{figure}
+\begin{figure}[htb!]
+
+\includegraphics[width=.37\textwidth]{Diagrams/geckoear.png}
+\hfill
+\includegraphics[width=.3\textwidth]{Diagrams/tympanummodel.png}
+
+\end{figure}
+
+\end{frame}
+
+\section{Evaluation}
+\begin{frame}
+ Evaluation
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}
+ Conclusion
+\end{frame}
+
+\begin{frame}
+ \frametitle{Thank You}
+ \begin{figure}
+  \centering
+  \includegraphics[width=.3\textwidth]{Diagrams/geckowink.jpg}
+ \end{figure}
+
+\end{frame}
+
+
+\end{document}

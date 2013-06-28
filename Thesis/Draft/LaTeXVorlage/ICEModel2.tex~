@@ -11,7 +11,7 @@ between the tympanic vibrations. These differences show directionality and serve
  \caption[Illustration of a gecko's head]{Left: Picture of a Tokay gecko's head with the snout pointing to the left. The tympanic membrane is illuminated from behind by
  a light source on the other side of the head. The cartilaginous extracolumella can be seen attached to the upper part of the membrane.
  Right: Cast imprint of the mouth cavity of the gecko with the snout pointing to the top. The figures illustrate the coupling of the tympani through the mouth cavity.
- Photographs courtesy of Jakob Christensen-Dalsgaard.}
+ Photographs courtesy of Jakob Christensen-Dalsgaard (Syddansk Universitet).}
   \label{geckohead}
 \end{figure}
 
@@ -103,7 +103,7 @@ placement of the extracolumella can be made out at the top of the eardrum in Fig
  is illustrated. Also apparent is the position, size
  and shape of the extracolumella on the left part eardrum can be discerned clearly (inside the red box). Its asymmetrical placement on the tympanum
  surface can also be made out. In our analysis we approximate the
- ellipsoid membrane by a circular one of the same area. Photograph courtesy of Yezhong Tang.}
+ ellipsoid membrane by a circular one of the same area. Photograph courtesy of .}
  \label{geckoextracolumella}
 \end{figure}
 
@@ -749,7 +749,7 @@ we are concerned with, we will not need to calculate the summation beyond the th
 Before we conclude this chapter, we will discuss the previous methods used to model ears coupled through
 an air cavity. This method was used by Christensen-Dalsgaard and Manley in \cite{dalsgaardmanley1} and \cite{dalsgaardmanley2}
 and Zhang \emph{et al} in \cite{zhanghallam}.
-and was based on methods presented in \cite{fletcheracoustic}. The method treats the problem through the analogy of electrical circuits
+It was based on methods presented in \cite{fletcheracoustic}. The method treats the problem through the analogy of electrical circuits
 and deals with low-frequency and high-frequency regimes separately.
 
 In these models, the sound inputs are treated as voltage sources and the system is broken down into components, e.g.	 membranes,
