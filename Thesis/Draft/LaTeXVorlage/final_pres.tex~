@@ -9,8 +9,9 @@
 \usepackage{subfigure}
 \usepackage{epsfig}
 
-\usefonttheme{professionalfonts} % using non standard fonts for beamer
-\usefonttheme{serif} % default family is serif
+\setbeamerfont{title}{family=\rm}
+% \usefonttheme{professionalfonts} % using non standard fonts for beamer
+% \usefonttheme{structurebold} % default family is serif
 %\usepackage{fontspec}
 %\setmainfont{Liberation Serif}
 %\input{psfig}
