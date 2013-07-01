@@ -128,7 +128,7 @@
         %\centering
         \begin{subfigure}[b]{.5\textwidth}
          \flushleft
-                \includegraphics[width=.3\textwidth]{Diagrams/T35logo.png}
+                \includegraphics[width=.3\textwidth]{Diagrams/T35logo2.png}
         \end{subfigure}%
         ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
           %(or a blank line to force the subfigure onto a new line)
@@ -203,6 +203,7 @@
   \include{Introduction}
   
   \include{ICEModel2}
+  
   \include{ModelAnalysis} 
 
   \include{Conclusion}

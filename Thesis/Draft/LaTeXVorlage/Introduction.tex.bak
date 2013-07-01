@@ -1,5 +1,5 @@
 \chapter{Introduction}\label{introchapter}
-Among sensory systems, the auditory system is perhaps the most ubiquitious. The 
+Among sensory systems, the auditory system is perhaps the most ubiquitous. The 
 development of numerous strategies for the detection and processing of auditory stimuli
 across several species is a testament to this fact; cf. Sec. \ref{auditoryevolution}. The processing of sound stimuli is fairly fast and in comparison
 to light stimuli, sound has two main properties - it is omnidirectional and due to
@@ -21,7 +21,7 @@ The vibrations are then transmitted by means of a set of bony or cartilaginous e
 converted into electrochemical signals that will be processed neuronally; see Sec. \ref{mechanicalprocessing}.
 
 The neuronal processing system consists of building blocks called \emph{neurons} which are
-connected to eachother through \emph{synapses}. The entire system is referred to as a 
+connected to each other through \emph{synapses}. The entire system is referred to as a 
 \emph{neuronal net} which, through a form of computation, gives rise to representations of the stimuli
 known as \emph{neuronal maps}. Each neuron of the map represents a specific property, e.g.
 the position in space or the frequency of the stimulus and neighbouring neurons respond to
@@ -72,9 +72,9 @@ tympanic ears.
  \label{lizardheadcrosssection}
 \end{figure}
 
-\subsection{Pressure Difference Receiving Ears - The ICE Model}\label{iceintrosection}
+\subsection{Pressure Difference Receiving Ears}\label{iceintrosection}
 The ability of humans and most other mammals to localize sources of sound depends on two kinds of information: the direction and frequency
-of the source may cause differences between the amplitudes (ILDs -Interaural Level Differences) and arrival times ((ITD -Interaural Time Differences) of sounds reaching both ears. These pieces of information are
+of the source may cause differences between the amplitudes (ILDs -Interaural Level Differences) and arrival times (ITD -Interaural Time Differences) of sounds reaching both ears. These pieces of information are
 referred to binaural hearing cues or simply hearing cues. In mammals there is an additional source of directionality due to the shape
 of the pinnae which affects the spectra of sounds reaching the ear (monoaural cues). In effect, the ears are independently activated by sound pressures
 on their external surface. In humans, at frequencies above $1.5$kHz, the amplitude differences between the eardrums are sufficient
@@ -85,24 +85,13 @@ different paths to reach either ear and is in general not as strongly affected b
 However, most hearing animals are lack monoaural cues and the binaural
 cues are at best too small to affect the neural responses of the ears, \cite{michelsen1}. These animals are in general too small in comparison
 to the wavelength of sound in their typical hearing range to cause an appreciable amplitude differences due to diffraction. Nevertheless, 
-the eardrum vibration amplitude has been found to vary strongly with direction. In order to reslove this apparent paradox it was
+the eardrum vibration amplitude has been found to vary strongly with direction. In order to resolve this apparent paradox it was
 suggested by Autrum \cite{autrumjcomphys} that in locusts the directionality could be a result of the ears vibrating due to the
 differences between the pressure on the inner and outer surfaces (see \cite{michelsenlarsen} for a review).  The properties of such systems were also found to be analogous with the inherently directional 
 nature of pressure gradient receivers studied by Harry Olson (\cite{olsonmichrophones}). Pressure difference reception has
 become the standard explanation for directionality in almost all small animals; the one exception being mechanically coupled
 eardrums in some parasitic flies, (see Robert \emph{et al} \cite{roberthoy}).
 
-The pathway for sound to the inner surface of the eardrum varies. In many animals the air spaces behind the eardrums are
-connected by sizable air-filled passage which results in a coupling between the eardrums. This has been shown for 
-insects (\cite{michelsenbiophysics}), frogs (\cite{jorgensenanurans}) and reptiles (\cite{dalsgaardmanley1}). The sound wave
-may alternatively reach the inner surface of the eardrum through a different route (like the tracheal tube in crickets). Our focus
-is on the construction and mathematical analysis of a model for the former type of animals, i.e. animals that have their eardrums coupled through an air-filled cavity. 
-The ICE model seeks to explain the emergence of enhanced directional cues in animals that are small relative to wavelengths
-in their entire hearing range. As a result, they are forced to exploit the small time differences between the inputs between
-their ears to localize a sound source. Using these small ITDs, the system generates amplified
- time differences (which we will refer to as iTDs - Internal Time Differences) and direction dependent amplitude differences (which we will
- refer to as iLDs - Internal Level Differences) between the tympani.
- 
 The primary advantage of pressure difference receiving ears is to compensate for a small body size relative to sound wavelengths. It has
 however also been suggested that there is another reason for this adaptation. The natural habitats of such animals
 is usually close to the ground resulting in a severe degradation of directional cues due to the presence of obstacles. Amplitude cues are especially affected due to multiple reflections and other deviations
@@ -112,14 +101,44 @@ of these cues for a grasshopper in its natural grassland habitat was studied my 
  the scattering of both amplitude and phase in dense habitats increases with frequency suggesting that animals in these habitats should prefer to
  use rather low frequencies for communication. 
 
-Following Vossen,  we refer to our model as ``ICE'' (Internally Coupled Ears). Our goal is to analyse the physics behind the production of the
-enhanced differences (iTD/iLD). In particular we are interested in the frequency and direction dependence of the hearing cues. The problem of
-directional hearing in lizards was previously treated by Vossen (see Chapter 2 of \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}).
-Here, an analytical model of internally coupled ears with a cylindrical air cavity was first presented. This thesis aims to be an extension of the previous work
-wherein we seek to provide an anlytical model that reflects the frequency and directional behaviour of such systems in nature. Our work deviates in
+ \subsubsection{The ICE Model}
+The pathway for sound to the inner surface of the eardrum depends on the species in question. In many animals the air spaces behind the eardrums are
+connected by sizable air-filled passage which results in a coupling between the eardrums. This has been shown for 
+insects (\cite{michelsenbiophysics}), frogs (\cite{jorgensenanurans}) and reptiles (\cite{dalsgaardmanley1}). The sound wave
+may alternatively reach the inner surface of the eardrum through a different route (like the tracheal tube in crickets). Our focus
+is on the construction and mathematical analysis of a model for the former type of animals, i.e. animals that have their eardrums coupled through an air-filled cavity.
+
+\begin{figure}[ht]
+ \centering
+ \includegraphics[width=0.6\linewidth]{Diagrams/geckoICE.jpg}
+ \caption[Illustration of ICE for a lizard]{A: side view of a Tokay gecko. The arrow indicatets the location of the recessed tympanum (arrow).
+ In the inset we see the tympanum lit by a red laser pointer shining on the opposite tympanum. B: A transverse section through a 
+ Gecko head. The section contains the tympanic membrane, a portion of the extracolumella (arrow), the external ear opening, the open middle ear, 
+ and the buccal cavity. C: diagram of the gecko 
+ head to show interaural transmission (eardrum shown in green). Its motion is produced by interaction of a direct and an indirect sound component, resulting in the
+ cancellation of the left eardrum's motion and the amplification of the right eardrum's. Figure taken from Christensen-Dalsgaard \emph{et al} \cite{dalsgaardtangcarr}
+ }
+ \label{geckoICE}
+\end{figure}
+
+Following Vossen \cite{vossenjasa},  we refer to our model as ``ICE'' (Internally Coupled Ears). The defining characteristic of the ICE model
+is the coupling between the eardrums through a cylindrical air cavity. As a result of this coupling, the tympani are not acoustically independent.
+This means that a signal arriving at one of the tympanic membranes can propagate through
+the internal cavity and influence the vibration of the other tympanic membrane. The ICE system is illustrated for the case of lizards in Fig. \ref{geckoICE}.
+Through the ICE model, we seek to explain the emergence of enhanced directional cues in animals that are small relative to wavelengths
+in their entire hearing range. As a result of their small size, these animals are forced to exploit the small time differences between the inputs between
+their ears to localize a sound source. Using these small ITDs, the system amplifies direction dependent
+ time differences (which we will refer to as iTDs - Internal Time Differences) and  creates direction dependent amplitude differences (which we will
+ refer to as iLDs - Internal Level Differences) between the tympani.
+In addition to their direction dependence, the ICE model also seeks to explain the frequency behaviour of hearing cues. 
+ 
+ The ICE model with a cylindrical air cavity was first presented as an analytical model for
+directional hearing in lizards  by Vossen (see Chapter 2 of \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}).
+The model consisted of a pair of circular membranes coupled through a cylindrical air cavity. This thesis aims to be an extension of the previous work
+wherein we seek to provide an analytical model that consistently reflects the frequency and directional behaviour of such systems. Our work deviates in
 the treatment of the following aspects - 
 \begin{itemize}
- \item While constructing the mouth cavity we place an emphasis on maintining its volume resulting in different radii for the tympanum and the cylindrical cavity; See Sec. \ref{subsecinnercavity}.
+ \item While constructing the mouth cavity we place an emphasis on maintaining its volume resulting in different radii for the tympanum and the cylindrical cavity; See Sec. \ref{subsecinnercavity}.
  \item For the pressure inside the cavity (See Sec. \ref{internalcavity}) we propose a different set of modes that represent it more accurately.
  \item The treatment of the membrane and its transducer - the extracolumella (See Sec. \ref{tympanicmembrane}). We propose a construction that is easier to treat analytically and reproduces
  the vibration patterns fairly well.
@@ -134,7 +153,7 @@ regions of the basilar membrane. In this manner, the basilar membrane functions 
 
 Early stages of auditory pathways in birds and mammals contain synaptic relays designed to preserve the temporal fine structure of 
 acoustic stimuli with great accuracy.  Studies of neural processing in Tokay geckos have also shown similar properties \cite{dalsgaardtangcarr}.
-These animals possess cochlear nucleii (the collections of neurons that receive input from the cochlear nerve) that are specialized either for
+These animals possess cochlear nuclei (the collections of neurons that receive input from the cochlear nerve) that are specialized either for
 the computation of time differences (iTD/ITD) or level differences (iLD/ILD) between the tympani. The neurons sensitive to level difference are excited by the 
 input from one ear and inhibited by the other. These neurons are for obvious reasons known as 'EI' neurons and respond most strongly when the
 sounds come from the excitatory ear. The inhibitory ear, on the other hand sits on the far side of the head resulting in an increased firing
@@ -143,8 +162,8 @@ due to increased inhibition. Thus, the neural firing rate encodes the sound sour
 
 In contrast, the neurons sensitive to time differences are excited by inputs from both ears ('EE' neurons, Fig. \ref{EEtypedetector}a). The strength of the
 excitation depends on the exact relative timing of the inputs. Just as is the case for larger animals, the level
-differences are more pronounced are most effective at higher frequencies and the time differnce cues at lower frequencies. Sound waves are encoded
-by neurons as sinusoidal membrane potentials. The primary sensory neurons, known as afferent neurons, phase lock to the inupt
+differences are more pronounced are most effective at higher frequencies and the time difference cues at lower frequencies. Sound waves are encoded
+by neurons as sinusoidal membrane potentials. The primary sensory neurons, known as afferent neurons, phase lock to the input
 stimulus and are most likely to fire near the peak of the sound wave. Their synaptic potentials (formed due to differences
 in ion concentration) sum to produce fluctuating membrane potentials which resemble the stimulus waveform; see Fig. \ref{EEtypedetector}b. 
 \begin{figure}[ht!]
@@ -180,7 +199,7 @@ Our study will take place in two main steps. In Chapter \ref{modelchapter} we wi
 present our model for the mechanical processing of auditory signals in systems with internally coupled ears - the ICE Model.
 Since our focus is on an analytical model, we would like to have a system that reduces to tractable mathematical expressions
 so that we can clearly see the dependence of the system's behaviour on its parameters. To this end we will model the 
-combination of the eustachian tubes, middle ear cavity and pharynx as a single continuous cylindrically shaped air cavity; see
+combination of the Eustachian tubes, middle ear cavity and pharynx as a single continuous cylindrically shaped air cavity; see
 Sec. \ref{subsecinnercavity}. The ears will be modelled as linear elastic membranes that are circular with an omitted sector replaced
 by a non-moving plate
 that corresponds to the extracolumella - the extension of the columella that is in contact with the ear. The
