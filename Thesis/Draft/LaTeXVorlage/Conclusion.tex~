@@ -2,8 +2,8 @@
 We start in Chapter \ref{modelchapter} with the construction of a basic model that describes the motion of eardrums in animals
 with coupled ears. The mouth cavity of the animal was modelled as an air-filled cylindrical tube
 of radius $a_{\mathrm{\mathrm{cyl}}}$ with circular openings on either side of radius $a_{\mathrm{tymp}}$ that are closed by
-tympanic membranes of the same radius. This is one of the points where we deviate from the previous treatment
-of the problem \cite{vossenjasa} as we have kept the volume of the cavity $V_{\mathrm{cav}}$ constant and equal to
+tympanic membranes of the same radius. This is one of the points where we deviate from the previous treatment \cite{vossenjasa} 
+of the problem as we have kept the volume of the cavity $V_{\mathrm{cav}}$ constant and equal to
 typical values for the species in nature. The sound inputs to both ears took the form of pressure waves
 with a phase shift which depended on the frequency, direction of the source and head width and shape.
 
@@ -12,9 +12,9 @@ as a circular sector of angle $2\pi-2\beta$. The remaining sector of angle $2\be
 the extracolumella - the extension whose function is to serve as a transducer for
 membrane vibrations. We model the extracolumella as a stationary object with its
 effect on the membranes being given by additional boundary conditions at $\phi=\pm\beta$. The variation of air-pressure
-inside the tube is described by the $3D$ wave equation with no-penetration boundary conditions at the wall. In the previous
-treatment it was assumed that the pressure modes inside the cavity are identical to the circular modes on the membrane. However,
-in our analysis we see that this is not the case as the no-penetration boundary condition results in a different orthoganal basis set
+inside the tube is described by the $3D$ wave equation with no-penetration boundary conditions at the wall. The previous
+treatment assumed that the pressure modes inside the cavity are identical to the circular modes on the membrane. However,
+in our analysis we see that this is not the case as the no-penetration boundary condition results in a different orthogonal basis set
 for the cavity pressure.
 
 We then proceed to find a solution to the full problem viz., the vibration of the membranes coupled through the cylindrical
@@ -53,14 +53,22 @@ properties like the fundamental eigenfrequency and damping. Certain parameters o
 values - membrane density, radius and thickness, cavity volume, head width etc. The other membrane specific parameters such
 as its first eigenfrequency and its damping coefficient are hard to experimentally determine. Therefore, in Sec. \ref{parameterestimation} we present
 a possible method to estimate these parameters from observations. We end the chapter by illustrating the vibrations patterns of one of the ICE-model
-membranes with the opposite one blocked. These patterns are compared and found to be in good agreement with the patterns experimentally measured for the Tokay gecko by Manley \cite{manleygecko1}.
+membranes with the opposite one blocked. These patterns are compared and found to be in good agreement with the patterns experimentally measured for the Tokay gecko 
+by Manley \cite{manleygecko1}.
 \section{Biological Relevance}
 In this thesis we have presented a general model for ears coupled through a large air cavity. Although we
 have restricted the comparison of our results with membrane vibration data for gekkonids from Dalsgaard and Manley (\cite{dalsgaardmanley1},\cite{dalsgaardmanley2})
 and Dalsgaard \emph{et al} \cite{dalsgaardtangcarr}, our model readily describes the coupling between eardrums across a range of gekkonid species by substituting
 the appropriate parameters for cavity volume ($V_{\mathrm{cav}}$), head width, tympanum area etc. The model can also be adapted to other animals with ICE such as
-birds and the main modification to be made would be to the transducer (the extracolumella in our case). For example, the extracolumella in birds is generally
+frogs and birds where the main modification to be made would be to the transducer, the extracolumella in our case. For example, the extracolumella in birds is generally
 centrally attached to the eardrum \cite{millsavianmiddleear} resulting in a different set of membrane eigenmodes. 
+
+By using a cylindrical air cavity as opposed to a circuit-based description for the coupled system (Zhang \emph{et al} \cite{zhanghallam}), we have been able to account for the
+low- and high-frequency behaviour of the system through a single model. This also leads to the additional possibility of using the ICE model to explain hearing in
+animals such as crocodilia. As shown by Vergne \emph{et al} \cite{vergnecrocodilia} and Higgs \emph{et al} \cite{higgscrocodilia} they seem to be able to hear well both above and underwater while
+using the same neural processing pathways for both enviroments.
+The speed of sound in water is four times that in air and consequently the wavelength for the same frequency is quadrupled as well. There is a possibility of switching to an ICE-like 
+system to overcome this problem when underwater.
 
 The agreement of our calculations with
 experimental results suggests that the exact shape of the cavity does not have an effect as significant as $V_{\mathrm{cav}}$ on the hearing cues.  The previously
@@ -69,13 +77,6 @@ The ICE model also places natural limits on iTD and iLD based hearing dependent 
 the transition frequency from iTD based localization to iLD based localization is close to the membrane eigenfrequency. For this reason it isn't unreasonable to expect that animals with typically
 higher hearing ranges will tend to have higher membrane eigenfrequencies and vice versa. In contrast with mammals, in whom this transition is determined by their size, the transition
 between the two regimes is entirely a consequence of the physics of the ICE model.
-
-By using a cylindrical air cavity as opposed to a circuit model for the coupled system (Zhang \emph{et al} \cite{zhanghallam}), we have been able to account for the
-high frequency behaviour of the system which is a result of significant pressure amplitude differences between the ears. This also leads to the additional possibility of using the ICE model to explain hearing in
-animals such as crocodilia. As shown by Vergne \emph{et al} \cite{vergnecrocodilia} and Higgs \emph{et al} \cite{higgscrocodilia} they seem to be able to hear well both above and underwater while
-using the same neural processing pathways for both enviroments.
-The speed of sound in water is four times that in air and as a result wavelengths for the same frequency are quadrupled as well. There is a possibility of switching to an ICE
-like system to overcome this problem when underwater.
 
 \section{Open Questions}
 The main advantage of the ICE-model is to explain the frequency and direction dependence of the
@@ -91,7 +92,7 @@ understanding of its constituent cartilaginous material and would necessitate a 
 Due the complex shape of a realistic mouth cavity, a full treatment is not conducive to an analytical treatment.
 Numerical software like COMSOL can be used to treat reconstructions of mouth casts. Another possibility
 would be to include the effect of the nostrils as either a new set of boundary conditions or a third input source. The eigenfrequencies
-of the mouth cavity were studied by Vossen \cite[p.~39]{vossenthesis} but the influence of the holes corresponding to the membranes was neglected here. Additionally,
+of the mouth cavity were studied by Vossen (\cite[p.~39]{vossenthesis}, \cite{vossenjasa}) but the influence of the holes corresponding to the membranes was neglected here. Additionally,
 the neuronal basis of the computation of iTD cues is not fully understood and the applicability of the Jeffress model in their
 case has also been called into question. Lastly, the response of the animal to sound stimuli in realistic environments viz. in the presence
 of multiple obstacles could also be a topic for further study. This however necessitates further experimental analyses of sound localization in

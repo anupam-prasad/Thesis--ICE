@@ -103,7 +103,7 @@ placement of the extracolumella can be made out at the top of the eardrum in Fig
  is illustrated. Also apparent is the position, size
  and shape of the extracolumella on the left part eardrum can be discerned clearly (inside the red box). Its asymmetrical placement on the tympanum
  surface can also be made out. In our analysis we approximate the
- ellipsoid membrane by a circular one of the same area. Photograph courtesy of .}
+ ellipsoid membrane by a circular one of the same area. Photograph courtesy of Prof. Zhendong Dai (NUAA).}
  \label{geckoextracolumella}
 \end{figure}
 
@@ -746,13 +746,13 @@ cutoff depends on parameters specific to the animal; cf. Sec. \ref{parameteresti
 we are concerned with, we will not need to calculate the summation beyond the the first $30$ eigenmodes.
 
 \subsection{Circuit Model}
-Before we conclude this chapter, we will discuss the previous methods used to model ears coupled through
+Before we conclude this chapter, we will discuss one of the previous methods used to describe ears coupled through
 an air cavity. This method was used by Christensen-Dalsgaard and Manley in \cite{dalsgaardmanley1} and \cite{dalsgaardmanley2}
 and Zhang \emph{et al} in \cite{zhanghallam}.
 It was based on methods presented in \cite{fletcheracoustic}. The method treats the problem through the analogy of electrical circuits
 and deals with low-frequency and high-frequency regimes separately.
 
-In these models, the sound inputs are treated as voltage sources and the system is broken down into components, e.g.	 membranes,
+In these descriptios, the sound inputs are treated as voltage sources and the system is broken down into components, e.g.	 membranes,
 cavities, apertures which are modelled as lumped elements. Their impedance values depend on the geometry and material properties and in general
  can be resistive and reactive. The ``current'' is given by something called the ``acoustic flow'' which has the dimensions of
 volume per unit time. In the previous analysis, this is given by $j\omega\pi a^2_{\mathrm{cyl}}S^{0/L}$. 
