@@ -55,7 +55,7 @@ tympanic ears.
  \includegraphics[width=1.0\linewidth]{Diagrams/vertebrateearevolution.jpg}
  \caption[Vertebrate Ear Evolution]{Evolution of vertebrate ears. Tympanic
  middle capable of receiving airborne sound evolved independently among the ancestors of modern frogs, turtles, lizards, birds,
- crocodilians and mammals. Diagrams at the top show cross-sections through different heads of these animals (middle ears - gray fill).
+ crocodilians and mammals. Diagrams at the top show cross-sections through different heads of these animals (middle ears - grey fill).
  Among these middle-ear systems two distinct groups can be observed - the anura (frogs and toads), squamata (lizards and snakes)
  and aves (birds) form one group with ears connected through differently shaped cavities and mammals with independent ears. Figure due to Schnupp and Carr \cite{schnuppcarr}.}
  \label{vertebrateearevolution}
@@ -103,7 +103,7 @@ of these cues for a grasshopper in its natural grassland habitat was studied my 
 
  \subsubsection{The ICE Model}
 The pathway for sound to the inner surface of the eardrum depends on the species in question. In many animals the air spaces behind the eardrums are
-connected by sizable air-filled passage which results in a coupling between the eardrums. This has been shown for 
+connected by sizeable air-filled passage which results in a coupling between the eardrums. This has been shown for 
 insects (\cite{michelsenbiophysics}), frogs (\cite{jorgensenanurans}) and reptiles (\cite{dalsgaardmanley1}). The sound wave
 may alternatively reach the inner surface of the eardrum through a different route (like the tracheal tube in crickets). Our focus
 is on the construction and mathematical analysis of a model for the former type of animals, i.e. animals that have their eardrums coupled through an air-filled cavity.
@@ -111,7 +111,7 @@ is on the construction and mathematical analysis of a model for the former type 
 \begin{figure}[ht]
  \centering
  \includegraphics[width=0.6\linewidth]{Diagrams/geckoICE.jpg}
- \caption[Illustration of ICE for a lizard]{A: side view of a Tokay gecko. The arrow indicatets the location of the recessed tympanum (arrow).
+ \caption[Illustration of ICE for a lizard]{A: side view of a Tokay gecko. The arrow indicates the location of the recessed tympanum (arrow).
  In the inset we see the tympanum lit by a red laser pointer shining on the opposite tympanum. B: A transverse section through a 
  Gecko head. The section contains the tympanic membrane, a portion of the extracolumella (arrow), the external ear opening, the open middle ear, 
  and the buccal cavity. C: diagram of the gecko 
@@ -130,7 +130,7 @@ in their entire hearing range. As a result of their small size, these animals ar
 their ears to localize a sound source. Using these small ITDs, the system amplifies direction dependent
  time differences (which we will refer to as iTDs - Internal Time Differences) and  creates direction dependent amplitude differences (which we will
  refer to as iLDs - Internal Level Differences) between the tympani.
-Apart from their direction dependence, the ICE model also seeks to explain the frequency behaviour of hearing cues. 
+In addition to their direction dependence, the ICE model also seeks to explain the frequency behaviour of hearing cues. 
  
  The ICE model with a cylindrical air cavity was first presented as an analytical model for
 directional hearing in lizards  by Vossen (see Chapter 2 of \cite{vossenthesis} and Vossen \emph{et al} \cite{vossenjasa}).
@@ -172,7 +172,7 @@ in ion concentration) sum to produce fluctuating membrane potentials which resem
  \caption[EE-type coincidence detector and encoding of sound waves as membrane potentials.]{(\textbf{a}) Anatomy of an 'EE-type'
  coincidence detector neuron. Sound signals from both ears converge through the two prominent dendrites (the hair like extensions
  on either end). (\textbf{a}) Encoding of sound waves as sinusoidal membrane potentials. Nerve fibers phase lock to the sound stimulus and
- are therefore most likely to fire near the peaks. Their excitator synaptic potentials sum to produce membrane potentials which resemble the
+ are therefore most likely to fire near the peaks. Their excitatory synaptic potentials sum to produce membrane potentials which resemble the
  stimulus waveform. Figure taken from \cite{schnuppcarr}.}
  \label{EEtypedetector}
 \end{figure}

@@ -2,56 +2,201 @@
 
 \usepackage[utf8x]{inputenc}
 \usepackage{beamerthemeSzeged}
+\usecolortheme{lily}
 \usepackage{graphicx}
+\usepackage[font={scriptsize,it}]{caption}
+\captionsetup[figure]{labelformat=empty}
 \usepackage{graphics, setspace}
 \usepackage{subfigure}
 \usepackage{epsfig}
+
+\usepackage{bibentry}
+
+\usepackage{amsmath,empheq}
+\usepackage{xcolor}
+
+\setbeamerfont{title}{family=\rm}
+
+\let\oldfootnotesize\footnotesize
+\renewcommand*{\footnotesize}{\oldfootnotesize\tiny}
+% \usefonttheme{professionalfonts} % using non standard fonts for beamer
+% \usefonttheme{structurebold} % default family is serif
+%\usepackage{fontspec}
+%\setmainfont{Liberation Serif}
 %\input{psfig}
 
-\title{Mechanical Processing in Internally Coupled Ears}
+\makeatletter
+\setbeamertemplate{footline}
+{%
+\begin{beamercolorbox}[colsep=1.0pt]{upper separation line foot}
+  \end{beamercolorbox}
+  \vspace{1pt}
+    \hbox{%
+    \begin{beamercolorbox}[wd=0.3333\textwidth,  ht=2.5ex, dp=1.125ex]{title in head/foot}%
+      \flushleft\usebeamerfont{title in head/foot}\footnotesize \hspace{1pt} Internally Coupled Ears%\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.67\textwidth, ht=2.5ex, dp=1.125ex, center]{title in head/foot}%
+      \flushright\usebeamerfont{title in head/foot}\insertframenumber/\inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}
+     \begin{beamercolorbox}[colsep=1.0pt]{lower separation line foot}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\addtobeamertemplate{block begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+\setbeamercolor*{block title example}{fg=blue!75,
+bg= blue!10}
+\setbeamercolor*{block body example}{fg= black,
+bg= blue!5}
+
+\makeatother
+
+\title{\large Mechanical Processing in Internally Coupled Ears}
 \author{Anupam Prasad Vedurmudi}
+\date{TMP Thesis Defence\\ \today}
+
 \begin{document}
 
 \begin{frame}
  \titlepage
+ \bibliographystyle{ieeetr}
+\nobibliography{literatur}
 \end{frame}
 
+\logo{\includegraphics[height=0.8cm]{Diagrams/T35logo2.png}\vspace{220pt}}
+
 \section{Introduction}
-\subsection{Pressure Difference Receiving Ears}
 \begin{frame}
- Intro
+ \begin{columns}
+    \centering
+    Independent Ears
+    \begin{itemize}
+     \item[] Eustachian tubes typically very narrow.
+     \item[] Vibrations of eardrums essentially independent.
+    \end{itemize}
+
+    \end{column}
+     
+    \begin{column}{0.5\textwidth}
+   \centering
+    Coupled Ears
+     \begin{itemize}
+         \item[] Eardrums connected through wide eustachian tubes and a large mouth cavity.
+     \item[] Eardrums vibrations influence eachother.
+     \end{itemize}
+
+
+    \end{column}
+  \end{columns}
+\end{frame}
+\begin{frame}
+ \begin{exampleblock}{Advantages of Low Frequency Hearing}
+  
+ \end{exampleblock}
+
 \end{frame}
 
 \section{The Model}
 
+\subsection{Mouth Cavity}
 \begin{frame}
 \frametitle{Mouth Cavity}
-\begin{figure}[htb!]
-
-\caption{Previous Cylindrical Cavity}
-\includegraphics[width=.37\textwidth]{Diagrams/oldCylinder.png}
-\hfill
+% \begin{figure}[htl]
+% \flushleft
+% \includegraphics[width=.36\textwidth]{Diagrams/oldCylinder.png}
+% %\caption{Previous Cylindrical Cavity}
+% \end{figure}
+\begin{figure}[htr]
 \includegraphics[width=.38\textwidth]{Diagrams/newCylinder.png}
-
+\caption{Mouth Cavity Model}
 \end{figure}
-
 \end{frame}
 
 \begin{frame}
-\frametitle{Tympanum}
-%  \begin{figure}[ht!]
-%   \centering
-%   \includegraphics[width=.34\textwidth]{Diagrams/geckoextracolumella2.jpg}
-% \end{figure}
-\begin{figure}[htb!]
+\frametitle{Cavity Pressure}
+\begin{exampleblock}{3D Wave Equation}
+\begin{equation}\label{pressurewaveeqn}
+\begin{split}
+ \frac{1}{c^2}\partial^2_t p(x,r,\phi,t)=\frac{1}{r}\frac{\partial}{\partial r}&\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
+ \\&+\frac{1}{r^2}\frac{\partial p(x,r,\phi,t)}{\partial \phi^2}
+ +\frac{\partial p(x,r,\phi,t)}{\partial x^2}
+ \end{split}
+\end{equation}
+\end{exampleblock}
 
-\includegraphics[width=.37\textwidth]{Diagrams/geckoear.png}
-\hfill
-\includegraphics[width=.3\textwidth]{Diagrams/tympanummodel.png}
-
-\end{figure}
+% Subject to the no-penetration boundary condition at all solid boundaries.
+\begin{block}{No-penetration boundary condition}
+\begin{equation}
+ -j\rho\omega\mathbf{v}=\nabla p(x,r,\phi;t)=0
+\end{equation}
+\end{block}
 
 \end{frame}
+
+% \begin{frame}
+% \frametitle{Eardrum}
+% %  \begin{figure}[ht!]
+% %   \centering
+% %   \includegraphics[width=.34\textwidth]{Diagrams/geckoextracolumella2.jpg}
+% % \end{figure}
+% \begin{figure}[htb!]
+% \makebox[\linewidth]{
+% \includegraphics[width=.37\textwidth]{Diagrams/geckoear.png}
+% \hfill
+% \includegraphics[width=.3\textwidth]{Diagrams/tympanummodel.png}}
+% 
+% \end{figure}
+% 
+% \end{frame}
+
+\begin{frame}
+\frametitle{Eardrum}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \small
+      Sketch of a Tokay eardrum as seen from the outside\footnote{\bibentry{manleygecko1}}.\\
+      \includegraphics[width = 3.7 cm]{Diagrams/geckoear.png}\\
+      \footnotesize
+     COL - approximate position opposite the extracolumella insertion.
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \centering
+      \small
+      The ICE eardrum.\\
+      \textbf{}\\
+      \includegraphics[width = 3.2 cm]{Diagrams/tympanummodel.png}\\
+%       \textbf{}\\
+%       Extracolumella (dark region) is rigid and stationary.\\
+%       \textbf{}\\
+%       The membrane material is assumed to be linear elastic.
+\footnotesize
+\begin{itemize}
+      \item[] Extracolumella (dark) - rigid, stationary.
+      \item[] Tympanum - assumed linear elastic.
+      \item[] Rigidly clamped at the boundaries ($r=a_{\mathrm{tymp}}$ and $\phi=\beta,\ 2\pi-\beta$)
+\end{itemize}
+
+    \end{column}
+  \end{columns}
+  
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Membrane Vibrations}
+\begin{exampleblock}{Membrane EOM}
+
+\begin{equation}\label{membraneequation1}
+ -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\nabla^2u(r,\phi;t)
+ =\frac{1}{\rho_m d}\Psi(r,\phi;t)
+\end{equation}
+
+ \end{exampleblock}
+
+\end{frame}
+
 
 \section{Evaluation}
 \begin{frame}
@@ -69,7 +214,6 @@
   \centering
   \includegraphics[width=.3\textwidth]{Diagrams/geckowink.jpg}
  \end{figure}
-
 \end{frame}
 
 

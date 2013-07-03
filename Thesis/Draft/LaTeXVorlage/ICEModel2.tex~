@@ -154,7 +154,7 @@ consequently be linear $2^{nd}$-order PDE's.
  \includegraphics[width=.9\linewidth]{Diagrams/extracolumella2.png}
  \caption[Tympanic membrane model]{Left: Sketch of the eardrum of a Tokay gecko as seen from the outside taken from Manley, \cite{manleygecko1}. ``COL'' is
  the approximate position opposite the extracolumella insertion. The dots indicate the positions for measurements and will be discussed briefly in the
- next chapter. Dimensions
+ next chapter (cf. Sec. \ref{vibrationpatternchapter}). Dimensions
  in millimeters. Right: Our model for the loaded tympanic membrane. The lightly shaded region is modelled as a linear elastic membrane whereas the darkly shaded region 
  ($\beta<\phi<2\pi-\beta$) represents the contact surface of the extracolumella and the membrane. $\beta$ corresponds to the breadth of the extracolumella and is estimated from anatomical data.}
  \label{tympanummodel}
@@ -752,7 +752,7 @@ and Zhang \emph{et al} in \cite{zhanghallam}.
 It was based on methods presented in \cite{fletcheracoustic}. The method treats the problem through the analogy of electrical circuits
 and deals with low-frequency and high-frequency regimes separately.
 
-In these descriptios, the sound inputs are treated as voltage sources and the system is broken down into components, e.g.	 membranes,
+In these descriptions, the sound inputs are treated as voltage sources and the system is broken down into components, e.g.	 membranes,
 cavities, apertures which are modelled as lumped elements. Their impedance values depend on the geometry and material properties and in general
  can be resistive and reactive. The ``current'' is given by something called the ``acoustic flow'' which has the dimensions of
 volume per unit time. In the previous analysis, this is given by $j\omega\pi a^2_{\mathrm{cyl}}S^{0/L}$. 
