@@ -57,7 +57,7 @@ bg= blue!5}
 \author{Anupam Prasad Vedurmudi}
 \date{TMP Thesis Defence\\ \today}
 
-\titlegraphic{\vspace{.5cm} \includegraphics[width=.85cm]{Diagrams/T35logo2.png}\hspace*{8.4cm}~%
+\titlegraphic{\vspace{.1cm}\flushleft \includegraphics[width=.85cm]{Diagrams/T35logo2.png}\hspace*{8.3cm}~%
    \includegraphics[width=2cm]{Diagrams/tmplogo.jpg}
 }
 
@@ -128,11 +128,64 @@ bg= blue!5}
 % \includegraphics[width=.36\textwidth]{Diagrams/oldCylinder.png}
 % %\caption{Previous Cylindrical Cavity}
 % \end{figure}
-\begin{figure}[htr]
-\includegraphics[width=.38\textwidth]{Diagrams/newCylinder.png}
-\caption{Mouth Cavity Model}
-\end{figure}
+% \begin{figure}[htr]
+% \includegraphics[width=.38\textwidth]{Diagrams/newCylinder.png}
+% \caption{Mouth Cavity Model}
+% \end{figure}
+\begin{columns}
+ \begin{column}{0.5\textwidth}
+    \centering
+    \footnotesize
+    \underline{\textbf{Previous Model}}\\
+    
+    \includegraphics[width = 4 cm]{Diagrams/oldCylinder.png}\\
+    \small
+    \begin{itemize}
+     \item $V_{\mathrm{cyl}}=\pi a^2_{\mathrm{tymp}}L$
+    \end{itemize}
+
+    \end{column}
+    
+ \begin{column}{0.5\textwidth}
+    \centering
+        \footnotesize
+    \underline{\textbf{Our Model}}\\
+    
+    \includegraphics[width = 4 cm]{Diagrams/newCylinder.png}\\
+    \small
+    \begin{itemize}
+     \item $V_{\mathrm{cyl}}$ based on anatomical data.
+     \item $a_{\mathrm{cyl}}=\sqrt{V_{\mathrm{cyl}}/\pi L}$
+    \end{itemize}
+    \end{column}     
+    
+    \end{columns}
 \end{frame}
+
+\begin{frame}
+ \frametitle{Acoustic Head Model}
+ \begin{columns}
+ \begin{column}{0.5\textwidth}
+%     \centering
+%     \small
+%     \underline{\textbf{Head Model}}\\
+%     \flushleft
+    \includegraphics[width = 7 cm]{Diagrams/acousticheadmodel2.png}\\
+    \end{column}
+    \begin{column}{.5\textwidth}
+    \small
+     \begin{itemize}
+      \item I - Ipsilateral\hfill C - Contralateral
+      \item Sound source far enough away from the animal (``Infinity'').
+      \item Phase difference between sound at both ears - $\Delta=1.5kL\sin\theta$.
+      \item No appreciable amplitude difference, $|p_0|=|p_L|$.
+     \end{itemize}
+
+    \end{column}
+
+    \end{columns}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Cavity Pressure}
@@ -147,7 +200,7 @@ bg= blue!5}
 \end{exampleblock}
 
 % Subject to the no-penetration boundary condition at all solid boundaries.
-\begin{block}{No-penetration boundary condition}
+\begin{block}{No-penetration at all solid boundaries}
 \begin{equation}
  -j\rho\omega\mathbf{v}=\nabla p(x,r,\phi;t)=0
 \end{equation}
