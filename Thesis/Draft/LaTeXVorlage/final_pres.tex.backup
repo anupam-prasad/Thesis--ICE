@@ -209,11 +209,14 @@ bg= blue!5}
 \begin{equation}\label{pressurewaveeqn}
 \begin{split}
  \frac{1}{c^2}\partial^2_t p(x,r,\phi,t)=\frac{1}{r}\frac{\partial}{\partial r}&\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
- \\&+\frac{1}{r^2}\frac{\partial p(x,r,\phi,t)}{\partial \phi^2}
+ \\&+\frac{1}{r^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial \phi^2}
  +\frac{\partial p(x,r,\phi,t)}{\partial x^2}
  \end{split}
 \end{equation}
 \end{exampleblock}
+\begin{block}{}
+ To be solved using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}\].
+\end{block}
 
 % Subject to the no-penetration boundary condition at all solid boundaries.
 
@@ -236,18 +239,32 @@ bg= blue!5}
 % \end{frame}
 
 \begin{frame}
-\begin{block}{No-penetration at the cavity boundary, i.e. normal derivative vanishes}
+
+\onslide<1->{\begin{block}{No-penetration at the cavity boundary, i.e. normal derivative vanishes}
 \begin{equation}
  -j\rho\omega\mathbf{v}=\mathbf{n}.\left.\nabla p(x,r,\phi;t)\right|_{r=a_{\mathrm{cyl}}}=\left.\frac{\partial p}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
 \end{equation}
-\end{block}
+\end{block}}
 
- \begin{exampleblock}{Pressure Modes}
+ \onslide<2->{\begin{exampleblock}{Pressure Modes}
   \begin{align}
-   p_{\mathrm{qs}}(x,r,\phi;t)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{qs}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{qs}r)e^{j\omega t}\\
+   &p_{\mathrm{qs}}(x,r,\phi;t)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{qs}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{qs}r)e^{j\omega t}\\
+   &\mbox{such that, }\quad \left.\frac{\partial J_q(\nu_{qs}r)}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0\quad\mbox{ and }\quad\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{qs}}\nonumber
   \end{align}
 
- \end{exampleblock}
+ \end{exampleblock}}
+
+\end{frame}
+
+\begin{frame}
+\begin{exampleblock}{Plane Wave Mode}
+ \begin{equation}
+  p_{\mathrm{00}}(x,r,\phi;t)=\left[Ae^{jkx}+B_{qs}e^{-jkx}\right]e^{j\omega t}
+ \end{equation}
+\end{exampleblock}
+\begin{itemize}
+ \item[] Trivially satisfies the no-penetration condition.
+\end{itemize}
 
 \end{frame}
 
@@ -288,21 +305,46 @@ bg= blue!5}
 
 \begin{frame}
  \frametitle{Membrane Vibrations}
-\begin{exampleblock}{Membrane EOM}
+\onslide<1->{\begin{exampleblock}{Membrane EOM}
 
 \begin{equation}\label{membraneequation1}
- -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\nabla^2u(r,\phi;t)
- =\frac{1}{\rho_m d}\Psi(r,\phi;t)
+\begin{split}
+ -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
+ & \frac{1}{\rho_m d}\Psi(r,\phi;t)
+ \end{split}
 \end{equation}
+ \end{exampleblock}}
 
- \end{exampleblock}
+ \onslide<2->{\begin{block}{Membrane parameters}
+  \begin{tabular}{l l}
+    $\alpha$ - damping coefficient, & $c^2_M$ - propagation velocity\\
+    $\rho_m$ - density, & $d$ - thickness.
+  \end{tabular}
+ \end{block}}
 
 \end{frame}
 
 
 \section{Evaluation}
 \begin{frame}
- Evaluation
+\frametitle{Vibration Amplitude}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width = 5.6 cm]{Diagrams/Plots/tokayvibamp.jpeg}\\
+      \centering
+      \footnotesize direction (degrees)
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+    \textbf{}\\
+    %\textbf{}\\
+    \vspace{1pt}
+    \flushright
+      \includegraphics[width = 4.25 cm]{Diagrams/Plots/tokayvibamp_exp.jpeg}\\
+      \footnotesize direction (degrees)
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \section{Conclusion}

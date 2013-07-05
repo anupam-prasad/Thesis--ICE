@@ -327,17 +327,23 @@ bg= blue!5}
 
 \section{Evaluation}
 \begin{frame}
+\frametitle{Vibration Amplitude}
 \begin{columns}
     \begin{column}{0.5\textwidth}
       \centering
-      \includegraphics[width = 5.6 cm]{Diagrams/Plots/hemidactylusvibamp.jpeg}\\
+      \includegraphics[width = 5.6 cm]{Diagrams/Plots/tokayvibamp.jpeg}\\
+     
+      \footnotesize \hspace{4pt} direction (degrees)
     \end{column}
 
     \begin{column}{0.5\textwidth}
     \textbf{}\\
     %\textbf{}\\
+    \vspace{1pt}
     \flushright
-      \includegraphics[width = 3.3 cm]{Diagrams/Plots/hemidactylusvibamp_exp.jpeg}
+      \includegraphics[width = 4.25 cm]{Diagrams/Plots/tokayvibamp_exp.jpeg}\\
+      \flushleft
+      \footnotesize direction (degrees)
     \end{column}
   \end{columns}
 \end{frame}
