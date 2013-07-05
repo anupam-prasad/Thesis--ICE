@@ -257,8 +257,34 @@ will find an expression for the free and periodically driven vibrations of a cir
 developed in this section, we will solve for the vibrations of a sectoral membrane - which, as we have already discussed,
 models the loaded tympanum. The final expression will correspond to the steady-state vibrations of a linear elastic
 membrane. As we neglect the transient response of the membrane, we will also discuss the circumstances under which this
-is justified.
-
+is justified.\\
+% \noindent
+% \begin{minipage}{\linewidth}
+% \renewcommand{\arraystretch}{1.1}
+% %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
+% \centering
+% \vspace*{2pt}
+% \captionof{table}{Functions and Parameters used in the ICE Model} \label{parametertable} 
+% \begin{tabular}{c p{12 cm}}
+% \hline
+% $\theta$ & Direction of the sound source with respect to the head midline.\\
+% $\omega$ & Angular frequency of the incoming sound wave.\\
+% $k$ & Wavenumber $k=\omega/c$ with $c=343$m/s being the speed of sound.\\
+% $p$ & Pressure amplitude of the incoming sound wave.\\
+% $\Delta$ & Phase difference between the sound wave reaching the contra- and ipsilateral ear.\\
+% $p_{0/L}$ & Sound pressure on the ($x=0$) and ($x=L$) tympani respectively.\\
+% %& \\
+% $(x,r,\phi)$ & Cylindrical polar coordinates with $x$ being the axial direction.\\
+% $L$ & Interaural separation and length of cylinder.\\
+% $a_{\mathrm{cyl}}$ & Radius of cylinder.\\
+% $a_{\mathrm{tymp}}$ & Radius of tympanum.\\
+% $\beta<\phi<2\pi-\beta$ & Extent of the vibrating part of the membrane. The rest of the circle corresponds to
+% the extracolumellar footplate.\\
+% $V_{\mathrm{cav}}$ & Volume of the cavity.\\
+% \hline
+% \end {tabular}\par
+% \bigskip
+% \end{minipage}
 \noindent
 \begin{minipage}{\linewidth}
 \renewcommand{\arraystretch}{1.1}
@@ -281,14 +307,14 @@ $a_{\mathrm{tymp}}$ & Radius of tympanum.\\
 $\beta<\phi<2\pi-\beta$ & Extent of the vibrating part of the membrane. The rest of the circle corresponds to
 the extracolumellar footplate.\\
 $V_{\mathrm{cav}}$ & Volume of the cavity.\\
-&\\
+%&\\
 $J_q$ & Order $q$ Bessel function of the first kind.\\
 $\mu_{\mathrm{qs}},\nu_{\mathrm{qs}}$ & Respectively - $s^{th}$ zero and $s^{th}$ extremum of the above Bessel function.\\
 $f_{\mathrm{qs}}(x,r,\phi)$ & Orthogonal modes for the pressure distribution inside the mouth cavity.\\
 $\zeta_{\mathrm{qs}}$ & Wavenumber of the above modes in the $x$-direction.\\
 $p(x,r,\phi;t)$ & Pressure distribution inside the mouth cavity.\\
 $v_x(x,r,\phi;t)$ & Velocity function inside the mouth cavity.\\
-&\\
+%&\\
 $u_{\mathrm{mn}}(r,\phi;t)$ & Eigenmodes of the membrane displacement function.\\
 $\omega_{\mathrm{mn}}$ & Eigenfrequency of the above eigenmodes.\\
 $Q$ & Quality factor of the membrane.\\
@@ -296,19 +322,20 @@ $\Psi(r,\phi;t)$ & Driving pressure on the membrane.\\
 $u_{0/L}(r,\phi;t)$ & Membrane displacement function.\\
 $C^{0/L}_{\mathrm{mn}}$ & Membrane vibration expansion coefficients.\\
 $S^{0/L}(t)$ & Total membrane displacement.\\
-&\\
+%&\\
 $G_{ipsi}(r,\phi)$ & Ipsilateral filter.\\
 $G_{contra}(r,\phi)$ & Contralateral filter.\\
 \hline
 \end {tabular}\par
 \bigskip
 \end{minipage}
+
 In Sec. \ref{coupledmembranes} we will conclude by using our knowledge to solve for the vibration of the fully coupled
 system. In this section we will  proceed by applying the velocity boundary condition at either end of the cylinder. In
 order to help with our analysis, we will present a simplification scheme for this boundary condition. We will end this section
 by defining the ipsi- and contralateral filters. The final expressions that give us the vibrations 
 of the tympanic membranes as a function of the external pressure with the influence of the internal cavity encoded in the ipsi- and contralateral filters. 
-We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Table \ref{parametertable}.
+We have listed the main parameters and functions used in our analysis (including the geometry parameters) in Table \ref{parametertable}.% and Table \ref{functiontable}.
 % \begin{minipage}{\linewidth}
 % \renewcommand{\arraystretch}{1.1}
 % %\caption{Parameters and Functions used in the ICE Model} \label{parametertable} 
@@ -343,7 +370,7 @@ This means that the air moves due to pressure $p(x,r,\phi;t)$ whose distribution
 is given by the $3$D acoustic wave-equation in cylindrical polar coordinates,	
 \begin{equation}\label{pressurewaveeqn}
  \frac{1}{c^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial t^2}=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
- +\frac{1}{r^2}\frac{\partial p(x,r,\phi,t)}{\partial \phi^2}+\frac{\partial p(x,r,\phi,t)}{\partial x^2}
+ +\frac{1}{r^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial \phi^2}+\frac{\partial p(x,r,\phi,t)}{\partial x^2}
 \end{equation}
 where $c$ is the sound propagation velocity. The complete solution must take into account the boundary conditions at and within the cavity walls and the
 ones at the air-membrane interface. We also note that the above equation implies that the animal's mouth is closed, which is typical for a waiting
@@ -414,7 +441,7 @@ $z_{\mathrm{qs}}$ being the $s^{th}$ extremum of the order-$q$ Bessel function o
 This results in a discrete set of modes that satisfy \eqref{pressurewaveeqn} which are given
 by,
 \begin{equation}\label{specificpressure3}
- p_{\mathrm{qs}}(x,r,\phi;t)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_q{s}e^{-j\zeta_{\mathrm{qs}}x}\right]f_{\mathrm{qs}}(r,\phi)e^{j\omega t}
+ p_{\mathrm{qs}}(x,r,\phi;t)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]f_{\mathrm{qs}}(r,\phi)e^{j\omega t}
 \end{equation}
 where we have added the subscripts $q$ and $s$ to $\zeta$ and denoted the $(r,\phi)$ part of \eqref{specificpressure2}
 by $f_{\mathrm{qs}}(r,\phi)$. Effectively, the
@@ -452,7 +479,7 @@ The equation of motion for the vibration of a rigidly clamped circular membrane 
 a point $(r,\phi)$ with $r<a$ and $0<\phi<2\pi$. It is given by,
 \begin{equation}\label{membraneequation1}
  \begin{split}
- -\frac{\partial^2 u(r,\phi;t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi;t)}{\partial t}+c^2_M \left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)\right. +\frac{1}{r^2}&\left.\frac{\partial u(r,\phi,t)}{\partial \phi^2}\right]
+ -\frac{\partial^2 u(r,\phi;t)}{\partial t^2}-2\alpha\frac{\partial u(r,\phi;t)}{\partial t}+c^2_M \left[\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial u(r,\phi,t)}{\partial r}\right)\right. +\frac{1}{r^2}&\left.\frac{\partial^2 u(r,\phi,t)}{\partial \phi^2}\right]
  \\ &=\frac{1}{\rho_M d}\Psi(r,\phi;t)
  \end{split}
 \end{equation}

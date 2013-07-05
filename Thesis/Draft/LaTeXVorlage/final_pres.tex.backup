@@ -1,4 +1,7 @@
 \documentclass{beamer}
+% \usepackage[retainorgcmds]{IEEEtrantools}
+% 
+% \setbeamertemplate{enumerate items}[ball]
 
 \usepackage[utf8x]{inputenc}
 \usepackage{beamerthemeSzeged}
@@ -9,7 +12,8 @@
 \usepackage{graphics, setspace}
 \usepackage{subfigure}
 \usepackage{epsfig}
-
+\usepackage{tikz}
+\mode<presentation>{}
 \usepackage{bibentry}
 
 \usepackage{amsmath,empheq}
@@ -49,46 +53,67 @@ bg= blue!10}
 \setbeamercolor*{block body example}{fg= black,
 bg= blue!5}
 
+%\beamertemplatenavigationsymbolsempty
 \makeatother
 
-\title{\large Mechanical Processing in Internally Coupled Ears}
+\title{\Large Mechanical Processing in Internally Coupled Ears}
 \author{Anupam Prasad Vedurmudi}
 \date{TMP Thesis Defence\\ \today}
 
+\titlegraphic{\vspace{.1cm}\flushleft \includegraphics[width=.85cm]{Diagrams/T35logo2.png}\hspace*{8.3cm}~%
+   \includegraphics[width=2cm]{Diagrams/tmplogo.jpg}
+}
+
+% \titlegraphic{\vspace{8cm}}
 \begin{document}
 
 \begin{frame}
+%    \tikz [remember picture,overlay]
+%     \node at
+%         ([yshift=3cm]current page.south) 
+%         %or: (current page.center)
+%         {\includegraphics[width=\textwidth,height=.5\textheight]{someimage}};
+   %\titlepage
  \titlepage
  \bibliographystyle{ieeetr}
 \nobibliography{literatur}
+
 \end{frame}
 
-\logo{\includegraphics[height=0.8cm]{Diagrams/T35logo2.png}\vspace{220pt}}
+%\logo{\includegraphics[height=0.8cm]{Diagrams/T35logo2.png}\vspace{220pt}}
 
 \section{Introduction}
 \begin{frame}
- \begin{columns}
-    \centering
-    Independent Ears
-    \begin{itemize}
-     \item[] Eustachian tubes typically very narrow.
-     \item[] Vibrations of eardrums essentially independent.
-    \end{itemize}
+\frametitle{Auditory Systems}
 
+ \begin{columns}
+ 
+    \begin{column}{0.5\textwidth}
+    \centering
+    \includegraphics[width = 1.5 cm]{Diagrams/Presentation/indepears.png}\\
+    \underline{\textbf{Independent Ears}}
+    \small
+     \begin{itemize}
+    \item[] Eustachian tubes typically very narrow.
+     \item[] Effectively independent eardrum vibrations.
+     \end{itemize}
     \end{column}
      
     \begin{column}{0.5\textwidth}
-   \centering
-    Coupled Ears
+    \centering
+    \includegraphics[width = 1.5 cm]{Diagrams/Presentation/coupledears.png}\\
+    \underline{\textbf{Coupled Ears}}
+    \small
      \begin{itemize}
          \item[] Eardrums connected through wide eustachian tubes and a large mouth cavity.
      \item[] Eardrums vibrations influence eachother.
      \end{itemize}
-
-
     \end{column}
+    
   \end{columns}
+  
 \end{frame}
+
 \begin{frame}
  \begin{exampleblock}{Advantages of Low Frequency Hearing}
   
@@ -99,18 +124,84 @@ bg= blue!5}
 \section{The Model}
 
 \subsection{Mouth Cavity}
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Mouth Cavity}
 % \begin{figure}[htl]
 % \flushleft
 % \includegraphics[width=.36\textwidth]{Diagrams/oldCylinder.png}
 % %\caption{Previous Cylindrical Cavity}
 % \end{figure}
-\begin{figure}[htr]
-\includegraphics[width=.38\textwidth]{Diagrams/newCylinder.png}
-\caption{Mouth Cavity Model}
-\end{figure}
+% \begin{figure}[htr]
+% \includegraphics[width=.38\textwidth]{Diagrams/newCylinder.png}
+% \caption{Mouth Cavity Model}
+% \end{figure}
+\begin{columns}
+
+ \begin{column}{0.5\textwidth}
+   \onslide<1->{
+   \footnotesize
+    \underline{\textbf{Previous Model}}\\
+    \centering
+    \includegraphics[width = 4 cm]{Diagrams/Presentation/oldCylinder.png}\\
+    \small
+    \begin{exampleblock}{ }
+    \begin{itemize}
+     \item[] $a_{\mathrm{tymp}}$ fixed.
+     \item[] $V_{\mathrm{cyl}}=\pi a^2_{\mathrm{tymp}}L$
+    \end{itemize}
+    \end{exampleblock}}
+
+    \end{column}
+    
+ \begin{column}{0.5\textwidth}
+    \onslide<2->{
+        \footnotesize
+    \underline{\textbf{Our Model}}\\
+    \centering
+    \includegraphics[width = 4 cm]{Diagrams/Presentation/newCylinder.png}\\
+    \small
+    \begin{exampleblock}{ }
+    \begin{itemize}
+     \item[] $a_{\mathrm{tymp}},\ V_{\mathrm{cyl}}$ fixed. 
+     \item[] $a_{\mathrm{cyl}}=\sqrt{V_{\mathrm{cyl}}/\pi L}$
+    \end{itemize}
+    \end{exampleblock}}
+    \end{column}
+    
+    \end{columns}
 \end{frame}
+
+\begin{frame}[t]
+ \frametitle{Acoustic Head Model}
+ \begin{columns}
+     \begin{column}{.5\textwidth}
+    \small
+    \flushleft
+     \onslide<1>{\begin{itemize}
+      \item<1-> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
+      \item<1->  $p_0,\ p_L$ - sound pressure on eardrums,
+      $\theta$ - sound source direction.
+     \end{itemize}}
+     
+     \begin{itemize}
+      \item<2-> Sound source ``far away''.
+      \item<2-> Phase difference between sound at both ears - $\Delta=1.5kL\sin\theta$.
+      \item<2-> No appreciable amplitude difference, $|p_0|=|p_L|$.
+      \end{itemize}
+
+    \end{column}
+    
+ \begin{column}{0.5\textwidth}
+%     \centering
+%     \small
+%     \underline{\textbf{Head Model}}\\
+%     \flushleft
+    \includegraphics[width = 6 cm]{Diagrams/Presentation/acousticheadmodel2.png}\\
+    \end{column}
+
+    \end{columns}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Cavity Pressure}
@@ -125,11 +216,6 @@ bg= blue!5}
 \end{exampleblock}
 
 % Subject to the no-penetration boundary condition at all solid boundaries.
-\begin{block}{No-penetration boundary condition}
-\begin{equation}
- -j\rho\omega\mathbf{v}=\nabla p(x,r,\phi;t)=0
-\end{equation}
-\end{block}
 
 \end{frame}
 
@@ -148,6 +234,22 @@ bg= blue!5}
 % \end{figure}
 % 
 % \end{frame}
+
+\begin{frame}
+\begin{block}{No-penetration at the cavity boundary, i.e. normal derivative vanishes}
+\begin{equation}
+ -j\rho\omega\mathbf{v}=\mathbf{n}.\left.\nabla p(x,r,\phi;t)\right|_{r=a_{\mathrm{cyl}}}=\left.\frac{\partial p}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
+\end{equation}
+\end{block}
+
+ \begin{exampleblock}{Pressure Modes}
+  \begin{align}
+   p_{\mathrm{qs}}(x,r,\phi;t)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{qs}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{qs}r)e^{j\omega t}\\
+  \end{align}
+
+ \end{exampleblock}
+
+\end{frame}
 
 \begin{frame}
 \frametitle{Eardrum}

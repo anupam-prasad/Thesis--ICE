@@ -1,4 +1,7 @@
 \documentclass{beamer}
+% \usepackage[retainorgcmds]{IEEEtrantools}
+% 
+% \setbeamertemplate{enumerate items}[ball]
 
 \usepackage[utf8x]{inputenc}
 \usepackage{beamerthemeSzeged}
@@ -10,7 +13,7 @@
 \usepackage{subfigure}
 \usepackage{epsfig}
 \usepackage{tikz}
-
+\mode<presentation>{}
 \usepackage{bibentry}
 
 \usepackage{amsmath,empheq}
@@ -50,7 +53,7 @@ bg= blue!10}
 \setbeamercolor*{block body example}{fg= black,
 bg= blue!5}
 
-\beamertemplatenavigationsymbolsempty
+%\beamertemplatenavigationsymbolsempty
 \makeatother
 
 \title{\Large Mechanical Processing in Internally Coupled Ears}
@@ -121,7 +124,7 @@ bg= blue!5}
 \section{The Model}
 
 \subsection{Mouth Cavity}
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Mouth Cavity}
 % \begin{figure}[htl]
 % \flushleft
@@ -133,54 +136,67 @@ bg= blue!5}
 % \caption{Mouth Cavity Model}
 % \end{figure}
 \begin{columns}
+
  \begin{column}{0.5\textwidth}
-    \centering
-    \footnotesize
+   \onslide<1->{
+   \footnotesize
     \underline{\textbf{Previous Model}}\\
-    
-    \includegraphics[width = 4 cm]{Diagrams/oldCylinder.png}\\
+    \centering
+    \includegraphics[width = 4 cm]{Diagrams/Presentation/oldCylinder.png}\\
     \small
+    \begin{exampleblock}{ }
     \begin{itemize}
-     \item $V_{\mathrm{cyl}}=\pi a^2_{\mathrm{tymp}}L$
+     \item[] $a_{\mathrm{tymp}}$ fixed.
+     \item[] $V_{\mathrm{cyl}}=\pi a^2_{\mathrm{tymp}}L$
     \end{itemize}
+    \end{exampleblock}}
 
     \end{column}
     
  \begin{column}{0.5\textwidth}
-    \centering
+    \onslide<2->{
         \footnotesize
     \underline{\textbf{Our Model}}\\
-    
-    \includegraphics[width = 4 cm]{Diagrams/newCylinder.png}\\
+    \centering
+    \includegraphics[width = 4 cm]{Diagrams/Presentation/newCylinder.png}\\
     \small
+    \begin{exampleblock}{ }
     \begin{itemize}
-     \item $V_{\mathrm{cyl}}$ based on anatomical data.
-     \item $a_{\mathrm{cyl}}=\sqrt{V_{\mathrm{cyl}}/\pi L}$
+     \item[] $a_{\mathrm{tymp}},\ V_{\mathrm{cyl}}$ fixed. 
+     \item[] $a_{\mathrm{cyl}}=\sqrt{V_{\mathrm{cyl}}/\pi L}$
     \end{itemize}
-    \end{column}     
+    \end{exampleblock}}
+    \end{column}
     
     \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
  \frametitle{Acoustic Head Model}
  \begin{columns}
+     \begin{column}{.5\textwidth}
+    \small
+    \flushleft
+     \onslide<1>{\begin{itemize}
+      \item<1-> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
+      \item<1->  $p_0,\ p_L$ - sound pressure on eardrums,
+      $\theta$ - sound source direction.
+     \end{itemize}}
+     
+     \begin{itemize}
+      \item<2-> Sound source ``far away''.
+      \item<2-> Phase difference between sound at both ears - $\Delta=1.5kL\sin\theta$.
+      \item<2-> No appreciable amplitude difference, $|p_0|=|p_L|$.
+      \end{itemize}
+
+    \end{column}
+    
  \begin{column}{0.5\textwidth}
 %     \centering
 %     \small
 %     \underline{\textbf{Head Model}}\\
 %     \flushleft
-    \includegraphics[width = 7 cm]{Diagrams/acousticheadmodel2.png}\\
-    \end{column}
-    \begin{column}{.5\textwidth}
-    \small
-     \begin{itemize}
-      \item I - Ipsilateral\hfill C - Contralateral
-      \item Sound source far enough away from the animal (``Infinity'').
-      \item Phase difference between sound at both ears - $\Delta=1.5kL\sin\theta$.
-      \item No appreciable amplitude difference, $|p_0|=|p_L|$.
-     \end{itemize}
-
+    \includegraphics[width = 6 cm]{Diagrams/Presentation/acousticheadmodel2.png}\\
     \end{column}
 
     \end{columns}
@@ -193,18 +209,16 @@ bg= blue!5}
 \begin{equation}\label{pressurewaveeqn}
 \begin{split}
  \frac{1}{c^2}\partial^2_t p(x,r,\phi,t)=\frac{1}{r}\frac{\partial}{\partial r}&\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
- \\&+\frac{1}{r^2}\frac{\partial p(x,r,\phi,t)}{\partial \phi^2}
+ \\&+\frac{1}{r^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial \phi^2}
  +\frac{\partial p(x,r,\phi,t)}{\partial x^2}
  \end{split}
 \end{equation}
 \end{exampleblock}
+\begin{block}{}
+ To be solved using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}\].
+\end{block}
 
 % Subject to the no-penetration boundary condition at all solid boundaries.
-\begin{block}{No-penetration at all solid boundaries}
-\begin{equation}
- -j\rho\omega\mathbf{v}=\nabla p(x,r,\phi;t)=0
-\end{equation}
-\end{block}
 
 \end{frame}
 
@@ -223,6 +237,36 @@ bg= blue!5}
 % \end{figure}
 % 
 % \end{frame}
+
+\begin{frame}
+
+\onslide<1->{\begin{block}{No-penetration at the cavity boundary, i.e. normal derivative vanishes}
+\begin{equation}
+ -j\rho\omega\mathbf{v}=\mathbf{n}.\left.\nabla p(x,r,\phi;t)\right|_{r=a_{\mathrm{cyl}}}=\left.\frac{\partial p}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
+\end{equation}
+\end{block}}
+
+ \onslide<2->{\begin{exampleblock}{Pressure Modes}
+  \begin{align}
+   &p_{\mathrm{qs}}(x,r,\phi;t)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{qs}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{qs}r)e^{j\omega t}\\
+   &\mbox{such that, }\quad \left.\frac{\partial J_q(\nu_{qs}r)}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0\quad\mbox{ and }\quad\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{qs}}\nonumber
+  \end{align}
+
+ \end{exampleblock}}
+
+\end{frame}
+
+\begin{frame}
+\begin{exampleblock}{Plane Wave Mode}
+ \begin{equation}
+  p_{\mathrm{00}}(x,r,\phi;t)=\left[Ae^{jkx}+B_{qs}e^{-jkx}\right]e^{j\omega t}
+ \end{equation}
+\end{exampleblock}
+\begin{itemize}
+ \item[] Trivially satisfies the no-penetration condition.
+\end{itemize}
+
+\end{frame}
 
 \begin{frame}
 \frametitle{Eardrum}
@@ -261,21 +305,42 @@ bg= blue!5}
 
 \begin{frame}
  \frametitle{Membrane Vibrations}
-\begin{exampleblock}{Membrane EOM}
+\onslide<1->{\begin{exampleblock}{Membrane EOM}
 
 \begin{equation}\label{membraneequation1}
- -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\nabla^2u(r,\phi;t)
- =\frac{1}{\rho_m d}\Psi(r,\phi;t)
+\begin{split}
+ -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
+ & \frac{1}{\rho_m d}\Psi(r,\phi;t)
+ \end{split}
 \end{equation}
+ \end{exampleblock}}
 
- \end{exampleblock}
+ \onslide<2->{\begin{block}{Membrane parameters}
+  \begin{tabular}{l l}
+    $\alpha$ - damping coefficient, & $c^2_M$ - propagation velocity\\
+    $\rho_m$ - density, & $d$ - thickness.
+  \end{tabular}
+ \end{block}}
 
 \end{frame}
 
 
 \section{Evaluation}
 \begin{frame}
- Evaluation
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width = 5.6 cm]{Diagrams/Plots/hemidactylusvibamp.jpeg}\\
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+    \textbf{}\\
+    %\textbf{}\\
+    \vspace{1pt}
+    \flushright
+      \includegraphics[width = 3.3 cm]{Diagrams/Plots/hemidactylusvibamp_exp.jpeg}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \section{Conclusion}
