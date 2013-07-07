@@ -120,7 +120,11 @@ bg= blue!5}
 \end{frame}
 
 \begin{frame}
- \begin{exampleblock}{Advantages of Low Frequency Hearing}
+ \begin{exampleblock}{Advantages of Coupled Ears}
+ \begin{itemize}
+  \item Low frequencies result in reduced degradation of hearing cues in dense enviroments.
+ \end{itemize}
+
   
  \end{exampleblock}
 
@@ -220,7 +224,7 @@ bg= blue!5}
  \end{split}
 \end{equation}
 \end{exampleblock}
-\begin{variableblock}{}{bg= blue!10,fg=black}{}
+\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
  To be solved using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}.\]
 \end{variableblock}
 
@@ -287,7 +291,7 @@ bg= blue!5}
 \end{align}
 \end{exampleblock}
 
-\begin{variableblock}{Bessel Prime Zeros}{bg= gray!30,fg=black}{}
+\begin{variableblock}{Bessel Prime Zeros}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
 \begin{itemize}
  \item $\nu_{\mathrm{qs}}$ - zeros of $J^\prime_q$, $s=0,1,2,\ldots$
  \item $\nu_{\mathrm{00}}$=0
@@ -304,13 +308,11 @@ bg= blue!5}
  \onslide<1>{\begin{exampleblock}{Pressure Modes}
   \begin{align}
    &p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}p_{\mathrm{qs}}(x,r,\phi)e^{j\omega t}\\
-   &p_{\mathrm{qs}}(x,r,\phi)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})
+   &p_{\mathrm{qs}}(x,r,\phi)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})\\
+   &\mbox{where, }  \zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}\nonumber
   \end{align}
- \end{exampleblock}
- $\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}$}
- 
-\onslide<2>{\begin{variableblock}{Plane Wave Mode}{
-bg= blue!10,fg=black}{}
+ \end{exampleblock}}
+\onslide<2>{\begin{variableblock}{Plane Wave Mode}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
  \begin{equation}
   p_{\mathrm{00}}(x,r,\phi;t)=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}
  \end{equation}
@@ -365,7 +367,7 @@ bg= blue!10,fg=black}{}
 \end{equation}
  \end{exampleblock}
 
-\begin{variableblock}{Membrane parameters}{bg= blue!10,fg=black}{}
+\begin{variableblock}{Membrane parameters}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
   \begin{tabular}{l l}
     $\alpha$ - damping coefficient, & $c^2_m$ - propagation velocity\\
     \hspace{1pt}\\
@@ -376,8 +378,7 @@ bg= blue!10,fg=black}{}
 \end{frame}
 
 \begin{frame}
- \frametitle{Free-Undamped Membrane}
- $\alpha\rightarrow 0$, $\Psi\rightarrow 0$
+ \frametitle{Free-Undamped Membrane, $\alpha\rightarrow 0$, $\Psi\rightarrow 0$}
 % \onslide<1->{\begin{exampleblock}{Membrane EOM}
 % 
 % \begin{equation}\label{membraneequation1}
@@ -388,17 +389,25 @@ bg= blue!10,fg=black}{}
 % \end{equation}
 %  \end{exampleblock}}
 % 
-\begin{variableblock}{Separation Ansatz}{
-bg= blue!10,fg=blue!75}{}
+\begin{variableblock}{Separation Ansatz}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
 \begin{equation}\label{mseparationansatz}
  u(r,\phi;t)=f(r)g(\phi)h(t)
 \end{equation}
-\begin{itemize}
- \item Same set of equations as for pressure case.
-\end{itemize}
-
+% Same set of equations as in the pressure case.
 \end{variableblock}
+\begin{exampleblock}{Separated Equations}
+ \begin{align}
+   \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f(r)}{\partial r}\right)+\left[\mu^2-\frac{m^2}{r^2}\right]f(r)=0\\
+  \frac{d^2 g(\phi)}{d\phi^2}+m^2g(\phi)&=0\\
+ \frac{d^2 h(t)}{dt^2}+c^2_M\mu^2h(t)&=0
+\end{align}
+\end{exampleblock}
 
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Boundary Conditions}
 \end{frame}
 
 
