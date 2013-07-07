@@ -187,6 +187,7 @@ bg= blue!5}
       \item<2-> Sound source ``far away''.
       \item<2-> Phase difference between sound at both ears - $\Delta=1.5kL\sin\theta$.
       \item<2-> No appreciable amplitude difference, $|p_0|=|p_L|$.
+      \item<3-> $p_0=pe^{j\omega t -.75kL\sin\theta}$\\ $p_L=pe^{j\omega t +.75kL\sin\theta}$.
       \end{itemize}
 
     \end{column}
@@ -215,7 +216,7 @@ bg= blue!5}
 \end{equation}
 \end{exampleblock}
 \begin{block}{}
- To be solved using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}\].
+ To be solved using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}.\]
 \end{block}
 
 % Subject to the no-penetration boundary condition at all solid boundaries.
@@ -239,33 +240,41 @@ bg= blue!5}
 % \end{frame}
 
 \begin{frame}
+\frametitle{Separated Equations and their Solutions}
+\begin{exampleblock}{$x$ and $\phi$ Directions}
+ \begin{align}
+ \frac{d^2 f(x)}{dx^2}+\zeta^2f(x)=0\longrightarrow f(x)=e^{\pm j\zeta x}\\
+ \frac{d^2 h(\phi)}{d\phi^2}+q^2h(\phi	)=0\longrightarrow h(\phi)=e^{\pm jq\phi}
+ \end{align}
+\end{exampleblock}
 
-\onslide<1->{\begin{block}{No-penetration at the cavity boundary, i.e. normal derivative vanishes}
-\begin{equation}
- -j\rho\omega\mathbf{v}=\mathbf{n}.\left.\nabla p(x,r,\phi;t)\right|_{r=a_{\mathrm{cyl}}}=\left.\frac{\partial p}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
-\end{equation}
-\end{block}}
+% \onslide<1->{\begin{block}{No-penetration at the cavity boundary, i.e. normal derivative vanishes}
+% \begin{align}
+%  \frac{\partial^2 g(r)}{\partial r^2} + \frac{1}{r}\frac{\partial g(r)}{\partial r}+\left[(\displaystyle\underbrace{k^2-\zeta^2}_{=:\nu^2})-\frac{q^2}{r^2}\right]g(r)&=0\label{besselequation1}\\
+%  -j\rho\omega\mathbf{v}=\mathbf{n}.\left.\nabla p(x,r,\phi;t)\right|_{r=a_{\mathrm{cyl}}}\equiv\left.\frac{\partial g}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
+% \end{align}
+% \end{block}}
 
- \onslide<2->{\begin{exampleblock}{Pressure Modes}
+\end{frame}
+
+\begin{frame}
+ \onslide<1->{\begin{exampleblock}{Pressure Modes}
   \begin{align}
    &p_{\mathrm{qs}}(x,r,\phi;t)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{qs}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{qs}r)e^{j\omega t}\\
    &\mbox{such that, }\quad \left.\frac{\partial J_q(\nu_{qs}r)}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0\quad\mbox{ and }\quad\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{qs}}\nonumber
   \end{align}
 
  \end{exampleblock}}
-
-\end{frame}
-
-\begin{frame}
-\begin{exampleblock}{Plane Wave Mode}
+ 
+\onslide<2->{\begin{block}{Plane Wave Mode}
  \begin{equation}
-  p_{\mathrm{00}}(x,r,\phi;t)=\left[Ae^{jkx}+B_{qs}e^{-jkx}\right]e^{j\omega t}
+  p_{\mathrm{00}}(x,r,\phi;t)=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}
  \end{equation}
-\end{exampleblock}
+\end{block}
 \begin{itemize}
  \item[] Trivially satisfies the no-penetration condition.
 \end{itemize}
-
+}
 \end{frame}
 
 \begin{frame}
@@ -318,11 +327,34 @@ bg= blue!5}
  \onslide<2->{\begin{block}{Membrane parameters}
   \begin{tabular}{l l}
     $\alpha$ - damping coefficient, & $c^2_M$ - propagation velocity\\
+    \hspace{1pt}\\
     $\rho_m$ - density, & $d$ - thickness.
   \end{tabular}
  \end{block}}
 
 \end{frame}
+
+\begin{frame}
+ \frametitle{Membrane Vibrations}
+% \onslide<1->{\begin{exampleblock}{Membrane EOM}
+% 
+% \begin{equation}\label{membraneequation1}
+% \begin{split}
+%  -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
+%  & \frac{1}{\rho_m d}\Psi(r,\phi;t)
+%  \end{split}
+% \end{equation}
+%  \end{exampleblock}}
+% 
+%  \onslide<2->{\begin{block}{Membrane parameters}
+%   \begin{tabular}{l l}
+%     $\alpha$ - damping coefficient, & $c^2_M$ - propagation velocity\\
+%     $\rho_m$ - density, & $d$ - thickness.
+%   \end{tabular}
+%  \end{block}}
+
+\end{frame}
+
 
 
 \section{Evaluation}
@@ -332,8 +364,8 @@ bg= blue!5}
     \begin{column}{0.5\textwidth}
       \centering
       \includegraphics[width = 5.6 cm]{Diagrams/Plots/tokayvibamp.jpeg}\\
-      \centering
-      \footnotesize direction (degrees)
+     
+      \footnotesize \hspace{4pt} direction (degrees)
     \end{column}
 
     \begin{column}{0.5\textwidth}
@@ -342,6 +374,7 @@ bg= blue!5}
     \vspace{1pt}
     \flushright
       \includegraphics[width = 4.25 cm]{Diagrams/Plots/tokayvibamp_exp.jpeg}\\
+      \centering
       \footnotesize direction (degrees)
     \end{column}
   \end{columns}

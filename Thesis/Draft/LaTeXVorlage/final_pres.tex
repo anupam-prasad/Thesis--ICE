@@ -20,6 +20,7 @@
 \usepackage{xcolor}
 
 \setbeamerfont{title}{family=\rm}
+\setbeamercovered{transparent}
 
 \let\oldfootnotesize\footnotesize
 \renewcommand*{\footnotesize}{\oldfootnotesize\tiny}
@@ -28,7 +29,11 @@
 %\usepackage{fontspec}
 %\setmainfont{Liberation Serif}
 %\input{psfig}
-
+\newenvironment{variableblock}[3]{%
+  \setbeamercolor{block body}{#2}
+  \setbeamercolor{block title}{#3}
+  \begin{block}{#1}}{\end{block}}
+  
 \makeatletter
 \setbeamertemplate{footline}
 {%
@@ -177,16 +182,17 @@ bg= blue!5}
      \begin{column}{.5\textwidth}
     \small
     \flushleft
-     \onslide<1>{\begin{itemize}
-      \item<1-> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
-      \item<1->  $p_0,\ p_L$ - sound pressure on eardrums,
+     \begin{itemize}
+      \item<1> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
+      \item<1>  $p_0,\ p_L$ - sound pressure on eardrums,
       $\theta$ - sound source direction.
-     \end{itemize}}
+     \end{itemize}
      
      \begin{itemize}
-      \item<2-> Sound source ``far away''.
-      \item<2-> Phase difference between sound at both ears - $\Delta=1.5kL\sin\theta$.
-      \item<2-> No appreciable amplitude difference, $|p_0|=|p_L|$.
+      \item<2> Sound source ``far away''.
+      \item<2> No appreciable amplitude difference, $|p_0|=|p_L|$.
+      \item<2> Phase difference between sound at both ears - $\Delta=1.5kL\sin\theta$.
+      \item<3> $p_0=pe^{j\omega t -.75kL\sin\theta}$\\ $p_L=pe^{j\omega t +.75kL\sin\theta}$
       \end{itemize}
 
     \end{column}
@@ -214,9 +220,9 @@ bg= blue!5}
  \end{split}
 \end{equation}
 \end{exampleblock}
-\begin{block}{}
- To be solved using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}\].
-\end{block}
+\begin{variableblock}{}{bg= blue!10,fg=black}{}
+ To be solved using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}.\]
+\end{variableblock}
 
 % Subject to the no-penetration boundary condition at all solid boundaries.
 
@@ -239,33 +245,77 @@ bg= blue!5}
 % \end{frame}
 
 \begin{frame}
+\frametitle{Separated Equations and their Solutions}
+\onslide<1->{\begin{exampleblock}{$x$- and $\phi$- directions}
+ \begin{align}
+ \frac{d^2 f(x)}{dx^2}+\zeta^2f(x)=0\longrightarrow f(x)=e^{\pm j\zeta x}\\
+ \frac{d^2 h(\phi)}{d\phi^2}+q^2h(\phi	)=0\longrightarrow h(\phi)=e^{\pm jq\phi}
+ \end{align}
+\end{exampleblock}}
 
-\onslide<1->{\begin{block}{No-penetration at the cavity boundary, i.e. normal derivative vanishes}
-\begin{equation}
- -j\rho\omega\mathbf{v}=\mathbf{n}.\left.\nabla p(x,r,\phi;t)\right|_{r=a_{\mathrm{cyl}}}=\left.\frac{\partial p}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
-\end{equation}
-\end{block}}
-
- \onslide<2->{\begin{exampleblock}{Pressure Modes}
-  \begin{align}
-   &p_{\mathrm{qs}}(x,r,\phi;t)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{qs}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{qs}r)e^{j\omega t}\\
-   &\mbox{such that, }\quad \left.\frac{\partial J_q(\nu_{qs}r)}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0\quad\mbox{ and }\quad\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{qs}}\nonumber
-  \end{align}
-
- \end{exampleblock}}
+\onslide<2->{\begin{exampleblock}{$r$-direction, Bessel functions}
+ \begin{equation}
+ \begin{split}
+  \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial g(r)}{\partial r}\right)+\left[\nu^2-\frac{q^2}{r^2}\right]g(r)=0
+  &\longrightarrow g(r) = J_q(\nu r)\\
+  &\mbox{where, } \nu^2=k^2-\zeta^2
+  \end{split}
+ \end{equation}
+\end{exampleblock}}
 
 \end{frame}
 
 \begin{frame}
-\begin{exampleblock}{Plane Wave Mode}
- \begin{equation}
-  p_{\mathrm{00}}(x,r,\phi;t)=\left[Ae^{jkx}+B_{qs}e^{-jkx}\right]e^{j\omega t}
- \end{equation}
-\end{exampleblock}
-\begin{itemize}
- \item[] Trivially satisfies the no-penetration condition.
-\end{itemize}
+ \frametitle{Boundary Conditions - $\phi$}
+ \begin{exampleblock}{Smoothness and Continuity in $\phi$.}
+  \begin{align}
+   \phi&\rightarrow h(0)=h(2\pi)\quad\mbox{and}\quad h^\prime(0)=h^\prime(2\pi)\nonumber\\
+   \mbox{}\nonumber\\
+   &\Rightarrow h(\phi)=\cos q\phi,\ q=0,1,2,\ldots
+  \end{align}
+ \end{exampleblock}
+\end{frame}
 
+\begin{frame}
+ \frametitle{Boundary Conditions - $r$}
+ \begin{exampleblock}{Impenetrable boundary at $r=a_{\mathrm{cyl}}$, i.e. normal derivative vanishes}
+\begin{equation}
+ -j\rho\omega\mathbf{v}=\mathbf{n}.\left.\nabla p(x,r,\phi;t)\right|_{r=a_{\mathrm{cyl}}}\equiv\left.\frac{\partial g}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
+\end{equation}
+\begin{align}
+ \Rightarrow g(r)=J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})
+\end{align}
+\end{exampleblock}
+
+\begin{variableblock}{Bessel Prime Zeros}{bg= gray!20,fg=black}{}
+\begin{itemize}
+ \item $\nu_{\mathrm{qs}}$ - zeros of $J^\prime_q$, $s=0,1,2,\ldots$
+ \item $\nu_{\mathrm{00}}$=0
+ \end{itemize}
+\end{variableblock}
+
+
+\end{frame}
+
+% \left.\frac{\partial J_q(\nu_{\mathrm{qs}}r)}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
+
+\begin{frame}
+\frametitle{General Solution}
+ \onslide<1>{\begin{exampleblock}{Pressure Modes}
+  \begin{align}
+   &p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}p_{\mathrm{qs}}(x,r,\phi)e^{j\omega t}\\
+   &p_{\mathrm{qs}}(x,r,\phi)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})
+  \end{align}
+ \end{exampleblock}
+ $\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}$}
+ 
+\onslide<2>{\begin{variableblock}{Plane Wave Mode}{
+bg= blue!10,fg=black}{}
+ \begin{equation}
+  p_{\mathrm{00}}(x,r,\phi;t)=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}
+ \end{equation}
+\end{variableblock}
+}
 \end{frame}
 
 \begin{frame}
@@ -305,24 +355,52 @@ bg= blue!5}
 
 \begin{frame}
  \frametitle{Membrane Vibrations}
-\onslide<1->{\begin{exampleblock}{Membrane EOM}
+\begin{exampleblock}{Membrane EOM}
 
 \begin{equation}\label{membraneequation1}
 \begin{split}
- -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
+ -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_m\Delta_{(2)}&u(r,\phi;t)=\\ 
  & \frac{1}{\rho_m d}\Psi(r,\phi;t)
  \end{split}
 \end{equation}
- \end{exampleblock}}
+ \end{exampleblock}
 
- \onslide<2->{\begin{block}{Membrane parameters}
+\begin{variableblock}{Membrane parameters}{bg= blue!10,fg=black}{}
   \begin{tabular}{l l}
-    $\alpha$ - damping coefficient, & $c^2_M$ - propagation velocity\\
+    $\alpha$ - damping coefficient, & $c^2_m$ - propagation velocity\\
+    \hspace{1pt}\\
     $\rho_m$ - density, & $d$ - thickness.
   \end{tabular}
- \end{block}}
+ \end{variableblock}
 
 \end{frame}
+
+\begin{frame}
+ \frametitle{Free-Undamped Membrane}
+ $\alpha\rightarrow 0$, $\Psi\rightarrow 0$
+% \onslide<1->{\begin{exampleblock}{Membrane EOM}
+% 
+% \begin{equation}\label{membraneequation1}
+% \begin{split}
+%  -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
+%  & \frac{1}{\rho_m d}\Psi(r,\phi;t)
+%  \end{split}
+% \end{equation}
+%  \end{exampleblock}}
+% 
+\begin{variableblock}{Separation Ansatz}{
+bg= blue!10,fg=blue!75}{}
+\begin{equation}\label{mseparationansatz}
+ u(r,\phi;t)=f(r)g(\phi)h(t)
+\end{equation}
+\begin{itemize}
+ \item Same set of equations as for pressure case.
+\end{itemize}
+
+\end{variableblock}
+
+\end{frame}
+
 
 
 \section{Evaluation}
