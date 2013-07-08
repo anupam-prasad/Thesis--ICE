@@ -69,10 +69,18 @@ bg= blue!5}
    \includegraphics[width=2cm]{Diagrams/tmplogo.jpg}
 }
 
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Outline for section \thesection}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
 % \titlegraphic{\vspace{8cm}}
 \begin{document}
 
-\begin{frame}
+\begin{frame}[t]
 %    \tikz [remember picture,overlay]
 %     \node at
 %         ([yshift=3cm]current page.south) 
@@ -88,7 +96,7 @@ bg= blue!5}
 %\logo{\includegraphics[height=0.8cm]{Diagrams/T35logo2.png}\vspace{220pt}}
 
 \section{Introduction}
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Auditory Systems}
 
  \begin{columns}
@@ -119,7 +127,7 @@ bg= blue!5}
   
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
  \begin{exampleblock}{Advantages of Coupled Ears}
  \begin{itemize}
   \item Low frequencies result in reduced degradation of hearing cues in dense enviroments.
@@ -213,7 +221,7 @@ bg= blue!5}
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Cavity Pressure}
 \begin{exampleblock}{3D Wave Equation}
 \begin{equation}\label{pressurewaveeqn}
@@ -232,7 +240,7 @@ bg= blue!5}
 
 \end{frame}
 
-% \begin{frame}
+% \begin{frame}[t]
 % \frametitle{Eardrum}
 % %  \begin{figure}[ht!]
 % %   \centering
@@ -248,7 +256,7 @@ bg= blue!5}
 % 
 % \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Separated Equations and their Solutions}
 \onslide<1->{\begin{exampleblock}{$x$- and $\phi$- directions}
  \begin{align}
@@ -269,7 +277,7 @@ bg= blue!5}
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
  \frametitle{Boundary Conditions - $\phi$}
  \begin{exampleblock}{Smoothness and Continuity in $\phi$.}
   \begin{align}
@@ -280,7 +288,7 @@ bg= blue!5}
  \end{exampleblock}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
  \frametitle{Boundary Conditions - $r$}
  \begin{exampleblock}{Impenetrable boundary at $r=a_{\mathrm{cyl}}$, i.e. normal derivative vanishes}
 \begin{equation}
@@ -303,7 +311,7 @@ bg= blue!5}
 
 % \left.\frac{\partial J_q(\nu_{\mathrm{qs}}r)}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{General Solution}
  \onslide<1>{\begin{exampleblock}{Pressure Modes}
   \begin{align}
@@ -320,7 +328,8 @@ bg= blue!5}
 }
 \end{frame}
 
-\begin{frame}
+\subsection{Eardrum}
+\begin{frame}[t]
 \frametitle{Eardrum}
 \begin{columns}
     \begin{column}{0.5\textwidth}
@@ -355,13 +364,13 @@ bg= blue!5}
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}[t]
  \frametitle{Membrane Vibrations}
 \begin{exampleblock}{Membrane EOM}
 
 \begin{equation}\label{membraneequation1}
 \begin{split}
- -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_m\Delta_{(2)}&u(r,\phi;t)=\\ 
+ -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
  & \frac{1}{\rho_m d}\Psi(r,\phi;t)
  \end{split}
 \end{equation}
@@ -369,7 +378,7 @@ bg= blue!5}
 
 \begin{variableblock}{Membrane parameters}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
   \begin{tabular}{l l}
-    $\alpha$ - damping coefficient, & $c^2_m$ - propagation velocity\\
+    $\alpha$ - damping coefficient, & $c^2_M$ - propagation velocity\\
     \hspace{1pt}\\
     $\rho_m$ - density, & $d$ - thickness.
   \end{tabular}
@@ -377,7 +386,7 @@ bg= blue!5}
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
  \frametitle{Free-Undamped Membrane, $\alpha\rightarrow 0$, $\Psi\rightarrow 0$}
 % \onslide<1->{\begin{exampleblock}{Membrane EOM}
 % 
@@ -397,8 +406,8 @@ bg= blue!5}
 \end{variableblock}
 \begin{exampleblock}{Separated Equations}
  \begin{align}
-   \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f(r)}{\partial r}\right)+\left[\mu^2-\frac{m^2}{r^2}\right]f(r)&=0\\
-  \frac{d^2 g(\phi)}{d\phi^2}+m^2g(\phi)&=0\\
+   \frac{d^2 g(\phi)}{d\phi^2}+\kappa^2g(\phi)&=0\\
+   \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f(r)}{\partial r}\right)+\left[\mu^2-\frac{\kappa^2}{r^2}\right]f(r)&=0\\
  \frac{d^2 h(t)}{dt^2}+c^2_M\mu^2h(t)&=0
 \end{align}
 \end{exampleblock}
@@ -406,14 +415,75 @@ bg= blue!5}
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
  \frametitle{Boundary Conditions}
+ \onslide<1->{\begin{exampleblock}{$\phi$-direction: $u(r,\beta;t)=u(r,2\pi-\beta,t)=0$}
+  \begin{align}
+  \Rightarrow &g(\phi)=\sin\kappa(\phi-\beta)\\
+  \mbox{where, }&\kappa=\frac{m\pi}{2(\pi-\beta)},\quad m=1,2,3,\ldots\nonumber
+  \end{align}
+ \end{exampleblock}}
+ \onslide<2->{\begin{exampleblock}{$r$-direction: $u(a_{\mathrm{tymp}},\phi;t)=0$}
+  \begin{align}
+  \Rightarrow &f(r)=J_\kappa(\mu_{\mathrm{mn}}r/a_{\mathrm{tymp}})\\
+  \mbox{where, }&\mu_{\mathrm{mn}} \mbox{ is the } n^{\mathrm{th}} \mbox{ zero of } J_\kappa\nonumber
+  \end{align}
+ \end{exampleblock}}
+
 \end{frame}
 
+\begin{frame}[t]
+ \frametitle{}
+ \onslide<1->{\begin{exampleblock}{Free eigenmodes}
+  \begin{align}
+  &u_{\mathrm{mn}}(r,\phi)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{\mathrm{mn}} r)\\
+  &u_{\mathrm{free}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}C_\mathrm{mn}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t}\\
+  &\mbox{where, }\omega_{\mathrm{mn}}=c_M\mu_{\mathrm{mn}}\nonumber
+  \end{align}
+ \end{exampleblock}}
+\onslide<2->{\begin{exampleblock}{Damped membrane}
+              \begin{equation}
+               \widetilde{u}_{\mathrm{free}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t-\alpha t}
+              \end{equation}
+             \end{exampleblock}}
+\end{frame}
 
+\begin{frame}[t]
+ \frametitle{Forced Vibrations: $\Psi=pe^{j\omega t}$ }
+ \onslide<1->{\begin{exampleblock}{Steady State Solution}
+  \begin{equation}
+  u_{\mathrm{ss}}(r,\phi;t)=:\displaystyle\sum^\infty_{m=0,n=1}C_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+  \end{equation}
+  Substitute $u_{\mathrm{ss}}$ in Membrane EOM.
+ \end{exampleblock}}
+ \onslide<2->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+               \begin{align}
+               &C_{\mathrm{mn}}=\frac{p\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\\
+                &\Omega_{\mathrm{mn}}=\rho_M d \left[(\omega^2-\omega^2_{\mathrm{mn}})-2j\alpha\omega\right]\nonumber
+               \end{align}
+
+              \end{variableblock}}
+
+\end{frame}
+\begin{frame}[t]
+\frametitle{Forced Vibrations contd.}
+ \begin{exampleblock}{Transient Solution}
+Same as the solution for a free damped membrane
+              \begin{equation}
+               u_{\mathrm{t}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t-\alpha t}
+               \end{equation}
+$\widetilde{C}_{\mathrm{mn}}$ determined from the membrane displacement at $t=0$.
+\end{exampleblock}
+\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ $u_{\mathrm{t}}\rightarrow 0$ as $t\rightarrow\infty$.
+\end{variableblock}
+
+\end{frame}
+
+\subsection{Coupled Membranes}
 
 \section{Evaluation}
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Vibration Amplitude}
 \begin{columns}
     \begin{column}{0.5\textwidth}
@@ -436,11 +506,11 @@ bg= blue!5}
 \end{frame}
 
 \section{Conclusion}
-\begin{frame}
+\begin{frame}[t]
  Conclusion
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
  \frametitle{Thank You}
  \begin{figure}
   \centering

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  7 JUL 2013 17:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  8 JUL 2013 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -454,6 +454,9 @@ Overfull \hbox (5.22215pt too wide) in paragraph at lines 177--177
 
 
 
+] [6
+
+
 ]
 \openout2 = `danksagung.aux'.
 
@@ -465,27 +468,22 @@ Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no ™ in font cmti10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--18
+Underfull \hbox (badness 10000) in paragraph at lines 39--44
 
  []
 
-[6
-
-
-]) [7
+) [7
 
 ] [8
 
 
 ] (./diss.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ))
 \tf@toc=\write4
@@ -981,22 +979,22 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
  [64])) [65]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./diss.aux
 (./authorshipdeclaration.aux) (./danksagung.aux) (./zusammenfassung.aux)
 (./Introduction.aux) (./ICEModel2.aux) (./ModelAnalysis.aux) (./Conclusion.aux)
 (./anhang.aux) (./bibliographie.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `diss.out' has not changed.
 (rerunfilecheck)             Checksum: 1F33B4F1A070D0AE6365DA8DD60B3467;1963.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
  8567 strings out of 493485
  130799 string characters out of 3143526
- 248732 words of memory out of 3000000
+ 248725 words of memory out of 3000000
  11361 multiletter control sequences out of 15000+200000
  18405 words of font info for 68 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1031,7 +1029,7 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on diss.pdf (81 pages, 23417396 bytes).
+Output written on diss.pdf (81 pages, 23417294 bytes).
 PDF statistics:
  1196 PDF objects out of 1200 (max. 8388607)
  993 compressed objects within 10 object streams

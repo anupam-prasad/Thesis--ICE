@@ -122,7 +122,7 @@
 
   \newpage
   \thispagestyle{empty}
-  \noindent This thesis was written between July 2012 and July 2013 at the Chair of Theoretical Biophysics (T35), Fakult\"{a}t f\"{u}r Physik, TU M\"{u}nchen.\\
+  \noindent This thesis was written between July 2012 and July 2013 at the Chair of Theoretical Biophysics (T35), Physics Department, TU M\"{u}nchen.\\
   \vspace*{\stretch{1}}  
   \begin{figure}[htb!]
         %\centering
@@ -172,13 +172,14 @@
       {Munich 2013}                          % Ort und Jahr der Erstellung
       {\today}                            % Tag der Abgabe
       {Prof. Dr. J. Leo van Hemmen}                          % Name des Erstgutachters
-      {}                         % Name des Zweitgutachters
+      {Prof. Dr. Folkmar Bornemann}                         % Name des Zweitgutachters
       %{Pr\"ufungsdatum}                       % Datum der muendlichen Pruefung
 
  
  \markboth{Declaration of Authorship}{Declaration of Authorship}
  \include{authorshipdeclaration}
  
+ \cleardoublepage
  \include{danksagung}
  
  %\include{thesisquote}
