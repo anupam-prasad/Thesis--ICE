@@ -107,7 +107,8 @@ bg= blue!5}
     \underline{\textbf{Independent Ears}}
     \small
      \begin{itemize}
-    \item[] Eustachian tubes typically very narrow.
+     \item[]
+    \item[] Eustachian tubes generally very narrow.
      \item[] Effectively independent eardrum vibrations.
      \end{itemize}
     \end{column}
@@ -188,6 +189,7 @@ bg= blue!5}
     \end{columns}
 \end{frame}
 
+\subsection{Acoustic Head Model}
 \begin{frame}[t]
  \frametitle{Acoustic Head Model}
  \begin{columns}
@@ -203,8 +205,39 @@ bg= blue!5}
      \begin{itemize}
       \item<2> Sound source ``far away''.
       \item<2> No appreciable amplitude difference, $|p_0|=|p_L|$.
-      \item<2> Phase difference between sound at both ears - $\Delta=1.5kL\sin\theta$.
-      \item<3> $p_0=pe^{j\omega t -.75kL\sin\theta}$\\ $p_L=pe^{j\omega t +.75kL\sin\theta}$
+      \item<2> Phase difference between sound at both ears - $\Delta=kL\sin\theta$.
+      \item<3> $p_0=pe^{j\omega t -.5kL\sin\theta}$\\ $p_L=pe^{j\omega t +.5kL\sin\theta}$
+      \end{itemize}
+
+    \end{column}
+    
+ \begin{column}{0.5\textwidth}
+%     \centering
+%     \small
+%     \underline{\textbf{Head Model}}\\
+%     \flushleft
+    \includegraphics[width = 6 cm]{Diagrams/Presentation/acousticheadmodelold.png}\\
+    \end{column}
+
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}[t]
+ \frametitle{Acoustic Head Model}
+ \begin{columns}
+     \begin{column}{.5\textwidth}
+    \small
+    \flushleft
+%      \begin{itemize}
+%       \item<1> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
+%       \item<1>  $p_0,\ p_L$ - sound pressure on eardrums,
+%       $\theta$ - sound source direction.
+%      \end{itemize}
+     \begin{itemize}
+      \item $|p_0|=|p_L|$.
+      \item Increased  phase difference due to diffraction - $\Delta=1.5kL\sin\theta$.
+      \item $p_0=pe^{j\omega t -.75kL\sin\theta}$\\ $p_L=pe^{j\omega t +.75kL\sin\theta}$
       \end{itemize}
 
     \end{column}

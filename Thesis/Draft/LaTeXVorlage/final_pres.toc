@@ -2,7 +2,8 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{The Model}{5}{0}{2}
 \beamer@subsectionintoc {2}{1}{Mouth Cavity}{6}{0}{2}
-\beamer@subsectionintoc {2}{2}{Eardrum}{18}{0}{2}
-\beamer@subsectionintoc {2}{3}{Coupled Membranes}{28}{0}{2}
-\beamer@sectionintoc {3}{Evaluation}{28}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{30}{0}{4}
+\beamer@subsectionintoc {2}{2}{Acoustic Head Model}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Eardrum}{19}{0}{2}
+\beamer@subsectionintoc {2}{4}{Coupled Membranes}{29}{0}{2}
+\beamer@sectionintoc {3}{Evaluation}{29}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{31}{0}{4}
