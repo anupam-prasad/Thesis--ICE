@@ -15,6 +15,8 @@
 \usepackage{tikz}
 \mode<presentation>{}
 \usepackage{bibentry}
+\usepackage{multicol}
+\usepackage{mathtools}
 
 \usepackage{amsmath,empheq}
 \usepackage{xcolor}
@@ -72,8 +74,10 @@ bg= blue!5}
 \AtBeginSection[]
 {
   \begin{frame}<beamer>
-    \frametitle{Outline for section \thesection}
-    \tableofcontents[currentsection]
+    \frametitle{Outline for Section \thesection}
+    \begin{multicols}{2}
+    \tableofcontents[currentsection,subsubsectionstyle=show/shaded]
+    \end{multicols}
   \end{frame}
 }
 
@@ -96,6 +100,7 @@ bg= blue!5}
 %\logo{\includegraphics[height=0.8cm]{Diagrams/T35logo2.png}\vspace{220pt}}
 
 \section{Introduction}
+\subsection{Auditory Systems}
 \begin{frame}[t]
 \frametitle{Auditory Systems}
 
@@ -152,6 +157,7 @@ bg= blue!5}
   \end{columns}
 \end{frame}
 
+\subsection{Hearing Cues}
 \begin{frame}[t]
  \frametitle{Binaural Hearing Cues}
  Direction and frequency dependent phase and amplitude differences between the ears.
@@ -257,7 +263,7 @@ bg= blue!5}
     \end{columns}
 \end{frame}
 
-\subsection{Acoustic Head Model}
+\subsubsection{Acoustic Head Model}
 \begin{frame}[t]
  \frametitle{Acoustic Head Model}
  \begin{columns}
@@ -290,9 +296,8 @@ bg= blue!5}
     \end{columns}
 \end{frame}
 
-
 \begin{frame}[t]
- \frametitle{Acoustic Head Model}
+ \frametitle{Acoustic Head Model contd.}
  \begin{columns}
      \begin{column}{.5\textwidth}
     \small
@@ -321,7 +326,7 @@ bg= blue!5}
     \end{columns}
 \end{frame}
 
-
+\subsubsection{Pressure Derivation}
 \begin{frame}[t]
 \frametitle{Cavity Pressure}
 \begin{exampleblock}{3D Wave Equation}
@@ -358,7 +363,7 @@ bg= blue!5}
 % \end{frame}
 
 \begin{frame}[t]
-\frametitle{Separated Equations and their Solutions}
+\frametitle{Separated Equations}
 \onslide<1->{\begin{exampleblock}{$x$- and $\phi$- directions}
  \begin{align}
  \frac{d^2 f(x)}{dx^2}+\zeta^2f(x)=0\longrightarrow f(x)=e^{\pm j\zeta x}\\
@@ -416,20 +421,21 @@ bg= blue!5}
 \frametitle{General Solution}
  \onslide<1>{\begin{exampleblock}{Pressure Modes}
   \begin{align}
-   &p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}p_{\mathrm{qs}}(x,r,\phi)e^{j\omega t}\\
-   &p_{\mathrm{qs}}(x,r,\phi)=\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})\\
+   &p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]p_{\mathrm{qs}}(r,\phi)e^{j\omega t}\\
+   &p_{\mathrm{qs}}(r,\phi)=\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})\\
    &\mbox{where, }  \zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}\nonumber
   \end{align}
  \end{exampleblock}}
 \onslide<2>{\begin{variableblock}{Plane Wave Mode}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
  \begin{equation}
-  p_{\mathrm{00}}(x,r,\phi;t)=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}
+  p_{\mathrm{pw}}(x,r,\phi;t)=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}
  \end{equation}
 \end{variableblock}
 }
 \end{frame}
 
 \subsection{Eardrum}
+\subsubsection{Model}
 \begin{frame}[t]
 \frametitle{Eardrum}
 \begin{columns}
@@ -464,6 +470,7 @@ bg= blue!5}
   
 \end{frame}
 
+\subsubsection{Membrane Vibrations}
 
 \begin{frame}[t]
  \frametitle{Membrane Vibrations}
@@ -574,16 +581,76 @@ Same as the solution for a free damped membrane
                u_{\mathrm{t}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t-\alpha t}
                \end{equation}
 $\widetilde{C}_{\mathrm{mn}}$ determined from the membrane displacement at $t=0$.
+
+\noindent $u_{\mathrm{t}}\rightarrow 0$ exponentially as $t\rightarrow\infty$.
 \end{exampleblock}
-\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
- $u_{\mathrm{t}}\rightarrow 0$ as $t\rightarrow\infty$.
-\end{variableblock}
+\onslide<2->{\begin{variableblock}{Steady State Approximation}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+\centering $u\approx u_{\mathrm{ss}}\mbox{ if } \alpha \mbox{ is ``large'' }$.
+\end{variableblock}}
 
 \end{frame}
 
 \subsection{Coupled Membranes}
+\begin{frame}
+ \frametitle{Coupled Membranes}
+ \onslide<1->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+  \begin{equation}
+  u_{0/L}=\displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^{0/L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+ \end{equation}
+ \end{variableblock}
+ }
+
+ \onslide<2->{\begin{exampleblock}{Membrane Equations}
+  \begin{align}\label{coupledmembraneseries}
+ \displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^0_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_0e^{j\omega t}-p(0,r,\phi;t)\\
+ \displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^{L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_{L}e^{j\omega t}-p(L,r,\phi;t)
+ \end{align}
+\end{exampleblock}}
+
+\end{frame}
+\subsubsection{Boundary Conditions}
+\begin{frame}
+  \begin{exampleblock}{``Surface'' Velocity}
+ \begin{equation}
+ U_{0/L}=\begin{cases}
+          u_{0/L}\mbox{, } 0<r<a_{\mathrm{tymp}}\mbox{ and } \beta<\phi<2\pi-\beta\\
+          0\mbox{, otherwise}
+         \end{cases}.
+\end{equation}
+\end{exampleblock}
+ \begin{variableblock}{Velocity in $x-$direction}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+  \begin{equation}
+v_x=-\displaystyle\sum^\infty_{q=0,s=0}\frac{\zeta_{\mathrm{qs}}}{\rho\omega}\left(A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}-B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right)p_{\mathrm{qs}}(r,\phi)e^{j\omega t}
+\end{equation}
+ \end{variableblock}
+
+\end{frame}
+\begin{frame}
+ \frametitle{Boundary Conditions}
+  \onslide<1->{\begin{exampleblock}{Exact}
+  \begin{align}
+ U_{0}&=-\frac{1}{j\omega}v_x(0,r,\phi;t)\label{bc1}\\
+  U_{L}&=\frac{1}{j\omega}v_x(L,r,\phi;t)\label{bc2}
+ \end{align}
+ \end{exampleblock}}
+ \onslide<2->{\begin{variableblock}{Approximate}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+  \begin{equation}
+ U_{0/L}=S^{0/L}(t)=\vcentcolon\int dSU_{0/L}
+ \end{equation}
+ \end{variableblock}}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Boundary Conditions}
+\begin{exampleblock}{}
+Higher pressure modes disappear, i.e. $p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}$
+ \end{exampleblock}
+
+\end{frame}
+
 
 \section{Evaluation}
+\subsection{Vibration Amplitude}
 \begin{frame}[t]
 \frametitle{Vibration Amplitude}
 \begin{columns}
@@ -605,6 +672,9 @@ $\widetilde{C}_{\mathrm{mn}}$ determined from the membrane displacement at $t=0$
     \end{column}
   \end{columns}
 \end{frame}
+\subsection{Internal Level Difference}
+
+\subsection{Internal Amplitude Difference}
 
 \section{Conclusion}
 \begin{frame}[t]

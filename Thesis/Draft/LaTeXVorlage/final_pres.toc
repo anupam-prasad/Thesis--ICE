@@ -1,9 +1,18 @@
 \beamer@endinputifotherversion {3.10pt}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Auditory Systems}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Hearing Cues}{4}{0}{1}
 \beamer@sectionintoc {2}{The Model}{6}{0}{2}
 \beamer@subsectionintoc {2}{1}{Mouth Cavity}{7}{0}{2}
-\beamer@subsectionintoc {2}{2}{Acoustic Head Model}{9}{0}{2}
-\beamer@subsectionintoc {2}{3}{Eardrum}{20}{0}{2}
-\beamer@subsectionintoc {2}{4}{Coupled Membranes}{30}{0}{2}
-\beamer@sectionintoc {3}{Evaluation}{30}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{32}{0}{4}
+\beamer@subsubsectionintoc {2}{1}{1}{Acoustic Head Model}{9}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{2}{Pressure Derivation}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Eardrum}{20}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Model}{20}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Membrane Vibrations}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{Coupled Membranes}{31}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{1}{Boundary Conditions}{33}{0}{2}
+\beamer@sectionintoc {3}{Evaluation}{37}{0}{3}
+\beamer@subsectionintoc {3}{1}{Vibration Amplitude}{38}{0}{3}
+\beamer@subsectionintoc {3}{2}{Internal Level Difference}{39}{0}{3}
+\beamer@subsectionintoc {3}{3}{Internal Amplitude Difference}{39}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{39}{0}{4}
