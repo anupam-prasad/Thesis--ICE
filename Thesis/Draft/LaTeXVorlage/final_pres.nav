@@ -65,27 +65,31 @@
 \headcommand {\beamer@framepages {34}{35}}
 \headcommand {\slideentry {2}{3}{4}{36/36}{Coupled Membranes}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\sectionentry {3}{Evaluation}{37}{Evaluation}{0}}
-\headcommand {\beamer@sectionpages {6}{36}}
-\headcommand {\beamer@subsectionpages {31}{36}}
-\headcommand {\slideentry {3}{0}{5}{37/37}{}{0}}
-\headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{38}{Vibration Amplitude}}\headcommand {\beamer@subsectionpages {37}{37}}
-\headcommand {\slideentry {3}{1}{1}{38/38}{Vibration Amplitude}{0}}
-\headcommand {\beamer@framepages {38}{38}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{39}{Internal Level Difference}}\headcommand {\beamer@subsectionpages {38}{38}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{39}{Internal Amplitude Difference}}\headcommand {\beamer@subsectionpages {39}{38}}
-\headcommand {\sectionentry {4}{Conclusion}{39}{Conclusion}{0}}
-\headcommand {\beamer@sectionpages {37}{38}}
-\headcommand {\beamer@subsectionpages {39}{38}}
-\headcommand {\slideentry {4}{0}{1}{39/39}{}{0}}
+\headcommand {\slideentry {2}{3}{5}{37/38}{Coupled Membranes}{0}}
+\headcommand {\beamer@framepages {37}{38}}
+\headcommand {\slideentry {2}{3}{6}{39/39}{Coupled Membranes}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {4}{0}{2}{40/40}{}{0}}
+\headcommand {\sectionentry {3}{Evaluation}{40}{Evaluation}{0}}
+\headcommand {\beamer@sectionpages {6}{39}}
+\headcommand {\beamer@subsectionpages {31}{39}}
+\headcommand {\slideentry {3}{0}{7}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {4}{0}{3}{41/41}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{41}{Vibration Amplitude}}\headcommand {\beamer@subsectionpages {40}{40}}
+\headcommand {\slideentry {3}{1}{1}{41/41}{Vibration Amplitude}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\beamer@partpages {1}{41}}
-\headcommand {\beamer@subsectionpages {39}{41}}
-\headcommand {\beamer@sectionpages {39}{41}}
-\headcommand {\beamer@documentpages {41}}
-\headcommand {\def \inserttotalframenumber {30}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{42}{Internal Level Difference}}\headcommand {\beamer@subsectionpages {41}{41}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{42}{Internal Amplitude Difference}}\headcommand {\beamer@subsectionpages {42}{41}}
+\headcommand {\sectionentry {4}{Conclusion}{42}{Conclusion}{0}}
+\headcommand {\beamer@sectionpages {40}{41}}
+\headcommand {\beamer@subsectionpages {42}{41}}
+\headcommand {\slideentry {4}{0}{1}{42/42}{}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {4}{0}{2}{43/43}{}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {4}{0}{3}{44/44}{}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\beamer@partpages {1}{44}}
+\headcommand {\beamer@subsectionpages {42}{44}}
+\headcommand {\beamer@sectionpages {42}{44}}
+\headcommand {\beamer@documentpages {44}}
+\headcommand {\def \inserttotalframenumber {32}}

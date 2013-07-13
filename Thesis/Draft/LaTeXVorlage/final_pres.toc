@@ -11,8 +11,8 @@
 \beamer@subsubsectionintoc {2}{2}{2}{Membrane Vibrations}{21}{0}{2}
 \beamer@subsectionintoc {2}{3}{Coupled Membranes}{31}{0}{2}
 \beamer@subsubsectionintoc {2}{3}{1}{Boundary Conditions}{33}{0}{2}
-\beamer@sectionintoc {3}{Evaluation}{37}{0}{3}
-\beamer@subsectionintoc {3}{1}{Vibration Amplitude}{38}{0}{3}
-\beamer@subsectionintoc {3}{2}{Internal Level Difference}{39}{0}{3}
-\beamer@subsectionintoc {3}{3}{Internal Amplitude Difference}{39}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{39}{0}{4}
+\beamer@sectionintoc {3}{Evaluation}{40}{0}{3}
+\beamer@subsectionintoc {3}{1}{Vibration Amplitude}{41}{0}{3}
+\beamer@subsectionintoc {3}{2}{Internal Level Difference}{42}{0}{3}
+\beamer@subsectionintoc {3}{3}{Internal Amplitude Difference}{42}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{42}{0}{4}

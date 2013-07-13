@@ -160,7 +160,7 @@ bg= blue!5}
 \subsection{Hearing Cues}
 \begin{frame}[t]
  \frametitle{Binaural Hearing Cues}
- Direction and frequency dependent phase and amplitude differences between the ears.
+ Localization using frequency dependent phase and amplitude differences between the ears.
  \vspace{\baselineskip}
   \begin{columns}
  
@@ -635,17 +635,54 @@ v_x=-\displaystyle\sum^\infty_{q=0,s=0}\frac{\zeta_{\mathrm{qs}}}{\rho\omega}\le
  \end{exampleblock}}
  \onslide<2->{\begin{variableblock}{Approximate}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
   \begin{equation}
- U_{0/L}=S^{0/L}(t)=\vcentcolon\int dSU_{0/L}
+ U_{0/L}\approx S^{0/L}(t)=\vcentcolon\int dSU_{0/L}
  \end{equation}
- \end{variableblock}}
+  \end{variableblock}}
 \end{frame}
 
 \begin{frame}
  \frametitle{Boundary Conditions}
 \begin{exampleblock}{}
 Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}\]
+
+\begin{align}
+ A_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{-jkL}+S^L\right)\\ 
+ B_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{jkL}+S^L\right)
+\end{align}
+
  \end{exampleblock}
 
+\end{frame}
+\begin{frame}
+ \onslide<1->{\begin{exampleblock}{Coupled Equations}
+ \begin{align}
+ &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{0}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{0}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\tan kL}+\frac{S^L}{\sin kL}\right)\\
+ &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{L}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\sin kL}+\frac{S^L}{\tan kL}\right)
+\end{align}
+\end{exampleblock}}
+
+\onslide<2->{\begin{variableblock}{Decoupling}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+  \begin{itemize}
+   \item[] Decouple by taking the sum and difference of the above equations.
+  \end{itemize}
+
+  \end{variableblock}}
+\end{frame}
+\begin{frame}
+  \begin{exampleblock}{Decoupled Equations}
+\begin{align}
+ &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{+}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\\
+ &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{-}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}
+\end{align}
+\end{exampleblock}
+
+\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+\begin{align}
+ C^{+}_{\mathrm{mn}}&=\left[p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]\frac{\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\label{pluscoeffdef}\\
+ C^{-}_{\mathrm{mn}}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]\frac{\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\label{minuscoeffdef}
+%\mbox{where, }K_{\mathrm{mn}}&=\frac{\int dS u_{\mathrm{mn}}}{\int dS u^2_{\mathrm{mn}}}\label{Kmndef}
+\end{align}
+  \end{variableblock}
 \end{frame}
 
 
