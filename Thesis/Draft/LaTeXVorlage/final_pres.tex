@@ -595,7 +595,7 @@ $\widetilde{C}_{\mathrm{mn}}$ determined from the membrane displacement at $t=0$
  \frametitle{Coupled Membranes}
  \onslide<1->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
   \begin{equation}
-  u_{0/L}=\displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^{0/L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+  u_{0/L}=\displaystyle\sum^{\infty}_{m=0,n=1}C^{0/L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
  \end{equation}
  \end{variableblock}
  }
@@ -685,33 +685,149 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
   \end{variableblock}
 \end{frame}
 
+\begin{frame}
+ \begin{exampleblock}{Decoupled Equations contd.}
+  \begin{equation}
+ S^{+}=\frac{p_L+p_0}{\Lambda+\Gamma_+}\qquad S^{-}=\frac{p_L-p_0}{\Lambda+\Gamma_-}
+\end{equation}
+ \end{exampleblock}
+ \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \begin{align}
+ \Gamma_+ = &-\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\label{gamfirstdef}\\
+&\frac{1}{\Lambda}=\frac{1}{\pi a^2_{\mathrm{cyl}}}\displaystyle\sum^\infty_{m=0,n=1}\frac{\left(\int dS u_{\mathrm{mn}}\right)^2}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\label{lamfirstdef}
+\end{align}
+\end{variableblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Final Expressions}
+ \begin{exampleblock}{Membrane Displacement}
+  \begin{align}
+ S_0(t)&=G^s_{ipsi}p_0+G^s_{contra}p_L\label{ipsimembranefull}\\
+ S_L(t)&=G^s_{contra}p_0+G^s_{ipsi}p_L\label{contramembranefull}
+\end{align}
+ \end{exampleblock}
+
+\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \begin{align}
+ G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{ipsimembranetotal}\\
+ G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{contramembranetotal}
+\end{align}
+\end{variableblock}
+
+\end{frame}
+
+
 
 \section{Evaluation}
 \subsection{Vibration Amplitude}
 \begin{frame}[t]
-\frametitle{Vibration Amplitude}
-\begin{columns}
-    \begin{column}{0.5\textwidth}
-      \centering
-      \includegraphics[width = 5.6 cm]{Diagrams/Plots/tokayvibamp.jpeg}\\
-     
-      \footnotesize \hspace{4pt} direction (degrees)
-    \end{column}
-
-    \begin{column}{0.5\textwidth}
-    \textbf{}\\
-    %\textbf{}\\
-    \vspace{1pt}
-    \flushright
-      \includegraphics[width = 4.25 cm]{Diagrams/Plots/tokayvibamp_exp.jpeg}\\
-      \centering
-      \footnotesize direction (degrees)
-    \end{column}
-  \end{columns}
+%\frametitle{Vibration Amplitude}
+\noindent Vibration Amplitude
+\begin{variableblock}{}{bg= white,fg=black}{bg= white,fg=blue!75}
+\begin{figure}[ht!]
+ \centering 
+ \includegraphics[width = 11 cm]{Diagrams/Plots/tokayvibampfull.png}
+\end{figure}
+\end{variableblock}
+\begin{exampleblock}{}
+\footnotesize
+ \begin{itemize}
+  \item Plot of $20\mathrm{Log}_{\mathrm{10}}\left| \dot{S}^0/\pi a^2_{\mathrm{cyl}}\right|$ w.r.t direction frequency.
+  \item $\left|p_0\right|=\left|p_L\right|=1$ Pa.
+ \end{itemize}
+\end{exampleblock}
+% \begin{columns}
+%     \begin{column}{0.5\textwidth}
+%       \centering
+%       \includegraphics[width = 5.6 cm]{Diagrams/Presentation/tokayvibamp.png}\\
+%      
+%       \footnotesize \hspace{16pt} direction (degrees)
+%     \end{column}
+% 
+%     \begin{column}{0.5\textwidth}
+%     \textbf{}\\
+%     %\textbf{}\\
+%     \vspace{1pt}
+%     \flushright
+%       \includegraphics[width = 4.25 cm]{Diagrams/Presentation/tokayvibamp_exp.jpeg}\\
+%       \centering
+%       \footnotesize direction (degrees)
+%     \end{column}
+%   \end{columns}
 \end{frame}
-\subsection{Internal Level Difference}
 
-\subsection{Internal Amplitude Difference}
+\begin{frame}[t]
+%\frametitle{Vibration Amplitude}
+\noindent Vibration Amplitude - Spectrum
+\begin{variableblock}{}{bg= white,fg=black}{bg= white,fg=blue!75}
+\begin{figure}[ht!]
+ \centering 
+ \includegraphics[width = 11 cm]{Diagrams/Plots/tokayipsivscontrafull.png}
+\end{figure}
+\end{variableblock}
+\begin{exampleblock}{}
+\footnotesize
+ \begin{itemize}
+  \item Plot of $20\mathrm{Log}_{\mathrm{10}}\left| \dot{S}^0/\pi a^2_{\mathrm{cyl}}\right|$, against frequency for $\theta=90^\circ$.
+  \item $\left|p_0\right|=\left|p_L\right|=1$ Pa.
+ \end{itemize}
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}[t]
+\onslide<1->{\begin{exampleblock}{}
+  \begin{itemize}
+   \item Inputs to ears \begin{itemize}
+                         \item Negligible level (amplitude) difference
+                         \item Small time (phase) difference
+                        \end{itemize}
+
+  \end{itemize}
+ \end{exampleblock}}
+ 
+ \onslide<2->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+	      \begin{itemize}
+               \item We still need functions that quantify the directional and frequency dependence of the system.
+               \end{itemize}
+              \end{variableblock}}
+
+
+\end{frame}
+\subsection{Directional Cues}
+
+\begin{frame}[t]
+\frametitle{Hearing Cues}
+ \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+\onslide<1->{Internal Level Difference - 
+\begin{equation}
+  \mbox{iLD}\vcentcolon= 20\mbox{Log}_{10}\left(\left|\frac{\dot{S}^0}{\dot{S}^L}\right|\right).\label{iLDfirstdef}
+\end{equation}}
+\onslide<2->{Internal Time Difference - 
+\begin{equation}
+ \mbox{iTD}\vcentcolon= \mbox{Arg}\left(\frac{\dot{S}^0}{\dot{S}^L}\right)/\omega.\label{iTDfirstdef}
+\end{equation}}
+\end{variableblock}
+\end{frame}
+
+
+\subsubsection{Internal Level Difference}
+\begin{frame}[t]
+\noindent Internal Level Difference
+\begin{variableblock}{}{bg= white,fg=black}{bg= white,fg=blue!75}
+\begin{figure}[ht!]
+ \centering 
+ \includegraphics[width = 11 cm]{Diagrams/Plots/iLD/tokayiLDboth.png}
+\end{figure}
+\end{variableblock}
+\begin{exampleblock}{}
+\footnotesize
+ \begin{itemize}
+  \item Plot of iLD, against frequency and direction.
+ \end{itemize}
+\end{exampleblock}
+\end{frame}
+\subsubsection{Internal Time Difference}
 
 \section{Conclusion}
 \begin{frame}[t]
