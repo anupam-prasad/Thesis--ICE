@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: final_pres.aux
 The style file: ieeetr.bst
 Database file #1: literatur.bib
-You've used 1 entry,
+You've used 2 entries,
             1876 wiz_defined-function locations,
-            485 strings with 3604 characters,
-and the built_in function-call counts, 326 in all, are:
-= -- 34
-> -- 4
+            494 strings with 3734 characters,
+and the built_in function-call counts, 688 in all, are:
+= -- 76
+> -- 12
 < -- 0
-+ -- 2
-- -- 1
-* -- 22
-:= -- 50
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 1
++ -- 5
+- -- 3
+* -- 47
+:= -- 95
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 17
-empty$ -- 31
-format.name$ -- 1
-if$ -- 80
+cite$ -- 2
+duplicate$ -- 35
+empty$ -- 62
+format.name$ -- 3
+if$ -- 170
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 6
-num.names$ -- 1
-pop$ -- 1
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 9
+num.names$ -- 2
+pop$ -- 2
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 14
+skip$ -- 33
 stack$ -- 0
-substring$ -- 28
-swap$ -- 9
+substring$ -- 68
+swap$ -- 20
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 13
+while$ -- 7
+width$ -- 3
+write$ -- 23

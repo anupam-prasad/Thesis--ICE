@@ -53,14 +53,30 @@
   \end{beamercolorbox}
 }
 
+\setbeamertemplate{headline}
+{%
+  \begin{beamercolorbox}[ht=3.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}
+    \usebeamerfont{section in head/foot}\usebeamercolor[fg]{section in head/foot}%
+    \flushleft\insertsectionnavigationhorizontal{\textwidth}{}{}
+    %\insertsectionhead
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[colsep=1.5pt]{middle separation line head}
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+    leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
+    \usebeamerfont{subsection in head/foot}\insertsubsectionhead %\ - \insertsubsubsectionhead
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[colsep=1.5pt]{lower separation line head}
+  \end{beamercolorbox}
+}
+
 \setbeamertemplate{blocks}[rounded][shadow=false]
 \addtobeamertemplate{block begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
-\setbeamercolor*{block title example}{fg=blue!75,
-bg= blue!10}
-\setbeamercolor*{block body example}{fg= black,
-bg= blue!5}
-
-%\beamertemplatenavigationsymbolsempty
+\setbeamercolor*{block title example}{fg=blue!75,bg= blue!10}
+\setbeamercolor*{block body example}{fg= black,bg= blue!5}
+\setbeamercolor{frametitle}{fg=blue}
+\beamertemplatenavigationsymbolsempty
 \makeatother
 
 \title{\Large Mechanical Processing in Internally Coupled Ears}
@@ -591,6 +607,7 @@ $\widetilde{C}_{\mathrm{mn}}$ determined from the membrane displacement at $t=0$
 \end{frame}
 
 \subsection{Coupled Membranes}
+\subsubsection{Ansatz}
 \begin{frame}
  \frametitle{Coupled Membranes}
  \onslide<1->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
@@ -653,6 +670,7 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
  \end{exampleblock}
 
 \end{frame}
+\subsubsection{Solution}
 \begin{frame}
  \onslide<1->{\begin{exampleblock}{Coupled Equations}
  \begin{align}
@@ -720,10 +738,48 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 
 
 \section{Evaluation}
+\subsection{Parameters}
+\begin{frame}[t]
+ \frametitle{Tokay Gecko}
+  \begin{columns}
+     \begin{column}{0.5\textwidth}
+     \small
+ \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+\begin{tabular}{l  l}
+L=$22\,$mm & $a_{\mathrm{tymp}}$=$2.6\,$mm\\
+&\\
+$Q$ =$1.33$ & $\rho_m$=$1\,$mg/mm$^3$\\ 
+&\\
+$d$=$10\,\mu$m & $V_{\mathrm{\mathrm{cav}}}$=$3.5\,$ml\\ 
+&\\
+$\beta$=$\pi/25$&$a_{cyl}\approx 6.6\,$mm \\
+&\\
+$f_0=1.05\,$kHz &\\
+\end {tabular}\par
+\end{variableblock}
+
+%\bigskip
+\begin{exampleblock}{}
+\begin{itemize}
+\item[] $f_0=\omega_{01}/2\pi$
+\end{itemize}
+\end{exampleblock}
+     \end{column}
+     
+     \begin{column}{0.5\textwidth}
+     \centering
+       \includegraphics[width=.85\linewidth]{Diagrams/geckohead1.png}
+       
+      \footnotesize
+      Tokay gecko with the head illuminated from the opposite side\footnote{Courtesy J.C. Dalsgaard (Syddansk Universitet)} (left) with mouth casts (right).
+     \end{column}
+  \end{columns}
+\end{frame}
+
 \subsection{Vibration Amplitude}
 \begin{frame}[t]
-%\frametitle{Vibration Amplitude}
-\noindent Vibration Amplitude
+\frametitle{Density Plot}
+% \noindent Vibration Amplitude - $20\mathrm{Log}_{\mathrm{10}}\left| \dot{S}^0/\pi a^2_{\mathrm{cyl}}\right|$
 \begin{variableblock}{}{bg= white,fg=black}{bg= white,fg=blue!75}
 \begin{figure}[ht!]
  \centering 
@@ -733,7 +789,7 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 \begin{exampleblock}{}
 \footnotesize
  \begin{itemize}
-  \item Plot of $20\mathrm{Log}_{\mathrm{10}}\left| \dot{S}^0/\pi a^2_{\mathrm{cyl}}\right|$ w.r.t direction frequency.
+  \item Plot of vibration amplitude w.r.t direction \& frequency (Left: Calculated, Right: Experimental\footnote{\bibentry{dalsgaardmanley1}}).
   \item $\left|p_0\right|=\left|p_L\right|=1$ Pa.
  \end{itemize}
 \end{exampleblock}
@@ -758,39 +814,60 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 \end{frame}
 
 \begin{frame}[t]
-%\frametitle{Vibration Amplitude}
-\noindent Vibration Amplitude - Spectrum
+\frametitle{Frequency Dependence}
+%\noindent Frequency Dependence
 \begin{variableblock}{}{bg= white,fg=black}{bg= white,fg=blue!75}
 \begin{figure}[ht!]
  \centering 
- \includegraphics[width = 11 cm]{Diagrams/Plots/tokayipsivscontrafull.png}
+ \includegraphics[width = 11 cm]{Diagrams/Presentation/tokayipsivscontrafull.png}
 \end{figure}
 \end{variableblock}
 \begin{exampleblock}{}
 \footnotesize
  \begin{itemize}
-  \item Plot of $20\mathrm{Log}_{\mathrm{10}}\left| \dot{S}^0/\pi a^2_{\mathrm{cyl}}\right|$, against frequency for $\theta=90^\circ$.
+  \item Frequency dependence of $20\mathrm{Log}_{\mathrm{10}}\left| \dot{S}^0/\pi a^2_{\mathrm{cyl}}\right|$ for $\theta=90^\circ$. (Left:Calculated, Right:Experimental)
   \item $\left|p_0\right|=\left|p_L\right|=1$ Pa.
+  \item Ipsilateral response $>$ Contralateral response.
  \end{itemize}
 \end{exampleblock}
 \end{frame}
 
 \begin{frame}[t]
-\onslide<1->{\begin{exampleblock}{}
+%\frametitle{Direction Dependence}
+ \begin{columns}
+     \begin{column}{0.45\textwidth}
+     %\frametitle{Direction Dependence}
+     \noindent \color{blue} Direction Dependence.
+     \small
+     \flushleft
+\onslide<1>{\begin{exampleblock}{}
   \begin{itemize}
    \item Inputs to ears \begin{itemize}
+			  \footnotesize
                          \item Negligible level (amplitude) difference
                          \item Small time (phase) difference
                         \end{itemize}
+   \item Response is highly directional.
 
   \end{itemize}
  \end{exampleblock}}
- 
- \onslide<2->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+
+ \vfill
+ \onslide<2>{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
 	      \begin{itemize}
-               \item We still need functions that quantify the directional and frequency dependence of the system.
+	       \item Independent vibration amplitudes not enough.
+               \item Localization requires using information from both ears.
                \end{itemize}
               \end{variableblock}}
+              \end{column}
+              
+              \begin{column}{0.55\textwidth}
+  \only<1>{\includegraphics[width = 6.2 cm]{Diagrams/Presentation/directionplots.png}}
+  %  \only<2>{\includegraphics[width = 6.2 cm]{Diagrams/Presentation/directionplots.png}}
+  \only<2>{\includegraphics[width = 6.2 cm]{Diagrams/Presentation/directionplots2.png}}
+\end{column}
+   \end{columns}
+
 
 
 \end{frame}
@@ -798,40 +875,122 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 
 \begin{frame}[t]
 \frametitle{Hearing Cues}
+ \begin{columns}
+     \begin{column}{0.5\textwidth}
  \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-\onslide<1->{Internal Level Difference - 
+\onslide<1->{Internal Level Difference (iLD) - 
 \begin{equation}
-  \mbox{iLD}\vcentcolon= 20\mbox{Log}_{10}\left(\left|\frac{\dot{S}^0}{\dot{S}^L}\right|\right).\label{iLDfirstdef}
+  \mbox{iLD}\vcentcolon= 20\mbox{Log}_{10}\left|\frac{\dot{S}^0}{\dot{S}^L}\right|\label{iLDfirstdef}
 \end{equation}}
-\onslide<2->{Internal Time Difference - 
+\onslide<2->{Internal Time Difference (iTD) - 
 \begin{equation}
- \mbox{iTD}\vcentcolon= \mbox{Arg}\left(\frac{\dot{S}^0}{\dot{S}^L}\right)/\omega.\label{iTDfirstdef}
+ \mbox{iTD}\vcentcolon= \mbox{Arg}\left(\frac{\dot{S}^0}{\dot{S}^L}\right)/\omega\label{iTDfirstdef}
 \end{equation}}
 \end{variableblock}
+\end{column}
+\begin{column}{0.5\textwidth}
+\onslide<3->{\begin{exampleblock}{Requirements}
+ \begin{enumerate}
+ \small
+ \item \label{listitem1} Both increase with the adjacency of the sound source. Max at $\theta=90^\circ$ and min at $\theta=-90^\circ$.
+ \item \label{listitem3} Both vanish at $\theta=0^\circ,\ \pm 180^\circ$.
+ \item \label{listitem2} iTD $\approx$ constant for a given frequency range. Advantageous for neuronal processing. 
+\end{enumerate}
+\end{exampleblock}}
+\end{column}
+\end{columns}
+
 \end{frame}
 
 
 \subsubsection{Internal Level Difference}
 \begin{frame}[t]
-\noindent Internal Level Difference
-\begin{variableblock}{}{bg= white,fg=black}{bg= white,fg=blue!75}
-\begin{figure}[ht!]
+\frametitle{iLD Density Plot}
+%\noindent Internal Level Difference
+
+     \begin{variableblock}{}{bg= white,fg=black}{bg= white,fg=blue!75}
+ \begin{figure}[ht!]
  \centering 
  \includegraphics[width = 11 cm]{Diagrams/Plots/iLD/tokayiLDboth.png}
 \end{figure}
 \end{variableblock}
+
+
 \begin{exampleblock}{}
 \footnotesize
  \begin{itemize}
   \item Plot of iLD, against frequency and direction.
+  \item Left: Calculated, Right: Experimental
  \end{itemize}
 \end{exampleblock}
 \end{frame}
+
+\begin{frame}[t]
+\frametitle{iLD Frequency/Direction Dependence}
+%\noindent iLD Spectrum and Direction Dependence
+\begin{columns}
+\begin{column}{0.5\textwidth}
+ \includegraphics[width = 6 cm]{Diagrams/Presentation/iLDspectrum.png}
+\begin{exampleblock}{}
+\small
+ \begin{itemize}
+  \item iLD is a better cue at higher frequencies.
+  \item Peak response at $\sim f_0$.
+ \end{itemize}
+\end{exampleblock}
+\end{column}
+     \begin{column}{0.5\textwidth}
+     \flushright
+ \includegraphics[width = 3.6 cm]{Diagrams/Presentation/iLDdirection.png}
+\end{column}
+\end{columns}
+\end{frame}
+
 \subsubsection{Internal Time Difference}
+\begin{frame}[t]
+\frametitle{iTD Frequency/Direction Dependence}
+%\noindent iTD Spectrum and Direction Dependence
+\begin{columns}
+\begin{column}{0.5\textwidth}
+ \includegraphics[width = 6 cm]{Diagrams/Presentation/iTDspectrum.png}
+\begin{exampleblock}{}
+\small
+ \begin{itemize}
+  \item iTD is a better cue at lower frequencies.
+  \item constant upto $\sim f_0$.
+  \item iTD $\approx$ 3ITD
+ \end{itemize}
+\end{exampleblock}
+\end{column}
+     \begin{column}{0.5\textwidth}
+     \flushright
+ \includegraphics[width = 3.8 cm]{Diagrams/Presentation/iTDdirection.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{iTD/iLD Frequency Regimes}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{exampleblock}{}
+\small
+ \begin{itemize}
+  \item The frequency for transition from iTD to iLD based localization is determined by $f_0$.
+  \item Possibility of a frequency regime where both cues can simultaneously be used.
+ \end{itemize}
+\end{exampleblock}
+\end{column}
+     \begin{column}{0.5\textwidth}
+      \includegraphics[width = 6 cm]{Diagrams/Presentation/tokayregions.png}
+\end{column}
+\end{columns}
+\end{frame}
 
 \section{Conclusion}
 \begin{frame}[t]
- Conclusion
+ \frametitle{Conclusion}
 \end{frame}
 
 \begin{frame}[t]
