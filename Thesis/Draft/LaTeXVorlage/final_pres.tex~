@@ -176,9 +176,10 @@
 \subsection{Hearing Cues}
 \begin{frame}[t]
  \frametitle{Binaural Hearing Cues}
- Localization using frequency dependent phase and amplitude differences between the ears.
- \vspace{\baselineskip}
-  \begin{columns}
+ %Localization using frequency dependent phase and amplitude differences between the ears.
+ %\vspace{\baselineskip}
+ \begin{exampleblock}
+  \onslide<1->{\begin{columns}
  
     \begin{column}{0.5\textwidth}
     \centering
@@ -196,25 +197,70 @@
     \begin{columns}
  
     \begin{column}{0.5\textwidth}
-    \centering
+    %\centering
     \small
      \begin{itemize}
 %      \item[]
-    \item[] Equivalent to phase difference between membrane vibrations.
+    \item[] Phase difference between the (pressure) inputs to the ears.
+    \item ITD.
      %\item[] Effectively independent eardrum vibrations.
      \end{itemize}
     \end{column}
      
     \begin{column}{0.5\textwidth}
-    \centering
+    %\centering
     \small
      \begin{itemize}
-          \item[] Equivalent to amplitude difference between membrane vibrations.
+          \item[] Amplitude difference between the inputs.
+          \item ILD.
      %\item[] Eardrums vibrations influence eachother.
      \end{itemize}
     \end{column}
     
+  \end{columns}}
+  \end{exampleblock}  
+  \vfill
+  \begin{exampleblock}{}
+  \onslide<2->{\begin{columns}
+ 
+    \begin{column}{0.5\textwidth}
+    \centering
+    \underline{\textbf{Internal Time Difference}}
+
+    \end{column}
+     
+    \begin{column}{0.5\textwidth}
+    \centering
+    \underline{\textbf{Internal Level Difference}}
+    \end{column}
+    
   \end{columns}
+  
+    \begin{columns}
+ 
+    \begin{column}{0.5\textwidth}
+    %\centering
+    \small
+     \begin{itemize}
+%      \item[]
+    \item[] Phase difference between the eardrum vibrations.
+    \item iTD.
+     %\item[] Effectively independent eardrum vibrations.
+     \end{itemize}
+    \end{column}
+     
+    \begin{column}{0.5\textwidth}
+    %\centering
+    \small
+     \begin{itemize}
+          \item[] Amplitude difference between the vibrations.
+          \item iLD.
+     %\item[] Eardrums vibrations influence eachother.
+     \end{itemize}
+    \end{column}
+    
+  \end{columns}}
+  \end{exampleblock}
 \end{frame}
 
 
@@ -226,6 +272,17 @@
 
   
  \end{exampleblock}
+
+\end{frame}
+
+\begin{frame}[t]
+ \frametitle{ICE Model}
+\begin{exampleblock}{}
+ \begin{itemize}
+  \item[] Based on the model first presented by Vossen\footnote{\bibentry{vossenjasa}}.
+ \end{itemize}
+
+\end{exampleblock}
 
 \end{frame}
 
