@@ -2,21 +2,21 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Auditory Systems}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Hearing Cues}{4}{0}{1}
-\beamer@sectionintoc {2}{The Model}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{Mouth Cavity}{9}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{1}{Acoustic Head Model}{11}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{2}{Pressure Derivation}{15}{0}{2}
-\beamer@subsectionintoc {2}{2}{Eardrum}{22}{0}{2}
-\beamer@subsubsectionintoc {2}{2}{1}{Model}{22}{0}{2}
-\beamer@subsubsectionintoc {2}{2}{2}{Membrane Vibrations}{23}{0}{2}
-\beamer@subsectionintoc {2}{3}{Coupled Membranes}{33}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{1}{Ansatz}{33}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{2}{Boundary Conditions}{35}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{3}{Solution}{39}{0}{2}
-\beamer@sectionintoc {3}{Evaluation}{44}{0}{3}
-\beamer@subsectionintoc {3}{1}{Parameters}{45}{0}{3}
-\beamer@subsectionintoc {3}{2}{Vibration Amplitude}{46}{0}{3}
-\beamer@subsectionintoc {3}{3}{Directional Cues}{50}{0}{3}
+\beamer@sectionintoc {2}{The Model}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Mouth Cavity}{10}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{1}{Pressure Derivation}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Eardrum}{19}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Model}{19}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Membrane Vibrations}{20}{0}{2}
+\beamer@subsectionintoc {2}{3}{Acoustic Head Model}{30}{0}{2}
+\beamer@subsectionintoc {2}{4}{Coupled Membranes}{34}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{1}{Ansatz}{34}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{2}{Boundary Conditions}{36}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{3}{Solution}{40}{0}{2}
+\beamer@sectionintoc {3}{Evaluation}{45}{0}{3}
+\beamer@subsectionintoc {3}{1}{Parameters}{46}{0}{3}
+\beamer@subsectionintoc {3}{2}{Vibration Amplitude}{47}{0}{3}
+\beamer@subsectionintoc {3}{3}{Directional Cues}{51}{0}{3}
 \beamer@subsubsectionintoc {3}{3}{1}{Internal Level Difference}{53}{0}{3}
 \beamer@subsubsectionintoc {3}{3}{2}{Internal Time Difference}{55}{0}{3}
 \beamer@sectionintoc {4}{Conclusion}{57}{0}{4}

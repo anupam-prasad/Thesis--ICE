@@ -5,7 +5,8 @@
 
 \usepackage[utf8x]{inputenc}
 \usepackage{beamerthemeSzeged}
-\usecolortheme{lily}
+\usecolortheme{dolphin} %blueaggressive
+% \usecolortheme{beaver} %redaggressive
 \usepackage{graphicx}
 \usepackage[font={scriptsize,it}]{caption}
 \captionsetup[figure]{labelformat=empty}
@@ -76,7 +77,7 @@
 \setbeamercolor*{block title example}{fg=blue!75,bg= blue!10}
 \setbeamercolor*{block body example}{fg= black,bg= blue!5}
 \setbeamercolor{frametitle}{fg=blue}
-%\beamertemplatenavigationsymbolsempty
+\beamertemplatenavigationsymbolsempty
 \makeatother
 
 \title{\Large Mechanical Processing in Internally Coupled Ears}
@@ -176,9 +177,10 @@
 \subsection{Hearing Cues}
 \begin{frame}[t]
  \frametitle{Binaural Hearing Cues}
- Localization using frequency dependent phase and amplitude differences between the ears.
- \vspace{\baselineskip}
-  \begin{columns}
+ %Localization using frequency dependent phase and amplitude differences between the ears.
+ %\vspace{\baselineskip}
+ \begin{exampleblock}
+  \onslide<1->{\begin{columns}
  
     \begin{column}{0.5\textwidth}
     \centering
@@ -196,40 +198,122 @@
     \begin{columns}
  
     \begin{column}{0.5\textwidth}
-    \centering
+    %\centering
     \small
      \begin{itemize}
 %      \item[]
-    \item[] Equivalent to phase difference between membrane vibrations.
+    \item[] Phase difference between the (pressure) \textbf{inputs} to the ears.
+    \item ITD
      %\item[] Effectively independent eardrum vibrations.
      \end{itemize}
     \end{column}
      
     \begin{column}{0.5\textwidth}
-    \centering
+    %\centering
     \small
      \begin{itemize}
-          \item[] Equivalent to amplitude difference between membrane vibrations.
+          \item[] Amplitude difference between the \textbf{inputs}.
+          \item ILD
      %\item[] Eardrums vibrations influence eachother.
      \end{itemize}
     \end{column}
     
+  \end{columns}}
+  \end{exampleblock}  
+  \vfill
+  \begin{exampleblock}{}
+  \onslide<2->{\begin{columns}
+ 
+    \begin{column}{0.5\textwidth}
+    \centering
+    \underline{\textbf{Internal Time Difference}}
+
+    \end{column}
+     
+    \begin{column}{0.5\textwidth}
+    \centering
+    \underline{\textbf{Internal Level Difference}}
+    \end{column}
+    
   \end{columns}
+  
+    \begin{columns}
+ 
+    \begin{column}{0.5\textwidth}
+    %\centering
+    \small
+     \begin{itemize}
+%      \item[]
+    \item[] Phase difference between the eardrum \textbf{vibrations}.
+    \item iTD
+     %\item[] Effectively independent eardrum vibrations.
+     \end{itemize}
+    \end{column}
+     
+    \begin{column}{0.5\textwidth}
+    %\centering
+    \small
+     \begin{itemize}
+          \item[] Amplitude difference between the \textbf{vibrations}.
+          \item iLD
+     %\item[] Eardrums vibrations influence eachother.
+     \end{itemize}
+    \end{column}
+    
+  \end{columns}}
+  \end{exampleblock}
 \end{frame}
 
-
+% \begin{frame}[t]
+%  \frametitle{Binaural Hearing Cues contd.}
+%  %Localization using frequency dependent phase and amplitude differences between the ears.
+%  %\vspace{\baselineskip}
+%  \begin{exampleblock}{}
+%   \onslide<1->{\begin{columns}
+%  
+%     \begin{column}{0.5\textwidth}
+%     \centering
+%     \underline{\textbf{Interaural Time Difference}}
+% 
+%     \end{column}
+%      
+%     \begin{column}{0.5\textwidth}
+%     \centering
+%     \underline{\textbf{Interaural Level Difference}}
+%     \end{column}
+%     
+%   \end{columns}
+  
+%\end{frame}
+  
 \begin{frame}[t]
  \begin{exampleblock}{Advantages of Coupled Ears}
  \begin{itemize}
   \item Low frequencies result in reduced degradation of hearing cues in dense enviroments.
- \end{itemize}
-
-  
+ \end{itemize}  
  \end{exampleblock}
 
 \end{frame}
 
 \section{The Model}
+
+\begin{frame}[t]
+ \frametitle{ICE Model}
+\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \begin{itemize}
+  \item An extension of the model first presented by Vossen et al (2010).
+  \item Circular eardrums connected by a cylindrical cavity.
+ \end{itemize}
+
+\end{variableblock}
+\vfill
+\begin{exampleblock}{}
+ \onslide<2->{\begin{itemize}
+  \item The Aim is to accurately reproduce the direction and frequency dependence of the system.
+ \end{itemize}}
+
+\end{exampleblock}
+\end{frame}
 
 \subsection{Mouth Cavity}
 \begin{frame}[t]
@@ -279,68 +363,6 @@
     \end{columns}
 \end{frame}
 
-\subsubsection{Acoustic Head Model}
-\begin{frame}[t]
- \frametitle{Acoustic Head Model}
- \begin{columns}
-     \begin{column}{.5\textwidth}
-    \small
-    \flushleft
-     \begin{itemize}
-      \item<1> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
-      \item<1>  $p_0,\ p_L$ - sound pressure on eardrums,
-      $\theta$ - sound source direction.
-     \end{itemize}
-     
-     \begin{itemize}
-      \item<2> Sound source ``far away''.
-      \item<2> No appreciable amplitude difference, $|p_0|=|p_L|$.
-      \item<2> Phase difference between sound at both ears - $\Delta=kL\sin\theta$.
-      \item<3> $p_0=pe^{j\omega t -.5kL\sin\theta}$\\ $p_L=pe^{j\omega t +.5kL\sin\theta}$
-      \end{itemize}
-
-    \end{column}
-    
- \begin{column}{0.5\textwidth}
-%     \centering
-%     \small
-%     \underline{\textbf{Head Model}}\\
-%     \flushleft
-    \includegraphics[width = 6 cm]{Diagrams/Presentation/acousticheadmodelold.png}\\
-    \end{column}
-
-    \end{columns}
-\end{frame}
-
-\begin{frame}[t]
- \frametitle{Acoustic Head Model contd.}
- \begin{columns}
-     \begin{column}{.5\textwidth}
-    \small
-    \flushleft
-%      \begin{itemize}
-%       \item<1> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
-%       \item<1>  $p_0,\ p_L$ - sound pressure on eardrums,
-%       $\theta$ - sound source direction.
-%      \end{itemize}
-     \begin{itemize}
-      \item $|p_0|=|p_L|$.
-      \item Increased  phase difference due to diffraction - $\Delta=1.5kL\sin\theta$.
-      \item $p_0=pe^{j\omega t -.75kL\sin\theta}$\\ $p_L=pe^{j\omega t +.75kL\sin\theta}$
-      \end{itemize}
-
-    \end{column}
-    
- \begin{column}{0.5\textwidth}
-%     \centering
-%     \small
-%     \underline{\textbf{Head Model}}\\
-%     \flushleft
-    \includegraphics[width = 6 cm]{Diagrams/Presentation/acousticheadmodel2.png}\\
-    \end{column}
-
-    \end{columns}
-\end{frame}
 
 \subsubsection{Pressure Derivation}
 \begin{frame}[t]
@@ -601,9 +623,72 @@ $\widetilde{C}_{\mathrm{mn}}$ determined from the membrane displacement at $t=0$
 \noindent $u_{\mathrm{t}}\rightarrow 0$ exponentially as $t\rightarrow\infty$.
 \end{exampleblock}
 \onslide<2->{\begin{variableblock}{Steady State Approximation}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-\centering $u\approx u_{\mathrm{ss}}\mbox{ if } \alpha \mbox{ is ``large'' }$.
+\centering $u\approx u_{\mathrm{ss}}$.
 \end{variableblock}}
 
+\end{frame}
+
+\subsection{Acoustic Head Model}
+\begin{frame}[t]
+ \frametitle{Acoustic Head Model}
+ \begin{columns}
+     \begin{column}{.5\textwidth}
+    \small
+    \flushleft
+     \begin{itemize}
+      \item<1> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
+      \item<1>  $p_0,\ p_L$ - sound pressure on eardrums,
+      $\theta$ - sound source direction.
+     \end{itemize}
+     
+     \begin{itemize}
+      \item<2> Sound source ``far away''.
+      \item<2> No appreciable amplitude difference, $|p_0|=|p_L|$.
+      \item<2> Phase difference between sound at both ears - $\Delta=kL\sin\theta$.
+      \item<3> $p_0=pe^{j\omega t -.5kL\sin\theta}$\\ $p_L=pe^{j\omega t +.5kL\sin\theta}$
+      \end{itemize}
+
+    \end{column}
+    
+ \begin{column}{0.5\textwidth}
+%     \centering
+%     \small
+%     \underline{\textbf{Head Model}}\\
+%     \flushleft
+    \includegraphics[width = 6 cm]{Diagrams/Presentation/acousticheadmodelold.png}\\
+    \end{column}
+
+    \end{columns}
+\end{frame}
+
+\begin{frame}[t]
+ \frametitle{Acoustic Head Model contd.}
+ \begin{columns}
+     \begin{column}{.5\textwidth}
+    \small
+    \flushleft
+%      \begin{itemize}
+%       \item<1> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
+%       \item<1>  $p_0,\ p_L$ - sound pressure on eardrums,
+%       $\theta$ - sound source direction.
+%      \end{itemize}
+     \begin{itemize}
+      \item $|p_0|=|p_L|$.
+      \item Increased  phase difference due to diffraction - $\Delta=1.5kL\sin\theta$.
+      \item $p_0=pe^{j\omega t -.75kL\sin\theta}$\\ $p_L=pe^{j\omega t +.75kL\sin\theta}$
+      \end{itemize}
+
+    \end{column}
+    
+ \begin{column}{0.5\textwidth}
+%     \centering
+%     \small
+%     \underline{\textbf{Head Model}}\\
+%     \flushleft
+    \includegraphics[width = 6 cm]{Diagrams/Presentation/acousticheadmodel2.png}\\
+    \end{column}
+
+    \end{columns}
 \end{frame}
 
 \subsection{Coupled Membranes}
@@ -625,6 +710,7 @@ $\widetilde{C}_{\mathrm{mn}}$ determined from the membrane displacement at $t=0$
 \end{exampleblock}}
 
 \end{frame}
+
 \subsubsection{Boundary Conditions}
 \begin{frame}
   \begin{exampleblock}{``Surface'' Velocity}
@@ -734,7 +820,58 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 \end{variableblock}
 
 \end{frame}
+\subsection{Circuit Model}
+\begin{frame}[t]
+\frametitle{Circuit Model}
+\begin{columns}
+     \begin{column}{0.5\textwidth}
+\centering
+\underline{\textbf{High Frequency}}
+\vspace{2pt}
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering
+ \underline{\textbf{Low Frequency}}
+ \vspace{2pt}
+\end{column}
+\end{columns}
 
+  \begin{columns}
+     \begin{column}{0.5\textwidth}
+     \centering
+ \includegraphics[width=.65\linewidth]{Diagrams/lowfreqcircuit.png}
+ \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \begin{itemize}
+ \footnotesize
+  \item $Z_T$ - tympanum impedance
+  \item $Z_V$ - Cavity impedance
+ \end{itemize}
+\end{variableblock}
+     \end{column}
+     \begin{column}{0.5\textwidth}
+     \centering
+ \includegraphics[width=.9\linewidth]{Diagrams/highfreqcircuit.png}
+ \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \begin{itemize}
+ \footnotesize
+  \item $Z_T$ - tympanum impedance
+  \item $Z^{ij}_V$ - Cavity impedance
+ \end{itemize}
+\end{variableblock}
+     \end{column}
+     \end{columns}
+     \begin{columns}
+     \begin{column}{0.6\textwidth}
+     \begin{exampleblock}{}
+     \begin{itemize}
+      \item U$_{1/2}\equiv$Current.
+      \item $p_{0/L}\equiv$Voltage Sources.
+     \end{itemize}
+     \end{exampleblock}
+     \end{column}
+     \end{columns}
+
+\end{frame}
 
 
 \section{Evaluation}
@@ -744,21 +881,34 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
   \begin{columns}
      \begin{column}{0.5\textwidth}
      \small
-\begin{tabular}{l | l}
+ \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+\begin{tabular}{l  l}
 L=$22\,$mm & $a_{\mathrm{tymp}}$=$2.6\,$mm\\
+&\\
 $Q$ =$1.33$ & $\rho_m$=$1\,$mg/mm$^3$\\ 
+&\\
 $d$=$10\,\mu$m & $V_{\mathrm{\mathrm{cav}}}$=$3.5\,$ml\\ 
+&\\
 $\beta$=$\pi/25$&$a_{cyl}\approx 6.6\,$mm \\
+&\\
+$f_0=1.05\,$kHz &\\
 \end {tabular}\par
+\end{variableblock}
+
 %\bigskip
-\vspace{2pt}$f_0=\omega_{01}/2\pi$=$1.05\,$kHz
+\begin{exampleblock}{}
+\begin{itemize}
+\item[] $f_0=\omega_{01}/2\pi$
+\end{itemize}
+\end{exampleblock}
      \end{column}
      
      \begin{column}{0.5\textwidth}
      \centering
-       \includegraphics[width=.85\linewidth]{Diagrams/geckohead1.png}\footnote{Courtesy J.C. Dalsgaard (Syddansk Universitet)}
+       \includegraphics[width=.85\linewidth]{Diagrams/geckohead1.png}
        
-       2$^{\mathrm{nd}}$ largest gecko species. 
+      \footnotesize
+      Tokay gecko with the head illuminated from the opposite side\footnote{Courtesy J.C. Dalsgaard (Syddansk Universitet)} (left) with mouth casts (right).
      \end{column}
   \end{columns}
 \end{frame}
@@ -776,7 +926,7 @@ $\beta$=$\pi/25$&$a_{cyl}\approx 6.6\,$mm \\
 \begin{exampleblock}{}
 \footnotesize
  \begin{itemize}
-  \item Plot of vibration amplitude w.r.t direction \& frequency (Left: Calculated, Right: Experimental).
+  \item Plot of vibration amplitude w.r.t direction \& frequency (Left: Calculated, Right: Experimental\footnote{\bibentry{dalsgaardmanley1}}).
   \item $\left|p_0\right|=\left|p_L\right|=1$ Pa.
  \end{itemize}
 \end{exampleblock}
@@ -812,7 +962,7 @@ $\beta$=$\pi/25$&$a_{cyl}\approx 6.6\,$mm \\
 \begin{exampleblock}{}
 \footnotesize
  \begin{itemize}
-  \item Plot of $20\mathrm{Log}_{\mathrm{10}}\left| \dot{S}^0/\pi a^2_{\mathrm{cyl}}\right|$, against frequency for $\theta=90^\circ$.
+  \item Frequency dependence of $20\mathrm{Log}_{\mathrm{10}}\left| \dot{S}^0/\pi a^2_{\mathrm{cyl}}\right|$ for $\theta=90^\circ$. (Left:Calculated, Right:Experimental)
   \item $\left|p_0\right|=\left|p_L\right|=1$ Pa.
   \item Ipsilateral response $>$ Contralateral response.
  \end{itemize}
@@ -978,6 +1128,11 @@ $\beta$=$\pi/25$&$a_{cyl}\approx 6.6\,$mm \\
 \section{Conclusion}
 \begin{frame}[t]
  \frametitle{Conclusion}
+ \begin{exampleblock}{}
+ \begin{itemize}
+  \item Single model describes both low and high frequency behaviour.
+ \end{itemize}
+\end{exampleblock}
 \end{frame}
 
 \begin{frame}[t]

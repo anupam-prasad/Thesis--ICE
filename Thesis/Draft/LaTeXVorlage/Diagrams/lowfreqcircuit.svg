@@ -103,7 +103,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -112,11 +112,11 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect2985"
-       width="47.142857"
+       width="52.078922"
        height="172.85715"
-       x="71.428574"
+       x="9.1294451"
        y="258.50763"
        ry="23.571428"
        rx="0"
@@ -124,16 +124,16 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 95,258.50762 0,-50.43115"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 35.168904,258.50762 0,-50.43115"
        id="path3755"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 95,208.07647 548.57143,0"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 35.168904,208.07647 606.009276,0"
        id="path3786"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
@@ -142,8 +142,8 @@
     <path
        inkscape:connector-curvature="0"
        id="path3788"
-       d="m 95,623.79075 548.57143,0"
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 35.168904,623.79075 606.009276,0"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -151,25 +151,25 @@
        rx="0"
        ry="23.571428"
        y="329.50504"
-       x="345.71429"
+       x="312.13409"
        height="172.85715"
-       width="47.142857"
+       width="52.078922"
        id="rect3792"
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        inkscape:connector-curvature="0"
        id="path3794"
-       d="m 369.28571,329.50504 0,-121.42857"
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 338.17354,329.50504 0,-121.42857"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 369.28571,623.79075 0,-121.42857"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 338.17354,623.79075 0,-121.42857"
        id="path3796"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
@@ -187,13 +187,13 @@
        sodipodi:start="4.0064934"
        sodipodi:end="10.289313"
        sodipodi:open="true"
-       transform="matrix(0.31357123,0,0,0.31357123,130.63491,382.24671)"
+       transform="matrix(0.34640352,0,0,0.31357123,74.534946,382.24671)"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 95,553.86026 0,69.93049"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 35.168904,553.86026 0,69.93049"
        id="path3824"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
@@ -202,8 +202,8 @@
     <path
        inkscape:connector-curvature="0"
        id="path3826"
-       d="m 95,431.80063 0,78.02986"
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 35.168904,431.80063 0,78.02986"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -211,24 +211,24 @@
        rx="0"
        ry="23.571428"
        y="258.50763"
-       x="619.28571"
+       x="614.34961"
        height="172.85715"
-       width="47.142857"
+       width="52.078922"
        id="rect3828"
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        inkscape:connector-curvature="0"
        id="path3830"
-       d="m 642.85715,258.50762 0,-50.08244"
-       style="fill:none;stroke:#000000;stroke-width:2.50000000000000000;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 640.38912,258.50762 0,-50.08244"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       transform="matrix(0.31357123,0,0,0.31357123,678.49206,382.24671)"
+       transform="matrix(0.34640352,0,0,0.31357123,679.75516,382.24671)"
        sodipodi:open="true"
        sodipodi:end="10.289313"
        sodipodi:start="4.0064934"
@@ -246,14 +246,14 @@
     <path
        inkscape:connector-curvature="0"
        id="path3834"
-       d="m 642.85715,553.86026 0,69.93049"
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 640.38912,553.86026 0,69.93049"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 642.85715,431.80063 0,78.02986"
+       style="fill:none;stroke:#000000;stroke-width:2.62762308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 640.38912,431.80063 0,78.02986"
        id="path3836"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
@@ -263,7 +263,7 @@
        xml:space="preserve"
        id="flowRoot3838"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="matrix(0.75554966,0,0,0.75554966,421.33786,378.0712)"
+       transform="matrix(0.83465905,0,0,0.75554966,395.67578,378.0712)"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
@@ -275,20 +275,21 @@
            y="17.965977" /></flowRegion><flowPara
          id="flowPara3844">Z</flowPara></flowRoot>    <text
        xml:space="preserve"
-       style="font-size:21.08655357px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="373.32632"
-       y="432.09604"
+       style="font-size:22.16300583px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="325.99542"
+       y="454.15421"
        id="text3846"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
          sodipodi:role="line"
          id="tspan3848"
-         x="373.32632"
-         y="432.09604">V</tspan></text>
+         x="325.99542"
+         y="454.15421">V</tspan></text>
     <flowRoot
-       transform="matrix(0.75554966,0,0,0.75554966,148.0623,307.07381)"
+       transform="matrix(0.83465905,0,0,0.75554966,93.787061,307.07381)"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot3850"
        xml:space="preserve"
@@ -304,19 +305,20 @@
          id="flowPara3856">Z</flowPara></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text3858"
-       y="361.09866"
-       x="100.05077"
-       style="font-size:21.08655357px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       y="379.53247"
+       x="38.769371"
+       style="font-size:22.16300583px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         y="361.09866"
-         x="100.05077"
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
+         y="379.53247"
+         x="38.769371"
          id="tspan3860"
          sodipodi:role="line">T</tspan></text>
     <flowRoot
-       transform="matrix(0.75554966,0,0,0.75554966,697.10949,311.40114)"
+       transform="matrix(0.83465905,0,0,0.75554966,700.32192,311.40114)"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        id="flowRoot3865"
        xml:space="preserve"
@@ -332,76 +334,81 @@
          id="flowPara3871">Z</flowPara></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text3873"
-       y="365.42593"
-       x="649.0979"
-       style="font-size:21.08655357px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       y="384.08063"
+       x="615.84491"
+       style="font-size:22.16300583px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         y="365.42593"
-         x="649.0979"
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
+         y="384.08063"
+         x="615.84491"
          id="tspan3875"
          sodipodi:role="line">T</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:24.36790466px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="86.189583"
-       y="532.08618"
+       style="font-size:25.611866px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="24.200577"
+       y="559.24878"
        id="text3883"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
          sodipodi:role="line"
          id="tspan3885"
-         x="86.189583"
-         y="532.08618">p</tspan></text>
+         x="24.200577"
+         y="559.24878">p</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:17.04528999px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="93.235382"
-       y="546.13904"
+       style="font-size:17.9154377px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="31.606058"
+       y="574.01898"
        id="text3887"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
          sodipodi:role="line"
          id="tspan3889"
-         x="93.235382"
-         y="546.13904">0</tspan></text>
+         x="31.606058"
+         y="574.01898">0</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3899"
-       y="533.68701"
-       x="634.5481"
-       style="font-size:24.36790466px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       y="560.93134"
+       x="600.55237"
+       style="font-size:25.611866px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         y="533.68701"
-         x="634.5481"
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
+         y="560.93134"
+         x="600.55237"
          id="tspan3901"
          sodipodi:role="line">p</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:17.04528999px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="644.1626"
-       y="544.9989"
+       style="font-size:17.9154377px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="610.65765"
+       y="572.82068"
        id="text3911"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
          sodipodi:role="line"
          id="tspan3913"
-         x="644.1626"
-         y="544.9989" /></text>
+         x="610.65765"
+         y="572.82068" /></text>
     <path
        sodipodi:type="arc"
-       style="fill:none;stroke:#000000;stroke-width:1.21375245;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:1.21375251;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
        id="path4748"
        sodipodi:cx="-82.832512"
        sodipodi:cy="296.76807"
@@ -411,12 +418,12 @@
        sodipodi:start="4.0064934"
        sodipodi:end="10.289313"
        sodipodi:open="true"
-       transform="matrix(0,1.5272927,-1,0,531.12346,543.44394)"
+       transform="matrix(0,1.5272927,-1.1047044,0,516.95642,543.44394)"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       transform="matrix(0,1.5272927,1,0,214.36913,543.44394)"
+       transform="matrix(0,1.5272927,1.1047044,0,167.03651,543.44394)"
        sodipodi:open="true"
        sodipodi:end="10.289313"
        sodipodi:start="4.0064934"
@@ -426,65 +433,69 @@
        sodipodi:cy="296.76807"
        sodipodi:cx="-82.832512"
        id="path5684"
-       style="fill:none;stroke:#000000;stroke-width:1.21375245;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:1.21375251;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
        sodipodi:type="arc"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="212.13203"
-       y="420.00668"
+       style="font-size:42.0419693px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="156.5723"
+       y="441.44769"
        id="text5686"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
          sodipodi:role="line"
          id="tspan5688"
-         x="212.13203"
-         y="420.00668">U</tspan></text>
+         x="156.5723"
+         y="441.44769">U</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:28.36449623px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="240.68448"
-       y="430.10822"
+       style="font-size:29.81248093px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="186.58231"
+       y="452.06488"
        id="text5690"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
          sodipodi:role="line"
          id="tspan5692"
-         x="240.68448"
-         y="430.10822">1</tspan></text>
+         x="186.58231"
+         y="452.06488">1</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5694"
-       y="418.99652"
-       x="487.90369"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       y="440.38596"
+       x="446.42188"
+       style="font-size:42.0419693px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         y="418.99652"
-         x="487.90369"
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
+         y="440.38596"
+         x="446.42188"
          id="tspan5696"
          sodipodi:role="line">U</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5698"
-       y="429.09805"
-       x="516.45612"
-       style="font-size:28.36449623px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       y="451.00317"
+       x="476.43188"
+       style="font-size:29.81248093px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         y="429.09805"
-         x="516.45612"
+       inkscape:export-ydpi="90"
+       transform="scale(1.0510492,0.95143025)"><tspan
+         y="451.00317"
+         x="476.43188"
          id="tspan5700"
          sodipodi:role="line">2</tspan></text>
     <text
@@ -493,12 +504,13 @@
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/lowfreqcircuit.png"
        sodipodi:linespacing="125%"
        id="text5702"
-       y="546.13904"
-       x="644.77869"
-       style="font-size:17.04528999px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       xml:space="preserve"><tspan
-         y="546.13904"
-         x="644.77869"
+       y="574.01898"
+       x="611.30518"
+       style="font-size:17.9154377px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       transform="scale(1.0510492,0.95143025)"><tspan
+         y="574.01898"
+         x="611.30518"
          id="tspan5704"
          sodipodi:role="line">L</tspan></text>
   </g>

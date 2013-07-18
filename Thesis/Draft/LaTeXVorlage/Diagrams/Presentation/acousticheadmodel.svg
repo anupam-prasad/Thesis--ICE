@@ -90,9 +90,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="472.85851"
-     inkscape:cy="1000.0499"
+     inkscape:zoom="0.7"
+     inkscape:cx="-70.359322"
+     inkscape:cy="1440.6342"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -123,7 +123,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -131,6 +131,33 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985"
+       width="750.80902"
+       height="229.15712"
+       x="-1.8984555"
+       y="272.50623"
+       ry="0"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/acousticheadmodel2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#b4b4b4;fill-opacity:0.47058824;stroke:#000000;stroke-width:1.50000000000000000;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4225"
+       sodipodi:cx="1502.0968"
+       sodipodi:cy="328.08282"
+       sodipodi:rx="330.31989"
+       sodipodi:ry="330.31989"
+       d="m 1736.1201,94.964179 a 330.31989,330.31989 0 1 1 -0.452,-0.45289"
+       sodipodi:start="5.4997238"
+       sodipodi:end="11.780972"
+       sodipodi:open="true"
+       transform="matrix(1.1308993,0,0,1.1278255,-1324.8468,16.535322)"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/acousticheadmodel2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:34.77907181px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
@@ -149,27 +176,16 @@
          x="333.86276"
          y="875.55457"
          id="tspan6455" /></text>
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect2985"
-       width="750.80902"
-       height="229.15712"
-       x="-1.8984555"
-       y="272.50623"
-       ry="0"
-       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/acousticheadmodel2.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
     <path
        inkscape:connector-curvature="0"
        id="path3927"
        d="M 620.33469,106.5824 -190.92158,-623.84283"
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Lstart)"
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Lstart)"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/acousticheadmodel2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lstart)"
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lstart)"
        d="M -2.6491507,388.34521 -607.12682,-155.9042"
        id="path3929"
        inkscape:connector-curvature="0"
@@ -180,13 +196,13 @@
        inkscape:connector-curvature="0"
        id="path3963"
        d="M 373.52182,387.10054 -438.09117,-343.64585"
-       style="opacity:0.65;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.65000000000000002;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/acousticheadmodel2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
-       style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1.50000012;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.50000006, 3.00000011;stroke-dashoffset:0;marker-start:url(#Arrow2Lstart)"
+       style="opacity:0.80000000000000004;fill:none;stroke:#000000;stroke-width:4.00000015;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.00000015,8.0000003;stroke-dashoffset:0;marker-start:none"
        id="path3969"
        sodipodi:cx="-307.08636"
        sodipodi:cy="231.61324"
@@ -274,9 +290,9 @@
          sodipodi:role="line">L</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-11.213493"
-       y="-934.05841"
+       style="font-size:61.96236801px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-71.903114"
+       y="-938.61169"
        id="text4989"
        sodipodi:linespacing="125%"
        transform="matrix(0.58181942,-0.81331799,0.81331799,0.58181942,0,0)"
@@ -285,11 +301,11 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan4991"
-         x="-11.213493"
-         y="-934.05841">Sound Source</tspan><tspan
+         x="-71.903114"
+         y="-938.61169">Sound Source</tspan><tspan
          sodipodi:role="line"
-         x="-11.213493"
-         y="-884.05841"
+         x="-71.903114"
+         y="-861.15875"
          id="tspan4993" /></text>
     <g
        id="g10362"
@@ -380,7 +396,7 @@
        inkscape:connector-curvature="0"
        id="path8212"
        d="M -1.9038118,387.09014 416.16552,-77.243993"
-       style="opacity:0.65;fill:none;stroke:#000000;stroke-width:1.44856739;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.65000000000000002;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/acousticheadmodel2.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -554,22 +570,6 @@
          x="449.79526"
          id="tspan4331"
          sodipodi:role="line">Δ</tspan></text>
-    <path
-       sodipodi:type="arc"
-       style="fill:#b4b4b4;fill-opacity:0.47058824;stroke:#000000;stroke-width:1.50000000000000000;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="path4225"
-       sodipodi:cx="1502.0968"
-       sodipodi:cy="328.08282"
-       sodipodi:rx="330.31989"
-       sodipodi:ry="330.31989"
-       d="m 1736.1201,94.964179 a 330.31989,330.31989 0 1 1 -0.452,-0.45289"
-       sodipodi:start="5.4997238"
-       sodipodi:end="11.780972"
-       sodipodi:open="true"
-       transform="matrix(1.1308993,0,0,1.1278255,-1324.8468,16.535322)"
-       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/acousticheadmodel2.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:86.60037994px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
