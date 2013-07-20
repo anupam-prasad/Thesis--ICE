@@ -18,6 +18,7 @@
 \usepackage{bibentry}
 \usepackage{multicol}
 \usepackage{mathtools}
+\usepackage{amssymb}
 
 \usepackage{amsmath,empheq}
 \usepackage{xcolor}
@@ -59,7 +60,7 @@
   \begin{beamercolorbox}[ht=3.5ex,dp=1.125ex,%
       leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}
     \usebeamerfont{section in head/foot}\usebeamercolor[fg]{section in head/foot}%
-    \flushleft\textbf{\insertsectionnavigationhorizontal{\textwidth}{\hskip0pt plus1fill}{\hskip0pt plus1fill}}
+    \flushleft\small\insertsectionnavigationhorizontal{\textwidth}{\hskip0pt plus1fill}{\hskip0pt plus1fill}
     %\insertsectionhead
   \end{beamercolorbox}%
   \begin{beamercolorbox}[colsep=1.5pt]{middle separation line head}
@@ -98,6 +99,7 @@
   \end{frame}
 }
 
+\usefonttheme[onlymath]{serif}
 % \titlegraphic{\vspace{8cm}}
 \begin{document}
 
@@ -429,11 +431,11 @@
     \end{column}
     
  \begin{column}{0.5\textwidth}
-    \onslide<2->{
+    \only<2->{
         \footnotesize
     \underline{\textbf{Our Model}}\\
     \centering
-    \includegraphics[width = 4 cm]{Diagrams/Presentation/newCylinder.png}\\
+   \includegraphics[width = 4 cm]{Diagrams/Presentation/newCylinder.png}\\
     \small
     \begin{exampleblock}{ }
     \begin{itemize}
@@ -451,16 +453,16 @@
 \begin{frame}[t]
 \frametitle{Cavity Pressure}
 \begin{exampleblock}{3D Wave Equation}
-\begin{equation}\label{pressurewaveeqn}
+\begin{equation*}\label{pressurewaveeqn}
 \begin{split}
  \frac{1}{c^2}\partial^2_t p(x,r,\phi,t)=\frac{1}{r}\frac{\partial}{\partial r}&\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
  \\&+\frac{1}{r^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial \phi^2}
  +\frac{\partial p(x,r,\phi,t)}{\partial x^2}
  \end{split}
-\end{equation}
+\end{equation*}
 \end{exampleblock}
 \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
- To be solved using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}.\]
+ Solve using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}.\]
 \end{variableblock}
 
 % Subject to the no-penetration boundary condition at all solid boundaries.
@@ -486,20 +488,48 @@
 \begin{frame}[t]
 \frametitle{Separated Equations}
 \onslide<1->{\begin{exampleblock}{$x$- and $\phi$- directions}
- \begin{align}
- \frac{d^2 f(x)}{dx^2}+\zeta^2f(x)=0\longrightarrow f(x)=e^{\pm j\zeta x}\\
- \frac{d^2 h(\phi)}{d\phi^2}+q^2h(\phi	)=0\longrightarrow h(\phi)=e^{\pm jq\phi}
- \end{align}
+\begin{columns}
+\begin{column}{.5\textwidth}
+ \begin{align*}
+ f(x)=Ae^{j\zeta x}+Be^{-j\zeta x}\\
+ h(\phi)=Ce^{jq\phi}+De^{-jq\phi}
+ \end{align*}
+\end{column}
+ 
+ \begin{column}{.5\textwidth}
+ \begin{align*}
+  &h(\phi)\xrightarrow{cont.,smooth}\cos q\phi\\
+  &q=0,1,2,3,\ldots
+  \end{align*}
+ \end{column}
+
+\end{columns}
+
 \end{exampleblock}}
 
 \onslide<2->{\begin{exampleblock}{$r$-direction, Bessel functions}
- \begin{equation}
+%  \begin{equation*}
+%  \begin{split}
+%   \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial g(r)}{\partial r}\right)+\left[\nu^2-\frac{q^2}{r^2}\right]g(r)=0
+%   &\longrightarrow g(r) = J_q(\nu r)\\
+%   &\mbox{where, } \nu^2=k^2-\zeta^2
+%   \end{split}
+%  \end{equation*}
+\begin{columns}
+\begin{column}{.5\textwidth}
+ \begin{equation*}
  \begin{split}
-  \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial g(r)}{\partial r}\right)+\left[\nu^2-\frac{q^2}{r^2}\right]g(r)=0
-  &\longrightarrow g(r) = J_q(\nu r)\\
-  &\mbox{where, } \nu^2=k^2-\zeta^2
+  &g(r) = J_q(\nu r)\\
+  &\nu^2=k^2-\zeta^2
   \end{split}
- \end{equation}
+ \end{equation*}
+ \end{column}
+\begin{column}{.5\textwidth}
+ \includegraphics<2>[width=4cm]{Diagrams/Presentation/pressurebessel.png}
+\end{column}
+  
+\end{columns}
+
 \end{exampleblock}}
 
 \end{frame}
@@ -511,11 +541,11 @@
  \onslide<1->{\begin{exampleblock}{Impenetrable boundary at $r=a_{\mathrm{cyl}}$}
  \begin{columns}
  \begin{column}{.65\textwidth}
-\begin{align}
-&\rho\dot{\mathbf{v}}=\nabla p(x,r,\phi;t)\\
+\begin{align*}
+&j\omega\rho\mathbf{v}=\nabla p(x,r,\phi;t)\\
 &\mathbf{n_r}.\left.\nabla p\right|_{r=a_{\mathrm{cyl}}}\equiv\left.\frac{\partial g}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0\\
 &\Rightarrow g(r)=J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})
-\end{align}
+\end{align*}
 \end{column}
 
 \begin{column}{.35\textwidth}
@@ -536,7 +566,7 @@
  \end{column}
  \begin{column}{.6\textwidth}
   \centering
-\includegraphics[width = 3.5cm]{Diagrams/Presentation/BoundaryConditions/besselprimezeros.png}
+\includegraphics<2>[width = 3.5cm]{Diagrams/Presentation/BoundaryConditions/besselprimezeros.png}
  \end{column}
 \end{columns}
 \end{variableblock}}
@@ -544,44 +574,44 @@
 
 \end{frame}
 
-\begin{frame}[t]
- \frametitle{Boundary Conditions - $\phi$}
- \begin{exampleblock}{Smoothness and Continuity in $\phi$.}
- \begin{columns}
- \begin{column}{.65\textwidth}
-  \begin{align}
-   &h(0)=h(2\pi)\nonumber\\
-   &h^\prime(0)=h^\prime(2\pi)\nonumber\\
-   &\mbox{}\nonumber\\
-   \Rightarrow &h(\phi)=\cos q\phi\\
-   &q=0,1,2,\ldots\nonumber
-  \end{align}
-  \end{column}
-  \begin{column}{.35\textwidth}
-   \centering
-\includegraphics[width = 3.0cm]{Diagrams/Presentation/BoundaryConditions/cylinderphi.png}
-  \end{column}
-
-  \end{columns}
- \end{exampleblock}
-\end{frame}
+% \begin{frame}[t]
+%  \frametitle{Boundary Conditions - $\phi$}
+%  \begin{exampleblock}{Smoothness and Continuity in $\phi$.}
+%  \begin{columns}
+%  \begin{column}{.65\textwidth}
+%   \begin{align*}
+%    &h(0)=h(2\pi)\nonumber\\
+%    &h^\prime(0)=h^\prime(2\pi)\nonumber\\
+%    &\mbox{}\nonumber\\
+%    \Rightarrow &h(\phi)=\cos q\phi\\
+%    &q=0,1,2,\ldots\nonumber
+%   \end{align*}
+%   \end{column}
+%   \begin{column}{.35\textwidth}
+%    \centering
+% \includegraphics[width = 3.0cm]{Diagrams/Presentation/BoundaryConditions/cylinderphi.png}
+%   \end{column}
+% 
+%   \end{columns}
+%  \end{exampleblock}
+% \end{frame}
 % \left.\frac{\partial J_q(\nu_{\mathrm{qs}}r)}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0
 
 \begin{frame}[t]
 \frametitle{General Solution}
  \onslide<1>{\begin{exampleblock}{Pressure Modes}
-  \begin{align}
+  \begin{align*}
    &p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]p_{\mathrm{qs}}(r,\phi)e^{j\omega t}\\
    &\nonumber\\
    &p_{\mathrm{qs}}(r,\phi)=\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})\nonumber\\
    &\nonumber\\
-   &\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}\nonumber
-  \end{align}
+   %&\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}\nonumber
+  \end{align*}
  \end{exampleblock}}
 % \onslide<2>{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-%  \begin{equation}
+%  \begin{equation*}
 %    \zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}\nonumber
-%  \end{equation}
+%  \end{equation*}
 % \end{variableblock}
 %}
 \end{frame}
@@ -613,7 +643,7 @@
 \small
 \begin{itemize}
       \item[] Extracolumella (dark) - \textcolor{red}{rigid}, \textcolor{red}{stationary}.
-      \item[] Tympanum - \textcolor{green}{linear elastic}.
+      \item[] Tympanum - \textcolor{blue}{linear elastic}.
       \item[] Clamped at boundaries ($r=a_{\mathrm{tymp}}$, $\phi=\beta,\ 2\pi-\beta$)
 \end{itemize}
 
@@ -628,17 +658,17 @@
  \frametitle{Membrane Vibrations}
 \begin{exampleblock}{Membrane EOM}
 
-\begin{equation}\label{membraneequation1}
+\begin{equation*}\label{membraneequation1}
 \begin{split}
  -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
  & \frac{1}{\rho_m d}\Psi(r,\phi;t)
  \end{split}
-\end{equation}
+\end{equation*}
  \end{exampleblock}
 
 \begin{variableblock}{Membrane parameters}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
   \begin{tabular}{l l}
-    $\alpha$ - damping coefficient, & $c^2_M$ - propagation velocity\\
+    $\alpha$ - damping coefficient, & $c_M$ - propagation velocity\\
     \hspace{1pt}\\
     $\rho_m$ - density, & $d$ - thickness.
   \end{tabular}
@@ -650,41 +680,41 @@
  \frametitle{Free-Undamped Membrane, $\alpha\rightarrow 0$, $\Psi\rightarrow 0$}
 % \onslide<1->{\begin{exampleblock}{Membrane EOM}
 % 
-% \begin{equation}\label{membraneequation1}
+% \begin{equation*}\label{membraneequation1}
 % \begin{split}
 %  -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
 %  & \frac{1}{\rho_m d}\Psi(r,\phi;t)
 %  \end{split}
-% \end{equation}
+% \end{equation*}
 %  \end{exampleblock}}
 % 
 \onslide<1->{\begin{variableblock}{Separation Ansatz}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-\begin{equation}\label{mseparationansatz}
+\begin{equation*}\label{mseparationansatz}
  u(r,\phi;t)=f(r)g(\phi)h(t)\nonumber
-\end{equation}
+\end{equation*}
 % Same set of equations as in the pressure case.
 \end{variableblock}}
 % \begin{exampleblock}{Separated Equations}
-%  \begin{align}
+%  \begin{align*}
 %    \frac{d^2 g(\phi)}{d\phi^2}+\kappa^2g(\phi)&=0\\
 %    \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f(r)}{\partial r}\right)+\left[\mu^2-\frac{\kappa^2}{r^2}\right]f(r)&=0\\
 %  \frac{d^2 h(t)}{dt^2}+c^2_M\mu^2h(t)&=0
-% \end{align}
+% \end{align*}
 % \end{exampleblock}
 \vfill
-\textcolor{blue}{Boundary Conditions}
- \onslide<2->{\begin{exampleblock}{$\phi$-direction: $u(r,\beta;t)=u(r,2\pi-\beta,t)=0$}
+ \onslide<2->{\textcolor{blue}{Boundary Conditions}
+\begin{exampleblock}{$\phi$-direction: $u(r,\beta;t)=u(r,2\pi-\beta,t)=0$}
  \begin{columns}
       \begin{column}{.3\textwidth}
       \centering
-      \includegraphics[width = 2.5 cm]{Diagrams/Presentation/BoundaryConditions/bc2.png}
+      \includegraphics<2->[width = 2.5 cm]{Diagrams/Presentation/BoundaryConditions/bc2.png}
      \end{column}
      
      \begin{column}{.7\textwidth}  
-\begin{align}
+\begin{align*}
   \Rightarrow &g(\phi)=\sin\kappa(\phi-\beta)\nonumber\\
   &\kappa=\frac{m\pi}{2(\pi-\beta)}, m=1,2,\ldots\nonumber
-  \end{align}
+  \end{align*}
      \end{column}
 
   \end{columns}
@@ -702,10 +732,10 @@
 %      \end{column}
 %      
 %      \begin{column}{.7\textwidth}  
-% \begin{align}
+% \begin{align*}
 %   \Rightarrow &g(\phi)=\sin\kappa(\phi-\beta)\nonumber\\
 %   &\kappa=\frac{m\pi}{2(\pi-\beta)}, m=1,2,\ldots\nonumber
-%   \end{align}
+%   \end{align*}
 %      \end{column}
 % 
 %   \end{columns}
@@ -717,10 +747,10 @@
       \includegraphics[width = 2.5 cm]{Diagrams/Presentation/BoundaryConditions/bc1.png}
      \end{column}
      \begin{column}{.7\textwidth}  
-  \begin{align}
+  \begin{align*}
   \Rightarrow &f(r)=J_\kappa(\mu_{\mathrm{mn}}r/a_{\mathrm{tymp}})\nonumber\\
   &\mu_{\mathrm{mn}} \mbox{:}\ n^{\mathrm{th}} \mbox{ zero of } J_\kappa\nonumber
-  \end{align}
+  \end{align*}
   \end{column}
        
      \end{columns}}
@@ -734,7 +764,7 @@
 
 \begin{frame}[t]
  \frametitle{}
- \onslide<1->{\begin{exampleblock}{Free Eigenmodes}
+ \onslide<1->{\begin{exampleblock}{Free Membrane Eigenmodes - $u_{\mathrm{mn}}(r,\phi)$}
 % \begin{columns}
 %  \begin{column}{.2\textwidth}
 %  \centering
@@ -748,45 +778,49 @@
 %  \end{column}
 % 
 % \end{columns}
-$u_{\mathrm{mn}}(r,\phi)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{\mathrm{mn}} r)$
+%$u_{\mathrm{mn}}(r,\phi)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{\mathrm{mn}} r)$
 \begin{center}
 \begin{tabular}{cc}
   \includegraphics[width = 2.3 cm]{Diagrams/Presentation/BoundaryConditions/membmode1.png} & \includegraphics[width = 2.3 cm]{Diagrams/Presentation/BoundaryConditions/membmode2.png} \\
  \includegraphics[width = 2.3 cm]{Diagrams/Presentation/BoundaryConditions/membmode3.png} &  \includegraphics[width = 2.3 cm]{Diagrams/Presentation/BoundaryConditions/membmode4.png}
 \end{tabular}
 \end{center}
-                \begin{align}
-  &u_{\mathrm{free}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}C_\mathrm{mn}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t}\\
-  &\mbox{where, }\omega_{\mathrm{mn}}=c_M\mu_{\mathrm{mn}}\nonumber
-  \end{align}
+Eigenfrequency: $\omega_{\mathrm{mn}}=c_M\mu_{\mathrm{mn}}$
+\vspace{2pt}
+
+$u_{\mathrm{mn}}$: Orthogonal basis.
+%                 \begin{equation*}
+%   &u_{\mathrm{free}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}C_\mathrm{mn}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t}\\
+%   &\mbox{where, }\omega_{\mathrm{mn}}=c_M\mu_{\mathrm{mn}}\nonumber
+%   \end{equation*}
              \end{exampleblock}}
 %  \onslide<1->{\begin{exampleblock}{Free eigenmodes}
-%   \begin{align}
+%   \begin{align*}
 %   &u_{\mathrm{mn}}(r,\phi)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{\mathrm{mn}} r)\\
 %   &u_{\mathrm{free}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}C_\mathrm{mn}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t}\\
 %   &\mbox{where, }\omega_{\mathrm{mn}}=c_M\mu_{\mathrm{mn}}\nonumber
-%   \end{align}
+%   \end{align*}
 %  \end{exampleblock}}
 % \onslide<2->{\begin{exampleblock}{Damped membrane}
-%               \begin{equation}
+%               \begin{equation*}
 %                \widetilde{u}_{\mathrm{free}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t-\alpha t}
-%               \end{equation}
+%               \end{equation*}
 %              \end{exampleblock}}
 \end{frame}
 
 \begin{frame}[t]
- \frametitle{Forced Vibrations: $\Psi=pe^{j\omega t}$ }
+ \frametitle{Forced Vibrations: $\Psi=\mbox{p}e^{j\omega t}$, $\alpha\neq0$}
  \onslide<1->{\begin{exampleblock}{Steady State Solution}
-  \begin{equation}
-  u_{\mathrm{ss}}(r,\phi;t)=:\displaystyle\sum^\infty_{m=0,n=1}C_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
-  \end{equation}
+  \begin{equation*}
+  u_{\mathrm{ss}}(r,\phi;t)=:\displaystyle\sum^\infty_{m=0,n=1}\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+  \end{equation*}
   Substitute $u_{\mathrm{ss}}$ in Membrane EOM.
  \end{exampleblock}}
  \onslide<2->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-               \begin{align}
-               &C_{\mathrm{mn}}=\frac{p\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\\
+               \begin{align*}
+               &\textcolor{red}{C_{\mathrm{mn}}}=\frac{p\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\\
                 &\Omega_{\mathrm{mn}}=\rho_M d \left[(\omega^2-\omega^2_{\mathrm{mn}})-2j\alpha\omega\right]\nonumber
-               \end{align}
+               \end{align*}
 
               \end{variableblock}}
 
@@ -795,12 +829,13 @@ $u_{\mathrm{mn}}(r,\phi)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{\mathrm{mn}} r)$
 \frametitle{Forced Vibrations contd.}
  \begin{exampleblock}{Transient Solution}
 Same as the solution for a free damped membrane
-              \begin{equation}
+              \begin{equation*}
                u_{\mathrm{t}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\widetilde{\omega}_{\mathrm{mn}} t-\alpha t}
-               \end{equation}
-$\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$
+               \end{equation*}
+$\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
+\vspace{2pt}
 
-\noindent$\widetilde{C}_{\mathrm{mn}}$ determined from the membrane displacement at $t=0$.
+\noindent For $u(t=0)=0$, $\widetilde{C}_{\mathrm{mn}}=-C_{\mathrm{mn}}$.
 
 \end{exampleblock}
 \onslide<2->{\begin{variableblock}{Steady State Approximation}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
@@ -818,20 +853,25 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$
      \begin{column}{.5\textwidth}
     \small
     \flushleft
-     \begin{itemize}
-      \item<1> \textbf{I} - Ipsilateral ear, \textbf{C} - Contralateral ear.
-      \item<1>  $p_0,\ p_L$ - sound pressure on eardrums,
-      $\theta$ - sound source direction.
-     \end{itemize}
+     \onslide<1>{\begin{itemize}
+      \item[$\bullet$] \textbf{I} - Ipsilateral, \textbf{C} - Contralateral.
+      \item[$\bullet$]  $p_0,\ p_L$ - Sound pressure.
+      \item[$\bullet$] $\theta$ - Source direction.
+      \item[$\bullet$] Sound source ``far away''.
+     \end{itemize}}
+     \hspace{2pt}
      
      \begin{itemize}
-      \item<2> Sound source ``far away''.
-      \item<2> No appreciable amplitude difference, $|p_0|=|p_L|$.
-      \item<2> Phase difference between sound at both ears - $\Delta=kL\sin\theta$.
-      \item<3> $p_0=pe^{j\omega t -.5kL\sin\theta}$\\ $p_L=pe^{j\omega t +.5kL\sin\theta}$
+      \item<2> $|p_0|=|p_L|$.
+      \item<2> Phase difference - $\Delta=kL\sin\theta$.
+      \item[]
+       \item<3>[$\bullet$] $p_0=\mbox{p}\mathrm{ exp}\left(- j\Delta/2\right)$\\ $p_L=\mbox{p}\mathrm{ exp}\left(j\Delta/2\right)$
+      %\item[]
+      \item<3>[$\bullet$] ILD=0, ITD=L/c
       \end{itemize}
 
     \end{column}
+    
     
  \begin{column}{0.5\textwidth}
 %     \centering
@@ -845,7 +885,7 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$
 \end{frame}
 
 \begin{frame}[t]
- \frametitle{Acoustic Head Model contd.}
+ \frametitle{Acoustic Head Model}
  \begin{columns}
      \begin{column}{.5\textwidth}
     \small
@@ -856,11 +896,14 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$
 %       $\theta$ - sound source direction.
 %      \end{itemize}
      \begin{itemize}
-      \item $|p_0|=|p_L|$.
-      \item Increased  phase difference due to diffraction - $\Delta=1.5kL\sin\theta$.
-      \item $p_0=pe^{j\omega t -.75kL\sin\theta}$\\ $p_L=pe^{j\omega t +.75kL\sin\theta}$
+      \item[$\bullet$] $|p_0|=|p_L|$.
+      \item[]
+      \item Increased  phase difference due to diffraction - $\Delta=\frac{3}{2}kL\sin\theta$.
+      \item[]
+      \item[$\bullet$] $p_0=\mbox{p}\mathrm{ exp}\left(-j\Delta/2\right)$\\ $p_L=\mbox{p}\mathrm{ exp}\left(j\Delta/2\right)$
+  %    \item[]
+      \item[$\bullet$] ILD=0, ITD=$\frac{3}{2}$L/c
       \end{itemize}
-
     \end{column}
     
  \begin{column}{0.5\textwidth}
@@ -879,53 +922,53 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$
 \begin{frame}
  \frametitle{Coupled Membranes}
  \onslide<1->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-  \begin{equation}
+  \begin{equation*}
   u_{0/L}=\displaystyle\sum^{\infty}_{m=0,n=1}C^{0/L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
- \end{equation}
+ \end{equation*}
  \end{variableblock}
  }
 
  \onslide<2->{\begin{exampleblock}{Membrane Equations}
-  \begin{align}
- \displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^0_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_0e^{j\omega t}-p(0,r,\phi;t)\\
- \displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^L_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_{L}e^{j\omega t}-p(L,r,\phi;t)
- \end{align}
+  \begin{align*}
+ &\displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^0_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_0e^{j\omega t}-p(0,r,\phi;t)\\
+ &\displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^L_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_{L}e^{j\omega t}-p(L,r,\phi;t)
+ \end{align*}
 \end{exampleblock}}
 
 \end{frame}
 
 \subsubsection{Boundary Conditions}
-\begin{frame}
-  \begin{exampleblock}{``Surface'' Velocity}
- \begin{equation}
- U_{0/L}=\begin{cases}
-          u_{0/L}\mbox{, } 0<r<a_{\mathrm{tymp}}\mbox{ and } \beta<\phi<2\pi-\beta\\
-          0\mbox{, otherwise}
-         \end{cases}.
-\end{equation}
-\end{exampleblock}
- \begin{variableblock}{Velocity in $x-$direction}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-  \begin{equation}
-v_x=-\displaystyle\sum^\infty_{q=0,s=0}\frac{\zeta_{\mathrm{qs}}}{\rho\omega}\left(A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}-B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right)p_{\mathrm{qs}}(r,\phi)e^{j\omega t}
-\end{equation}
- \end{variableblock}
-
-\end{frame}
+% \begin{frame}
+%   \begin{exampleblock}{``Surface'' Velocity}
+%  \begin{equation*}
+%  U_{0/L}=\begin{cases}
+%           u_{0/L}\mbox{, } 0<r<a_{\mathrm{tymp}}\mbox{ and } \beta<\phi<2\pi-\beta\\
+%           0\mbox{, otherwise}
+%          \end{cases}.
+% \end{equation*}
+% \end{exampleblock}
+%  \begin{variableblock}{Velocity in $x-$direction}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+%   \begin{equation*}
+% v_x=-\displaystyle\sum^\infty_{q=0,s=0}\frac{\zeta_{\mathrm{qs}}}{\rho\omega}\left(A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}-B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right)p_{\mathrm{qs}}(r,\phi)e^{j\omega t}
+% \end{equation*}
+%  \end{variableblock}
+% 
+% \end{frame}
 
 \begin{frame}
  \frametitle{Boundary Conditions}
   \onslide<1>{\begin{exampleblock}{Exact}
   \begin{columns}
   \begin{column}{.5\textwidth}
-  \begin{align}
- U_{0}&=-\frac{1}{j\omega}v_x(0,r,\phi;t)\nonumber\\
-  U_{L}&=\frac{1}{j\omega}v_x(L,r,\phi;t)\nonumber
- \end{align}
+  \begin{align*}
+ u_{0}&=-\frac{1}{j\omega}v_x(0,r,\phi;t)\nonumber\\
+  u_{L}&=\frac{1}{j\omega}v_x(L,r,\phi;t)\nonumber
+ \end{align*}
  \end{column}
  
    \begin{column}{.5\textwidth}
    %\centering
-\includegraphics[width=5.2cm]{Diagrams/Presentation/BoundaryConditions/velocity1.png}
+\includegraphics<1>[width=5.2cm]{Diagrams/Presentation/BoundaryConditions/velocity1.png}
  \end{column}
  \end{columns}
 
@@ -935,15 +978,15 @@ v_x=-\displaystyle\sum^\infty_{q=0,s=0}\frac{\zeta_{\mathrm{qs}}}{\rho\omega}\le
  
    \begin{columns}
   \begin{column}{.5\textwidth}
-  \begin{align}
+  \begin{align*}
  \mathbin{\textcolor{red}{S^0}}&=-\frac{1}{j\omega}v_x(0,r,\phi;t)\nonumber\\
  \mathbin{\textcolor{red}{S^L}}&=\frac{1}{j\omega}v_x(L,r,\phi;t)\nonumber
- \end{align}
+ \end{align*}
  \end{column}
  
    \begin{column}{.5\textwidth}
    %\centering
-\includegraphics[width=5.2cm]{Diagrams/Presentation/BoundaryConditions/velocity2.png}
+\includegraphics<2>[width=5.2cm]{Diagrams/Presentation/BoundaryConditions/velocity2.png}
  \end{column}
  \end{columns}
   \end{variableblock}}
@@ -952,12 +995,13 @@ v_x=-\displaystyle\sum^\infty_{q=0,s=0}\frac{\zeta_{\mathrm{qs}}}{\rho\omega}\le
 \begin{frame}
  \frametitle{Boundary Conditions}
 \begin{exampleblock}{}
-Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}\]
+$\int dS\mbox{p}_{qs}=0\Rightarrow$ higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}\]\\
 
-\begin{align}
- A_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{-jkL}+S^L\right)\\ 
- B_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{jkL}+S^L\right)
-\end{align}
+
+% \begin{align*}
+%  A_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{-jkL}+S^L\right)\\ 
+%  B_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{jkL}+S^L\right)
+% \end{align*}
 
  \end{exampleblock}
 
@@ -965,64 +1009,64 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 \subsubsection{Solution}
 \begin{frame}
  \onslide<1>{\begin{exampleblock}{Coupled Equations}
- \begin{align}
- &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{0}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{0}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\tan kL}+\frac{S^L}{\sin kL}\right)\\
- &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{L}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\sin kL}+\frac{S^L}{\tan kL}\right)
-\end{align}
+ \begin{align*}
+ &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{0}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{0}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\tan kL}+\frac{S^L}{\sin kL}\right)\nonumber\\
+ &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{L}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\sin kL}+\frac{S^L}{\tan kL}\right)\nonumber
+\end{align*}
 \end{exampleblock}}
 
 \onslide<2>{\begin{variableblock}{Decoupling - $\pm$}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-\begin{align}
+\begin{align*}
  &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{+}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\\
  &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{-}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}
-\end{align}
+\end{align*}
   \end{variableblock}}
 \end{frame}
 % \begin{frame}
 %   \begin{exampleblock}{Decoupled Equations}
-% \begin{align}
+% \begin{align*}
 %  &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{+}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\\
 %  &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{-}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}
-% \end{align}
+% \end{align*}
 % \end{exampleblock}
 % 
 % \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-% \begin{align}
+% \begin{align*}
 %  C^{+}_{\mathrm{mn}}&=\left[p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\right]\frac{\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\label{pluscoeffdef}\\
 %  C^{-}_{\mathrm{mn}}&=\left[p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}\right]\frac{\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\label{minuscoeffdef}
 % %\mbox{where, }K_{\mathrm{mn}}&=\frac{\int dS u_{\mathrm{mn}}}{\int dS u^2_{\mathrm{mn}}}\label{Kmndef}
-% \end{align}
+% \end{align*}
 %   \end{variableblock}
 % \end{frame}
 
 \begin{frame}
  \begin{exampleblock}{Decoupled Equations contd.}
-  \begin{equation}
+  \begin{equation*}
  S^{+}=\frac{p_L+p_0}{\Lambda+\Gamma_+}\qquad S^{-}=\frac{p_L-p_0}{\Lambda+\Gamma_-}
-\end{equation}
+\end{equation*}
  \end{exampleblock}
  \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
- \begin{align}
- \Gamma_+ = &-\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\label{gamfirstdef}\\
-&\frac{1}{\Lambda}=\frac{1}{\pi a^2_{\mathrm{cyl}}}\displaystyle\sum^\infty_{m=0,n=1}\frac{\left(\int dS u_{\mathrm{mn}}\right)^2}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\label{lamfirstdef}
-\end{align}
+ \begin{align*}
+ \Gamma_+ = &-\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\\
+&\frac{1}{\Lambda}=\frac{1}{\pi a^2_{\mathrm{cyl}}}\displaystyle\sum^\infty_{m=0,n=1}\frac{\left(\int dS u_{\mathrm{mn}}\right)^2}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}
+\end{align*}
 \end{variableblock}
 \end{frame}
 
 \begin{frame}
 \frametitle{Final Expressions}
  \begin{exampleblock}{Membrane Displacement}
-  \begin{align}
- S_0(t)&=G^s_{ipsi}p_0+G^s_{contra}p_L\label{ipsimembranefull}\\
- S_L(t)&=G^s_{contra}p_0+G^s_{ipsi}p_L\label{contramembranefull}
-\end{align}
+  \begin{align*}
+ S_0(t)&=G^s_{ipsi}p_0+G^s_{contra}p_L\\
+ S_L(t)&=G^s_{contra}p_0+G^s_{ipsi}p_L
+\end{align*}
  \end{exampleblock}
 
 \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
- \begin{align}
- G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{ipsimembranetotal}\\
- G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2 \label{contramembranetotal}
-\end{align}
+ \begin{align*}
+ G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2 \\
+ G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2
+\end{align*}
 \end{variableblock}
 
 \end{frame}
@@ -1091,20 +1135,21 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 \begin{tabular}{l  l}
 L=$22\,$mm & $a_{\mathrm{tymp}}$=$2.6\,$mm\\
 &\\
-$\textcolor{red}{Q}$ =$1.33$ & $\rho_m$=$1\,$mg/mm$^3$\\ 
+$\textcolor{red}{f_0}=1.05\,$kHz & $\rho_m$=$1\,$mg/mm$^3$\\ 
 &\\
 $d$=$10\,\mu$m & $V_{\mathrm{\mathrm{cav}}}$=$3.5\,$ml\\ 
 &\\
 $\beta$=$\pi/25$&$\textcolor{blue}{a_{cyl}}\approx 6.6\,$mm \\
 &\\
-$\textcolor{red}{f_0}=1.05\,$kHz &\\
+$\textcolor{red}{\alpha}\approx2474\ \mbox{s}^{-1}$ &\\
 \end {tabular}\par
 \end{variableblock}
 
 %\bigskip
 \begin{exampleblock}{}
 \begin{itemize}
-\item[] $\textcolor{red}{f_0}=\omega_{01}/2\pi$, $\alpha=\omega_{01}/2\textcolor{red}{Q}$.
+\item[] $\textcolor{red}{f_0}=\omega_{01}/2\pi$, ITD = $96.21\, \mu$s.
+\item[] $\textcolor{red}{\alpha}\rightarrow$ steady state.
 \end{itemize}
 \end{exampleblock}
      \end{column}
@@ -1222,13 +1267,13 @@ $\textcolor{red}{f_0}=1.05\,$kHz &\\
      \begin{column}{0.5\textwidth}
  \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
 \onslide<1>{Internal Level Difference (iLD) - 
-\begin{equation}
-  \mbox{iLD}\vcentcolon= 20\mbox{Log}_{10}\left|\frac{\dot{S}^0}{\dot{S}^L}\right|\label{iLDfirstdef}
-\end{equation}}
+\begin{equation*}
+  \mbox{iLD}\vcentcolon= 20\mbox{Log}_{10}\left|\frac{\dot{S}^0}{\dot{S}^L}\right|
+\end{equation*}}
 \onslide<1>{Internal Time Difference (iTD) - 
-\begin{equation}
- \mbox{iTD}\vcentcolon= \mbox{Arg}\left(\frac{\dot{S}^0}{\dot{S}^L}\right)/\omega\label{iTDfirstdef}
-\end{equation}}
+\begin{equation*}
+ \mbox{iTD}\vcentcolon= \mbox{Arg}\left(\frac{\dot{S}^0}{\dot{S}^L}\right)/\omega
+\end{equation*}}
 \end{variableblock}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -1338,11 +1383,32 @@ iTD
 \section{Conclusion}
 \begin{frame}[t]
  \frametitle{Conclusion}
- \begin{exampleblock}{}
+ \begin{columns}
+  \begin{column}{.4\textwidth}
+ \onslide<1>{\begin{exampleblock}{}
  \begin{itemize}
-  \item Single model describes both low and high frequency behaviour.
+  \item Single description for all frequencies.
+  \item Transition determined by $f_0$, $\alpha$.
  \end{itemize}
-\end{exampleblock}
+\end{exampleblock}}
+
+ \onslide<2>{\begin{exampleblock}{Future Work}
+ \begin{itemize}
+  \item Extracolumella motion.
+  \item Crocodiles 
+  \begin{itemize}
+  \item Independent above water.
+  \item ICE underwater.
+  \end{itemize}
+ \end{itemize}
+\end{exampleblock}}
+\end{column}
+\begin{column}{.6\textwidth}
+\flushright
+      \includegraphics[width = 6 cm]{Diagrams/Presentation/conclusion1.png}
+\end{column}
+
+\end{columns}
 \end{frame}
 
 \begin{frame}[t]

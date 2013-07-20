@@ -112,7 +112,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -219,8 +219,8 @@
     <text
        xml:space="preserve"
        style="font-size:83.37866211px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="299.7334"
-       y="266.35031"
+       x="-191.20073"
+       y="304.73611"
        id="text3833"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/BoundaryConditions/velocity2.png"
@@ -228,8 +228,8 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3835"
-         x="299.7334"
-         y="266.35031">v</tspan></text>
+         x="-191.20073"
+         y="304.73611">v</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3837"
@@ -243,11 +243,11 @@
            height="296.98486"
            x="-642.45703"
            y="646.28088" /></flowRegion><flowPara
-         id="flowPara3843"></flowPara></flowRoot>    <text
+         id="flowPara3843" /></flowRoot>    <text
        xml:space="preserve"
        style="font-size:45.56531525px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="340.16595"
-       y="281.36087"
+       x="-150.76817"
+       y="319.74667"
        id="text3845"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/BoundaryConditions/velocity2.png"
@@ -255,11 +255,11 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3847"
-         x="340.16595"
-         y="281.36087">x</tspan></text>
+         x="-150.76817"
+         y="319.74667">x</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Mend)"
-       d="m 246.47722,300.8087 c 172.49441,0 172.49441,0 172.49441,0"
+       d="m -244.45692,339.1945 c 172.494417,0 172.494417,0 172.494417,0"
        id="path3849"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/BoundaryConditions/velocity2.png"
@@ -268,7 +268,7 @@
     <text
        xml:space="preserve"
        style="font-size:83.37866211px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="1083.6118"
+       x="1097.7539"
        y="308.7767"
        id="text4871"
        sodipodi:linespacing="125%"
@@ -277,12 +277,12 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan4873"
-         x="1083.6118"
+         x="1097.7539"
          y="308.7767">S</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:45.56531525px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="1132.085"
+       x="1146.2271"
        y="265.19839"
        id="text4875"
        sodipodi:linespacing="125%"
@@ -291,11 +291,11 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan4877"
-         x="1132.085"
+         x="1146.2271"
          y="265.19839">L</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Mend)"
-       d="m 1183.5958,340.0253 c -121.6026,0 -121.6026,0 -121.6026,0"
+       d="m 1072.0134,340.0253 c 121.6026,0 121.6026,0 121.6026,0"
        id="path4881"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/BoundaryConditions/velocity2.png"
@@ -420,11 +420,11 @@
        sodipodi:linespacing="125%"
        id="text5886"
        y="308.7767"
-       x="-502.32767"
+       x="-548.79468"
        style="font-size:83.37866211px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          y="308.7767"
-         x="-502.32767"
+         x="-548.79468"
          id="tspan5888"
          sodipodi:role="line">S</tspan></text>
     <text
@@ -434,11 +434,11 @@
        sodipodi:linespacing="125%"
        id="text5890"
        y="265.19839"
-       x="-453.85452"
+       x="-500.32153"
        style="font-size:45.56531525px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          y="265.19839"
-         x="-453.85452"
+         x="-500.32153"
          id="tspan5892"
          sodipodi:role="line">0</tspan></text>
     <path
@@ -447,7 +447,43 @@
        inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/BoundaryConditions/velocity2.png"
        inkscape:connector-curvature="0"
        id="path5894"
-       d="m -528.0681,340.0253 c 121.6026,0 121.6026,0 121.6026,0"
+       d="m -448.81065,340.0253 c -121.6026,0 -121.6026,0 -121.6026,0"
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Mend)" />
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/BoundaryConditions/velocity2.png"
+       sodipodi:linespacing="125%"
+       id="text6138"
+       y="304.73611"
+       x="756.32233"
+       style="font-size:83.37866211px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="304.73611"
+         x="756.32233"
+         id="tspan6140"
+         sodipodi:role="line">v</tspan></text>
+    <text
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/BoundaryConditions/velocity2.png"
+       sodipodi:linespacing="125%"
+       id="text6142"
+       y="319.74667"
+       x="796.75488"
+       style="font-size:45.56531525px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="319.74667"
+         x="796.75488"
+         id="tspan6144"
+         sodipodi:role="line">x</tspan></text>
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/t35-room3023/Documents/ICE-Model/Thesis - Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/BoundaryConditions/velocity2.png"
+       inkscape:connector-curvature="0"
+       id="path6146"
+       d="m 703.06616,339.1945 c 172.49442,0 172.49442,0 172.49442,0"
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Mend)" />
   </g>
 </svg>

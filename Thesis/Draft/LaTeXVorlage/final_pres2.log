@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  19 JUL 2013 23:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.5)  20 JUL 2013 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,23 +897,27 @@ Package: empheq 2007/12/03 v2.12 Emphasizing equations (MH)
 \EQ_mathdisplay_box=\box82
 \EQ_tag_box=\box83
 \g_EQ_temprow_int=\count184
-) (./final_pres2.aux)
+)
+(/usr/share/texmf/tex/latex/beamer/base/themes/font/beamerfontthemeserif.sty
+Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(./final_pres2.aux)
 \openout1 = `final_pres2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -979,7 +983,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box85
-Package hyperref Info: Link coloring OFF on input line 102.
+Package hyperref Info: Link coloring OFF on input line 104.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -989,56 +993,14 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count191
 )
-LaTeX Info: Redefining \ref on input line 102.
-LaTeX Info: Redefining \pageref on input line 102.
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
 (./final_pres2.out) (./final_pres2.out)
 \@outlinefile=\write5
 \openout5 = `final_pres2.out'.
 
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 102.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 102.
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 102.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 102.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 102.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 102.
-LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 102.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 102.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 102.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1075,24 +1037,24 @@ Package caption Info: End \AtBeginDocument code.
 File: Diagrams/T35logo2.png Graphic file (type png)
 
 <use Diagrams/T35logo2.png>
-Package pdftex.def Info: Diagrams/T35logo2.png used on input line 115.
+Package pdftex.def Info: Diagrams/T35logo2.png used on input line 117.
 (pdftex.def)             Requested size: 24.18501pt x 24.0441pt.
 
 <Diagrams/tmplogo.jpg, id=69, 132.9768pt x 31.0761pt>
 File: Diagrams/tmplogo.jpg Graphic file (type jpg)
 
 <use Diagrams/tmplogo.jpg>
-Package pdftex.def Info: Diagrams/tmplogo.jpg used on input line 115.
+Package pdftex.def Info: Diagrams/tmplogo.jpg used on input line 117.
 (pdftex.def)             Requested size: 56.9055pt x 13.2989pt.
 
-Overfull \hbox (12.39194pt too wide) in paragraph at lines 115--115
+Overfull \hbox (12.39194pt too wide) in paragraph at lines 117--117
 []|  []  
  []
 
 No file final_pres2.bbl.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 115.
+(Font)              size <5> substituted on input line 117.
 
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
@@ -1108,29 +1070,29 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [2
 
-] <Diagrams/Presentation/indepears.png, id=134, 100.375pt x 105.39375pt>
+] <Diagrams/Presentation/indepears.png, id=133, 100.375pt x 105.39375pt>
 File: Diagrams/Presentation/indepears.png Graphic file (type png)
 
 <use Diagrams/Presentation/indepears.png>
 Package pdftex.def Info: Diagrams/Presentation/indepears.png used on input line
- 175.
+ 177.
 (pdftex.def)             Requested size: 42.67912pt x 44.81345pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 175.
+LaTeX Font Info:    Try loading font information for U+msa on input line 177.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 175.
+LaTeX Font Info:    Try loading font information for U+msb on input line 177.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-<Diagrams/Presentation/coupledears.png, id=135, 100.375pt x 105.39375pt>
+<Diagrams/Presentation/coupledears.png, id=134, 100.375pt x 105.39375pt>
 File: Diagrams/Presentation/coupledears.png Graphic file (type png)
 
 <use Diagrams/Presentation/coupledears.png>
 Package pdftex.def Info: Diagrams/Presentation/coupledears.png used on input li
-ne 175.
+ne 177.
 (pdftex.def)             Requested size: 42.67912pt x 44.81345pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
@@ -1144,13 +1106,13 @@ ng>]
 File: Diagrams/Presentation/indepears.png Graphic file (type png)
  <use Diagrams/Presentation/indepears.png>
 Package pdftex.def Info: Diagrams/Presentation/indepears.png used on input line
- 175.
+ 177.
 (pdftex.def)             Requested size: 42.67912pt x 44.81345pt.
 File: Diagrams/Presentation/coupledears.png Graphic file (type png)
 
 <use Diagrams/Presentation/coupledears.png>
 Package pdftex.def Info: Diagrams/Presentation/coupledears.png used on input li
-ne 175.
+ne 177.
 (pdftex.def)             Requested size: 42.67912pt x 44.81345pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
@@ -1164,16 +1126,16 @@ File: Diagrams/Presentation/HumanITD.png Graphic file (type png)
 
 <use Diagrams/Presentation/HumanITD.png>
 Package pdftex.def Info: Diagrams/Presentation/HumanITD.png used on input line 
-282.
+284.
 (pdftex.def)             Requested size: 128.0374pt x 87.70302pt.
 
-<Diagrams/Presentation/HumanILD.png, id=158, 1519.276pt x 987.69pt>
+<Diagrams/Presentation/HumanILD.png, id=158, 385.44pt x 255.95625pt>
 File: Diagrams/Presentation/HumanILD.png Graphic file (type png)
 
 <use Diagrams/Presentation/HumanILD.png>
 Package pdftex.def Info: Diagrams/Presentation/HumanILD.png used on input line 
-282.
-(pdftex.def)             Requested size: 128.0374pt x 83.23666pt.
+284.
+(pdftex.def)             Requested size: 128.0374pt x 85.0243pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
@@ -1222,16 +1184,8 @@ File: Diagrams/Presentation/oldCylinder.png Graphic file (type png)
 
 <use Diagrams/Presentation/oldCylinder.png>
 Package pdftex.def Info: Diagrams/Presentation/oldCylinder.png used on input li
-ne 447.
+ne 449.
 (pdftex.def)             Requested size: 113.81102pt x 89.67517pt.
-
-<Diagrams/Presentation/newCylinder.png, id=247, 1097.701pt x 778.91pt>
-File: Diagrams/Presentation/newCylinder.png Graphic file (type png)
-
-<use Diagrams/Presentation/newCylinder.png>
-Package pdftex.def Info: Diagrams/Presentation/newCylinder.png used on input li
-ne 447.
-(pdftex.def)             Requested size: 113.81102pt x 80.748pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
@@ -1239,18 +1193,20 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [11
 
- <./Diagrams/Presentation/oldCylinder.png> <./Diagrams/Presentation/newCylinder
-.png>]
+ <./Diagrams/Presentation/oldCylinder.png>]
 File: Diagrams/Presentation/oldCylinder.png Graphic file (type png)
- <use Diagrams/Presentation/oldCylinder.png>
+
+<use Diagrams/Presentation/oldCylinder.png>
 Package pdftex.def Info: Diagrams/Presentation/oldCylinder.png used on input li
-ne 447.
+ne 449.
 (pdftex.def)             Requested size: 113.81102pt x 89.67517pt.
+
+<Diagrams/Presentation/newCylinder.png, id=258, 1097.701pt x 778.91pt>
 File: Diagrams/Presentation/newCylinder.png Graphic file (type png)
 
 <use Diagrams/Presentation/newCylinder.png>
 Package pdftex.def Info: Diagrams/Presentation/newCylinder.png used on input li
-ne 447.
+ne 449.
 (pdftex.def)             Requested size: 113.81102pt x 80.748pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
@@ -1259,7 +1215,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [12
 
-]
+ <./Diagrams/Presentation/newCylinder.png>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
@@ -1274,13 +1230,21 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [14
 
 ]
+<Diagrams/Presentation/pressurebessel.png, id=298, 2433.09pt x 1504.019pt>
+File: Diagrams/Presentation/pressurebessel.png Graphic file (type png)
+
+<use Diagrams/Presentation/pressurebessel.png>
+Package pdftex.def Info: Diagrams/Presentation/pressurebessel.png used on input
+ line 535.
+(pdftex.def)             Requested size: 113.81102pt x 70.34007pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [15
 
-]
+ <./Diagrams/Presentation/pressurebessel.png>]
 <Diagrams/Presentation/BoundaryConditions/cylinderradial.png, id=310, 480.997pt
  x 472.967pt>
 File: Diagrams/Presentation/BoundaryConditions/cylinderradial.png Graphic file 
@@ -1288,18 +1252,8 @@ File: Diagrams/Presentation/BoundaryConditions/cylinderradial.png Graphic file
 
 <use Diagrams/Presentation/BoundaryConditions/cylinderradial.png>
 Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/cylinderradia
-l.png used on input line 545.
+l.png used on input line 575.
 (pdftex.def)             Requested size: 71.13188pt x 69.93883pt.
-
-<Diagrams/Presentation/BoundaryConditions/besselprimezeros.png, id=312, 719.488
-pt x 444.862pt>
-File: Diagrams/Presentation/BoundaryConditions/besselprimezeros.png Graphic fil
-e (type png)
-
-<use Diagrams/Presentation/BoundaryConditions/besselprimezeros.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/besselprimeze
-ros.png used on input line 545.
-(pdftex.def)             Requested size: 99.58464pt x 61.5675pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
@@ -1307,21 +1261,23 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [16
 
- <./Diagrams/Presentation/BoundaryConditions/cylinderradial.png> <./Diagrams/Pr
-esentation/BoundaryConditions/besselprimezeros.png>]
+ <./Diagrams/Presentation/BoundaryConditions/cylinderradial.png>]
 File: Diagrams/Presentation/BoundaryConditions/cylinderradial.png Graphic file 
 (type png)
 
 <use Diagrams/Presentation/BoundaryConditions/cylinderradial.png>
 Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/cylinderradia
-l.png used on input line 545.
+l.png used on input line 575.
 (pdftex.def)             Requested size: 71.13188pt x 69.93883pt.
+
+<Diagrams/Presentation/BoundaryConditions/besselprimezeros.png, id=328, 719.488
+pt x 444.862pt>
 File: Diagrams/Presentation/BoundaryConditions/besselprimezeros.png Graphic fil
 e (type png)
 
 <use Diagrams/Presentation/BoundaryConditions/besselprimezeros.png>
 Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/besselprimeze
-ros.png used on input line 545.
+ros.png used on input line 575.
 (pdftex.def)             Requested size: 99.58464pt x 61.5675pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
@@ -1330,50 +1286,41 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [17
 
-]
-<Diagrams/Presentation/BoundaryConditions/cylinderphi.png, id=340, 361.35pt x 2
-77.035pt>
-File: Diagrams/Presentation/BoundaryConditions/cylinderphi.png Graphic file (ty
-pe png)
- <use Diagrams/Presentation/BoundaryConditions/cylinderphi.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/cylinderphi.p
-ng used on input line 567.
-(pdftex.def)             Requested size: 85.35826pt x 65.4414pt.
-
+ <./Diagrams/Presentation/BoundaryConditions/besselprimezeros.png>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [18
 
- <./Diagrams/Presentation/BoundaryConditions/cylinderphi.png>]
-Overfull \hbox (1.20033pt too wide) has occurred while \output is active
-[] 
- []
-
-[19
-
-] <Diagrams/geckoear.png, id=363, 531.48563pt x 411.03563pt>
+] <Diagrams/geckoear.png, id=351, 531.48563pt x 411.03563pt>
 File: Diagrams/geckoear.png Graphic file (type png)
 
 <use Diagrams/geckoear.png>
-Package pdftex.def Info: Diagrams/geckoear.png used on input line 623.
+Package pdftex.def Info: Diagrams/geckoear.png used on input line 653.
 (pdftex.def)             Requested size: 105.2751pt x 81.4154pt.
 
-<Diagrams/tympanummodel.png, id=364, 918.632pt x 801.394pt>
+<Diagrams/tympanummodel.png, id=352, 918.632pt x 801.394pt>
 File: Diagrams/tympanummodel.png Graphic file (type png)
 
 <use Diagrams/tympanummodel.png>
-Package pdftex.def Info: Diagrams/tympanummodel.png used on input line 623.
+Package pdftex.def Info: Diagrams/tympanummodel.png used on input line 653.
 (pdftex.def)             Requested size: 91.04872pt x 79.42262pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
-[20
+[19
 
  <./Diagrams/geckoear.png> <./Diagrams/tympanummodel.png>]
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[] 
+ []
+
+[20
+
+]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
@@ -1386,7 +1333,7 @@ t>
 File: Diagrams/Presentation/BoundaryConditions/bc2.png Graphic file (type png)
  <use Diagrams/Presentation/BoundaryConditions/bc2.png>
 Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/bc2.png used 
-on input line 693.
+on input line 723.
 (pdftex.def)             Requested size: 71.13188pt x 63.57874pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
@@ -1396,12 +1343,22 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [22
 
  <./Diagrams/Presentation/BoundaryConditions/bc2.png>]
-File: Diagrams/Presentation/BoundaryConditions/bc2.png Graphic file (type png)
+<Diagrams/Presentation/BoundaryConditions/bc1.png, id=399, 898.557pt x 810.227p
+t>
+File: Diagrams/Presentation/BoundaryConditions/bc1.png Graphic file (type png)
+ <use Diagrams/Presentation/BoundaryConditions/bc1.png>
+Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/bc1.png used 
+on input line 763.
+(pdftex.def)             Requested size: 71.13188pt x 64.12715pt.
 
-<use Diagrams/Presentation/BoundaryConditions/bc2.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/bc2.png used 
-on input line 693.
-(pdftex.def)             Requested size: 71.13188pt x 63.57874pt.
+<Diagrams/Presentation/BoundaryConditions/besselzeros.png, id=400, 361.35pt x 2
+23.83624pt>
+File: Diagrams/Presentation/BoundaryConditions/besselzeros.png Graphic file (ty
+pe png)
+ <use Diagrams/Presentation/BoundaryConditions/besselzeros.png>
+Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/besselzeros.p
+ng used on input line 763.
+(pdftex.def)             Requested size: 156.49014pt x 96.93762pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
@@ -1409,23 +1366,43 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [23
 
-]
-<Diagrams/Presentation/BoundaryConditions/bc1.png, id=410, 898.557pt x 810.227p
-t>
-File: Diagrams/Presentation/BoundaryConditions/bc1.png Graphic file (type png)
- <use Diagrams/Presentation/BoundaryConditions/bc1.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/bc1.png used 
-on input line 733.
-(pdftex.def)             Requested size: 71.13188pt x 64.12715pt.
+ <./Diagrams/Presentation/BoundaryConditions/bc1.png> <./Diagrams/Presentation/
+BoundaryConditions/besselzeros.png>]
+<Diagrams/Presentation/BoundaryConditions/membmode1.png, id=413, 302.731pt x 22
+1.628pt>
+File: Diagrams/Presentation/BoundaryConditions/membmode1.png Graphic file (type
+ png)
+ <use Diagrams/Presentation/BoundaryConditions/membmode1.png>
+Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/membmode1.png
+ used on input line 809.
+(pdftex.def)             Requested size: 65.44142pt x 47.90948pt.
 
-<Diagrams/Presentation/BoundaryConditions/besselzeros.png, id=411, 361.35pt x 2
-23.83624pt>
-File: Diagrams/Presentation/BoundaryConditions/besselzeros.png Graphic file (ty
-pe png)
- <use Diagrams/Presentation/BoundaryConditions/besselzeros.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/besselzeros.p
-ng used on input line 733.
-(pdftex.def)             Requested size: 156.49014pt x 96.93762pt.
+<Diagrams/Presentation/BoundaryConditions/membmode2.png, id=414, 313.973pt x 22
+1.628pt>
+File: Diagrams/Presentation/BoundaryConditions/membmode2.png Graphic file (type
+ png)
+ <use Diagrams/Presentation/BoundaryConditions/membmode2.png>
+Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/membmode2.png
+ used on input line 809.
+(pdftex.def)             Requested size: 65.44142pt x 46.19154pt.
+
+<Diagrams/Presentation/BoundaryConditions/membmode3.png, id=415, 289.883pt x 22
+1.628pt>
+File: Diagrams/Presentation/BoundaryConditions/membmode3.png Graphic file (type
+ png)
+ <use Diagrams/Presentation/BoundaryConditions/membmode3.png>
+Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/membmode3.png
+ used on input line 809.
+(pdftex.def)             Requested size: 65.44142pt x 50.03323pt.
+
+<Diagrams/Presentation/BoundaryConditions/membmode4.png, id=416, 311.564pt x 22
+1.628pt>
+File: Diagrams/Presentation/BoundaryConditions/membmode4.png Graphic file (type
+ png)
+ <use Diagrams/Presentation/BoundaryConditions/membmode4.png>
+Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/membmode4.png
+ used on input line 809.
+(pdftex.def)             Requested size: 65.44142pt x 46.55pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
@@ -1433,43 +1410,9 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [24
 
- <./Diagrams/Presentation/BoundaryConditions/bc1.png> <./Diagrams/Presentation/
-BoundaryConditions/besselzeros.png>]
-<Diagrams/Presentation/BoundaryConditions/membmode1.png, id=424, 302.731pt x 22
-1.628pt>
-File: Diagrams/Presentation/BoundaryConditions/membmode1.png Graphic file (type
- png)
- <use Diagrams/Presentation/BoundaryConditions/membmode1.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/membmode1.png
- used on input line 775.
-(pdftex.def)             Requested size: 65.44142pt x 47.90948pt.
-
-<Diagrams/Presentation/BoundaryConditions/membmode2.png, id=425, 313.973pt x 22
-1.628pt>
-File: Diagrams/Presentation/BoundaryConditions/membmode2.png Graphic file (type
- png)
- <use Diagrams/Presentation/BoundaryConditions/membmode2.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/membmode2.png
- used on input line 775.
-(pdftex.def)             Requested size: 65.44142pt x 46.19154pt.
-
-<Diagrams/Presentation/BoundaryConditions/membmode3.png, id=426, 289.883pt x 22
-1.628pt>
-File: Diagrams/Presentation/BoundaryConditions/membmode3.png Graphic file (type
- png)
- <use Diagrams/Presentation/BoundaryConditions/membmode3.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/membmode3.png
- used on input line 775.
-(pdftex.def)             Requested size: 65.44142pt x 50.03323pt.
-
-<Diagrams/Presentation/BoundaryConditions/membmode4.png, id=427, 311.564pt x 22
-1.628pt>
-File: Diagrams/Presentation/BoundaryConditions/membmode4.png Graphic file (type
- png)
- <use Diagrams/Presentation/BoundaryConditions/membmode4.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/membmode4.png
- used on input line 775.
-(pdftex.def)             Requested size: 65.44142pt x 46.55pt.
+ <./Diagrams/Presentation/BoundaryConditions/membmode1.png> <./Diagrams/Present
+ation/BoundaryConditions/membmode2.png> <./Diagrams/Presentation/BoundaryCondit
+ions/membmode3.png> <./Diagrams/Presentation/BoundaryConditions/membmode4.png>]
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
@@ -1477,10 +1420,7 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [25
 
- <./Diagrams/Presentation/BoundaryConditions/membmode1.png> <./Diagrams/Present
-ation/BoundaryConditions/membmode2.png> <./Diagrams/Presentation/BoundaryCondit
-ions/membmode3.png> <./Diagrams/Presentation/BoundaryConditions/membmode4.png>]
-
+]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
@@ -1502,22 +1442,34 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [28
 
 ]
+<Diagrams/Presentation/acousticheadmodelold.png, id=474, 1414.083pt x 1222.166p
+t>
+File: Diagrams/Presentation/acousticheadmodelold.png Graphic file (type png)
+ <use Diagrams/Presentation/acousticheadmodelold.png>
+Package pdftex.def Info: Diagrams/Presentation/acousticheadmodelold.png used on
+ input line 885.
+(pdftex.def)             Requested size: 170.71652pt x 147.53008pt.
+
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 885--885
+[][]  
+ []
+
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [29
 
-]
-<Diagrams/Presentation/acousticheadmodelold.png, id=485, 1396.417pt x 1344.222p
-t>
+ <./Diagrams/Presentation/acousticheadmodelold.png>]
 File: Diagrams/Presentation/acousticheadmodelold.png Graphic file (type png)
- <use Diagrams/Presentation/acousticheadmodelold.png>
-Package pdftex.def Info: Diagrams/Presentation/acousticheadmodelold.png used on
- input line 845.
-(pdftex.def)             Requested size: 170.71652pt x 164.33533pt.
 
-Overfull \hbox (17.0716pt too wide) in paragraph at lines 845--845
+<use Diagrams/Presentation/acousticheadmodelold.png>
+Package pdftex.def Info: Diagrams/Presentation/acousticheadmodelold.png used on
+ input line 885.
+(pdftex.def)             Requested size: 170.71652pt x 147.53008pt.
+
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 885--885
 [][]  
  []
 
@@ -1528,15 +1480,14 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [30
 
- <./Diagrams/Presentation/acousticheadmodelold.png>]
+]
 File: Diagrams/Presentation/acousticheadmodelold.png Graphic file (type png)
-
-<use Diagrams/Presentation/acousticheadmodelold.png>
+ <use Diagrams/Presentation/acousticheadmodelold.png>
 Package pdftex.def Info: Diagrams/Presentation/acousticheadmodelold.png used on
- input line 845.
-(pdftex.def)             Requested size: 170.71652pt x 164.33533pt.
+ input line 885.
+(pdftex.def)             Requested size: 170.71652pt x 147.53008pt.
 
-Overfull \hbox (17.0716pt too wide) in paragraph at lines 845--845
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 885--885
 [][]  
  []
 
@@ -1548,13 +1499,14 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [31
 
 ]
-File: Diagrams/Presentation/acousticheadmodelold.png Graphic file (type png)
- <use Diagrams/Presentation/acousticheadmodelold.png>
-Package pdftex.def Info: Diagrams/Presentation/acousticheadmodelold.png used on
- input line 845.
-(pdftex.def)             Requested size: 170.71652pt x 164.33533pt.
+<Diagrams/Presentation/acousticheadmodel2.png, id=507, 1372.327pt x 1372.327pt>
+File: Diagrams/Presentation/acousticheadmodel2.png Graphic file (type png)
+<use Diagrams/Presentation/acousticheadmodel2.png>
+Package pdftex.def Info: Diagrams/Presentation/acousticheadmodel2.png used on i
+nput line 918.
+(pdftex.def)             Requested size: 170.71652pt x 170.70285pt.
 
-Overfull \hbox (17.0716pt too wide) in paragraph at lines 845--845
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 918--918
 [][]  
  []
 
@@ -1565,26 +1517,14 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [32
 
-]
-<Diagrams/Presentation/acousticheadmodel2.png, id=519, 1372.327pt x 1353.858pt>
-File: Diagrams/Presentation/acousticheadmodel2.png Graphic file (type png)
-<use Diagrams/Presentation/acousticheadmodel2.png>
-Package pdftex.def Info: Diagrams/Presentation/acousticheadmodel2.png used on i
-nput line 875.
-(pdftex.def)             Requested size: 170.71652pt x 168.4055pt.
-
-Overfull \hbox (17.0716pt too wide) in paragraph at lines 875--875
-[][]  
- []
-
-
+ <./Diagrams/Presentation/acousticheadmodel2.png>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [33
 
- <./Diagrams/Presentation/acousticheadmodel2.png>]
+]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
@@ -1592,61 +1532,45 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [34
 
 ]
+<Diagrams/Presentation/BoundaryConditions/velocity1.png, id=539, 1380.357pt x 3
+36.457pt>
+File: Diagrams/Presentation/BoundaryConditions/velocity1.png Graphic file (type
+ png)
+ <use Diagrams/Presentation/BoundaryConditions/velocity1.png>
+Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/velocity1.png
+ used on input line 993.
+(pdftex.def)             Requested size: 147.95424pt x 36.06061pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [35
 
-]
+ <./Diagrams/Presentation/BoundaryConditions/velocity1.png>]
+<Diagrams/Presentation/BoundaryConditions/velocity2.png, id=552, 1428.537pt x 3
+36.457pt>
+File: Diagrams/Presentation/BoundaryConditions/velocity2.png Graphic file (type
+ png)
+ <use Diagrams/Presentation/BoundaryConditions/velocity2.png>
+Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/velocity2.png
+ used on input line 993.
+(pdftex.def)             Requested size: 147.95424pt x 34.84387pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [36
 
-]
-<Diagrams/Presentation/BoundaryConditions/velocity1.png, id=562, 1330.571pt x 3
-36.457pt>
-File: Diagrams/Presentation/BoundaryConditions/velocity1.png Graphic file (type
- png)
- <use Diagrams/Presentation/BoundaryConditions/velocity1.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/velocity1.png
- used on input line 950.
-(pdftex.def)             Requested size: 147.95424pt x 37.41083pt.
-
-<Diagrams/Presentation/BoundaryConditions/velocity2.png, id=563, 1374.736pt x 3
-36.457pt>
-File: Diagrams/Presentation/BoundaryConditions/velocity2.png Graphic file (type
- png)
- <use Diagrams/Presentation/BoundaryConditions/velocity2.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/velocity2.png
- used on input line 950.
-(pdftex.def)             Requested size: 147.95424pt x 36.20949pt.
-
+ <./Diagrams/Presentation/BoundaryConditions/velocity2.png>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [37
 
- <./Diagrams/Presentation/BoundaryConditions/velocity1.png> <./Diagrams/Present
-ation/BoundaryConditions/velocity2.png>]
-File: Diagrams/Presentation/BoundaryConditions/velocity1.png Graphic file (type
- png)
-
-<use Diagrams/Presentation/BoundaryConditions/velocity1.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/velocity1.png
- used on input line 950.
-(pdftex.def)             Requested size: 147.95424pt x 37.41083pt.
-File: Diagrams/Presentation/BoundaryConditions/velocity2.png Graphic file (type
- png)
-
-<use Diagrams/Presentation/BoundaryConditions/velocity2.png>
-Package pdftex.def Info: Diagrams/Presentation/BoundaryConditions/velocity2.png
- used on input line 950.
-(pdftex.def)             Requested size: 147.95424pt x 36.20949pt.
-
+]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
@@ -1674,33 +1598,59 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [41
 
-]
+] (./final_pres2.toc)
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [42
 
-]
+] <Diagrams/geckohead1.png, id=644, 479.54156pt x 245.41687pt>
+File: Diagrams/geckohead1.png Graphic file (type png)
+
+<use Diagrams/geckohead1.png>
+Package pdftex.def Info: Diagrams/geckohead1.png used on input line 1165.
+(pdftex.def)             Requested size: 130.59912pt x 66.83638pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [43
 
-] (./final_pres2.toc)
+ <./Diagrams/geckohead1.png>]
+<Diagrams/Plots/tokayvibampfull.png, id=657, 3326.829pt x 1239.832pt>
+File: Diagrams/Plots/tokayvibampfull.png Graphic file (type png)
+
+<use Diagrams/Plots/tokayvibampfull.png>
+Package pdftex.def Info: Diagrams/Plots/tokayvibampfull.png used on input line 
+1202.
+(pdftex.def)             Requested size: 312.9803pt x 116.63124pt.
+
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 1202--1202
+ [] 
+ []
+
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [44
 
-] <Diagrams/geckohead1.png, id=674, 479.54156pt x 245.41687pt>
-File: Diagrams/geckohead1.png Graphic file (type png)
+ <./Diagrams/Plots/tokayvibampfull.png>]
+<Diagrams/Presentation/tokayipsivscontrafull.png, id=673, 6583.797pt x 2159.267
+pt>
+File: Diagrams/Presentation/tokayipsivscontrafull.png Graphic file (type png)
+ <use Diagrams/Presentation/tokayipsivscontrafull.png>
+Package pdftex.def Info: Diagrams/Presentation/tokayipsivscontrafull.png used o
+n input line 1221.
+(pdftex.def)             Requested size: 312.9803pt x 102.63214pt.
 
-<use Diagrams/geckohead1.png>
-Package pdftex.def Info: Diagrams/geckohead1.png used on input line 1120.
-(pdftex.def)             Requested size: 130.59912pt x 66.83638pt.
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 1221--1221
+ [] 
+ []
+
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
@@ -1708,17 +1658,17 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [45
 
- <./Diagrams/geckohead1.png>]
-<Diagrams/Plots/tokayvibampfull.png, id=684, 3326.829pt x 1239.832pt>
-File: Diagrams/Plots/tokayvibampfull.png Graphic file (type png)
+ <./Diagrams/Presentation/tokayipsivscontrafull.png>]
+<Diagrams/Presentation/directionplots.png, id=687, 2800.864pt x 3396.69pt>
+File: Diagrams/Presentation/directionplots.png Graphic file (type png)
 
-<use Diagrams/Plots/tokayvibampfull.png>
-Package pdftex.def Info: Diagrams/Plots/tokayvibampfull.png used on input line 
-1157.
-(pdftex.def)             Requested size: 312.9803pt x 116.63124pt.
+<use Diagrams/Presentation/directionplots.png>
+Package pdftex.def Info: Diagrams/Presentation/directionplots.png used on input
+ line 1261.
+(pdftex.def)             Requested size: 176.407pt x 213.8993pt.
 
-Overfull \hbox (5.69043pt too wide) in paragraph at lines 1157--1157
- [] 
+Overfull \hbox (7.39664pt too wide) in paragraph at lines 1261--1261
+[][]  
  []
 
 
@@ -1728,17 +1678,17 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [46
 
- <./Diagrams/Plots/tokayvibampfull.png>]
-<Diagrams/Presentation/tokayipsivscontrafull.png, id=696, 6583.797pt x 2159.267
-pt>
-File: Diagrams/Presentation/tokayipsivscontrafull.png Graphic file (type png)
- <use Diagrams/Presentation/tokayipsivscontrafull.png>
-Package pdftex.def Info: Diagrams/Presentation/tokayipsivscontrafull.png used o
-n input line 1176.
-(pdftex.def)             Requested size: 312.9803pt x 102.63214pt.
+ <./Diagrams/Presentation/directionplots.png>]
+<Diagrams/Presentation/directionplots2.png, id=700, 2800.864pt x 3396.69pt>
+File: Diagrams/Presentation/directionplots2.png Graphic file (type png)
 
-Overfull \hbox (5.69043pt too wide) in paragraph at lines 1176--1176
- [] 
+<use Diagrams/Presentation/directionplots2.png>
+Package pdftex.def Info: Diagrams/Presentation/directionplots2.png used on inpu
+t line 1261.
+(pdftex.def)             Requested size: 176.407pt x 213.8993pt.
+
+Overfull \hbox (7.39664pt too wide) in paragraph at lines 1261--1261
+[]  
  []
 
 
@@ -1748,69 +1698,29 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 
 [47
 
- <./Diagrams/Presentation/tokayipsivscontrafull.png>]
-<Diagrams/Presentation/directionplots.png, id=712, 2800.864pt x 3396.69pt>
-File: Diagrams/Presentation/directionplots.png Graphic file (type png)
-
-<use Diagrams/Presentation/directionplots.png>
-Package pdftex.def Info: Diagrams/Presentation/directionplots.png used on input
- line 1216.
-(pdftex.def)             Requested size: 176.407pt x 213.8993pt.
-
-Overfull \hbox (7.39664pt too wide) in paragraph at lines 1216--1216
-[][]  
- []
-
-
+ <./Diagrams/Presentation/directionplots2.png>]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [48
 
- <./Diagrams/Presentation/directionplots.png>]
-<Diagrams/Presentation/directionplots2.png, id=725, 2800.864pt x 3396.69pt>
-File: Diagrams/Presentation/directionplots2.png Graphic file (type png)
-
-<use Diagrams/Presentation/directionplots2.png>
-Package pdftex.def Info: Diagrams/Presentation/directionplots2.png used on inpu
-t line 1216.
-(pdftex.def)             Requested size: 176.407pt x 213.8993pt.
-
-Overfull \hbox (7.39664pt too wide) in paragraph at lines 1216--1216
-[]  
- []
-
-
+]
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
 [49
 
- <./Diagrams/Presentation/directionplots2.png>]
-Overfull \hbox (1.20033pt too wide) has occurred while \output is active
-[] 
- []
-
-[50
-
-]
-Overfull \hbox (1.20033pt too wide) has occurred while \output is active
-[] 
- []
-
-[51
-
-] <Diagrams/Plots/iLD/tokayiLDboth.png, id=761, 2975.115pt x 1217.348pt>
+] <Diagrams/Plots/iLD/tokayiLDboth.png, id=734, 2975.115pt x 1217.348pt>
 File: Diagrams/Plots/iLD/tokayiLDboth.png Graphic file (type png)
 
 <use Diagrams/Plots/iLD/tokayiLDboth.png>
 Package pdftex.def Info: Diagrams/Plots/iLD/tokayiLDboth.png used on input line
- 1273.
+ 1318.
 (pdftex.def)             Requested size: 312.9803pt x 128.0575pt.
 
-Overfull \hbox (5.69043pt too wide) in paragraph at lines 1273--1273
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 1318--1318
  [] 
  []
 
@@ -1819,74 +1729,74 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
-[52
+[50
 
  <./Diagrams/Plots/iLD/tokayiLDboth.png>]
-<Diagrams/Presentation/iLDspectrum.png, id=773, 3716.284pt x 2454.771pt>
+<Diagrams/Presentation/iLDspectrum.png, id=746, 3716.284pt x 2454.771pt>
 File: Diagrams/Presentation/iLDspectrum.png Graphic file (type png)
 
 <use Diagrams/Presentation/iLDspectrum.png>
 Package pdftex.def Info: Diagrams/Presentation/iLDspectrum.png used on input li
-ne 1294.
+ne 1339.
 (pdftex.def)             Requested size: 170.71652pt x 112.74478pt.
 
-Overfull \hbox (17.0716pt too wide) in paragraph at lines 1294--1294
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 1339--1339
 [][][][]  
  []
 
-<Diagrams/Presentation/iLDdirection.png, id=774, 1561.032pt x 2764.729pt>
+<Diagrams/Presentation/iLDdirection.png, id=747, 1561.032pt x 2764.729pt>
 File: Diagrams/Presentation/iLDdirection.png Graphic file (type png)
 
 <use Diagrams/Presentation/iLDdirection.png>
 Package pdftex.def Info: Diagrams/Presentation/iLDdirection.png used on input l
-ine 1294.
+ine 1339.
 (pdftex.def)             Requested size: 102.43008pt x 181.40114pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
-[53
+[51
 
  <./Diagrams/Presentation/iLDspectrum.png> <./Diagrams/Presentation/iLDdirectio
 n.png>]
-<Diagrams/Presentation/iTDspectrum.png, id=787, 3283.467pt x 2080.573pt>
+<Diagrams/Presentation/iTDspectrum.png, id=760, 3283.467pt x 2080.573pt>
 File: Diagrams/Presentation/iTDspectrum.png Graphic file (type png)
 
 <use Diagrams/Presentation/iTDspectrum.png>
 Package pdftex.def Info: Diagrams/Presentation/iTDspectrum.png used on input li
-ne 1317.
+ne 1362.
 (pdftex.def)             Requested size: 170.71652pt x 108.16183pt.
 
-Overfull \hbox (17.0716pt too wide) in paragraph at lines 1317--1317
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 1362--1362
 [][][][]  
  []
 
-<Diagrams/Presentation/iTDdirection.png, id=788, 862.422pt x 1387.584pt>
+<Diagrams/Presentation/iTDdirection.png, id=761, 862.422pt x 1387.584pt>
 File: Diagrams/Presentation/iTDdirection.png Graphic file (type png)
 
 <use Diagrams/Presentation/iTDdirection.png>
 Package pdftex.def Info: Diagrams/Presentation/iTDdirection.png used on input l
-ine 1317.
+ine 1362.
 (pdftex.def)             Requested size: 108.12054pt x 173.95572pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
-[54
+[52
 
  <./Diagrams/Presentation/iTDspectrum.png> <./Diagrams/Presentation/iTDdirectio
 n.png>]
-<Diagrams/Presentation/tokayregions.png, id=802, 2482.073pt x 1581.91pt>
+<Diagrams/Presentation/tokayregions.png, id=774, 2482.073pt x 1581.91pt>
 File: Diagrams/Presentation/tokayregions.png Graphic file (type png)
 
 <use Diagrams/Presentation/tokayregions.png>
 Package pdftex.def Info: Diagrams/Presentation/tokayregions.png used on input l
-ine 1336.
+ine 1381.
 (pdftex.def)             Requested size: 170.71652pt x 108.78984pt.
 
-Overfull \hbox (17.0716pt too wide) in paragraph at lines 1336--1336
+Overfull \hbox (17.0716pt too wide) in paragraph at lines 1381--1381
 [][]  
  []
 
@@ -1895,34 +1805,55 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
-[55
+[53
 
  <./Diagrams/Presentation/tokayregions.png>] (./final_pres2.toc)
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
-[56
+[54
 
-]
+] <Diagrams/Presentation/conclusion1.png, id=816, 1341.813pt x 1080.035pt>
+File: Diagrams/Presentation/conclusion1.png Graphic file (type png)
+
+<use Diagrams/Presentation/conclusion1.png>
+Package pdftex.def Info: Diagrams/Presentation/conclusion1.png used on input li
+ne 1412.
+(pdftex.def)             Requested size: 170.71652pt x 137.41011pt.
+
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
-[57
+[55
 
-] <Diagrams/geckowink.jpg, id=853, 529.98pt x 702.625pt>
+ <./Diagrams/Presentation/conclusion1.png>]
+File: Diagrams/Presentation/conclusion1.png Graphic file (type png)
+
+<use Diagrams/Presentation/conclusion1.png>
+Package pdftex.def Info: Diagrams/Presentation/conclusion1.png used on input li
+ne 1412.
+(pdftex.def)             Requested size: 170.71652pt x 137.41011pt.
+
+Overfull \hbox (1.20033pt too wide) has occurred while \output is active
+[] 
+ []
+
+[56
+
+] <Diagrams/geckowink.jpg, id=837, 529.98pt x 702.625pt>
 File: Diagrams/geckowink.jpg Graphic file (type jpg)
 
 <use Diagrams/geckowink.jpg>
-Package pdftex.def Info: Diagrams/geckowink.jpg used on input line 1354.
+Package pdftex.def Info: Diagrams/geckowink.jpg used on input line 1420.
 (pdftex.def)             Requested size: 92.1879pt x 122.21072pt.
 
 Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 [] 
  []
 
-[58
+[57
 
  <./Diagrams/geckowink.jpg>]
 \tf@nav=\write6
@@ -1934,59 +1865,60 @@ Overfull \hbox (1.20033pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `final_pres2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1357.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1357.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1423.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1423.
  (./final_pres2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1357.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1357.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1423.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1423.
 
 Package rerunfilecheck Info: File `final_pres2.out' has not changed.
-(rerunfilecheck)             Checksum: 3F472CD9AD03680407A6DE5CF9D7D1AF;761.
+(rerunfilecheck)             Checksum: 1444FBB27771F3A6FD006CD719EE2AA4;761.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1357.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1423.
  ) 
 Here is how much of TeX's memory you used:
- 20832 strings out of 493485
- 395436 string characters out of 3143526
- 482761 words of memory out of 3000000
- 23462 multiletter control sequences out of 15000+200000
- 20993 words of font info for 77 fonts, out of 3000000 for 9000
+ 20831 strings out of 493485
+ 395896 string characters out of 3143526
+ 481863 words of memory out of 3000000
+ 23463 multiletter control sequences out of 15000+200000
+ 19861 words of font info for 74 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,23n,55p,400b,1029s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pf
-b>
-Output written on final_pres2.pdf (58 pages, 8750451 bytes).
+ 49i,25n,55p,400b,1028s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on final_pres2.pdf (57 pages, 8727891 bytes).
 PDF statistics:
- 985 PDF objects out of 1000 (max. 8388607)
- 809 compressed objects within 9 object streams
- 151 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 971 PDF objects out of 1000 (max. 8388607)
+ 794 compressed objects within 8 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 
