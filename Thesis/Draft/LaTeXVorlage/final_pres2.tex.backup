@@ -79,6 +79,9 @@
 \setbeamercolor*{block body example}{fg= black,bg= blue!5}
 \setbeamercolor{frametitle}{fg=blue}
 \beamertemplatenavigationsymbolsempty
+
+\setbeamertemplate{section in toc}{$\bullet$ \normalsize\inserttocsection}
+\setbeamertemplate{subsection in toc}{\hspace*{9pt}\small$\bullet$ \inserttocsubsection\\}
 \makeatother
 
 \title{\Large Mechanical Processing in Internally Coupled Ears}
@@ -89,15 +92,15 @@
    \includegraphics[width=2cm]{Diagrams/tmplogo.jpg}
 }
 
-\AtBeginSection[]
-{
-  \begin{frame}<beamer>
-    \frametitle{Outline for Section \thesection}
-    \begin{multicols}{2}
-    \tableofcontents[currentsection,subsubsectionstyle=show/shaded]
-    \end{multicols}
-  \end{frame}
-}
+% \AtBeginSection[]
+% {
+%   \begin{frame}<beamer>
+%     \frametitle{Outline for Section \thesection}
+%     \begin{multicols}{2}
+%     \tableofcontents[currentsection,subsubsectionstyle=show/shaded]
+%     \end{multicols}
+%   \end{frame}
+% }
 
 \usefonttheme[onlymath]{serif}
 % \titlegraphic{\vspace{8cm}}
@@ -116,6 +119,12 @@
 
 \end{frame}
 
+  \begin{frame}<beamer>
+    \frametitle{Outline}
+    \begin{multicols}{2}
+    \tableofcontents
+    \end{multicols}
+  \end{frame}
 %\logo{\includegraphics[height=0.8cm]{Diagrams/T35logo2.png}\vspace{220pt}}
 
 \section{Introduction}
@@ -127,7 +136,7 @@
  
       \onslide<1>{\begin{column}{0.5\textwidth}
     \centering
-    \includegraphics[width = 1.5 cm]{Diagrams/Presentation/indepears.png}\\
+    \includegraphics<1>[width = 1.5 cm]{Diagrams/Presentation/indepears.png}\\
     \end{column}}
      
    \onslide<2>{\begin{column}{0.5\textwidth}
@@ -159,6 +168,7 @@
      \item[]
     \item[] Eustachian tubes generally very narrow.
      \item[] Effectively independent eardrum vibrations.
+     \item[$\bullet$] eg. Mammals.
      \end{itemize}
     \end{column}}
      
@@ -170,15 +180,16 @@
      \begin{itemize}
          \item[] Wide eustachian tubes open into the mouth cavity.
      \item[] Eardrums vibrations influence eachother.
+     \item[$\bullet$] eg. \textbf<2>{Lizards}, birds, frogs.
      \end{itemize}
     \end{column}
     
   \end{columns}
 \end{frame}
 
-\subsection{Hearing Cues}
+\subsection{Sound Localization}
 \begin{frame}[t]
- \frametitle{Binaural Hearing Cues}
+ \frametitle{Localization - Independent Ears}
  %Localization using frequency dependent phase and amplitude differences between the ears.
  %\vspace{\baselineskip}
   
@@ -219,9 +230,9 @@
     \small
      \begin{itemize}
 %      \item[]
-    \item[] Phase difference between the (pressure) \textbf{inputs} to the ears.
-    \item ITD
-    \item Effective when $\lambda\gg$head size.
+    \item Phase difference between the (pressure) inputs to the ears.
+    \item \textbf{\textcolor{blue}{I}}TD
+    \item Used when $\lambda\gg$head size.
      %\item[] Effectively independent eardrum vibrations.
      \end{itemize}
     \end{column}
@@ -230,9 +241,9 @@
     %\centering
     \small
      \begin{itemize}
-          \item[] Amplitude difference between the \textbf{inputs}.
-          \item ILD
-          \item Effective when $\lambda\sim$head size.
+          \item Amplitude difference between the inputs.
+          \item \textbf{\textcolor{blue}{I}}LD
+          \item Used when $\lambda\sim$head size.
      %\item[] Eardrums vibrations influence eachother.
      \end{itemize}
     \end{column}
@@ -284,8 +295,51 @@
 \end{frame}
 
 \begin{frame}[t]
- \frametitle{Binaural Hearing Cues contd.}
-  \begin{exampleblock}{}
+ \frametitle{Localization - Coupled Ears}
+     \onslide<1>{\begin{exampleblock}{Problems}
+% \begin{columns}
+%  
+%     \begin{column}{0.5\textwidth}
+%     %\centering
+%     \underline{\textbf{Issues}}
+% 
+%     \end{column}
+%      
+%     \begin{column}{0.5\textwidth}
+%     %\centering
+%     \underline{\textbf{Result}}
+%     \end{column}
+%     
+%   \end{columns}
+  
+    \begin{columns}
+ 
+     \begin{column}{0.5\textwidth}
+    \centering
+    \small
+     \begin{itemize}
+          \item Small heads.
+          \item Lower ``processing power''.
+     %\item[] Eardrums vibrations influence eachother.
+     \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.5\textwidth}
+    \centering
+    \small
+     \begin{itemize}
+%      \item[]
+    \item ITD$\neq$0, ``small''.
+    \item ILD$\approx$0.
+     %\item[] Effectively independent eardrum vibrations.
+     \end{itemize}
+    \end{column}
+     
+  \end{columns}
+  \end{exampleblock}} 
+  
+  \vfill
+  \onslide<2>{\begin{exampleblock}{}
 \begin{columns}
  
     \begin{column}{0.5\textwidth}
@@ -308,8 +362,9 @@
     \small
      \begin{itemize}
 %      \item[]
-    \item[] Phase difference between the eardrum \textbf{vibrations}.
+    \item[] Phase difference between \textbf{eardrums}.
     \item \textbf{\textcolor{blue}{i}}TD
+    \item \textbf{\textcolor{blue}{i}}TD$>$ITD.
      %\item[] Effectively independent eardrum vibrations.
      \end{itemize}
     \end{column}
@@ -318,59 +373,105 @@
     %\centering
     \small
      \begin{itemize}
-          \item[] Amplitude difference between the \textbf{vibrations}.
+          \item[] Amplitude difference between the \textbf{eardrums}.
           \item \textbf{\textcolor{blue}{i}}LD
-     %\item[] Eardrums vibrations influence eachother.
-     \end{itemize}
-    \end{column}
-    
-  \end{columns}
-  \end{exampleblock}  
-  \vfill
-  
-    \onslide<2->{\begin{exampleblock}{Coupled Ears}
-\begin{columns}
- 
-    \begin{column}{0.5\textwidth}
-    \centering
-    \underline{\textbf{Input}}
-
-    \end{column}
-     
-    \begin{column}{0.5\textwidth}
-    \centering
-    \underline{\textbf{Response}}
-    \end{column}
-    
-  \end{columns}
-  
-    \begin{columns}
- 
-    \begin{column}{0.5\textwidth}
-    \centering
-    \small
-     \begin{itemize}
-%      \item[]
-    \item ITD$\neq$0, ``small''.
-    \item ILD$\approx$0.
-     %\item[] Effectively independent eardrum vibrations.
-     \end{itemize}
-    \end{column}
-     
-    \begin{column}{0.5\textwidth}
-    \centering
-    \small
-     \begin{itemize}
-          \item \textbf{\textcolor{blue}{i}}TD$>$ITD.
           \item \textbf{\textcolor{blue}{i}}LD$>$0.
      %\item[] Eardrums vibrations influence eachother.
      \end{itemize}
     \end{column}
     
   \end{columns}
-  \end{exampleblock}} 
+  \end{exampleblock}}
 \end{frame}
   
+% \begin{frame}[t]
+%  \frametitle{Localization - Coupled Ears}
+%   \begin{exampleblock}{}
+% \begin{columns}
+%  
+%     \begin{column}{0.5\textwidth}
+%     \centering
+%     \underline{\textbf{\textcolor{blue}{Internal} Time Difference}}
+% 
+%     \end{column}
+%      
+%     \begin{column}{0.5\textwidth}
+%     \centering
+%     \underline{\textbf{\textcolor{blue}{Internal} Level Difference}}
+%     \end{column}
+%     
+%   \end{columns}
+%   
+%     \begin{columns}
+%  
+%     \begin{column}{0.5\textwidth}
+%     %\centering
+%     \small
+%      \begin{itemize}
+% %      \item[]
+%     \item[] Phase difference between the eardrum \textbf{vibrations}.
+%     \item \textbf{\textcolor{blue}{i}}TD
+%      %\item[] Effectively independent eardrum vibrations.
+%      \end{itemize}
+%     \end{column}
+%      
+%     \begin{column}{0.5\textwidth}
+%     %\centering
+%     \small
+%      \begin{itemize}
+%           \item[] Amplitude difference between the \textbf{vibrations}.
+%           \item \textbf{\textcolor{blue}{i}}LD
+%      %\item[] Eardrums vibrations influence eachother.
+%      \end{itemize}
+%     \end{column}
+%     
+%   \end{columns}
+%   \end{exampleblock}  
+%   \vfill
+%   
+%     \onslide<2->{\begin{exampleblock}{Coupled Ears}
+% \begin{columns}
+%  
+%     \begin{column}{0.5\textwidth}
+%     \centering
+%     \underline{\textbf{Input}}
+% 
+%     \end{column}
+%      
+%     \begin{column}{0.5\textwidth}
+%     \centering
+%     \underline{\textbf{Response}}
+%     \end{column}
+%     
+%   \end{columns}
+%   
+%     \begin{columns}
+%  
+%     \begin{column}{0.5\textwidth}
+%     \centering
+%     \small
+%      \begin{itemize}
+% %      \item[]
+%     \item ITD$\neq$0, ``small''.
+%     \item ILD$\approx$0.
+%      %\item[] Effectively independent eardrum vibrations.
+%      \end{itemize}
+%     \end{column}
+%      
+%     \begin{column}{0.5\textwidth}
+%     \centering
+%     \small
+%      \begin{itemize}
+%           \item \textbf{\textcolor{blue}{i}}TD$>$ITD.
+%           \item \textbf{\textcolor{blue}{i}}LD$>$0.
+%      %\item[] Eardrums vibrations influence eachother.
+%      \end{itemize}
+%     \end{column}
+%     
+%   \end{columns}
+%   \end{exampleblock}} 
+% \end{frame}
+%   
 % \begin{frame}[t]
 %  \begin{exampleblock}{Advantages of Coupled Ears}
 %  \begin{itemize}
@@ -384,20 +485,30 @@
 
 \begin{frame}[t]
  \frametitle{ICE Model}
-\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+
+\begin{exampleblock}{\textbf{\textcolor{red}{I}}nternally \textbf{\textcolor{red}{C}}oupled \textbf{\textcolor{red}{E}}ars}
+ Aim:
  \begin{itemize}
-  \item An extension of the model first presented by Vossen et al (2010).
-  \item Circular eardrums connected by a cylindrical cavity.
+  \item Accurately reproduce the direction and frequency dependence.
+  \item[]
+  \item Analytically tractable.
+ \end{itemize}
+\end{exampleblock} 
+ \onslide<2->{
+
+ \vfill
+ \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ Solution:
+ \begin{itemize}
+%   \item An extension of the model first presented by Vossen et al (2010).
+%   \item[]
+  \item Circular eardrums. 
+  \item[]
+  \item Cylindrical mouth cavity.
  \end{itemize}
 
-\end{variableblock}
-\vfill
-\begin{exampleblock}{}
- \onslide<2->{\begin{itemize}
-  \item The Aim is to accurately reproduce the direction and frequency dependence of the system.
- \end{itemize}}
+\end{variableblock}}
 
-\end{exampleblock}
 \end{frame}
 
 \subsection{Mouth Cavity}
@@ -417,7 +528,7 @@
  \begin{column}{0.5\textwidth}
    \onslide<1->{
    \footnotesize
-    \underline{\textbf{Previous Model}}\\
+    \underline{\textbf{Previous Model}}$^a$\\
     \centering
     \includegraphics[width = 4 cm]{Diagrams/Presentation/oldCylinder.png}\\
     \small
@@ -426,16 +537,20 @@
      \item[] $a_{\mathrm{tymp}}$ fixed.
      \item[] $V_{\mathrm{cyl}}=\pi a^2_{\mathrm{tymp}}L$
     \end{itemize}
-    \end{exampleblock}}
+    \end{exampleblock}
+    
+    \flushleft
+    $^a$\footnotesize{Vossen et al (2010)}}
 
     \end{column}
     
  \begin{column}{0.5\textwidth}
-    \only<2->{
+    \onslide<2->{
         \footnotesize
     \underline{\textbf{Our Model}}\\
     \centering
-   \includegraphics[width = 4 cm]{Diagrams/Presentation/newCylinder.png}\\
+   \includegraphics<2>[width = 4 cm]{Diagrams/Presentation/newCylinder.png}
+   
     \small
     \begin{exampleblock}{ }
     \begin{itemize}
@@ -449,20 +564,28 @@
 \end{frame}
 
 
-\subsubsection{Pressure Derivation}
+\subsubsection{Cavity Pressure}
 \begin{frame}[t]
-\frametitle{Cavity Pressure}
+\frametitle{Cavity Pressure - $p(x,r,\phi;t)$}
 \begin{exampleblock}{3D Wave Equation}
-\begin{equation*}\label{pressurewaveeqn}
-\begin{split}
- \frac{1}{c^2}\partial^2_t p(x,r,\phi,t)=\frac{1}{r}\frac{\partial}{\partial r}&\left(r\frac{\partial p(x,r,\phi,t)}{\partial r}\right)
- \\&+\frac{1}{r^2}\frac{\partial^2 p(x,r,\phi,t)}{\partial \phi^2}
- +\frac{\partial p(x,r,\phi,t)}{\partial x^2}
- \end{split}
+\begin{equation*}
+% \begin{split}
+ \frac{1}{c^2}\partial^2_t p=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial p}{\partial r}\right)+\frac{1}{r^2}\frac{\partial^2 p}{\partial \phi^2}
+ +\frac{\partial p}{\partial x^2}
+%  \end{split}
 \end{equation*}
+
+\textcolor{blue}{Flow Velocity:}
+\begin{equation*}
+\dot{\vec{v}}(x,r,\phi;t)=\frac{1}{\rho}\nabla p
+ \end{equation*}
 \end{exampleblock}
-\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
- Solve using the separation ansatz \[p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}.\]
+
+\vfill
+\begin{variableblock}{Separation Ansatz}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+\begin{equation*}
+ p(x,r,\phi,t)=f(x)g(r)h(\phi)e^{j\omega t}
+ \end{equation*}
 \end{variableblock}
 
 % Subject to the no-penetration boundary condition at all solid boundaries.
@@ -520,6 +643,7 @@
  \begin{equation*}
  \begin{split}
   &g(r) = J_q(\nu r)\\
+  &\\
   &\nu^2=k^2-\zeta^2
   \end{split}
  \end{equation*}
@@ -542,8 +666,8 @@
  \begin{columns}
  \begin{column}{.65\textwidth}
 \begin{align*}
-&j\omega\rho\mathbf{v}=\nabla p(x,r,\phi;t)\\
-&\mathbf{n_r}.\left.\nabla p\right|_{r=a_{\mathrm{cyl}}}\equiv\left.\frac{\partial g}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0\\
+&\mathbf{n_r}.\left.\vec{v}\right|_{r=a_{\mathrm{cyl}}}\equiv\left.\frac{\partial g}{\partial r}\right|_{r=a_{\mathrm{cyl}}}=0\\
+&\\
 &\Rightarrow g(r)=J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})
 \end{align*}
 \end{column}
@@ -560,7 +684,7 @@
  \begin{column}{.4\textwidth}
 \begin{itemize}
  \centering
- \item[] $\nu_{\mathrm{qs}}$ - zeros of $J^\prime_q$.
+ \item[] $\nu_{\mathrm{qs}}$ - extrema of $J_q$.
  \item[] $\nu_{\mathrm{00}}$=0.
  \end{itemize}
  \end{column}
@@ -599,15 +723,51 @@
 
 \begin{frame}[t]
 \frametitle{General Solution}
- \onslide<1>{\begin{exampleblock}{Pressure Modes}
-  \begin{align*}
-   &p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]p_{\mathrm{qs}}(r,\phi)e^{j\omega t}\\
-   &\nonumber\\
-   &p_{\mathrm{qs}}(r,\phi)=\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})\nonumber\\
-   &\nonumber\\
+\begin{exampleblock}{Pressure Modes}
+%   \begin{equation*}
+%    &p_{\mathrm{qs}}(r,\phi)=\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})\nonumber\\
+%    &\nonumber\\
+%    &p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]p_{\mathrm{qs}}(r,\phi)e^{j\omega t}\\
+%    %&\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}\nonumber
+%   \end{equation*}
+\begin{columns}
+\begin{column}{.4\textwidth}
+%\begin{center}
+ \begin{tabular}{cc}
+ %\centering
+  \includegraphics<1->[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/presmode00.png} & \includegraphics<1->[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/presmode11.png} \\
+ \includegraphics<1->[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/presmode21.png} &  \includegraphics<1->[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/presmode02.png}
+\end{tabular}
+%\end{center}
+\end{column}
+
+ \begin{column}{.6\textwidth}
+
+ \begin{itemize}
+    \item<1>[] $p_{\mathrm{qs}}(r,\phi)=\cos q\phi J_q(\nu_{\mathrm{qs}}r/a_{\mathrm{cyl}})$
+   \item[]
+   %\vspace{4pt}
+   
+   \item<1>[] $f_{\mathrm{qs}}(x)=A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}$
+   \item[]
+\item<2>[] $\int dS p_{\mathrm{qs}}\neq0$ iff $q=0,\ s=0$
+\item[]
+\item<2>[] 	$\int dS p_{\mathrm{qs}}p_{\mathrm{mn}}=\delta_{qm}\delta_{sn}$
+\end{itemize}
+   \end{column}
+
+\end{columns}
    %&\zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}\nonumber
-  \end{align*}
- \end{exampleblock}}
+
+% \begin{tabular}{cc}
+%   \includegraphics<1>[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/presmode00.png} & \includegraphics<1>[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/presmode11.png} \\
+%  \includegraphics<1>[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/presmode21.png} &  \includegraphics<1>[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/presmode02.png}
+% \end{tabular}
+
+%$p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}f_{\mathrm{qs}}(x)p_{\mathrm{qs}}(r,\phi)e^{j\omega t}$
+% $p(x,r,\phi,t)=\displaystyle\sum^{\infty}_{q=0,s=0}\left[A_{\mathrm{qs}}e^{j\zeta_{\mathrm{qs}}x}+B_{\mathrm{qs}}e^{-j\zeta_{\mathrm{qs}}x}\right]p_{\mathrm{qs}}(r,\phi)e^{j\omega t}$
+
+ \end{exampleblock}
 % \onslide<2>{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
 %  \begin{equation*}
 %    \zeta_{\mathrm{qs}}=\sqrt{k^2-\nu^2_{\mathrm{qs}}/a^2_{\mathrm{cyl}}}\nonumber
@@ -643,7 +803,7 @@
 \small
 \begin{itemize}
       \item[] Extracolumella (dark) - \textcolor{red}{rigid}, \textcolor{red}{stationary}.
-      \item[] Tympanum - \textcolor{blue}{linear elastic}.
+      \item[] Membrane - \textcolor{blue}{linear elastic}.
       \item[] Clamped at boundaries ($r=a_{\mathrm{tymp}}$, $\phi=\beta,\ 2\pi-\beta$)
 \end{itemize}
 
@@ -656,23 +816,52 @@
 
 \begin{frame}[t]
  \frametitle{Membrane Vibrations}
-\begin{exampleblock}{Membrane EOM}
+\onslide<1>{\begin{exampleblock}{Membrane Displacement - $u(r,\phi;t)$}
 
-\begin{equation*}\label{membraneequation1}
-\begin{split}
- -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
- & \frac{1}{\rho_m d}\Psi(r,\phi;t)
- \end{split}
+\begin{equation*}
+%\begin{split}
+ -\partial^2_tu-2\textcolor{red}{\alpha}\partial_t u+\textcolor{blue}{c}^2_{\textcolor{blue}{m}} \Delta_{(2)}u=\frac{1}{\textcolor{red}{\rho_m} \textcolor{blue}{d}}\Psi(r,\phi;t)
+ %\end{split}
 \end{equation*}
- \end{exampleblock}
-
-\begin{variableblock}{Membrane parameters}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \end{exampleblock}}
+\vfill
+\begin{variableblock}{Membrane Parameters}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+\begin{center}
   \begin{tabular}{l l}
-    $\alpha$ - damping coefficient, & $c_M$ - propagation velocity\\
+    $\textcolor{red}{\alpha}$ - damping coefficient, &  $\textcolor{blue}{c_m}$ - propagation velocity\\
     \hspace{1pt}\\
-    $\rho_m$ - density, & $d$ - thickness.
+    $\textcolor{red}{\rho_m}$ - density, & $\textcolor{blue}{d}$ - thickness.
   \end{tabular}
- \end{variableblock}
+\end{center}
+\end{variableblock}
+% \begin{columns}
+% \begin{column}{\textwidth}
+% \begin{variableblock}{Membrane Parameters}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+%   \begin{tabular}{l l}
+%     $\textcolor{red}{\alpha}$ - damping coefficient, &  $\textcolor{blue}{c_m}$ - propagation velocity\\
+%     \hspace{1pt}\\
+%     $\textcolor{red}{\rho_m}$ - density, & $\textcolor{blue}{d}$ - thickness.
+%   \end{tabular}
+%   \end{variableblock}
+% \onslide<1>{\begin{variableblock}{Membrane Parameters}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+%   \begin{tabular}{l}
+%     $\textcolor{red}{\alpha}$ - damping coefficient\\
+%     \hspace{2pt}\\
+%     $\textcolor{blue}{c_m}$ - propagation velocity\\
+%     \hspace{2pt}\\
+%     $\textcolor{red}{\rho_m}$ - density\\
+%     \hspace{2pt}\\
+%     $\textcolor{blue}{d}$ - thickness.
+%   \end{tabular}
+%  \end{variableblock}}
+% \end{column}
+% \begin{column}{.5\textwidth}
+%  \onslide<2>{\begin{variableblock}{Separation Ansatz}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+%  $u(r,\phi;t)=f(r)g(\phi)h(t)\nonumber$
+% % Same set of equations as in the pressure case.
+% \end{variableblock}}
+% \end{column}
+% \end{columns}
 
 \end{frame}
 
@@ -682,7 +871,7 @@
 % 
 % \begin{equation*}\label{membraneequation1}
 % \begin{split}
-%  -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_M\Delta_{(2)}&u(r,\phi;t)=\\ 
+%  -\partial^2_tu(r,\phi;t)-2\alpha\partial_t u(r,\phi;t)+c^2_m\Delta_{(2)}&u(r,\phi;t)=\\ 
 %  & \frac{1}{\rho_m d}\Psi(r,\phi;t)
 %  \end{split}
 % \end{equation*}
@@ -698,7 +887,7 @@
 %  \begin{align*}
 %    \frac{d^2 g(\phi)}{d\phi^2}+\kappa^2g(\phi)&=0\\
 %    \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f(r)}{\partial r}\right)+\left[\mu^2-\frac{\kappa^2}{r^2}\right]f(r)&=0\\
-%  \frac{d^2 h(t)}{dt^2}+c^2_M\mu^2h(t)&=0
+%  \frac{d^2 h(t)}{dt^2}+c^2_m\mu^2h(t)&=0
 % \end{align*}
 % \end{exampleblock}
 \vfill
@@ -764,7 +953,7 @@
 
 \begin{frame}[t]
  \frametitle{}
- \onslide<1->{\begin{exampleblock}{Free Membrane Eigenmodes - $u_{\mathrm{mn}}(r,\phi)$}
+ \onslide<1>{\begin{exampleblock}{Free Membrane Eigenmodes - $u_{\mathrm{mn}}(r,\phi)$}
 % \begin{columns}
 %  \begin{column}{.2\textwidth}
 %  \centering
@@ -779,26 +968,49 @@
 % 
 % \end{columns}
 %$u_{\mathrm{mn}}(r,\phi)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{\mathrm{mn}} r)$
+\begin{columns}
+\begin{column}{.6\textwidth}
 \begin{center}
+
+%\begin{overlayarea}{\textwidth}{1cm}
 \begin{tabular}{cc}
-  \includegraphics[width = 2.3 cm]{Diagrams/Presentation/BoundaryConditions/membmode1.png} & \includegraphics[width = 2.3 cm]{Diagrams/Presentation/BoundaryConditions/membmode2.png} \\
- \includegraphics[width = 2.3 cm]{Diagrams/Presentation/BoundaryConditions/membmode3.png} &  \includegraphics[width = 2.3 cm]{Diagrams/Presentation/BoundaryConditions/membmode4.png}
+  \includegraphics<1>[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/membmode1.png} & \includegraphics<1>[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/membmode2.png} \\
+ \includegraphics<1>[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/membmode3.png} &  \includegraphics<1>[width = 2.2 cm]{Diagrams/Presentation/BoundaryConditions/membmode4.png}
+\end{tabular}
+%\end{overlayarea}
+\end{center}
+\end{column}
+\begin{column}{.4\textwidth}
+\begin{center}
+\begin{tabular}{l}
+$\omega_{\mathrm{mn}}=c_m\mu_{\mathrm{mn}}$\\
+\hspace{1pt} \\
+$h(t)=\mathrm{exp}\left(j\omega_{\mathrm{mn}}t\right)$\\
+\hspace{1pt} \\
+$\int dS u_{\mathrm{kl}}u_{\mathrm{mn}}=\delta_{km}\delta_{ln}$
 \end{tabular}
 \end{center}
-Eigenfrequency: $\omega_{\mathrm{mn}}=c_M\mu_{\mathrm{mn}}$
-\vspace{2pt}
-
-$u_{\mathrm{mn}}$: Orthogonal basis.
+\end{column}
+\end{columns}
 %                 \begin{equation*}
 %   &u_{\mathrm{free}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}C_\mathrm{mn}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t}\\
-%   &\mbox{where, }\omega_{\mathrm{mn}}=c_M\mu_{\mathrm{mn}}\nonumber
+%   &\mbox{where, }\omega_{\mathrm{mn}}=c_m\mu_{\mathrm{mn}}\nonumber
 %   \end{equation*}
              \end{exampleblock}}
+             \vfill
+             \onslide<2>{\begin{variableblock}{Damped: $\alpha\neq0$}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+			  \begin{align*}
+                          h(t)&=\mathrm{exp}\left(-\alpha t+j\widetilde{\omega}_\mathrm{mn}t\right)\\
+                          \mbox{}\\
+                          \widetilde{\omega}_\mathrm{mn}&=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}
+                          \end{align*}
+                         \end{variableblock}}
+
 %  \onslide<1->{\begin{exampleblock}{Free eigenmodes}
 %   \begin{align*}
 %   &u_{\mathrm{mn}}(r,\phi)=\sin \kappa(\phi-\beta) J_\kappa(\mu_{\mathrm{mn}} r)\\
 %   &u_{\mathrm{free}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}C_\mathrm{mn}u_{\mathrm{mn}}(r,\phi)e^{j\omega_{\mathrm{mn}} t}\\
-%   &\mbox{where, }\omega_{\mathrm{mn}}=c_M\mu_{\mathrm{mn}}\nonumber
+%   &\mbox{where, }\omega_{\mathrm{mn}}=c_m\mu_{\mathrm{mn}}\nonumber
 %   \end{align*}
 %  \end{exampleblock}}
 % \onslide<2->{\begin{exampleblock}{Damped membrane}
@@ -814,11 +1026,13 @@ $u_{\mathrm{mn}}$: Orthogonal basis.
   \begin{equation*}
   u_{\mathrm{ss}}(r,\phi;t)=:\displaystyle\sum^\infty_{m=0,n=1}\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
   \end{equation*}
-  Substitute $u_{\mathrm{ss}}$ in Membrane EOM.
  \end{exampleblock}}
+ \vfill
  \onslide<2->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+   Substitute $u_{\mathrm{ss}}$ in Membrane equation.
                \begin{align*}
                &\textcolor{red}{C_{\mathrm{mn}}}=\frac{p\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\\
+               &\\
                 &\Omega_{\mathrm{mn}}=\rho_M d \left[(\omega^2-\omega^2_{\mathrm{mn}})-2j\alpha\omega\right]\nonumber
                \end{align*}
 
@@ -827,28 +1041,29 @@ $u_{\mathrm{mn}}$: Orthogonal basis.
 \end{frame}
 \begin{frame}[t]
 \frametitle{Forced Vibrations contd.}
- \begin{exampleblock}{Transient Solution}
+ \onslide<1>{\begin{exampleblock}{Transient Solution}
 Same as the solution for a free damped membrane
               \begin{equation*}
                u_{\mathrm{t}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\widetilde{\omega}_{\mathrm{mn}} t-\alpha t}
                \end{equation*}
-$\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
+%$\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
 \vspace{2pt}
 
-\noindent For $u(t=0)=0$, $\widetilde{C}_{\mathrm{mn}}=-C_{\mathrm{mn}}$.
+\noindent $u(r,\phi;0)=0 \Rightarrow\ \widetilde{C}_{\mathrm{mn}}=-C_{\mathrm{mn}}$.
 
-\end{exampleblock}
+\end{exampleblock}}
+\vfill
 \onslide<2->{\begin{variableblock}{Steady State Approximation}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
 \noindent $u_{\mathrm{t}}\rightarrow 0$ exponentially as $t\rightarrow\infty$.
 
-\centering $\textcolor{red}{u\approx u_{\mathrm{ss}}}$.
+\centering $\textcolor{red}{u\approx u_{\mathrm{ss}}}$
 \end{variableblock}}
 
 \end{frame}
 
 \subsection{Acoustic Head Model}
 \begin{frame}[t]
- \frametitle{Acoustic Head Model}
+ \frametitle{Acoustic Head Model - previous}
  \begin{columns}
      \begin{column}{.5\textwidth}
     \small
@@ -865,7 +1080,9 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
       \item<2> $|p_0|=|p_L|$.
       \item<2> Phase difference - $\Delta=kL\sin\theta$.
       \item[]
-      \item<3>[$\bullet$] $p_0=pe^{j\omega t - \frac{1}{2}kL\sin\theta}$\\ $p_L=pe^{j\omega t +\frac{1}{2}kL\sin\theta}$
+       \item<3>[$\bullet$] $p_0=\mbox{p}\mathrm{ exp}\left(- j\Delta/2\right)$\\ $p_L=\mbox{p}\mathrm{ exp}\left(j\Delta/2\right)$
+      %\item[]
+      \item<3>[$\bullet$] ILD=0, ITD=L/c
       \end{itemize}
 
     \end{column}
@@ -883,7 +1100,7 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
 \end{frame}
 
 \begin{frame}[t]
- \frametitle{Acoustic Head Model}
+ \frametitle{Acoustic Head Model - new}
  \begin{columns}
      \begin{column}{.5\textwidth}
     \small
@@ -896,11 +1113,11 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
      \begin{itemize}
       \item[$\bullet$] $|p_0|=|p_L|$.
       \item[]
-      \item Increased  phase difference due to diffraction - $\Delta=\frac{3}{4}kL\sin\theta$.
+      \item Increased  phase difference due to diffraction - $\Delta=\frac{3}{2}kL\sin\theta$.
       \item[]
-      \item[$\bullet$] $p_0=pe^{j\omega t - \frac{3}{4}kL\sin\theta}$\\ $p_L=pe^{j\omega t + \frac{3}{4}kL\sin\theta}$
-      \item[]
-      \item ILD=0, ITD=$\frac{3}{4}$L/c
+      \item[$\bullet$] $p_0=\mbox{p}\mathrm{ exp}\left(-j\Delta/2\right)$\\ $p_L=\mbox{p}\mathrm{ exp}\left(j\Delta/2\right)$
+  %    \item[]
+      \item[$\bullet$] ILD=0, ITD=$\frac{3}{2}$L/c
       \end{itemize}
     \end{column}
     
@@ -925,12 +1142,17 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
  \end{equation*}
  \end{variableblock}
  }
-
+\vfill
  \onslide<2->{\begin{exampleblock}{Membrane Equations}
+%   \begin{align*}
+%  &\displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^0_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_0e^{j\omega t}-p(0,r,\phi;t)\\
+%  &\displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^L_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_{L}e^{j\omega t}-p(L,r,\phi;t)
+%  \end{align*}
   \begin{align*}
- \displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^0_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_0e^{j\omega t}-p(0,r,\phi;t)\\
- \displaystyle\sum^{\infty}_{m=0,n=1}\Omega_{\mathrm{mn}}C^L_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}=p_{L}e^{j\omega t}-p(L,r,\phi;t)
+ -\partial^2_tu_0-2\alpha\partial_t u_0+c^2_m \Delta_{(2)}u_0&=\frac{1}{\rho_m d}\left[p_0e^{j\omega t}-p(0,r,\phi;t)\right]\\
+ -\partial^2_tu_L-2\alpha\partial_t u_L+c^2_m \Delta_{(2)}u_L&=\frac{1}{\rho_m d}\left[p_Le^{j\omega t}-p(L,r,\phi;t)\right]
  \end{align*}
+ %-\partial^2_tu-2\textcolor{red}{\alpha}\partial_t u+\textcolor{blue}{c}^2_{\textcolor{blue}{m}} \Delta_{(2)}u=\frac{1}{\textcolor{red}{\rho_m} \textcolor{blue}{d}}\Psi(r,\phi;t)
 \end{exampleblock}}
 
 \end{frame}
@@ -966,59 +1188,68 @@ $\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
  
    \begin{column}{.5\textwidth}
    %\centering
-\includegraphics[width=5.2cm]{Diagrams/Presentation/BoundaryConditions/velocity1.png}
+\includegraphics<1>[width=5.2cm]{Diagrams/Presentation/BoundaryConditions/velocity1.png}
  \end{column}
  \end{columns}
 
  \end{exampleblock}}
  
- \onslide<2>{\begin{variableblock}{Approximate -  $S^{0/L}(t)=\vcentcolon(\pi a^2_\mathrm{cyl})^{-1}\int dSU_{0/L}$}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \onslide<2>{\begin{variableblock}{Approximate -  $S^{0/L}(t)=\vcentcolon(\pi a^2_\mathrm{cyl})^{-1}\int dSu_{0/L}$}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
  
    \begin{columns}
   \begin{column}{.5\textwidth}
   \begin{align*}
- \mathbin{\textcolor{red}{S^0}}&=-\frac{1}{j\omega}v_x(0,r,\phi;t)\nonumber\\
- \mathbin{\textcolor{red}{S^L}}&=\frac{1}{j\omega}v_x(L,r,\phi;t)\nonumber
+ \mathbin{\textcolor{blue}{S^0}}&=-\frac{1}{j\omega}v_x(0,r,\phi;t)\nonumber\\
+ \mathbin{\textcolor{blue}{S^L}}&=\frac{1}{j\omega}v_x(L,r,\phi;t)\nonumber
  \end{align*}
  \end{column}
  
    \begin{column}{.5\textwidth}
    %\centering
-\includegraphics[width=5.2cm]{Diagrams/Presentation/BoundaryConditions/velocity2.png}
+\includegraphics<2>[width=5.2cm]{Diagrams/Presentation/BoundaryConditions/velocity2.png}
  \end{column}
  \end{columns}
   \end{variableblock}}
 \end{frame}
-
-\begin{frame}
- \frametitle{Boundary Conditions}
-\begin{exampleblock}{}
-Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}\]
-
-\begin{align*}
- A_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{-jkL}+S^L\right)\\ 
- B_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{jkL}+S^L\right)
-\end{align*}
-
- \end{exampleblock}
-
-\end{frame}
 \subsubsection{Solution}
 \begin{frame}
- \onslide<1>{\begin{exampleblock}{Coupled Equations}
+ \frametitle{Average Velocity}
+\begin{exampleblock}{}
+%$\int dS\mbox{p}_{qs}=0\Rightarrow$ 
+Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\right]e^{j\omega t}\]
+
  \begin{align*}
- &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{0}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{0}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\tan kL}+\frac{S^L}{\sin kL}\right)\nonumber\\
- &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{L}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\sin kL}+\frac{S^L}{\tan kL}\right)\nonumber
+ &\left(\Lambda-\frac{\rho\omega^2}{k\tan kL}\right)S^0-\frac{\rho\omega^2}{k\sin kL}S^L=p_{0}\\
+ &\left(\Lambda-\frac{\rho\omega^2}{k\tan kL}\right)S^L-\frac{\rho\omega^2}{k\sin kL}S^0=p_{L}
 \end{align*}
+% \begin{align*}
+%  A_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{-jkL}+S^L\right)\\ 
+%  B_{00}&=-\frac{\rho\omega^2}{2 k\sin kL}\left(S^0e^{jkL}+S^L\right)
+% \end{align*}
+\end{exampleblock}
+ 
+  \onslide<2->{\begin{exampleblock}{}
+\[\frac{1}{\Lambda}=\frac{1}{\pi a^2_{\mathrm{cyl}}}\displaystyle\sum^\infty_{m=0,n=1}\frac{\left(\int dS u_{\mathrm{mn}}\right)^2}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\]
 \end{exampleblock}}
 
-\onslide<2>{\begin{variableblock}{Decoupling - $\pm$}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-\begin{align*}
- &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{+}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\\
- &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{-}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}
-\end{align*}
-  \end{variableblock}}
+
 \end{frame}
+
+% \begin{frame}
+%  \onslide<1>{\begin{exampleblock}{Coupled Equations}
+%  \begin{align*}
+%  &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{0}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{0}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\tan kL}+\frac{S^L}{\sin kL}\right)\nonumber\\
+%  &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{L}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{L}+\frac{\rho\omega^2}{k}\left(\frac{S^0}{\sin kL}+\frac{S^L}{\tan kL}\right)\nonumber
+% \end{align*}
+% \end{exampleblock}}
+% 
+% \onslide<2>{\begin{variableblock}{Decoupling - $\pm$}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+% \begin{align*}
+%  &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{+}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{+}+\frac{\rho\omega^2}{k}S^+\cot \frac{kL}{2}\\
+%  &\displaystyle\sum^\infty_{m=0,n=1}\Omega_{\mathrm{mn}}C^{-}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)=p_{-}-\frac{\rho\omega^2}{k}S^-\tan \frac{kL}{2}
+% \end{align*}
+%   \end{variableblock}}
+% \end{frame}
 % \begin{frame}
 %   \begin{exampleblock}{Decoupled Equations}
 % \begin{align*}
@@ -1036,34 +1267,45 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 %   \end{variableblock}
 % \end{frame}
 
-\begin{frame}
- \begin{exampleblock}{Decoupled Equations contd.}
-  \begin{equation*}
- S^{+}=\frac{p_L+p_0}{\Lambda+\Gamma_+}\qquad S^{-}=\frac{p_L-p_0}{\Lambda+\Gamma_-}
-\end{equation*}
- \end{exampleblock}
- \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
- \begin{align*}
- \Gamma_+ = &-\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\\
-&\frac{1}{\Lambda}=\frac{1}{\pi a^2_{\mathrm{cyl}}}\displaystyle\sum^\infty_{m=0,n=1}\frac{\left(\int dS u_{\mathrm{mn}}\right)^2}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}
-\end{align*}
-\end{variableblock}
-\end{frame}
+% \begin{frame}
+%  \begin{exampleblock}{Decoupled Equations contd.}
+%   \begin{equation*}
+%  S^{+}=\frac{p_L+p_0}{\Lambda+\Gamma_+}\qquad S^{-}=\frac{p_L-p_0}{\Lambda+\Gamma_-}
+% \end{equation*}
+%  \end{exampleblock}
+%  \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+%  \begin{align*}
+%  \Gamma_+ = &-\frac{\rho\omega^2}{k}\cot \frac{kL}{2},\qquad \Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}\\
+% &\frac{1}{\Lambda}=\frac{1}{\pi a^2_{\mathrm{cyl}}}\displaystyle\sum^\infty_{m=0,n=1}\frac{\left(\int dS u_{\mathrm{mn}}\right)^2}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}
+% \end{align*}
+% \end{variableblock}
+% \end{frame}
 
 \begin{frame}
 \frametitle{Final Expressions}
  \begin{exampleblock}{Membrane Displacement}
   \begin{align*}
- S_0(t)&=G^s_{ipsi}p_0+G^s_{contra}p_L\\
- S_L(t)&=G^s_{contra}p_0+G^s_{ipsi}p_L
+ S_0(t)&=G^s_{ipsi}p_0+G^s_{cont}p_L\\
+ S_L(t)&=G^s_{cont}p_0+G^s_{ipsi}p_L
 \end{align*}
  \end{exampleblock}
 
 \begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+\begin{columns}
+ \begin{column}{.6\textwidth}
  \begin{align*}
- G^s_{ipsi}&=\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right)/2 \\
- G^s_{contra}&=\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)/2
+ G^s_{ipsi}&=\frac{1}{2}\left(\frac{1}{\Lambda+\Gamma_+}+\frac{1}{\Lambda+\Gamma_-}\right) \\
+ G^s_{cont}&=\frac{1}{2}\left(\frac{1}{\Lambda+\Gamma_+}-\frac{1}{\Lambda+\Gamma_-}\right)
 \end{align*}
+\end{column}
+\begin{column}{.4\textwidth}
+\centering
+\begin{align*}
+&\Gamma_+= -\frac{\rho\omega^2}{k}\cot \frac{kL}{2}\\
+&\Gamma_-= \frac{\rho\omega^2}{k}\tan \frac{kL}{2}
+\end{align*}
+\end{column}
+\end{columns}
 \end{variableblock}
 
 \end{frame}
@@ -1132,21 +1374,22 @@ Higher pressure modes disappear, i.e. \[p=\left[A_{00}e^{jkx}+B_{00}e^{-jkx}\rig
 \begin{tabular}{l  l}
 L=$22\,$mm & $a_{\mathrm{tymp}}$=$2.6\,$mm\\
 &\\
-$\textcolor{red}{Q}$ =$1.33$ & $\rho_m$=$1\,$mg/mm$^3$\\ 
+$\textcolor{red}{c_m}=5.41\,$ms$^{-1}$ & $\rho_m$=$1\,$mg/mm$^3$\\ 
 &\\
 $d$=$10\,\mu$m & $V_{\mathrm{\mathrm{cav}}}$=$3.5\,$ml\\ 
 &\\
 $\beta$=$\pi/25$&$\textcolor{blue}{a_{cyl}}\approx 6.6\,$mm \\
 &\\
-$\textcolor{red}{f_0}=1.05\,$kHz &\\
+$\textcolor{red}{\alpha}\approx2474\ \mbox{s}^{-1}$ &\\
 \end {tabular}\par
 \end{variableblock}
 
 %\bigskip
 \begin{exampleblock}{}
 \begin{itemize}
-\item[] $\textcolor{red}{f_0}=\omega_{01}/2\pi$, $\alpha=\omega_{01}/2\textcolor{red}{Q}$.
+\item[] $f_0=\textcolor{red}{c_m}\mu_{01}/2\pi$.
 \item[] ITD = $96.21\, \mu$s.
+\item[] $\textcolor{red}{\alpha}\rightarrow$ steady state.
 \end{itemize}
 \end{exampleblock}
      \end{column}
@@ -1275,13 +1518,13 @@ $\textcolor{red}{f_0}=1.05\,$kHz &\\
 \end{column}
 \begin{column}{0.5\textwidth}
 \onslide<2>{\begin{exampleblock}{Requirements}
-Both 
+Both:
  \begin{enumerate}
  \small
  \item \label{listitem1} increase with the nearness of the sound source.
  \item \label{listitem3} vanish at $\theta=0^\circ,\ \pm 180^\circ$. 
 \end{enumerate}
-iTD
+iTD:
 \begin{enumerate}
 \item[] $\sim$constant in a certain frequency range.
 \end{enumerate}
@@ -1366,7 +1609,8 @@ iTD
 \begin{exampleblock}{}
 \small
  \begin{itemize}
-  \item The iTD to iLD tFransition-frequency is determined by $f_0,\ \alpha$.
+ \item Presence of phase and amplitude sensitive neurons.
+  \item Transition-frequency determined by $f_0,\ \alpha$. NOT by inputs.
   \item Possibile regime where both cues can simultaneously be used.
  \end{itemize}
 \end{exampleblock}
@@ -1384,7 +1628,7 @@ iTD
   \begin{column}{.4\textwidth}
  \onslide<1>{\begin{exampleblock}{}
  \begin{itemize}
-  \item Single description for all frequencies.
+  \item Single description for both regimes.
   \item Transition determined by $f_0$, $\alpha$.
  \end{itemize}
 \end{exampleblock}}

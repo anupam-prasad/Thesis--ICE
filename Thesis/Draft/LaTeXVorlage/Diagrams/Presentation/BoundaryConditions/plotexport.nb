@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[   1377392,      22171]
-NotebookOptionsPosition[   1374809,      22082]
-NotebookOutlinePosition[   1375146,      22097]
-CellTagsIndexPosition[   1375103,      22094]
+NotebookDataLength[   1404821,      22748]
+NotebookOptionsPosition[   1401829,      22646]
+NotebookOutlinePosition[   1402166,      22661]
+CellTagsIndexPosition[   1402123,      22658]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -9181,7 +9181,7 @@ Cell[BoxData[
     ",", "13.323691936314223`"}], "}"}]], "Output",
  CellChangeTimes->{
   3.583235491683766*^9, 3.5832361511699553`*^9, {3.5833361338643436`*^9, 
-   3.5833361566397533`*^9}}],
+   3.5833361566397533`*^9}, 3.583423051375471*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -9190,7 +9190,7 @@ Cell[BoxData[
    ",", "11.706004902592063`"}], "}"}]], "Output",
  CellChangeTimes->{
   3.583235491683766*^9, 3.5832361511699553`*^9, {3.5833361338643436`*^9, 
-   3.583336156664713*^9}}]
+   3.5833361566397533`*^9}, 3.5834230514055634`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -22078,6 +22078,570 @@ Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/pressurebessel.\
 png\"\>"], "Output",
  CellChangeTimes->{3.5833362806308527`*^9, 3.583336343715618*^9, 
   3.583337644149293*^9, 3.583337696290566*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"l", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"z", "=", 
+   RowBox[{"BesselJPrimeZeros", "[", 
+    RowBox[{"l", ",", "1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"img1", "=", 
+  RowBox[{"RevolutionPlot3D", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"l", "*", "\[Phi]"}], "]"}], "*", 
+      RowBox[{"BesselJ", "[", 
+       RowBox[{"l", ",", 
+        RowBox[{"0", "*", "r"}]}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"r", ",", "0", ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Phi]", ",", "0", ",", 
+      RowBox[{"2", "*", "Pi"}]}], "}"}], ",", 
+    RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+    RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+    RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+    RowBox[{"ColorFunction", "\[Rule]", "\"\<Rainbow\>\""}]}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.583423069539206*^9, 3.583423087488461*^9}, {
+  3.5834231385959253`*^9, 3.583423165894128*^9}, {3.583423210333626*^9, 
+  3.583423252900975*^9}, {3.583423298290517*^9, 3.5834233778427353`*^9}, {
+  3.583423839162746*^9, 3.5834238395598288`*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[GraphicsComplex3DBox[CompressedData["
+1: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
+
+   "], {
+    {EdgeForm[None], GraphicsGroup3DBox[Polygon3DBox[CompressedData["
+1:eJxNmHm8F2MUh2ckRFSkUPd2b8u9kSwJ2VJJskRI2kQlUioSIUslt4gsKaWy
+Zm1DdqVEsmTPlp0QhbJVKM5jnvn8/HE+75w52/e878z7fmdKew8+adAWSZKs
+TZOkUoxfhaDXCNkpye5tGbKj99Freq9yyKqQkpC9Q2qHbB2yTciuIVVCtg0p
+Ctk+ZIeQOiHbhVQNqRWylTG76YttF3MQX1df4ne2JjH1Au83Ma4M+Va84CgX
+BzkaO4KlzHrYGtoD+RrYJ/qJIa1D2oTsbhy46ts/fqXWQq8cGL6LsTikib2B
+d09H+t7DHNgaWRMc+4iXfO1CDgg5MKS5+PDdT3zo+3uPPvY1Dlwt7BO8B1sP
+LIe7JtTZOnB+H2NTa5Qbc4i+4D3IHMT/YGxLcZUZ08p8+zpPjM1C2ouDHEc7
+guUo62E70h7I19Y+9ze+vn0eYxy4jrD/5q5HM/UT7A0sa8TYIeR4r7FViX5X
+x3hoyISQq0JGh3Q0Duw3h4zSdor4WIdO4kPv7D36OD+kV0jvkK72Cd6frN8j
+5Axr8Bz1FBN4uzhHxJz2P7zbBc4fYzw25HR9iT/Vmu2tSb6TrM14csj2Eftz
+jN1C1lp/QEg/64HxLHsgX1/77Gz8EfZ5rrHgOtP+8eujH/p59gaWQfYG3sGO
+2Aaao6cY21hjiLjJ91vIpSHXhFwkvrNDLhQf+jDv0ccFxoFruP2B93LrgWWk
+a0OdK8UE3l/0p94V+mK7zBzEj9CX+Goxn+tiPCfJnosh1r/KcWjIOHGQ4zpH
+sFxrHWw1Is+vMV4cUmGfw4w/0z6vNw5cV9s/fqP1Q7/J3sByg72B90ZHbOPN
+caVzxjqz9reYi9zsp+w97EF/OPeTQ3YKnL/HOCZkivfpY17IPSEzQqbZJ3hv
+tx5Y7k6y94d3604xgXeqc0TMHfpim24O4u/Sl/jbrDnOmhPEPsNxYsgscZBj
+tiNYZloP24P2QL4H7A+9dvS4McZ7Q+YYB64N+twfsnP4rI9xUsij9gaWh+0N
+vI84YptrDmwPWRMcf5rviZBlIfNDFoQ8JSYwPmPMTO2z7Olp7dheMseTxs8W
++0Jrg2uRI7ieNR+5FtsDa7hr9PVXjI+FPGcO4v82/5KQpdYBY0n4Nw75J65f
+FSu5X9YOxlccsb0uPnK/pu98891vz29oB/t71qS/OlFnU4wvhLxlP8+HvO1I
+H28ah22zscuT7Jnguebdet989PGhWMH4sZhYhxX2g/6J98DOOcx5ytn6ufXA
+UhTYkpB3kozjwAs49+E+nPmc/Z/ZGzFfJxlnqh7yhTnoo5JxxHxqTWIqW5u8
+8Jha6vAb+AK8YaXX8KWq3uMdhh/xHufcihF+85F90+eWacaH6iUZh8Ke87La
+1qtp3w3Ex/lbKt4G6jW8VxLygXP8svFlzh2cgrN6T3HBHXLexNhY3E20Ub/c
++K3SjDvuZR24xD7mhRc0FwtnPmf/d9YpEl8zY0qM29uemhuT87Am1jvAvNQ/
+UJ0Y+EJLc7RS3ybNONBhxtNjzq0YD0oK/LI8KfChVvaNPedlLaxHbThFW/Fx
+NrYRb1v1Zt5rLb52xhB/lDr52quDBQ4Cr9g2zfjQcfYAl4BjrNaHHjgfOCfO
+EmtH/ajJmX2iOE5Wb2mODuKAF3QSR2f11sZ1FNOp2sDYRR18XdWpB2foacwZ
+6lXTjEt1tyb2nCsx9nCeOomPmr2M72xPfbVzzvZJCpyplzF91H8UzzH20NeY
+HdOMo4xNsvOcs4lzcYc041j9xQF/GCBGeMVAccAlBot3oH5wtH7WA8f5+oEF
+XjHE2kPVc141yJ7gBRe6bsPUextHrnXep0b1NOM9l4hvuH1Qb0SS8QRiRqqD
+ER5ymTWx51zpCm1dzH22NUcZD8epsDb42JNHJwXONMqeRqufa53h9lBhTF/j
+h2ob57xzfnDuPCkO+MN1YoRXjBcHXOJG8Y7XjzOZs/RBcdysH1jgFROsPVF9
+hDnIWzPNeNKtrj08YrI9TDDXtdaYIt6p6uCbpk49OMOdxtytDkZ4yHRrYs+5
+0h3afhdbhTXvMX6KPTE3tdKMx9yXFDgTfuu9nuhcTBfTZOM4mzmrOQ9fTQpc
+dlxS4FizxDFHHYzwjbnigGM8It65+k0zbqY45um3S5pxo8etzXo+kRR41cP2
+9LTrzbo9o77RPDPM+6w26sxXB98CderBHeAQf3k9T4xwieesiX1RUuBSC12z
+mdbfLc140ovWY55eER9n4FJ7gHsssael6nOssyApcCZi8m/j9mJd5hrgCy94
+XSzwh5z7vKkt50bYONM4C5taG1613Pqc0++bFw60wvrwA/hRifxus5g+NOYl
+496z1xXGbLLuYvF+Yl6wfqpeP3IWpxkPqpRm3AXeAh+CF8Ej4FNf/K8Hrj93
+XXle4eec68QW2zf2nGd9Zr1iey8y77fWqed1iTm+0RdcW6QZDmyr9GV/ZJ9k
+b4QDcNbDQzgj4TT8NzjM+y21rUoK/0TWaOe7nbOEc4TvcPZ69nnOLM6y47St
+1rer/t20rdG3u/49rL1aLP3MeY62tfqyL7D/jrGH3+zpYu+zJw+wx/7q67Q3
+tUeeo7HGXmONddbsby1ysA+yH7J/sKewN00y5g9zjPF+hbb1+hKzwRy8Dzw3
+y1zvja4/ewL7A/sY3yq8t/OUjd5jDvjfAcbF+vDtwPvJe7pEfZP2x82Zf+ds
+1rduml0v1/a3vtz7Rx94P88rz2ppjKnfAzx3/O9r6rMAf+VZ+u9/aZp9H/AM
+wr95Jhuk2T/KSubaZG7mnv9xh7rm8J78WYDD5c8dHHQvnwX+Zx0rrtR3ieeI
+/0fdnLsNziXrBl/p7vrDCfq7zvCbS1xn/nfkzwv/LMa4bnwP3+t68o9gkuvM
+uTjWOpw9rGnDNNtT6rpfsm/mc8++f59rxbfoC64n3+SPOR91/M5if2NfZv9u
+lGbzXuSeUuz7W+R95mB3r79Msvmt575TVzysZ2Ov343rMveo1Hz1vSauPM32
+C/I1Mif3Wb9qSZajoXnKrVXNPGXuL6ViYm3+BXW5thY=
+       "]]]}, {}, {}, {}, {}},
+   VertexColors->{
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682], 
+     RGBColor[0.513417, 0.72992, 0.440682]},
+   VertexNormals->CompressedData["
+1:eJztzrEJgEAMQNGvTmLpFO7gCIK1K2RkR7CwOg6xEnP40wTeh5Bx3ZetB6YO
+BqqJax2zruu6nsrRdV3XdV3Xm/bQdV3XUzplb9bRP/Fo3Cl7Gr/7U3/XI5lT
+9kf/zf0T9HSxbw==
+    "],
+   VertexTextureCoordinates->CompressedData["
+1:eJx1mEtu1EAURQt2ggiRWIXHgRlLQGLGby0hK8gSMmgiMatBJpmgEooElZaI
+gVYgfLwE1J9zrXsJHmCd3Cq7T71X7Tb3nr568uxuKeXhnVLW5zze7B0c7h2c
+DM5VfLl40RcvziNv4rfruF/E+C6+s/n3s/hoM38U76/x8Kv4dDN9JX68jve+
+i5eb69+IX6+HL36Jt8cUPHvefq5ifD1vYnx9fBfjC+ML4wvjC+ML4wvj63Wb
+hv/V8XbP+ey+NXxr+NbwreFbw7eGbw3fGr41fGv41vCt0RfnsW7ncd1z+Xre
+xPj6+C7GF8YXxhfGF8Z3aZ/jRowvjK/zvA9v79O5jpfhmWevb4v6tqhvi/q2
+qG+L+raob4v6tqhvi/q2+F6Y951zFV/aul/E57qQr4/vYnxhfGF8T+06KzG+
+ML4wvjC+zvRzj37u0c89+rnHOvfo5x793KOfe/Rzj37u0c89+rlHP/fo5x79
+/O9z4vbv0fl7Bt/sSxhfHz975hlfGF/vg5UYX1+3GzG+/tybhnwOvonngnMV
++/4dY/+OsX/H2L9jrNMY+3eM/TvG/h1j/46xf8fYv2Ps3/k5/yCee85VjK/n
+TYyvj+9ifGF8YXxhfGF8YXxhfGF8nfldND/XnasYX8+bGF8f38Xe9yv5wvu2
+biv5wvjC+ML4wvg6l3IQv1ucqxhfz5sYXx/fxfjC+ML4wvjC+ML4wvjC+DqX
+8sn2wcngXMX4et7E+Pr4LsYXxhfGF8YXxhfGF8YXxte5lOe2z08G5yrG1/Mm
+xtfHdzG+ML4wvjC+ML4wvjC+ML7OHPm7On93ToO/H+Xvlmnw96Np8PejfC5M
+g78fTYO/H02Dvx9Nw+Po02XU8XV45nl7v+Pd5z6O59Px7n6/I5/EzN96vdN4
++Miuc6YcJt+uw3vlMPl2HT4oh8kfbdbho3KYfLsOS+Wwz7+K+VfKt+v6RTlM
+/nJzvW/K4SNbt2vlMPnmdgc/lMPk9ze+P5XD5Au7bikLW+ffQ3LWn3mncR0O
+6ul9/C7mnUWfnimnnt7375VTT+/7D8qpJ7kz/w+wjL5fxvyrmH+lnHqSO5dC
+PcmdOa5jf10rp57kzqVQT/Ksr193Uj23+/Bwd73DXV3+iMn77u/ksH++eT5/
+Z37en/mec0y6P3/J+zPuL//orAw=
+    "]],
+  BoxRatios->NCache[{2, 2, GoldenRatio^(-1)}, {2, 2, 0.6180339887498948}],
+  Boxed->False,
+  Lighting->"Neutral",
+  Method->{},
+  PlotRange->{{-0.9999999285714286, 0.9999999285713279}, {-0.9999999285714034,
+    0.9999999285714034}, {0., 2.}},
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{3.583423840916095*^9},
+ ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJzt1llIlFEYxvGRLrvtrhvvu2jfbLHVJbWszLJFG01R09ymssVMzBZb0IoW
+ChOSCCkEi6KoqKgoQoqICKmIxDaizazuzP/7FBzmy8Sg8GLAmefwAzlzzved
+9z0J/kB2Zr4/kJPhD48u9hdm52SUhEcVFHfTgDCfLyy7+zMo3Me4y+f79dXV
+/deVwxcSGofGofH/GJ8hBvoOt1Y2CiyGAPsE9UQEsEdwkIgBdgj2E4nAFkEN
+kQKUC3YR6cB6gf1nLrBaUEUUAcWCCmItUCjYRJQB+YINRCWQKygltgPZgjXE
+biBTECBqgQyBTXYAWC6wyY4AywSriGPAEkEecRxIEdjsJ4BFApu9EUgWZBGn
+gQUCm70ZmC9IJ84C8wR+4jyQKLDfdxGYLUglLgMJAvvBV4E4wVLiOjBLYCu4
+CcQIbAW3gWiBreAuMFOwkGgBZghsSfeA6YIk4gEwTWBLeghMFdiSHgFTBHOJ
+x0CkwNbYCkwWzCGeAJMceApMFNguPHPAduE5MEEQT7wAIhxoA8YLbJ/agXEC
+26eXDsQSr4GxPYDt5FtgjMB28h0wugeIIt4DowS21x+C4SMwsgewp/EZGNEn
+6ACGC+wBfukVOoFhAnvEX/sE9hJ8+xfwHRjaz+Evduz30Ok8Fw/8/sl19P39
++PSnl84DnjfZA72fBs8BMnjzpzNn8Cr43LYHn+y24LPvFgNPufAUFA94ipKn
+bHkKm6f0eYqjp3xai7jvFFiruC3BNdmKdJTAqvYdp4wvJm45hd4q/w0gVmDN
+4prTG6ydXAHiBWnEJae/WEu64HQga1rnnB61gmh2upi13SYgSWCd8JTTGu0a
+chJYKFhJNDjt1bp9vdOAC4ijTosuIg4BaYISYj/gF9glo8bp+3ZVqAayBHYv
+qQJ+XozKiHIgT7CZWAcUCCqJAFAk2EbkAwFBNZEFlArsBpUKbBTUEslAhcAu
+V3HAVkEdEQnsFDQQI4C9giZiMFAn6A/3ytA4NPaF/QAb9iZE\
+\>"]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\</home/t35-room3023/Documents/ICE-Model/Thesis - \
+Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/\
+BoundaryConditions/presmode00.png\>\"", ",", "img1", ",", 
+   RowBox[{"Background", "\[Rule]", "None"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.583423262597968*^9, 3.583423288896179*^9}, {
+  3.583423343233327*^9, 3.583423367440345*^9}, {3.583423399152631*^9, 
+  3.5834234004480133`*^9}, {3.58342384868766*^9, 3.58342384908381*^9}}],
+
+Cell[BoxData["\<\"/home/t35-room3023/Documents/ICE-Model/Thesis - \
+Presentation/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/\
+BoundaryConditions/presmode02.png\"\>"], "Output",
+ CellChangeTimes->{
+  3.583423293214891*^9, {3.583423351092609*^9, 3.583423375208809*^9}, 
+   3.5834234064892483`*^9, 3.583423827547667*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"zeros", "="}]], "Input",
+ CellChangeTimes->{{3.583423092061696*^9, 3.58342312174227*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "3.831705970207512`", ",", "7.015586669815606`", ",", "10.173468135062722`",
+    ",", "13.323691936314223`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.5834230931272993`*^9, 3.5834230998710814`*^9}}]
 }, Open  ]]
 },
 WindowSize->{958, 1020},
@@ -22116,62 +22680,75 @@ Cell[585211, 9157, 298, 4, 50, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[585546, 9166, 358, 8, 50, "Input"],
-Cell[585907, 9176, 293, 7, 30, "Output"],
-Cell[586203, 9185, 290, 7, 30, "Output"]
+Cell[585907, 9176, 315, 7, 30, "Output"],
+Cell[586225, 9185, 316, 7, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[586530, 9197, 175, 4, 30, "Input"],
-Cell[586708, 9203, 246, 5, 30, "Output"]
+Cell[586578, 9197, 175, 4, 30, "Input"],
+Cell[586756, 9203, 246, 5, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[586991, 9213, 1832, 48, 88, "Input"],
-Cell[588826, 9263, 30453, 508, 504, "Output"]
+Cell[587039, 9213, 1832, 48, 88, "Input"],
+Cell[588874, 9263, 30453, 508, 504, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[619316, 9776, 30890, 518, 652, "Input"],
-Cell[650209, 10296, 300, 4, 50, "Output"]
+Cell[619364, 9776, 30890, 518, 652, "Input"],
+Cell[650257, 10296, 300, 4, 50, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[650546, 10305, 2251, 63, 107, "Input"],
-Cell[652800, 10370, 30442, 509, 569, "Output"]
+Cell[650594, 10305, 2251, 63, 107, "Input"],
+Cell[652848, 10370, 30442, 509, 569, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[683279, 10884, 348, 9, 50, "Input"],
-Cell[683630, 10895, 262, 6, 30, "Output"],
-Cell[683895, 10903, 261, 6, 30, "Output"]
+Cell[683327, 10884, 348, 9, 50, "Input"],
+Cell[683678, 10895, 262, 6, 30, "Output"],
+Cell[683943, 10903, 261, 6, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[684193, 10914, 2370, 66, 107, "Input"],
-Cell[686566, 10982, 31285, 523, 693, "Output"]
+Cell[684241, 10914, 2370, 66, 107, "Input"],
+Cell[686614, 10982, 31285, 523, 693, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[717888, 11510, 362, 7, 88, "Input"],
-Cell[718253, 11519, 226, 3, 50, "Output"]
+Cell[717936, 11510, 362, 7, 88, "Input"],
+Cell[718301, 11519, 226, 3, 50, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[718516, 11527, 1437, 38, 107, "Input"],
-Cell[719956, 11567, 603858, 9612, 155, "Output"]
+Cell[718564, 11527, 1437, 38, 107, "Input"],
+Cell[720004, 11567, 603858, 9612, 155, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1323851, 21184, 624, 15, 107, "Input"],
-Cell[1324478, 21201, 755, 14, 164, "Output"]
+Cell[1323899, 21184, 624, 15, 107, "Input"],
+Cell[1324526, 21201, 755, 14, 164, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1325270, 21220, 495, 11, 88, "Input"],
-Cell[1325768, 21233, 222, 3, 50, "Output"]
+Cell[1325318, 21220, 495, 11, 88, "Input"],
+Cell[1325816, 21233, 222, 3, 50, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1326027, 21241, 194, 5, 30, "Input"],
-Cell[1326224, 21248, 111, 1, 30, "Output"]
+Cell[1326075, 21241, 194, 5, 30, "Input"],
+Cell[1326272, 21248, 111, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1326372, 21254, 1178, 28, 50, "Input"],
-Cell[1327553, 21284, 46256, 770, 656, "Output"]
+Cell[1326420, 21254, 1178, 28, 50, "Input"],
+Cell[1327601, 21284, 46256, 770, 656, "Output"]
 }, Open  ]],
-Cell[1373824, 22057, 190, 3, 30, "Input"],
+Cell[1373872, 22057, 190, 3, 30, "Input"],
 Cell[CellGroupData[{
-Cell[1374039, 22064, 472, 9, 88, "Input"],
-Cell[1374514, 22075, 279, 4, 50, "Output"]
+Cell[1374087, 22064, 472, 9, 88, "Input"],
+Cell[1374562, 22075, 279, 4, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1374878, 22084, 1185, 30, 88, "Input"],
+Cell[1376066, 22116, 24489, 492, 291, 23364, 472, "CachedBoxData", "BoxData", \
+"Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1400592, 22613, 503, 9, 88, "Input"],
+Cell[1401098, 22624, 322, 5, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1401457, 22634, 113, 2, 30, "Input"],
+Cell[1401573, 22638, 240, 5, 30, "Output"]
 }, Open  ]]
 }
 ]
