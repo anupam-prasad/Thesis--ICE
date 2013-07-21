@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="conclusion.svg">
+   sodipodi:docname="conclusion.svg"
+   inkscape:export-filename="/home/anupam/Documents/Acads/ICE-Model/Thesis--ICE/Thesis/Draft/LaTeXVorlage/Diagrams/Presentation/conclusion.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <marker
@@ -87,10 +90,10 @@
      inkscape:object-paths="false"
      inkscape:snap-intersection-paths="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1024"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-edge-midpoints="true"
@@ -238,7 +241,7 @@
          sodipodi:role="line"
          id="tspan3833"
          x="324.90549"
-         y="-178.54471">iTD≪ITD</tspan></text>
+         y="-178.54471">iTD∼ITD</tspan></text>
     <rect
        style="fill:none;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:4"
        id="rect3843"

@@ -84,8 +84,8 @@
 \setbeamertemplate{subsection in toc}{\hspace*{9pt}\small$\bullet$ \inserttocsubsection\\}
 \makeatother
 
-\title{\Large Mechanical Processing in Internally Coupled Ears}
-\author{Anupam Prasad Vedurmudi}
+\title{\LARGE Mechanical Processing in Internally Coupled Ears}
+\author{\Large Anupam Prasad Vedurmudi}
 \date{TMP Thesis Defence\\ \today}
 
 \titlegraphic{\vspace{.1cm}\flushleft \includegraphics[width=.85cm]{Diagrams/T35logo2.png}\hspace*{8.3cm}~%
@@ -232,7 +232,7 @@
 %      \item[]
     \item Phase difference between the (pressure) inputs to the ears.
     \item \textbf{\textcolor{blue}{I}}TD
-    \item Used when $\lambda\gg$head size.
+    \item Used when $\lambda\gg$ head size.
      %\item[] Effectively independent eardrum vibrations.
      \end{itemize}
     \end{column}
@@ -243,7 +243,7 @@
      \begin{itemize}
           \item Amplitude difference between the inputs.
           \item \textbf{\textcolor{blue}{I}}LD
-          \item Used when $\lambda\sim$head size.
+          \item Used when $\lambda\sim$ head size.
      %\item[] Eardrums vibrations influence eachother.
      \end{itemize}
     \end{column}
@@ -1020,36 +1020,68 @@ $\int dS u_{\mathrm{kl}}u_{\mathrm{mn}}=\delta_{km}\delta_{ln}$
 %              \end{exampleblock}}
 \end{frame}
 
+% \begin{frame}[t]
+%  \frametitle{Forced Vibrations: $\Psi=\mbox{p}e^{j\omega t}$, $\alpha\neq0$}
+%  \onslide<1->{\begin{exampleblock}{Steady State Solution}
+%   \begin{equation*}
+%   u_{\mathrm{ss}}=\displaystyle\sum\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+% %   u_{\mathrm{ss}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+%   \end{equation*}
+%  \end{exampleblock}}
+%  \vfill
+%  \onslide<2->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+%    Substitute $u_{\mathrm{ss}}$ in Membrane equation.
+%                \begin{align*}
+%                &\textcolor{red}{C_{\mathrm{mn}}}=\frac{p\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\\
+%                &\\
+%                 &\Omega_{\mathrm{mn}}=\rho_M d \left[\omega^2-2j\alpha\omega-\omega^2_{\mathrm{mn}}\right]\nonumber
+%                \end{align*}
+% 
+%               \end{variableblock}}
+% 
+% \end{frame}
 \begin{frame}[t]
  \frametitle{Forced Vibrations: $\Psi=\mbox{p}e^{j\omega t}$, $\alpha\neq0$}
- \onslide<1->{\begin{exampleblock}{Steady State Solution}
+ \onslide<1->{\begin{exampleblock}{Full Solution}
   \begin{equation*}
-  u_{\mathrm{ss}}(r,\phi;t)=:\displaystyle\sum^\infty_{m=0,n=1}\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+  u(r,\phi;t)=u_{\mathrm{ss}}(r,\phi;t)+u_{\mathrm{t}}(r,\phi;t)
+%   u_{\mathrm{ss}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
   \end{equation*}
  \end{exampleblock}}
  \vfill
- \onslide<2->{\begin{variableblock}{}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
-   Substitute $u_{\mathrm{ss}}$ in Membrane equation.
+ \onslide<2->{\begin{variableblock}{Steady State Solution}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \begin{columns}
+ \begin{column}{.45\textwidth}
+ \begin{equation*}
+  u_{\mathrm{ss}}=\displaystyle\sum\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+%   u_{\mathrm{ss}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
+  \end{equation*}
+  \end{column}
+  \begin{column}{.55\textwidth}
+   From Membrane equation:
                \begin{align*}
                &\textcolor{red}{C_{\mathrm{mn}}}=\frac{p\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\\
                &\\
-                &\Omega_{\mathrm{mn}}=\rho_M d \left[(\omega^2-\omega^2_{\mathrm{mn}})-2j\alpha\omega\right]\nonumber
+                &\Omega_{\mathrm{mn}}=\rho_M d \left[\omega^2-2j\alpha\omega-\omega^2_{\mathrm{mn}}\right]\nonumber
                \end{align*}
-
+\end{column}
+\end{columns}
               \end{variableblock}}
 
 \end{frame}
+
 \begin{frame}[t]
 \frametitle{Forced Vibrations contd.}
  \onslide<1>{\begin{exampleblock}{Transient Solution}
 $\equiv$ free damped membrane
               \begin{equation*}
-               u_{\mathrm{t}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\widetilde{\omega}_{\mathrm{mn}} t-\alpha t}
+              u_{\mathrm{t}}=\displaystyle\sum\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\widetilde{\omega}_{\mathrm{mn}} t-\alpha t}
+%                u_{\mathrm{t}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\widetilde{C}_{\mathrm{mn}}u_{\mathrm{mn}}(r,\phi)e^{j\widetilde{\omega}_{\mathrm{mn}} t-\alpha t}
                \end{equation*}
 %$\widetilde{\omega}_{\mathrm{mn}}=\sqrt{\omega^2_{\mathrm{mn}}+\alpha^2}$\\
 \vspace{2pt}
 
-\noindent $u(r,\phi;0)=0 \Rightarrow\ \widetilde{C}_{\mathrm{mn}}=-C_{\mathrm{mn}}$.
+\noindent $u(t=0)=0 \Rightarrow\ \widetilde{C}_{\mathrm{mn}}=-C_{\mathrm{mn}}$.
 
 \end{exampleblock}}
 \vfill
@@ -1610,7 +1642,7 @@ iTD:
 \small
  \begin{itemize}
  \item Presence of phase and amplitude sensitive neurons.
-  \item Transition-frequency determined by $f_0,\ \alpha$. NOT by inputs.
+  \item Transition-frequency determined by $f_0,\ \alpha$. NOT by head size.
   \item Possibile regime where both cues can simultaneously be used.
  \end{itemize}
 \end{exampleblock}
