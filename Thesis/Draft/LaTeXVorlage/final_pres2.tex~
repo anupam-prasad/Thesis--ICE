@@ -119,12 +119,7 @@
 
 \end{frame}
 
-  \begin{frame}<beamer>
-    \frametitle{Outline}
-    \begin{multicols}{2}
-    \tableofcontents
-    \end{multicols}
-  \end{frame}
+
 %\logo{\includegraphics[height=0.8cm]{Diagrams/T35logo2.png}\vspace{220pt}}
 
 \section{Introduction}
@@ -187,6 +182,13 @@
   \end{columns}
 \end{frame}
 
+  \begin{frame}<beamer>
+    \frametitle{Outline}
+    \begin{multicols}{2}
+    \tableofcontents
+    \end{multicols}
+  \end{frame}
+  
 \subsection{Sound Localization}
 \begin{frame}[t]
  \frametitle{Localization - Independent Ears}
@@ -329,8 +331,8 @@
     \small
      \begin{itemize}
 %      \item[]
-    \item ITD$\neq$0, ``small''.
-    \item ILD$\approx$0.
+    \item ITD $\neq$ 0, ``small''.
+    \item ILD $\approx$ 0.
      %\item[] Effectively independent eardrum vibrations.
      \end{itemize}
     \end{column}
@@ -364,7 +366,7 @@
 %      \item[]
     \item[] Phase difference between \textbf{eardrums}.
     \item \textbf{\textcolor{blue}{i}}TD
-    \item \textbf{\textcolor{blue}{i}}TD$>$ITD.
+    \item \textbf{\textcolor{blue}{i}}TD $>$ ITD.
      %\item[] Effectively independent eardrum vibrations.
      \end{itemize}
     \end{column}
@@ -375,7 +377,7 @@
      \begin{itemize}
           \item[] Amplitude difference between the \textbf{eardrums}.
           \item \textbf{\textcolor{blue}{i}}LD
-          \item \textbf{\textcolor{blue}{i}}LD$>$0.
+          \item \textbf{\textcolor{blue}{i}}LD $>$ 0.
      %\item[] Eardrums vibrations influence eachother.
      \end{itemize}
     \end{column}
@@ -644,7 +646,7 @@
  \begin{split}
   &g(r) = J_q(\nu r)\\
   &\\
-  &\nu^2=k^2-\zeta^2
+  &\nu^2=(\omega/c)^2-\zeta^2
   \end{split}
  \end{equation*}
  \end{column}
@@ -1042,14 +1044,14 @@ $\int dS u_{\mathrm{kl}}u_{\mathrm{mn}}=\delta_{km}\delta_{ln}$
 % \end{frame}
 \begin{frame}[t]
  \frametitle{Forced Vibrations: $\Psi=\mbox{p}e^{j\omega t}$, $\alpha\neq0$}
- \onslide<1->{\begin{exampleblock}{Full Solution}
+ \onslide<1>{\begin{exampleblock}{Full Solution}
   \begin{equation*}
   u(r,\phi;t)=u_{\mathrm{ss}}(r,\phi;t)+u_{\mathrm{t}}(r,\phi;t)
 %   u_{\mathrm{ss}}(r,\phi;t)=\displaystyle\sum^\infty_{m=0,n=1}\textcolor{red}{C_{\mathrm{mn}}}u_{\mathrm{mn}}(r,\phi)e^{j\omega t}
   \end{equation*}
  \end{exampleblock}}
  \vfill
- \onslide<2->{\begin{variableblock}{Steady State Solution}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
+ \onslide<2>{\begin{variableblock}{Steady State Solution}{bg= blue!5,fg=black}{bg= blue!5,fg=blue!75}
  \begin{columns}
  \begin{column}{.45\textwidth}
  \begin{equation*}
@@ -1058,7 +1060,7 @@ $\int dS u_{\mathrm{kl}}u_{\mathrm{mn}}=\delta_{km}\delta_{ln}$
   \end{equation*}
   \end{column}
   \begin{column}{.55\textwidth}
-   From Membrane equation.
+   From Membrane equation:
                \begin{align*}
                &\textcolor{red}{C_{\mathrm{mn}}}=\frac{p\int dS u_{\mathrm{mn}}}{\Omega_{\mathrm{mn}}\int dS u^2_{\mathrm{mn}}}\\
                &\\
